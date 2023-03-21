@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CareKit",
+        "repositoryURL": "https://github.com/cbaker6/CareKit.git",
+        "state": {
+          "branch": null,
+          "revision": "954185b307222431e50f656d2870019e9ec97c28",
+          "version": "2.1.8"
+        }
+      },
+      {
+        "package": "FHIRModels",
+        "repositoryURL": "https://github.com/apple/FHIRModels.git",
+        "state": {
+          "branch": null,
+          "revision": "e115442fb3c5d44ffb1dc9b4e039b77fd143ad96",
+          "version": "0.4.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
