@@ -30,7 +30,8 @@ extension OCKAnyEvent: Comparable {
     }
 
     public static func < (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
-        lhs.scheduleEvent < rhs.scheduleEvent
+        lhs.scheduleEvent.start <= rhs.scheduleEvent.start &&
+        lhs.scheduleEvent.end < rhs.scheduleEvent.end
     }
 
     /// Sort outcome values by descending updated/created date
