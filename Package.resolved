@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cbaker6/CareKit.git",
       "state" : {
-        "revision" : "5d2500ba9f19077d7c8e0bb9807469c4c11ef30e",
-        "version" : "3.0.0-alpha.1"
+        "revision" : "225341b1785513785b7d4a9d4538c2dd48bc0554",
+        "version" : "3.0.0-alpha.21"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-async-algorithms",
       "state" : {
-        "revision" : "aed5422380244498344a036b8d94e27f370d9a22",
-        "version" : "0.0.4"
+        "revision" : "9cfed92b026c524674ed869a4ff2dcfdeedf8a2a",
+        "version" : "0.1.0"
       }
     },
     {
