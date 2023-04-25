@@ -10,7 +10,7 @@ import CareKit
 import CareKitStore
 import UIKit
 
-extension OCKTaskController {
+public extension OCKTaskController {
 
     func validatedViewModel() throws -> OCKTaskEvents {
         guard !taskEvents.isEmpty else {
