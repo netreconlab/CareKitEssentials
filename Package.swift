@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "CareKitUtilities",
-    platforms: [.iOS(.v14), .macOS(.v11), .watchOS(.v7)],
+    platforms: [.iOS(.v14), .macOS(.v12), .watchOS(.v7)],
     products: [
         .library(
             name: "CareKitUtilities",
@@ -19,7 +19,8 @@ let package = Package(
             name: "CareKitUtilities",
             dependencies: [
                 .product(name: "CareKit", package: "CareKit"),
-                .product(name: "CareKitStore", package: "CareKit")
+                .product(name: "CareKitStore", package: "CareKit"),
+                .product(name: "CareKitUI", package: "CareKit")
             ]),
         .testTarget(
             name: "CareKitUtilitiesTests",
