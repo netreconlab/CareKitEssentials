@@ -10,6 +10,7 @@ import CareKit
 import CareKitUI
 import CareKitStore
 import Foundation
+import UIKit
 
 /// Helper properties and methods for using OCKTaskEvents.
 public extension OCKTaskEvents {
@@ -39,6 +40,14 @@ public extension OCKTaskEvents {
     /// The first event detail.
     var firstEventDetail: String? {
         ScheduleUtility.scheduleLabel(for: firstEvent)
+    }
+
+    /// The first event task asset.
+    var firstTaskAsset: UIImage? {
+        guard let asset = firstEventTask?.asset else {
+            return nil
+        }
+        return UIImage.asset(asset)
     }
 
     /// The first event outcome.
