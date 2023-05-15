@@ -22,12 +22,7 @@ jobs:
     strategy:
       matrix:
         destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)']
-        action: ['test', 'build']
-        exclude:
-          - destination: 'platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max'
-            action: 'build'
-          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)'
-            action: 'test'
+        action: ['test']
     steps:
     - uses: actions/checkout@v3
     - name: Use multiple cores
