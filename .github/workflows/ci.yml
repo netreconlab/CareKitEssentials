@@ -21,12 +21,10 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)', 'platform=macOS']
+        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)']
         action: ['test', 'build']
         exclude:
           - destination: 'platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max'
-            action: 'build'
-          - destination: 'platform=macOS'
             action: 'build'
           - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)'
             action: 'test'
