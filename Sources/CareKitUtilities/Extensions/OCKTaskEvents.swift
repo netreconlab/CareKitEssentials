@@ -10,6 +10,9 @@ import CareKit
 import CareKitUI
 import CareKitStore
 import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 /// Helper properties and methods for using OCKTaskEvents.
 public extension OCKTaskEvents {
@@ -40,6 +43,16 @@ public extension OCKTaskEvents {
     var firstEventDetail: String? {
         ScheduleUtility.scheduleLabel(for: firstEvent)
     }
+
+    #if canImport(UIKit)
+    /// The first event task asset.
+    var firstTaskAsset: UIImage? {
+        guard let asset = firstEventTask?.asset else {
+            return nil
+        }
+        return UIImage.asset(asset)
+    }
+    #endif
 
     /// The first event outcome.
     /// - note: If you need `OCKOutcome` or `OCKHealthKitOutcome`, you need to cast

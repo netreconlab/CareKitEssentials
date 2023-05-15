@@ -8,7 +8,7 @@
 
 import CareKit
 import CareKitStore
-import UIKit
+import Foundation
 
 public extension OCKTaskController {
 
