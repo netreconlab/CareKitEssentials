@@ -1,6 +1,6 @@
 //
 //  DigitalCrownViewHeader.swift
-//  AssuageWatch
+//  CareKitUtilities
 //
 //  Created by Julia Stekardis on 12/1/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.

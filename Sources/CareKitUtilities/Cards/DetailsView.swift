@@ -1,6 +1,6 @@
 //
 //  DetailsView.swift
-//  Assuage
+//  CareKitUtilities
 //
 //  Created by Julia Stekardis on 12/6/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.

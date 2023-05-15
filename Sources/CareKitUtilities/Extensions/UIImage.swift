@@ -1,11 +1,12 @@
 //
 //  UIImage.swift
-//  Assuage
+//  CareKitUtilities
 //
 //  Created by Corey Baker on 12/6/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(UIKit)
 import Foundation
 import UIKit
 
@@ -20,3 +21,4 @@ public extension UIImage {
         return otherUrlImage ?? appAssetsImage ?? symbol
     }
 }
+#endif

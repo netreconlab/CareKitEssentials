@@ -1,0 +1,84 @@
+name: ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: '*'
+  merge_group:
+    branches: [ main ]
+
+env:
+  CI_XCODE_OLDEST: '/Applications/Xcode_13.3.1.app/Contents/Developer'
+  CI_XCODE_LATEST: '/Applications/Xcode_14.2.app/Contents/Developer'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    timeout-minutes: 15
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)', 'platform=macOS']
+        action: ['test', 'build']
+        exclude:
+          - destination: 'platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max'
+            action: 'build'
+          - destination: 'platform=macOS'
+            action: 'build'
+          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)'
+            action: 'test'
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use multiple cores
+      run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
+    - name: Build-Test
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -workspace CareKitUtilities.xcworkspace -scheme CareKitUtilities -derivedDataPath DerivedData -destination ${{ matrix.destination }} ${{ matrix.action }} | xcpretty -c
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+    - name: Prepare codecov
+      uses: sersoft-gmbh/swift-coverage-action@v3
+      id: coverage-files
+      with:
+        format: lcov
+        search-paths: ./DerivedData
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
+        fail_ci_if_error: false
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+
+  spm-test:
+    timeout-minutes: 15
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use multiple cores
+      run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
+    - name: Build-Test
+      run: swift test --enable-code-coverage | xcpretty -c
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+    - name: Prepare codecov
+      uses: sersoft-gmbh/swift-coverage-action@v3
+      id: coverage-files
+      with:
+        format: lcov
+        search-paths: ./.build
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
+        env_vars: SPM
+        fail_ci_if_error: false
+      env:
+          DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
+

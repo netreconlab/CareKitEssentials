@@ -1,6 +1,6 @@
 //
 //  OSValue.swift
-//  Assuage
+//  CareKitUtilities
 //
 //  Created by Corey Baker on 12/4/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_name
 enum OS: String {
     case iOS, watchOS
 }

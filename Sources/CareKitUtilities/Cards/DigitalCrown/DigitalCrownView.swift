@@ -1,6 +1,6 @@
 //
 //  DigitalCrownView.swift
-//  AssuageWatch
+//  CareKitUtilities
 //
 //  Created by Julia Stekardis on 12/1/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
@@ -117,7 +117,7 @@ struct DigitalCrownView_Previews: PreviewProvider {
         DigitalCrownView(title: Text("Title"),
                          detail: Text("Details"),
                          viewModel: .init(storeManager: .init(wrapping: OCKStore(name:
-                                                                                    Constants.noCareStoreName,
+                                                                                    "noStore",
                                                                                  type: .inMemory))))
     }
 }

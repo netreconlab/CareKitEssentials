@@ -1,6 +1,6 @@
 //
 //  TaskViewModel.swift
-//  Assuage
+//  CareKitUtilities
 //
 //  Created by Corey Baker on 12/4/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
@@ -63,11 +63,11 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     public convenience init(taskID: String,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                     detailsTitle: String? = nil,
-                     detailsInformation: String? = nil) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                            detailsTitle: String? = nil,
+                            detailsInformation: String? = nil) {
         self.init(storeManager: storeManager)
         self.value = value
         setQuery(.taskIDs([taskID], eventQuery))
@@ -88,11 +88,11 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     public convenience init(task: OCKAnyTask,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                     detailsTitle: String? = nil,
-                     detailsInformation: String? = nil) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                            detailsTitle: String? = nil,
+                            detailsInformation: String? = nil) {
         self.init(storeManager: storeManager)
         self.value = value
         setQuery(.tasks([task], eventQuery))
@@ -114,12 +114,12 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     ///     - action: The action to take when a task is completed.
     public convenience init(taskID: String,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                     detailsTitle: String? = nil,
-                     detailsInformation: String? = nil,
-                     action: ((OCKOutcomeValue?) async -> Void)?) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                            detailsTitle: String? = nil,
+                            detailsInformation: String? = nil,
+                            action: ((OCKOutcomeValue?) async -> Void)?) {
         self.init(storeManager: storeManager)
         self.value = value
         setQuery(.taskIDs([taskID], eventQuery))
@@ -144,12 +144,12 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     ///     - action: The action to take when a task is completed.
     public convenience init(task: OCKAnyTask,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                     detailsTitle: String? = nil,
-                     detailsInformation: String? = nil,
-                     action: ((OCKOutcomeValue?) async -> Void)?) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                            detailsTitle: String? = nil,
+                            detailsInformation: String? = nil,
+                            action: ((OCKOutcomeValue?) async -> Void)?) {
         self.init(storeManager: storeManager)
         self.value = value
         setQuery(.tasks([task], eventQuery))

@@ -1,6 +1,6 @@
 //
 //  DigitalCrownViewFooter.swift
-//  AssuageWatch
+//  CareKitUtilities
 //
 //  Created by Julia Stekardis on 12/1/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
@@ -8,6 +8,7 @@
 
 #if os(watchOS)
 
+import CareKitStore
 import CareKitUI
 import SwiftUI
 
@@ -120,7 +121,8 @@ struct DigitalCrownViewFooter: View {
 struct DigitalCrownViewFooter_Previews: PreviewProvider {
     static var previews: some View {
         DigitalCrownViewFooter(viewModel: .init(taskID: "",
-                                                eventQuery: .init(for: Date())))
+                                                eventQuery: .init(for: Date()),
+                                                storeManager: .init(wrapping: OCKStore(name: ""))))
     }
 }
 

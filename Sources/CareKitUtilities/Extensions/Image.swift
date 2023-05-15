@@ -1,6 +1,6 @@
 //
 //  Image.swift
-//  Assuage
+//  CareKitUtilities
 //
 //  Created by Alyssa Donawa on 2/27/23.
 //  Copyright © 2023 NetReconLab. All rights reserved.

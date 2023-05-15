@@ -1,6 +1,6 @@
 //
 //  DigitalCrownViewModel.swift
-//  AssuageWatch
+//  CareKitUtilities
 //
 //  Created by Julia Stekardis on 10/17/22.
 //  Copyright © 2022 NetReconLab. All rights reserved.
@@ -16,21 +16,21 @@ import SwiftUI
 public class DigitalCrownViewModel: TaskViewModel {
 
     public func getStoplightColor(for value: Double) -> Color {
-        var r: Double
-        var g: Double
-        var b: Double
+        var red: Double
+        var green: Double
+        var blue: Double
 
         switch value {
         case 0...(self.endValue / 2):
-            r = value * self.colorRatio
-            g = 1
-            b = 0
+            red = value * self.colorRatio
+            green = 1
+            blue = 0
         default:
-            r = 1
-            g = abs(value - self.endValue) * self.colorRatio
-            b = 0
+            red = 1
+            green = abs(value - self.endValue) * self.colorRatio
+            blue = 0
         }
-        return Color(red: r, green: g, blue: b)
+        return Color(red: red, green: green, blue: blue)
     }
 
     public var isButtonDisabled: Bool {
@@ -70,14 +70,14 @@ public class DigitalCrownViewModel: TaskViewModel {
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
     public convenience init(taskID: String,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     startValue: Double,
-                     initialValue: Double,
-                     endValue: Double,
-                     incrementValue: Double,
-                     colorRatio: Double,
-                     action: @escaping ((OCKOutcomeValue?) async -> Void)) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            startValue: Double,
+                            initialValue: Double,
+                            endValue: Double,
+                            incrementValue: Double,
+                            colorRatio: Double,
+                            action: @escaping ((OCKOutcomeValue?) async -> Void)) {
         self.init(taskID: taskID,
                   eventQuery: eventQuery,
                   storeManager: storeManager,
@@ -101,14 +101,14 @@ public class DigitalCrownViewModel: TaskViewModel {
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
     public convenience init(task: OCKAnyTask,
-                     eventQuery: OCKEventQuery,
-                     storeManager: OCKSynchronizedStoreManager,
-                     startValue: Double,
-                     initialValue: Double,
-                     endValue: Double,
-                     incrementValue: Double,
-                     colorRatio: Double,
-                     action: @escaping ((OCKOutcomeValue?) async -> Void)) {
+                            eventQuery: OCKEventQuery,
+                            storeManager: OCKSynchronizedStoreManager,
+                            startValue: Double,
+                            initialValue: Double,
+                            endValue: Double,
+                            incrementValue: Double,
+                            colorRatio: Double,
+                            action: @escaping ((OCKOutcomeValue?) async -> Void)) {
         self.init(task: task,
                   eventQuery: eventQuery,
                   storeManager: storeManager,
