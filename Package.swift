@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "CareKitUtilities",
-    platforms: [.iOS(.v14), .macOS(.v12), .watchOS(.v7)],
+    platforms: [.iOS(.v14), .macOS(.v11), .watchOS(.v7)],
     products: [
         .library(
             name: "CareKitUtilities",
@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/cbaker6/CareKit.git",
-                 .upToNextMajor(from: "3.0.0-alpha.21"))
+                 .upToNextMajor(from: "3.0.0-beta.2"))
     ],
     targets: [
         .target(
