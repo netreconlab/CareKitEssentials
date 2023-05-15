@@ -19,7 +19,8 @@ let package = Package(
             name: "CareKitUtilities",
             dependencies: [
                 .product(name: "CareKit", package: "CareKit"),
-                .product(name: "CareKitStore", package: "CareKit")
+                .product(name: "CareKitStore", package: "CareKit"),
+                .product(name: "CareKitUI", package: "CareKit")
             ]),
         .testTarget(
             name: "CareKitUtilitiesTests",
