@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  TintColorKey.swift
 //  
 //
 //  Created by Corey Baker on 5/14/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private struct CareKitUtilitiesTintColorKey: EnvironmentKey {
+private struct TintColorKey: EnvironmentKey {
 
     static var defaultValue: UIColor {
         #if os(iOS) || os(macOS)
@@ -22,8 +22,8 @@ private struct CareKitUtilitiesTintColorKey: EnvironmentKey {
 public extension EnvironmentValues {
 
     var careKitUtilitiesTintColor: UIColor {
-        get { self[CareKitUtilitiesTintColorKey.self] }
-        set { self[CareKitUtilitiesTintColorKey.self] = newValue }
+        get { self[TintColorKey.self] }
+        set { self[TintColorKey.self] = newValue }
     }
 
 }

@@ -33,38 +33,4 @@ extension OCKAnyEvent: Comparable {
         lhs.scheduleEvent.start <= rhs.scheduleEvent.start &&
         lhs.scheduleEvent.end < rhs.scheduleEvent.end
     }
-
-    /// Sort outcome values by descending updated/created date
-    public func sortedOutcomeValuesByRecency() -> OCKAnyEvent {
-        guard
-            var newOutcome = outcome,
-            !newOutcome.values.isEmpty else { return self }
-
-        let sortedValues = newOutcome.values.sorted {
-            $0.createdDate > $1.createdDate
-        }
-
-        newOutcome.values = sortedValues
-        return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
-    }
-
-    public func prependKindToValue() -> OCKAnyEvent {
-        guard
-            var newOutcome = outcome,
-            !newOutcome.values.isEmpty else { return self }
-
-        let prependedValues = newOutcome.values.map { originalValue -> OCKOutcomeValue in
-            if let kind = originalValue.kind,
-               let type = kind.split(separator: ".").last {
-                var newValue = originalValue
-                newValue.value = "\(type): \(newValue.value)"
-                return newValue
-            } else {
-                return originalValue
-            }
-        }
-
-        newOutcome.values = prependedValues
-        return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
-    }
 }

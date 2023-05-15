@@ -23,7 +23,11 @@ import SwiftUI
 public struct CustomLabelView: View {
     @Environment(\.careKitStyle) private var style
     @Environment(\.careKitUtilitiesTintColor) private var tintColor
-    @ObservedObject var viewModel: CustomLabelViewModel
+    var title: Text
+    var instructions: Text?
+    var asset: Image?
+    var detailsTitle: Text?
+    var detailsInformation: Text?
     var isUsingHeader = true
 
     public var body: some View {
@@ -32,39 +36,34 @@ public struct CustomLabelView: View {
                    spacing: style.dimension.directionalInsets1.top) {
 
                 if isUsingHeader {
-                    if let task = viewModel.taskEvents.firstEventTask {
-
-                        if let informationTitle = viewModel.detailsTitle,
-                            let informationDetails = viewModel.detailsInformation {
-                            InformationHeaderView(title: Text(viewModel.taskEvents.firstEventTitle),
-                                                  task: task,
-                                                  detailsTitle: informationTitle,
-                                                  details: informationDetails)
-                        } else if let informationTitle = viewModel.detailsTitle {
-                            InformationHeaderView(title: Text(viewModel.taskEvents.firstEventTitle),
-                                                  task: task,
-                                                  detailsTitle: informationTitle)
-                        } else if let informationDetails = viewModel.detailsInformation {
-                            InformationHeaderView(title: Text(viewModel.taskEvents.firstEventTitle),
-                                                  task: task,
-                                                  details: informationDetails)
-                        } else {
-                            InformationHeaderView(title: Text(viewModel.taskEvents.firstEventTitle),
-                                                  task: task)
-                        }
+                    if let informationTitle = detailsTitle,
+                        let informationDetails = detailsInformation {
+                        InformationHeaderView(title: title,
+                                              task: task,
+                                              detailsTitle: informationTitle,
+                                              details: informationDetails)
+                    } else if let informationTitle = detailsTitle {
+                        InformationHeaderView(title: title,
+                                              task: task,
+                                              detailsTitle: informationTitle)
+                    } else if let informationDetails = detailsInformation {
+                        InformationHeaderView(title: title,
+                                              task: task,
+                                              details: informationDetails)
                     } else {
-                        HeaderView(title: Text(viewModel.taskEvents.firstEventTitle))
+                        InformationHeaderView(title: title,
+                                              task: task)
                     }
                 } else {
-                    Text(viewModel.taskEvents.firstEventTitle)
+                    title
                         .font(.headline)
                         .fontWeight(.bold)
                 }
 
                 Divider()
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
-                    if let asset = viewModel.taskEvents.firstTaskAsset {
-                        Image(uiImage: asset)
+                    if let asset = asset {
+                        asset
                             .resizable()
                             .renderingMode(.template)
                             .frame(width: 25, height: 30)
@@ -72,7 +71,7 @@ public struct CustomLabelView: View {
                     }
                     VStack(alignment: .leading,
                            spacing: style.dimension.directionalInsets2.bottom) {
-                        if let detail = viewModel.taskEvents.firstTaskInstructions {
+                        if let detail = instructions {
                             Text(detail)
                                 .font(.subheadline)
                                 .fontWeight(.medium)
@@ -109,10 +108,13 @@ public struct CustomLabelView: View {
 }
 
 public extension CustomLabelView {
-    /// Create an instance.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter usingHeader: Should inject the header at the top of the card.
-    init(viewModel: CustomLabelViewModel,
+    /**
+     Create an instance.
+     - parameter viewModel: The view model used to populate the view contents.
+     - parameter detailsTitle: Optional title to be shown on CareKit Cards.
+     - parameter usingHeader: Should inject the header at the top of the card.
+     */
+    init(detailsTitle: String,
          usingHeader: Bool = true) {
         self.viewModel = viewModel
         self.isUsingHeader = usingHeader

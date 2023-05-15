@@ -15,35 +15,35 @@ import SwiftUI
  A basic view model that can be subclassed to make more intricate view models for custom
  CareKit cards.
  */
-public class TaskViewModel: OCKTaskController {
+public class TaskViewModel: ObservableObject {
 
     /// The error encountered by the view model.
     @Published public var currentError: Error?
     @Published var value = OCKOutcomeValue(0.0)
+    @Environment(\.careStore) public var store
 
     public var valueText: Text {
         Text(value.description)
     }
 
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
-    private(set) var query: SynchronizedTaskQuery?
+    private(set) var event: OCKAnyEvent
+    // private(set) var query: SynchronizedTaskQuery?
     private(set) var detailsTitle: String?
     private(set) var detailsInformation: String?
 
-    required init(storeManager: OCKSynchronizedStoreManager) {
-        super.init(storeManager: storeManager)
+    init(event: OCKAnyEvent) {
+        self.event = event
         self.action = { value in
             do {
                 guard let value = value else {
                     // No outcome to set
                     return
                 }
-                if self.taskEvents.firstEventOutcomeValues != nil {
-                    _ = try await self.appendOutcomeValue(value: value,
-                                                          at: .init(row: 0, section: 0))
+                if self.event.outcomeValues != nil {
+                    _ = try await self.appendOutcomeValue(value: value)
                 } else {
-                    _ = try await self.saveOutcomesForEvent(atIndexPath: .init(row: 0, section: 0),
-                                                            values: [value])
+                    _ = try await self.saveOutcomesForEvent(values: [value])
                 }
             } catch {
                 self.currentError = error
@@ -64,14 +64,12 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     public convenience init(taskID: String,
                             eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
                             value: OCKOutcomeValue = OCKOutcomeValue(0.0),
                             detailsTitle: String? = nil,
                             detailsInformation: String? = nil) {
-        self.init(storeManager: storeManager)
         self.value = value
-        setQuery(.taskIDs([taskID], eventQuery))
-        self.query?.perform(using: self)
+        // setQuery(.taskIDs([taskID], eventQuery))
+        // self.query?.perform(using: self)
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
     }
@@ -89,14 +87,12 @@ public class TaskViewModel: OCKTaskController {
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     public convenience init(task: OCKAnyTask,
                             eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
                             value: OCKOutcomeValue = OCKOutcomeValue(0.0),
                             detailsTitle: String? = nil,
                             detailsInformation: String? = nil) {
-        self.init(storeManager: storeManager)
         self.value = value
-        setQuery(.tasks([task], eventQuery))
-        self.query?.perform(using: self)
+        // setQuery(.tasks([task], eventQuery))
+        // self.query?.perform(using: self)
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
     }
@@ -115,20 +111,18 @@ public class TaskViewModel: OCKTaskController {
     ///     - action: The action to take when a task is completed.
     public convenience init(taskID: String,
                             eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
                             value: OCKOutcomeValue = OCKOutcomeValue(0.0),
                             detailsTitle: String? = nil,
                             detailsInformation: String? = nil,
                             action: ((OCKOutcomeValue?) async -> Void)?) {
-        self.init(storeManager: storeManager)
         self.value = value
-        setQuery(.taskIDs([taskID], eventQuery))
+        // setQuery(.taskIDs([taskID], eventQuery))
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         if let action = action {
             self.action = action
         }
-        self.query?.perform(using: self)
+        // self.query?.perform(using: self)
     }
 
     /// Create an instance for the default content. The first event that matches the
@@ -145,29 +139,28 @@ public class TaskViewModel: OCKTaskController {
     ///     - action: The action to take when a task is completed.
     public convenience init(task: OCKAnyTask,
                             eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
                             value: OCKOutcomeValue = OCKOutcomeValue(0.0),
                             detailsTitle: String? = nil,
                             detailsInformation: String? = nil,
                             action: ((OCKOutcomeValue?) async -> Void)?) {
-        self.init(storeManager: storeManager)
         self.value = value
-        setQuery(.tasks([task], eventQuery))
+      //  setQuery(.tasks([task], eventQuery))
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         if let action = action {
             self.action = action
         }
-        self.query?.perform(using: self)
+        // self.query?.perform(using: self)
     }
 
+    /*
     func setQuery(_ query: SynchronizedTaskQuery) {
         self.query = query
-    }
+    } */
 
     @MainActor
-    public func checkIfValueShouldUpdate(_ updatedEvents: OCKTaskEvents) {
-        if let changedValue = updatedEvents.firstEventOutcomeValues?.first,
+    public func checkIfValueShouldUpdate(_ updatedEvents: OCKAnyEvent) {
+        if let changedValue = updatedEvents.outcomeValues?.first,
             self.value != changedValue {
             self.value = changedValue
         }
@@ -177,8 +170,20 @@ public class TaskViewModel: OCKTaskController {
     public func setError(_ updatedError: Error?) {
         self.currentError = updatedError
     }
+    
+    /// Make an outcome for an event with the given outcome values.
+    /// - Parameters:
+    ///   - event: The event for which to create the outcome.
+    ///   - values: The outcome values to attach to the outcome.
+    open func makeOutcomeFor(event: OCKAnyEvent, withValues values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
+        guard let task = event.task as? OCKAnyVersionableTask else {
+            throw OCKTaskControllerError.cannotMakeOutcomeFor(event)
+        }
+        return OCKOutcome(taskUUID: task.uuid, taskOccurrenceIndex: event.scheduleEvent.occurrence, values: values)
+    }
 }
 
+/*
 extension TaskViewModel {
     enum SynchronizedTaskQuery {
 
@@ -200,3 +205,4 @@ extension TaskViewModel {
         }
     }
 }
+*/

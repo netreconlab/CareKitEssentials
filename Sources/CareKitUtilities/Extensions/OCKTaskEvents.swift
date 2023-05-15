@@ -15,28 +15,28 @@ import UIKit
 #endif
 
 /// Helper properties and methods for using OCKTaskEvents.
-public extension OCKTaskEvents {
+public extension OCKAnyEvent {
 
     /// The event for this view model.
-    var firstEvent: OCKAnyEvent? {
+    /* var firstEvent: OCKAnyEvent? {
         first?.first
-    }
+    } */
 
     /// The first event task.
     /// - note: If you need `OCKTask` or `OCKHealthKitTask`, you need to cast
     /// this to the respective type.
     var firstEventTask: OCKAnyTask? {
-        firstEvent?.task
+        self.task
     }
 
     /// The first event task title.
     var firstEventTitle: String {
-        firstEventTask?.title ?? ""
+        self.title ?? ""
     }
 
     /// The first event task instructions.
     var firstTaskInstructions: String? {
-        firstEventTask?.instructions
+        self.instructions
     }
 
     /// The first event detail.
@@ -47,7 +47,7 @@ public extension OCKTaskEvents {
     #if canImport(UIKit)
     /// The first event task asset.
     var firstTaskAsset: UIImage? {
-        guard let asset = firstEventTask?.asset else {
+        guard let asset = self..asset else {
             return nil
         }
         return UIImage.asset(asset)

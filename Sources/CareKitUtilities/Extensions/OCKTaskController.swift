@@ -5,26 +5,12 @@
 //  Created by Corey Baker on 12/4/22.
 //  Copyright © 2022 Network Reconnaissance Lab. All rights reserved.
 //
-/*
+
 import CareKit
 import CareKitStore
 import Foundation
 
-public extension OCKTaskController {
-
-    func validatedViewModel() throws -> OCKTaskEvents {
-        guard !taskEvents.isEmpty else {
-            throw CareKitUtilitiesError.errorString("Empty task events")
-        }
-        return taskEvents
-    }
-
-    func validatedEvent(forIndexPath indexPath: IndexPath) throws -> OCKAnyEvent {
-        guard let event = eventFor(indexPath: indexPath) else {
-            throw CareKitUtilitiesError.errorString("Invalid index path: \(indexPath)")
-        }
-        return event
-    }
+public extension TaskViewModel {
 
     /// Append an outcome value to an event's outcome.
     /// - Parameters:
@@ -33,11 +19,9 @@ public extension OCKTaskController {
     /// - Returns: The saved outcome value.
     /// - Throws: An error if the outcome value can't be saved.
     func appendOutcomeValue(
-        value: OCKOutcomeValueUnderlyingType,
-        at indexPath: IndexPath) async throws -> OCKAnyOutcome {
+        value: OCKOutcomeValueUnderlyingType) async throws -> OCKAnyOutcome {
             try await withCheckedThrowingContinuation { continuation in
                 self.appendOutcomeValue(value: value,
-                                        at: indexPath,
                                         completion: continuation.resume)
             }
     }
@@ -48,21 +32,15 @@ public extension OCKTaskController {
     ///   - indexPath: Index path of the event to which the outcome will be added.
     /// - Returns: The saved outcome value.
     /// - Throws: An error if the outcome value can't be saved.
-    func appendOutcomeValue(
-        value: OCKOutcomeValue,
-        at indexPath: IndexPath) async throws -> OCKAnyOutcome {
-
-        let event: OCKAnyEvent
-        _ = try validatedViewModel()
-        event = try validatedEvent(forIndexPath: indexPath)
+    func appendOutcomeValue(value: OCKOutcomeValue) async throws -> OCKAnyOutcome {
 
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
             let outcome = try makeOutcomeFor(event: event, withValues: [value])
-            return try await storeManager.store.addAnyOutcome(outcome)
+            return try await store.addAnyOutcome(outcome)
         }
         outcome.values.append(value)
-        return try await storeManager.store.updateAnyOutcome(outcome)
+        return try await store.updateAnyOutcome(outcome)
     }
 
     /// Set the completion state for an event.
@@ -71,11 +49,9 @@ public extension OCKTaskController {
     ///   - values: Array of OCKOutcomeValue
     /// - Returns: The updated outcome.
     /// - Throws: An error if the outcome value can't be set.
-    func setEvent(atIndexPath indexPath: IndexPath,
-                  values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
+    func setEvent(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
         try await withCheckedThrowingContinuation { continuation in
-            self.setEvent(atIndexPath: indexPath,
-                          values: values,
+            self.setEvent(values: values,
                           completion: continuation.resume)
         }
     }
@@ -86,9 +62,8 @@ public extension OCKTaskController {
     ///   - values: Array of `OCKOutcomeValue`
     /// - Returns: The saved outcome.
     /// - Throws: An error if the outcome value can't be saved.
-    func saveOutcomesForEvent(atIndexPath indexPath: IndexPath,
-                              values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
-        try await setEvent(atIndexPath: indexPath, values: values)
+    func saveOutcomesForEvent(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
+        try await setEvent(event, values: values, store: store)
     }
 }
-*/
+
