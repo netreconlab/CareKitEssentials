@@ -35,7 +35,7 @@ jobs:
     - name: Use multiple cores
       run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
     - name: Build-Test
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -workspace CareKitUtilities.xcworkspace -scheme CareKitUtilities -derivedDataPath DerivedData -destination ${{ matrix.destination }} ${{ matrix.action }} | xcpretty -c
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme CareKitUtilities -derivedDataPath DerivedData -destination ${{ matrix.destination }} ${{ matrix.action }} | xcpretty -c
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
     - name: Prepare codecov
