@@ -23,11 +23,7 @@ import SwiftUI
 public struct CustomLabelView: View {
     @Environment(\.careKitStyle) private var style
     @Environment(\.careKitUtilitiesTintColor) private var tintColor
-    var title: Text
-    var instructions: Text?
-    var asset: Image?
-    var detailsTitle: Text?
-    var detailsInformation: Text?
+    @ObservedObject var viewModel: CardViewModel
     var isUsingHeader = true
 
     public var body: some View {
@@ -36,34 +32,34 @@ public struct CustomLabelView: View {
                    spacing: style.dimension.directionalInsets1.top) {
 
                 if isUsingHeader {
-                    if let informationTitle = detailsTitle,
-                        let informationDetails = detailsInformation {
-                        InformationHeaderView(title: title,
-                                              task: task,
+                    if let informationTitle = viewModel.detailsTitle,
+                        let informationDetails = viewModel.detailsInformation {
+                        InformationHeaderView(title: Text(viewModel.event.title),
+                                              task: viewModel.event.task,
                                               detailsTitle: informationTitle,
                                               details: informationDetails)
-                    } else if let informationTitle = detailsTitle {
-                        InformationHeaderView(title: title,
-                                              task: task,
+                    } else if let informationTitle = viewModel.detailsTitle {
+                        InformationHeaderView(title: Text(viewModel.event.title),
+                                              task: viewModel.event.task,
                                               detailsTitle: informationTitle)
-                    } else if let informationDetails = detailsInformation {
-                        InformationHeaderView(title: title,
-                                              task: task,
+                    } else if let informationDetails = viewModel.detailsInformation {
+                        InformationHeaderView(title: Text(viewModel.event.title),
+                                              task: viewModel.event.task,
                                               details: informationDetails)
                     } else {
-                        InformationHeaderView(title: title,
-                                              task: task)
+                        InformationHeaderView(title: Text(viewModel.event.title),
+                                              task: viewModel.event.task)
                     }
                 } else {
-                    title
+                    Text(viewModel.event.title)
                         .font(.headline)
                         .fontWeight(.bold)
                 }
 
                 Divider()
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
-                    if let asset = asset {
-                        asset
+                    if let asset = viewModel.event.asset {
+                        Image(uiImage: asset)
                             .resizable()
                             .renderingMode(.template)
                             .frame(width: 25, height: 30)
@@ -71,7 +67,7 @@ public struct CustomLabelView: View {
                     }
                     VStack(alignment: .leading,
                            spacing: style.dimension.directionalInsets2.bottom) {
-                        if let detail = instructions {
+                        if let detail = viewModel.event.instructions {
                             Text(detail)
                                 .font(.subheadline)
                                 .fontWeight(.medium)
@@ -88,33 +84,14 @@ public struct CustomLabelView: View {
             .padding()
         }
         .padding(.vertical)
-        .onReceive(viewModel.$taskEvents) { _ in
-            /*
-             Need help from view to update value since taskEvents
-             can't be overriden in viewModel.
-             */
-            Task {
-                await viewModel.extractValue()
-            }
-        }
-        .onReceive(viewModel.$error) { error in
-            /*
-             Need help from view to update value since error
-             can't be overriden in viewModel.
-             */
-            viewModel.setError(error)
-        }
     }
 }
 
 public extension CustomLabelView {
-    /**
-     Create an instance.
-     - parameter viewModel: The view model used to populate the view contents.
-     - parameter detailsTitle: Optional title to be shown on CareKit Cards.
-     - parameter usingHeader: Should inject the header at the top of the card.
-     */
-    init(detailsTitle: String,
+    /// Create an instance.
+    /// - Parameter viewModel: The view model used to populate the view contents.
+    /// - Parameter usingHeader: Should inject the header at the top of the card.
+    init(viewModel: CardViewModel,
          usingHeader: Bool = true) {
         self.viewModel = viewModel
         self.isUsingHeader = usingHeader

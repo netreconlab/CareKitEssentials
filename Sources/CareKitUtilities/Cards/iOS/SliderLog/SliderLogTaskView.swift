@@ -14,7 +14,8 @@ import SwiftUI
 
 /// A card that displays a header view, multi-line label, a slider, and a completion button.
 ///
-/// In CareKit, this view is intended to display a particular event for a task. The state of the button indicates the completion state of the event.
+/// In CareKit, this view is intended to display a particular event for a task.
+/// The state of the button indicates the completion state of the event.
 ///
 /// # Style
 /// The card supports styling using `careKitStyle(_:)`.
@@ -41,9 +42,9 @@ import SwiftUI
 ///     +-------------------------------------------------------+
 /// ```
 public struct SliderLogTaskView<Header: View, Slider: View>: View {
-    
+
     // MARK: - Properties
-    
+
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
 
@@ -52,27 +53,27 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     private let header: Header
     private let slider: Slider
     private let instructions: Text?
-    
+
     public var body: some View {
         CardView {
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
                 VStack { header }
                     .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
-                
+
                 instructions?
                     .font(.subheadline)
                     .fontWeight(.medium)
                     .lineLimit(nil)
                     .if(isCardEnabled) { $0.padding([.horizontal]) }
-                
+
                 VStack { slider }
                     .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .bottom]) }
             }
         }
     }
-    
+
     // MARK: - Init
-    
+
     private init(isHeaderPadded: Bool, isSliderPadded: Bool,
                  instructions: Text?, @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
         self.isHeaderPadded = isHeaderPadded
@@ -81,18 +82,24 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
         self.header = header()
         self.slider = slider()
     }
-    
+
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     /// - Parameter sliderView: View to inject under the header. Specified content will be stacked vertically.
-    public init(instructions: Text? = nil, @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
-        self.init(isHeaderPadded: false, isSliderPadded: false, instructions: instructions, header: header, slider: slider)
+    public init(instructions: Text? = nil,
+                @ViewBuilder header: () -> Header,
+                @ViewBuilder slider: () -> Slider) {
+        self.init(isHeaderPadded: false,
+                  isSliderPadded: false,
+                  instructions: instructions,
+                  header: header,
+                  slider: slider)
     }
 }
 
 public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader {
-    
+
     /// Create an instance.
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
@@ -106,7 +113,7 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader {
 }
 
 public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
-    
+
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter valuesArray: The binded array of all outcome values
@@ -118,7 +125,11 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
     /// - Parameter sliderStyle: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider. Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a scale from bad to good.
+    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider. Colors
+    /// are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in
+    /// the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient
+    /// being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a
+    /// scale from bad to good.
     /// - Parameter action: Action to perform when the button is tapped.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
@@ -145,7 +156,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
 }
 
 public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Slider == _SliderLogTaskViewSlider {
-    
+
     /// Create an instance.
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
@@ -159,7 +170,11 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Sli
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
     /// - Parameter sliderStyle: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider. Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a scale from bad to good.
+    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider.
+    /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
+    /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
+    /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
+    /// indicate a scale from bad to good.
     /// - Parameter action: Action to perform when the button is tapped.
     init(title: Text, detail: Text? = nil, instructions: Text? = nil,
          valuesArray: Binding<[Double]>, value: Binding<Double>, range: ClosedRange<Double>, step: Double = 1,
@@ -185,8 +200,8 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Sli
     }
 }
 
-/// The default header used by a `SliderTaskView`.
-public struct _SliderLogTaskViewHeader: View {
+/// The default header used by a `SliderTaskView
+public struct _SliderLogTaskViewHeader: View { // swiftlint:disable:this type_name
 
     @Environment(\.careKitStyle) private var style
 
@@ -202,8 +217,8 @@ public struct _SliderLogTaskViewHeader: View {
 }
 
 /// The default slider view used by an `SliderTaskView`.
-public struct _SliderLogTaskViewSlider: View {
-    
+public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_name
+
     @State var isActive: Bool = false
     @Binding var value: Double
     @Binding var valuesArray: [Double]
@@ -217,9 +232,11 @@ public struct _SliderLogTaskViewSlider: View {
     fileprivate let sliderStyle: SliderStyle
     fileprivate let gradientColors: [Color]?
     fileprivate let action: (_ value: Double) -> Void
-    
-    
-    init(valuesArray: Binding<[Double]>, value: Binding<Double>, range: ClosedRange<Double>, step: Double,
+
+    init(valuesArray: Binding<[Double]>,
+         value: Binding<Double>,
+         range: ClosedRange<Double>,
+         step: Double,
          minimumImage: Image?, maximumImage: Image?,
          minimumDescription: String?, maximumDescription: String?,
          sliderStyle: SliderStyle,
@@ -238,14 +255,14 @@ public struct _SliderLogTaskViewSlider: View {
         _value = value
         _valuesArray = valuesArray
     }
-    
+
     public var body: some View {
         VStack {
             Slider(value: $value, isActive: $isActive, range: range, step: step,
                    minimumImage: minimumImage, maximumImage: maximumImage,
                    minimumDescription: minimumDescription, maximumDescription: maximumDescription,
                    sliderStyle: sliderStyle, gradientColors: gradientColors)
-            
+
             SliderLogButton(isActive: $isActive, valuesArray: $valuesArray, value: $value, action: action)
         }
         .onAppear {

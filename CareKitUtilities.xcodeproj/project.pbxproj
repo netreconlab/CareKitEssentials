@@ -15,19 +15,18 @@
 		70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */; };
 		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
 		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
+		911BDB2C2A12F0D3004F8442 /* CareKitUtilitiesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */; };
 		91F46E152A11C1A2002EBDDD /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E142A11C1A2002EBDDD /* CareKit */; };
 		91F46E172A11C1A2002EBDDD /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E162A11C1A2002EBDDD /* CareKitStore */; };
 		91F46E192A11C1A2002EBDDD /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E182A11C1A2002EBDDD /* CareKitUI */; };
 		OBJ_740 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CustomLabelView.swift */; };
-		OBJ_741 /* CustomLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* CustomLabelViewModel.swift */; };
 		OBJ_742 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DetailsView.swift */; };
 		OBJ_743 /* DigitalCrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DigitalCrownView.swift */; };
 		OBJ_744 /* DigitalCrownViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* DigitalCrownViewFooter.swift */; };
 		OBJ_745 /* DigitalCrownViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DigitalCrownViewHeader.swift */; };
 		OBJ_746 /* DigitalCrownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DigitalCrownViewModel.swift */; };
 		OBJ_749 /* InformationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* InformationHeaderView.swift */; };
-		OBJ_750 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* TaskViewModel.swift */; };
-		OBJ_751 /* CareKitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* CareKitUtilities.swift */; };
+		OBJ_750 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* CardViewModel.swift */; };
 		OBJ_752 /* Calendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Calendar+Dates.swift */; };
 		OBJ_753 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Image.swift */; };
 		OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */; };
@@ -38,9 +37,6 @@
 		OBJ_759 /* OCKOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* OCKOutcome.swift */; };
 		OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* OCKOutcomeValue+Identifiable.swift */; };
 		OBJ_761 /* TintColorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* TintColorKey.swift */; };
-		OBJ_762 /* OCKSynchronizedStoreManager+Publishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* OCKSynchronizedStoreManager+Publishers.swift */; };
-		OBJ_763 /* OCKTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* OCKTaskController.swift */; };
-		OBJ_764 /* OCKTaskEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* OCKTaskEvents.swift */; };
 		OBJ_765 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UIImage.swift */; };
 		OBJ_766 /* OSValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* OSValue.swift */; };
 		OBJ_767 /* ScheduleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ScheduleUtility.swift */; };
@@ -68,16 +64,15 @@
 		911BDB252A11C437004F8442 /* View+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Default.swift"; sourceTree = "<group>"; };
 		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		911BDB2A2A11CD5A004F8442 /* CareKitUtilities.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitUtilities.xctestplan; sourceTree = "<group>"; };
+		911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareKitUtilitiesError.swift; sourceTree = "<group>"; };
 		OBJ_11 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
-		OBJ_12 /* CustomLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelViewModel.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		OBJ_15 /* DigitalCrownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownView.swift; sourceTree = "<group>"; };
 		OBJ_16 /* DigitalCrownViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewFooter.swift; sourceTree = "<group>"; };
 		OBJ_17 /* DigitalCrownViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewHeader.swift; sourceTree = "<group>"; };
 		OBJ_18 /* DigitalCrownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewModel.swift; sourceTree = "<group>"; };
 		OBJ_22 /* InformationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationHeaderView.swift; sourceTree = "<group>"; };
-		OBJ_23 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
-		OBJ_24 /* CareKitUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitUtilities.swift; sourceTree = "<group>"; };
+		OBJ_23 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		OBJ_26 /* Calendar+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Dates.swift"; sourceTree = "<group>"; };
 		OBJ_27 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+CustomStringConvertable.swift"; sourceTree = "<group>"; };
@@ -88,9 +83,6 @@
 		OBJ_33 /* OCKOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcome.swift; sourceTree = "<group>"; };
 		OBJ_34 /* OCKOutcomeValue+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Identifiable.swift"; sourceTree = "<group>"; };
 		OBJ_35 /* TintColorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColorKey.swift; sourceTree = "<group>"; };
-		OBJ_36 /* OCKSynchronizedStoreManager+Publishers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSynchronizedStoreManager+Publishers.swift"; sourceTree = "<group>"; };
-		OBJ_37 /* OCKTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskController.swift; sourceTree = "<group>"; };
-		OBJ_38 /* OCKTaskEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskEvents.swift; sourceTree = "<group>"; };
 		OBJ_39 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		OBJ_41 /* OSValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSValue.swift; sourceTree = "<group>"; };
 		OBJ_42 /* ScheduleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUtility.swift; sourceTree = "<group>"; };
@@ -136,7 +128,7 @@
 		70BBCB4A2A12BA3600759A9C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* CustomLabel */,
+				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
 			);
@@ -170,15 +162,6 @@
 			path = SliderLog;
 			sourceTree = "<group>";
 		};
-		OBJ_10 /* CustomLabel */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* CustomLabelView.swift */,
-				OBJ_12 /* CustomLabelViewModel.swift */,
-			);
-			path = CustomLabel;
-			sourceTree = "<group>";
-		};
 		OBJ_14 /* DigitalCrown */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,9 +186,6 @@
 				OBJ_32 /* OCKEventAggregator.swift */,
 				OBJ_33 /* OCKOutcome.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
-				OBJ_36 /* OCKSynchronizedStoreManager+Publishers.swift */,
-				OBJ_37 /* OCKTaskController.swift */,
-				OBJ_38 /* OCKTaskEvents.swift */,
 				OBJ_39 /* UIImage.swift */,
 				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
 				911BDB252A11C437004F8442 /* View+Default.swift */,
@@ -216,6 +196,7 @@
 		OBJ_40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */,
 				OBJ_41 /* OSValue.swift */,
 				OBJ_42 /* ScheduleUtility.swift */,
 			);
@@ -272,7 +253,6 @@
 		OBJ_8 /* CareKitUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* CareKitUtilities.swift */,
 				OBJ_9 /* Cards */,
 				70BBCB452A12B8B000759A9C /* Environment */,
 				OBJ_25 /* Extensions */,
@@ -288,7 +268,7 @@
 				70BBCB4A2A12BA3600759A9C /* Shared */,
 				70BBCB4B2A12BA4600759A9C /* iOS */,
 				70BBCB4C2A12BA4E00759A9C /* watchOS */,
-				OBJ_23 /* TaskViewModel.swift */,
+				OBJ_23 /* CardViewModel.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -396,7 +376,6 @@
 				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
-				OBJ_741 /* CustomLabelViewModel.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
 				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
@@ -404,8 +383,7 @@
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
-				OBJ_750 /* TaskViewModel.swift in Sources */,
-				OBJ_751 /* CareKitUtilities.swift in Sources */,
+				OBJ_750 /* CardViewModel.swift in Sources */,
 				OBJ_752 /* Calendar+Dates.swift in Sources */,
 				OBJ_753 /* Image.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
@@ -418,12 +396,10 @@
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				OBJ_761 /* TintColorKey.swift in Sources */,
-				OBJ_762 /* OCKSynchronizedStoreManager+Publishers.swift in Sources */,
-				OBJ_763 /* OCKTaskController.swift in Sources */,
-				OBJ_764 /* OCKTaskEvents.swift in Sources */,
 				OBJ_765 /* UIImage.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */,
+				911BDB2C2A12F0D3004F8442 /* CareKitUtilitiesError.swift in Sources */,
 				OBJ_766 /* OSValue.swift in Sources */,
 				OBJ_767 /* ScheduleUtility.swift in Sources */,
 			);

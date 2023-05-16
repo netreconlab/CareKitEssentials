@@ -38,7 +38,7 @@ public extension OCKAnyEvent {
 
     #if canImport(UIKit)
     /// The first event task asset.
-    var taskAsset: UIImage? {
+    var asset: UIImage? {
         guard let asset = self.task.asset else {
             return nil
         }
@@ -95,7 +95,7 @@ public extension OCKAnyEvent {
     var outcomeValueData: Data? {
         outcomeFirstValue?.dataValue
     }
-    
+
     /**
      Get the answer for a specific kind of `OCKOutcomeValue`.
      - parameter kind: The kind of value.

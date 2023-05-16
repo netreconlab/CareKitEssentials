@@ -8,7 +8,7 @@
 import CareKitStore
 import Foundation
 
-public extension OCKEventAggregator {
+public extension CareTaskProgressStrategy {
 
     static func aggregatorMean(_ kind: String? = nil) -> OCKEventAggregator {
         guard let kind = kind else {

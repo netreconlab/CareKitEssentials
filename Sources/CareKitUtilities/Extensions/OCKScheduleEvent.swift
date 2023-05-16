@@ -5,7 +5,6 @@
 //  Created by Corey Baker on 5/15/23.
 //
 
-
 import CareKitStore
 
 extension OCKScheduleEvent: Comparable {

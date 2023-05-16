@@ -13,7 +13,7 @@ import Foundation
 import os.log
 import SwiftUI
 
-public class DigitalCrownViewModel: TaskViewModel {
+public class DigitalCrownViewModel: CardViewModel {
 
     public func getStoplightColor(for value: Double) -> Color {
         var red: Double
@@ -34,7 +34,7 @@ public class DigitalCrownViewModel: TaskViewModel {
     }
 
     public var isButtonDisabled: Bool {
-        value == taskEvents.firstEventOutcomeFirstValue
+        value == event.outcomeFirstValue
     }
 
     public var valueAsDouble: Double {
@@ -69,49 +69,14 @@ public class DigitalCrownViewModel: TaskViewModel {
     ///     - endValue: The maximum possible value.
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
-    public convenience init(taskID: String,
-                            eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
+    public convenience init(event: OCKAnyEvent,
                             startValue: Double,
                             initialValue: Double,
                             endValue: Double,
                             incrementValue: Double,
                             colorRatio: Double,
                             action: @escaping ((OCKOutcomeValue?) async -> Void)) {
-        self.init(taskID: taskID,
-                  eventQuery: eventQuery,
-                  storeManager: storeManager,
-                  action: action)
-        self.value = OCKOutcomeValue(initialValue)
-        self.startValue = startValue
-        self.endValue = endValue
-        self.incrementValue = incrementValue
-        self.colorRatio = colorRatio
-    }
-
-    /// Create an instance for the default content. The first event that matches the
-    /// provided query will be fetched from the the store and
-    /// published to the view. The view will update when changes occur in the store.
-    /// - Parameters:
-    ///     - task: The task associated with the event to fetch.
-    ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - emojis: An array of emoji's to show on the screen.
-    ///     - startValue: The minimum possible value.
-    ///     - endValue: The maximum possible value.
-    ///     - incrementValue: The step amount.
-    ///     - action: The action to perform when the log button is tapped.
-    public convenience init(task: OCKAnyTask,
-                            eventQuery: OCKEventQuery,
-                            storeManager: OCKSynchronizedStoreManager,
-                            startValue: Double,
-                            initialValue: Double,
-                            endValue: Double,
-                            incrementValue: Double,
-                            colorRatio: Double,
-                            action: @escaping ((OCKOutcomeValue?) async -> Void)) {
-        self.init(task: task,
-                  eventQuery: eventQuery,
-                  storeManager: storeManager,
+        self.init(event: event,
                   action: action)
         self.value = OCKOutcomeValue(initialValue)
         self.startValue = startValue
