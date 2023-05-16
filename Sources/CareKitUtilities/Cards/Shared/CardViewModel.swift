@@ -43,7 +43,7 @@ public class CardViewModel: ObservableObject {
                 if self.event.outcomeValues != nil {
                     _ = try await self.appendOutcomeValue(value: value)
                 } else {
-                    _ = try await self.saveOutcomesForEvent(values: [value])
+                    _ = try await self.saveOutcome(values: [value])
                 }
             } catch {
                 self.error = error
@@ -55,9 +55,7 @@ public class CardViewModel: ObservableObject {
     /// provided query will be fetched from the the store and
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
-    ///     - taskID: The ID of the task to fetch.
-    ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - storeManager: Wraps the store that contains the event to fetch.
+    ///     - event: The respective event.
     ///     - value: The default outcome value for the view model. Defaults to
     ///     0.0.
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
@@ -76,9 +74,7 @@ public class CardViewModel: ObservableObject {
     /// provided query will be fetched from the the store and
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
-    ///     - taskID: The ID of the task to fetch.
     ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - storeManager: Wraps the store that contains the event to fetch.
     ///     - value: The default outcome value for the view model. Defaults to
     ///     0.0.
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
@@ -108,7 +104,7 @@ public class CardViewModel: ObservableObject {
 
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
-            let outcome = try makeOutcomeFor(event: event, withValues: [value])
+            let outcome = try makeOutcomeWith([value])
             return try await store.addAnyOutcome(outcome)
         }
         outcome.values.append(value)
@@ -117,7 +113,6 @@ public class CardViewModel: ObservableObject {
 
     /// Set the completion state for an event.
     /// - Parameters:
-    ///   - indexPath: Index path of the event.
     ///   - values: Array of OCKOutcomeValue
     /// - Returns: The updated outcome.
     /// - Throws: An error if the outcome value can't be set.
@@ -130,7 +125,6 @@ public class CardViewModel: ObservableObject {
 
     /// Set the completion state for an event.
     /// - Parameters:
-    ///   - indexPath: Index path of the event.
     ///   - values: Array of OCKOutcomeValue
     ///   - completion: Result after setting the completion for the event.
     open func setEvent(values: [OCKOutcomeValue],
@@ -139,7 +133,7 @@ public class CardViewModel: ObservableObject {
         // If the event is complete, create an outcome with a `true` value
         if !values.isEmpty {
             do {
-                let outcome = try makeOutcomeFor(event: event, withValues: values)
+                let outcome = try makeOutcomeWith(values)
                 store.addAnyOutcome(outcome) { result in
                     switch result {
                     case .failure(let error): completion?(.failure(error))
@@ -164,19 +158,17 @@ public class CardViewModel: ObservableObject {
 
     /// Save the outcome for a particular event.
     /// - Parameters:
-    ///   - indexPath: Index path of the event.
     ///   - values: Array of `OCKOutcomeValue`
     /// - Returns: The saved outcome.
     /// - Throws: An error if the outcome value can't be saved.
-    open func saveOutcomesForEvent(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
+    open func saveOutcome(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
         try await setEvent(values: values)
     }
 
     /// Make an outcome for an event with the given outcome values.
     /// - Parameters:
-    ///   - event: The event for which to create the outcome.
     ///   - values: The outcome values to attach to the outcome.
-    open func makeOutcomeFor(event: OCKAnyEvent, withValues values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
+    open func makeOutcomeWith(_ values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
         guard let task = event.task as? OCKAnyVersionableTask else {
             throw CareKitUtilitiesError.errorString("Cannot make outcome for event: \(event)")
         }

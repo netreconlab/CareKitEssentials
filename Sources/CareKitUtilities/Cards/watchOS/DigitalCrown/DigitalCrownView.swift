@@ -66,18 +66,18 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader {
     /// Create an instance.
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
-    /// - Parameter task: The task to display details for when the info button is tapped.
+    /// - Parameter event: The event to display details for when the info button is tapped.
     /// - Parameter footer: View to inject under the instructions. Specified content will be stacked vertically.
     init(title: Text,
          detail: Text? = nil,
-         task: OCKAnyTask? = nil,
+         event: OCKAnyEvent? = nil,
          @ViewBuilder footer: () -> Footer) {
         self.init(
             isHeaderPadded: true,
             isFooterPadded: false,
             header: { DigitalCrownViewHeader(title: title,
                                              detail: detail,
-                                             task: task)
+                                             event: event)
             },
             footer: footer)
     }
@@ -107,21 +107,20 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
                   isFooterPadded: true,
                   header: { DigitalCrownViewHeader(title: title,
                                                    detail: detail,
-                                                   task: viewModel.event.task) },
+                                                   event: viewModel.event) },
                   footer: { DigitalCrownViewFooter(viewModel: viewModel) })
     }
 }
 
 struct DigitalCrownView_Previews: PreviewProvider {
+    static let task = Utility.createNauseaTask()
     static var previews: some View {
-        DigitalCrownView(title: Text("Title"),
-                         detail: Text("Details"),
-                         task: Utility.createNaseaTask(),
-                         footer: EmptyView())
-        .environment(\.careStore,
-                      OCKStore(name: "noStore",
-                               type: .inMemory))
-                                                                                    
+        if let event = try? Utility.createNauseaEvent() {
+            DigitalCrownView(title: Text(task.title!),
+                             detail: Text(task.instructions!),
+                             viewModel: .init(event: event))
+                .environment(\.careStore, Utility.createPreviewStore())
+        }
     }
 }
 

@@ -5,10 +5,11 @@
 //  Created by Corey Baker on 5/15/23.
 //
 
+import Foundation
 import CareKitStore
 
 extension OCKStore {
-    
+
     func addTasksIfNotPresent(_ tasks: [OCKTask]) async throws {
         let taskIdsToAdd = tasks.compactMap { $0.id }
 
@@ -28,12 +29,7 @@ extension OCKStore {
 
         // Only add if there's a new task
         if tasksNotInStore.count > 0 {
-            do {
-                _ = try await addTasks(tasksNotInStore)
-                Logger.ockStore.info("Added tasks into OCKStore!")
-            } catch {
-                Logger.ockStore.error("Error adding tasks: \(error)")
-            }
+            _ = try? await addTasks(tasksNotInStore)
         }
     }
 
@@ -41,6 +37,7 @@ extension OCKStore {
 
         let thisMorning = Calendar.current.startOfDay(for: Date())
         let aFewDaysAgo = Calendar.current.date(byAdding: .day, value: -4, to: thisMorning)!
+        let beforeBreakfast = Calendar.current.date(byAdding: .hour, value: 8, to: aFewDaysAgo)!
         let afterLunch = Calendar.current.date(byAdding: .hour, value: 14, to: aFewDaysAgo)!
 
         let schedule = OCKSchedule(composing: [
@@ -57,7 +54,7 @@ extension OCKStore {
         doxylamine.instructions = "Take 25mg of doxylamine when you experience nausea."
         doxylamine.asset = "pills.fill"
 
-        let naseau = Utility.createNaseaTask()
+        let nausea = Utility.createNauseaTask()
 
         let kegelElement = OCKScheduleElement(start: beforeBreakfast,
                                               end: nil,

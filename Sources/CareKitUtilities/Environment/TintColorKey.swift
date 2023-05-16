@@ -4,7 +4,7 @@
 //
 //  Created by Corey Baker on 5/14/23.
 //
-
+/*
 import SwiftUI
 
 private struct TintColorKey: EnvironmentKey {
@@ -36,3 +36,4 @@ public extension View {
         return self.environment(\.careKitUtilitiesTintColor, tintColor)
     }
 }
+*/

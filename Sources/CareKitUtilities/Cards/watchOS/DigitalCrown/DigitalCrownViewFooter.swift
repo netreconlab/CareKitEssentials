@@ -106,7 +106,10 @@ struct DigitalCrownViewFooter: View {
 
 struct DigitalCrownViewFooter_Previews: PreviewProvider {
     static var previews: some View {
-        DigitalCrownViewFooter(sizeCategory: <#T##arg#>, viewModel: <#T##DigitalCrownViewModel#>, padding: <#T##arg#>, font: <#T##arg#>)
+        if let event = try? Utility.createNauseaEvent() {
+            DigitalCrownViewFooter(viewModel: .init(event: event))
+                .environment(\.careStore, Utility.createPreviewStore())
+        }
     }
 }
 

@@ -22,7 +22,7 @@ import SwiftUI
 /// ```
 public struct CustomLabelView: View {
     @Environment(\.careKitStyle) private var style
-    @Environment(\.careKitUtilitiesTintColor) private var tintColor
+    // @Environment(\.careKitUtilitiesTintColor) private var tintColor
     @ObservedObject var viewModel: CardViewModel
     var isUsingHeader = true
 
@@ -35,20 +35,20 @@ public struct CustomLabelView: View {
                     if let informationTitle = viewModel.detailsTitle,
                         let informationDetails = viewModel.detailsInformation {
                         InformationHeaderView(title: Text(viewModel.event.title),
-                                              task: viewModel.event.task,
+                                              event: viewModel.event,
                                               detailsTitle: informationTitle,
                                               details: informationDetails)
                     } else if let informationTitle = viewModel.detailsTitle {
                         InformationHeaderView(title: Text(viewModel.event.title),
-                                              task: viewModel.event.task,
+                                              event: viewModel.event,
                                               detailsTitle: informationTitle)
                     } else if let informationDetails = viewModel.detailsInformation {
                         InformationHeaderView(title: Text(viewModel.event.title),
-                                              task: viewModel.event.task,
+                                              event: viewModel.event,
                                               details: informationDetails)
                     } else {
                         InformationHeaderView(title: Text(viewModel.event.title),
-                                              task: viewModel.event.task)
+                                              event: viewModel.event)
                     }
                 } else {
                     Text(viewModel.event.title)
@@ -63,7 +63,7 @@ public struct CustomLabelView: View {
                             .resizable()
                             .renderingMode(.template)
                             .frame(width: 25, height: 30)
-                            .foregroundColor(Color(tintColor))
+                            .foregroundColor(Color.accentColor)
                     }
                     VStack(alignment: .leading,
                            spacing: style.dimension.directionalInsets2.bottom) {
@@ -78,7 +78,7 @@ public struct CustomLabelView: View {
                     viewModel.valueText
                         .font(.title)
                         .bold()
-                        .foregroundColor(Color(tintColor))
+                        .foregroundColor(Color.accentColor)
                 }
             }
             .padding()
