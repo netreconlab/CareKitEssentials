@@ -68,20 +68,6 @@ public struct DigitalCrownViewFooter: View {
             .buttonStyle(NoHighlightStyle())
             .disabled(viewModel.isButtonDisabled)
         }
-        .onReceive(viewModel.$taskEvents) { taskEvents in
-            /*
-             Need help from view to update value since taskEvents
-             can't be overriden in viewModel.
-             */
-            viewModel.checkIfValueShouldUpdate(taskEvents)
-        }
-        .onReceive(viewModel.$error) { error in
-            /*
-             Need help from view to update value since error
-             can't be overriden in viewModel.
-             */
-            viewModel.setError(error)
-        }
     }
 }
 
@@ -120,9 +106,7 @@ struct DigitalCrownViewFooter: View {
 
 struct DigitalCrownViewFooter_Previews: PreviewProvider {
     static var previews: some View {
-        DigitalCrownViewFooter(viewModel: .init(taskID: "",
-                                                eventQuery: .init(for: Date()),
-                                                storeManager: .init(wrapping: OCKStore(name: ""))))
+        DigitalCrownViewFooter(sizeCategory: <#T##arg#>, viewModel: <#T##DigitalCrownViewModel#>, padding: <#T##arg#>, font: <#T##arg#>)
     }
 }
 

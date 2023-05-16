@@ -16,6 +16,8 @@
 		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
 		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
 		911BDB2C2A12F0D3004F8442 /* CareKitUtilitiesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */; };
+		911BDB322A130A2B004F8442 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB312A130A2B004F8442 /* Utility.swift */; };
+		911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB332A130AF9004F8442 /* OCKStore.swift */; };
 		91F46E152A11C1A2002EBDDD /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E142A11C1A2002EBDDD /* CareKit */; };
 		91F46E172A11C1A2002EBDDD /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E162A11C1A2002EBDDD /* CareKitStore */; };
 		91F46E192A11C1A2002EBDDD /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E182A11C1A2002EBDDD /* CareKitUI */; };
@@ -65,6 +67,8 @@
 		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		911BDB2A2A11CD5A004F8442 /* CareKitUtilities.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitUtilities.xctestplan; sourceTree = "<group>"; };
 		911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareKitUtilitiesError.swift; sourceTree = "<group>"; };
+		911BDB312A130A2B004F8442 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		911BDB332A130AF9004F8442 /* OCKStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKStore.swift; sourceTree = "<group>"; };
 		OBJ_11 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		OBJ_15 /* DigitalCrownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		70BBCB4A2A12BA3600759A9C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_23 /* CardViewModel.swift */,
 				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
@@ -186,8 +191,9 @@
 				OBJ_32 /* OCKEventAggregator.swift */,
 				OBJ_33 /* OCKOutcome.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
-				OBJ_39 /* UIImage.swift */,
 				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
+				911BDB332A130AF9004F8442 /* OCKStore.swift */,
+				OBJ_39 /* UIImage.swift */,
 				911BDB252A11C437004F8442 /* View+Default.swift */,
 			);
 			path = Extensions;
@@ -253,6 +259,7 @@
 		OBJ_8 /* CareKitUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				911BDB312A130A2B004F8442 /* Utility.swift */,
 				OBJ_9 /* Cards */,
 				70BBCB452A12B8B000759A9C /* Environment */,
 				OBJ_25 /* Extensions */,
@@ -268,7 +275,6 @@
 				70BBCB4A2A12BA3600759A9C /* Shared */,
 				70BBCB4B2A12BA4600759A9C /* iOS */,
 				70BBCB4C2A12BA4E00759A9C /* watchOS */,
-				OBJ_23 /* CardViewModel.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
+				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				OBJ_758 /* OCKEventAggregator.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
@@ -398,6 +405,7 @@
 				OBJ_761 /* TintColorKey.swift in Sources */,
 				OBJ_765 /* UIImage.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
+				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */,
 				911BDB2C2A12F0D3004F8442 /* CareKitUtilitiesError.swift in Sources */,
 				OBJ_766 /* OSValue.swift in Sources */,

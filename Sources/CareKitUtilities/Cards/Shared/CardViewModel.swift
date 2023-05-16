@@ -22,6 +22,7 @@ public class CardViewModel: ObservableObject {
     @Published var value = OCKOutcomeValue(0.0)
     @Environment(\.careStore) public var store
 
+    /// The latest value as a Text view.
     public var valueText: Text {
         Text(value.description)
     }
@@ -94,14 +95,6 @@ public class CardViewModel: ObservableObject {
         self.detailsInformation = detailsInformation
         if let action = action {
             self.action = action
-        }
-    }
-
-    @MainActor
-    public func checkIfValueShouldUpdate(_ updatedEvents: OCKAnyEvent) {
-        if let changedValue = updatedEvents.outcomeValues?.first,
-            self.value != changedValue {
-            self.value = changedValue
         }
     }
 

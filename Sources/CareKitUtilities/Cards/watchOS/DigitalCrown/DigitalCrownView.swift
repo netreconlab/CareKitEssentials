@@ -107,7 +107,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
                   isFooterPadded: true,
                   header: { DigitalCrownViewHeader(title: title,
                                                    detail: detail,
-                                                   task: viewModel.taskEvents.firstEventTask) },
+                                                   task: viewModel.event.task) },
                   footer: { DigitalCrownViewFooter(viewModel: viewModel) })
     }
 }
@@ -116,9 +116,12 @@ struct DigitalCrownView_Previews: PreviewProvider {
     static var previews: some View {
         DigitalCrownView(title: Text("Title"),
                          detail: Text("Details"),
-                         viewModel: .init(storeManager: .init(wrapping: OCKStore(name:
-                                                                                    "noStore",
-                                                                                 type: .inMemory))))
+                         task: Utility.createNaseaTask(),
+                         footer: EmptyView())
+        .environment(\.careStore,
+                      OCKStore(name: "noStore",
+                               type: .inMemory))
+                                                                                    
     }
 }
 
