@@ -98,7 +98,6 @@ struct InformationHeaderView_Previews: PreviewProvider {
         if let event = try? Utility.createNauseaEvent() {
             InformationHeaderView(title: Text(task.title!),
                                   event: event)
-                .environment(\.careStore, Utility.createPreviewStore())
         }
     }
 }
