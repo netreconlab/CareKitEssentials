@@ -27,7 +27,7 @@ public class CardViewModel: ObservableObject {
     public var valueText: Text {
         Text(value.description)
     }
-    
+
     /// The event associated with the view model.
     private(set) var event: OCKAnyEvent
     /// A custom details title to display for the task of the view model.

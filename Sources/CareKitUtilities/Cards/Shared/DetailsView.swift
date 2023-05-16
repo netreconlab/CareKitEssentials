@@ -8,6 +8,7 @@
 
 import CareKitStore
 import SwiftUI
+
 /// A View to show more details. Can be used for CareKit cards.
 ///
 /// # Style

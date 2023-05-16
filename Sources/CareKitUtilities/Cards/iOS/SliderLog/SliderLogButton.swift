@@ -34,7 +34,7 @@ struct SliderLogButton: View {
         valuesArray.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", valuesArray[0]))
     }
 
-    public var body: some View {
+    var body: some View {
         VStack {
             Button(action: {
                 action(value)
