@@ -24,7 +24,7 @@ public class CardViewModel: ObservableObject {
     @Published var value = OCKOutcomeValue(0.0)
 
     /// The latest value as a Text view.
-    public var valueText: Text {
+    public var valueAsText: Text {
         Text(value.description)
     }
 

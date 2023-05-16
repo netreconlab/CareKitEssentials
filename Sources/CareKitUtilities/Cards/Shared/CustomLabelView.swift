@@ -75,7 +75,7 @@ public struct CustomLabelView: View {
                     }
                     .foregroundColor(Color.primary)
                     Spacer()
-                    viewModel.valueText
+                    viewModel.valueAsText
                         .font(.title)
                         .bold()
                         .foregroundColor(Color.accentColor)

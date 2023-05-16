@@ -14,10 +14,8 @@ import SwiftUI
 struct SliderLogButton: View {
 
     @Environment(\.careKitStyle) private var style
+    @ObservedObject var viewModel: SliderLogTaskViewModel
 
-    @Binding var isActive: Bool
-    @Binding var valuesArray: [Double]
-    @Binding var value: Double
     let action: (_ value: Double) -> Void
 
     var shape: RoundedRectangle {
@@ -29,16 +27,16 @@ struct SliderLogButton: View {
             .fill(Color.accentColor)
     }
 
-    var valueText: String {
+    var valueAsText: String {
         // swiftlint:disable:next line_length
-        valuesArray.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", valuesArray[0]))
+        viewModel.valuesArray.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", viewModel.valuesArray[0]))
     }
 
     var body: some View {
         VStack {
             Button(action: {
-                action(value)
-                isActive = false
+                action(viewModel.valueAsDouble)
+                viewModel.isActive = false
             }) {
                 HStack {
                     Spacer()
@@ -54,15 +52,15 @@ struct SliderLogButton: View {
                 .font(Font.subheadline.weight(.medium))
                 .foregroundColor(.accentColor)
             }
-            .disabled(!isActive)
+            .disabled(!viewModel.isActive)
             .padding(.bottom)
 
             Button(action: {}) {
-                Text(valueText)
+                Text(valueAsText)
                     .foregroundColor(.accentColor)
                     .font(Font.subheadline.weight(.medium))
             }
-            .disabled(valuesArray.count == 0)
+            .disabled(viewModel.valuesArray.count == 0)
         }
         .buttonStyle(NoHighlightStyle())
     }

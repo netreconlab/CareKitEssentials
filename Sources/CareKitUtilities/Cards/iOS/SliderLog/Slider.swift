@@ -13,9 +13,8 @@ import SwiftUI
 struct Slider: View {
 
     @Environment(\.careKitStyle) private var style
+    @ObservedObject private var viewModel: SliderLogTaskViewModel
 
-    @Binding private var value: Double
-    @Binding private var isActive: Bool
     private let range: (Double, Double)
     private let step: Double
     private let minimumImage: Image?
@@ -32,8 +31,7 @@ struct Slider: View {
     private let usesSystemSlider: Bool
     private var containsImages: Bool { (minimumImage == nil && maximumImage == nil) ? false : true }
 
-    init(value: Binding<Double>,
-         isActive: Binding<Bool>,
+    init(viewModel: SliderLogTaskViewModel,
          range: ClosedRange<Double>,
          step: Double,
          minimumImage: Image?,
@@ -42,8 +40,7 @@ struct Slider: View {
          maximumDescription: String?,
          sliderStyle: SliderStyle,
          gradientColors: [Color]? = nil) {
-        _value = value
-        _isActive = isActive
+        self.viewModel = viewModel
         self.range = (range.lowerBound, range.upperBound)
         self.step = step
         self.minimumImage = minimumImage
@@ -87,12 +84,12 @@ struct Slider: View {
         let imageWidth = (frameWidth / 10).rounded()
         return
             VStack(spacing: 0) {
-                Text(String(format: "%g", value))
+                Text(String(format: "%g", viewModel.valueAsDouble))
                     .font(.system(size: valueFontSize))
                     .foregroundColor(.accentColor)
                     .fontWeight(.semibold)
                     .padding(.bottom, 10)
-                    .disabled(!isActive)
+                    .disabled(!viewModel.isActive)
 
                 HStack(spacing: 0) {
                     minimumImage?
@@ -141,7 +138,8 @@ struct Slider: View {
             ViewBuilder.buildEither(first:
                                         systemSliderView()
                                         .gesture(drag.onChanged({ drag in
-                                                                    onDragChange(drag, sliderWidth: sliderWidth) }))
+                                            onDragChange(drag, sliderWidth: sliderWidth)
+                                        }))
                                         .frame(width: sliderWidth, height: imageWidth)) :
             ViewBuilder.buildEither(second:
                                         ZStack {
@@ -150,7 +148,7 @@ struct Slider: View {
                                                     onDragChange(drag, sliderWidth: sliderWidth)
                                                 }))
                                             addTicks(sliderWidth: sliderWidth)
-                                                .if(!isActive) { $0.accentColor(Color(style.color.customGray))}
+                                                .if(!viewModel.isActive) { $0.accentColor(Color(style.color.customGray))}
                                         }
                                         .frame(width: sliderWidth, height: sliderHeight)
             )
@@ -161,18 +159,18 @@ struct Slider: View {
             if gradientColors != nil {
                 Rectangle()
                     .foregroundColor(.clear)
-                    .background(isActive ?
+                    .background(viewModel.isActive ?
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
                                     LinearGradient(gradient: Gradient(colors: [Color(style.color.customGray)]),
                                                    startPoint: .leading,
                                                    endPoint: .trailing))
-                    .mask(SwiftUI.Slider(value: $value, in: range.0...range.1))
+                    .mask(SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1))
             }
 
-            SwiftUI.Slider(value: $value, in: range.0...range.1)
-                .if(gradientColors == nil) { $0.accentColor(isActive ? .accentColor : Color(style.color.customGray)) }
+            SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1)
+                .if(gradientColors == nil) { $0.accentColor(viewModel.isActive ? .accentColor : Color(style.color.customGray)) }
                 .if(gradientColors != nil) { $0.accentColor(.clear) }
         }
     }
@@ -182,11 +180,11 @@ struct Slider: View {
         let barLeftSize = CGSize(width: width, height: height)
         let barRightSize = CGSize(width: CGFloat(offsetX), height: height)
         let barLeft = Rectangle()
-            .if(gradientColors == nil) { $0.foregroundColor(isActive ? .accentColor : Color(style.color.customGray)) }
+            .if(gradientColors == nil) { $0.foregroundColor(viewModel.isActive ? .accentColor : Color(style.color.customGray)) }
             .if(gradientColors != nil) {
                 $0
                     .foregroundColor(.clear)
-                    .background(isActive ?
+                    .background(viewModel.isActive ?
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
@@ -222,7 +220,7 @@ struct Slider: View {
         return
             HStack(spacing: spacing) {
                 ForEach(values, id: \.self) { value in
-                    SliderTickMark(sliderValue: _value,
+                    SliderTickMark(sliderValue: $viewModel.valueAsDouble,
                                    value: value,
                                    values: values,
                                    sliderHeight: sliderHeight!,
@@ -239,14 +237,14 @@ struct Slider: View {
         dragValue = dragValue < xrange.min ? xrange.min : dragValue
         dragValue = dragValue.convert(fromRange: (xrange.min, xrange.max), toRange: (range.0, range.1))
         dragValue = round(dragValue / step) * step
-        self.value = dragValue
-        self.isActive = true
+        self.viewModel.valueAsDouble = dragValue
+        self.viewModel.isActive = true
     }
 
     private func getOffsetX(sliderWidth: CGFloat) -> CGFloat {
         let xrange = (Double(0), Double(sliderWidth))
-        var result = self.value.convert(fromRange: (range.0, range.1),
-                                        toRange: xrange)
+        var result = self.viewModel.valueAsDouble.convert(fromRange: (range.0, range.1),
+                                                          toRange: xrange)
         result = Double(sliderWidth) - result
         return CGFloat(result)
     }
