@@ -12,25 +12,30 @@ import Foundation
 import SwiftUI
 
 /**
- A basic view model that can be subclassed to build more intricate view models for custom
+ A view model that can be subclassed to build more intricate view models for custom
  CareKit cards.
  */
 public class CardViewModel: ObservableObject {
 
     /// The error encountered by the view model.
     @Published public var error: Error?
-    @Published var value = OCKOutcomeValue(0.0)
+    /// The store associated with the view model.
     @Environment(\.careStore) public var store
+    @Published var value = OCKOutcomeValue(0.0)
 
     /// The latest value as a Text view.
     public var valueText: Text {
         Text(value.description)
     }
+    
+    /// The event associated with the view model.
+    private(set) var event: OCKAnyEvent
+    /// A custom details title to display for the task of the view model.
+    private(set) var detailsTitle: String?
+    /// A custom details information string to display for the task of the view model.
+    private(set) var detailsInformation: String?
 
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
-    private(set) var event: OCKAnyEvent
-    private(set) var detailsTitle: String?
-    private(set) var detailsInformation: String?
 
     init(event: OCKAnyEvent) {
         self.event = event
@@ -56,8 +61,7 @@ public class CardViewModel: ObservableObject {
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
     ///     - event: The respective event.
-    ///     - value: The default outcome value for the view model. Defaults to
-    ///     0.0.
+    ///     - value: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     public convenience init(event: OCKAnyEvent,
@@ -75,8 +79,7 @@ public class CardViewModel: ObservableObject {
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
     ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - value: The default outcome value for the view model. Defaults to
-    ///     0.0.
+    ///     - value: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
     ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
     ///     - action: The action to take when a task is completed.
@@ -97,7 +100,6 @@ public class CardViewModel: ObservableObject {
     /// Append an outcome value to an event's outcome.
     /// - Parameters:
     ///   - value: The outcome value.
-    ///   - indexPath: Index path of the event to which the outcome will be added.
     /// - Returns: The saved outcome value.
     /// - Throws: An error if the outcome value can't be saved.
     open func appendOutcomeValue(value: OCKOutcomeValue) async throws -> OCKAnyOutcome {
@@ -130,7 +132,7 @@ public class CardViewModel: ObservableObject {
     open func setEvent(values: [OCKOutcomeValue],
                        completion: ((Result<OCKAnyOutcome, Error>) -> Void)?) {
 
-        // If the event is complete, create an outcome with a `true` value
+        // If the event is complete, create an outcome with the specified values.
         if !values.isEmpty {
             do {
                 let outcome = try makeOutcomeWith(values)
@@ -143,9 +145,8 @@ public class CardViewModel: ObservableObject {
             } catch {
                 completion?(.failure(error))
             }
-
-        // if the event is incomplete, delete the outcome
         } else {
+            // if the event is incomplete, delete the outcome
             guard let outcome = event.outcome else { return }
             store.deleteAnyOutcome(outcome) { result in
                 switch result {
@@ -154,6 +155,7 @@ public class CardViewModel: ObservableObject {
                 }
             }
         }
+
     }
 
     /// Save the outcome for a particular event.
