@@ -74,8 +74,10 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     // MARK: - Init
 
-    private init(isHeaderPadded: Bool, isSliderPadded: Bool,
-                 instructions: Text?, @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
+    private init(isHeaderPadded: Bool,
+                 isSliderPadded: Bool,
+                 instructions: Text?,
+                 @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
         self.isHeaderPadded = isHeaderPadded
         self.isSliderPadded = isSliderPadded
         self.instructions = instructions
@@ -105,7 +107,10 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader {
     /// - Parameter detail: Detail text to display in the header.
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter sliderView: View to inject under the header. Specified content will be stacked vertically.
-    init(title: Text, detail: Text? = nil, instructions: Text? = nil, @ViewBuilder slider: () -> Slider) {
+    init(title: Text,
+         detail: Text? = nil,
+         instructions: Text? = nil,
+         @ViewBuilder slider: () -> Slider) {
         self.init(isHeaderPadded: true, isSliderPadded: false, instructions: instructions, header: {
             _SliderLogTaskViewHeader(title: title, detail: detail)
         }, slider: slider)
@@ -133,10 +138,16 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// - Parameter action: Action to perform when the button is tapped.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
-         valuesArray: Binding<[Double]>, value: Binding<Double>, range: ClosedRange<Double>, step: Double = 1,
-         minimumImage: Image? = nil, maximumImage: Image? = nil,
-         minimumDescription: String? = nil, maximumDescription: String? = nil,
-         sliderStyle: SliderStyle = .system, gradientColors: [Color]? = nil,
+         valuesArray: Binding<[Double]>,
+         value: Binding<Double>,
+         range: ClosedRange<Double>,
+         step: Double = 1,
+         minimumImage: Image? = nil,
+         maximumImage: Image? = nil,
+         minimumDescription: String? = nil,
+         maximumDescription: String? = nil,
+         sliderStyle: SliderStyle = .system,
+         gradientColors: [Color]? = nil,
          action: @escaping (Double) -> Void,
          @ViewBuilder header: () -> Header) {
         self.init(isHeaderPadded: false, isSliderPadded: true, instructions: instructions, header: header, slider: {
@@ -176,11 +187,19 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Sli
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
     /// indicate a scale from bad to good.
     /// - Parameter action: Action to perform when the button is tapped.
-    init(title: Text, detail: Text? = nil, instructions: Text? = nil,
-         valuesArray: Binding<[Double]>, value: Binding<Double>, range: ClosedRange<Double>, step: Double = 1,
-         minimumImage: Image? = nil, maximumImage: Image? = nil,
-         minimumDescription: String? = nil, maximumDescription: String? = nil,
-         sliderStyle: SliderStyle = .system, gradientColors: [Color]? = nil,
+    init(title: Text,
+         detail: Text? = nil,
+         instructions: Text? = nil,
+         valuesArray: Binding<[Double]>,
+         value: Binding<Double>,
+         range: ClosedRange<Double>,
+         step: Double = 1,
+         minimumImage: Image? = nil,
+         maximumImage: Image? = nil,
+         minimumDescription: String? = nil,
+         maximumDescription: String? = nil,
+         sliderStyle: SliderStyle = .system,
+         gradientColors: [Color]? = nil,
          action: @escaping (Double) -> Void) {
         self.init(isHeaderPadded: true, isSliderPadded: true, instructions: instructions, header: {
             _SliderLogTaskViewHeader(title: title, detail: detail)
@@ -258,12 +277,21 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 
     public var body: some View {
         VStack {
-            Slider(value: $value, isActive: $isActive, range: range, step: step,
-                   minimumImage: minimumImage, maximumImage: maximumImage,
-                   minimumDescription: minimumDescription, maximumDescription: maximumDescription,
-                   sliderStyle: sliderStyle, gradientColors: gradientColors)
+            Slider(value: $value,
+                   isActive: $isActive,
+                   range: range,
+                   step: step,
+                   minimumImage: minimumImage,
+                   maximumImage: maximumImage,
+                   minimumDescription: minimumDescription,
+                   maximumDescription: maximumDescription,
+                   sliderStyle: sliderStyle,
+                   gradientColors: gradientColors)
 
-            SliderLogButton(isActive: $isActive, valuesArray: $valuesArray, value: $value, action: action)
+            SliderLogButton(isActive: $isActive,
+                            valuesArray: $valuesArray,
+                            value: $value,
+                            action: action)
         }
         .onAppear {
             value = initialValue

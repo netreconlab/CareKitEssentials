@@ -96,7 +96,8 @@ struct Slider: View {
 
                 HStack(spacing: 0) {
                     minimumImage?
-                        .sliderImageModifier(width: imageWidth, height: usesSystemSlider ? imageWidth : sliderHeight!)
+                        .sliderImageModifier(width: imageWidth,
+                                             height: usesSystemSlider ? imageWidth : sliderHeight!)
 
                     Spacer(minLength: 0)
 
@@ -105,7 +106,8 @@ struct Slider: View {
                     Spacer(minLength: 0)
 
                     maximumImage?
-                        .sliderImageModifier(width: imageWidth, height: usesSystemSlider ? imageWidth : sliderHeight!)
+                        .sliderImageModifier(width: imageWidth,
+                                             height: usesSystemSlider ? imageWidth : sliderHeight!)
                 }
                 .padding(.bottom, 5)
 
@@ -196,11 +198,16 @@ struct Slider: View {
         return
             ZStack {
                 barLeft
-                    .modifier(SliderModifier(sliderWidth: width, size: barLeftSize, radius: cornerRadius!))
+                    .modifier(SliderModifier(sliderWidth: width,
+                                             size: barLeftSize,
+                                             radius: cornerRadius!))
                 barRight
-                    .modifier(SliderModifier(sliderWidth: width, size: barRightSize, radius: cornerRadius!))
+                    .modifier(SliderModifier(sliderWidth: width,
+                                             size: barRightSize,
+                                             radius: cornerRadius!))
                 RoundedRectangle(cornerRadius: cornerRadius!)
-                    .stroke(Color(style.color.customGray), lineWidth: borderWidth)
+                    .stroke(Color(style.color.customGray),
+                            lineWidth: borderWidth)
             }
     }
 

@@ -22,9 +22,9 @@ import SwiftUI
 /// ```
 public struct CustomLabelView: View {
     @Environment(\.careKitStyle) private var style
-    // @Environment(\.careKitUtilitiesTintColor) private var tintColor
     @ObservedObject var viewModel: CardViewModel
-    var isUsingHeader = true
+
+    var isUsingHeader: Bool
 
     public var body: some View {
         CardView {
@@ -95,5 +95,14 @@ public extension CustomLabelView {
          usingHeader: Bool = true) {
         self.viewModel = viewModel
         self.isUsingHeader = usingHeader
+    }
+}
+
+struct CustomLabelView_Previews: PreviewProvider {
+    static var previews: some View {
+        if let event = try? Utility.createNauseaEvent() {
+            CustomLabelView(viewModel: .init(event: event))
+                .environment(\.careStore, Utility.createPreviewStore())
+        }
     }
 }
