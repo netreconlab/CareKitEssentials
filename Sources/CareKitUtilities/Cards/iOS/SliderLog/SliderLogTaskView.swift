@@ -1,6 +1,6 @@
 //
 //  SliderLogTaskView.swift
-//  
+//  CareKitUtilities
 //
 //  Created by Dylan Li on 6/2/20.
 //  Copyright © 2020 NetReconLab. All rights reserved.
@@ -24,8 +24,8 @@ import SwiftUI
 /// ```
 ///     +-------------------------------------------------------+
 ///     |                                                       |
-///     |  <Title>                                              |
-///     |  <Detail>                                             |
+///     |  <Image> <Title>                       <Info Image>   |
+///     |  <Information>                                        |
 ///     |                                                       |
 ///     |  --------------------------------------------------   |
 ///     |                                                       |
@@ -94,8 +94,9 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
+    /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
-    /// - Parameter sliderView: View to inject under the header. Specified content will be stacked vertically.
+    /// - Parameter slider: View to inject under the header. Specified content will be stacked vertically.
     public init(instructions: Text? = nil,
                 viewModel: SliderLogTaskViewModel,
                 @ViewBuilder header: () -> Header,
@@ -115,7 +116,8 @@ public extension SliderLogTaskView where Header == InformationHeaderView {
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
     /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter sliderView: View to inject under the header. Specified content will be stacked vertically.
+    /// - Parameter viewModel: The view model used to populate the view contents.
+    /// - Parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(title: Text,
          detail: Text? = nil,
          instructions: Text? = nil,
@@ -137,10 +139,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
 
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter valuesArray: The binded array of all outcome values
-    /// - Parameter value: The binded value that the slider will reflect
-    /// - Parameter range: The range that includes all possible values.
-    /// - Parameter step: Value of the increment that the slider takes. Default value is 1
+    /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter minimumImage: Image to display to the left of the slider. Default value is nil.
     /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
@@ -184,6 +183,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
     /// - Parameter instructions: Instructions text to display under the header.
+    /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter minimumImage: Image to display to the left of the slider. Default value is nil.
     /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.

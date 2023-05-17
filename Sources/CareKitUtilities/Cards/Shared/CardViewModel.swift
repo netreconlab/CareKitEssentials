@@ -12,8 +12,8 @@ import Foundation
 import SwiftUI
 
 /**
- A view model that can be subclassed to build more intricate view models for custom
- CareKit cards.
+ A view model that can be subclassed to build more intricate view models for
+ CareKit style cards.
  */
 public class CardViewModel: ObservableObject {
 
