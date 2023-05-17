@@ -49,7 +49,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
 
-    @ObservedObject private var viewModel: SliderLogTaskViewModel
+    @StateObject private var viewModel: SliderLogTaskViewModel
     private let isHeaderPadded: Bool
     private let isSliderPadded: Bool
     private let header: Header
@@ -86,7 +86,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
                  @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
         self.isHeaderPadded = isHeaderPadded
         self.isSliderPadded = isSliderPadded
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
         self.instructions = instructions
         self.header = header()
         self.slider = slider()

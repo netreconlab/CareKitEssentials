@@ -22,7 +22,7 @@ import SwiftUI
 /// ```
 public struct CustomLabelView: View {
     @Environment(\.careKitStyle) private var style
-    @ObservedObject var viewModel: CardViewModel
+    @StateObject var viewModel: CardViewModel
 
     var isUsingHeader: Bool
 
@@ -88,14 +88,16 @@ public struct CustomLabelView: View {
 }
 
 public extension CustomLabelView {
+
     /// Create an instance.
     /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter usingHeader: Should inject the header at the top of the card.
     init(viewModel: CardViewModel,
          usingHeader: Bool = true) {
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
         self.isUsingHeader = usingHeader
     }
+
 }
 
 struct CustomLabelView_Previews: PreviewProvider {

@@ -15,7 +15,7 @@ import SwiftUI
 public struct DigitalCrownViewFooter: View {
 
     @Environment(\.sizeCategory) private var sizeCategory
-    @ObservedObject var viewModel: DigitalCrownViewModel
+    @StateObject var viewModel: DigitalCrownViewModel
 
     @OSValue<CGFloat>(values: [.watchOS: 8],
                       defaultValue: 14) private var padding
@@ -77,32 +77,6 @@ struct NoHighlightStyle: ButtonStyle {
         configuration.label.contentShape(Rectangle())
     }
 }
-
-/*
-struct DigitalCrownViewFooter: View {
-    @ObservedObject var viewModel: DigitalCrownViewModel
-
-    var body: some View {
-        VStack {
-            HStack {
-                Text("\(viewModel.emojis[Int(round(viewModel.value))])")
-                    .font(.largeTitle)
-                Text("\(String(format: "%g", round(viewModel.value)))")
-                    .focusable(true)
-                    .digitalCrownRotation($viewModel.value,
-                                          from: viewModel.startValue,
-                                          through: viewModel.endValue,
-                                          by: viewModel.incrementValue)
-                    .font(.largeTitle)
-            }
-            Button("Log") {
-                Task {
-                    await viewModel.action(viewModel.value)
-                }
-            }
-        }
-    }
-} */
 
 struct DigitalCrownViewFooter_Previews: PreviewProvider {
     static var previews: some View {
