@@ -8,6 +8,7 @@
 
 #if os(watchOS)
 
+import CareKit
 import CareKitStore
 import CareKitUI
 import Foundation
@@ -27,30 +28,21 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
     public var body: some View {
         CardView {
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
-                VStack { header }
+                if !(header is EmptyView) {
+                    VStack {
+                        header
+                        Divider()
+                    }
                     .if(isHeaderPadded) { $0.padding([.horizontal, .top]) }
+                }
+
                 VStack { footer }
                     .if(isHeaderPadded) { $0.padding([.horizontal, .bottom]) }
             }
         }
     }
 
-    // MARK: - Init
-
-    /// Create an instance.
-    /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
-    /// - Parameter footer: View to inject under the instructions. Specified content will be stacked vertically.
-    public init(instructions: Text? = nil,
-                @ViewBuilder header: () -> Header,
-                @ViewBuilder footer: () -> Footer) {
-        self.init(isHeaderPadded: false,
-                  isFooterPadded: false,
-                  header: header,
-                  footer: footer)
-    }
-
-    public init(isHeaderPadded: Bool,
+    init(isHeaderPadded: Bool,
                 isFooterPadded: Bool,
                 @ViewBuilder header: () -> Header,
                 @ViewBuilder footer: () -> Footer) {
@@ -59,6 +51,40 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
         self.header = header()
         self.footer = footer()
     }
+}
+
+// MARK: - Public Init
+
+public extension DigitalCrownView {
+    
+    /// Create an instance.
+    /// - Parameter instructions: Instructions text to display under the header.
+    /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
+    /// - Parameter footer: View to inject under the instructions. Specified content will be stacked vertically.
+    init(instructions: Text? = nil,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder footer: () -> Footer) {
+        self.init(isHeaderPadded: false,
+                  isFooterPadded: false,
+                  header: header,
+                  footer: footer)
+    }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - event: The data that appears in the view.
+    ///   - header: Short and descriptive content that identifies the event.
+    init(event: CareStoreFetchedResult<OCKAnyEvent>,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder footer: () -> Footer) {
+        self.init(viewModel: .init(event: event.result),
+                  header: header,
+                  footer: footer)
+    }
+
 }
 
 public extension DigitalCrownView where Header == DigitalCrownViewHeader {

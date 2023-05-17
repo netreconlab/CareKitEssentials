@@ -37,18 +37,6 @@ public class DigitalCrownViewModel: CardViewModel {
         value == event.outcomeFirstValue
     }
 
-    /*
-    public var valueAsDouble: Double {
-        get {
-            return value.doubleValue ?? 0.0
-        }
-        set {
-            var updatedValue = value
-            updatedValue.value = newValue
-            value = updatedValue
-        }
-    } */
-
     public var valueForButton: String {
         "\(Int(valueAsDouble))"
     }
@@ -70,15 +58,15 @@ public class DigitalCrownViewModel: CardViewModel {
     ///     - endValue: The maximum possible value.
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
-    public convenience init(event: OCKAnyEvent,
+    public init(event: OCKAnyEvent,
                             startValue: Double,
                             initialValue: Double,
                             endValue: Double,
                             incrementValue: Double,
                             colorRatio: Double,
                             action: @escaping ((OCKOutcomeValue?) async -> Void)) {
-        self.init(event: event,
-                  action: action)
+        super.init(event: event,
+                   action: action)
         self.value = OCKOutcomeValue(initialValue)
         self.startValue = startValue
         self.endValue = endValue

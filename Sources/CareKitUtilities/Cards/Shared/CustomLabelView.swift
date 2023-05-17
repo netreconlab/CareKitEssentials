@@ -6,11 +6,12 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+import CareKit
+import CareKitStore
 import CareKitUI
 import SwiftUI
 
 /// A custom label that can display a title, detail, or image.
-/// Configured to display a value extracted from the viewmodel.
 /// 
 /// ```
 ///    +----------------------------------------+
@@ -20,43 +21,24 @@ import SwiftUI
 ///    | +----+                    +-----+      |
 ///    +----------------------------------------+
 /// ```
-public struct CustomLabelView: View {
+public struct CustomLabelView<Header: View>: View {
     @Environment(\.careKitStyle) private var style
     @StateObject var viewModel: CardViewModel
 
-    var isUsingHeader: Bool
+    let header: Header
 
     public var body: some View {
         CardView {
             VStack(alignment: .leading,
                    spacing: style.dimension.directionalInsets1.top) {
 
-                if isUsingHeader {
-                    if let informationTitle = viewModel.detailsTitle,
-                        let informationDetails = viewModel.detailsInformation {
-                        InformationHeaderView(title: Text(viewModel.event.title),
-                                              event: viewModel.event,
-                                              detailsTitle: informationTitle,
-                                              details: informationDetails)
-                    } else if let informationTitle = viewModel.detailsTitle {
-                        InformationHeaderView(title: Text(viewModel.event.title),
-                                              event: viewModel.event,
-                                              detailsTitle: informationTitle)
-                    } else if let informationDetails = viewModel.detailsInformation {
-                        InformationHeaderView(title: Text(viewModel.event.title),
-                                              event: viewModel.event,
-                                              details: informationDetails)
-                    } else {
-                        InformationHeaderView(title: Text(viewModel.event.title),
-                                              event: viewModel.event)
+                if !(header is EmptyView) {
+                    VStack {
+                        header
+                        Divider()
                     }
-                } else {
-                    Text(viewModel.event.title)
-                        .font(.headline)
-                        .fontWeight(.bold)
                 }
 
-                Divider()
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
                     if let asset = viewModel.event.asset {
                         Image(uiImage: asset)
@@ -85,17 +67,75 @@ public struct CustomLabelView: View {
         }
         .padding(.vertical)
     }
+
 }
 
 public extension CustomLabelView {
 
-    /// Create an instance.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter usingHeader: Should inject the header at the top of the card.
+    /// Create a view using a view model.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - parameter header: Short and descriptive content that identifies the event.
     init(viewModel: CardViewModel,
-         usingHeader: Bool = true) {
+         @ViewBuilder header: () -> Header) {
         self._viewModel = StateObject(wrappedValue: viewModel)
-        self.isUsingHeader = usingHeader
+        self.header = header()
+    }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - event: The data that appears in the view.
+    ///   - header: Short and descriptive content that identifies the event.
+    init(event: CareStoreFetchedResult<OCKAnyEvent>,
+         @ViewBuilder header: () -> Header) {
+        self.init(viewModel: .init(event: event.result),
+                  header: header)
+    }
+
+}
+
+public extension CustomLabelView where Header == InformationHeaderView {
+
+    /// Create a view using a view model.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - parameter viewModel: The view model used to populate the view contents.
+    init(viewModel: CardViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        if let informationTitle = viewModel.detailsTitle,
+            let informationDetails = viewModel.detailsInformation {
+            self.header = InformationHeaderView(title: Text(viewModel.event.title),
+                                                event: viewModel.event,
+                                                detailsTitle: informationTitle,
+                                                details: informationDetails)
+        } else if let informationTitle = viewModel.detailsTitle {
+            self.header = InformationHeaderView(title: Text(viewModel.event.title),
+                                                event: viewModel.event,
+                                                detailsTitle: informationTitle)
+        } else if let informationDetails = viewModel.detailsInformation {
+            self.header = InformationHeaderView(title: Text(viewModel.event.title),
+                                                event: viewModel.event,
+                                                details: informationDetails)
+        } else {
+            self.header = InformationHeaderView(title: Text(viewModel.event.title),
+                                                event: viewModel.event)
+        }
+    }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - event: The data that appears in the view.
+    init(event: CareStoreFetchedResult<OCKAnyEvent>) {
+        self.init(viewModel: .init(event: event.result))
     }
 
 }
@@ -103,9 +143,15 @@ public extension CustomLabelView {
 struct CustomLabelView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            CustomLabelView(viewModel: .init(event: event))
-                .environment(\.careStore, Utility.createPreviewStore())
-                .padding()
+            VStack {
+                CustomLabelView(viewModel: .init(event: event),
+                                header: EmptyView())
+                    .environment(\.careStore, Utility.createPreviewStore())
+                    .padding()
+                CustomLabelView(viewModel: .init(event: event))
+                    .environment(\.careStore, Utility.createPreviewStore())
+                    .padding()
+            }
         }
     }
 }

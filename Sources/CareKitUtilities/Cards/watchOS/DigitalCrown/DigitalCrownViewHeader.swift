@@ -31,7 +31,6 @@ public struct DigitalCrownViewHeader: View {
             } else {
                 HeaderView(title: title, detail: detail)
             }
-            Divider()
         }
     }
 }

@@ -9,6 +9,7 @@
 #if !os(watchOS)
 
 import Foundation
+import CareKit
 import CareKitUI
 import CareKitStore
 import SwiftUI
@@ -59,11 +60,13 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     public var body: some View {
         CardView {
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
-                VStack {
-                    header
-                    Divider()
+                if !(header is EmptyView) {
+                    VStack {
+                        header
+                        Divider()
+                    }
+                    .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
                 }
-                .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
 
                 instructions?
                     .font(.subheadline)
@@ -77,13 +80,12 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
         }
     }
 
-    // MARK: - Init
-
-    private init(isHeaderPadded: Bool,
-                 isSliderPadded: Bool,
-                 instructions: Text?,
-                 viewModel: SliderLogTaskViewModel,
-                 @ViewBuilder header: () -> Header, @ViewBuilder slider: () -> Slider) {
+    init(isHeaderPadded: Bool,
+         isSliderPadded: Bool,
+         instructions: Text?,
+         viewModel: SliderLogTaskViewModel,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder slider: () -> Slider) {
         self.isHeaderPadded = isHeaderPadded
         self.isSliderPadded = isSliderPadded
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -91,16 +93,21 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
         self.header = header()
         self.slider = slider()
     }
+}
+
+// MARK: - Public Init
+
+public extension SliderLogTaskView {
 
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     /// - Parameter slider: View to inject under the header. Specified content will be stacked vertically.
-    public init(instructions: Text? = nil,
-                viewModel: SliderLogTaskViewModel,
-                @ViewBuilder header: () -> Header,
-                @ViewBuilder slider: () -> Slider) {
+    init(instructions: Text? = nil,
+         viewModel: SliderLogTaskViewModel,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder slider: () -> Slider) {
         self.init(isHeaderPadded: false,
                   isSliderPadded: false,
                   instructions: instructions,
@@ -108,6 +115,47 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
                   header: header,
                   slider: slider)
     }
+
+    /// Create a view using a view model.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - parameter instructions: Instructions text to display under the header.
+    /// - parameter event: The data that appears in the view.
+    /// - parameter detailsTitle: An optional title for the event.
+    /// - parameter detailsInformation: An optional detailed information string for the event.
+    /// - parameter range: The range that includes all possible values.
+    /// - parameter step: Value of the increment that the slider takes. Default value is 1.
+    /// - parameter isActive: Specifies if the slider is allowed to be changed.
+    /// - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
+    /// - parameter header: Short and descriptive content that identifies the event.
+    /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
+    init(instructions: Text? = nil,
+         event: CareStoreFetchedResult<OCKAnyEvent>,
+         detailsTitle: String? = nil,
+         detailsInformation: String? = nil,
+         range: ClosedRange<Double>,
+         valuesArray: [Double] = [],
+         step: Double = 1,
+         isActive: Bool = true,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder slider: () -> Slider) {
+        self.init(isHeaderPadded: false,
+                  isSliderPadded: false,
+                  instructions: instructions,
+                  viewModel: .init(event: event.result,
+                                   detailsTitle: detailsTitle,
+                                   detailsInformation: detailsInformation,
+                                   range: range,
+                                   valuesArray: valuesArray,
+                                   step: step,
+                                   isActive: isActive,
+                                   action: action),
+                  header: header,
+                  slider: slider)
+    }
+
 }
 
 public extension SliderLogTaskView where Header == InformationHeaderView {
@@ -221,6 +269,68 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
                                      style: style,
                                      gradientColors: gradientColors)
         })
+    }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - title: Title text to display in the header.
+    ///   - detail: Detail text to display in the header.
+    ///   - instructions: Instructions text to display under the header.
+    ///   - event: The data that appears in the view.
+    ///   - detailsTitle: An optional title for the event.
+    ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - range: The range that includes all possible values.
+    ///   - step: Value of the increment that the slider takes. Default value is 1.
+    ///   - isActive: Specifies if the slider is allowed to be changed.
+    ///   - action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
+    ///   - minimumImage: Image to display to the left of the slider. Default value is nil.
+    ///   - maximumImage: Image to display to the right of the slider. Default value is nil.
+    ///   - minimumDescription: Description to display next to lower bound value. Default value is nil.
+    ///   - maximumDescription: Description to display next to upper bound value. Default value is nil.
+    ///   - style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
+    ///   - gradientColors:  The colors to use when drawing a color gradient inside the slider.
+    /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
+    /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
+    /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
+    /// indicate a scale from bad to good.
+    init(title: Text,
+         detail: Text? = nil,
+         instructions: Text? = nil,
+         event: CareStoreFetchedResult<OCKAnyEvent>,
+         detailsTitle: String? = nil,
+         detailsInformation: String? = nil,
+         range: ClosedRange<Double>,
+         valuesArray: [Double] = [],
+         step: Double = 1,
+         isActive: Bool = true,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil,
+         minimumImage: Image? = nil,
+         maximumImage: Image? = nil,
+         minimumDescription: String? = nil,
+         maximumDescription: String? = nil,
+         style: SliderStyle = .ticked,
+         gradientColors: [Color]? = nil) {
+        let viewModel = SliderLogTaskViewModel(event: event.result,
+                                               detailsTitle: detailsTitle,
+                                               detailsInformation: detailsInformation,
+                                               range: range,
+                                               valuesArray: valuesArray,
+                                               step: step,
+                                               isActive: isActive,
+                                               action: action)
+        self.init(title: title,
+                  detail: detail,
+                  instructions: instructions,
+                  viewModel: viewModel,
+                  minimumImage: minimumImage,
+                  maximumImage: maximumImage,
+                  minimumDescription: minimumDescription,
+                  maximumDescription: maximumDescription,
+                  style: style,
+                  gradientColors: gradientColors)
     }
 }
 
