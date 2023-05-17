@@ -103,6 +103,7 @@ struct CustomLabelView_Previews: PreviewProvider {
         if let event = try? Utility.createNauseaEvent() {
             CustomLabelView(viewModel: .init(event: event))
                 .environment(\.careStore, Utility.createPreviewStore())
+                .padding()
         }
     }
 }

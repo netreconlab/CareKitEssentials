@@ -145,7 +145,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
-    /// - Parameter sliderStyle: The style of the slider, either the SwiftUI system slider or the custom bar slider.
+    /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
     /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider. Colors
     /// are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in
     /// the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient
@@ -158,7 +158,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
          maximumImage: Image? = nil,
          minimumDescription: String? = nil,
          maximumDescription: String? = nil,
-         sliderStyle: SliderStyle = .system,
+         style: SliderStyle = .ticked,
          gradientColors: [Color]? = nil,
          @ViewBuilder header: () -> Header) {
         self.init(isHeaderPadded: false,
@@ -172,7 +172,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
                                      maximumImage: maximumImage,
                                      minimumDescription: minimumDescription,
                                      maximumDescription: maximumDescription,
-                                     sliderStyle: sliderStyle,
+                                     style: style,
                                      gradientColors: gradientColors)
         })
     }
@@ -188,7 +188,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
-    /// - Parameter sliderStyle: The style of the slider, either the SwiftUI system slider or the custom bar slider.
+    /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
     /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider.
     /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
@@ -202,7 +202,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
          maximumImage: Image? = nil,
          minimumDescription: String? = nil,
          maximumDescription: String? = nil,
-         sliderStyle: SliderStyle = .ticked,
+         style: SliderStyle = .ticked,
          gradientColors: [Color]? = nil) {
         self.init(isHeaderPadded: true,
                   isSliderPadded: true,
@@ -218,7 +218,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
                                      maximumImage: maximumImage,
                                      minimumDescription: minimumDescription,
                                      maximumDescription: maximumDescription,
-                                     sliderStyle: sliderStyle,
+                                     style: style,
                                      gradientColors: gradientColors)
         })
     }
@@ -232,7 +232,7 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
     fileprivate let maximumImage: Image?
     fileprivate let minimumDescription: String?
     fileprivate let maximumDescription: String?
-    fileprivate let sliderStyle: SliderStyle
+    fileprivate let style: SliderStyle
     fileprivate let gradientColors: [Color]?
 
     init(viewModel: SliderLogTaskViewModel,
@@ -240,14 +240,14 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
          maximumImage: Image?,
          minimumDescription: String?,
          maximumDescription: String?,
-         sliderStyle: SliderStyle,
+         style: SliderStyle,
          gradientColors: [Color]?) {
         self.viewModel = viewModel
         self.minimumImage = minimumImage
         self.maximumImage = maximumImage
         self.minimumDescription = minimumDescription
         self.maximumDescription = maximumDescription
-        self.sliderStyle = sliderStyle
+        self.style = style
         self.gradientColors = gradientColors
     }
 
@@ -258,7 +258,7 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
                    maximumImage: maximumImage,
                    minimumDescription: minimumDescription,
                    maximumDescription: maximumDescription,
-                   sliderStyle: sliderStyle,
+                   style: style,
                    gradientColors: gradientColors)
 
             SliderLogButton(viewModel: viewModel)
@@ -269,9 +269,22 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 struct SliderLogTaskView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            SliderLogTaskView(title: Text(event.title),
-                              viewModel: .init(event: event, range: 0...10))
+            VStack {
+                SliderLogTaskView(title: Text(event.title),
+                                  detail: Text(event.detail ?? ""),
+                                  viewModel: .init(event: event, range: 0...10),
+                                  gradientColors: [.green, .yellow, .red])
                 .environment(\.careStore, Utility.createPreviewStore())
+                .padding()
+
+                SliderLogTaskView(title: Text(event.title),
+                                  detail: Text(event.detail ?? ""),
+                                  viewModel: .init(event: event, range: 0...10),
+                                  style: .system,
+                                  gradientColors: [.green, .yellow, .red])
+                .environment(\.careStore, Utility.createPreviewStore())
+                .padding()
+            }
         }
     }
 }

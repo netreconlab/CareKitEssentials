@@ -93,10 +93,11 @@ public struct InformationHeaderView: View {
 }
 
 struct InformationHeaderView_Previews: PreviewProvider {
-    static let task = Utility.createNauseaTask()
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            InformationHeaderView(title: Text(task.title!),
+            InformationHeaderView(title: Text(event.title),
+                                  information: Text(event.detail ?? ""),
+                                  image: Image(uiImage: event.asset ?? UIImage()),
                                   event: event)
         }
     }

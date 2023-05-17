@@ -40,7 +40,9 @@ public class CardViewModel: ObservableObject {
                 isInitialValue = true
                 return
             }
-            value = OCKOutcomeValue(valueAsDouble)
+            var updatedValue = value
+            updatedValue.value = valueAsDouble
+            value = updatedValue
         }
     }
 

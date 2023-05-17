@@ -25,8 +25,8 @@ public class SliderLogTaskViewModel: CardViewModel {
      - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
      */
     init(event: OCKAnyEvent,
-         valuesArray: [Double] = [],
          range: ClosedRange<Double>,
+         valuesArray: [Double] = [],
          step: Double = 1,
          isActive: Bool = true,
          detailsTitle: String? = nil,

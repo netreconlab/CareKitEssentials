@@ -35,7 +35,7 @@ struct Slider: View {
          maximumImage: Image?,
          minimumDescription: String?,
          maximumDescription: String?,
-         sliderStyle: SliderStyle,
+         style: SliderStyle,
          gradientColors: [Color]? = nil) {
         self.viewModel = viewModel
         self.range = (viewModel.range.lowerBound, viewModel.range.upperBound)
@@ -44,7 +44,7 @@ struct Slider: View {
         self.minimumDescription = minimumDescription
         self.maximumDescription = maximumDescription
         self.gradientColors = gradientColors
-        switch sliderStyle {
+        switch style {
         case .ticked:
             self.sliderHeight = 40
             self.frameHeight = 100
