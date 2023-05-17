@@ -1,6 +1,6 @@
 //
 //  OCKOutcome.swift
-//  OCKSample
+//  CareKitUtilities
 //
 //  Created by Corey Baker on 1/5/22.
 //  Copyright © 2022 Network Reconnaissance Lab. All rights reserved.

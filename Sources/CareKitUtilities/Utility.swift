@@ -1,6 +1,6 @@
 //
 //  Utility.swift
-//  OCKSample
+//  CareKitUtilities
 //
 //  Created by Corey Baker on 10/16/21.
 //  Copyright © 2021 Network Reconnaissance Lab. All rights reserved.
@@ -8,6 +8,8 @@
 
 import Foundation
 import CareKitStore
+
+// MARK: Used for testing and previews
 
 enum TaskID {
     static let doxylamine = "doxylamine"
