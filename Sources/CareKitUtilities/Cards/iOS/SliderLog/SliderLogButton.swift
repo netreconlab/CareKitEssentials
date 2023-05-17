@@ -9,14 +9,13 @@
 #if !os(watchOS)
 
 import CareKitUI
+import CareKitStore
 import SwiftUI
 
 struct SliderLogButton: View {
 
     @Environment(\.careKitStyle) private var style
     @ObservedObject var viewModel: SliderLogTaskViewModel
-
-    let action: (_ value: Double) -> Void
 
     var shape: RoundedRectangle {
         RoundedRectangle(cornerRadius: style.appearance.cornerRadius2, style: .continuous)
@@ -35,7 +34,9 @@ struct SliderLogButton: View {
     var body: some View {
         VStack {
             Button(action: {
-                action(viewModel.valueAsDouble)
+                Task {
+                    await viewModel.action(OCKOutcomeValue(viewModel.valueAsDouble))
+                }
                 viewModel.isActive = false
             }) {
                 HStack {

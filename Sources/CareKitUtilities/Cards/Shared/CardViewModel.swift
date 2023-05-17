@@ -17,17 +17,44 @@ import SwiftUI
  */
 public class CardViewModel: ObservableObject {
 
+    // MARK: Published public read/write properties
+
     /// The error encountered by the view model.
     @Published public var error: Error?
     /// The store associated with the view model.
     @Environment(\.careStore) public var store
-    @Published var value = OCKOutcomeValue(0.0)
+    /// The latest `OCKOutcomeValue` for the event.
+    @Published public var value = OCKOutcomeValue(0.0) {
+        didSet {
+            guard isInitialValue,
+                  let double = value.doubleValue else {
+                return
+            }
+            valueAsDouble = double
+        }
+    }
+    /// The latest`OCKOutcomeValue` for the event as a `Double`.
+    @Published public var valueAsDouble: Double = 0 {
+        didSet {
+            guard !isInitialValue else {
+                isInitialValue = true
+                return
+            }
+            value = OCKOutcomeValue(valueAsDouble)
+        }
+    }
 
-    /// The latest value as a Text view.
+    // MARK: Public read/write properties
+
+    /// Specifies if this is the first time a value is being set.
+    public var isInitialValue = true
+
+    // MARK: Public read only properties
+
+    /// The latest`OCKOutcomeValue` for the event as a Text view.
     public var valueAsText: Text {
         Text(value.description)
     }
-
     /// The event associated with the view model.
     private(set) var event: OCKAnyEvent
     /// A custom details title to display for the task of the view model.
@@ -35,6 +62,7 @@ public class CardViewModel: ObservableObject {
     /// A custom details information string to display for the task of the view model.
     private(set) var detailsInformation: String?
 
+    // MARK: Private properties
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
 
     init(event: OCKAnyEvent) {
@@ -46,9 +74,9 @@ public class CardViewModel: ObservableObject {
                     return
                 }
                 if self.event.outcomeValues != nil {
-                    _ = try await self.appendOutcomeValue(value: value)
+                    _ = try await self.appendOutcomeValues([value])
                 } else {
-                    _ = try await self.saveOutcome(values: [value])
+                    _ = try await self.saveOutcomeValues([value])
                 }
             } catch {
                 self.error = error
@@ -56,124 +84,105 @@ public class CardViewModel: ObservableObject {
         }
     }
 
-    /// Create an instance for the default content. The first event that matches the
-    /// provided query will be fetched from the the store and
-    /// published to the view. The view will update when changes occur in the store.
+    /// Create an instance with specified content for an event. The view will update when changes
+    /// occur in the store.
     /// - Parameters:
-    ///     - event: The respective event.
+    ///     - event: A event to associate with the view model.
     ///     - value: The default outcome value for the view model. Defaults to 0.0.
-    ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
-    ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
-    public convenience init(event: OCKAnyEvent,
-                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                            detailsTitle: String? = nil,
-                            detailsInformation: String? = nil) {
-        self.init(event: event)
+    ///     - detailsTitle: An optional title for the event.
+    ///     - detailsInformation: An optional detailed information string for the event.
+    ///     - action: The action to take when event is completed.
+    public init(event: OCKAnyEvent,
+                value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                detailsTitle: String? = nil,
+                detailsInformation: String? = nil,
+                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
         self.value = value
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
-    }
-
-    /// Create an instance for the default content. The first event that matches the
-    /// provided query will be fetched from the the store and
-    /// published to the view. The view will update when changes occur in the store.
-    /// - Parameters:
-    ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - value: The default outcome value for the view model. Defaults to 0.0.
-    ///     - detailsTitle: Optional title to be shown on custom CareKit Cards.
-    ///     - detailsInformation: Optional detailed information to be shown on custom CareKit Cards.
-    ///     - action: The action to take when a task is completed.
-    public convenience init(event: OCKAnyEvent,
-                            value: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                            detailsTitle: String? = nil,
-                            detailsInformation: String? = nil,
-                            action: ((OCKOutcomeValue?) async -> Void)?) {
-        self.init(event: event)
-        self.value = value
-        self.detailsTitle = detailsTitle
-        self.detailsInformation = detailsInformation
-        if let action = action {
-            self.action = action
+        self.event = event
+        guard let action = action else {
+            self.action = { value in
+                do {
+                    guard let value = value else {
+                        // The action will attempt to delete the outcome if it
+                        // already exists.
+                        _ = try await self.saveOutcomeValues([])
+                        return
+                    }
+                    _ = try await self.appendOutcomeValues([value])
+                } catch {
+                    self.error = error
+                }
+            }
+            return
         }
+        self.action = action
     }
 
-    /// Append an outcome value to an event's outcome.
+    // MARK: Intentions
+
+    /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
     /// - Parameters:
-    ///   - value: The outcome value.
-    /// - Returns: The saved outcome value.
-    /// - Throws: An error if the outcome value can't be saved.
-    open func appendOutcomeValue(value: OCKOutcomeValue) async throws -> OCKAnyOutcome {
+    ///   - values: An array of `OCKOutcomeValue`'s to append.
+    /// - Throws: An error if the outcome values cannot be set.
+    /// - Note: Appends occur if an`OCKOutcome` currently exists for the event.
+    /// Otherwise a new `OCKOutcome` is created with the respective outcome values.
+    open func appendOutcomeValues(_ values: [OCKOutcomeValue]) async throws {
 
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
-            let outcome = try makeOutcomeWith([value])
-            return try await store.addAnyOutcome(outcome)
+            let outcome = try createOutcomeWithValues(values)
+            _ = try await store.addAnyOutcome(outcome)
+            return
         }
-        outcome.values.append(value)
-        return try await store.updateAnyOutcome(outcome)
+        outcome.values.append(contentsOf: values)
+        _ = try await store.updateAnyOutcome(outcome)
+        return
     }
 
-    /// Set the completion state for an event.
+    /// Set/Replace the `OCKOutcomeValue`'s of an event.
     /// - Parameters:
-    ///   - values: Array of OCKOutcomeValue
-    /// - Returns: The updated outcome.
-    /// - Throws: An error if the outcome value can't be set.
-    open func setEvent(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
-        try await withCheckedThrowingContinuation { continuation in
-            self.setEvent(values: values,
-                          completion: continuation.resume)
-        }
-    }
+    ///   - values: An array of `OCKOutcomeValue`'s to save.
+    /// - Throws: An error if the outcome values cannot be set.
+    /// - Note: Setting `values` to an empty array will delete the current `OCKOutcome` if it currently exists.
+    open func saveOutcomeValues(_ values: [OCKOutcomeValue]) async throws {
 
-    /// Set the completion state for an event.
-    /// - Parameters:
-    ///   - values: Array of OCKOutcomeValue
-    ///   - completion: Result after setting the completion for the event.
-    open func setEvent(values: [OCKOutcomeValue],
-                       completion: ((Result<OCKAnyOutcome, Error>) -> Void)?) {
-
-        // If the event is complete, create an outcome with the specified values.
-        if !values.isEmpty {
-            do {
-                let outcome = try makeOutcomeWith(values)
-                store.addAnyOutcome(outcome) { result in
-                    switch result {
-                    case .failure(let error): completion?(.failure(error))
-                    case .success(let outcome): completion?(.success(outcome))
-                    }
-                }
-            } catch {
-                completion?(.failure(error))
+        // Check if outcome values need to be updated.
+        guard !values.isEmpty else {
+            // If the event has already been completed
+            guard let oldOutcome = event.outcome else {
+                return
             }
-        } else {
-            // if the event is incomplete, delete the outcome
-            guard let outcome = event.outcome else { return }
-            store.deleteAnyOutcome(outcome) { result in
-                switch result {
-                case .failure(let error): completion?(.failure(error))
-                case .success(let outcome): completion?(.success(outcome))
-                }
-            }
+            // Delete the outcome, and create a new one.
+            _ = try await store.deleteAnyOutcome(oldOutcome)
+            return
         }
 
+        // If the event has already been completed
+        guard var currentOutcome = event.outcome else {
+            // Create a new outcome with the new values.
+            let outcome = try createOutcomeWithValues(values)
+            _ = try await store.addAnyOutcome(outcome)
+            return
+        }
+        // Update the outcome with the new values.
+        currentOutcome.values = values
+        _ = try await store.updateAnyOutcome(currentOutcome)
     }
 
-    /// Save the outcome for a particular event.
-    /// - Parameters:
-    ///   - values: Array of `OCKOutcomeValue`
-    /// - Returns: The saved outcome.
-    /// - Throws: An error if the outcome value can't be saved.
-    open func saveOutcome(values: [OCKOutcomeValue]) async throws -> OCKAnyOutcome {
-        try await setEvent(values: values)
-    }
+    // MARK: Helpers
 
-    /// Make an outcome for an event with the given outcome values.
+    /// Create an outcome for an event with the given outcome values.
     /// - Parameters:
     ///   - values: The outcome values to attach to the outcome.
-    open func makeOutcomeWith(_ values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
+    open func createOutcomeWithValues(_ values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
         guard let task = event.task as? OCKAnyVersionableTask else {
             throw CareKitUtilitiesError.errorString("Cannot make outcome for event: \(event)")
         }
-        return OCKOutcome(taskUUID: task.uuid, taskOccurrenceIndex: event.scheduleEvent.occurrence, values: values)
+        return OCKOutcome(taskUUID: task.uuid,
+                          taskOccurrenceIndex: event.scheduleEvent.occurrence,
+                          values: values)
     }
+
 }

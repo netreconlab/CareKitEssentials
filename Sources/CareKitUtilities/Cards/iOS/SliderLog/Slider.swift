@@ -16,7 +16,6 @@ struct Slider: View {
     @ObservedObject private var viewModel: SliderLogTaskViewModel
 
     private let range: (Double, Double)
-    private let step: Double
     private let minimumImage: Image?
     private let maximumImage: Image?
     fileprivate let minimumDescription: String?
@@ -32,8 +31,6 @@ struct Slider: View {
     private var containsImages: Bool { (minimumImage == nil && maximumImage == nil) ? false : true }
 
     init(viewModel: SliderLogTaskViewModel,
-         range: ClosedRange<Double>,
-         step: Double,
          minimumImage: Image?,
          maximumImage: Image?,
          minimumDescription: String?,
@@ -41,8 +38,7 @@ struct Slider: View {
          sliderStyle: SliderStyle,
          gradientColors: [Color]? = nil) {
         self.viewModel = viewModel
-        self.range = (range.lowerBound, range.upperBound)
-        self.step = step
+        self.range = (viewModel.range.lowerBound, viewModel.range.upperBound)
         self.minimumImage = minimumImage
         self.maximumImage = maximumImage
         self.minimumDescription = minimumDescription
@@ -148,7 +144,9 @@ struct Slider: View {
                                                     onDragChange(drag, sliderWidth: sliderWidth)
                                                 }))
                                             addTicks(sliderWidth: sliderWidth)
-                                                .if(!viewModel.isActive) { $0.accentColor(Color(style.color.customGray))}
+                                                .if(!viewModel.isActive) {
+                                                    $0.accentColor(Color(style.color.customGray))
+                                                }
                                         }
                                         .frame(width: sliderWidth, height: sliderHeight)
             )
@@ -170,7 +168,9 @@ struct Slider: View {
             }
 
             SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1)
-                .if(gradientColors == nil) { $0.accentColor(viewModel.isActive ? .accentColor : Color(style.color.customGray)) }
+                .if(gradientColors == nil) {
+                    $0.accentColor(viewModel.isActive ? .accentColor : Color(style.color.customGray))
+                }
                 .if(gradientColors != nil) { $0.accentColor(.clear) }
         }
     }
@@ -180,7 +180,9 @@ struct Slider: View {
         let barLeftSize = CGSize(width: width, height: height)
         let barRightSize = CGSize(width: CGFloat(offsetX), height: height)
         let barLeft = Rectangle()
-            .if(gradientColors == nil) { $0.foregroundColor(viewModel.isActive ? .accentColor : Color(style.color.customGray)) }
+            .if(gradientColors == nil) {
+                $0.foregroundColor(viewModel.isActive ? .accentColor : Color(style.color.customGray))
+            }
             .if(gradientColors != nil) {
                 $0
                     .foregroundColor(.clear)
@@ -211,10 +213,10 @@ struct Slider: View {
 
     private func addTicks(sliderWidth: CGFloat) -> some View {
         var values = [Double]()
-        var possibleValue = range.0 + step
+        var possibleValue = range.0 + viewModel.step
         while possibleValue < range.1 {
             values.append(possibleValue)
-            possibleValue += step
+            possibleValue += viewModel.step
         }
         let spacing = (sliderWidth * 0.8) / CGFloat(values.count - 1) - borderWidth
         return
@@ -236,7 +238,7 @@ struct Slider: View {
         dragValue = dragValue > xrange.max ? xrange.max : dragValue
         dragValue = dragValue < xrange.min ? xrange.min : dragValue
         dragValue = dragValue.convert(fromRange: (xrange.min, xrange.max), toRange: (range.0, range.1))
-        dragValue = round(dragValue / step) * step
+        dragValue = round(dragValue / viewModel.step) * viewModel.step
         self.viewModel.valueAsDouble = dragValue
         self.viewModel.isActive = true
     }

@@ -37,6 +37,7 @@ public class DigitalCrownViewModel: CardViewModel {
         value == event.outcomeFirstValue
     }
 
+    /*
     public var valueAsDouble: Double {
         get {
             return value.doubleValue ?? 0.0
@@ -46,7 +47,7 @@ public class DigitalCrownViewModel: CardViewModel {
             updatedValue.value = newValue
             value = updatedValue
         }
-    }
+    } */
 
     public var valueForButton: String {
         "\(Int(valueAsDouble))"

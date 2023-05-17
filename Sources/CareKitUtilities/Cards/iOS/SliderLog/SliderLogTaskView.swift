@@ -48,7 +48,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
-    
+
     @ObservedObject private var viewModel: SliderLogTaskViewModel
     private let isHeaderPadded: Bool
     private let isSliderPadded: Bool
@@ -59,8 +59,11 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     public var body: some View {
         CardView {
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
-                VStack { header }
-                    .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
+                VStack {
+                    header
+                    Divider()
+                }
+                .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
 
                 instructions?
                     .font(.subheadline)
@@ -106,7 +109,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     }
 }
 
-public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader {
+public extension SliderLogTaskView where Header == InformationHeaderView {
 
     /// Create an instance.
     /// - Parameter title: Title text to display in the header.
@@ -123,7 +126,9 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader {
                   instructions: instructions,
                   viewModel: viewModel,
                   header: {
-            _SliderLogTaskViewHeader(title: title, detail: detail)
+            InformationHeaderView(title: title,
+                                  information: detail,
+                                  event: viewModel.event)
         }, slider: slider)
     }
 }
@@ -146,19 +151,15 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient
     /// being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a
     /// scale from bad to good.
-    /// - Parameter action: Action to perform when the button is tapped.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
          viewModel: SliderLogTaskViewModel,
-         range: ClosedRange<Double>,
-         step: Double = 1,
          minimumImage: Image? = nil,
          maximumImage: Image? = nil,
          minimumDescription: String? = nil,
          maximumDescription: String? = nil,
          sliderStyle: SliderStyle = .system,
          gradientColors: [Color]? = nil,
-         action: @escaping (Double) -> Void,
          @ViewBuilder header: () -> Header) {
         self.init(isHeaderPadded: false,
                   isSliderPadded: true,
@@ -167,29 +168,22 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
                   header: header,
                   slider: {
             _SliderLogTaskViewSlider(viewModel: viewModel,
-                                     range: range,
-                                     step: step,
                                      minimumImage: minimumImage,
                                      maximumImage: maximumImage,
                                      minimumDescription: minimumDescription,
                                      maximumDescription: maximumDescription,
                                      sliderStyle: sliderStyle,
-                                     gradientColors: gradientColors,
-                                     action: action)
+                                     gradientColors: gradientColors)
         })
     }
 }
 
-public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Slider == _SliderLogTaskViewSlider {
+public extension SliderLogTaskView where Header == InformationHeaderView, Slider == _SliderLogTaskViewSlider {
 
     /// Create an instance.
     /// - Parameter title: Title text to display in the header.
     /// - Parameter detail: Detail text to display in the header.
     /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter valuesArray: The binded array of all outcome values
-    /// - Parameter value: The binded value that the slider will reflect
-    /// - Parameter range: The range that includes all possible values.
-    /// - Parameter step: Value of the increment that the slider takes. Default value is 1
     /// - Parameter minimumImage: Image to display to the left of the slider. Default value is nil.
     /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
@@ -200,121 +194,66 @@ public extension SliderLogTaskView where Header == _SliderLogTaskViewHeader, Sli
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
     /// indicate a scale from bad to good.
-    /// - Parameter action: Action to perform when the button is tapped.
     init(title: Text,
          detail: Text? = nil,
          instructions: Text? = nil,
          viewModel: SliderLogTaskViewModel,
-         range: ClosedRange<Double>,
-         step: Double = 1,
          minimumImage: Image? = nil,
          maximumImage: Image? = nil,
          minimumDescription: String? = nil,
          maximumDescription: String? = nil,
-         sliderStyle: SliderStyle = .system,
-         gradientColors: [Color]? = nil,
-         action: @escaping (Double) -> Void) {
+         sliderStyle: SliderStyle = .ticked,
+         gradientColors: [Color]? = nil) {
         self.init(isHeaderPadded: true,
                   isSliderPadded: true,
                   instructions: instructions,
+                  viewModel: viewModel,
                   header: {
-            _SliderLogTaskViewHeader(title: title, detail: detail) },
+            InformationHeaderView(title: title,
+                                  information: detail,
+                                  event: viewModel.event) },
                   slider: {
             _SliderLogTaskViewSlider(viewModel: viewModel,
-                                     range: range,
-                                     step: step,
                                      minimumImage: minimumImage,
                                      maximumImage: maximumImage,
                                      minimumDescription: minimumDescription,
                                      maximumDescription: maximumDescription,
                                      sliderStyle: sliderStyle,
-                                     gradientColors: gradientColors,
-                                     action: action)
+                                     gradientColors: gradientColors)
         })
-    }
-    
-    /// Create an instance. The first event that matches the provided query will be fetched from the the store and displayed in the view. The view
-    /// will update when changes occur in the store.
-    /// - Parameters:
-    ///     - task: The task associated with the event to fetch.
-    ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - storeManager: Wraps the store that contains the event to fetch.
-    ///     - content: Create a view to display whenever the body is computed.
-    init(viewModel: SliderLogTaskViewModel) {
-        _SliderLogTaskViewSlider(viewModel: viewModel,
-                                 range: <#T##ClosedRange<Double>#>,
-                                 step: <#T##Double#>,
-                                 minimumImage: <#T##Image?#>,
-                                 maximumImage: <#T##Image?#>,
-                                 minimumDescription: <#T##String?#>,
-                                 maximumDescription: <#T##String?#>,
-                                 sliderStyle: <#T##SliderStyle#>,
-                                 gradientColors: <#T##[Color]?#>,
-                                 action: <#T##(Double) -> Void##(Double) -> Void##(_ value: Double) -> Void#>)
-    }
-}
-
-/// The default header used by a `SliderTaskView
-public struct _SliderLogTaskViewHeader: View { // swiftlint:disable:this type_name
-
-    @Environment(\.careKitStyle) private var style
-
-    fileprivate let title: Text
-    fileprivate let detail: Text?
-
-    public var body: some View {
-        VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
-            HeaderView(title: title, detail: detail)
-            Divider()
-        }
     }
 }
 
 /// The default slider view used by an `SliderTaskView`.
 public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_name
 
-    @State var isActive: Bool = false
-    // @Binding var value: Double
-    // @Binding var valuesArray: [Double]
     @ObservedObject fileprivate var viewModel: SliderLogTaskViewModel
-    fileprivate let initialValue: Double
     fileprivate let minimumImage: Image?
     fileprivate let maximumImage: Image?
     fileprivate let minimumDescription: String?
     fileprivate let maximumDescription: String?
-    fileprivate let range: ClosedRange<Double>
-    fileprivate let step: Double
     fileprivate let sliderStyle: SliderStyle
     fileprivate let gradientColors: [Color]?
-    fileprivate let action: (_ value: Double) -> Void
 
     init(viewModel: SliderLogTaskViewModel,
-         range: ClosedRange<Double>,
-         step: Double,
-         minimumImage: Image?, maximumImage: Image?,
-         minimumDescription: String?, maximumDescription: String?,
+         minimumImage: Image?,
+         maximumImage: Image?,
+         minimumDescription: String?,
+         maximumDescription: String?,
          sliderStyle: SliderStyle,
-         gradientColors: [Color]?,
-         action: @escaping (_ value: Double) -> Void) {
-        self.initialValue = range.lowerBound + round((range.upperBound - range.lowerBound) / (step * 2)) * step
-        self.action = action
+         gradientColors: [Color]?) {
+        self.viewModel = viewModel
         self.minimumImage = minimumImage
         self.maximumImage = maximumImage
         self.minimumDescription = minimumDescription
         self.maximumDescription = maximumDescription
-        self.range = range
-        self.step = step
         self.sliderStyle = sliderStyle
         self.gradientColors = gradientColors
-        // _value = value
-        // _valuesArray = valuesArray
     }
 
     public var body: some View {
         VStack {
             Slider(viewModel: viewModel,
-                   range: range,
-                   step: step,
                    minimumImage: minimumImage,
                    maximumImage: maximumImage,
                    minimumDescription: minimumDescription,
@@ -322,8 +261,7 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
                    sliderStyle: sliderStyle,
                    gradientColors: gradientColors)
 
-            SliderLogButton(viewModel: viewModel,
-                            action: action)
+            SliderLogButton(viewModel: viewModel)
         }
     }
 }
@@ -331,7 +269,8 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 struct SliderLogTaskView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            SliderLogTaskView(viewModel: .init(event: event))
+            SliderLogTaskView(title: Text(event.title),
+                              viewModel: .init(event: event, range: 0...10))
                 .environment(\.careStore, Utility.createPreviewStore())
         }
     }

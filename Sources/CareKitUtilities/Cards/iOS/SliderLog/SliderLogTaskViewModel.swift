@@ -10,38 +10,38 @@ import Foundation
 import SwiftUI
 
 public class SliderLogTaskViewModel: CardViewModel {
-    
-    /// Current value displayed on the Slider.
-    @Published public var valueAsDouble: Double = 0 {
-        didSet {
-            value = OCKOutcomeValue(valueAsDouble)
-        }
-    }
-    
-    /// Data used to create a `CareKitUI.SliderTaskTaskView`
+
+    /// The binded array of all outcome values.
     @Published public var valuesArray: [Double]
-    
+
     @Published public var isActive = true
-    
-    public var range: ClosedRange<Double>
-    
+
+    private(set) var range: ClosedRange<Double>
+    private(set) var step: Double
+
+    /**
+     - parameter range: The range that includes all possible values.
+     - parameter step: Value of the increment that the slider takes. Default value is 1.
+     - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
+     */
     init(event: OCKAnyEvent,
-         value: OCKOutcomeValue = OCKOutcomeValue(0.0),
          valuesArray: [Double] = [],
          range: ClosedRange<Double>,
-         isActive: Bool,
+         step: Double = 1,
+         isActive: Bool = true,
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
-         action: ((OCKOutcomeValue?) async -> Void)?) {
-        super.init(event: event)
-        self.value = value
-        self.detailsTitle = detailsTitle
-        self.detailsInformation = detailsInformation
-        if let action = action {
-            self.action = action
-        }
+         action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+        let initialValue = range.lowerBound + round((range.upperBound - range.lowerBound) / (step * 2)) * step
         self.valuesArray = valuesArray
         self.range = range
+        self.step = step
         self.isActive = isActive
+        super.init(event: event,
+                   value: OCKOutcomeValue(initialValue),
+                   detailsTitle: detailsTitle,
+                   detailsInformation: detailsInformation,
+                   action: action)
     }
+
 }
