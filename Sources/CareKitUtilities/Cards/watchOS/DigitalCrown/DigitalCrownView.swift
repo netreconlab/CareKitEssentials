@@ -43,9 +43,9 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
     }
 
     init(isHeaderPadded: Bool,
-                isFooterPadded: Bool,
-                @ViewBuilder header: () -> Header,
-                @ViewBuilder footer: () -> Footer) {
+         isFooterPadded: Bool,
+         @ViewBuilder header: () -> Header,
+         @ViewBuilder footer: () -> Footer) {
         self.isHeaderPadded = isHeaderPadded
         self.isFooterPadded = isFooterPadded
         self.header = header()
@@ -56,7 +56,7 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
 // MARK: - Public Init
 
 public extension DigitalCrownView {
-    
+
     /// Create an instance.
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
@@ -69,22 +69,6 @@ public extension DigitalCrownView {
                   header: header,
                   footer: footer)
     }
-
-    /// Create a view using data from an event.
-    ///
-    /// This view displays custom label card with  title, detail, and/or image.
-    ///
-    /// - Parameters:
-    ///   - event: The data that appears in the view.
-    ///   - header: Short and descriptive content that identifies the event.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder footer: () -> Footer) {
-        self.init(viewModel: .init(event: event.result),
-                  header: header,
-                  footer: footer)
-    }
-
 }
 
 public extension DigitalCrownView where Header == DigitalCrownViewHeader {
@@ -123,6 +107,32 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
             DigitalCrownViewFooter(viewModel: viewModel)
         })
     }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - event: The data that appears in the view.
+    ///   - header: Short and descriptive content that identifies the event.
+    init(event: CareStoreFetchedResult<OCKAnyEvent>,
+         startValue: Double,
+         initialValue: Double,
+         endValue: Double,
+         incrementValue: Double,
+         colorRatio: Double,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil,
+         @ViewBuilder header: () -> Header) {
+        self.init(viewModel: .init(event: event.result,
+                                   initialValue: initialValue,
+                                   startValue: startValue,
+                                   endValue: endValue,
+                                   incrementValue: incrementValue,
+                                   colorRatio: colorRatio,
+                                   action: action),
+                  header: header)
+    }
+
 }
 
 public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer == DigitalCrownViewFooter {

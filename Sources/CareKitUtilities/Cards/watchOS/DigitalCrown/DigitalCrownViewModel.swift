@@ -59,19 +59,35 @@ public class DigitalCrownViewModel: CardViewModel {
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
     public init(event: OCKAnyEvent,
-                            startValue: Double,
-                            initialValue: Double,
-                            endValue: Double,
-                            incrementValue: Double,
-                            colorRatio: Double,
-                            action: @escaping ((OCKOutcomeValue?) async -> Void)) {
-        super.init(event: event,
-                   action: action)
-        self.value = OCKOutcomeValue(initialValue)
+                emojis: [String]? = nil,
+                initialValue: Double? = nil,
+                startValue: Double = 0,
+                endValue: Double? = nil,
+                incrementValue: Double = 1,
+                colorRatio: Double = 0.2,
+                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+        if let emojis = emojis {
+            self.emojis = emojis
+            if endValue == nil {
+                self.endValue = Double(emojis.count) - 1
+            }
+        }
+        if let endValue = endValue {
+            self.endValue = endValue
+        }
         self.startValue = startValue
-        self.endValue = endValue
         self.incrementValue = incrementValue
         self.colorRatio = colorRatio
+        if let initialValue = initialValue {
+            super.init(event: event,
+                       value: OCKOutcomeValue(initialValue),
+                       action: action)
+        } else {
+            super.init(event: event,
+                       value: OCKOutcomeValue(startValue),
+                       action: action)
+        }
+
     }
 
     /**
