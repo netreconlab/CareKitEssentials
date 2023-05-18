@@ -41,53 +41,59 @@ public class DigitalCrownViewModel: CardViewModel {
         "\(Int(valueAsDouble))"
     }
 
-    private(set) var emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
-    private(set) var startValue: Double = 0
-    private(set) var endValue: Double = 10
-    private(set) var incrementValue: Double = 1
-    private(set) var colorRatio: Double = 0.2
+    private(set) var emojis = [String]()
+    private(set) var startValue: Double
+    private(set) var endValue: Double
+    private(set) var incrementValue: Double
+    private(set) var colorRatio: Double
 
     /// Create an instance for the default content. The first event that matches the
     /// provided query will be fetched from the the store and
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
-    ///     - taskID: The ID of the task to fetch.
-    ///     - eventQuery: A query used to fetch an event in the store.
-    ///     - emojis: An array of emoji's to show on the screen.
+    ///     - event: A event to associate with the view model.
+    ///     - detailsTitle: An optional title for the event.
+    ///     - detailsInformation: An optional detailed information string for the event.
+    ///     - initialValue: The initial value shown for the digital crown.
     ///     - startValue: The minimum possible value.
     ///     - endValue: The maximum possible value.
+    ///     - emojis: An array of emoji's to show on the screen.
     ///     - incrementValue: The step amount.
     ///     - action: The action to perform when the log button is tapped.
     public init(event: OCKAnyEvent,
-                emojis: [String]? = nil,
+                detailsTitle: String? = nil,
+                detailsInformation: String? = nil,
                 initialValue: Double? = nil,
                 startValue: Double = 0,
                 endValue: Double? = nil,
                 incrementValue: Double = 1,
+                emojis: [String] = [],
                 colorRatio: Double = 0.2,
                 action: ((OCKOutcomeValue?) async -> Void)? = nil) {
-        if let emojis = emojis {
-            self.emojis = emojis
-            if endValue == nil {
-                self.endValue = Double(emojis.count) - 1
-            }
-        }
-        if let endValue = endValue {
-            self.endValue = endValue
-        }
         self.startValue = startValue
         self.incrementValue = incrementValue
         self.colorRatio = colorRatio
+        self.emojis = emojis
+        if let endValue = endValue {
+            self.endValue = endValue
+        } else if emojis.count > 0 {
+            self.endValue = Double(emojis.count) - 1
+        } else {
+            self.endValue = 0
+        }
         if let initialValue = initialValue {
             super.init(event: event,
-                       value: OCKOutcomeValue(initialValue),
+                       initialValue: OCKOutcomeValue(initialValue),
+                       detailsTitle: detailsTitle,
+                       detailsInformation: detailsInformation,
                        action: action)
         } else {
             super.init(event: event,
-                       value: OCKOutcomeValue(startValue),
+                       initialValue: OCKOutcomeValue(startValue),
+                       detailsTitle: detailsTitle,
+                       detailsInformation: detailsInformation,
                        action: action)
         }
-
     }
 
     /**

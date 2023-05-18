@@ -26,7 +26,7 @@ struct SliderLogButton: View {
             .fill(Color.accentColor)
     }
 
-    var valueAsText: String {
+    var valueAsString: String {
         // swiftlint:disable:next line_length
         viewModel.valuesArray.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", viewModel.valuesArray[0]))
     }
@@ -57,7 +57,7 @@ struct SliderLogButton: View {
             .padding(.bottom)
 
             Button(action: {}) {
-                Text(valueAsText)
+                Text(valueAsString)
                     .foregroundColor(.accentColor)
                     .font(Font.subheadline.weight(.medium))
             }

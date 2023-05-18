@@ -53,9 +53,9 @@ public class CardViewModel: ObservableObject {
 
     // MARK: Public read only properties
 
-    /// The latest`OCKOutcomeValue` for the event as a Text view.
-    public var valueAsText: Text {
-        Text(value.description)
+    /// The latest`OCKOutcomeValue` for the event as a String.
+    public var valueAsString: String {
+        value.description
     }
     /// The event associated with the view model.
     private(set) var event: OCKAnyEvent
@@ -67,48 +67,29 @@ public class CardViewModel: ObservableObject {
     // MARK: Private properties
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
 
-    init(event: OCKAnyEvent) {
-        self.event = event
-        self.action = { value in
-            do {
-                guard let value = value else {
-                    // No outcome to set
-                    return
-                }
-                if self.event.outcomeValues != nil {
-                    _ = try await self.appendOutcomeValues([value])
-                } else {
-                    _ = try await self.saveOutcomeValues([value])
-                }
-            } catch {
-                self.error = error
-            }
-        }
-    }
-
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.
     /// - Parameters:
     ///     - event: A event to associate with the view model.
-    ///     - value: The default outcome value for the view model. Defaults to 0.0.
+    ///     - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: An optional title for the event.
     ///     - detailsInformation: An optional detailed information string for the event.
     ///     - action: The action to take when event is completed.
     public init(event: OCKAnyEvent,
-                value: OCKOutcomeValue = OCKOutcomeValue(0.0),
+                initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
                 detailsTitle: String? = nil,
                 detailsInformation: String? = nil,
                 action: ((OCKOutcomeValue?) async -> Void)? = nil) {
-        self.value = value
+        self.value = event.outcomeFirstValue ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
         guard let action = action else {
+            // Use the default action
             self.action = { value in
                 do {
                     guard let value = value else {
-                        // The action will attempt to delete the outcome if it
-                        // already exists.
+                        // Attempts to delete outcome if it already exists.
                         _ = try await self.saveOutcomeValues([])
                         return
                     }

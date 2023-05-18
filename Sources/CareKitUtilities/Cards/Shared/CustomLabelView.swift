@@ -57,7 +57,7 @@ public struct CustomLabelView<Header: View>: View {
                     }
                     .foregroundColor(Color.primary)
                     Spacer()
-                    viewModel.valueAsText
+                    Text(viewModel.valueAsString)
                         .font(.title)
                         .bold()
                         .foregroundColor(Color.accentColor)
@@ -76,8 +76,9 @@ public extension CustomLabelView {
     ///
     /// This view displays custom label card with  title, detail, and/or image.
     ///
-    /// - parameter viewModel: The view model used to populate the view contents.
-    /// - parameter header: Short and descriptive content that identifies the event.
+    /// - Parameters:
+    ///   - viewModel: The view model used to populate the view contents.
+    ///   -  header: Short and descriptive content that identifies the event.
     init(viewModel: CardViewModel,
          @ViewBuilder header: () -> Header) {
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -90,10 +91,22 @@ public extension CustomLabelView {
     ///
     /// - Parameters:
     ///   - event: The data that appears in the view.
+    ///   - initialValue: The default outcome value for the view model. Defaults to 0.0.
+    ///   - detailsTitle: An optional title for the event.
+    ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - action: The action to take when event is completed.
     ///   - header: Short and descriptive content that identifies the event.
     init(event: CareStoreFetchedResult<OCKAnyEvent>,
+         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
+         detailsTitle: String? = nil,
+         detailsInformation: String? = nil,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil,
          @ViewBuilder header: () -> Header) {
-        self.init(viewModel: .init(event: event.result),
+        self.init(viewModel: .init(event: event.result,
+                                   initialValue: initialValue,
+                                   detailsTitle: detailsTitle,
+                                   detailsInformation: detailsInformation,
+                                   action: action),
                   header: header)
     }
 
@@ -101,11 +114,12 @@ public extension CustomLabelView {
 
 public extension CustomLabelView where Header == InformationHeaderView {
 
-    /// Create a view using a view model.
+    /// Create a view using data from a view model.
     ///
-    /// This view displays custom label card with  title, detail, and/or image.
+    /// This view displays custom label card with title, detail, and/or image.
     ///
-    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - Parameters:
+    ///   - viewModel: The view model used to populate the view contents.
     init(viewModel: CardViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         if let informationTitle = viewModel.detailsTitle,
@@ -130,12 +144,24 @@ public extension CustomLabelView where Header == InformationHeaderView {
 
     /// Create a view using data from an event.
     ///
-    /// This view displays custom label card with  title, detail, and/or image.
+    /// This view displays custom label card with title, detail, and/or image.
     ///
     /// - Parameters:
     ///   - event: The data that appears in the view.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>) {
-        self.init(viewModel: .init(event: event.result))
+    ///   - initialValue: The default outcome value for the view model. Defaults to 0.0.
+    ///   - detailsTitle: An optional title for the event.
+    ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - action: The action to take when event is completed.
+    init(event: CareStoreFetchedResult<OCKAnyEvent>,
+         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
+         detailsTitle: String? = nil,
+         detailsInformation: String? = nil,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+        self.init(viewModel: .init(event: event.result,
+                                   initialValue: initialValue,
+                                   detailsTitle: detailsTitle,
+                                   detailsInformation: detailsInformation,
+                                   action: action))
     }
 
 }
@@ -146,12 +172,11 @@ struct CustomLabelView_Previews: PreviewProvider {
             VStack {
                 CustomLabelView(viewModel: .init(event: event),
                                 header: EmptyView())
-                    .environment(\.careStore, Utility.createPreviewStore())
                     .padding()
                 CustomLabelView(viewModel: .init(event: event))
-                    .environment(\.careStore, Utility.createPreviewStore())
                     .padding()
             }
+            .environment(\.careStore, Utility.createPreviewStore())
         }
     }
 }

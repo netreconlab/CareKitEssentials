@@ -116,18 +116,24 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///   - event: The data that appears in the view.
     ///   - header: Short and descriptive content that identifies the event.
     init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         startValue: Double,
-         initialValue: Double,
-         endValue: Double,
-         incrementValue: Double,
-         colorRatio: Double,
+         detailsTitle: String? = nil,
+         detailsInformation: String? = nil,
+         initialValue: Double? = nil,
+         startValue: Double = 0,
+         endValue: Double? = nil,
+         incrementValue: Double = 1,
+         emojis: [String] = [],
+         colorRatio: Double = 0.2,
          action: ((OCKOutcomeValue?) async -> Void)? = nil,
          @ViewBuilder header: () -> Header) {
         self.init(viewModel: .init(event: event.result,
+                                   detailsTitle: detailsTitle,
+                                   detailsInformation: detailsInformation,
                                    initialValue: initialValue,
                                    startValue: startValue,
                                    endValue: endValue,
                                    incrementValue: incrementValue,
+                                   emojis: emojis,
                                    colorRatio: colorRatio,
                                    action: action),
                   header: header)
@@ -149,12 +155,14 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
 }
 
 struct DigitalCrownView_Previews: PreviewProvider {
+    static let emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
     static let task = Utility.createNauseaTask()
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
             DigitalCrownView(title: Text(task.title!),
                              detail: Text(task.instructions!),
-                             viewModel: .init(event: event))
+                             viewModel: .init(event: event,
+                                              emojis: emojis))
                 .environment(\.careStore, Utility.createPreviewStore())
         }
     }

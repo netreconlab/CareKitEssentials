@@ -193,7 +193,7 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
     /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider. Colors
+    /// - Parameter gradientColors: The colors to use when drawing a color gradient inside the slider. Colors
     /// are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in
     /// the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient
     /// being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a
@@ -237,7 +237,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
     /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
     /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors:  The colors to use when drawing a color gradient inside the slider.
+    /// - Parameter gradientColors: The colors to use when drawing a color gradient inside the slider.
     /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
@@ -282,6 +282,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     ///   - event: The data that appears in the view.
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - initialValue: The initial value shown on the slider.
     ///   - range: The range that includes all possible values.
     ///   - step: Value of the increment that the slider takes. Default value is 1.
     ///   - isActive: Specifies if the slider is allowed to be changed.
@@ -291,7 +292,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     ///   - minimumDescription: Description to display next to lower bound value. Default value is nil.
     ///   - maximumDescription: Description to display next to upper bound value. Default value is nil.
     ///   - style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    ///   - gradientColors:  The colors to use when drawing a color gradient inside the slider.
+    ///   - gradientColors: The colors to use when drawing a color gradient inside the slider.
     /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
@@ -302,6 +303,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
          event: CareStoreFetchedResult<OCKAnyEvent>,
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
+         initialValue: Double? = 0,
          range: ClosedRange<Double>,
          valuesArray: [Double] = [],
          step: Double = 1,
@@ -316,6 +318,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
         let viewModel = SliderLogTaskViewModel(event: event.result,
                                                detailsTitle: detailsTitle,
                                                detailsInformation: detailsInformation,
+                                               initialValue: initialValue,
                                                range: range,
                                                valuesArray: valuesArray,
                                                step: step,
@@ -384,7 +387,6 @@ struct SliderLogTaskView_Previews: PreviewProvider {
                                   detail: Text(event.detail ?? ""),
                                   viewModel: .init(event: event, range: 0...10),
                                   gradientColors: [.green, .yellow, .red])
-                .environment(\.careStore, Utility.createPreviewStore())
                 .padding()
 
                 SliderLogTaskView(title: Text(event.title),
@@ -392,9 +394,9 @@ struct SliderLogTaskView_Previews: PreviewProvider {
                                   viewModel: .init(event: event, range: 0...10),
                                   style: .system,
                                   gradientColors: [.green, .yellow, .red])
-                .environment(\.careStore, Utility.createPreviewStore())
                 .padding()
             }
+            .environment(\.careStore, Utility.createPreviewStore())
         }
     }
 }

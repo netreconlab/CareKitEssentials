@@ -40,8 +40,10 @@ public struct DigitalCrownViewFooter: View {
     public var body: some View {
         VStack {
             HStack {
-                Text("\(viewModel.emojis[Int(round(viewModel.valueAsDouble))])")
-                    .font(.largeTitle)
+                if viewModel.emojis.count > 0 {
+                    Text("\(viewModel.emojis[Int(round(viewModel.valueAsDouble))])")
+                        .font(.largeTitle)
+                }
                 Text("\(String(format: "%g", round(viewModel.valueAsDouble)))")
                     .focusable(true)
                     .digitalCrownRotation($viewModel.valueAsDouble,
