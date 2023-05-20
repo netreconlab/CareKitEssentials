@@ -19,6 +19,10 @@
 		911BDB2C2A12F0D3004F8442 /* CareKitUtilitiesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */; };
 		911BDB322A130A2B004F8442 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB312A130A2B004F8442 /* Utility.swift */; };
 		911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB332A130AF9004F8442 /* OCKStore.swift */; };
+		91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */; };
+		91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */; };
+		91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */; };
+		91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */; };
 		91F46E152A11C1A2002EBDDD /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E142A11C1A2002EBDDD /* CareKit */; };
 		91F46E172A11C1A2002EBDDD /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E162A11C1A2002EBDDD /* CareKitStore */; };
 		91F46E192A11C1A2002EBDDD /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E182A11C1A2002EBDDD /* CareKitUI */; };
@@ -36,7 +40,7 @@
 		OBJ_755 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* OCKAnyEvent.swift */; };
 		OBJ_756 /* OCKAnyOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* OCKAnyOutcome.swift */; };
 		OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* OCKBiologicalSex+Hashable.swift */; };
-		OBJ_758 /* OCKEventAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* OCKEventAggregator.swift */; };
+		OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CustomLinearCareTaskProgress.swift */; };
 		OBJ_759 /* OCKOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* OCKOutcome.swift */; };
 		OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* OCKOutcomeValue+Identifiable.swift */; };
 		OBJ_765 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UIImage.swift */; };
@@ -70,6 +74,10 @@
 		911BDB2B2A12F0D3004F8442 /* CareKitUtilitiesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareKitUtilitiesError.swift; sourceTree = "<group>"; };
 		911BDB312A130A2B004F8442 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		911BDB332A130AF9004F8442 /* OCKStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKStore.swift; sourceTree = "<group>"; };
+		91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericProgressTaskView.swift; sourceTree = "<group>"; };
+		91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledValueTaskView.swift; sourceTree = "<group>"; };
+		91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsTaskView.swift; sourceTree = "<group>"; };
+		91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskView.swift; sourceTree = "<group>"; };
 		OBJ_11 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		OBJ_15 /* DigitalCrownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownView.swift; sourceTree = "<group>"; };
@@ -84,7 +92,7 @@
 		OBJ_29 /* OCKAnyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyEvent.swift; sourceTree = "<group>"; };
 		OBJ_30 /* OCKAnyOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyOutcome.swift; sourceTree = "<group>"; };
 		OBJ_31 /* OCKBiologicalSex+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKBiologicalSex+Hashable.swift"; sourceTree = "<group>"; };
-		OBJ_32 /* OCKEventAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKEventAggregator.swift; sourceTree = "<group>"; };
+		OBJ_32 /* CustomLinearCareTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinearCareTaskProgress.swift; sourceTree = "<group>"; };
 		OBJ_33 /* OCKOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcome.swift; sourceTree = "<group>"; };
 		OBJ_34 /* OCKOutcomeValue+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Identifiable.swift"; sourceTree = "<group>"; };
 		OBJ_39 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -135,6 +143,8 @@
 				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
+				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
+				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 		70BBCB4B2A12BA4600759A9C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
+				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
 				70BBCB4F2A12BD2500759A9C /* SliderLog */,
 			);
 			path = iOS;
@@ -183,12 +195,12 @@
 			children = (
 				OBJ_26 /* Calendar+Dates.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
+				OBJ_32 /* CustomLinearCareTaskProgress.swift */,
 				OBJ_27 /* Image.swift */,
 				OBJ_29 /* OCKAnyEvent.swift */,
 				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
 				OBJ_30 /* OCKAnyOutcome.swift */,
 				OBJ_31 /* OCKBiologicalSex+Hashable.swift */,
-				OBJ_32 /* OCKEventAggregator.swift */,
 				OBJ_33 /* OCKOutcome.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
 				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
@@ -384,6 +396,7 @@
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
+				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
 				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
@@ -391,16 +404,19 @@
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
+				91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */,
 				OBJ_752 /* Calendar+Dates.swift in Sources */,
 				OBJ_753 /* Image.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
+				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
+				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
-				OBJ_758 /* OCKEventAggregator.swift in Sources */,
+				OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,

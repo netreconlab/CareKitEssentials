@@ -57,8 +57,9 @@ public class DigitalCrownViewModel: CardViewModel {
     ///     - initialValue: The initial value shown for the digital crown.
     ///     - startValue: The minimum possible value.
     ///     - endValue: The maximum possible value.
-    ///     - emojis: An array of emoji's to show on the screen.
     ///     - incrementValue: The step amount.
+    ///     - emojis: An array of emoji's to show on the screen.
+    ///     - colorRatio: The ratio effect on the color gradient.
     ///     - action: The action to perform when the log button is tapped.
     public init(event: OCKAnyEvent,
                 detailsTitle: String? = nil,

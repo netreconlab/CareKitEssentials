@@ -114,6 +114,15 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///
     /// - Parameters:
     ///   - event: The data that appears in the view.
+    ///   - detailsTitle: An optional title for the event.
+    ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - initialValue: The initial value shown for the digital crown.
+    ///   - startValue: The minimum possible value.
+    ///   - endValue: The maximum possible value.
+    ///   - incrementValue: The step amount.
+    ///   - emojis: An array of emoji's to show on the screen.
+    ///   - colorRatio: The ratio effect on the color gradient.
+    ///   - action: The action to perform when the log button is tapped.
     ///   - header: Short and descriptive content that identifies the event.
     init(event: CareStoreFetchedResult<OCKAnyEvent>,
          detailsTitle: String? = nil,

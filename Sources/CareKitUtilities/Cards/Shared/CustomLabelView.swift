@@ -94,14 +94,14 @@ public extension CustomLabelView {
     ///   - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
-    ///   - action: The action to take when event is completed.
     ///   - header: Short and descriptive content that identifies the event.
+    ///   - action: The action to take when event is completed.
     init(event: CareStoreFetchedResult<OCKAnyEvent>,
          initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil,
-         @ViewBuilder header: () -> Header) {
+         @ViewBuilder header: () -> Header,
+         action: ((OCKOutcomeValue?) async -> Void)? = nil) {
         self.init(viewModel: .init(event: event.result,
                                    initialValue: initialValue,
                                    detailsTitle: detailsTitle,

@@ -100,10 +100,10 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
 public extension SliderLogTaskView {
 
     /// Create an instance.
-    /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
-    /// - Parameter slider: View to inject under the header. Specified content will be stacked vertically.
+    /// - parameter instructions: Instructions text to display under the header.
+    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
+    /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
          viewModel: SliderLogTaskViewModel,
          @ViewBuilder header: () -> Header,
@@ -161,11 +161,11 @@ public extension SliderLogTaskView {
 public extension SliderLogTaskView where Header == InformationHeaderView {
 
     /// Create an instance.
-    /// - Parameter title: Title text to display in the header.
-    /// - Parameter detail: Detail text to display in the header.
-    /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter slider: View to inject under the header. Specified content will be stacked vertically.
+    /// - parameter title: Title text to display in the header.
+    /// - parameter detail: Detail text to display in the header.
+    /// - parameter instructions: Instructions text to display under the header.
+    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(title: Text,
          detail: Text? = nil,
          instructions: Text? = nil,
@@ -186,19 +186,19 @@ public extension SliderLogTaskView where Header == InformationHeaderView {
 public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
 
     /// Create an instance.
-    /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter minimumImage: Image to display to the left of the slider. Default value is nil.
-    /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
-    /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
-    /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
-    /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors: The colors to use when drawing a color gradient inside the slider. Colors
+    /// - parameter instructions: Instructions text to display under the header.
+    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - parameter minimumImage: Image to display to the left of the slider. Default value is nil.
+    /// - parameter maximumImage: Image to display to the right of the slider. Default value is nil.
+    /// - parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
+    /// - parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
+    /// - parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
+    /// - parameter gradientColors: The colors to use when drawing a color gradient inside the slider. Colors
     /// are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher indexes in
     /// the array correspond to the maximum side of the scale. Setting this value to nil results in no gradient
     /// being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a
     /// scale from bad to good.
-    /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
+    /// - parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
          viewModel: SliderLogTaskViewModel,
          minimumImage: Image? = nil,
@@ -228,16 +228,16 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
 public extension SliderLogTaskView where Header == InformationHeaderView, Slider == _SliderLogTaskViewSlider {
 
     /// Create an instance.
-    /// - Parameter title: Title text to display in the header.
-    /// - Parameter detail: Detail text to display in the header.
-    /// - Parameter instructions: Instructions text to display under the header.
-    /// - Parameter viewModel: The view model used to populate the view contents.
-    /// - Parameter minimumImage: Image to display to the left of the slider. Default value is nil.
-    /// - Parameter maximumImage: Image to display to the right of the slider. Default value is nil.
-    /// - Parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
-    /// - Parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
-    /// - Parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
-    /// - Parameter gradientColors: The colors to use when drawing a color gradient inside the slider.
+    /// - parameter title: Title text to display in the header.
+    /// - parameter detail: Detail text to display in the header.
+    /// - parameter instructions: Instructions text to display under the header.
+    /// - parameter viewModel: The view model used to populate the view contents.
+    /// - parameter minimumImage: Image to display to the left of the slider. Default value is nil.
+    /// - parameter maximumImage: Image to display to the right of the slider. Default value is nil.
+    /// - parameter minimumDescription: Description to display next to lower bound value. Default value is nil.
+    /// - parameter maximumDescription: Description to display next to upper bound value. Default value is nil.
+    /// - parameter style: The style of the slider, either the SwiftUI system slider or the custom bar slider.
+    /// - parameter gradientColors: The colors to use when drawing a color gradient inside the slider.
     /// Colors are drawn such that lower indexes correspond to the minimum side of the scale, while colors at higher
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
