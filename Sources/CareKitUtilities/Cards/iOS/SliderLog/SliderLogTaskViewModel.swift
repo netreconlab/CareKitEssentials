@@ -15,11 +15,11 @@ import SwiftUI
  */
 open class SliderLogTaskViewModel: CardViewModel {
 
-    /// The binded array of all outcome values.
-    @Published public var valuesArray: [Double]
+    /// The binded array of previous outcome values.
+    @Published public var previousValues = [Double]()
 
     /// Specifies if the slider is allowed to be changed.
-    @Published public var isActive = true
+    @Published open var isActive = true
 
     /// The range that includes all possible values.
     private(set) var range: ClosedRange<Double>
@@ -38,7 +38,6 @@ open class SliderLogTaskViewModel: CardViewModel {
      - parameter initialValue: The initial value shown on the slider.
      - parameter range: The range that includes all possible values.
      - parameter step: Value of the increment that the slider takes. Default value is 1.
-     - parameter isActive: Specifies if the slider is allowed to be changed.
      - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
      */
     public init(event: OCKAnyEvent,
@@ -46,14 +45,13 @@ open class SliderLogTaskViewModel: CardViewModel {
                 detailsInformation: String? = nil,
                 initialValue: Double? = 0,
                 range: ClosedRange<Double>,
-                valuesArray: [Double] = [],
                 step: Double = 1,
-                isActive: Bool = true,
                 action: ((OCKOutcomeValue?) async -> Void)? = nil) {
-        self.valuesArray = valuesArray
+        if let values = event.outcomeValues {
+            self.previousValues = values.compactMap { $0.doubleValue }
+        }
         self.range = range
         self.step = step
-        self.isActive = isActive
         var currentInitialValue = range.lowerBound + round((range.upperBound - range.lowerBound) / (step * 2)) * step
         if let initialValue = initialValue {
             currentInitialValue = initialValue

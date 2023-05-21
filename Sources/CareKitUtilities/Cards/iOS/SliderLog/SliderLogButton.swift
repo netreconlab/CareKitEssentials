@@ -28,7 +28,7 @@ struct SliderLogButton: View {
 
     var valueAsString: String {
         // swiftlint:disable:next line_length
-        viewModel.valuesArray.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", viewModel.valuesArray[0]))
+        viewModel.previousValues.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", viewModel.previousValues[0]))
     }
 
     var body: some View {
@@ -61,7 +61,7 @@ struct SliderLogButton: View {
                     .foregroundColor(.accentColor)
                     .font(Font.subheadline.weight(.medium))
             }
-            .disabled(viewModel.valuesArray.count == 0)
+            .disabled(viewModel.previousValues.count == 0)
         }
         .buttonStyle(NoHighlightStyle())
     }

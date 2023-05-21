@@ -126,7 +126,6 @@ public extension SliderLogTaskView {
     /// - parameter detailsInformation: An optional detailed information string for the event.
     /// - parameter range: The range that includes all possible values.
     /// - parameter step: Value of the increment that the slider takes. Default value is 1.
-    /// - parameter isActive: Specifies if the slider is allowed to be changed.
     /// - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
     /// - parameter header: Short and descriptive content that identifies the event.
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
@@ -135,9 +134,7 @@ public extension SliderLogTaskView {
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
          range: ClosedRange<Double>,
-         valuesArray: [Double] = [],
          step: Double = 1,
-         isActive: Bool = true,
          action: ((OCKOutcomeValue?) async -> Void)? = nil,
          @ViewBuilder header: () -> Header,
          @ViewBuilder slider: () -> Slider) {
@@ -148,9 +145,7 @@ public extension SliderLogTaskView {
                                    detailsTitle: detailsTitle,
                                    detailsInformation: detailsInformation,
                                    range: range,
-                                   valuesArray: valuesArray,
                                    step: step,
-                                   isActive: isActive,
                                    action: action),
                   header: header,
                   slider: slider)
@@ -285,7 +280,6 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     ///   - initialValue: The initial value shown on the slider.
     ///   - range: The range that includes all possible values.
     ///   - step: Value of the increment that the slider takes. Default value is 1.
-    ///   - isActive: Specifies if the slider is allowed to be changed.
     ///   - action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
     ///   - minimumImage: Image to display to the left of the slider. Default value is nil.
     ///   - maximumImage: Image to display to the right of the slider. Default value is nil.
@@ -305,9 +299,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
          detailsInformation: String? = nil,
          initialValue: Double? = 0,
          range: ClosedRange<Double>,
-         valuesArray: [Double] = [],
          step: Double = 1,
-         isActive: Bool = true,
          action: ((OCKOutcomeValue?) async -> Void)? = nil,
          minimumImage: Image? = nil,
          maximumImage: Image? = nil,
@@ -320,9 +312,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
                                                detailsInformation: detailsInformation,
                                                initialValue: initialValue,
                                                range: range,
-                                               valuesArray: valuesArray,
                                                step: step,
-                                               isActive: isActive,
                                                action: action)
         self.init(title: title,
                   detail: detail,
