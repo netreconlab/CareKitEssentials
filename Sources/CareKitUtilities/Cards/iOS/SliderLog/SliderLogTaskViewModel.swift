@@ -22,10 +22,10 @@ open class SliderLogTaskViewModel: CardViewModel {
     @Published open var isActive = true
 
     /// The range that includes all possible values.
-    private(set) var range: ClosedRange<Double>
+    public private(set) var range: ClosedRange<Double>
 
     /// Value of the increment that the slider takes. Default value is 1.
-    private(set) var step: Double
+    public private(set) var step: Double
 
     /**
      Create an instance with specified content for an event. The view will update when changes

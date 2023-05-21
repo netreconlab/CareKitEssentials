@@ -41,11 +41,11 @@ open class DigitalCrownViewModel: CardViewModel {
         "\(Int(valueAsDouble))"
     }
 
-    private(set) var emojis = [String]()
-    private(set) var startValue: Double
-    private(set) var endValue: Double
-    private(set) var incrementValue: Double
-    private(set) var colorRatio: Double
+    public private(set) var emojis = [String]()
+    public private(set) var startValue: Double
+    public private(set) var endValue: Double
+    public private(set) var incrementValue: Double
+    public private(set) var colorRatio: Double
 
     /// Create an instance for the default content. The first event that matches the
     /// provided query will be fetched from the the store and

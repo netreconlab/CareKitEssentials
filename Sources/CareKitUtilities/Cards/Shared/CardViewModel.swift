@@ -58,11 +58,11 @@ open class CardViewModel: ObservableObject {
         value.description
     }
     /// The event associated with the view model.
-    private(set) var event: OCKAnyEvent
+    public private(set) var event: OCKAnyEvent
     /// A custom details title to display for the task of the view model.
-    private(set) var detailsTitle: String?
+    public private(set) var detailsTitle: String?
     /// A custom details information string to display for the task of the view model.
-    private(set) var detailsInformation: String?
+    public private(set) var detailsInformation: String?
 
     // MARK: Private properties
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
