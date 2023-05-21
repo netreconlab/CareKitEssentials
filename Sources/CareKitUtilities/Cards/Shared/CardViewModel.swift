@@ -15,7 +15,7 @@ import SwiftUI
  A view model that can be subclassed to build more intricate view models for
  CareKit style cards.
  */
-public class CardViewModel: ObservableObject {
+open class CardViewModel: ObservableObject {
 
     // MARK: Published public read/write properties
 

@@ -13,7 +13,7 @@ import SwiftUI
  A view model for Sliders that can be subclassed to build more intricate view models
  for CarseKit style cards.
  */
-public class SliderLogTaskViewModel: CardViewModel {
+open class SliderLogTaskViewModel: CardViewModel {
 
     /// The binded array of all outcome values.
     @Published public var valuesArray: [Double]

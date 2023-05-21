@@ -13,9 +13,9 @@ import Foundation
 import os.log
 import SwiftUI
 
-public class DigitalCrownViewModel: CardViewModel {
+open class DigitalCrownViewModel: CardViewModel {
 
-    public func getStoplightColor(for value: Double) -> Color {
+    open func getStoplightColor(for value: Double) -> Color {
         var red: Double
         var green: Double
         var blue: Double
@@ -33,11 +33,11 @@ public class DigitalCrownViewModel: CardViewModel {
         return Color(red: red, green: green, blue: blue)
     }
 
-    public var isButtonDisabled: Bool {
+    open var isButtonDisabled: Bool {
         value == event.outcomeFirstValue
     }
 
-    public var valueForButton: String {
+    open var valueForButton: String {
         "\(Int(valueAsDouble))"
     }
 
@@ -100,7 +100,7 @@ public class DigitalCrownViewModel: CardViewModel {
     /**
      Update new value with new information
      */
-    public func updateValue(_ value: OCKOutcomeValue?) async {
+    open func updateValue(_ value: OCKOutcomeValue?) async {
         guard let value = value else { return }
         // Any additional info that needs to be added to the outcome
         let newOutcomeValue = OCKOutcomeValue(value.value)
