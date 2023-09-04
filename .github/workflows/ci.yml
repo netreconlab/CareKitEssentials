@@ -24,7 +24,7 @@ jobs:
         destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)']
         action: ['test']
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Use multiple cores
       run: defaults write com.apple.dt.XCBuild EnableSwiftBuildSystemIntegration 1
     - name: Build-Test
