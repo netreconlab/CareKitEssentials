@@ -19,35 +19,31 @@ public struct DigitalCrownViewHeader: View {
 
     let title: Text
     let detail: Text?
-    let task: OCKAnyTask?
+    let event: OCKAnyEvent?
 
     public var body: some View {
         VStack(alignment: .leading,
                spacing: style.dimension.directionalInsets1.top) {
-            if let task = task {
+            if let event = event {
                 InformationHeaderView(title: title,
                                       information: detail,
-                                      task: task)
+                                      event: event)
             } else {
                 HeaderView(title: title, detail: detail)
             }
-            Divider()
         }
     }
 }
 
 struct DigitalCrownViewHeader_Previews: PreviewProvider {
+    static let task = Utility.createNauseaTask()
     static var previews: some View {
-        DigitalCrownViewHeader(title: Text("Title"),
-                               detail: Text("Detail"),
-                               task: OCKTask(id: "",
-                                             title: "Hello",
-                                             carePlanUUID: nil,
-                                             schedule: .dailyAtTime(hour: 0,
-                                                                    minutes: 0,
-                                                                    start: Date(),
-                                                                    end: nil,
-                                                                    text: "")))
+        if let event = try? Utility.createNauseaEvent() {
+            DigitalCrownViewHeader(title: Text(task.title!),
+                                   detail: Text(task.instructions!),
+                                   event: event)
+                .environment(\.careStore, Utility.createPreviewStore())
+        }
     }
 }
 

@@ -8,6 +8,7 @@
 
 import CareKitStore
 import SwiftUI
+
 /// A View to show more details. Can be used for CareKit cards.
 ///
 /// # Style
@@ -27,29 +28,26 @@ import SwiftUI
 /// ```
 public struct DetailsView: View {
     @Environment(\.careKitStyle) private var style
-    @Environment(\.careKitUtilitiesTintColor) private var tintColor
 
-    private let task: OCKAnyTask
+    private let event: OCKAnyEvent
     private let title: String?
     private let details: String?
 
     public var body: some View {
         VStack {
-            Image.asset(task.asset)?
+            Image.asset(event.task.asset)?
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(Color(tintColor))
+                .foregroundColor(Color.accentColor)
                 .padding()
 
-            if let title = title ?? task.title {
-                Text(title)
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-            }
+            Text(title ?? event.title)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
 
-            if let detailText = details ?? task.instructions {
+            if let detailText = details ?? event.instructions {
                 Text(detailText)
                     .font(.headline)
                     .fontWeight(.medium)
@@ -62,27 +60,23 @@ public struct DetailsView: View {
 
     /// Create an instance.
     /// - Parameters:
-    ///   - task: The task to display details for when the info button is tapped.
+    ///   - event: The event to display details for when the info button is tapped.
     ///   - title: Text to be displayed as the title instead of the task title.
     ///   - details: The text to be displayed as the details instead of the task instructions.
-    public init(task: OCKAnyTask,
+    public init(event: OCKAnyEvent,
                 title: String? = nil,
                 details: String? = nil) {
-        self.task = task
+        self.event = event
         self.title = title
         self.details = details
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
+    static let task = Utility.createNauseaTask()
     static var previews: some View {
-        DetailsView(task: OCKTask(id: "",
-                                  title: "Hello",
-                                  carePlanUUID: nil,
-                                  schedule: .dailyAtTime(hour: 0,
-                                                         minutes: 0,
-                                                         start: Date(),
-                                                         end: nil,
-                                                         text: "")))
+        if let event = try? Utility.createNauseaEvent() {
+            DetailsView(event: event)
+        }
     }
 }

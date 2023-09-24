@@ -15,7 +15,7 @@ import SwiftUI
 public struct DigitalCrownViewFooter: View {
 
     @Environment(\.sizeCategory) private var sizeCategory
-    @ObservedObject var viewModel: DigitalCrownViewModel
+    @StateObject var viewModel: DigitalCrownViewModel
 
     @OSValue<CGFloat>(values: [.watchOS: 8],
                       defaultValue: 14) private var padding
@@ -40,8 +40,10 @@ public struct DigitalCrownViewFooter: View {
     public var body: some View {
         VStack {
             HStack {
-                Text("\(viewModel.emojis[Int(round(viewModel.valueAsDouble))])")
-                    .font(.largeTitle)
+                if viewModel.emojis.count > 0 {
+                    Text("\(viewModel.emojis[Int(round(viewModel.valueAsDouble))])")
+                        .font(.largeTitle)
+                }
                 Text("\(String(format: "%g", round(viewModel.valueAsDouble)))")
                     .focusable(true)
                     .digitalCrownRotation($viewModel.valueAsDouble,
@@ -68,20 +70,6 @@ public struct DigitalCrownViewFooter: View {
             .buttonStyle(NoHighlightStyle())
             .disabled(viewModel.isButtonDisabled)
         }
-        .onReceive(viewModel.$taskEvents) { taskEvents in
-            /*
-             Need help from view to update value since taskEvents
-             can't be overriden in viewModel.
-             */
-            viewModel.checkIfValueShouldUpdate(taskEvents)
-        }
-        .onReceive(viewModel.$error) { error in
-            /*
-             Need help from view to update value since error
-             can't be overriden in viewModel.
-             */
-            viewModel.setError(error)
-        }
     }
 }
 
@@ -92,37 +80,12 @@ struct NoHighlightStyle: ButtonStyle {
     }
 }
 
-/*
-struct DigitalCrownViewFooter: View {
-    @ObservedObject var viewModel: DigitalCrownViewModel
-
-    var body: some View {
-        VStack {
-            HStack {
-                Text("\(viewModel.emojis[Int(round(viewModel.value))])")
-                    .font(.largeTitle)
-                Text("\(String(format: "%g", round(viewModel.value)))")
-                    .focusable(true)
-                    .digitalCrownRotation($viewModel.value,
-                                          from: viewModel.startValue,
-                                          through: viewModel.endValue,
-                                          by: viewModel.incrementValue)
-                    .font(.largeTitle)
-            }
-            Button("Log") {
-                Task {
-                    await viewModel.action(viewModel.value)
-                }
-            }
-        }
-    }
-} */
-
 struct DigitalCrownViewFooter_Previews: PreviewProvider {
     static var previews: some View {
-        DigitalCrownViewFooter(viewModel: .init(taskID: "",
-                                                eventQuery: .init(for: Date()),
-                                                storeManager: .init(wrapping: OCKStore(name: ""))))
+        if let event = try? Utility.createNauseaEvent() {
+            DigitalCrownViewFooter(viewModel: .init(event: event))
+                .environment(\.careStore, Utility.createPreviewStore())
+        }
     }
 }
 

@@ -1,10 +1,10 @@
-// swift-tools-version: 5.5.2
+// swift-tools-version: 5.7
 
 import PackageDescription
 
 let package = Package(
     name: "CareKitUtilities",
-    platforms: [.iOS(.v14), .macOS(.v12), .watchOS(.v7)],
+    platforms: [.iOS(.v14), .macOS(.v13), .watchOS(.v7)],
     products: [
         .library(
             name: "CareKitUtilities",
@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/cbaker6/CareKit.git",
-                 .upToNextMajor(from: "2.1.8"))
+                 .upToNextMajor(from: "3.0.0-beta.2"))
     ],
     targets: [
         .target(
