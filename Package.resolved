@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cbaker6/CareKit.git",
       "state" : {
-        "revision" : "225341b1785513785b7d4a9d4538c2dd48bc0554",
-        "version" : "3.0.0-alpha.21"
+        "revision" : "ed05957648de96d7ad8a81bd24edff3ee712f20e",
+        "version" : "3.0.0-beta.2"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/FHIRModels.git",
       "state" : {
-        "revision" : "861afd5816a98d38f86220eab2f812d76cad84a0",
-        "version" : "0.5.0"
+        "revision" : "e115442fb3c5d44ffb1dc9b4e039b77fd143ad96",
+        "version" : "0.4.0"
       }
     },
     {
