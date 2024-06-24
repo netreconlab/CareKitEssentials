@@ -22,6 +22,7 @@ import SwiftUI
 ///    +----------------------------------------+
 /// ```
 public struct CustomLabelView<Header: View>: View {
+    @Environment(\.careStore) private var store
     @Environment(\.careKitStyle) private var style
     @StateObject var viewModel: CardViewModel
 
@@ -66,6 +67,9 @@ public struct CustomLabelView<Header: View>: View {
             .padding()
         }
         .padding(.vertical)
+        .onAppear {
+            viewModel.updateStore(store)
+        }
     }
 
 }

@@ -21,8 +21,6 @@ open class CardViewModel: ObservableObject {
 
     /// The error encountered by the view model.
     @Published public var error: Error?
-    /// The store associated with the view model.
-    @Environment(\.careStore) public var store
     /// The latest `OCKOutcomeValue` for the event.
     @Published public var value = OCKOutcomeValue(0.0) {
         didSet {
@@ -65,6 +63,7 @@ open class CardViewModel: ObservableObject {
     public private(set) var detailsInformation: String?
 
     // MARK: Private properties
+    var store: OCKAnyStoreProtocol?
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
 
     /// Create an instance with specified content for an event. The view will update when changes
@@ -105,6 +104,10 @@ open class CardViewModel: ObservableObject {
 
     // MARK: Intentions
 
+    open func updateStore(_ store: OCKAnyStoreProtocol) {
+        self.store = store
+    }
+
     /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
     /// - Parameters:
     ///   - values: An array of `OCKOutcomeValue`'s to append.
@@ -116,11 +119,11 @@ open class CardViewModel: ObservableObject {
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
             let outcome = try createOutcomeWithValues(values)
-            _ = try await store.addAnyOutcome(outcome)
+            _ = try await store?.addAnyOutcome(outcome)
             return
         }
         outcome.values.append(contentsOf: values)
-        _ = try await store.updateAnyOutcome(outcome)
+        _ = try await store?.updateAnyOutcome(outcome)
         return
     }
 
@@ -138,7 +141,7 @@ open class CardViewModel: ObservableObject {
                 return
             }
             // Delete the outcome, and create a new one.
-            _ = try await store.deleteAnyOutcome(oldOutcome)
+            _ = try await store?.deleteAnyOutcome(oldOutcome)
             return
         }
 
@@ -146,12 +149,12 @@ open class CardViewModel: ObservableObject {
         guard var currentOutcome = event.outcome else {
             // Create a new outcome with the new values.
             let outcome = try createOutcomeWithValues(values)
-            _ = try await store.addAnyOutcome(outcome)
+            _ = try await store?.addAnyOutcome(outcome)
             return
         }
         // Update the outcome with the new values.
         currentOutcome.values = values
-        _ = try await store.updateAnyOutcome(currentOutcome)
+        _ = try await store?.updateAnyOutcome(currentOutcome)
     }
 
     // MARK: Helpers

@@ -14,6 +14,7 @@ import SwiftUI
 
 public struct DigitalCrownViewFooter: View {
 
+    @Environment(\.careStore) private var store
     @Environment(\.sizeCategory) private var sizeCategory
     @StateObject var viewModel: DigitalCrownViewModel
 
@@ -35,6 +36,9 @@ public struct DigitalCrownViewFooter: View {
             }
         }
         .multilineTextAlignment(.center)
+        .onAppear {
+            viewModel.updateStore(store)
+        }
     }
 
     public var body: some View {

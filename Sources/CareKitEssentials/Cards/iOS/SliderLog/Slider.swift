@@ -12,6 +12,7 @@ import SwiftUI
 
 struct Slider: View {
 
+    @Environment(\.careStore) private var store
     @Environment(\.careKitStyle) private var style
     @ObservedObject private var viewModel: SliderLogTaskViewModel
 
@@ -123,6 +124,9 @@ struct Slider: View {
                             .frame(width: imageWidth + 8)
                     }
                 }
+            }
+            .onAppear {
+                viewModel.updateStore(store)
             }
     }
 
