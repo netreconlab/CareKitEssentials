@@ -1,4 +1,5 @@
 {
+  "originHash" : "c87ec1825dcb99b8039396a27422e8ddfb17b5cb16956d62241c21c379b37c2c",
   "pins" : [
     {
       "identity" : "carekit",
@@ -37,5 +38,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
