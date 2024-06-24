@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
+		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
+		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
+		70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB502A12BD5000759A9C /* SliderStyle.swift */; };
+		70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB522A12BDAC00759A9C /* Slider.swift */; };
+		70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */; };
+		70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */; };
+		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
+		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
+		911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */; };
+		911BDB322A130A2B004F8442 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB312A130A2B004F8442 /* Utility.swift */; };
+		911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB332A130AF9004F8442 /* OCKStore.swift */; };
+		91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */; };
+		91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */; };
+		91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */; };
+		91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */; };
+		91F46E152A11C1A2002EBDDD /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E142A11C1A2002EBDDD /* CareKit */; };
+		91F46E172A11C1A2002EBDDD /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E162A11C1A2002EBDDD /* CareKitStore */; };
+		91F46E192A11C1A2002EBDDD /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91F46E182A11C1A2002EBDDD /* CareKitUI */; };
+		OBJ_740 /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* CustomLabelView.swift */; };
+		OBJ_742 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DetailsView.swift */; };
+		OBJ_743 /* DigitalCrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DigitalCrownView.swift */; };
+		OBJ_744 /* DigitalCrownViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* DigitalCrownViewFooter.swift */; };
+		OBJ_745 /* DigitalCrownViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DigitalCrownViewHeader.swift */; };
+		OBJ_746 /* DigitalCrownViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DigitalCrownViewModel.swift */; };
+		OBJ_749 /* InformationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* InformationHeaderView.swift */; };
+		OBJ_750 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* CardViewModel.swift */; };
+		OBJ_752 /* Calendar+Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Calendar+Dates.swift */; };
+		OBJ_753 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Image.swift */; };
+		OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */; };
+		OBJ_755 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* OCKAnyEvent.swift */; };
+		OBJ_756 /* OCKAnyOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* OCKAnyOutcome.swift */; };
+		OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* OCKBiologicalSex+Hashable.swift */; };
+		OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CustomLinearCareTaskProgress.swift */; };
+		OBJ_759 /* OCKOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* OCKOutcome.swift */; };
+		OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* OCKOutcomeValue+Identifiable.swift */; };
+		OBJ_765 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UIImage.swift */; };
+		OBJ_766 /* OSValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* OSValue.swift */; };
+		OBJ_767 /* ScheduleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ScheduleUtility.swift */; };
+		OBJ_791 /* CareKitEssentialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* CareKitEssentialsTests.swift */; };
+		OBJ_793 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91F46E0E2A11BF70002EBDDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "carekitessentials::CareKitEssentials";
+			remoteInfo = CareKitEssentials;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
+		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
+		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
+		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
+		70BBCB502A12BD5000759A9C /* SliderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderStyle.swift; sourceTree = "<group>"; };
+		70BBCB522A12BDAC00759A9C /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogButton.swift; sourceTree = "<group>"; };
+		70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderLogTaskViewModel.swift; sourceTree = "<group>"; };
+		911BDB252A11C437004F8442 /* View+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Default.swift"; sourceTree = "<group>"; };
+		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareKitEssentialsError.swift; sourceTree = "<group>"; };
+		911BDB312A130A2B004F8442 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		911BDB332A130AF9004F8442 /* OCKStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKStore.swift; sourceTree = "<group>"; };
+		91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericProgressTaskView.swift; sourceTree = "<group>"; };
+		91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledValueTaskView.swift; sourceTree = "<group>"; };
+		91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsTaskView.swift; sourceTree = "<group>"; };
+		91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskView.swift; sourceTree = "<group>"; };
+		OBJ_11 /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
+		OBJ_13 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		OBJ_15 /* DigitalCrownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownView.swift; sourceTree = "<group>"; };
+		OBJ_16 /* DigitalCrownViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewFooter.swift; sourceTree = "<group>"; };
+		OBJ_17 /* DigitalCrownViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewHeader.swift; sourceTree = "<group>"; };
+		OBJ_18 /* DigitalCrownViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalCrownViewModel.swift; sourceTree = "<group>"; };
+		OBJ_22 /* InformationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationHeaderView.swift; sourceTree = "<group>"; };
+		OBJ_23 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Calendar+Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Dates.swift"; sourceTree = "<group>"; };
+		OBJ_27 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+CustomStringConvertable.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* OCKAnyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyEvent.swift; sourceTree = "<group>"; };
+		OBJ_30 /* OCKAnyOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyOutcome.swift; sourceTree = "<group>"; };
+		OBJ_31 /* OCKBiologicalSex+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKBiologicalSex+Hashable.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* CustomLinearCareTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinearCareTaskProgress.swift; sourceTree = "<group>"; };
+		OBJ_33 /* OCKOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcome.swift; sourceTree = "<group>"; };
+		OBJ_34 /* OCKOutcomeValue+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Identifiable.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		OBJ_41 /* OSValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSValue.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ScheduleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUtility.swift; sourceTree = "<group>"; };
+		OBJ_420 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_421 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_45 /* CareKitEssentialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialsTests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		"carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CareKitEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"carekitessentials::CareKitEssentialsTests::Product" /* CareKitEssentialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CareKitEssentialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				91F46E172A11C1A2002EBDDD /* CareKitStore in Frameworks */,
+				91F46E152A11C1A2002EBDDD /* CareKit in Frameworks */,
+				91F46E192A11C1A2002EBDDD /* CareKitUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_793 /* CareKitEssentials.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70BBCB452A12B8B000759A9C /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		70BBCB4A2A12BA3600759A9C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* CardViewModel.swift */,
+				OBJ_11 /* CustomLabelView.swift */,
+				OBJ_13 /* DetailsView.swift */,
+				OBJ_22 /* InformationHeaderView.swift */,
+				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
+				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		70BBCB4B2A12BA4600759A9C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
+				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
+				70BBCB4F2A12BD2500759A9C /* SliderLog */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		70BBCB4C2A12BA4E00759A9C /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* DigitalCrown */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		70BBCB4F2A12BD2500759A9C /* SliderLog */ = {
+			isa = PBXGroup;
+			children = (
+				70BBCB522A12BDAC00759A9C /* Slider.swift */,
+				70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */,
+				70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */,
+				70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */,
+				70BBCB502A12BD5000759A9C /* SliderStyle.swift */,
+			);
+			path = SliderLog;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* DigitalCrown */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* DigitalCrownView.swift */,
+				OBJ_16 /* DigitalCrownViewFooter.swift */,
+				OBJ_17 /* DigitalCrownViewHeader.swift */,
+				OBJ_18 /* DigitalCrownViewModel.swift */,
+			);
+			path = DigitalCrown;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* Calendar+Dates.swift */,
+				911BDB272A11C491004F8442 /* CGFloat.swift */,
+				OBJ_32 /* CustomLinearCareTaskProgress.swift */,
+				OBJ_27 /* Image.swift */,
+				OBJ_29 /* OCKAnyEvent.swift */,
+				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
+				OBJ_30 /* OCKAnyOutcome.swift */,
+				OBJ_31 /* OCKBiologicalSex+Hashable.swift */,
+				OBJ_33 /* OCKOutcome.swift */,
+				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
+				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
+				911BDB332A130AF9004F8442 /* OCKStore.swift */,
+				OBJ_39 /* UIImage.swift */,
+				911BDB252A11C437004F8442 /* View+Default.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */,
+				OBJ_41 /* OSValue.swift */,
+				OBJ_42 /* ScheduleUtility.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */,
+				"carekitessentials::CareKitEssentialsTests::Product" /* CareKitEssentialsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_43 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_44 /* CareKitEssentialsTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_44 /* CareKitEssentialsTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* CareKitEssentialsTests.swift */,
+			);
+			name = CareKitEssentialsTests;
+			path = Tests/CareKitEssentialsTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_43 /* Tests */,
+				OBJ_413 /* Products */,
+				OBJ_420 /* LICENSE */,
+				OBJ_421 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* CareKitEssentials */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* CareKitEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				911BDB312A130A2B004F8442 /* Utility.swift */,
+				OBJ_9 /* Cards */,
+				70BBCB452A12B8B000759A9C /* Environment */,
+				OBJ_25 /* Extensions */,
+				OBJ_40 /* Models */,
+			);
+			name = CareKitEssentials;
+			path = Sources/CareKitEssentials;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				70BBCB4A2A12BA3600759A9C /* Shared */,
+				70BBCB4B2A12BA4600759A9C /* iOS */,
+				70BBCB4C2A12BA4E00759A9C /* watchOS */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"carekitessentials::CareKitEssentials" /* CareKitEssentials */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_736 /* Build configuration list for PBXNativeTarget "CareKitEssentials" */;
+			buildPhases = (
+				OBJ_739 /* Sources */,
+				OBJ_768 /* Frameworks */,
+				911BDB292A11C81C004F8442 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareKitEssentials;
+			packageProductDependencies = (
+				91F46E142A11C1A2002EBDDD /* CareKit */,
+				91F46E162A11C1A2002EBDDD /* CareKitStore */,
+				91F46E182A11C1A2002EBDDD /* CareKitUI */,
+			);
+			productName = CareKitEssentials;
+			productReference = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"carekitessentials::CareKitEssentialsTests" /* CareKitEssentialsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_787 /* Build configuration list for PBXNativeTarget "CareKitEssentialsTests" */;
+			buildPhases = (
+				OBJ_790 /* Sources */,
+				OBJ_792 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_797 /* PBXTargetDependency */,
+			);
+			name = CareKitEssentialsTests;
+			productName = CareKitEssentialsTests;
+			productReference = "carekitessentials::CareKitEssentialsTests::Product" /* CareKitEssentialsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "CareKitEssentials" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			packageReferences = (
+				91F46E132A11C1A2002EBDDD /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
+			productRefGroup = OBJ_413 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"carekitessentials::CareKitEssentials" /* CareKitEssentials */,
+				"carekitessentials::CareKitEssentialsTests" /* CareKitEssentialsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		911BDB292A11C81C004F8442 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\n# Adds support for Apple Silicon brew directory\nif which swiftlint >/dev/null; then\n    swiftlint --fix && swiftlint --strict\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */,
+				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
+				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
+				OBJ_740 /* CustomLabelView.swift in Sources */,
+				OBJ_742 /* DetailsView.swift in Sources */,
+				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
+				OBJ_743 /* DigitalCrownView.swift in Sources */,
+				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
+				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
+				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
+				OBJ_749 /* InformationHeaderView.swift in Sources */,
+				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
+				OBJ_750 /* CardViewModel.swift in Sources */,
+				91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */,
+				OBJ_752 /* Calendar+Dates.swift in Sources */,
+				OBJ_753 /* Image.swift in Sources */,
+				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
+				OBJ_755 /* OCKAnyEvent.swift in Sources */,
+				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
+				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
+				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
+				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
+				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
+				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
+				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
+				OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */,
+				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
+				OBJ_759 /* OCKOutcome.swift in Sources */,
+				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
+				OBJ_765 /* UIImage.swift in Sources */,
+				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
+				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
+				70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */,
+				911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */,
+				OBJ_766 /* OSValue.swift in Sources */,
+				OBJ_767 /* ScheduleUtility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_791 /* CareKitEssentialsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "carekitessentials::CareKitEssentials" /* CareKitEssentials */;
+			targetProxy = 91F46E0E2A11BF70002EBDDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentials_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CareKitEssentials;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGET_NAME = CareKitEssentials;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentials_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CareKitEssentials;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGET_NAME = CareKitEssentials;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGET_NAME = CareKitEssentialsTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGET_NAME = CareKitEssentialsTests;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "CareKitEssentials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_736 /* Build configuration list for PBXNativeTarget "CareKitEssentials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_737 /* Debug */,
+				OBJ_738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_787 /* Build configuration list for PBXNativeTarget "CareKitEssentialsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_788 /* Debug */,
+				OBJ_789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91F46E132A11C1A2002EBDDD /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbaker6/CareKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "3.0.0-beta.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91F46E142A11C1A2002EBDDD /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F46E132A11C1A2002EBDDD /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		91F46E162A11C1A2002EBDDD /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F46E132A11C1A2002EBDDD /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		91F46E182A11C1A2002EBDDD /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F46E132A11C1A2002EBDDD /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

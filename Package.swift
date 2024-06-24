@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "CareKitUtilities",
+    name: "CareKitEssentials",
     platforms: [.iOS(.v14), .macOS(.v13), .watchOS(.v7)],
     products: [
         .library(
-            name: "CareKitUtilities",
-            targets: ["CareKitUtilities"])
+            name: "CareKitEssentials",
+            targets: ["CareKitEssentials"])
     ],
     dependencies: [
         .package(url: "https://github.com/cbaker6/CareKit.git",
@@ -16,14 +16,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CareKitUtilities",
+            name: "CareKitEssentials",
             dependencies: [
                 .product(name: "CareKit", package: "CareKit"),
                 .product(name: "CareKitStore", package: "CareKit"),
                 .product(name: "CareKitUI", package: "CareKit")
             ]),
         .testTarget(
-            name: "CareKitUtilitiesTests",
-            dependencies: ["CareKitUtilities"])
+            name: "CareKitEssentialsTests",
+            dependencies: ["CareKitEssentials"])
     ]
 )
