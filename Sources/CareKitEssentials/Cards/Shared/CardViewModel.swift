@@ -61,9 +61,11 @@ open class CardViewModel: ObservableObject {
     public private(set) var detailsTitle: String?
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
+    /// A store where event information can be stored and retreived from.
+    public private(set) var store: OCKAnyStoreProtocol?
 
     // MARK: Private properties
-    var store: OCKAnyStoreProtocol?
+
     var action: (OCKOutcomeValue?) async -> Void = { _ in }
 
     /// Create an instance with specified content for an event. The view will update when changes
