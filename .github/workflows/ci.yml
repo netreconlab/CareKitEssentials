@@ -24,6 +24,8 @@ jobs:
         action: ['test']
     steps:
     - uses: actions/checkout@v4
+    - name: Install Swiftlint
+      run: brew install swiftlint
     - name: Build-Test
       run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme CareKitEssentials -derivedDataPath DerivedData -destination ${{ matrix.destination }} ${{ matrix.action }} | xcpretty -c
       env:
