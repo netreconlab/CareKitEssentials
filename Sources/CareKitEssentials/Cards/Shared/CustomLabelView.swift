@@ -100,13 +100,11 @@ public extension CustomLabelView {
          initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
-         @ViewBuilder header: () -> Header,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+         @ViewBuilder header: () -> Header) {
         self.init(viewModel: .init(event: event.result,
                                    initialValue: initialValue,
                                    detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   action: action),
+                                   detailsInformation: detailsInformation),
                   header: header)
     }
 
@@ -151,7 +149,6 @@ public extension CustomLabelView where Header == InformationHeaderView {
     ///   - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
-    ///   - action: The action to take when event is completed.
     init(event: CareStoreFetchedResult<OCKAnyEvent>,
          initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
          detailsTitle: String? = nil,
@@ -160,8 +157,8 @@ public extension CustomLabelView where Header == InformationHeaderView {
         self.init(viewModel: .init(event: event.result,
                                    initialValue: initialValue,
                                    detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   action: action))
+                                   detailsInformation: detailsInformation)
+        )
     }
 
 }

@@ -86,14 +86,14 @@ open class DigitalCrownViewModel: CardViewModel {
             super.init(event: event,
                        initialValue: OCKOutcomeValue(initialValue),
                        detailsTitle: detailsTitle,
-                       detailsInformation: detailsInformation,
-                       action: action)
+                       detailsInformation: detailsInformation
+            )
         } else {
             super.init(event: event,
                        initialValue: OCKOutcomeValue(startValue),
                        detailsTitle: detailsTitle,
-                       detailsInformation: detailsInformation,
-                       action: action)
+                       detailsInformation: detailsInformation
+            )
         }
     }
 

@@ -71,12 +71,10 @@ open class CardViewModel: ObservableObject {
     ///     - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: An optional title for the event.
     ///     - detailsInformation: An optional detailed information string for the event.
-    ///     - action: The action to take when event is completed.
     public init(event: OCKAnyEvent,
                 initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
                 detailsTitle: String? = nil,
-                detailsInformation: String? = nil,
-                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+                detailsInformation: String? = nil) {
         self.value = event.outcomeFirstValue ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
