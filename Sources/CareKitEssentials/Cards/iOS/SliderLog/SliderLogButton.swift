@@ -36,7 +36,7 @@ struct SliderLogButton: CareKitEssentialView {
     var body: some View {
         VStack {
             Button(action: {
-
+                updateValue()
             }) {
                 HStack {
                     Spacer()
