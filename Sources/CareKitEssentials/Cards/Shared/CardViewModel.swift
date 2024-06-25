@@ -62,8 +62,6 @@ open class CardViewModel: ObservableObject {
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
 
-    // MARK: Private properties
-
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.
     /// - Parameters:
@@ -79,6 +77,16 @@ open class CardViewModel: ObservableObject {
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
+    }
+
+    // MARK: Intents
+
+    /// Update the current value with the latest valie.
+    /// - Parameters:
+    ///     - value: The new value.
+    @MainActor
+    public func updateValue(_ value: OCKOutcomeValue) {
+        self.value = value
     }
 
 }
