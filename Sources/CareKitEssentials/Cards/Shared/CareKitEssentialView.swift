@@ -42,7 +42,7 @@ public protocol CareKitEssentialView: View {
     ///     - taskIDs: The array of taskIDs to search.
     ///     - date: The date the event occurs on.
     /// - Returns: An `OCKEventQuery` with the predefined constraints.
-    func eventQuery(
+    static func eventQuery(
         with taskIDs: [String],
         on date: Date
     ) -> OCKEventQuery
@@ -90,7 +90,7 @@ public extension CareKitEssentialView {
         _ = try await careStore.addAnyOutcome(outcome)
     }
 
-    func eventQuery(
+    static func eventQuery(
         with taskIDs: [String],
         on date: Date
     ) -> OCKEventQuery {
