@@ -10,10 +10,12 @@
 
 import CareKitUI
 import CareKitStore
+import os.log
 import SwiftUI
 
-struct SliderLogButton: View {
+struct SliderLogButton: CareKitEssentialView {
 
+    @Environment(\.careStore) var careStore
     @Environment(\.careKitStyle) private var style
     @ObservedObject var viewModel: SliderLogTaskViewModel
 
@@ -34,10 +36,7 @@ struct SliderLogButton: View {
     var body: some View {
         VStack {
             Button(action: {
-                Task {
-                    await viewModel.action(OCKOutcomeValue(viewModel.valueAsDouble))
-                }
-                viewModel.isActive = false
+
             }) {
                 HStack {
                     Spacer()
@@ -64,6 +63,18 @@ struct SliderLogButton: View {
             .disabled(viewModel.previousValues.count == 0)
         }
         .buttonStyle(NoHighlightStyle())
+    }
+
+    func updateValue() {
+        Task {
+            let value = OCKOutcomeValue(viewModel.valueAsDouble)
+            do {
+                try await updateOutcomeValue(value, for: viewModel.event)
+            } catch {
+                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            }
+            viewModel.isActive = false
+        }
     }
 }
 

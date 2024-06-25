@@ -97,13 +97,4 @@ open class DigitalCrownViewModel: CardViewModel {
         }
     }
 
-    /**
-     Update new value with new information
-     */
-    open func updateValue(_ value: OCKOutcomeValue?) async {
-        guard let value = value else { return }
-        // Any additional info that needs to be added to the outcome
-        let newOutcomeValue = OCKOutcomeValue(value.value)
-        await action(newOutcomeValue)
-    }
 }

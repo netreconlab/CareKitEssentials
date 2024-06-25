@@ -10,11 +10,12 @@
 
 import CareKitStore
 import CareKitUI
+import os.log
 import SwiftUI
 
-public struct DigitalCrownViewFooter: View {
+public struct DigitalCrownViewFooter: CareKitEssentialView {
 
-    @Environment(\.careStore) private var store
+    @Environment(\.careStore) public var careStore
     @Environment(\.sizeCategory) private var sizeCategory
     @StateObject var viewModel: DigitalCrownViewModel
 
@@ -36,9 +37,6 @@ public struct DigitalCrownViewFooter: View {
             }
         }
         .multilineTextAlignment(.center)
-        .onAppear {
-            viewModel.updateStore(store)
-        }
     }
 
     public var body: some View {
@@ -58,9 +56,7 @@ public struct DigitalCrownViewFooter: View {
                     .foregroundColor(viewModel.getStoplightColor(for: viewModel.valueAsDouble))
             }
             Button(action: {
-                Task {
-                    await viewModel.updateValue(viewModel.value)
-                }
+                updateValue()
             }) {
                 RectangularCompletionView(isComplete: viewModel.isButtonDisabled) {
                     HStack {
@@ -73,6 +69,19 @@ public struct DigitalCrownViewFooter: View {
             }
             .buttonStyle(NoHighlightStyle())
             .disabled(viewModel.isButtonDisabled)
+        }
+    }
+
+    func updateValue() {
+        Task {
+            let originalOutcomeValue = viewModel.value
+            // Any additional info that needs to be added to the outcome
+            let newOutcomeValue = OCKOutcomeValue(originalOutcomeValue.value)
+            do {
+                try await updateOutcomeValue(newOutcomeValue, for: viewModel.event)
+            } catch {
+                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            }
         }
     }
 }

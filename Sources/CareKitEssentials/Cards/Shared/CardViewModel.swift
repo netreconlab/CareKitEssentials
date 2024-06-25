@@ -61,12 +61,8 @@ open class CardViewModel: ObservableObject {
     public private(set) var detailsTitle: String?
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
-    /// A store where event information can be stored and retreived from.
-    public private(set) var store: OCKAnyStoreProtocol?
 
     // MARK: Private properties
-
-    var action: (OCKOutcomeValue?) async -> Void = { _ in }
 
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.
@@ -85,92 +81,6 @@ open class CardViewModel: ObservableObject {
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
-        guard let action = action else {
-            // Use the default action
-            self.action = { value in
-                do {
-                    guard let value = value else {
-                        // Attempts to delete outcome if it already exists.
-                        _ = try await self.saveOutcomeValues([])
-                        return
-                    }
-                    _ = try await self.appendOutcomeValues([value])
-                } catch {
-                    self.error = error
-                }
-            }
-            return
-        }
-        self.action = action
-    }
-
-    // MARK: Intentions
-
-    open func updateStore(_ store: OCKAnyStoreProtocol) {
-        self.store = store
-    }
-
-    /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
-    /// - Parameters:
-    ///   - values: An array of `OCKOutcomeValue`'s to append.
-    /// - Throws: An error if the outcome values cannot be set.
-    /// - Note: Appends occur if an`OCKOutcome` currently exists for the event.
-    /// Otherwise a new `OCKOutcome` is created with the respective outcome values.
-    open func appendOutcomeValues(_ values: [OCKOutcomeValue]) async throws {
-
-        // Update the outcome with the new value
-        guard var outcome = event.outcome else {
-            let outcome = try createOutcomeWithValues(values)
-            _ = try await store?.addAnyOutcome(outcome)
-            return
-        }
-        outcome.values.append(contentsOf: values)
-        _ = try await store?.updateAnyOutcome(outcome)
-        return
-    }
-
-    /// Set/Replace the `OCKOutcomeValue`'s of an event.
-    /// - Parameters:
-    ///   - values: An array of `OCKOutcomeValue`'s to save.
-    /// - Throws: An error if the outcome values cannot be set.
-    /// - Note: Setting `values` to an empty array will delete the current `OCKOutcome` if it currently exists.
-    open func saveOutcomeValues(_ values: [OCKOutcomeValue]) async throws {
-
-        // Check if outcome values need to be updated.
-        guard !values.isEmpty else {
-            // If the event has already been completed
-            guard let oldOutcome = event.outcome else {
-                return
-            }
-            // Delete the outcome, and create a new one.
-            _ = try await store?.deleteAnyOutcome(oldOutcome)
-            return
-        }
-
-        // If the event has already been completed
-        guard var currentOutcome = event.outcome else {
-            // Create a new outcome with the new values.
-            let outcome = try createOutcomeWithValues(values)
-            _ = try await store?.addAnyOutcome(outcome)
-            return
-        }
-        // Update the outcome with the new values.
-        currentOutcome.values = values
-        _ = try await store?.updateAnyOutcome(currentOutcome)
-    }
-
-    // MARK: Helpers
-
-    /// Create an outcome for an event with the given outcome values.
-    /// - Parameters:
-    ///   - values: The outcome values to attach to the outcome.
-    open func createOutcomeWithValues(_ values: [OCKOutcomeValue]) throws -> OCKAnyOutcome {
-        guard let task = event.task as? OCKAnyVersionableTask else {
-            throw CareKitEssentialsError.errorString("Cannot make outcome for event: \(event)")
-        }
-        return OCKOutcome(taskUUID: task.uuid,
-                          taskOccurrenceIndex: event.scheduleEvent.occurrence,
-                          values: values)
     }
 
 }
