@@ -87,23 +87,16 @@ open class DigitalCrownViewModel: CardViewModel {
                        initialValue: OCKOutcomeValue(initialValue),
                        detailsTitle: detailsTitle,
                        detailsInformation: detailsInformation,
-                       action: action)
+                       action: action
+            )
         } else {
             super.init(event: event,
                        initialValue: OCKOutcomeValue(startValue),
                        detailsTitle: detailsTitle,
                        detailsInformation: detailsInformation,
-                       action: action)
+                       action: action
+            )
         }
     }
 
-    /**
-     Update new value with new information
-     */
-    open func updateValue(_ value: OCKOutcomeValue?) async {
-        guard let value = value else { return }
-        // Any additional info that needs to be added to the outcome
-        let newOutcomeValue = OCKOutcomeValue(value.value)
-        await action(newOutcomeValue)
-    }
 }

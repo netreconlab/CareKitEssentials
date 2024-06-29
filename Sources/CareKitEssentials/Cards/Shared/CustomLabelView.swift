@@ -94,22 +94,27 @@ public extension CustomLabelView {
     ///   - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
-    ///   - header: Short and descriptive content that identifies the event.
     ///   - action: The action to take when event is completed.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
-         detailsTitle: String? = nil,
-         detailsInformation: String? = nil,
-         @ViewBuilder header: () -> Header,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil) {
-        self.init(viewModel: .init(event: event.result,
-                                   initialValue: initialValue,
-                                   detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   action: action),
-                  header: header)
-    }
+    ///   - header: Short and descriptive content that identifies the event.
 
+    init(
+        event: CareStoreFetchedResult<OCKAnyEvent>,
+        initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        action: ((OCKOutcomeValue?) async -> Void)? = nil,
+        @ViewBuilder header: () -> Header) {
+            self.init(
+                viewModel: .init(
+                    event: event.result,
+                    initialValue: initialValue,
+                    detailsTitle: detailsTitle,
+                    detailsInformation: detailsInformation,
+                    action: action
+                ),
+                header: header
+            )
+        }
 }
 
 public extension CustomLabelView where Header == InformationHeaderView {
@@ -161,7 +166,8 @@ public extension CustomLabelView where Header == InformationHeaderView {
                                    initialValue: initialValue,
                                    detailsTitle: detailsTitle,
                                    detailsInformation: detailsInformation,
-                                   action: action))
+                                   action: action)
+        )
     }
 
 }

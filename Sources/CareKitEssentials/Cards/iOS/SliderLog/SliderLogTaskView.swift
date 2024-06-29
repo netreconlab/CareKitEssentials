@@ -46,7 +46,6 @@ import SwiftUI
 public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     // MARK: - Properties
-
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
 
