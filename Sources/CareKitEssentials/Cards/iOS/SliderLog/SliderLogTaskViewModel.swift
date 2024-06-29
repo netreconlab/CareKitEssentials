@@ -64,4 +64,10 @@ open class SliderLogTaskViewModel: CardViewModel {
         )
     }
 
+    public override func updateEvent(_ event: OCKAnyEvent) {
+        super.updateEvent(event)
+        if let values = event.outcomeValues {
+            self.previousValues = values.compactMap { $0.doubleValue }
+        }
+    }
 }

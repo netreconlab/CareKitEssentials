@@ -78,6 +78,7 @@ struct SliderLogButton: CareKitEssentialView {
                 return
             }
             await action(viewModel.value)
+            viewModel.isActive = false
         }
     }
 }

@@ -35,7 +35,6 @@ open class CardViewModel: ObservableObject {
     @Published public var valueAsDouble: Double = 0 {
         didSet {
             guard !isInitialValue else {
-                isInitialValue = true
                 return
             }
             var updatedValue = value
@@ -47,7 +46,9 @@ open class CardViewModel: ObservableObject {
     // MARK: Public read/write properties
 
     /// Specifies if this is the first time a value is being set.
-    public var isInitialValue = true
+    public var isInitialValue: Bool {
+        valueAsDouble == initialValue.doubleValue
+    }
 
     // MARK: Public read only properties
 
@@ -62,6 +63,7 @@ open class CardViewModel: ObservableObject {
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
 
+    var initialValue: OCKOutcomeValue
     var action: ((OCKOutcomeValue?) async -> Void)? = nil
 
     /// Create an instance with specified content for an event. The view will update when changes
@@ -80,6 +82,7 @@ open class CardViewModel: ObservableObject {
         action: ((OCKOutcomeValue?) async -> Void)? = nil
     ) {
         self.value = event.outcomeFirstValue ?? initialValue
+        self.initialValue = initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
@@ -88,12 +91,14 @@ open class CardViewModel: ObservableObject {
 
     // MARK: Intents
 
-    /// Update the current value with the latest valie.
+    /// Update the the viewModel with the current event.
     /// - Parameters:
-    ///     - value: The new value.
+    ///     - event: The current event.
     @MainActor
-    public func updateValue(_ value: OCKOutcomeValue) {
-        self.value = value
+    public func updateEvent(_ event: OCKAnyEvent) {
+        self.event = event
+        value = event.outcomeFirstValue ?? initialValue
+        initialValue = value
     }
 
 }
