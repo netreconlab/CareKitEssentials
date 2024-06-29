@@ -46,29 +46,6 @@ public protocol CareKitEssentialView: View {
         with taskIDs: [String],
         on date: Date
     ) -> OCKEventQuery
-
-    /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
-    /// - Parameters:
-    ///   - values: An array of `OCKOutcomeValue`'s to append.
-    /// - Throws: An error if the outcome values cannot be set.
-    /// - Note: Appends occur if an`OCKOutcome` currently exists for the event.
-    /// Otherwise a new `OCKOutcome` is created with the respective outcome values.
-    func appendOutcomeValues(
-        _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
-    ) async throws
-
-    /// Set/Replace the `OCKOutcomeValue`'s of an event.
-    /// - Parameters:
-    ///   - values: An array of `OCKOutcomeValue`'s to save.
-    /// - Throws: An error if the outcome values cannot be set.
-    /// - Note: Setting `values` to an empty array will delete the current `OCKOutcome` if it currently exists.
-    func saveOutcomeValues(
-        _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
-    ) async throws
 }
 
 public extension CareKitEssentialView {
@@ -113,6 +90,12 @@ public extension CareKitEssentialView {
         _ = try await careStore.addAnyOutcome(outcome)
     }
 
+    /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
+    /// - Parameters:
+    ///   - values: An array of `OCKOutcomeValue`'s to append.
+    /// - Throws: An error if the outcome values cannot be set.
+    /// - Note: Appends occur if an`OCKOutcome` currently exists for the event.
+    /// Otherwise a new `OCKOutcome` is created with the respective outcome values.
     func appendOutcomeValues(
         _ values: [OCKOutcomeValue],
         event: OCKAnyEvent,
@@ -134,6 +117,11 @@ public extension CareKitEssentialView {
         return
     }
 
+    /// Set/Replace the `OCKOutcomeValue`'s of an event.
+    /// - Parameters:
+    ///   - values: An array of `OCKOutcomeValue`'s to save.
+    /// - Throws: An error if the outcome values cannot be set.
+    /// - Note: Setting `values` to an empty array will delete the current `OCKOutcome` if it currently exists.
     func saveOutcomeValues(
         _ values: [OCKOutcomeValue],
         event: OCKAnyEvent,
