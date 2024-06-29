@@ -77,11 +77,16 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
             let originalOutcomeValue = viewModel.value
             // Any additional info that needs to be added to the outcome
             let newOutcomeValue = OCKOutcomeValue(originalOutcomeValue.value)
-            do {
-                try await updateEvent(viewModel.event, with: [newOutcomeValue])
-            } catch {
-                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+
+            guard let action = viewModel.action else {
+                do {
+                    try await updateEvent(viewModel.event, with: [newOutcomeValue])
+                } catch {
+                    Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+                }
+                return
             }
+            await action(newOutcomeValue)
         }
     }
 }
