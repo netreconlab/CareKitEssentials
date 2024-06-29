@@ -67,13 +67,17 @@ struct SliderLogButton: CareKitEssentialView {
 
     func updateValue() {
         Task {
-            let value = OCKOutcomeValue(viewModel.valueAsDouble)
-            do {
-                try await updateEvent(viewModel.event, with: [value])
-            } catch {
-                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            guard let action = viewModel.action else {
+                let value = OCKOutcomeValue(viewModel.valueAsDouble)
+                do {
+                    try await updateEvent(viewModel.event, with: [value])
+                } catch {
+                    Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+                }
+                viewModel.isActive = false
+                return
             }
-            viewModel.isActive = false
+            await action(viewModel.value)
         }
     }
 }

@@ -62,6 +62,8 @@ open class CardViewModel: ObservableObject {
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
 
+    var action: ((OCKOutcomeValue?) async -> Void)? = nil
+
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.
     /// - Parameters:
@@ -69,14 +71,19 @@ open class CardViewModel: ObservableObject {
     ///     - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: An optional title for the event.
     ///     - detailsInformation: An optional detailed information string for the event.
-    public init(event: OCKAnyEvent,
-                initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
-                detailsTitle: String? = nil,
-                detailsInformation: String? = nil) {
+    ///     - action: The action to take when event is completed.
+    public init(
+        event: OCKAnyEvent,
+        initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        action: ((OCKOutcomeValue?) async -> Void)? = nil
+    ) {
         self.value = event.outcomeFirstValue ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
+        self.action = action
     }
 
     // MARK: Intents

@@ -59,7 +59,8 @@ open class SliderLogTaskViewModel: CardViewModel {
         super.init(event: event,
                    initialValue: OCKOutcomeValue(currentInitialValue),
                    detailsTitle: detailsTitle,
-                   detailsInformation: detailsInformation
+                   detailsInformation: detailsInformation,
+                   action: action
         )
     }
 
