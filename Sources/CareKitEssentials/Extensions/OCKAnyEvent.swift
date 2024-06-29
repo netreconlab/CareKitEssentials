@@ -65,7 +65,7 @@ public extension OCKAnyEvent {
 
     /// The first event first outcome value.
     var outcomeFirstValue: OCKOutcomeValue? {
-        outcomeValues?.first
+        outcomeValues?.last
     }
 
     /// The first event first outcome value as a **Int**.
