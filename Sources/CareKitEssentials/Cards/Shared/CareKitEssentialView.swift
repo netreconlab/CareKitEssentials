@@ -140,7 +140,7 @@ public extension CareKitEssentialView {
         _ event: OCKAnyEvent
     ) -> OCKAnyOutcome {
         OCKOutcome(
-            taskUUID: event.task.uuid ,
+            taskUUID: event.task.uuid,
             taskOccurrenceIndex: event.scheduleEvent.occurrence,
             values: []
         )
