@@ -199,10 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_26 /* Calendar+Dates.swift */,
-				700DA9062C2A66BF00435E2C /* Logger.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
 				OBJ_32 /* CustomLinearCareTaskProgress.swift */,
 				OBJ_27 /* Image.swift */,
+				700DA9062C2A66BF00435E2C /* Logger.swift */,
 				OBJ_29 /* OCKAnyEvent.swift */,
 				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
 				OBJ_30 /* OCKAnyOutcome.swift */,

@@ -27,14 +27,12 @@ public protocol CareKitEssentialView: View {
         with values: [OCKOutcomeValue]?
     ) async throws
 
-    /// Update an `OCKAnyEvent` with new a `OCKOutcome`.
+    /// Save a new `OCKAnyOutcome`.
     /// - Parameters:
-    ///     - event: The event to update.
-    ///     - outcome: A new `OCKOutcome`.
-    /// - Throws: An error if the outcome values cannot be updated.
-    func updateEvent(
-        _ event: OCKAnyEvent,
-        with outcome: OCKOutcome?
+    ///     - outcome: A new `OCKAnyOutcome`.
+    /// - Throws: An error if the outcome cannot be updated.
+    func saveOutcome(
+        _ outcome: OCKAnyOutcome
     ) async throws
 
     /// Create an `OCKEventQuery` constrained to a set of `taskIDs` on a particular date.
@@ -50,43 +48,31 @@ public protocol CareKitEssentialView: View {
 
 public extension CareKitEssentialView {
 
+    func deleteEventOutcome(_ event: OCKAnyEvent) async throws {
+        guard let outcome = event.outcome else {
+            throw CareKitEssentialsError.errorString("The event does not contain an outcome: \(event)")
+        }
+        _ = try await careStore.deleteAnyOutcome(outcome)
+    }
+
     func updateEvent(
         _ event: OCKAnyEvent,
         with values: [OCKOutcomeValue]?
     ) async throws {
         guard let values = values else {
             // Attempts to delete outcome if it already exists.
-            _ = try await self.saveOutcomeValues(
-                [],
-                event: event,
-                store: careStore
-            )
+            try await deleteEventOutcome(event)
             return
         }
         _ = try await self.appendOutcomeValues(
             values,
-            event: event,
-            store: careStore
+            event: event
         )
     }
 
-    func updateEvent(
-        _ event: OCKAnyEvent,
-        with outcome: OCKOutcome?
+    func saveOutcome(
+        _ outcome: OCKAnyOutcome
     ) async throws {
-        guard let outcome = outcome else {
-            guard let task = event.task as? OCKAnyVersionableTask else {
-                throw CareKitEssentialsError.errorString("Cannot make outcome for event: \(event)")
-            }
-            let outcome = OCKOutcome(
-                taskUUID: task.uuid,
-                taskOccurrenceIndex: event.scheduleEvent.occurrence,
-                values: []
-            )
-            // Attempts to set the latest outcome values to an empty array.
-            _ = try await careStore.deleteAnyOutcome(outcome)
-            return
-        }
         _ = try await careStore.addAnyOutcome(outcome)
     }
 
@@ -98,22 +84,20 @@ public extension CareKitEssentialView {
     /// Otherwise a new `OCKOutcome` is created with the respective outcome values.
     func appendOutcomeValues(
         _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
+        event: OCKAnyEvent
     ) async throws {
 
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
             let outcome = createOutcomeWithValues(
                 values,
-                event: event,
-                store: store
+                event: event
             )
-            _ = try await store.addAnyOutcome(outcome)
+            _ = try await careStore.addAnyOutcome(outcome)
             return
         }
         outcome.values.append(contentsOf: values)
-        _ = try await store.updateAnyOutcome(outcome)
+        _ = try await careStore.updateAnyOutcome(outcome)
         return
     }
 
@@ -124,18 +108,13 @@ public extension CareKitEssentialView {
     /// - Note: Setting `values` to an empty array will delete the current `OCKOutcome` if it currently exists.
     func saveOutcomeValues(
         _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
+        event: OCKAnyEvent
     ) async throws {
 
         // Check if outcome values need to be updated.
         guard !values.isEmpty else {
             // If the event has already been completed
-            guard let oldOutcome = event.outcome else {
-                return
-            }
-            // Delete the outcome, and create a new one.
-            _ = try await store.deleteAnyOutcome(oldOutcome)
+            try await deleteEventOutcome(event)
             return
         }
 
@@ -144,15 +123,14 @@ public extension CareKitEssentialView {
             // Create a new outcome with the new values.
             let outcome = createOutcomeWithValues(
                 values,
-                event: event,
-                store: store
+                event: event
             )
-            _ = try await store.addAnyOutcome(outcome)
+            _ = try await careStore.addAnyOutcome(outcome)
             return
         }
         // Update the outcome with the new values.
         currentOutcome.values = values
-        _ = try await store.updateAnyOutcome(currentOutcome)
+        _ = try await careStore.updateAnyOutcome(currentOutcome)
     }
 
     /// Create an outcome for an event with the given outcome values.
@@ -160,8 +138,7 @@ public extension CareKitEssentialView {
     ///   - values: The outcome values to attach to the outcome.
     func createOutcomeWithValues(
         _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
+        event: OCKAnyEvent
     ) -> OCKAnyOutcome {
         let outcome = OCKOutcome(
             taskUUID: event.task.uuid ,
