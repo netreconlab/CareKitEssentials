@@ -64,7 +64,7 @@ open class CardViewModel: ObservableObject {
     public private(set) var detailsInformation: String?
 
     var initialValue: OCKOutcomeValue
-    var action: ((OCKOutcomeValue?) async -> Void)? = nil
+    var action: ((OCKOutcomeValue?) async -> Void)?
 
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.

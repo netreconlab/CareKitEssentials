@@ -22,8 +22,10 @@ public extension LabeledValueTaskView where Header == InformationHeaderView {
     /// - Parameters:
     ///   - event: The data that appears in the view.
     ///   - numberFormatter: An object that formats the progress and target values.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         numberFormatter: NumberFormatter? = nil) {
+    init(
+        event: CareStoreFetchedResult<OCKAnyEvent>,
+        numberFormatter: NumberFormatter? = nil
+    ) {
 
         let currentEvent = event.result
 
