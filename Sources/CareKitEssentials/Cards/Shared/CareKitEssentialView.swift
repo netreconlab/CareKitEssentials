@@ -104,7 +104,7 @@ public extension CareKitEssentialView {
 
         // Update the outcome with the new value
         guard var outcome = event.outcome else {
-            let outcome = try createOutcomeWithValues(
+            let outcome = createOutcomeWithValues(
                 values,
                 event: event,
                 store: store
@@ -142,7 +142,7 @@ public extension CareKitEssentialView {
         // If the event has already been completed
         guard var currentOutcome = event.outcome else {
             // Create a new outcome with the new values.
-            let outcome = try createOutcomeWithValues(
+            let outcome = createOutcomeWithValues(
                 values,
                 event: event,
                 store: store
@@ -155,6 +155,22 @@ public extension CareKitEssentialView {
         _ = try await store.updateAnyOutcome(currentOutcome)
     }
 
+    /// Create an outcome for an event with the given outcome values.
+    /// - Parameters:
+    ///   - values: The outcome values to attach to the outcome.
+    func createOutcomeWithValues(
+        _ values: [OCKOutcomeValue],
+        event: OCKAnyEvent,
+        store: OCKAnyStoreProtocol
+    ) -> OCKAnyOutcome {
+        let outcome = OCKOutcome(
+            taskUUID: event.task.uuid ,
+            taskOccurrenceIndex: event.scheduleEvent.occurrence,
+            values: values
+        )
+        return outcome
+    }
+
     static func eventQuery(
         with taskIDs: [String],
         on date: Date
@@ -163,27 +179,4 @@ public extension CareKitEssentialView {
         query.taskIDs = taskIDs
         return query
     }
-}
-
-extension CareKitEssentialView {
-
-    /// Create an outcome for an event with the given outcome values.
-    /// - Parameters:
-    ///   - values: The outcome values to attach to the outcome.
-    func createOutcomeWithValues(
-        _ values: [OCKOutcomeValue],
-        event: OCKAnyEvent,
-        store: OCKAnyStoreProtocol
-    ) throws -> OCKAnyOutcome {
-        guard let task = event.task as? OCKAnyVersionableTask else {
-            throw CareKitEssentialsError.errorString("Cannot make outcome for event: \(event)")
-        }
-        let outcome = OCKOutcome(
-            taskUUID: task.uuid,
-            taskOccurrenceIndex: event.scheduleEvent.occurrence,
-            values: values
-        )
-        return outcome
-    }
-
 }
