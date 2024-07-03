@@ -7,4 +7,4 @@
 ![Codecov](https://codecov.io/gh/netreconlab/CareKitEssentials/branches/main/graph/badge.svg)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/netreconlab/ParseCareKit/#license)
 
-A description of this package.
+Provides essential cards, viewa, models, protocols, and extentions to expedite building [CareKit](https://github.com/carekit-apple/CareKit) based applications.
