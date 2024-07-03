@@ -137,7 +137,7 @@ public extension CareKitEssentialView {
     /// - Parameters:
     ///   - event: The event the outcome is made for.
     func createOutcomeForEvent(
-        event: OCKAnyEvent
+        _ event: OCKAnyEvent
     ) -> OCKAnyOutcome {
         OCKOutcome(
             taskUUID: event.task.uuid ,
@@ -166,7 +166,7 @@ extension CareKitEssentialView {
         _ values: [OCKOutcomeValue],
         event: OCKAnyEvent
     ) -> OCKAnyOutcome {
-        var outcome = createOutcomeForEvent(event: event)
+        var outcome = createOutcomeForEvent(event)
         outcome.values = values
         return outcome
     }
