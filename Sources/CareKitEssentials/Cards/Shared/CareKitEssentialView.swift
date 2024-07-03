@@ -133,19 +133,17 @@ public extension CareKitEssentialView {
         _ = try await careStore.updateAnyOutcome(currentOutcome)
     }
 
-    /// Create an outcome for an event with the given outcome values.
+    /// Create an outcome for an event.
     /// - Parameters:
-    ///   - values: The outcome values to attach to the outcome.
-    func createOutcomeWithValues(
-        _ values: [OCKOutcomeValue],
+    ///   - event: The event the outcome is made for.
+    func createOutcomeForEvent(
         event: OCKAnyEvent
     ) -> OCKAnyOutcome {
-        let outcome = OCKOutcome(
+        OCKOutcome(
             taskUUID: event.task.uuid ,
             taskOccurrenceIndex: event.scheduleEvent.occurrence,
-            values: values
+            values: []
         )
-        return outcome
     }
 
     static func eventQuery(
@@ -156,4 +154,21 @@ public extension CareKitEssentialView {
         query.taskIDs = taskIDs
         return query
     }
+}
+
+extension CareKitEssentialView {
+
+    /// Create an outcome for an event with the given outcome values.
+    /// - Parameters:
+    ///   - values: The outcome values to attach to the outcome.
+    ///   - event: The event the outcome is made for.
+    func createOutcomeWithValues(
+        _ values: [OCKOutcomeValue],
+        event: OCKAnyEvent
+    ) -> OCKAnyOutcome {
+        var outcome = createOutcomeForEvent(event: event)
+        outcome.values = values
+        return outcome
+    }
+
 }
