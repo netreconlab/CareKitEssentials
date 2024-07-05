@@ -150,4 +150,23 @@ public extension OCKAnyEvent {
         newOutcome.values = prependedValues
         return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
     }
+
+    func image() -> Image? {
+        #if canImport(UIKit)
+        guard let asset = self.asset else {
+            return nil
+        }
+        return Image(uiImage: asset)
+        #elseif canImport(AppKit)
+        guard let asset = self.asset else {
+            return nil
+        }
+        return Image(nsImage: asset)
+        #else
+        guard let asset = self.task.asset else {
+            return nil
+        }
+        return Image(name: asset)
+        #endif
+    }
 }
