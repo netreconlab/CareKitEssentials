@@ -131,24 +131,28 @@ struct Slider: View {
         let drag = DragGesture(minimumDistance: 0)
         return
             usesSystemSlider ?
-            ViewBuilder.buildEither(first:
-                                        systemSliderView()
-                                        .gesture(drag.onChanged({ drag in
-                                            onDragChange(drag, sliderWidth: sliderWidth)
-                                        }))
-                                        .frame(width: sliderWidth, height: imageWidth)) :
-            ViewBuilder.buildEither(second:
-                                        ZStack {
-                                            fillerBarView(width: sliderWidth, height: sliderHeight!)
-                                                .gesture(drag.onChanged({ drag in
-                                                    onDragChange(drag, sliderWidth: sliderWidth)
-                                                }))
-                                            addTicks(sliderWidth: sliderWidth)
-                                                .if(!viewModel.isActive) {
-                                                    $0.accentColor(Color.gray)
-                                                }
-                                        }
-                                        .frame(width: sliderWidth, height: sliderHeight)
+            ViewBuilder.buildEither(
+                first: systemSliderView()
+                    .gesture(
+                        drag.onChanged({ drag in
+                            onDragChange(drag, sliderWidth: sliderWidth)
+                        })
+                    )
+                    .frame(width: sliderWidth, height: imageWidth)) :
+            ViewBuilder.buildEither(
+                second: ZStack {
+                    fillerBarView(width: sliderWidth, height: sliderHeight!)
+                        .gesture(
+                            drag.onChanged({ drag in
+                                onDragChange(drag, sliderWidth: sliderWidth)
+                            })
+                        )
+                    addTicks(sliderWidth: sliderWidth)
+                        .if(!viewModel.isActive) {
+                            $0.accentColor(Color.gray)
+                        }
+                }
+                .frame(width: sliderWidth, height: sliderHeight)
             )
     }
 
@@ -167,7 +171,7 @@ struct Slider: View {
                     .mask(SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1))
             }
 
-            SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1)
+            SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1, step: viewModel.step)
                 .if(gradientColors == nil) {
                     $0.accentColor(viewModel.isActive ? .accentColor : Color.gray)
                 }

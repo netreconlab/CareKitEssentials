@@ -134,7 +134,7 @@ public extension SliderLogTaskView {
          detailsInformation: String? = nil,
          range: ClosedRange<Double>,
          step: Double = 1,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil,
+         action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
          @ViewBuilder header: () -> Header,
          @ViewBuilder slider: () -> Slider) {
         self.init(isHeaderPadded: false,
@@ -236,33 +236,42 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
     /// indicate a scale from bad to good.
-    init(title: Text,
-         detail: Text? = nil,
-         instructions: Text? = nil,
-         viewModel: SliderLogTaskViewModel,
-         minimumImage: Image? = nil,
-         maximumImage: Image? = nil,
-         minimumDescription: String? = nil,
-         maximumDescription: String? = nil,
-         style: SliderStyle = .ticked,
-         gradientColors: [Color]? = nil) {
-        self.init(isHeaderPadded: true,
-                  isSliderPadded: true,
-                  instructions: instructions,
-                  viewModel: viewModel,
-                  header: {
-            InformationHeaderView(title: title,
-                                  information: detail,
-                                  event: viewModel.event) },
-                  slider: {
-            _SliderLogTaskViewSlider(viewModel: viewModel,
-                                     minimumImage: minimumImage,
-                                     maximumImage: maximumImage,
-                                     minimumDescription: minimumDescription,
-                                     maximumDescription: maximumDescription,
-                                     style: style,
-                                     gradientColors: gradientColors)
-        })
+    init(
+        title: Text,
+        detail: Text? = nil,
+        instructions: Text? = nil,
+        viewModel: SliderLogTaskViewModel,
+        minimumImage: Image? = nil,
+        maximumImage: Image? = nil,
+        minimumDescription: String? = nil,
+        maximumDescription: String? = nil,
+        style: SliderStyle = .ticked,
+        gradientColors: [Color]? = nil
+    ) {
+        self.init(
+            isHeaderPadded: true,
+            isSliderPadded: true,
+            instructions: instructions,
+            viewModel: viewModel,
+            header: {
+                InformationHeaderView(
+                    title: title,
+                    information: detail,
+                    event: viewModel.event
+                )
+            },
+            slider: {
+                _SliderLogTaskViewSlider(
+                    viewModel: viewModel,
+                    minimumImage: minimumImage,
+                    maximumImage: maximumImage,
+                    minimumDescription: minimumDescription,
+                    maximumDescription: maximumDescription,
+                    style: style,
+                    gradientColors: gradientColors
+                )
+            }
+        )
     }
 
     /// Create a view using data from an event.
@@ -290,39 +299,45 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
     /// indexes in the array correspond to the maximum side of the scale. Setting this value to nil results in no
     /// gradient being drawn. Defaults to nil. An example usage would set an array of red and green to visually
     /// indicate a scale from bad to good.
-    init(title: Text,
-         detail: Text? = nil,
-         instructions: Text? = nil,
-         event: CareStoreFetchedResult<OCKAnyEvent>,
-         detailsTitle: String? = nil,
-         detailsInformation: String? = nil,
-         initialValue: Double? = 0,
-         range: ClosedRange<Double>,
-         step: Double = 1,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil,
-         minimumImage: Image? = nil,
-         maximumImage: Image? = nil,
-         minimumDescription: String? = nil,
-         maximumDescription: String? = nil,
-         style: SliderStyle = .ticked,
-         gradientColors: [Color]? = nil) {
-        let viewModel = SliderLogTaskViewModel(event: event.result,
-                                               detailsTitle: detailsTitle,
-                                               detailsInformation: detailsInformation,
-                                               initialValue: initialValue,
-                                               range: range,
-                                               step: step,
-                                               action: action)
-        self.init(title: title,
-                  detail: detail,
-                  instructions: instructions,
-                  viewModel: viewModel,
-                  minimumImage: minimumImage,
-                  maximumImage: maximumImage,
-                  minimumDescription: minimumDescription,
-                  maximumDescription: maximumDescription,
-                  style: style,
-                  gradientColors: gradientColors)
+    init(
+        title: Text,
+        detail: Text? = nil,
+        instructions: Text? = nil,
+        event: CareStoreFetchedResult<OCKAnyEvent>,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        initialValue: Double? = 0,
+        range: ClosedRange<Double>,
+        step: Double = 1,
+        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+        minimumImage: Image? = nil,
+        maximumImage: Image? = nil,
+        minimumDescription: String? = nil,
+        maximumDescription: String? = nil,
+        style: SliderStyle = .ticked,
+        gradientColors: [Color]? = nil
+    ) {
+        let viewModel = SliderLogTaskViewModel(
+            event: event.result,
+            detailsTitle: detailsTitle,
+            detailsInformation: detailsInformation,
+            initialValue: initialValue,
+            range: range,
+            step: step,
+            action: action
+        )
+        self.init(
+            title: title,
+            detail: detail,
+            instructions: instructions,
+            viewModel: viewModel,
+            minimumImage: minimumImage,
+            maximumImage: maximumImage,
+            minimumDescription: minimumDescription,
+            maximumDescription: maximumDescription,
+            style: style,
+            gradientColors: gradientColors
+        )
     }
 }
 
@@ -371,21 +386,30 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 struct SliderLogTaskView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
+            let store = Utility.createPreviewStore()
+            let viewModel = SliderLogTaskViewModel(
+                event: event,
+                range: 0...10
+            )
             VStack {
-                SliderLogTaskView(title: Text(event.title),
-                                  detail: Text(event.detail ?? ""),
-                                  viewModel: .init(event: event, range: 0...10),
-                                  gradientColors: [.green, .yellow, .red])
+                SliderLogTaskView(
+                    title: Text(event.title),
+                    detail: Text(event.detail ?? ""),
+                    viewModel: viewModel,
+                    gradientColors: [.green, .yellow, .red]
+                )
                 .padding()
 
-                SliderLogTaskView(title: Text(event.title),
-                                  detail: Text(event.detail ?? ""),
-                                  viewModel: .init(event: event, range: 0...10),
-                                  style: .system,
-                                  gradientColors: [.green, .yellow, .red])
+                SliderLogTaskView(
+                    title: Text(event.title),
+                    detail: Text(event.detail ?? ""),
+                    viewModel: viewModel,
+                    style: .system,
+                    gradientColors: [.green, .yellow, .red]
+                )
                 .padding()
             }
-            .environment(\.careStore, Utility.createPreviewStore())
+            .environment(\.careStore, store)
         }
     }
 }

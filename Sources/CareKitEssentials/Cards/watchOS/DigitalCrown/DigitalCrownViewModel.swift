@@ -70,7 +70,7 @@ open class DigitalCrownViewModel: CardViewModel {
                 incrementValue: Double = 1,
                 emojis: [String] = [],
                 colorRatio: Double = 0.2,
-                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+                action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil) {
         self.startValue = startValue
         self.incrementValue = incrementValue
         self.colorRatio = colorRatio

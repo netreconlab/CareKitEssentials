@@ -40,34 +40,46 @@ open class SliderLogTaskViewModel: CardViewModel {
      - parameter step: Value of the increment that the slider takes. Default value is 1.
      - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
      */
-    public init(event: OCKAnyEvent,
-                detailsTitle: String? = nil,
-                detailsInformation: String? = nil,
-                initialValue: Double? = 0,
-                range: ClosedRange<Double>,
-                step: Double = 1,
-                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+    public init(
+        event: OCKAnyEvent,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        initialValue: Double? = 0,
+        range: ClosedRange<Double>,
+        step: Double = 1,
+        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil
+    ) {
         if let values = event.outcomeValues {
             self.previousValues = values.compactMap { $0.doubleValue }
         }
         self.range = range
         self.step = step
-        var currentInitialValue = range.lowerBound + round((range.upperBound - range.lowerBound) / (step * 2)) * step
+        var currentInitialDoubleValue = range.lowerBound
+            + round((range.upperBound - range.lowerBound) / (step * 2)) * step
         if let initialValue = initialValue {
-            currentInitialValue = initialValue
+            currentInitialDoubleValue = initialValue
         }
-        super.init(event: event,
-                   initialValue: OCKOutcomeValue(currentInitialValue),
-                   detailsTitle: detailsTitle,
-                   detailsInformation: detailsInformation,
-                   action: action
+        var currentInitialOutcome = OCKOutcomeValue(currentInitialDoubleValue)
+        if let initialOutcome = event.outcomeFirstValue,
+           let initialOutcomeDouble = initialOutcome.doubleValue {
+            if initialOutcomeDouble != currentInitialDoubleValue {
+                isActive = false
+                currentInitialOutcome = initialOutcome
+            }
+        }
+        super.init(
+            event: event,
+            initialValue: currentInitialOutcome,
+            detailsTitle: detailsTitle,
+            detailsInformation: detailsInformation,
+            action: action
         )
     }
 
-    public override func updateEvent(_ event: OCKAnyEvent) {
-        super.updateEvent(event)
-        if let values = event.outcomeValues {
-            self.previousValues = values.compactMap { $0.doubleValue }
-        }
+    public override func updateOutcome(_ outcome: OCKAnyOutcome) {
+        super.updateOutcome(outcome)
+        let values = outcome.sortedOutcomeValuesByRecency().values
+        self.previousValues = values.compactMap { $0.doubleValue }
+        self.isActive = false
     }
 }

@@ -64,7 +64,7 @@ open class CardViewModel: ObservableObject {
     public private(set) var detailsInformation: String?
 
     var initialValue: OCKOutcomeValue
-    var action: ((OCKOutcomeValue?) async -> Void)?
+    var action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)?
 
     /// Create an instance with specified content for an event. The view will update when changes
     /// occur in the store.
@@ -79,7 +79,7 @@ open class CardViewModel: ObservableObject {
         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
-        action: ((OCKOutcomeValue?) async -> Void)? = nil
+        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil
     ) {
         self.value = event.outcomeFirstValue ?? initialValue
         self.initialValue = initialValue
@@ -91,13 +91,13 @@ open class CardViewModel: ObservableObject {
 
     // MARK: Intents
 
-    /// Update the the viewModel with the current event.
+    /// Update the the viewModel with the current outcome.
     /// - Parameters:
     ///     - event: The current event.
     @MainActor
-    public func updateEvent(_ event: OCKAnyEvent) {
-        self.event = event
-        value = event.outcomeFirstValue ?? initialValue
+    public func updateOutcome(_ outcome: OCKAnyOutcome) {
+        let outcomeWithSortedValues = outcome.sortedOutcomeValuesByRecency()
+        value = outcomeWithSortedValues.values.first ?? initialValue
         initialValue = value
     }
 
