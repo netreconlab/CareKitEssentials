@@ -44,6 +44,15 @@ public extension OCKAnyEvent {
         }
         return UIImage.asset(asset)
     }
+
+    #elseif canImport(AppKit)
+    /// The first event task asset.
+    var asset: NSImage? {
+        guard let asset = self.task.asset else {
+            return nil
+        }
+        return NSImage.asset(asset)
+    }
     #endif
 
     /// The first event outcome.

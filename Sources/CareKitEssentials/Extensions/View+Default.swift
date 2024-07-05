@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 extension View {
-    #if !os(watchOS)
+    #if !os(watchOS) && canImport(UIKit)
     func formattedHostingController() -> UIHostingController<Self> {
         let viewController = UIHostingController(rootView: self)
         viewController.view.backgroundColor = .clear

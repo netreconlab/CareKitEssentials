@@ -145,7 +145,7 @@ struct Slider: View {
                                                 }))
                                             addTicks(sliderWidth: sliderWidth)
                                                 .if(!viewModel.isActive) {
-                                                    $0.accentColor(Color(style.color.customGray))
+                                                    $0.accentColor(Color.gray)
                                                 }
                                         }
                                         .frame(width: sliderWidth, height: sliderHeight)
@@ -161,7 +161,7 @@ struct Slider: View {
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
-                                    LinearGradient(gradient: Gradient(colors: [Color(style.color.customGray)]),
+                                    LinearGradient(gradient: Gradient(colors: [Color.gray]),
                                                    startPoint: .leading,
                                                    endPoint: .trailing))
                     .mask(SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1))
@@ -169,7 +169,7 @@ struct Slider: View {
 
             SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1)
                 .if(gradientColors == nil) {
-                    $0.accentColor(viewModel.isActive ? .accentColor : Color(style.color.customGray))
+                    $0.accentColor(viewModel.isActive ? .accentColor : Color.gray)
                 }
                 .if(gradientColors != nil) { $0.accentColor(.clear) }
         }
@@ -181,7 +181,7 @@ struct Slider: View {
         let barRightSize = CGSize(width: CGFloat(offsetX), height: height)
         let barLeft = Rectangle()
             .if(gradientColors == nil) {
-                $0.foregroundColor(viewModel.isActive ? .accentColor : Color(style.color.customGray))
+                $0.foregroundColor(viewModel.isActive ? .accentColor : Color.gray)
             }
             .if(gradientColors != nil) {
                 $0
@@ -190,11 +190,11 @@ struct Slider: View {
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
-                                LinearGradient(gradient: Gradient(colors: [Color(style.color.customGray)]),
+                                LinearGradient(gradient: Gradient(colors: [Color.gray]),
                                                startPoint: .leading,
                                                endPoint: .trailing))
             }
-        let barRight = Color(style.color.white)
+        let barRight = Color.white
         return
             ZStack {
                 barLeft
@@ -206,8 +206,10 @@ struct Slider: View {
                                              size: barRightSize,
                                              radius: cornerRadius!))
                 RoundedRectangle(cornerRadius: cornerRadius!)
-                    .stroke(Color(style.color.customGray),
-                            lineWidth: borderWidth)
+                    .stroke(
+                        Color.gray,
+                        lineWidth: borderWidth
+                    )
             }
     }
 
@@ -260,7 +262,7 @@ private struct SliderTickMark: View {
     private let sliderHeight: CGFloat
     private let width: CGFloat
     private var color: Color {
-        value > sliderValue ? Color(style.color.customGray) : value == sliderValue ? .clear : Color(style.color.white)
+        value > sliderValue ? Color.gray : value == sliderValue ? .clear : Color.white
     }
 
     public init(sliderValue: Binding<Double>,

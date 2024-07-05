@@ -14,6 +14,7 @@ public extension Image {
         // We can't be sure if the image they provide is in the assets folder, in the bundle, or in a directory.
         guard let name = name else { return nil }
         // We can check all 3 possibilities and then choose whichever is non-nil.
+        #if canImport(UIKit)
         guard UIImage(systemName: name) != nil else {
             guard UIImage(named: name) != nil else {
                 guard let otherUrlUIImage = UIImage(contentsOfFile: name) else {
@@ -23,6 +24,7 @@ public extension Image {
             }
             return Image(name)
         }
+        #endif
         return Image(systemName: name)
     }
 }

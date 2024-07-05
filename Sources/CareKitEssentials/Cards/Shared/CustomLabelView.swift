@@ -40,13 +40,13 @@ public struct CustomLabelView<Header: View>: View {
                 }
 
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
-                    if let asset = viewModel.event.asset {
-                        Image(uiImage: asset)
-                            .resizable()
-                            .renderingMode(.template)
-                            .frame(width: 25, height: 30)
-                            .foregroundColor(Color.accentColor)
-                    }
+
+                    eventImage(viewModel.event)?
+                        .resizable()
+                        .renderingMode(.template)
+                        .frame(width: 25, height: 30)
+                        .foregroundColor(Color.accentColor)
+
                     VStack(alignment: .leading,
                            spacing: style.dimension.directionalInsets2.bottom) {
                         if let detail = viewModel.event.instructions {
@@ -68,6 +68,24 @@ public struct CustomLabelView<Header: View>: View {
         .padding(.vertical)
     }
 
+    func eventImage(_ event: OCKAnyEvent) -> Image? {
+        #if canImport(UIKit)
+        guard let asset = viewModel.event.asset else {
+            return nil
+        }
+        return Image(uiImage: asset)
+        #elseif canImport(AppKit)
+        guard let asset = viewModel.event.asset else {
+            return nil
+        }
+        return Image(nsImage: asset)
+        #else
+        guard let asset = viewModel.event.task.asset else {
+            return nil
+        }
+        return Image(name: asset)
+        #endif
+    }
 }
 
 public extension CustomLabelView {
