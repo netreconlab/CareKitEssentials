@@ -124,28 +124,35 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///   - colorRatio: The ratio effect on the color gradient.
     ///   - action: The action to perform when the log button is tapped.
     ///   - header: Short and descriptive content that identifies the event.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         detailsTitle: String? = nil,
-         detailsInformation: String? = nil,
-         initialValue: Double? = nil,
-         startValue: Double = 0,
-         endValue: Double? = nil,
-         incrementValue: Double = 1,
-         emojis: [String] = [],
-         colorRatio: Double = 0.2,
-         action: ((OCKOutcomeValue?) async -> Void)? = nil,
-         @ViewBuilder header: () -> Header) {
-        self.init(viewModel: .init(event: event.result,
-                                   detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   initialValue: initialValue,
-                                   startValue: startValue,
-                                   endValue: endValue,
-                                   incrementValue: incrementValue,
-                                   emojis: emojis,
-                                   colorRatio: colorRatio,
-                                   action: action),
-                  header: header)
+    init(
+        event: CareStoreFetchedResult<OCKAnyEvent>,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        initialValue: Double? = nil,
+        startValue: Double = 0,
+        endValue: Double? = nil,
+        incrementValue: Double = 1,
+        emojis: [String] = [],
+        colorRatio: Double = 0.2,
+        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+        @ViewBuilder header: () -> Header
+    ) {
+        let viewModel = DigitalCrownViewModel(
+            event: event.result,
+            detailsTitle: detailsTitle,
+            detailsInformation: detailsInformation,
+            initialValue: initialValue,
+            startValue: startValue,
+            endValue: endValue,
+            incrementValue: incrementValue,
+            emojis: emojis,
+            colorRatio: colorRatio,
+            action: action
+        )
+        self.init(
+            viewModel: viewModel,
+            header: header
+        )
     }
 
 }

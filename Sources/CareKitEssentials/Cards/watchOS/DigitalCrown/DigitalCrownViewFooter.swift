@@ -80,13 +80,18 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
 
             guard let action = viewModel.action else {
                 do {
-                    try await updateEvent(viewModel.event, with: [newOutcomeValue])
+                    let outcome = try await updateEvent(
+                        viewModel.event,
+                        with: [newOutcomeValue]
+                    )
+                    viewModel.updateOutcome(outcome)
                 } catch {
                     Logger.essentialView.error("Cannot update store with outcome value: \(error)")
                 }
                 return
             }
-            await action(newOutcomeValue)
+            let outcome = await action(newOutcomeValue)
+            viewModel.updateOutcome(outcome)
         }
     }
 }
