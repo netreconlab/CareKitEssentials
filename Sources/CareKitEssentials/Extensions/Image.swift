@@ -24,6 +24,16 @@ public extension Image {
             }
             return Image(name)
         }
+        #elseif canImport(AppKit)
+        guard NSImage(systemSymbolName: name, accessibilityDescription: nil) != nil else {
+            guard NSImage(named: name) != nil else {
+                guard let otherUrlUIImage = NSImage(contentsOfFile: name) else {
+                    return nil
+                }
+                return Image(nsImage: otherUrlUIImage)
+            }
+            return Image(name)
+        }
         #endif
         return Image(systemName: name)
     }
