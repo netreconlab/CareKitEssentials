@@ -101,7 +101,7 @@ public extension CustomLabelView {
         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
-        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
         @ViewBuilder header: () -> Header) {
             self.init(
                 viewModel: .init(
@@ -160,7 +160,7 @@ public extension CustomLabelView where Header == InformationHeaderView {
          initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
-         action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil) {
+         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil) {
         self.init(viewModel: .init(event: event.result,
                                    initialValue: initialValue,
                                    detailsTitle: detailsTitle,

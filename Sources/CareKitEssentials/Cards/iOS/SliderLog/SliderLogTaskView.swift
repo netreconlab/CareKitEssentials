@@ -134,7 +134,7 @@ public extension SliderLogTaskView {
          detailsInformation: String? = nil,
          range: ClosedRange<Double>,
          step: Double = 1,
-         action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
          @ViewBuilder header: () -> Header,
          @ViewBuilder slider: () -> Slider) {
         self.init(isHeaderPadded: false,
@@ -309,7 +309,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
         initialValue: Double? = 0,
         range: ClosedRange<Double>,
         step: Double = 1,
-        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
         minimumImage: Image? = nil,
         maximumImage: Image? = nil,
         minimumDescription: String? = nil,

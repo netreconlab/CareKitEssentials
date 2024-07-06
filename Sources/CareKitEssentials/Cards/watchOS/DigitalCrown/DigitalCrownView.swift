@@ -134,7 +134,7 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
         incrementValue: Double = 1,
         emojis: [String] = [],
         colorRatio: Double = 0.2,
-        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
         @ViewBuilder header: () -> Header
     ) {
         let viewModel = DigitalCrownViewModel(
