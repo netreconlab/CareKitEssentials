@@ -22,27 +22,35 @@ public struct DigitalCrownViewHeader: View {
     let event: OCKAnyEvent?
 
     public var body: some View {
-        VStack(alignment: .leading,
-               spacing: style.dimension.directionalInsets1.top) {
+        VStack(
+            alignment: .leading,
+            spacing: style.dimension.directionalInsets1.top
+        ) {
             if let event = event {
-                InformationHeaderView(title: title,
-                                      information: detail,
-                                      event: event)
+                InformationHeaderView(
+                    title: title,
+                    information: detail,
+                    event: event
+                )
             } else {
-                HeaderView(title: title, detail: detail)
+                HeaderView(
+                    title: title,
+                    detail: detail
+                )
             }
         }
     }
 }
 
 struct DigitalCrownViewHeader_Previews: PreviewProvider {
-    static let task = Utility.createNauseaTask()
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            DigitalCrownViewHeader(title: Text(task.title!),
-                                   detail: Text(task.instructions!),
-                                   event: event)
-                .environment(\.careStore, Utility.createPreviewStore())
+            DigitalCrownViewHeader(
+                title: Text(event.task.title ?? ""),
+                detail: Text(event.task.instructions ?? ""),
+                event: event
+            )
+            .environment(\.careStore, Utility.createPreviewStore())
         }
     }
 }

@@ -48,12 +48,16 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
                 }
                 Text("\(String(format: "%g", round(viewModel.valueAsDouble)))")
                     .focusable(true)
-                    .digitalCrownRotation($viewModel.valueAsDouble,
-                                          from: viewModel.startValue,
-                                          through: viewModel.endValue,
-                                          by: viewModel.incrementValue)
+                    .digitalCrownRotation(
+                        $viewModel.valueAsDouble,
+                        from: viewModel.startValue,
+                        through: viewModel.endValue,
+                        by: viewModel.incrementValue
+                    )
                     .font(.largeTitle)
-                    .foregroundColor(viewModel.getStoplightColor(for: viewModel.valueAsDouble))
+                    .foregroundColor(
+                        viewModel.getStoplightColor(for: viewModel.valueAsDouble)
+                    )
             }
             Button(action: {
                 updateValue()

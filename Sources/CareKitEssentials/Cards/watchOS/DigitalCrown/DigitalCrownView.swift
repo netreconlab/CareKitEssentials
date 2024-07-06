@@ -42,10 +42,12 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
         }
     }
 
-    init(isHeaderPadded: Bool,
-         isFooterPadded: Bool,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder footer: () -> Footer) {
+    init(
+        isHeaderPadded: Bool,
+        isFooterPadded: Bool,
+        @ViewBuilder header: () -> Header,
+        @ViewBuilder footer: () -> Footer
+    ) {
         self.isHeaderPadded = isHeaderPadded
         self.isFooterPadded = isFooterPadded
         self.header = header()
@@ -61,13 +63,17 @@ public extension DigitalCrownView {
     /// - Parameter instructions: Instructions text to display under the header.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     /// - Parameter footer: View to inject under the instructions. Specified content will be stacked vertically.
-    init(instructions: Text? = nil,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder footer: () -> Footer) {
-        self.init(isHeaderPadded: false,
-                  isFooterPadded: false,
-                  header: header,
-                  footer: footer)
+    init(
+        instructions: Text? = nil,
+        @ViewBuilder header: () -> Header,
+        @ViewBuilder footer: () -> Footer
+    ) {
+        self.init(
+            isHeaderPadded: false,
+            isFooterPadded: false,
+            header: header,
+            footer: footer
+        )
     }
 }
 
@@ -78,18 +84,24 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader {
     /// - Parameter detail: Detail text to display in the header.
     /// - Parameter event: The event to display details for when the info button is tapped.
     /// - Parameter footer: View to inject under the instructions. Specified content will be stacked vertically.
-    init(title: Text,
-         detail: Text? = nil,
-         event: OCKAnyEvent? = nil,
-         @ViewBuilder footer: () -> Footer) {
+    init(
+        title: Text,
+        detail: Text? = nil,
+        event: OCKAnyEvent? = nil,
+        @ViewBuilder footer: () -> Footer
+    ) {
         self.init(
             isHeaderPadded: true,
             isFooterPadded: false,
-            header: { DigitalCrownViewHeader(title: title,
-                                             detail: detail,
-                                             event: event)
+            header: { 
+                DigitalCrownViewHeader(
+                    title: title,
+                    detail: detail,
+                    event: event
+                )
             },
-            footer: footer)
+            footer: footer
+        )
     }
 }
 
@@ -98,14 +110,18 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     /// Create an instance.
     /// - Parameter viewModel: The view model used to populate the view contents.
     /// - Parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
-    init(viewModel: DigitalCrownViewModel,
-         @ViewBuilder header: () -> Header) {
-        self.init(isHeaderPadded: false,
-                  isFooterPadded: true,
-                  header: header,
-                  footer: {
-            DigitalCrownViewFooter(viewModel: viewModel)
-        })
+    init(
+        viewModel: DigitalCrownViewModel,
+        @ViewBuilder header: () -> Header
+    ) {
+        self.init(
+            isHeaderPadded: false,
+            isFooterPadded: true,
+            header: header,
+            footer: {
+                DigitalCrownViewFooter(viewModel: viewModel)
+            }
+        )
     }
 
     /// Create a view using data from an event.
@@ -158,28 +174,103 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
 }
 
 public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer == DigitalCrownViewFooter {
-    init(title: Text,
-         detail: Text? = nil,
-         viewModel: DigitalCrownViewModel) {
-        self.init(isHeaderPadded: true,
-                  isFooterPadded: true,
-                  header: { DigitalCrownViewHeader(title: title,
-                                                   detail: detail,
-                                                   event: viewModel.event) },
-                  footer: { DigitalCrownViewFooter(viewModel: viewModel) })
+    init(
+        title: Text,
+        detail: Text? = nil,
+        viewModel: DigitalCrownViewModel
+    ) {
+        self.init(
+            isHeaderPadded: true,
+            isFooterPadded: true,
+            header: {
+                DigitalCrownViewHeader(
+                    title: title,
+                    detail: detail,
+                    event: viewModel.event
+                )
+            },
+            footer: {
+                DigitalCrownViewFooter(viewModel: viewModel)
+            }
+        )
+    }
+
+    /// Create a view using data from an event.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - event: The data that appears in the view.
+    ///   - detailsTitle: An optional title for the event.
+    ///   - detailsInformation: An optional detailed information string for the event.
+    ///   - initialValue: The initial value shown for the digital crown.
+    ///   - startValue: The minimum possible value.
+    ///   - endValue: The maximum possible value.
+    ///   - incrementValue: The step amount.
+    ///   - emojis: An array of emoji's to show on the screen.
+    ///   - colorRatio: The ratio effect on the color gradient.
+    ///   - action: The action to perform when the log button is tapped.
+    init(
+        event: CareStoreFetchedResult<OCKAnyEvent>,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        initialValue: Double? = nil,
+        startValue: Double = 0,
+        endValue: Double? = nil,
+        incrementValue: Double = 1,
+        emojis: [String] = [],
+        colorRatio: Double = 0.2,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
+    ) {
+        let event = event.result
+        let viewModel = DigitalCrownViewModel(
+            event: event,
+            detailsTitle: detailsTitle,
+            detailsInformation: detailsInformation,
+            initialValue: initialValue,
+            startValue: startValue,
+            endValue: endValue,
+            incrementValue: incrementValue,
+            emojis: emojis,
+            colorRatio: colorRatio,
+            action: action
+        )
+        let title = detailsTitle != nil ? 
+            Text(detailsTitle!) : Text(event.title)
+        let detail = detailsInformation != nil ? 
+            Text(detailsInformation!) : Text(event.detail ?? "")
+        self.init(
+            isHeaderPadded: true,
+            isFooterPadded: true,
+            header: {
+                DigitalCrownViewHeader(
+                    title: title,
+                    detail: detail,
+                    event: event
+                )
+            },
+            footer: {
+                DigitalCrownViewFooter(
+                    viewModel: viewModel
+                )
+            }
+        )
     }
 }
 
 struct DigitalCrownView_Previews: PreviewProvider {
     static let emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
-    static let task = Utility.createNauseaTask()
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            DigitalCrownView(title: Text(task.title!),
-                             detail: Text(task.instructions!),
-                             viewModel: .init(event: event,
-                                              emojis: emojis))
-                .environment(\.careStore, Utility.createPreviewStore())
+            DigitalCrownView(
+                title: Text(event.task.title ?? ""),
+                detail: Text(event.task.instructions ?? ""),
+                viewModel: .init(
+                    event: event,
+                    emojis: emojis
+                )
+            )
+            .environment(\.careStore, Utility.createPreviewStore())
         }
     }
 }
