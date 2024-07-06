@@ -82,6 +82,9 @@ open class CardViewModel: ObservableObject {
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
         self.initialValue = initialValue
+        if let initialValueAsDouble = initialValue.doubleValue {
+            self.valueAsDouble = initialValueAsDouble
+        }
         self.value = event.outcomeFirstValue ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
