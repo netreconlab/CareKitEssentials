@@ -34,7 +34,11 @@ open class DigitalCrownViewModel: CardViewModel {
     }
 
     open var isButtonDisabled: Bool {
-        value == event.outcomeFirstValue
+        guard let currentDouble = value.doubleValue,
+              let originalDouble = event.outcomeValueDouble else {
+            return false
+        }
+        return Int(currentDouble) == Int(originalDouble)
     }
 
     open var valueForButton: String {
@@ -61,16 +65,18 @@ open class DigitalCrownViewModel: CardViewModel {
     ///     - emojis: An array of emoji's to show on the screen.
     ///     - colorRatio: The ratio effect on the color gradient.
     ///     - action: The action to perform when the log button is tapped.
-    public init(event: OCKAnyEvent,
-                detailsTitle: String? = nil,
-                detailsInformation: String? = nil,
-                initialValue: Double? = nil,
-                startValue: Double = 0,
-                endValue: Double? = nil,
-                incrementValue: Double = 1,
-                emojis: [String] = [],
-                colorRatio: Double = 0.2,
-                action: ((OCKOutcomeValue?) async -> Void)? = nil) {
+    public init(
+        event: OCKAnyEvent,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        initialValue: Double? = nil,
+        startValue: Double = 0,
+        endValue: Double? = nil,
+        incrementValue: Double = 1,
+        emojis: [String] = [],
+        colorRatio: Double = 0.2,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
+    ) {
         self.startValue = startValue
         self.incrementValue = incrementValue
         self.colorRatio = colorRatio
@@ -83,18 +89,28 @@ open class DigitalCrownViewModel: CardViewModel {
             self.endValue = 0
         }
         if let initialValue = initialValue {
-            super.init(event: event,
-                       initialValue: OCKOutcomeValue(initialValue),
-                       detailsTitle: detailsTitle,
-                       detailsInformation: detailsInformation,
-                       action: action
+
+            var currentInitialOutcome = OCKOutcomeValue(initialValue)
+            if let latestOutcomeValue = event.outcomeFirstValue,
+               let initialOutcomeDouble = latestOutcomeValue.doubleValue {
+                if initialOutcomeDouble == initialValue {
+                    currentInitialOutcome = latestOutcomeValue
+                }
+            }
+            super.init(
+                event: event,
+                initialValue: currentInitialOutcome,
+                detailsTitle: detailsTitle,
+                detailsInformation: detailsInformation,
+                action: action
             )
         } else {
-            super.init(event: event,
-                       initialValue: OCKOutcomeValue(startValue),
-                       detailsTitle: detailsTitle,
-                       detailsInformation: detailsInformation,
-                       action: action
+            super.init(
+                event: event,
+                initialValue: OCKOutcomeValue(startValue),
+                detailsTitle: detailsTitle,
+                detailsInformation: detailsInformation,
+                action: action
             )
         }
     }

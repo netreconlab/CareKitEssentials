@@ -20,7 +20,7 @@ jobs:
     runs-on: macos-14
     strategy:
       matrix:
-        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)']
+        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
         action: ['test']
     steps:
     - uses: actions/checkout@v4

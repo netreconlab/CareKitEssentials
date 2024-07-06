@@ -43,7 +43,7 @@ public struct InformationHeaderView: View {
         HStack(spacing: style.dimension.directionalInsets2.trailing) {
             image?
                 .font(.largeTitle)
-                .foregroundColor(Color(UIColor.lightGray))
+                .foregroundColor(Color.gray)
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top / 4.0) {
                 title
                     .font(.headline)
@@ -95,10 +95,12 @@ public struct InformationHeaderView: View {
 struct InformationHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            InformationHeaderView(title: Text(event.title),
-                                  information: Text(event.detail ?? ""),
-                                  image: Image(uiImage: event.asset ?? UIImage()),
-                                  event: event)
+            InformationHeaderView(
+                title: Text(event.title),
+                information: Text(event.detail ?? ""),
+                image: event.image(),
+                event: event
+            )
         }
     }
 }

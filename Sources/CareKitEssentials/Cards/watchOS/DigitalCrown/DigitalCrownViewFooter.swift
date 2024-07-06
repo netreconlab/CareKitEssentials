@@ -19,10 +19,15 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
     @Environment(\.sizeCategory) private var sizeCategory
     @StateObject var viewModel: DigitalCrownViewModel
 
-    @OSValue<CGFloat>(values: [.watchOS: 8],
-                      defaultValue: 14) private var padding
-    @OSValue<Font>(values: [.watchOS: .system(size: 13)],
-                   defaultValue: .caption) private var font
+    @OSValue<CGFloat>(
+        values: [.watchOS: 8],
+        defaultValue: 14
+    ) private var padding
+
+    @OSValue<Font>(
+        values: [.watchOS: .system(size: 13)],
+        defaultValue: .caption
+    ) private var font
 
     private var content: some View {
         Group {
@@ -48,12 +53,16 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
                 }
                 Text("\(String(format: "%g", round(viewModel.valueAsDouble)))")
                     .focusable(true)
-                    .digitalCrownRotation($viewModel.valueAsDouble,
-                                          from: viewModel.startValue,
-                                          through: viewModel.endValue,
-                                          by: viewModel.incrementValue)
+                    .digitalCrownRotation(
+                        $viewModel.valueAsDouble,
+                        from: viewModel.startValue,
+                        through: viewModel.endValue,
+                        by: viewModel.incrementValue
+                    )
                     .font(.largeTitle)
-                    .foregroundColor(viewModel.getStoplightColor(for: viewModel.valueAsDouble))
+                    .foregroundColor(
+                        viewModel.getStoplightColor(for: viewModel.valueAsDouble)
+                    )
             }
             Button(action: {
                 updateValue()
@@ -80,13 +89,22 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
 
             guard let action = viewModel.action else {
                 do {
-                    try await updateEvent(viewModel.event, with: [newOutcomeValue])
+                    let outcome = try await updateEvent(
+                        viewModel.event,
+                        with: [newOutcomeValue]
+                    )
+                    viewModel.updateOutcome(outcome)
                 } catch {
                     Logger.essentialView.error("Cannot update store with outcome value: \(error)")
                 }
                 return
             }
-            await action(newOutcomeValue)
+            do {
+                let outcome = try await action(newOutcomeValue)
+                viewModel.updateOutcome(outcome)
+            } catch {
+                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            }
         }
     }
 }

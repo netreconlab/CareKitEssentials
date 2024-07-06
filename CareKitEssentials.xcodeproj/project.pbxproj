@@ -16,6 +16,7 @@
 		70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB522A12BDAC00759A9C /* Slider.swift */; };
 		70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */; };
 		70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */; };
+		70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDC6152C387C9F00A32137 /* NSImage.swift */; };
 		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
 		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
 		911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */; };
@@ -73,6 +74,7 @@
 		70BBCB522A12BDAC00759A9C /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogButton.swift; sourceTree = "<group>"; };
 		70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderLogTaskViewModel.swift; sourceTree = "<group>"; };
+		70FDC6152C387C9F00A32137 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		911BDB252A11C437004F8442 /* View+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Default.swift"; sourceTree = "<group>"; };
 		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareKitEssentialsError.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				OBJ_32 /* CustomLinearCareTaskProgress.swift */,
 				OBJ_27 /* Image.swift */,
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
+				70FDC6152C387C9F00A32137 /* NSImage.swift */,
 				OBJ_29 /* OCKAnyEvent.swift */,
 				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
 				OBJ_30 /* OCKAnyOutcome.swift */,
@@ -432,6 +435,7 @@
 				OBJ_765 /* UIImage.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
+				70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */,
 				70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */,
 				911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */,
 				OBJ_766 /* OSValue.swift in Sources */,
@@ -504,7 +508,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +519,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -561,7 +566,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -572,6 +577,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -593,7 +599,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -601,12 +607,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -631,7 +637,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -639,12 +645,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -671,16 +677,16 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentialsTests;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -707,16 +713,16 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,4";
+				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentialsTests;
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -761,7 +767,7 @@
 			repositoryURL = "https://github.com/cbaker6/CareKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "3.0.0-beta.8";
+				minimumVersion = "3.0.0-beta.10";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

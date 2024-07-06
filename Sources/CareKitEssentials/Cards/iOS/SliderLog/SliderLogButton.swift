@@ -53,6 +53,7 @@ struct SliderLogButton: CareKitEssentialView {
                 .foregroundColor(.accentColor)
             }
             .disabled(!viewModel.isActive)
+            .foregroundColor(viewModel.isActive ? .accentColor : Color.gray)
             .padding(.bottom)
 
             Button(action: {}) {
@@ -72,15 +73,19 @@ struct SliderLogButton: CareKitEssentialView {
 
             guard let action = viewModel.action else {
                 do {
-                    try await updateEvent(viewModel.event, with: [newOutcomeValue])
+                    let outcome = try await updateEvent(viewModel.event, with: [newOutcomeValue])
+                    viewModel.updateOutcome(outcome)
                 } catch {
                     Logger.essentialView.error("Cannot update store with outcome value: \(error)")
                 }
-                viewModel.isActive = false
                 return
             }
-            await action(newOutcomeValue)
-            viewModel.isActive = false
+            do {
+                let outcome = try await action(newOutcomeValue)
+                viewModel.updateOutcome(outcome)
+            } catch {
+                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            }
         }
     }
 }

@@ -44,6 +44,15 @@ public extension OCKAnyEvent {
         }
         return UIImage.asset(asset)
     }
+
+    #elseif canImport(AppKit)
+    /// The first event task asset.
+    var asset: NSImage? {
+        guard let asset = self.task.asset else {
+            return nil
+        }
+        return NSImage.asset(asset)
+    }
     #endif
 
     /// The first event outcome.
@@ -140,5 +149,24 @@ public extension OCKAnyEvent {
 
         newOutcome.values = prependedValues
         return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
+    }
+
+    func image() -> Image? {
+        #if canImport(UIKit)
+        guard let asset = self.asset else {
+            return nil
+        }
+        return Image(uiImage: asset)
+        #elseif canImport(AppKit)
+        guard let asset = self.asset else {
+            return nil
+        }
+        return Image(nsImage: asset)
+        #else
+        guard let asset = self.task.asset else {
+            return nil
+        }
+        return Image(name: asset)
+        #endif
     }
 }
