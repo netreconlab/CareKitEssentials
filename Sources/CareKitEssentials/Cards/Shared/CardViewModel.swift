@@ -81,8 +81,8 @@ open class CardViewModel: ObservableObject {
         detailsInformation: String? = nil,
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
-        self.value = event.outcomeFirstValue ?? initialValue
         self.initialValue = initialValue
+        self.value = event.outcomeFirstValue ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
