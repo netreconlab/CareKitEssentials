@@ -1,0 +1,951 @@
+{
+  "abstract" : [
+    {
+      "text" : "Displays a ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKMultiGraphableView",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " above an axis. The initializer takes an enum ",
+      "type" : "text"
+    },
+    {
+      "code" : "PlotType",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " that allows you to choose from",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "several common graph types.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "c:@M@CareKitUI@objc(cs)OCKCartesianGraphView",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "OCKCartesianGraphView"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitUI"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "OCKCartesianGraphView"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "OCKCartesianGraphView"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "iOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "class"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "OCKCartesianGraphView"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "+-------------------------------------------------------+",
+            "|                                                       |",
+            "| [title]                                               |",
+            "| [detail]                                              |",
+            "|                                                       |",
+            "| [graph]                                               |",
+            "|                                                       |",
+            "+-------------------------------------------------------+"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKView"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)NSCoding",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStylable",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)NSObject",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)CALayerDelegate",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s7CVarArgP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAccessibilityIdentification",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIActivityItemsConfigurationProviding",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAppearance",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAppearanceContainer",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UICoordinateSpace",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIDynamicItem",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusEnvironment",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusItem",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusItemContainer",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UILargeContentViewerItem",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIPasteConfigurationSupporting",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIPopoverPresentationControllerSourceItem",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIResponderStandardEditActions",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/5UIKit23UITraitChangeObservableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UITraitEnvironment",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIUserActivityRestoring"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/init(type:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/dataSeries",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/horizontalAxisMarkers",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/numberFormatter",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/selectedIndex",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/xMaximum",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/xMinimum",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/yMaximum",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/yMinimum"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/graphBounds()",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/tintColorDidChange()"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/PlotType"
+      ],
+      "title" : "Enumerations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitui\/ockcartesiangraphview"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/5UIKit23UITraitChangeObservableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/5UIKit23UITraitChangeObservableP",
+  "title" : "UIKit.UITraitChangeObservable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitUI",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView": {
+  "abstract" : [
+    {
+      "text" : "Displays a ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKMultiGraphableView",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " above an axis. The initializer takes an enum ",
+      "type" : "text"
+    },
+    {
+      "code" : "PlotType",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " that allows you to choose from",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "several common graph types.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKCartesianGraphView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKCartesianGraphView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKCartesianGraphView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/PlotType": {
+  "abstract" : [
+    {
+      "text" : "An enumerator specifying the types of plots this view can display.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PlotType"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/PlotType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PlotType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKCartesianGraphView.PlotType",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/plottype"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/dataSeries": {
+  "abstract" : [
+    {
+      "text" : "The data points displayed in the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dataSeries"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CareKitUI13OCKDataSeriesV",
+      "text" : "OCKDataSeries"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/dataSeries",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dataSeries",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/dataseries"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/graphBounds()": {
+  "abstract" : [
+    {
+      "text" : "Get the bounds of the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "graphBounds"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGRect",
+      "text" : "CGRect"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/graphBounds()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "graphBounds()",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/graphbounds()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/horizontalAxisMarkers": {
+  "abstract" : [
+    {
+      "text" : "The labels for the horizontal axis.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "horizontalAxisMarkers"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/horizontalAxisMarkers",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "horizontalAxisMarkers",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/horizontalaxismarkers"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/init(type:)": {
+  "abstract" : [
+    {
+      "text" : "Create a graph view with the specified style.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "type"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9CareKitUI21OCKCartesianGraphViewC8PlotTypeO",
+      "text" : "PlotType"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/init(type:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(type:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/init(type:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/numberFormatter": {
+  "abstract" : [
+    {
+      "text" : "A number formatter used for the vertical axis values",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "numberFormatter"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)NSNumberFormatter",
+      "text" : "NumberFormatter"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/numberFormatter",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "numberFormatter",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/numberformatter"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/selectedIndex": {
+  "abstract" : [
+    {
+      "text" : "The index of the selected label in the x-axis.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "selectedIndex"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/selectedIndex",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "selectedIndex",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/selectedindex"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/tintColorDidChange()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tintColorDidChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/tintColorDidChange()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tintColorDidChange()",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/tintcolordidchange()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/xMaximum": {
+  "abstract" : [
+    {
+      "text" : "The maximum x value in the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "xMaximum"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/xMaximum",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "xMaximum",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/xmaximum"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/xMinimum": {
+  "abstract" : [
+    {
+      "text" : "The minimum x value in the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "xMinimum"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/xMinimum",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "xMinimum",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/xminimum"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/yMaximum": {
+  "abstract" : [
+    {
+      "text" : "The maximum y value in the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yMaximum"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/yMaximum",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yMaximum",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/ymaximum"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKCartesianGraphView/yMinimum": {
+  "abstract" : [
+    {
+      "text" : "The minimum y value in the graph.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yMinimum"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKCartesianGraphView\/yMinimum",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yMinimum",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockcartesiangraphview\/yminimum"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKStylable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKStylable"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStylable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKStylable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKStylable",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockstylable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/ockview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)CALayerDelegate": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)CALayerDelegate",
+  "title" : "QuartzCore.CALayerDelegate",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)NSCoding": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)NSCoding",
+  "title" : "Foundation.NSCoding",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)NSObject": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)NSObject",
+  "title" : "ObjectiveC.NSObjectProtocol",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIAccessibilityIdentification": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAccessibilityIdentification",
+  "title" : "UIKit.UIAccessibilityIdentification",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIActivityItemsConfigurationProviding": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIActivityItemsConfigurationProviding",
+  "title" : "UIKit.UIActivityItemsConfigurationProviding",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIAppearance": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAppearance",
+  "title" : "UIKit.UIAppearance",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIAppearanceContainer": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIAppearanceContainer",
+  "title" : "UIKit.UIAppearanceContainer",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UICoordinateSpace": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UICoordinateSpace",
+  "title" : "UIKit.UICoordinateSpace",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIDynamicItem": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIDynamicItem",
+  "title" : "UIKit.UIDynamicItem",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIFocusEnvironment": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusEnvironment",
+  "title" : "UIKit.UIFocusEnvironment",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIFocusItem": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusItem",
+  "title" : "UIKit.UIFocusItem",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIFocusItemContainer": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIFocusItemContainer",
+  "title" : "UIKit.UIFocusItemContainer",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UILargeContentViewerItem": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UILargeContentViewerItem",
+  "title" : "UIKit.UILargeContentViewerItem",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIPasteConfigurationSupporting": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIPasteConfigurationSupporting",
+  "title" : "UIKit.UIPasteConfigurationSupporting",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIPopoverPresentationControllerSourceItem": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIPopoverPresentationControllerSourceItem",
+  "title" : "UIKit.UIPopoverPresentationControllerSourceItem",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIResponderStandardEditActions": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIResponderStandardEditActions",
+  "title" : "UIKit.UIResponderStandardEditActions",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UITraitEnvironment": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UITraitEnvironment",
+  "title" : "UIKit.UITraitEnvironment",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/objc(pl)UIUserActivityRestoring": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/objc(pl)UIUserActivityRestoring",
+  "title" : "UIKit.UIUserActivityRestoring",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s23CustomStringConvertibleP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
+  "title" : "Swift.CustomStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s28CustomDebugStringConvertibleP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
+  "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s7CVarArgP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s7CVarArgP",
+  "title" : "Swift.CVarArg",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}
