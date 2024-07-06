@@ -28,7 +28,7 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
     public var body: some View {
         CardView {
             VStack(
-                alignment: .leading, 
+                alignment: .leading,
                 spacing: style.dimension.directionalInsets1.top
             ) {
                 if !(header is EmptyView) {

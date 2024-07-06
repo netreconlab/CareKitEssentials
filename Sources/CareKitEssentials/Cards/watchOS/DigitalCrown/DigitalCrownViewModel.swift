@@ -34,7 +34,11 @@ open class DigitalCrownViewModel: CardViewModel {
     }
 
     open var isButtonDisabled: Bool {
-        value == event.outcomeFirstValue
+        guard let currentDouble = value.doubleValue,
+              let originalDouble = event.outcomeValueDouble else {
+            return false
+        }
+        return Int(currentDouble) == Int(originalDouble)
     }
 
     open var valueForButton: String {
