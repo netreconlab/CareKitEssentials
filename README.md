@@ -7,7 +7,7 @@
 ![Codecov](https://codecov.io/gh/netreconlab/CareKitEssentials/branches/main/graph/badge.svg)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/netreconlab/ParseCareKit/#license)
 
-Provides essential cards, views, models, protocols, and extentions to expedite building [CareKit](https://github.com/carekit-apple/CareKit) based applications.
+Provides essential cards, views, models, protocols, and extensions to expedite building [CareKit](https://github.com/carekit-apple/CareKit) based applications.
 
 ## Entensions
 A number of public extensions are available to make using CareKit easier. All of the extensions can be found in the [Extensions](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Extensions) folder.
