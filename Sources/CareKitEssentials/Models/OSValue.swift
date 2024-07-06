@@ -10,7 +10,7 @@ import Foundation
 
 // swiftlint:disable:next type_name
 enum OS: String {
-    case iOS, watchOS, macOS
+    case iOS, watchOS, macOS, visionOS
 }
 
 @propertyWrapper
@@ -26,6 +26,8 @@ struct OSValue<Value> {
         return values[.watchOS] ?? defaultValue
         #elseif os(macOS)
         return values[.macOS] ?? defaultValue
+        #elseif os(visionOS)
+        return values[.visionOS] ?? defaultValue
         #else
         return defaultValue
         #endif
