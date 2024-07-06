@@ -47,7 +47,7 @@ open class SliderLogTaskViewModel: CardViewModel {
         initialValue: Double? = 0,
         range: ClosedRange<Double>,
         step: Double = 1,
-        action: ((OCKOutcomeValue?) async -> OCKAnyOutcome)? = nil
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
         if let values = event.outcomeValues {
             self.previousValues = values.compactMap { $0.doubleValue }
