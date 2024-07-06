@@ -80,8 +80,12 @@ struct SliderLogButton: CareKitEssentialView {
                 }
                 return
             }
-            let outcome = await action(newOutcomeValue)
-            viewModel.updateOutcome(outcome)
+            do {
+                let outcome = try await action(newOutcomeValue)
+                viewModel.updateOutcome(outcome)
+            } catch {
+                Logger.essentialView.error("Cannot update store with outcome value: \(error)")
+            }
         }
     }
 }
