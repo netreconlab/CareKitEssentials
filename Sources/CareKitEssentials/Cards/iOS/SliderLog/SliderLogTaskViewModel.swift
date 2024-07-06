@@ -44,7 +44,7 @@ open class SliderLogTaskViewModel: CardViewModel {
         event: OCKAnyEvent,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
-        initialValue: Double? = 0,
+        initialValue: Double? = nil,
         range: ClosedRange<Double>,
         step: Double = 1,
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
@@ -60,11 +60,11 @@ open class SliderLogTaskViewModel: CardViewModel {
             currentInitialDoubleValue = initialValue
         }
         var currentInitialOutcome = OCKOutcomeValue(currentInitialDoubleValue)
-        if let initialOutcome = event.outcomeFirstValue,
-           let initialOutcomeDouble = initialOutcome.doubleValue {
+        if let latestOutcomeValue = event.outcomeFirstValue,
+           let initialOutcomeDouble = latestOutcomeValue.doubleValue {
             if initialOutcomeDouble != currentInitialDoubleValue {
                 isActive = false
-                currentInitialOutcome = initialOutcome
+                currentInitialOutcome = latestOutcomeValue
             }
         }
         super.init(

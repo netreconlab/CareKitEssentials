@@ -27,7 +27,10 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
 
     public var body: some View {
         CardView {
-            VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
+            VStack(
+                alignment: .leading, 
+                spacing: style.dimension.directionalInsets1.top
+            ) {
                 if !(header is EmptyView) {
                     VStack {
                         header
@@ -36,8 +39,12 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
                     .if(isHeaderPadded) { $0.padding([.horizontal, .top]) }
                 }
 
-                VStack { footer }
-                    .if(isHeaderPadded) { $0.padding([.horizontal, .bottom]) }
+                VStack {
+                    footer
+                }
+                .if(isHeaderPadded) {
+                    $0.padding([.horizontal, .bottom])
+                }
             }
         }
     }
@@ -93,7 +100,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader {
         self.init(
             isHeaderPadded: true,
             isFooterPadded: false,
-            header: { 
+            header: {
                 DigitalCrownViewHeader(
                     title: title,
                     detail: detail,
@@ -235,9 +242,9 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
             colorRatio: colorRatio,
             action: action
         )
-        let title = detailsTitle != nil ? 
+        let title = detailsTitle != nil ?
             Text(detailsTitle!) : Text(event.title)
-        let detail = detailsInformation != nil ? 
+        let detail = detailsInformation != nil ?
             Text(detailsInformation!) : Text(event.detail ?? "")
         self.init(
             isHeaderPadded: true,

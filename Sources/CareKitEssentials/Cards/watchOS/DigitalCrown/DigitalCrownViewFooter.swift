@@ -19,10 +19,15 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
     @Environment(\.sizeCategory) private var sizeCategory
     @StateObject var viewModel: DigitalCrownViewModel
 
-    @OSValue<CGFloat>(values: [.watchOS: 8],
-                      defaultValue: 14) private var padding
-    @OSValue<Font>(values: [.watchOS: .system(size: 13)],
-                   defaultValue: .caption) private var font
+    @OSValue<CGFloat>(
+        values: [.watchOS: 8],
+        defaultValue: 14
+    ) private var padding
+
+    @OSValue<Font>(
+        values: [.watchOS: .system(size: 13)],
+        defaultValue: .caption
+    ) private var font
 
     private var content: some View {
         Group {

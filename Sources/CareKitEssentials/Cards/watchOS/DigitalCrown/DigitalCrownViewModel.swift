@@ -85,9 +85,17 @@ open class DigitalCrownViewModel: CardViewModel {
             self.endValue = 0
         }
         if let initialValue = initialValue {
+
+            var currentInitialOutcome = OCKOutcomeValue(initialValue)
+            if let latestOutcomeValue = event.outcomeFirstValue,
+               let initialOutcomeDouble = latestOutcomeValue.doubleValue {
+                if initialOutcomeDouble != initialValue {
+                    currentInitialOutcome = latestOutcomeValue
+                }
+            }
             super.init(
                 event: event,
-                initialValue: OCKOutcomeValue(initialValue),
+                initialValue: currentInitialOutcome,
                 detailsTitle: detailsTitle,
                 detailsInformation: detailsInformation,
                 action: action
