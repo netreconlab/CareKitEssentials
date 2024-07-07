@@ -1,6 +1,7 @@
 # CareKitEssentials
 
-[![Documentation](https://img.shields.io/badge/read_-docs-2196f3.svg)](https://swiftpackageindex.com/netreconlab/CareKitEssentials/documentation/)
+[![Documentation](https://img.shields.io/badge/read_-iOS_docs-2196f3.svg)](https://swiftpackageindex.com/netreconlab/CareKitEssentials/documentation/)
+[![Documentation](https://img.shields.io/badge/read_-watchOS_docs-2196f3.svg)](https://netreconlab.github.io/CareKitEssentials/release/documentation/carekitessentials/)
 [![Tuturiol](https://img.shields.io/badge/read_-tuturials-2196f3.svg)](https://netreconlab.github.io/CareKitEssentials/release/tutorials/carekitessentials/)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fnetreconlab%2FCareKitEssentials%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/netreconlab/CareKitEssentials)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fnetreconlab%2FCareKitEssentials%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/netreconlab/CareKitEssentials)
