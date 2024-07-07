@@ -103,7 +103,7 @@ mkdir "$TEMP_WORKSPACE_DIR"
 mv CareKitEssentials.xcodeproj "$TEMP_WORKSPACE_DIR/CareKitEssentials.xcodeproj"
 
 xcodebuild clean build -scheme CareKitEssentials \
-    -destination generic/platform=iOS \
+    -destination generic/platform=watchOS \
     OTHER_SWIFT_FLAGS="-emit-symbol-graph -emit-symbol-graph-dir '$SGFS_DIR'" | xcpretty
 
 mv "$TEMP_WORKSPACE_DIR/CareKitEssentials.xcodeproj" ./CareKitEssentials.xcodeproj
