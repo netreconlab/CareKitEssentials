@@ -112,7 +112,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/init(from:)": {
   "abstract" : [
-
+    {
+      "text" : "Creates a new deque by decoding from the given decoder.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -161,7 +164,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",

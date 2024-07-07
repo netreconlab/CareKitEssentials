@@ -66,7 +66,7 @@
     ],
     "modules" : [
       {
-        "name" : "Collections",
+        "name" : "DequeModule",
         "relatedModules" : [
           "Swift"
         ]

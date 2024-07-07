@@ -1,15 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Inherited from ",
-      "type" : "text"
-    },
-    {
-      "code" : "RangeReplaceableCollection.append(contentsOf:)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
+      "text" : "Adds the elements of a sequence to the end of the deque.",
       "type" : "text"
     }
   ],
@@ -65,6 +57,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
         "text" : "S"
       },
       {
@@ -74,10 +67,7 @@
     ],
     "modules" : [
       {
-        "name" : "Collections",
-        "relatedModules" : [
-          "DequeModule"
-        ]
+        "name" : "DequeModule"
       }
     ],
     "role" : "symbol",
@@ -146,6 +136,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
               "text" : "S"
             },
             {
@@ -202,6 +193,103 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "The elements to append to the deque.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "newElements"
+        }
+      ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Use this method to append the elements of a sequence to the front of this",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "deque. This example appends the elements of a ",
+              "type" : "text"
+            },
+            {
+              "code" : "Range<Int>",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instance to a",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "deque of integers.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "var numbers: Deque = [1, 2, 3, 4, 5]",
+            "numbers.append(contentsOf: 10...15)",
+            "print(numbers)",
+            "\/\/ Prints \"[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]\""
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Amortized O(",
+                  "type" : "text"
+                },
+                {
+                  "code" : "newElements.count",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ").",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Complexity",
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -308,7 +396,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/append(contentsOf:)-8rqnl": {
   "abstract" : [
-
+    {
+      "text" : "Adds the elements of a sequence to the end of the deque.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -345,6 +436,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {

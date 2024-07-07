@@ -112,7 +112,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/debugDescription": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance, suitable for debugging.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
