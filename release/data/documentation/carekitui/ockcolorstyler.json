@@ -57,7 +57,7 @@
             "swift"
           ],
           "platforms" : [
-            "iOS"
+            "watchOS"
           ],
           "tokens" : [
             {
@@ -99,28 +99,18 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/black",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBackground",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBlue-69xy6",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customFill-lp9l",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray-2dzf1",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray2-7v4ud",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray3-91bsn",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray4-3csgm",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray5-yn4o",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/label-3e23d",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/quaternaryCustomFill-9s8ur",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomBackground",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomFill-4dn43",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomGroupedBackground",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryLabel-45w1p",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/separator-7r6nr",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomFill-9u7ey",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomGroupedBackground",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryLabel-99xfq",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/white"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/black-4ae83",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear-h4j",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBackground-j89q",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customFill",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground-2znid",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/quaternaryCustomFill",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomBackground-13bdt",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomFill",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomGroupedBackground-8g427",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomFill",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomGroupedBackground-7rq1a",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/white-7s4h5"
       ],
       "title" : "Instance Properties"
     }
@@ -218,10 +208,11 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockcolorstyler"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/black": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/black-4ae83": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -245,17 +236,19 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/black",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/black-4ae83",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "black",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/black"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/black-4ae83"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/clear": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/clear-h4j": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -279,17 +272,19 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear-h4j",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "clear",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/clear"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/clear-h4j"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customBackground": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customBackground-j89q": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -313,54 +308,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBackground",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "customBackground",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/custombackground"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customBlue-69xy6": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customBlue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBlue-69xy6",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customBackground-j89q",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
-  "title" : "customBlue",
+  "title" : "customBackground",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customblue-69xy6"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/custombackground-j89q"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customFill-lp9l": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customFill": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -384,198 +343,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customFill-lp9l",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customFill",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
   "title" : "customFill",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customfill-lp9l"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customfill"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGray-2dzf1": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGroupedBackground-2znid": {
   "abstract" : [
 
   ],
   "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGray"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray-2dzf1",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGray",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgray-2dzf1"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGray2-7v4ud": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGray2"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray2-7v4ud",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGray2",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgray2-7v4ud"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGray3-91bsn": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGray3"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray3-91bsn",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGray3",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgray3-91bsn"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGray4-3csgm": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGray4"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray4-3csgm",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGray4",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgray4-3csgm"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGray5-yn4o": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGray5"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGray5-yn4o",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGray5",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgray5-yn4o"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGroupedBackground": {
-  "abstract" : [
-
-  ],
   "fragments" : [
     {
       "kind" : "keyword",
@@ -599,54 +378,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "customGroupedBackground",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgroupedbackground"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/label-3e23d": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "label"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/label-3e23d",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground-2znid",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
-  "title" : "label",
+  "title" : "customGroupedBackground",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/label-3e23d"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgroupedbackground-2znid"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/quaternaryCustomFill-9s8ur": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/quaternaryCustomFill": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -670,18 +413,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/quaternaryCustomFill-9s8ur",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/quaternaryCustomFill",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
   "title" : "quaternaryCustomFill",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/quaternarycustomfill-9s8ur"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/quaternarycustomfill"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomBackground": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomBackground-13bdt": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -705,18 +448,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomBackground",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomBackground-13bdt",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "secondaryCustomBackground",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustombackground"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustombackground-13bdt"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomFill-4dn43": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomFill": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -740,18 +483,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomFill-4dn43",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomFill",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
   "title" : "secondaryCustomFill",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustomfill-4dn43"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustomfill"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomGroupedBackground": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryCustomGroupedBackground-8g427": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -775,90 +518,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomGroupedBackground",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryCustomGroupedBackground-8g427",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "secondaryCustomGroupedBackground",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustomgroupedbackground"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarycustomgroupedbackground-8g427"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/secondaryLabel-45w1p": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/tertiaryCustomFill": {
   "abstract" : [
 
   ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "secondaryLabel"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/secondaryLabel-45w1p",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "secondaryLabel",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/secondarylabel-45w1p"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/separator-7r6nr": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "separator"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/separator-7r6nr",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "separator",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/separator-7r6nr"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/tertiaryCustomFill-9u7ey": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -882,18 +553,18 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomFill-9u7ey",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomFill",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
   "title" : "tertiaryCustomFill",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/tertiarycustomfill-9u7ey"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/tertiarycustomfill"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/tertiaryCustomGroupedBackground": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/tertiaryCustomGroupedBackground-7rq1a": {
   "abstract" : [
 
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -917,53 +588,19 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomGroupedBackground",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryCustomGroupedBackground-7rq1a",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "tertiaryCustomGroupedBackground",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/tertiarycustomgroupedbackground"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/tertiarycustomgroupedbackground-7rq1a"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/tertiaryLabel-99xfq": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/white-7s4h5": {
   "abstract" : [
 
   ],
   "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "tertiaryLabel"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/tertiaryLabel-99xfq",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "tertiaryLabel",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/tertiarylabel-99xfq"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/white": {
-  "abstract" : [
-
-  ],
   "fragments" : [
     {
       "kind" : "keyword",
@@ -987,12 +624,13 @@
       "text" : "UIColor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/white",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/white-7s4h5",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "white",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/white"
+  "url" : "\/documentation\/carekitui\/ockcolorstyler\/white-7s4h5"
 }
 }
 }

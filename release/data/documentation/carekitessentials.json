@@ -51,17 +51,13 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLabelView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLinearCareTaskProgress",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ScheduleUtility",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskView"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ScheduleUtility"
       ],
       "title" : "Structures"
-    },
-    {
-      "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderStyle"
-      ],
-      "title" : "Enumerations"
     }
   ],
   "variants" : [
@@ -275,6 +271,110 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/detailsview"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DigitalCrownView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewFooter": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewFooter"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewFooter"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DigitalCrownViewFooter",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownviewfooter"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewHeader": {
+  "abstract" : [
+    {
+      "text" : "The default header used by a ",
+      "type" : "text"
+    },
+    {
+      "code" : "DigitalCrownView",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewHeader"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewHeader"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DigitalCrownViewHeader",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownviewheader"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewModel": {
   "abstract" : [
 
@@ -371,40 +471,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/scheduleutility"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderLogTaskView": {
-  "abstract" : [
-    {
-      "text" : "A card that displays a header view, multi-line label, a slider, and a completion button.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "SliderLogTaskView"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskView",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SliderLogTaskView"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SliderLogTaskView",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/sliderlogtaskview"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderLogTaskViewModel": {
   "abstract" : [
     {
@@ -446,40 +512,6 @@
   "title" : "SliderLogTaskViewModel",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderStyle": {
-  "abstract" : [
-    {
-      "text" : "The style of a CareKit Slider.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "enum"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "SliderStyle"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderStyle",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SliderStyle"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SliderStyle",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/sliderstyle"
 }
 }
 }

@@ -29,7 +29,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "SwiftUI",
-    "externalID" : "s:7SwiftUI4ViewPAAE15textContentTypeyQrSo06UITexteF0aSgF::SYNTHESIZED::s:17CareKitEssentials11DetailsViewV",
+    "externalID" : "s:7SwiftUI4ViewPAAE15textContentTypeyQrSo06WKTexteF0aSgF::SYNTHESIZED::s:17CareKitEssentials11DetailsViewV",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -49,8 +49,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:@T@UITextContentType",
-        "text" : "UITextContentType"
+        "preciseIdentifier" : "c:@T@WKTextContentType",
+        "text" : "WKTextContentType"
       },
       {
         "kind" : "text",
@@ -82,15 +82,8 @@
       {
         "beta" : false,
         "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "iOS",
-        "unavailable" : false
-      },
-      {
-        "beta" : false,
-        "deprecated" : false,
-        "introducedAt" : "13.0",
-        "name" : "tvOS",
+        "introducedAt" : "6.0",
+        "name" : "watchOS",
         "unavailable" : false
       }
     ],
@@ -107,7 +100,7 @@
             "swift"
           ],
           "platforms" : [
-            "iOS"
+            "watchOS"
           ],
           "tokens" : [
             {
@@ -144,8 +137,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:@T@UITextContentType",
-              "text" : "UITextContentType"
+              "preciseIdentifier" : "c:@T@WKTextContentType",
+              "text" : "WKTextContentType"
             },
             {
               "kind" : "text",
@@ -275,8 +268,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:@T@UITextContentType",
-      "text" : "UITextContentType"
+      "preciseIdentifier" : "c:@T@WKTextContentType",
+      "text" : "WKTextContentType"
     },
     {
       "kind" : "text",

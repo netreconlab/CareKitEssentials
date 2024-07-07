@@ -46,7 +46,6 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/pointSize1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/pointSize2",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/pointSize3",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/separatorHeight",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/stackSpacing1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/symbolPointSize1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/symbolPointSize2",
@@ -511,40 +510,6 @@
   "title" : "pointSize3",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockdimensionstyle\/pointsize3"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKDimensionStyle/separatorHeight": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "separatorHeight"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
-      "text" : "CGFloat"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/separatorHeight",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "separatorHeight",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockdimensionstyle\/separatorheight"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKDimensionStyle/stackSpacing1": {
   "abstract" : [

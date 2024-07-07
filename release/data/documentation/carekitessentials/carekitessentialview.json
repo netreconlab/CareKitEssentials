@@ -65,7 +65,7 @@
             "swift"
           ],
           "platforms" : [
-            "iOS"
+            "watchOS"
           ],
           "tokens" : [
             {
@@ -103,6 +103,14 @@
       "kind" : "relationships",
       "title" : "Inherits From",
       "type" : "inheritsFrom"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforming Types",
+      "type" : "conformingTypes"
     }
   ],
   "schemaVersion" : {
@@ -799,6 +807,37 @@
   "title" : "updateEvent(_:with:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview\/updateevent(_:with:)-42gv0"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewFooter": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewFooter"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownViewFooter"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DigitalCrownViewFooter",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownviewfooter"
 }
 }
 }
