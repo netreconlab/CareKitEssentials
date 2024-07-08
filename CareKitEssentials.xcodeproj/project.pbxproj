@@ -16,7 +16,7 @@
 		70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB522A12BDAC00759A9C /* Slider.swift */; };
 		70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */; };
 		70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */; };
-		70C422CA2C3B681A00E6DC51 /* OCKOutcome+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C422C92C3B681A00E6DC51 /* OCKOutcome+Sequence.swift */; };
+		70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C422C92C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift */; };
 		70C422D22C3B6C7600E6DC51 /* TestHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C422D12C3B6C7600E6DC51 /* TestHostApp.swift */; };
 		70C422D42C3B6C7600E6DC51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C422D32C3B6C7600E6DC51 /* ContentView.swift */; };
 		70C422D62C3B6C7600E6DC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C422D52C3B6C7600E6DC51 /* Assets.xcassets */; };
@@ -109,7 +109,7 @@
 		70BBCB522A12BDAC00759A9C /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogButton.swift; sourceTree = "<group>"; };
 		70BBCB562A14164E00759A9C /* SliderLogTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderLogTaskViewModel.swift; sourceTree = "<group>"; };
-		70C422C92C3B681A00E6DC51 /* OCKOutcome+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcome+Sequence.swift"; sourceTree = "<group>"; };
+		70C422C92C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyOutcome+Sequence.swift"; sourceTree = "<group>"; };
 		70C422CF2C3B6C7600E6DC51 /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C422D12C3B6C7600E6DC51 /* TestHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHostApp.swift; sourceTree = "<group>"; };
 		70C422D32C3B6C7600E6DC51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -286,9 +286,9 @@
 				OBJ_29 /* OCKAnyEvent.swift */,
 				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
 				OBJ_30 /* OCKAnyOutcome.swift */,
+				70C422C92C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift */,
 				OBJ_31 /* OCKBiologicalSex+Hashable.swift */,
 				OBJ_33 /* OCKOutcome.swift */,
-				70C422C92C3B681A00E6DC51 /* OCKOutcome+Sequence.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
 				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
 				911BDB332A130AF9004F8442 /* OCKStore.swift */,
@@ -558,7 +558,7 @@
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
 				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
-				70C422CA2C3B681A00E6DC51 /* OCKOutcome+Sequence.swift in Sources */,
+				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */,
