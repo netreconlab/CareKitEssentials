@@ -1,0 +1,14 @@
+coverage:
+  ignore:
+    - Tests/.*
+    - TestHost/*
+  status:
+    patch:
+      default:
+        target: 0
+    changes: false
+    project:
+      default:
+        target: 2
+comment:
+  require_changes: true
