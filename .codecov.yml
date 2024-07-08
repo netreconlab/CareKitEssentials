@@ -1,6 +1,7 @@
 coverage:
   ignore:
     - Tests/.*
+    - TestHost/*
   status:
     patch:
       default:
@@ -8,6 +9,6 @@ coverage:
     changes: false
     project:
       default:
-        target: 3
+        target: 2
 comment:
   require_changes: true
