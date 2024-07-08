@@ -26,7 +26,7 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
 
         // Test sorted properly
         XCTAssertNotEqual(firstOutcome, secondOutcome)
-        let sortedByCreatedDate = try outcomes.sortedNewestToOldest(
+        let sortedByCreatedDate = try outcomes.sortedByGreatest(
             \.createdDate
         )
         XCTAssertEqual(sortedByCreatedDate.count, 2)
@@ -34,13 +34,13 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
         XCTAssertEqual(sortedByCreatedDate.last, firstOutcome)
 
         // Test lessThanKeyPath
-        let sortedByCreatedDate2 = try outcomes.sortedNewestToOldest(
+        let sortedByCreatedDate2 = try outcomes.sortedByGreatest(
             \.createdDate,
              lessThanEqualTo: firstDate
         )
         XCTAssertEqual(sortedByCreatedDate2.count, 1)
         XCTAssertEqual(sortedByCreatedDate2.first, firstOutcome)
-        let sortedByCreatedDate3 = try outcomes.sortedNewestToOldest(
+        let sortedByCreatedDate3 = try outcomes.sortedByGreatest(
             \.createdDate,
              lessThanEqualTo: secondDate
         )
@@ -49,7 +49,7 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
         XCTAssertEqual(sortedByCreatedDate3.last, firstOutcome)
 
         // Test KeyPath of nil should throw error
-        XCTAssertThrowsError(try outcomes.sortedNewestToOldest(
+        XCTAssertThrowsError(try outcomes.sortedByGreatest(
             \.updatedDate
         ))
     }
@@ -74,7 +74,7 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
 
         // Test sorted properly
         XCTAssertNotEqual(firstOutcome, secondOutcome)
-        let sortedByOccurrenceIndex = outcomes.sortedNewestToOldest(
+        let sortedByOccurrenceIndex = outcomes.sortedByGreatest(
             \.taskOccurrenceIndex
         )
         XCTAssertEqual(sortedByOccurrenceIndex.count, 2)
@@ -82,13 +82,13 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
         XCTAssertEqual(sortedByOccurrenceIndex.last, firstOutcome)
 
         // Test lessThanKeyPath
-        let sortedByOccurrenceIndex2 = outcomes.sortedNewestToOldest(
+        let sortedByOccurrenceIndex2 = outcomes.sortedByGreatest(
             \.taskOccurrenceIndex,
              lessThanEqualTo: firstIndex
         )
         XCTAssertEqual(sortedByOccurrenceIndex2.count, 1)
         XCTAssertEqual(sortedByOccurrenceIndex2.first, firstOutcome)
-        let sortedByOccurrenceIndex3 = outcomes.sortedNewestToOldest(
+        let sortedByOccurrenceIndex3 = outcomes.sortedByGreatest(
             \.taskOccurrenceIndex,
              lessThanEqualTo: secondIndex
         )
