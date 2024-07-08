@@ -1,0 +1,13 @@
+coverage:
+  ignore:
+    - Tests/.*
+  status:
+    patch:
+      default:
+        target: 0
+    changes: false
+    project:
+      default:
+        target: 1
+comment:
+  require_changes: true
