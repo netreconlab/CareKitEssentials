@@ -20,8 +20,17 @@ jobs:
     runs-on: macos-14
     strategy:
       matrix:
-        destination: ['platform=iOS\ Simulator,name=iPhone\ 14\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 5\ \(40mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
-        action: ['test']
+        destination: ['platform=iOS\ Simulator,name=iPhone\ 15\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
+        action: ['test', 'build']
+        exclude:
+          - destination: 'platform=iOS\ Simulator,OS=17.5,name=iPhone\ 15\ Pro\ Max'
+            action: 'build'
+          - destination: 'platform=macOS CODE_SIGN_IDENTITY=""'
+            action: 'build'
+          - destination: 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""'
+            action: 'test'
+          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)'
+            action: 'test'
     steps:
     - uses: actions/checkout@v4
     - name: Install Swiftlint
