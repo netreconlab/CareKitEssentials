@@ -50,7 +50,7 @@
 		OBJ_755 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* OCKAnyEvent.swift */; };
 		OBJ_756 /* OCKAnyOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* OCKAnyOutcome.swift */; };
 		OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* OCKBiologicalSex+Hashable.swift */; };
-		OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CustomLinearCareTaskProgress.swift */; };
+		OBJ_758 /* CareTaskProgressStrategy+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* CareTaskProgressStrategy+Math.swift */; };
 		OBJ_759 /* OCKOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* OCKOutcome.swift */; };
 		OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* OCKOutcomeValue+Identifiable.swift */; };
 		OBJ_765 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UIImage.swift */; };
@@ -140,7 +140,7 @@
 		OBJ_29 /* OCKAnyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyEvent.swift; sourceTree = "<group>"; };
 		OBJ_30 /* OCKAnyOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyOutcome.swift; sourceTree = "<group>"; };
 		OBJ_31 /* OCKBiologicalSex+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKBiologicalSex+Hashable.swift"; sourceTree = "<group>"; };
-		OBJ_32 /* CustomLinearCareTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinearCareTaskProgress.swift; sourceTree = "<group>"; };
+		OBJ_32 /* CareTaskProgressStrategy+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareTaskProgressStrategy+Math.swift"; sourceTree = "<group>"; };
 		OBJ_33 /* OCKOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcome.swift; sourceTree = "<group>"; };
 		OBJ_34 /* OCKOutcomeValue+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Identifiable.swift"; sourceTree = "<group>"; };
 		OBJ_39 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 			children = (
 				OBJ_26 /* Calendar+Dates.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
-				OBJ_32 /* CustomLinearCareTaskProgress.swift */,
+				OBJ_32 /* CareTaskProgressStrategy+Math.swift */,
 				OBJ_27 /* Image.swift */,
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
 				70FDC6152C387C9F00A32137 /* NSImage.swift */,
@@ -562,7 +562,7 @@
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
-				OBJ_758 /* CustomLinearCareTaskProgress.swift in Sources */,
+				OBJ_758 /* CareTaskProgressStrategy+Math.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,

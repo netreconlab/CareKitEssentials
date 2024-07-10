@@ -1,6 +1,6 @@
 //
-//  OCKEventAggregator.swift
-//  
+//  CareTaskProgressStrategy+Math.swift
+//
 //
 //  Created by Corey Baker on 4/25/23.
 //
@@ -23,70 +23,6 @@ import Foundation
 ///     ProgressView(value: progress.fractionCompleted)
 /// }
 /// ```
-public struct CustomLinearCareTaskProgress: CareTaskProgress, Hashable, Sendable {
-
-    /// The progress that's been made towards reaching the goal.
-    ///
-    /// - Precondition: `value` >= 0
-    public var value: Double {
-        didSet { Self.validate(progressValue: value) }
-    }
-
-    /// A value that indicates whether the task is complete.
-    ///
-    /// When there is no goal, the value is `nil`.  The task is considered
-    /// completed if the progress value is greater than zero.
-    ///
-    /// - Precondition: `value` >= 0
-    public var goal: Double? {
-        didSet { Self.validate(goal: goal) }
-    }
-
-    public init(
-        value: Double,
-        goal: Double? = nil
-    ) {
-        Self.validate(progressValue: value)
-        Self.validate(goal: goal)
-
-        self.value = value
-        self.goal = goal
-    }
-
-    private static func validate(progressValue: Double) {
-        precondition(progressValue >= 0)
-    }
-
-    private static func validate(goal: Double?) {
-        guard let goal else { return }
-        precondition(goal >= 0)
-    }
-
-    // MARK: - CareTaskProgress
-
-    public var fractionCompleted: Double {
-
-        // If there is no goal, a non-zero progress value indicates that progress
-        // is 100% completed
-        guard let goal else {
-
-            let isCompleted = value > 0
-            let fractionCompleted: Double = isCompleted ? 1 : 0
-            return fractionCompleted
-        }
-
-        guard goal > 0 else {
-
-            // The progress value is always guaranteed to be greater than or equal to
-            // zero, so it's guaranteed to have reached the target value
-            return 1
-        }
-
-        let fractionCompleted = value / goal
-        let clampedFractionCompleted = min(fractionCompleted, 1)
-        return clampedFractionCompleted
-    }
-}
 
 public extension CareTaskProgressStrategy {
 
@@ -123,7 +59,7 @@ public extension CareTaskProgressStrategy {
         return sum
     }
 
-    static func computeProgressByAveragingOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByAveragingOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
 
@@ -146,7 +82,7 @@ public extension CareTaskProgressStrategy {
             value = summedOutcomesValue / completedOutcomesValues
         }
 
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
         )
@@ -154,7 +90,7 @@ public extension CareTaskProgressStrategy {
         return progress
     }
 
-    static func computeProgressByMedianOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByMedianOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
 
@@ -181,7 +117,7 @@ public extension CareTaskProgressStrategy {
             }
         }
 
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
         )
@@ -189,7 +125,7 @@ public extension CareTaskProgressStrategy {
         return progress
     }
 
-    static func computeProgressByStreakOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByStreakOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
 
@@ -205,7 +141,7 @@ public extension CareTaskProgressStrategy {
                 return sum(partialResult, nextTarget)
             }
 
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: summedOutcomesValue,
             goal: summedTargetValue
         )
