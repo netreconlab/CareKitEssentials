@@ -2,6 +2,8 @@ import XCTest
 import CareKitStore
 @testable import CareKitEssentials
 
+// add an argument that takes values: [OCKOutcomeValue] and pass it to the OCKOutcome instance
+
 final class OCKOutcomeExtensionsTests: XCTestCase {
 
     func testSortedNewestToOldestOptionalKeyPath() async throws {
@@ -96,4 +98,40 @@ final class OCKOutcomeExtensionsTests: XCTestCase {
         XCTAssertEqual(sortedByOccurrenceIndex3.first, secondOutcome)
         XCTAssertEqual(sortedByOccurrenceIndex3.last, firstOutcome)
     }
+    // swiftlint:disable:next line_length
+    // functions to test: computeProgressByAveragingOutcomeValues, computeProgressByMedianOutcomeValues, computeProgressByStreakOutcomeValues
+
 }
+
+/*
+ 
+ gets the outcomeValues of the event, if there is no outcome values then we return an empty array
+  let outcomeValues = event.outcome?.values ?? []
+
+  counts the number of outcomeValues
+  let completedOutcomesValues = Double(outcomeValues.count)
+ 
+ sums up the outcome values after converting them into a double
+ let summedOutcomesValue = outcomeValues
+     .map(accumulableDoubleValue)
+     .reduce(0, +)
+ 
+ 
+ gets target values of an event and sums them up
+ let targetValues = event.scheduleEvent.element.targetValues
+
+ let summedTargetValue = targetValues
+     .map(accumulableDoubleValue)
+     .reduce(nil) { partialResult, nextTarget -> Double? in
+         return sum(partialResult, nextTarget)
+ 
+ if there is at least one outcome value, get the average
+ var value = 0.0
+ if completedOutcomesValues >= 1.0 {
+     value = summedOutcomesValue / completedOutcomesValues
+ 
+ creates a LinearCareTaskProgress with the calculated average value and summed target value
+ let progress = LinearCareTaskProgress(
+     value: value,
+     goal: summedTargetValue
+ */

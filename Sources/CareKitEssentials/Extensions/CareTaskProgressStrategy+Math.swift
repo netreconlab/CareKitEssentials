@@ -23,7 +23,6 @@ import Foundation
 ///     ProgressView(value: progress.fractionCompleted)
 /// }
 /// ```
-
 public extension CareTaskProgressStrategy {
 
     /// Convert an outcome value to a double that can be accumulated. If the underlying type is not a numeric,
@@ -59,18 +58,18 @@ public extension CareTaskProgressStrategy {
         return sum
     }
 
-    static func computeProgressByAveragingOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
-
+    static func computeProgressByAveragingOutcomeValues(
+        for event: OCKAnyEvent,
+        kind: String? = nil
+    ) -> LinearCareTaskProgress {
         let outcomeValues = event.outcome?.values ?? []
-
-        let completedOutcomesValues = Double(outcomeValues.count)
-
-        let summedOutcomesValue = outcomeValues
+        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+        let completedOutcomesValues = Double(filteredOutcomeValues.count)
+        let summedOutcomesValue = filteredOutcomeValues
             .map(accumulableDoubleValue)
             .reduce(0, +)
 
         let targetValues = event.scheduleEvent.element.targetValues
-
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
@@ -81,22 +80,22 @@ public extension CareTaskProgressStrategy {
         if completedOutcomesValues >= 1.0 {
             value = summedOutcomesValue / completedOutcomesValues
         }
-
         let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
+
         )
 
         return progress
     }
+    // swiftlint:disable:next line_length
+    static func computeProgressByMedianOutcomeValues(for event: OCKAnyEvent, kind: String? = nil) -> LinearCareTaskProgress {
 
-    static func computeProgressByMedianOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
-
-        let outcomeValues = event.outcome?.values ?? []
-
-        let allOutcomesValue = outcomeValues
-            .map(accumulableDoubleValue)
-            .sorted()
+          let outcomeValues = event.outcome?.values ?? []
+          let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+          let allOutcomesValue = filteredOutcomeValues
+              .map(accumulableDoubleValue)
+              .sorted()
 
         let targetValues = event.scheduleEvent.element.targetValues
 
@@ -116,7 +115,6 @@ public extension CareTaskProgressStrategy {
                 value = allOutcomesValue[count / 2]
             }
         }
-
         let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
@@ -124,29 +122,24 @@ public extension CareTaskProgressStrategy {
 
         return progress
     }
-
-    static func computeProgressByStreakOutcomeValues(for event: OCKAnyEvent) -> LinearCareTaskProgress {
+    // swiftlint:disable:next line_length
+    static func computeProgressByStreakOutcomeValues(for event: OCKAnyEvent, kind: String? = nil) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
-
-        let summedOutcomesValue = outcomeValues
-            .map(accumulableDoubleValue)
-            .reduce(0, +)
-
+        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+        let summedOutcomesValue = filteredOutcomeValues
+               .map(accumulableDoubleValue)
+               .reduce(0, +)
         let targetValues = event.scheduleEvent.element.targetValues
-
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
                 return sum(partialResult, nextTarget)
             }
-
         let progress = LinearCareTaskProgress(
             value: summedOutcomesValue,
             goal: summedTargetValue
         )
-
         return progress
     }
-
 }
