@@ -1,0 +1,361 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByStreakOutcomeValues(for:kind:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "CareKitStore",
+    "externalID" : "s:12CareKitStore06LinearA12TaskProgressV0aB10EssentialsE07computeF21ByStreakOutcomeValues3for4kindAcA11OCKAnyEventV_SSSgtFZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "computeProgressByStreakOutcomeValues"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "for"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12CareKitStore11OCKAnyEventV",
+        "text" : "OCKAnyEvent"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "kind"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : "?) -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+        "text" : "LinearCareTaskProgress"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitStore"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Type Method",
+    "symbolKind" : "method",
+    "title" : "computeProgressByStreakOutcomeValues(for:kind:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "watchOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "computeProgressByStreakOutcomeValues"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "for"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "event"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyEvent",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12CareKitStore11OCKAnyEventV",
+              "text" : "OCKAnyEvent"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "kind"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : "? = nil) -> "
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+              "text" : "LinearCareTaskProgress"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbystreakoutcomevalues(for:kind:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitStore",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress": {
+  "abstract" : [
+    {
+      "text" : "A structure that defines user progress for a task that can be completed over time.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LinearCareTaskProgress",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressByStreakOutcomeValues(for:kind:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "computeProgressByStreakOutcomeValues"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore11OCKAnyEventV",
+      "text" : "OCKAnyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByStreakOutcomeValues(for:kind:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "computeProgressByStreakOutcomeValues(for:kind:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbystreakoutcomevalues(for:kind:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyEvent": {
+  "abstract" : [
+    {
+      "text" : "A representation of a single occassion which a task was scheduled to occur on.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKAnyEvent"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyEvent",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKAnyEvent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKAnyEvent",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockanyevent"
+}
+}
+}
