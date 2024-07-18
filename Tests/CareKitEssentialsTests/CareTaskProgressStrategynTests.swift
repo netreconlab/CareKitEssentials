@@ -14,9 +14,9 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByAveragingOutcomeValuesNoOutcomeNoTarget() async throws {
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: false
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: false
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -29,11 +29,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let outcomeValues = [OCKOutcomeValue(10.0)]
         let targetValues = [OCKOutcomeValue(20.0)]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -45,21 +45,21 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressAveragingOutcomesMultipleTargetsDoubles() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(20.0),
-        OCKOutcomeValue(30.0)
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(20.0),
+            OCKOutcomeValue(30.0)
         ]
         let targetValues = [
-        OCKOutcomeValue(15.0),
-        OCKOutcomeValue(25.0),
-        OCKOutcomeValue(35.0)
+            OCKOutcomeValue(15.0),
+            OCKOutcomeValue(25.0),
+            OCKOutcomeValue(35.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -77,21 +77,21 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressAveragingMultipleIntegerOutcomesMultipleTargetsIntegers() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10),
-        OCKOutcomeValue(20),
-        OCKOutcomeValue(30)
+            OCKOutcomeValue(10),
+            OCKOutcomeValue(20),
+            OCKOutcomeValue(30)
         ]
         let targetValues = [
-        OCKOutcomeValue(15),
-        OCKOutcomeValue(25),
-        OCKOutcomeValue(35)
+            OCKOutcomeValue(15),
+            OCKOutcomeValue(25),
+            OCKOutcomeValue(35)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -110,15 +110,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByAveragingOutcomeValuesZeroOutcomeTargetValues() async throws {
         let targetValues = [
-        OCKOutcomeValue(15.0),
-        OCKOutcomeValue(25.0),
-        OCKOutcomeValue(35.0)
+            OCKOutcomeValue(15.0),
+            OCKOutcomeValue(25.0),
+            OCKOutcomeValue(35.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: false,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: false,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -133,15 +133,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByAveragingOutcomeValuesOutcomeValuesNoTargetValues() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(20.0),
-        OCKOutcomeValue(15.0)
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(20.0),
+            OCKOutcomeValue(15.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event)
@@ -164,15 +164,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         var valueOfThirty = OCKOutcomeValue(30.0)
         valueOfThirty.kind = kind2
         let outcomeValues = [
-        valueOfTen,
-        valueOfTwenty,
-        valueOfThirty
+            valueOfTen,
+            valueOfTwenty,
+            valueOfThirty
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: kind)
@@ -200,15 +200,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         valueOfThirty.kind = kind2
 
         let outcomeValues =  [
-        valueOfTen,
-        valueOfTwenty,
-        valueOfThirty
+            valueOfTen,
+            valueOfTwenty,
+            valueOfThirty
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: kind3)
@@ -229,15 +229,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         valueOfThirty.kind = kind2
 
         let outcomeValues = [
-        valueOfTen,
-        valueOfTwenty,
-        valueOfThirty
+            valueOfTen,
+            valueOfTwenty,
+            valueOfThirty
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
@@ -262,15 +262,15 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         var valueOfThirty = OCKOutcomeValue(30.0)
         valueOfThirty.kind = kind
         let outcomeValues = [
-        valueOfTen,
-        valueOfTwenty,
-        valueOfThirty
+            valueOfTen,
+            valueOfTwenty,
+            valueOfThirty
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
@@ -287,9 +287,9 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByMedianOutcomeValuesNoOutcomeNoTarget() async throws {
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: false
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: false
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
@@ -301,11 +301,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let outcomeValues = [OCKOutcomeValue(10.0)]
         let targetValues = [OCKOutcomeValue(15.0)]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
@@ -324,21 +324,21 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByMedianOutcomeValuesMultipleOutcomesMultipleTargets() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(20.0),
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(30.0)
+            OCKOutcomeValue(20.0),
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(30.0)
         ]
         let targetValues = [
-        OCKOutcomeValue(15.0),
-        OCKOutcomeValue(25.0),
-        OCKOutcomeValue(35.0)
+            OCKOutcomeValue(15.0),
+            OCKOutcomeValue(25.0),
+            OCKOutcomeValue(35.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
@@ -356,36 +356,37 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByMedianOutcomeValuesEvenOutcomeValues() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(20.0),
-        OCKOutcomeValue(10.0)
+            OCKOutcomeValue(20),
+            OCKOutcomeValue(10)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
             .compactMap {$0.doubleValue}
             .sorted()
-        let expectedValue = (sortedValues[sortedValues.count / 2] + sortedValues[sortedValues.count / 2 - 1]) / 2
+        // swiftlint:disable:next line_length
+        let expectedValue = (sortedValues[sortedValues.count / 2.0] + sortedValues[sortedValues.count / 2.0 - 1.0]) / 2.0
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
     func testProgressByMedianOutcomeValuesOddOutcomeValues() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(30.0),
-        OCKOutcomeValue(20.0)
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(30.0),
+            OCKOutcomeValue(20.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
@@ -399,14 +400,14 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByMedianOutcomeValuesEvenDuplicateOutcomeValues() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(10.0)
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(10.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
@@ -420,9 +421,9 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByStreakOutcomeValuesNoOutcomeNoTarget() async throws {
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: false
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: false
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByStreakOutcomeValues(for: event)
@@ -435,11 +436,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let outcomeValues = [OCKOutcomeValue(10.0)]
         let targetValues = [OCKOutcomeValue(15.0)]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByStreakOutcomeValues(for: event)
@@ -457,21 +458,21 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByStreakOutcomeValuesMultipleOutcomesMultipleTargets() async throws {
         let outcomeValues = [
-        OCKOutcomeValue(10.0),
-        OCKOutcomeValue(20.0),
-        OCKOutcomeValue(30.0)
+            OCKOutcomeValue(10.0),
+            OCKOutcomeValue(20.0),
+            OCKOutcomeValue(30.0)
         ]
         let targetValues = [
-        OCKOutcomeValue(15.0),
-        OCKOutcomeValue(25.0),
-        OCKOutcomeValue(35.0)
+            OCKOutcomeValue(15.0),
+            OCKOutcomeValue(25.0),
+            OCKOutcomeValue(35.0)
         ]
         let event = OCKAnyEvent.mock(
-        taskUUID: UUID(),
-        occurrence: 0,
-        hasOutcome: true,
-        values: outcomeValues,
-        targetValues: targetValues
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues,
+            targetValues: targetValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByStreakOutcomeValues(for: event)
@@ -500,33 +501,31 @@ private extension OCKAnyEvent {
     ) -> Self {
         let startOfDay = Calendar.current.startOfDay(for: Date())
         let schedule = OCKSchedule.dailyAtTime(
-        hour: 1,
-        minutes: 0,
-        start: startOfDay,
-        end: nil,
-        text: nil,
-        targetValues: targetValues
+            hour: 1,
+            minutes: 0,
+            start: startOfDay,
+            end: nil,
+            text: nil,
+            targetValues: targetValues
         )
         var task = OCKTask(
-        id: taskUUID.uuidString,
-        title: taskTitle,
-        carePlanUUID: nil,
-        schedule: schedule
+            id: taskUUID.uuidString,
+            title: taskTitle,
+            carePlanUUID: nil,
+            schedule: schedule
         )
         task.uuid = taskUUID
 
-        let outcome = hasOutcome ?
-        OCKOutcome(
+        let outcome = hasOutcome ? OCKOutcome(
             taskUUID: task.uuid,
             taskOccurrenceIndex: occurrence,
             values: values
         ) :
             nil
-        let event =
-        OCKAnyEvent(
-        task: task,
-        outcome: outcome,
-        scheduleEvent: schedule.event(forOccurrenceIndex: occurrence)!
+        let event = OCKAnyEvent(
+            task: task,
+            outcome: outcome,
+            scheduleEvent: schedule.event(forOccurrenceIndex: occurrence)!
         )
 
         return event

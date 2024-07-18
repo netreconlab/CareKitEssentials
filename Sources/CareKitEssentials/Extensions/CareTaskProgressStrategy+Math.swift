@@ -83,7 +83,6 @@ public extension CareTaskProgressStrategy {
             value: value,
             goal: summedTargetValue
         )
-        print("Progress \(progress)")
 
         return progress
 
