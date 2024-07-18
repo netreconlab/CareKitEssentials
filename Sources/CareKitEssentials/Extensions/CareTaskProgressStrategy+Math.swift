@@ -31,11 +31,11 @@ public extension CareTaskProgressStrategy {
 
         switch outcomeValue.type {
 
-            // These types can be converted to a double value
+        // These types can be converted to a double value
         case .double, .integer:
             return outcomeValue.numberValue!.doubleValue
 
-            // These types cannot be converted to a double value
+        // These types cannot be converted to a double value
         case .binary, .text, .date, .boolean:
             return 1
         }
@@ -83,6 +83,7 @@ public extension CareTaskProgressStrategy {
             value: value,
             goal: summedTargetValue
         )
+        print("Progress \(progress)")
 
         return progress
 
