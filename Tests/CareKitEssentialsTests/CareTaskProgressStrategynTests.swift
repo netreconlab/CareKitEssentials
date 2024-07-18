@@ -356,8 +356,8 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     func testProgressByMedianOutcomeValuesEvenOutcomeValues() async throws {
         let outcomeValues = [
-            OCKOutcomeValue(20),
-            OCKOutcomeValue(10)
+            OCKOutcomeValue(20.0),
+            OCKOutcomeValue(10.0)
         ]
         let event = OCKAnyEvent.mock(
             taskUUID: UUID(),
@@ -368,10 +368,10 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
-            .compactMap {$0.doubleValue}
+            .compactMap { $0.doubleValue }
             .sorted()
-        // swiftlint:disable:next line_length
-        let expectedValue = (sortedValues[sortedValues.count / 2.0] + sortedValues[sortedValues.count / 2.0 - 1.0]) / 2.0
+        let index = outcomeValues.count / 2
+        let expectedValue = (sortedValues[index] + sortedValues[index - 1]) / 2.0
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
@@ -391,9 +391,10 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
-            .compactMap {$0.doubleValue}
+            .compactMap { $0.doubleValue }
             .sorted()
-        let expectedvalue = sortedValues[sortedValues.count / 2]
+        let index = sortedValues.count / 2
+        let expectedvalue = sortedValues[index]
 
         XCTAssertEqual(progress.value, expectedvalue, accuracy: 0.0001)
     }
@@ -412,9 +413,10 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
-            .compactMap {$0.doubleValue}
+            .compactMap { $0.doubleValue }
             .sorted()
-        let expectedValue = (sortedValues[sortedValues.count / 2] + sortedValues[sortedValues.count / 2 - 1]) / 2
+        let index = sortedValues.count / 2
+        let expectedValue = (sortedValues[index] + sortedValues[index - 1]) / 2
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }

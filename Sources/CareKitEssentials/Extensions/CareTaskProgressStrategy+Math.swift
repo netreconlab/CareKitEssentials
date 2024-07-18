@@ -103,7 +103,7 @@ public extension CareTaskProgressStrategy {
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
-                return sum(partialResult, nextTarget)
+                sum(partialResult, nextTarget)
             }
 
         var value = 0.0
@@ -139,7 +139,7 @@ public extension CareTaskProgressStrategy {
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
-                return sum(partialResult, nextTarget)
+                sum(partialResult, nextTarget)
             }
 
         let progress = LinearCareTaskProgress(
