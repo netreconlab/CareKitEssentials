@@ -156,12 +156,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
     func testProgressByAveragingOutcomeValuesWithMatchingKind() async throws {
         let kind = "myKind"
         let kind2 = "otherKind"
-
         let ten = 10.0
         let twenty = 20.0
-        var valueOfTen = OCKOutcomeValue(ten)
+        var valueOfTen = OCKOutcomeValue(10.0)
         valueOfTen.kind = kind
-        var valueOfTwenty = OCKOutcomeValue(twenty)
+        var valueOfTwenty = OCKOutcomeValue(20.0)
         valueOfTwenty.kind = kind
         var valueOfThirty = OCKOutcomeValue(30.0)
         valueOfThirty.kind = kind2
@@ -177,8 +176,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
-            .computeProgressByAveragingOutcomeValues(for: event, kind: kind)
-        let expectedValue = (ten / twenty) / 2
+            .computeProgressByAveragingOutcomeValues(
+                for: event,
+                kind: kind
+            )
+        let expectedValue = (ten + twenty) / 2.0
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
@@ -245,11 +247,12 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let kind = "otherKind"
         let ten  = 10.0
         let twenty = 20.0
+        let thirty = 30.0
         var valueOfTen = OCKOutcomeValue(ten)
         valueOfTen.kind = nil
         var valueOfTwenty = OCKOutcomeValue(twenty)
         valueOfTwenty.kind = nil
-        var valueOfThirty = OCKOutcomeValue(30.0)
+        var valueOfThirty = OCKOutcomeValue(thirty)
         valueOfThirty.kind = kind
         let outcomeValues = [
             valueOfTen,
@@ -263,8 +266,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
-            .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
-       let expectedValue = (ten + twenty) / 2
+            .computeProgressByAveragingOutcomeValues(
+                for: event,
+                kind: kind
+            )
+       let expectedValue = thirty
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
