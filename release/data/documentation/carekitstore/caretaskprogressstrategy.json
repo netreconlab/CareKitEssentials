@@ -280,9 +280,9 @@
     {
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/accumulableDoubleValue(for:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByAveragingOutcomeValues(for:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByMedianOutcomeValues(for:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByStreakOutcomeValues(for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByAveragingOutcomeValues(for:kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByMedianOutcomeValues(for:kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByStreakOutcomeValues(for:kind:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/sum(_:_:)"
       ],
       "title" : "Type Methods"
@@ -549,7 +549,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/checkingoutcomeexists"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByAveragingOutcomeValues(for:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByAveragingOutcomeValues(for:kind:)": {
   "abstract" : [
 
   ],
@@ -625,22 +625,39 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:17CareKitEssentials012CustomLinearA12TaskProgressV",
-      "text" : "CustomLinearCareTaskProgress"
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByAveragingOutcomeValues(for:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByAveragingOutcomeValues(for:kind:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "computeProgressByAveragingOutcomeValues(for:)",
+  "title" : "computeProgressByAveragingOutcomeValues(for:kind:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbyaveragingoutcomevalues(for:)"
+  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbyaveragingoutcomevalues(for:kind:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByMedianOutcomeValues(for:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByMedianOutcomeValues(for:kind:)": {
   "abstract" : [
 
   ],
@@ -716,22 +733,39 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:17CareKitEssentials012CustomLinearA12TaskProgressV",
-      "text" : "CustomLinearCareTaskProgress"
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByMedianOutcomeValues(for:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByMedianOutcomeValues(for:kind:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "computeProgressByMedianOutcomeValues(for:)",
+  "title" : "computeProgressByMedianOutcomeValues(for:kind:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbymedianoutcomevalues(for:)"
+  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbymedianoutcomevalues(for:kind:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByStreakOutcomeValues(for:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/computeProgressByStreakOutcomeValues(for:kind:)": {
   "abstract" : [
 
   ],
@@ -807,20 +841,37 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:17CareKitEssentials012CustomLinearA12TaskProgressV",
-      "text" : "CustomLinearCareTaskProgress"
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByStreakOutcomeValues(for:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/computeProgressByStreakOutcomeValues(for:kind:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "computeProgressByStreakOutcomeValues(for:)",
+  "title" : "computeProgressByStreakOutcomeValues(for:kind:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbystreakoutcomevalues(for:)"
+  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/computeprogressbystreakoutcomevalues(for:kind:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/init(computeProgress:)": {
   "abstract" : [

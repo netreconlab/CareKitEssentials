@@ -49,7 +49,6 @@
     {
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLabelView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLinearCareTaskProgress",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
@@ -202,40 +201,6 @@
   "title" : "CustomLabelView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/customlabelview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CustomLinearCareTaskProgress": {
-  "abstract" : [
-    {
-      "text" : "A structure that defines user progress for a task that can be completed over time.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "CustomLinearCareTaskProgress"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLinearCareTaskProgress",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "CustomLinearCareTaskProgress"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "CustomLinearCareTaskProgress",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/customlinearcaretaskprogress"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DetailsView": {
   "abstract" : [
