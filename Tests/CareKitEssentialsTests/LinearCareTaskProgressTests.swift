@@ -1,6 +1,6 @@
 //
-//  CareTaskProgressStrategyTests.swift
-//  CareTaskProgressStrategyTests
+//  LinearCareTaskProgressTests.swift
+//  CareKitEssentialsTests
 //
 //  Created by Luis Millan on 7/10/24.
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
@@ -10,7 +10,7 @@ import XCTest
 import CareKitStore
 @testable import CareKitEssentials
 
-final class CareTaskProgressStrategyTests: XCTestCase {
+final class LinearCareTaskProgressTests: XCTestCase {
 
     func testProgressByAveragingOutcomeValuesNoOutcomeNoTarget() async throws {
         let event = OCKAnyEvent.mock(
@@ -18,7 +18,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             occurrence: 0,
             hasOutcome: false
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
 
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)
@@ -35,7 +35,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
         let goal = try XCTUnwrap(progress.goal)
 
@@ -61,7 +61,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .map { $0.doubleValue ?? 0.0 }
@@ -93,7 +93,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .map { $0.numberValue?.doubleValue ?? 0.0 }
@@ -120,7 +120,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: false,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
         let expectedGoal = targetValues
             .map { $0.doubleValue ?? 0.0 }
@@ -143,7 +143,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .map { $0.doubleValue ?? 0.0 }
@@ -175,7 +175,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(
                 for: event,
                 kind: kind
@@ -208,7 +208,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event, kind: kind3)
 
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)
@@ -237,7 +237,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
         let expectedValue = 0.0
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
@@ -265,7 +265,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(
                 for: event,
                 kind: kind
@@ -280,7 +280,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             occurrence: 0,
             hasOutcome: false
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByMedianOutcomeValues(for: event)
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)
         XCTAssertNil(progress.goal)
@@ -296,7 +296,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByMedianOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .compactMap { $0.doubleValue }
@@ -329,7 +329,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByMedianOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .compactMap { $0.doubleValue }
@@ -354,7 +354,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
             .compactMap { $0.doubleValue }
@@ -377,7 +377,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             hasOutcome: true,
             values: outcomeValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByMedianOutcomeValues(for: event)
         let sortedValues = outcomeValues
             .compactMap { $0.doubleValue }
@@ -394,7 +394,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             occurrence: 0,
             hasOutcome: false
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByStreakOutcomeValues(for: event)
 
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)
@@ -411,7 +411,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByStreakOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .map { $0.doubleValue ?? 0.0 }
@@ -443,7 +443,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues,
             targetValues: targetValues
         )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
+        let progress = LinearCareTaskProgress
             .computeProgressByStreakOutcomeValues(for: event)
         let expectedValue = outcomeValues
             .compactMap { $0.doubleValue }
