@@ -108,7 +108,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
 
     }
 
-    func testProgressByAveragingOutcomeValuesZeroOutcomeTargetValues() async throws {
+    func testProgressByAveragingOutcomeValuesNoOutcomeTargetValues() async throws {
         let targetValues = [
             OCKOutcomeValue(15.0),
             OCKOutcomeValue(25.0),
