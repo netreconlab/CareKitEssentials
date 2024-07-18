@@ -108,12 +108,12 @@ public extension CareTaskProgressStrategy {
 
         var value = 0.0
         if !allOutcomesValue.isEmpty {
-            let count = allOutcomesValue.count
-            if (count % 2) == 0 {
-                let index = count / 2
+            let valueCount = allOutcomesValue.count
+            if (valueCount % 2) == 0 {
+                let index = valueCount / 2
                 value = (allOutcomesValue[index] + allOutcomesValue[index - 1]) / 2.0
             } else {
-                value = allOutcomesValue[count / 2]
+                value = allOutcomesValue[valueCount / 2]
             }
         }
 
