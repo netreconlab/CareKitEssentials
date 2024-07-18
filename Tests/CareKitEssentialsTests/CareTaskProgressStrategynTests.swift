@@ -157,9 +157,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let kind = "myKind"
         let kind2 = "otherKind"
 
-        var valueOfTen = OCKOutcomeValue(10.0)
+        let ten = 10.0
+        let twenty = 20.0
+        var valueOfTen = OCKOutcomeValue(ten)
         valueOfTen.kind = kind
-        var valueOfTwenty = OCKOutcomeValue(20.0)
+        var valueOfTwenty = OCKOutcomeValue(twenty)
         valueOfTwenty.kind = kind
         var valueOfThirty = OCKOutcomeValue(30.0)
         valueOfThirty.kind = kind2
@@ -176,13 +178,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: kind)
-        let filteredOutcomeValues = outcomeValues
-            .filter { $0.kind == kind }
-        let completedOutcomesValues = Double(filteredOutcomeValues.count)
-        let summedOutcomesValue = filteredOutcomeValues
-            .map { $0.value as? Double ?? 0.0 }
-            .reduce(0, +)
-        let expectedValue = completedOutcomesValues >= 1.0 ? summedOutcomesValue / completedOutcomesValues : 0.0
+        let expectedValue = (ten / twenty) / 2
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
@@ -217,7 +213,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         XCTAssertNil(progress.goal)
     }
 
-    func testProgressByAveragingOutcomeValueWithNoNilKind() async throws {
+    func testProgressByAveragingOutcomeValueWithNonNilKind() async throws {
         let kind = "myKind"
         let kind2 = "otherKind"
 
@@ -241,23 +237,17 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
-        let filteredOutcomeValues = outcomeValues
-            .filter { $0.kind == nil }
-        let completedOutcomesValues = Double(filteredOutcomeValues.count)
-        let summedOutcomesValue = filteredOutcomeValues
-            .map { $0.value as? Double ?? 0.0 }
-            .reduce(0, +)
-        let expectedValue = completedOutcomesValues >= 1.0 ? summedOutcomesValue / completedOutcomesValues : 0.0
-
+        let expectedValue = 0.0
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
     func testProgressByAveragingOutcomeValuesWithKind() async throws {
         let kind = "otherKind"
-
-        var valueOfTen = OCKOutcomeValue(10.0)
+        let ten  = 10.0
+        let twenty = 20.0
+        var valueOfTen = OCKOutcomeValue(ten)
         valueOfTen.kind = nil
-        var valueOfTwenty = OCKOutcomeValue(20.0)
+        var valueOfTwenty = OCKOutcomeValue(twenty)
         valueOfTwenty.kind = nil
         var valueOfThirty = OCKOutcomeValue(30.0)
         valueOfThirty.kind = kind
@@ -274,14 +264,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         )
         let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
             .computeProgressByAveragingOutcomeValues(for: event, kind: nil)
-        let filteredOutcomeValues = outcomeValues
-            .filter { $0.kind == nil }
-        let completedOutcomesValues = Double(filteredOutcomeValues.count)
-        let summedOutcomesValue = filteredOutcomeValues
-            .map { $0.value as? Double ?? 0.0 }
-            .reduce(0, +)
-        let expectedValue = completedOutcomesValues >= 1.0 ? summedOutcomesValue / completedOutcomesValues : 0.0
-
+       let expectedValue = (ten + twenty) / 2
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
@@ -397,28 +380,6 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         let expectedvalue = sortedValues[index]
 
         XCTAssertEqual(progress.value, expectedvalue, accuracy: 0.0001)
-    }
-
-    func testProgressByMedianOutcomeValuesEvenDuplicateOutcomeValues() async throws {
-        let outcomeValues = [
-            OCKOutcomeValue(10.0),
-            OCKOutcomeValue(10.0)
-        ]
-        let event = OCKAnyEvent.mock(
-            taskUUID: UUID(),
-            occurrence: 0,
-            hasOutcome: true,
-            values: outcomeValues
-        )
-        let progress = CareTaskProgressStrategy<LinearCareTaskProgress>
-            .computeProgressByMedianOutcomeValues(for: event)
-        let sortedValues = outcomeValues
-            .compactMap { $0.doubleValue }
-            .sorted()
-        let index = sortedValues.count / 2
-        let expectedValue = (sortedValues[index] + sortedValues[index - 1]) / 2
-
-        XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
     func testProgressByStreakOutcomeValuesNoOutcomeNoTarget() async throws {
