@@ -1,6 +1,6 @@
 //
-//  OCKEventAggregator.swift
-//  
+//  CareTaskProgressStrategy+Math.swift
+//
 //
 //  Created by Corey Baker on 4/25/23.
 //
@@ -23,71 +23,6 @@ import Foundation
 ///     ProgressView(value: progress.fractionCompleted)
 /// }
 /// ```
-public struct CustomLinearCareTaskProgress: CareTaskProgress, Hashable, Sendable {
-
-    /// The progress that's been made towards reaching the goal.
-    ///
-    /// - Precondition: `value` >= 0
-    public var value: Double {
-        didSet { Self.validate(progressValue: value) }
-    }
-
-    /// A value that indicates whether the task is complete.
-    ///
-    /// When there is no goal, the value is `nil`.  The task is considered
-    /// completed if the progress value is greater than zero.
-    ///
-    /// - Precondition: `value` >= 0
-    public var goal: Double? {
-        didSet { Self.validate(goal: goal) }
-    }
-
-    public init(
-        value: Double,
-        goal: Double? = nil
-    ) {
-        Self.validate(progressValue: value)
-        Self.validate(goal: goal)
-
-        self.value = value
-        self.goal = goal
-    }
-
-    private static func validate(progressValue: Double) {
-        precondition(progressValue >= 0)
-    }
-
-    private static func validate(goal: Double?) {
-        guard let goal else { return }
-        precondition(goal >= 0)
-    }
-
-    // MARK: - CareTaskProgress
-
-    public var fractionCompleted: Double {
-
-        // If there is no goal, a non-zero progress value indicates that progress
-        // is 100% completed
-        guard let goal else {
-
-            let isCompleted = value > 0
-            let fractionCompleted: Double = isCompleted ? 1 : 0
-            return fractionCompleted
-        }
-
-        guard goal > 0 else {
-
-            // The progress value is always guaranteed to be greater than or equal to
-            // zero, so it's guaranteed to have reached the target value
-            return 1
-        }
-
-        let fractionCompleted = value / goal
-        let clampedFractionCompleted = min(fractionCompleted, 1)
-        return clampedFractionCompleted
-    }
-}
-
 public extension CareTaskProgressStrategy {
 
     /// Convert an outcome value to a double that can be accumulated. If the underlying type is not a numeric,
@@ -123,94 +58,95 @@ public extension CareTaskProgressStrategy {
         return sum
     }
 
-    static func computeProgressByAveragingOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByAveragingOutcomeValues(
+        for event: OCKAnyEvent,
+        kind: String? = nil
+    ) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
-
-        let completedOutcomesValues = Double(outcomeValues.count)
-
-        let summedOutcomesValue = outcomeValues
+        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+        let completedOutcomesValues = Double(filteredOutcomeValues.count)
+        let summedOutcomesValue = filteredOutcomeValues
             .map(accumulableDoubleValue)
             .reduce(0, +)
-
         let targetValues = event.scheduleEvent.element.targetValues
-
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
-                return sum(partialResult, nextTarget)
+                sum(partialResult, nextTarget)
             }
-
         var value = 0.0
         if completedOutcomesValues >= 1.0 {
             value = summedOutcomesValue / completedOutcomesValues
         }
-
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
         )
 
         return progress
+
     }
 
-    static func computeProgressByMedianOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByMedianOutcomeValues(
+        for event: OCKAnyEvent,
+        kind: String? = nil
+    ) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
-
-        let allOutcomesValue = outcomeValues
+        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+        let allOutcomesValue = filteredOutcomeValues
             .map(accumulableDoubleValue)
             .sorted()
 
         let targetValues = event.scheduleEvent.element.targetValues
-
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
-                return sum(partialResult, nextTarget)
+                sum(partialResult, nextTarget)
             }
 
         var value = 0.0
         if !allOutcomesValue.isEmpty {
-            let count = allOutcomesValue.count
-            if (count % 2) == 0 {
-                let index = allOutcomesValue.count / 2
+            let valueCount = allOutcomesValue.count
+            if (valueCount % 2) == 0 {
+                let index = valueCount / 2
                 value = (allOutcomesValue[index] + allOutcomesValue[index - 1]) / 2.0
             } else {
-                value = allOutcomesValue[count / 2]
+                value = allOutcomesValue[valueCount / 2]
             }
         }
 
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
         )
 
         return progress
     }
-
-    static func computeProgressByStreakOutcomeValues(for event: OCKAnyEvent) -> CustomLinearCareTaskProgress {
+    static func computeProgressByStreakOutcomeValues(
+        for event: OCKAnyEvent,
+        kind: String? = nil
+    ) -> LinearCareTaskProgress {
 
         let outcomeValues = event.outcome?.values ?? []
-
-        let summedOutcomesValue = outcomeValues
+        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+        let summedOutcomesValue = filteredOutcomeValues
             .map(accumulableDoubleValue)
             .reduce(0, +)
 
         let targetValues = event.scheduleEvent.element.targetValues
-
         let summedTargetValue = targetValues
             .map(accumulableDoubleValue)
             .reduce(nil) { partialResult, nextTarget -> Double? in
-                return sum(partialResult, nextTarget)
+                sum(partialResult, nextTarget)
             }
 
-        let progress = CustomLinearCareTaskProgress(
+        let progress = LinearCareTaskProgress(
             value: summedOutcomesValue,
             goal: summedTargetValue
         )
 
         return progress
     }
-
 }
