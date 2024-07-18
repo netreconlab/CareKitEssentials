@@ -1,5 +1,5 @@
 //
-//  CareTaskProgressStrategy+Math.swift
+//  LinearCareTaskProgress+Math.swift
 //
 //
 //  Created by Corey Baker on 4/25/23.
@@ -23,7 +23,7 @@ import Foundation
 ///     ProgressView(value: progress.fractionCompleted)
 /// }
 /// ```
-public extension CareTaskProgressStrategy {
+public extension LinearCareTaskProgress {
 
     /// Convert an outcome value to a double that can be accumulated. If the underlying type is not a numeric,
     /// a default value of `1` will be used to indicate the existence of some outcome value.
