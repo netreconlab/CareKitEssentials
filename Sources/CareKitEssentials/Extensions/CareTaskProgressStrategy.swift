@@ -1,5 +1,5 @@
 //
-//  CareTaskProgressStrategyExtension.swift
+//  CareTaskProgressStrategy.swift
 //
 //
 //  Created by Luis Millan on 7/18/24.
@@ -10,45 +10,45 @@ import Foundation
 
 public extension CareTaskProgressStrategy {
 
-    /// A strategy that computes progress for a task.
+    /// Computes the average outcome values for a given event
     ///
-    /// The strategy sums the ``OCKScheduleElement/targetValues`` for the event and compares
-    /// the two results. The task is considered completed if the summed value reaches the summed target.
+    /// This function uses the ``LinearCareTaskProgress.computeProgressByAveragingOutcomeValues`` to compute the average outcome values for a given event. Event is passed to ``computeProgressByAveragingOutcomeValues`` method as the argument
     ///
-    /// > Note:
-    /// If any of the outcome ``OCKAnyOutcome/values`` or ``OCKScheduleElement/targetValues``
-    /// aren't numeric and can't be summed properly, they're assigned a value of one during the summation
-    /// process.
-     static func averagingOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
+    ///
+    /// Paremter:  kind: An optional ``String`` that specifies the kind of the event. Defaults to ``nil``
+    ///
+    /// Returns:: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` object that's the strategy for computing the progress of a care task
+    ///
+    ///
+    static func averagingOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
         CareTaskProgressStrategy<LinearCareTaskProgress> { event in
             LinearCareTaskProgress.computeProgressByAveragingOutcomeValues(for: event, kind: kind)
         }
     }
 
-    /// A strategy that computes progress for a task.
+    /// Computes the median outcome values for a given event
     ///
-    /// The strategy sums the ``OCKScheduleElement/targetValues`` for the event and compares
-    /// the two results. The task is considered completed if the summed value reaches the summed target.
+    /// This function use the ``LinearCareTaskProgress.computeProgressByMedianOutcomeValues`` to compute the median outcome values for a given envet. Event is pased to the ``computeProgressByMedianOutcomeValues`` method as an argument
     ///
-    /// > Note:
-    /// If any of the outcome ``OCKAnyOutcome/values`` or ``OCKScheduleElement/targetValues``
-    /// aren't numeric and can't be summed properly, they're assigned a value of one during the summation
-    /// process.
-     static func medianOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
+    /// Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
+    ///
+    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` that's the strategy for compting the progress of a care task
+    ///
+    static func medianOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
         CareTaskProgressStrategy<LinearCareTaskProgress> { event in
             LinearCareTaskProgress.computeProgressByMedianOutcomeValues(for: event, kind: kind)
         }
     }
 
-    /// A strategy that computes progress for a task.
+    /// Computes the streak of outcome values for a given event
     ///
-    /// The strategy sums the ``OCKScheduleElement/targetValues`` for the event and compares
-    /// the two results. The task is considered completed if the summed value reaches the summed target.
+    /// Function use ``LinearCareTaskProgress.computeProgressByStreakOutcomeValues`` method to compute the steak of outcome values given an evnet. The event is passed to the ``computeProgressByStreakOutcomeValues`` method as an argument
     ///
-    /// > Note:
-    /// If any of the outcome ``OCKAnyOutcome/values`` or ``OCKScheduleElement/targetValues``
-    /// aren't numeric and can't be summed properly, they're assigned a value of one during the summation
-    /// process.
+    ///Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
+    ///
+    ///Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` that's the strategy for compting the progress of a care task
+    ///
+    ///
     static func streak(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
         CareTaskProgressStrategy<LinearCareTaskProgress> { event in
             LinearCareTaskProgress.computeProgressByStreakOutcomeValues(for: event, kind: kind)

@@ -1,3 +1,11 @@
+//
+//  OCKOutcomeExtensionsTests.swift
+//  CareKitEssentialsTests
+//
+//  Created by Luis Millan on 7/10/24.
+//  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
+//
+
 import XCTest
 import CareKitStore
 @testable import CareKitEssentials

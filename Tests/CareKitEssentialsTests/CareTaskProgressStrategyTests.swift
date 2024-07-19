@@ -1,35 +1,79 @@
 //
 //  CareTaskProgressStrategyTests.swift
-//  
+//  CareKitEssentialsTests
 //
 //  Created by Luis Millan on 7/18/24.
 //
 
 import XCTest
+import CareKitStore
+@testable import CareKitEssentials
 
 final class CareTaskProgressStrategyTests: XCTestCase {
+    func testAveragingOutcomeValues() async throws {
+        let ten = 10.0
+        let twenty = 20.0
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let outcomeValues = [
+            OCKOutcomeValue(ten),
+            OCKOutcomeValue(twenty)
+        ]
+
+        let event = OCKAnyEvent.mock(
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
+        )
+
+        let progress = event.computeProgress(by: .averagingOutcomeValues())
+        let expectedValue = (ten + twenty) / 2
+
+        XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testmedianOutcomeValues() async throws {
+        let ten = 10.0
+        let twenty = 20.0
+
+        let outcomeValues = [
+            OCKOutcomeValue(ten),
+            OCKOutcomeValue(twenty)
+        ]
+
+        let event = OCKAnyEvent.mock(
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
+        )
+
+        let progress = event.computeProgress(by: .medianOutcomeValues())
+        let expectedValue = (ten + twenty) / 2
+
+        XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+    func teststreakOutcomeValues() async throws {
+        let ten = 10.0
+        let twenty = 20.0
+        let thirty = 30.0
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        let outcomeValues = [
+            OCKOutcomeValue(ten),
+            OCKOutcomeValue(twenty)
+        ]
 
+        let event = OCKAnyEvent.mock(
+            taskUUID: UUID(),
+            occurrence: 0,
+            hasOutcome: true,
+            values: outcomeValues
+        )
+
+        let progress = event.computeProgress(by: .summingOutcomeValues)
+        let expectedValue = thirty
+
+        XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
+    }
 }
