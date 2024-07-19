@@ -12,12 +12,15 @@ public extension CareTaskProgressStrategy {
 
     /// Computes the average outcome values for a given event
     ///
-    /// This function uses the ``LinearCareTaskProgress.computeProgressByAveragingOutcomeValues`` to compute the average outcome values for a given event. Event is passed to ``computeProgressByAveragingOutcomeValues`` method as the argument
+    /// This function uses the ``LinearCareTaskProgress.computeProgressByAveragingOutcomeValues`` 
+    /// to compute the average outcome values for a given event.
+    /// Event is passed to ``computeProgressByAveragingOutcomeValues`` method as the argument
     ///
     ///
     /// Paremter:  kind: An optional ``String`` that specifies the kind of the event. Defaults to ``nil``
     ///
-    /// Returns:: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` object that's the strategy for computing the progress of a care task
+    /// Returns:: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
+    /// object that's the strategy for computing the progress of a care task
     ///
     ///
     static func averagingOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
@@ -28,11 +31,14 @@ public extension CareTaskProgressStrategy {
 
     /// Computes the median outcome values for a given event
     ///
-    /// This function use the ``LinearCareTaskProgress.computeProgressByMedianOutcomeValues`` to compute the median outcome values for a given envet. Event is pased to the ``computeProgressByMedianOutcomeValues`` method as an argument
+    /// This function use the ``LinearCareTaskProgress.computeProgressByMedianOutcomeValues``
+    /// to compute the median outcome values for a given envet.
+    /// Event is pased to the ``computeProgressByMedianOutcomeValues`` method as an argument
     ///
     /// Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
     ///
-    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` that's the strategy for compting the progress of a care task
+    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>``
+    ///  that's the strategy for compting the progress of a care task
     ///
     static func medianOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
         CareTaskProgressStrategy<LinearCareTaskProgress> { event in
@@ -42,11 +48,14 @@ public extension CareTaskProgressStrategy {
 
     /// Computes the streak of outcome values for a given event
     ///
-    /// Function use ``LinearCareTaskProgress.computeProgressByStreakOutcomeValues`` method to compute the steak of outcome values given an evnet. The event is passed to the ``computeProgressByStreakOutcomeValues`` method as an argument
+    /// Function use ``LinearCareTaskProgress.computeProgressByStreakOutcomeValues`` 
+    /// method to compute the steak of outcome values given an evnet.
+    /// The event is passed to the ``computeProgressByStreakOutcomeValues`` method as an argument
     ///
-    ///Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
+    /// Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
     ///
-    ///Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` that's the strategy for compting the progress of a care task
+    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
+    /// that's the strategy for compting the progress of a care task
     ///
     ///
     static func streak(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {

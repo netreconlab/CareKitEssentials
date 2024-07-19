@@ -124,6 +124,7 @@ public extension LinearCareTaskProgress {
 
         return progress
     }
+
     static func computeProgressByStreakOutcomeValues(
         for event: OCKAnyEvent,
         kind: String? = nil

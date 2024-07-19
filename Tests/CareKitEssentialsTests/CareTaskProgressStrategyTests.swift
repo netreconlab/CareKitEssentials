@@ -10,13 +10,16 @@ import CareKitStore
 @testable import CareKitEssentials
 
 final class CareTaskProgressStrategyTests: XCTestCase {
+
     func testAveragingOutcomeValues() async throws {
         let ten = 10.0
         let twenty = 20.0
+        let thirty = 30.0
 
         let outcomeValues = [
             OCKOutcomeValue(ten),
-            OCKOutcomeValue(twenty)
+            OCKOutcomeValue(twenty),
+            OCKOutcomeValue(thirty)
         ]
 
         let event = OCKAnyEvent.mock(
@@ -27,7 +30,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         )
 
         let progress = event.computeProgress(by: .averagingOutcomeValues())
-        let expectedValue = (ten + twenty) / 2
+        let expectedValue = (ten + twenty + thirty) / 3
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
@@ -49,7 +52,11 @@ final class CareTaskProgressStrategyTests: XCTestCase {
         )
 
         let progress = event.computeProgress(by: .medianOutcomeValues())
-        let expectedValue = (ten + twenty) / 2
+        let sortedValues = outcomeValues
+            .compactMap { $0.doubleValue }
+            .sorted()
+        let index = outcomeValues.count / 2
+        let expectedValue = (sortedValues[index] + sortedValues[index - 1]) / 2.0
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
     }
@@ -71,7 +78,7 @@ final class CareTaskProgressStrategyTests: XCTestCase {
             values: outcomeValues
         )
 
-        let progress = event.computeProgress(by: .summingOutcomeValues)
+        let progress = event.computeProgress(by: .streak())
         let expectedValue = thirty
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
