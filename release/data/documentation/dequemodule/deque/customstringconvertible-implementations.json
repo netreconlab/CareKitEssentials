@@ -112,7 +112,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/description": {
   "abstract" : [
-
+    {
+      "text" : "A textual representation of this instance.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

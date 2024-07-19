@@ -337,7 +337,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/count": {
   "abstract" : [
-
+    {
+      "text" : "The number of elements in the deque.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

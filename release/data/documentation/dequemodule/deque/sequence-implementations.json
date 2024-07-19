@@ -158,7 +158,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/Iterator": {
   "abstract" : [
-
+    {
+      "text" : "An iterator over the members of a deque.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -1552,7 +1555,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/makeIterator()": {
   "abstract" : [
-
+    {
+      "text" : "Returns an iterator over the elements of the deque.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -1570,23 +1576,6 @@
     {
       "kind" : "text",
       "text" : "() -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V",
-      "text" : "Deque"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -2951,7 +2940,66 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/withContiguousStorageIfAvailable(_:)-4bcpo": {
   "abstract" : [
-
+    {
+      "text" : "Call ",
+      "type" : "text"
+    },
+    {
+      "code" : "body(b)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", where ",
+      "type" : "text"
+    },
+    {
+      "code" : "b",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " is an unsafe buffer pointer to the deque’s",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "contiguous storage, if available. If the deque’s contents aren’t stored",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "contiguously, ",
+      "type" : "text"
+    },
+    {
+      "code" : "body",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " is not called and ",
+      "type" : "text"
+    },
+    {
+      "code" : "nil",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " is returned. The supplied",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "buffer pointer is only valid for the duration of the call.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -2989,6 +3037,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -3005,6 +3054,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V32withContiguousStorageIfAvailableyqd__Sgqd__SRyxGKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -3021,6 +3071,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V32withContiguousStorageIfAvailableyqd__Sgqd__SRyxGKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
