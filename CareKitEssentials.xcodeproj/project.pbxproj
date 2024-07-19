@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */; };
 		4B27AD8A2C4ACD8B00661121 /* CareTaskProgressStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD852C4ACC6700661121 /* CareTaskProgressStrategyTests.swift */; };
-		4B27AD8E2C4AD26100661121 /* OCKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD8D2C4AD26000661121 /* OCKEvent.swift */; };
+		4B27AD942C4B207B00661121 /* OCKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD8D2C4AD26000661121 /* OCKEvent.swift */; };
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
@@ -556,7 +556,6 @@
 			files = (
 				70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */,
 				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
-				4B27AD8E2C4AD26100661121 /* OCKEvent.swift in Sources */,
 				4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
@@ -603,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				4B27AD942C4B207B00661121 /* OCKEvent.swift in Sources */,
 				OBJ_791 /* OCKOutcomeExtensionsTests.swift in Sources */,
 				4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */,
 				4B27AD8A2C4ACD8B00661121 /* CareTaskProgressStrategyTests.swift in Sources */,
