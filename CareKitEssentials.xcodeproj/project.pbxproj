@@ -346,10 +346,10 @@
 		OBJ_44 /* CareKitEssentialsTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B27AD902C4AD2A000661121 /* Mocking */,
 				4B27AD852C4ACC6700661121 /* CareTaskProgressStrategyTests.swift */,
-				OBJ_45 /* OCKOutcomeExtensionsTests.swift */,
 				4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */,
+				OBJ_45 /* OCKOutcomeExtensionsTests.swift */,
+				4B27AD902C4AD2A000661121 /* Mocking */,
 			);
 			name = CareKitEssentialsTests;
 			path = Tests/CareKitEssentialsTests;
