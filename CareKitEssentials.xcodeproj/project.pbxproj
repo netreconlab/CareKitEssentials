@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B5FB0B42C3F4A2000855675 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; platformFilters = (ios, maccatalyst, macos, watchos, xros, ); };
-		4B5FB0C22C3F4ACB00855675 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; platformFilters = (ios, maccatalyst, macos, watchos, xros, ); };
+		4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */; };
+		4B27AD8A2C4ACD8B00661121 /* CareTaskProgressStrategyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD852C4ACC6700661121 /* CareTaskProgressStrategyTests.swift */; };
+		4B27AD942C4B207B00661121 /* OCKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B27AD8D2C4AD26000661121 /* OCKEvent.swift */; };
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
@@ -64,20 +65,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B5FB0B52C3F4A2000855675 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "carekitessentials::CareKitEssentials";
-			remoteInfo = CareKitEssentials;
-		};
-		4B5FB0C32C3F4ACB00855675 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "carekitessentials::CareKitEssentials";
-			remoteInfo = CareKitEssentials;
-		};
 		70C422E12C3B6C8D00E6DC51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -116,8 +103,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B5FB0B02C3F4A2000855675 /* CareTaskProgressStrategyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareTaskProgressStrategyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5FB0BE2C3F4ACB00855675 /* CareTaskProgressStrategyExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareTaskProgressStrategyExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTaskProgressStrategy.swift; sourceTree = "<group>"; };
+		4B27AD852C4ACC6700661121 /* CareTaskProgressStrategyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareTaskProgressStrategyTests.swift; sourceTree = "<group>"; };
+		4B27AD8D2C4AD26000661121 /* OCKEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCKEvent.swift; sourceTree = "<group>"; };
 		4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearCareTaskProgressTests.swift; sourceTree = "<group>"; };
 		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
@@ -175,22 +163,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B5FB0AD2C3F4A2000855675 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B5FB0B42C3F4A2000855675 /* CareKitEssentials.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B5FB0BB2C3F4ACB00855675 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B5FB0C22C3F4ACB00855675 /* CareKitEssentials.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		70C422CC2C3B6C7600E6DC51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +192,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B27AD902C4AD2A000661121 /* Mocking */ = {
+			isa = PBXGroup;
+			children = (
+				4B27AD8D2C4AD26000661121 /* OCKEvent.swift */,
+			);
+			path = Mocking;
+			sourceTree = "<group>";
+		};
 		70BBCB452A12B8B000759A9C /* Environment */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,9 +294,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_26 /* Calendar+Dates.swift */,
+				4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
-				OBJ_32 /* LinearCareTaskProgress+Math.swift */,
 				OBJ_27 /* Image.swift */,
+				OBJ_32 /* LinearCareTaskProgress+Math.swift */,
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
 				70FDC6152C387C9F00A32137 /* NSImage.swift */,
 				OBJ_29 /* OCKAnyEvent.swift */,
@@ -350,8 +331,6 @@
 				"carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */,
 				"carekitessentials::CareKitEssentialsTests::Product" /* CareKitEssentialsTests.xctest */,
 				70C422CF2C3B6C7600E6DC51 /* TestHost.app */,
-				4B5FB0B02C3F4A2000855675 /* CareTaskProgressStrategyTests.xctest */,
-				4B5FB0BE2C3F4ACB00855675 /* CareTaskProgressStrategyExtensionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -367,8 +346,10 @@
 		OBJ_44 /* CareKitEssentialsTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_45 /* OCKOutcomeExtensionsTests.swift */,
+				4B27AD852C4ACC6700661121 /* CareTaskProgressStrategyTests.swift */,
 				4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */,
+				OBJ_45 /* OCKOutcomeExtensionsTests.swift */,
+				4B27AD902C4AD2A000661121 /* Mocking */,
 			);
 			name = CareKitEssentialsTests;
 			path = Tests/CareKitEssentialsTests;
@@ -423,42 +404,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B5FB0AF2C3F4A2000855675 /* CareTaskProgressStrategyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B5FB0B92C3F4A2000855675 /* Build configuration list for PBXNativeTarget "CareTaskProgressStrategyTests" */;
-			buildPhases = (
-				4B5FB0AC2C3F4A2000855675 /* Sources */,
-				4B5FB0AD2C3F4A2000855675 /* Frameworks */,
-				4B5FB0AE2C3F4A2000855675 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4B5FB0B62C3F4A2000855675 /* PBXTargetDependency */,
-			);
-			name = CareTaskProgressStrategyTests;
-			productName = CareTaskProgressStrategyTests;
-			productReference = 4B5FB0B02C3F4A2000855675 /* CareTaskProgressStrategyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4B5FB0BD2C3F4ACB00855675 /* CareTaskProgressStrategyExtensionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B5FB0C52C3F4ACB00855675 /* Build configuration list for PBXNativeTarget "CareTaskProgressStrategyExtensionTests" */;
-			buildPhases = (
-				4B5FB0BA2C3F4ACB00855675 /* Sources */,
-				4B5FB0BB2C3F4ACB00855675 /* Frameworks */,
-				4B5FB0BC2C3F4ACB00855675 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4B5FB0C42C3F4ACB00855675 /* PBXTargetDependency */,
-			);
-			name = CareTaskProgressStrategyExtensionTests;
-			productName = CareTaskProgressStrategyExtensionTests;
-			productReference = 4B5FB0BE2C3F4ACB00855675 /* CareTaskProgressStrategyExtensionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		70C422CE2C3B6C7600E6DC51 /* TestHost */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70C422DB2C3B6C7600E6DC51 /* Build configuration list for PBXNativeTarget "TestHost" */;
@@ -530,12 +475,6 @@
 				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = "Network Reconnaissance Lab";
 				TargetAttributes = {
-					4B5FB0AF2C3F4A2000855675 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					4B5FB0BD2C3F4ACB00855675 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					70C422CE2C3B6C7600E6DC51 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -563,27 +502,11 @@
 				"carekitessentials::CareKitEssentials" /* CareKitEssentials */,
 				"carekitessentials::CareKitEssentialsTests" /* CareKitEssentialsTests */,
 				70C422CE2C3B6C7600E6DC51 /* TestHost */,
-				4B5FB0AF2C3F4A2000855675 /* CareTaskProgressStrategyTests */,
-				4B5FB0BD2C3F4ACB00855675 /* CareTaskProgressStrategyExtensionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4B5FB0AE2C3F4A2000855675 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B5FB0BC2C3F4ACB00855675 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		70C422CD2C3B6C7600E6DC51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,20 +541,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4B5FB0AC2C3F4A2000855675 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B5FB0BA2C3F4ACB00855675 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		70C422CB2C3B6C7600E6DC51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,6 +556,7 @@
 			files = (
 				70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */,
 				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
+				4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
@@ -692,38 +602,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				4B27AD942C4B207B00661121 /* OCKEvent.swift in Sources */,
 				OBJ_791 /* OCKOutcomeExtensionsTests.swift in Sources */,
 				4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */,
+				4B27AD8A2C4ACD8B00661121 /* CareTaskProgressStrategyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B5FB0B62C3F4A2000855675 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilters = (
-				ios,
-				maccatalyst,
-				macos,
-				watchos,
-				xros,
-			);
-			target = "carekitessentials::CareKitEssentials" /* CareKitEssentials */;
-			targetProxy = 4B5FB0B52C3F4A2000855675 /* PBXContainerItemProxy */;
-		};
-		4B5FB0C42C3F4ACB00855675 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilters = (
-				ios,
-				maccatalyst,
-				macos,
-				watchos,
-				xros,
-			);
-			target = "carekitessentials::CareKitEssentials" /* CareKitEssentials */;
-			targetProxy = 4B5FB0C32C3F4ACB00855675 /* PBXContainerItemProxy */;
-		};
 		70C422E22C3B6C8D00E6DC51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "carekitessentials::CareKitEssentials" /* CareKitEssentials */;
@@ -742,160 +630,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4B5FB0B72C3F4A2000855675 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Luis-Millan.CareTaskProgressStrategyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B5FB0B82C3F4A2000855675 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Luis-Millan.CareTaskProgressStrategyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4B5FB0C62C3F4ACB00855675 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Luis-Millan.CareTaskProgressStrategyExtensionTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B5FB0C72C3F4ACB00855675 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Luis-Millan.CareTaskProgressStrategyExtensionTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		70C422DC2C3B6C7600E6DC51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -949,7 +683,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.netrecon.usc.TestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator watchos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1008,7 +742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.netrecon.usc.TestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator watchos";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1160,6 +894,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CareKitEssentials;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -1198,6 +933,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CareKitEssentials;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
@@ -1288,24 +1024,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B5FB0B92C3F4A2000855675 /* Build configuration list for PBXNativeTarget "CareTaskProgressStrategyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B5FB0B72C3F4A2000855675 /* Debug */,
-				4B5FB0B82C3F4A2000855675 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4B5FB0C52C3F4ACB00855675 /* Build configuration list for PBXNativeTarget "CareTaskProgressStrategyExtensionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B5FB0C62C3F4ACB00855675 /* Debug */,
-				4B5FB0C72C3F4ACB00855675 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		70C422DB2C3B6C7600E6DC51 /* Build configuration list for PBXNativeTarget "TestHost" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

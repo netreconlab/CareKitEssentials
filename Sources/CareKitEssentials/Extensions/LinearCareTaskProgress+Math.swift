@@ -124,29 +124,4 @@ public extension LinearCareTaskProgress {
 
         return progress
     }
-    static func computeProgressByStreakOutcomeValues(
-        for event: OCKAnyEvent,
-        kind: String? = nil
-    ) -> LinearCareTaskProgress {
-
-        let outcomeValues = event.outcome?.values ?? []
-        let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
-        let summedOutcomesValue = filteredOutcomeValues
-            .map(accumulableDoubleValue)
-            .reduce(0, +)
-
-        let targetValues = event.scheduleEvent.element.targetValues
-        let summedTargetValue = targetValues
-            .map(accumulableDoubleValue)
-            .reduce(nil) { partialResult, nextTarget -> Double? in
-                sum(partialResult, nextTarget)
-            }
-
-        let progress = LinearCareTaskProgress(
-            value: summedOutcomesValue,
-            goal: summedTargetValue
-        )
-
-        return progress
-    }
 }
