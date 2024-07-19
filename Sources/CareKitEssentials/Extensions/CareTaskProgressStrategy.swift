@@ -8,6 +8,8 @@
 import CareKitStore
 import Foundation
 
+// swiftlint:disable line_length
+
 public extension CareTaskProgressStrategy {
 
     /// Computes the average outcome values for a given event
@@ -48,14 +50,11 @@ public extension CareTaskProgressStrategy {
 
     /// Computes the streak of outcome values for a given event
     ///
-    /// Function use ``LinearCareTaskProgress.computeProgressByStreakOutcomeValues`` 
-    /// method to compute the steak of outcome values given an evnet.
-    /// The event is passed to the ``computeProgressByStreakOutcomeValues`` method as an argument
+    /// Function use ``LinearCareTaskProgress.computeProgressByStreakOutcomeValues`` method to compute the steak of outcome values given an evnet. The event is passed to the ``computeProgressByStreakOutcomeValues`` method as an argument
     ///
     /// Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
     ///
-    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
-    /// that's the strategy for compting the progress of a care task
+    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` that's the strategy for compting the progress of a care task
     ///
     ///
     static func streak(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
