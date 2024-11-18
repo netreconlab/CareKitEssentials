@@ -51,7 +51,7 @@ jobs:
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v5
       with:
         files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
         fail_ci_if_error: false
