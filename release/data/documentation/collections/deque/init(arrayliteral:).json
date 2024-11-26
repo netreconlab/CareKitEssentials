@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Creates a new deque from the contents of an array literal.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "ExpressibleByArrayLiteral.init(arrayLiteral:)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -41,7 +49,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
         "text" : "Element"
       },
       {
@@ -51,7 +58,10 @@
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -96,7 +106,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
               "text" : "Element"
             },
             {
@@ -107,77 +116,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A variadic list of elements of the new deque.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "elements"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Do not call this initializer directly. It is used by the compiler when",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "you use an array literal. Instead, create a new deque using an array",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "literal as its value by enclosing a comma-separated list of values in",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "square brackets. You can use an array literal anywhere a deque is expected",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "by the type context.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -273,10 +211,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init(arrayLiteral:)": {
   "abstract" : [
-    {
-      "text" : "Creates a new deque from the contents of an array literal.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -297,7 +232,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {

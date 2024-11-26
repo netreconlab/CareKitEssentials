@@ -53024,7 +53024,7 @@
                   },
                   {
                     "path" : "\/documentation\/collections\/deque\/init(from:)",
-                    "title" : "init(from: Decoder) throws",
+                    "title" : "init(from: any Decoder) throws",
                     "type" : "init"
                   }
                 ],
@@ -53040,7 +53040,7 @@
                   },
                   {
                     "path" : "\/documentation\/collections\/deque\/encode(to:)",
-                    "title" : "func encode(to: Encoder) throws",
+                    "title" : "func encode(to: any Encoder) throws",
                     "type" : "method"
                   }
                 ],
@@ -53061,7 +53061,7 @@
                   },
                   {
                     "path" : "\/documentation\/collections\/deque\/==(_:_:)",
-                    "title" : "static func == (`Self`, `Self`) -> Bool",
+                    "title" : "static func == (Deque<Element>, Deque<Element>) -> Bool",
                     "type" : "op"
                   }
                 ],
@@ -53262,7 +53262,7 @@
                   },
                   {
                     "path" : "\/documentation\/collections\/deque\/subscript(_:)-22tpo",
-                    "title" : "subscript(Range<Int>) -> Slice<`Self`>",
+                    "title" : "subscript(Range<Int>) -> Slice<Deque<Element>>",
                     "type" : "subscript"
                   },
                   {
@@ -53636,7 +53636,7 @@
                   },
                   {
                     "path" : "\/documentation\/collections\/deque\/makeiterator()",
-                    "title" : "func makeIterator() -> Iterator",
+                    "title" : "func makeIterator() -> Deque<Element>.Iterator",
                     "type" : "method"
                   },
                   {

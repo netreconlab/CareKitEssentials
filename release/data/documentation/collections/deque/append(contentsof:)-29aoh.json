@@ -56,7 +56,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSlRd__lF1CL_qd__mfp",
         "text" : "C"
       },
       {
@@ -66,7 +65,10 @@
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -135,7 +137,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSlRd__lF1CL_qd__mfp",
               "text" : "C"
             },
             {
@@ -413,7 +414,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSlRd__lF1CL_qd__mfp",
       "text" : "C"
     },
     {

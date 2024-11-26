@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Creates a new deque by decoding from the given decoder.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "Decodable.init(from:)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -69,7 +77,7 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": any "
       },
       {
         "kind" : "typeIdentifier",
@@ -87,7 +95,10 @@
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -128,7 +139,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": any "
             },
             {
               "kind" : "typeIdentifier",
@@ -147,53 +158,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The decoder to read data from.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "decoder"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "This initializer throws an error if reading from the decoder fails, or",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "if the data read is corrupted or otherwise invalid.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -289,10 +253,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init(from:)": {
   "abstract" : [
-    {
-      "text" : "Creates a new deque by decoding from the given decoder.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -341,7 +302,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

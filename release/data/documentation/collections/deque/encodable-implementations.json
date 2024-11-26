@@ -101,18 +101,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/encode(to:)": {
   "abstract" : [
-    {
-      "text" : "Encodes the elements of this deque into the given encoder in an unkeyed",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "container.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -169,7 +158,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

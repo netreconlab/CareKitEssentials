@@ -46,7 +46,10 @@
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -94,11 +97,25 @@
             },
             {
               "kind" : "text",
-              "text" : "<`Self`"
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:11DequeModule0A0V",
+              "text" : "Deque"
             },
             {
               "kind" : "text",
-              "text" : ">"
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">>"
             }
           ]
         }

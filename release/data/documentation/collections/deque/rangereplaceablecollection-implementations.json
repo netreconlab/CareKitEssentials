@@ -483,10 +483,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/append(_:)-9h4m7": {
   "abstract" : [
-    {
-      "text" : "Adds a new element at the end of the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -507,7 +504,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -577,10 +573,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/append(contentsOf:)-8rqnl": {
   "abstract" : [
-    {
-      "text" : "Adds the elements of a sequence to the end of the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -617,7 +610,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -772,10 +764,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init()": {
   "abstract" : [
-    {
-      "text" : "Creates a new, empty deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -833,10 +822,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init(_:)-8tyaw": {
   "abstract" : [
-    {
-      "text" : "Creates a deque containing the elements of a sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -857,7 +843,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0VyACyxGqd__c7ElementQyd__RszSTRd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -874,18 +859,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init(repeating:count:)-4v1gt": {
   "abstract" : [
-    {
-      "text" : "Creates a new deque containing the specified number of a single, repeated",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -906,7 +880,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1074,10 +1047,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/insert(_:at:)-9hsp7": {
   "abstract" : [
-    {
-      "text" : "Inserts a new element at the specified position.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1098,7 +1068,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1132,18 +1101,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/insert(contentsOf:at:)-1d60f": {
   "abstract" : [
-    {
-      "text" : "Inserts the elements of a collection into the deque at the specified",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "position.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1180,7 +1138,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V6insert10contentsOf2atyqd__n_Sit7ElementQyd__RszSlRd__lF1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -1437,10 +1394,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/remove(at:)-3imgi": {
   "abstract" : [
-    {
-      "text" : "Removes and returns the element at the specified position.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1478,7 +1432,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     }
   ],
@@ -1537,10 +1490,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/removeAll(keepingCapacity:)-yeby": {
   "abstract" : [
-    {
-      "text" : "Removes all elements from the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1768,10 +1718,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/removeFirst()-1vdmt": {
   "abstract" : [
-    {
-      "text" : "Removes and returns the first element of the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1792,7 +1739,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     }
   ],
@@ -1847,10 +1793,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/removeFirst(_:)-2vuji": {
   "abstract" : [
-    {
-      "text" : "Removes the specified number of elements from the beginning of the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2170,34 +2113,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/removeSubrange(_:)-8oy85": {
   "abstract" : [
-    {
-      "text" : "All elements following the specified range are (logically) moved up to",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "close the resulting gap. (Internally, the deque may actually decide to",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "shift previous elements forward instead to minimize the number of elements",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "that need to be moved.)",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2511,18 +2427,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/replaceSubrange(_:with:)-5rtzd": {
   "abstract" : [
-    {
-      "text" : "Replaces a range of elements with the elements in the specified",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "collection.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -2577,7 +2482,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V15replaceSubrange_4withySnySiG_qd__nt7ElementQyd__RszSlRd__lF1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -2872,10 +2776,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/reserveCapacity(_:)-7qlut": {
   "abstract" : [
-    {
-      "text" : "Reserves enough space to store the specified number of elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

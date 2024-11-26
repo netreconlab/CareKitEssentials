@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Creates a new, empty deque.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "RangeReplaceableCollection.init()",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -34,7 +42,10 @@
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -65,61 +76,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "This is equivalent to initializing with an empty array literal.",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "For example:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "let deque1 = Deque<Int>()",
-            "print(deque1.isEmpty) \/\/ true",
-            "",
-            "let deque2: Deque<Int> = []",
-            "print(deque2.isEmpty) \/\/ true"
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(1)",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -215,10 +171,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/init()": {
   "abstract" : [
-    {
-      "text" : "Creates a new, empty deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Accesses a contiguous subrange of the deque’s elements.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "RandomAccessCollection.subscript(_:)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -56,16 +64,32 @@
       },
       {
         "kind" : "text",
-        "text" : "<`Self`"
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:11DequeModule0A0V",
+        "text" : "Deque"
       },
       {
         "kind" : "text",
-        "text" : ">"
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">>"
       }
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -125,11 +149,25 @@
             },
             {
               "kind" : "text",
-              "text" : "<`Self`"
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:11DequeModule0A0V",
+              "text" : "Deque"
             },
             {
               "kind" : "text",
-              "text" : "> { "
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">> { "
             },
             {
               "kind" : "keyword",
@@ -151,69 +189,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A range of the deque’s indices. The bounds of the range must",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "be valid indices of the deque (including the ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "endIndex",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ").",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "bounds"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The accessed slice uses the same indices for the same elements as the",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "original collection.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -309,10 +284,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/subscript(_:)-22tpo": {
   "abstract" : [
-    {
-      "text" : "Accesses a contiguous subrange of the deque’s elements.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -348,11 +320,24 @@
     },
     {
       "kind" : "text",
-      "text" : "<`Self`"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V",
+      "text" : "Deque"
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">>"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque\/subscript(_:)-22tpo",

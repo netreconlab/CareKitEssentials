@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Returns an iterator over the elements of the deque.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "Sequence.makeIterator()",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -41,13 +49,33 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:11DequeModule0A0V",
+        "text" : "Deque"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:11DequeModule0A0V8IteratorV",
         "text" : "Iterator"
       }
     ],
     "modules" : [
       {
-        "name" : "DequeModule"
+        "name" : "Collections",
+        "relatedModules" : [
+          "DequeModule"
+        ]
       }
     ],
     "role" : "symbol",
@@ -83,6 +111,24 @@
               "text" : "() -> "
             },
             {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:11DequeModule0A0V",
+              "text" : "Deque"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque\/Iterator",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:11DequeModule0A0V8IteratorV",
@@ -92,33 +138,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(1)",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -203,10 +222,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/Iterator": {
   "abstract" : [
-    {
-      "text" : "An iterator over the members of a deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -248,10 +264,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/makeIterator()": {
   "abstract" : [
-    {
-      "text" : "Returns an iterator over the elements of the deque.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -269,6 +282,23 @@
     {
       "kind" : "text",
       "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V",
+      "text" : "Deque"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
