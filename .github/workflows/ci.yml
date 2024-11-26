@@ -32,7 +32,7 @@ jobs:
           - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)'
             action: 'test'
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Install Swiftlint
       run: brew install swiftlint
     - name: Build-Test
