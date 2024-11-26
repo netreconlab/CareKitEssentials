@@ -115,7 +115,7 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskViewModel\/init(event:detailsTitle:detailsInformation:initialValue:range:step:action:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskViewModel\/init(event:kind:detailsTitle:detailsInformation:initialValue:range:step:action:)"
       ],
       "title" : "Initializers"
     },
@@ -249,7 +249,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderLogTaskViewModel/init(event:detailsTitle:detailsInformation:initialValue:range:step:action:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderLogTaskViewModel/init(event:kind:detailsTitle:detailsInformation:initialValue:range:step:action:)": {
   "abstract" : [
     {
       "text" : "Create an instance with specified content for an event. The view will update when changes",
@@ -289,6 +289,23 @@
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
     },
     {
       "kind" : "externalParam",
@@ -427,12 +444,12 @@
       "text" : ")?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskViewModel\/init(event:detailsTitle:detailsInformation:initialValue:range:step:action:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SliderLogTaskViewModel\/init(event:kind:detailsTitle:detailsInformation:initialValue:range:step:action:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(event:detailsTitle:detailsInformation:initialValue:range:step:action:)",
+  "title" : "init(event:kind:detailsTitle:detailsInformation:initialValue:range:step:action:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel\/init(event:detailstitle:detailsinformation:initialvalue:range:step:action:)"
+  "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel\/init(event:kind:detailstitle:detailsinformation:initialvalue:range:step:action:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SliderLogTaskViewModel/isActive": {
   "abstract" : [
