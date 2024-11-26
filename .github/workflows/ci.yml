@@ -32,7 +32,7 @@ jobs:
           - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)'
             action: 'test'
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v4
     - name: Install Swiftlint
       run: brew install swiftlint
     - name: Build-Test
@@ -51,7 +51,7 @@ jobs:
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v5
       with:
         files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
         fail_ci_if_error: false
