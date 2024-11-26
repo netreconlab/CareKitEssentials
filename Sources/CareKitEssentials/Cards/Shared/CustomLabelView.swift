@@ -65,7 +65,6 @@ public struct CustomLabelView<Header: View>: View {
             }
             .padding()
         }
-        .padding(.vertical)
     }
 }
 
