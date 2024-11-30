@@ -107,7 +107,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",

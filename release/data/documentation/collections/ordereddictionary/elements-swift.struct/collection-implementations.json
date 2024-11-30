@@ -183,10 +183,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/count": {
   "abstract" : [
-    {
-      "text" : "The number of elements in the dictionary.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -709,10 +706,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/isEmpty": {
   "abstract" : [
-    {
-      "text" : "A Boolean value indicating whether the collection is empty.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

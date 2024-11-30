@@ -1,15 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The indices that are valid for subscripting the collection, in ascending",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
+      "code" : "RandomAccessCollection.indices",
+      "type" : "codeVoice"
     },
     {
-      "text" : "order.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -83,13 +83,42 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+        "text" : "OrderedSet"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV",
+        "text" : "SubSequence"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV7Indicesa",
         "text" : "Indices"
       }
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -125,6 +154,34 @@
               "text" : ": "
             },
             {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+              "text" : "OrderedSet"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/SubSequence",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV",
+              "text" : "SubSequence"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/SubSequence\/Indices-swift.typealias",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV7Indicesa",
@@ -146,33 +203,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(1)",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -244,10 +274,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/SubSequence": {
   "abstract" : [
-    {
-      "text" : "A collection that represents a contiguous slice of an ordered set.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -310,18 +337,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/SubSequence/Indices-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "The type that represents the indices that are valid for subscripting an",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "ordered set, in ascending order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -395,18 +411,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/SubSequence/indices-swift.property": {
   "abstract" : [
-    {
-      "text" : "The indices that are valid for subscripting the collection, in ascending",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -456,6 +461,32 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV",
+      "text" : "SubSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

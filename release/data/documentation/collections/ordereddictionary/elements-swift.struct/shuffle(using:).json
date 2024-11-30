@@ -105,7 +105,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV7shuffle5usingyqd__z_tSGRd__lF1TL_qd__mfp",
         "text" : "T"
       },
       {
@@ -115,7 +114,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -192,7 +194,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV7shuffle5usingyqd__z_tSGRd__lF1TL_qd__mfp",
               "text" : "T"
             },
             {
@@ -603,7 +604,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV7shuffle5usingyqd__z_tSGRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {

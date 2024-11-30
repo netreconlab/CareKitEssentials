@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The type that allows iteration over the collection’s elements.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "Sequence.Iterator",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -71,7 +79,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -119,7 +130,39 @@
             },
             {
               "kind" : "text",
-              "text" : "<`Self`"
+              "text" : "<"
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedDictionary",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+              "text" : "OrderedDictionary"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Key"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Value"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedDictionary\/Values-swift.struct",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV",
+              "text" : "Values"
             },
             {
               "kind" : "text",
@@ -255,10 +298,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Values-swift.struct/Iterator": {
   "abstract" : [
-    {
-      "text" : "The type that allows iteration over the collection’s elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

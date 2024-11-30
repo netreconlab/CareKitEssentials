@@ -1,23 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Returns a Boolean value indicating whether two values are equal.",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
+      "code" : "Equatable.==(_:_:)",
+      "type" : "codeVoice"
     },
     {
-      "text" : "Two unordered sets are considered equal if they contain the same",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements, but not necessarily in the same order.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -98,11 +90,55 @@
       },
       {
         "kind" : "text",
-        "text" : "(`Self`"
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+        "text" : "OrderedSet"
       },
       {
         "kind" : "text",
-        "text" : ", `Self`"
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+        "text" : "UnorderedView"
+      },
+      {
+        "kind" : "text",
+        "text" : ", "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+        "text" : "OrderedSet"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+        "text" : "UnorderedView"
       },
       {
         "kind" : "text",
@@ -116,7 +152,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -169,7 +208,31 @@
             },
             {
               "kind" : "text",
-              "text" : ": `Self`"
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+              "text" : "OrderedSet"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/UnorderedView",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+              "text" : "UnorderedView"
             },
             {
               "kind" : "text",
@@ -181,7 +244,31 @@
             },
             {
               "kind" : "text",
-              "text" : ": `Self`"
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+              "text" : "OrderedSet"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/UnorderedView",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+              "text" : "UnorderedView"
             },
             {
               "kind" : "text",
@@ -196,41 +283,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(",
-                  "type" : "text"
-                },
-                {
-                  "code" : "min(left.count, right.count)",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ")",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -369,26 +421,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/UnorderedView/==(_:_:)": {
   "abstract" : [
-    {
-      "text" : "Returns a Boolean value indicating whether two values are equal.",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "Two unordered sets are considered equal if they contain the same",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "elements, but not necessarily in the same order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -449,11 +482,55 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ", `Self`"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
     },
     {
       "kind" : "text",

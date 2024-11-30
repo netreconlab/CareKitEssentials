@@ -1,11 +1,11 @@
 {
   "abstract" : [
     {
-      "text" : "The index type for an ordered dictionary: ",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "code" : "Int",
+      "code" : "RandomAccessCollection.Index",
       "type" : "codeVoice"
     },
     {
@@ -79,7 +79,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -129,42 +132,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Indices in ",
-              "type" : "text"
-            },
-            {
-              "code" : "Elements",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " are integer offsets from the start of the",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "collection.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -299,18 +266,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/Index": {
   "abstract" : [
-    {
-      "text" : "The index type for an ordered dictionary: ",
-      "type" : "text"
-    },
-    {
-      "code" : "Int",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

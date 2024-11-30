@@ -1,15 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The type that represents the indices that are valid for subscripting an",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
+      "code" : "RandomAccessCollection.Indices",
+      "type" : "codeVoice"
     },
     {
-      "text" : "ordered dictionary, in ascending order.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -81,7 +81,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -289,10 +292,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/SubSequence": {
   "abstract" : [
-    {
-      "text" : "A collection that represents a contiguous slice of an ordered dictionary.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -355,18 +355,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/SubSequence/Indices-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "The type that represents the indices that are valid for subscripting an",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "ordered dictionary, in ascending order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

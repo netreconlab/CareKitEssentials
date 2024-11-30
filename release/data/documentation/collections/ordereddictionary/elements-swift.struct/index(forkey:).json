@@ -81,7 +81,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV3Keyxmfp",
         "text" : "Key"
       },
       {
@@ -100,7 +99,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -153,7 +155,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV3Keyxmfp",
               "text" : "Key"
             },
             {
@@ -513,7 +514,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV3Keyxmfp",
       "text" : "Key"
     },
     {

@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "A collection that represents a contiguous slice of an ordered dictionary.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "RandomAccessCollection.SubSequence",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -71,7 +79,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -120,34 +131,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "overview",
-          "level" : 2,
-          "text" : "Overview",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "Ordered dictionary slices are random access collections that",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "support efficient key-based lookups.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "relationshipsSections" : [
@@ -351,10 +334,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/SubSequence": {
   "abstract" : [
-    {
-      "text" : "A collection that represents a contiguous slice of an ordered dictionary.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -525,7 +505,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV11SubSequenceV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -616,7 +595,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV11SubSequenceV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -699,7 +677,23 @@
     },
     {
       "kind" : "text",
-      "text" : "."
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

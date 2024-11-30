@@ -115,18 +115,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/Index": {
   "abstract" : [
-    {
-      "text" : "The index type for ordered sets, ",
-      "type" : "text"
-    },
-    {
-      "code" : "Int",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -189,18 +178,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/Indices-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "The type that represents the indices that are valid for subscripting an",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "ordered set, in ascending order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -263,10 +241,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/SubSequence": {
   "abstract" : [
-    {
-      "text" : "A collection that represents a contiguous slice of an ordered set.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -329,10 +304,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/distance(from:to:)": {
   "abstract" : [
-    {
-      "text" : "Returns the distance between two indices.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -432,18 +404,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/endIndex": {
   "abstract" : [
-    {
-      "text" : "The set’s “past the end” position—that is, the position one greater",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "than the last valid subscript argument.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -509,10 +470,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/formIndex(after:)": {
   "abstract" : [
-    {
-      "text" : "Replaces the given index with its successor.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -598,10 +556,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/formIndex(before:)": {
   "abstract" : [
-    {
-      "text" : "Replaces the given index with its predecessor.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -687,10 +642,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/index(_:offsetBy:)": {
   "abstract" : [
-    {
-      "text" : "Returns an index that is the specified distance from the given index.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -782,18 +734,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/index(_:offsetBy:limitedBy:)": {
   "abstract" : [
-    {
-      "text" : "Returns an index that is the specified distance from the given index,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "unless that distance is beyond a given limiting index.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -906,10 +847,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/index(after:)": {
   "abstract" : [
-    {
-      "text" : "Returns the position immediately after the given index.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -992,10 +930,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/index(before:)": {
   "abstract" : [
-    {
-      "text" : "Returns the position immediately before the given index.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1078,18 +1013,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/indices-swift.property": {
   "abstract" : [
-    {
-      "text" : "The indices that are valid for subscripting the collection, in ascending",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "order.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1142,6 +1066,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Indicesa",
       "text" : "Indices"
     }
@@ -1155,10 +1096,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/startIndex": {
   "abstract" : [
-    {
-      "text" : "The position of the first element in a nonempty ordered set.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1224,10 +1162,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/subscript(_:)-3zzoq": {
   "abstract" : [
-    {
-      "text" : "Accesses a contiguous subrange of the set’s elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1290,6 +1225,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV11SubSequenceV",
       "text" : "SubSequence"
     }
@@ -1303,10 +1255,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/subscript(_:)-7e56c": {
   "abstract" : [
-    {
-      "text" : "Accesses the element at the specified position.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1360,7 +1309,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     }
   ],

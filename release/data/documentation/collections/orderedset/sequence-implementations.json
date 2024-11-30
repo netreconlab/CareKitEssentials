@@ -121,10 +121,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/Iterator": {
   "abstract" : [
-    {
-      "text" : "The type that allows iteration over an ordered set’s elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -2852,34 +2849,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/withContiguousStorageIfAvailable(_:)-8k26k": {
   "abstract" : [
-    {
-      "text" : "Call ",
-      "type" : "text"
-    },
-    {
-      "code" : "body(p)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", where ",
-      "type" : "text"
-    },
-    {
-      "code" : "p",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is a buffer pointer to the collection’s",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "contiguous storage. Ordered sets always have contiguous storage.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -2949,7 +2919,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2966,7 +2935,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV32withContiguousStorageIfAvailableyqd__Sgqd__SRyxGKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -2983,7 +2951,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV32withContiguousStorageIfAvailableyqd__Sgqd__SRyxGKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {

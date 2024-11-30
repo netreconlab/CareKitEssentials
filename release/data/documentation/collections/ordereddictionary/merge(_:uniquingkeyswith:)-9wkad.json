@@ -88,7 +88,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5merge_16uniquingKeysWithyqd__n_q_q__q_tKXEtKSTRd__x3key_q_5valuet7ElementRtd__lF1SL_qd__mfp",
         "text" : "S"
       },
       {
@@ -105,7 +104,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
         "text" : "Value"
       },
       {
@@ -114,7 +112,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
         "text" : "Value"
       },
       {
@@ -131,7 +128,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
         "text" : "Value"
       },
       {
@@ -145,7 +141,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -214,7 +213,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5merge_16uniquingKeysWithyqd__n_q_q__q_tKXEtKSTRd__x3key_q_5valuet7ElementRtd__lF1SL_qd__mfp",
               "text" : "S"
             },
             {
@@ -239,7 +237,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
               "text" : "Value"
             },
             {
@@ -248,7 +245,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
               "text" : "Value"
             },
             {
@@ -265,7 +261,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
               "text" : "Value"
             },
             {
@@ -722,7 +717,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5merge_16uniquingKeysWithyqd__n_q_q__q_tKXEtKSTRd__x3key_q_5valuet7ElementRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -739,7 +733,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -748,7 +741,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -765,7 +757,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {

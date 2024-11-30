@@ -77,10 +77,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/customMirror": {
   "abstract" : [
-    {
-      "text" : "The custom mirror for this instance.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

@@ -81,7 +81,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV9formUnionyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
         "text" : "S"
       },
       {
@@ -91,7 +90,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -160,7 +162,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV9formUnionyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
               "text" : "S"
             },
             {
@@ -535,7 +536,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV9formUnionyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {

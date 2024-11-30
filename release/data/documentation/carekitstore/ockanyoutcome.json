@@ -112,11 +112,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/answerDouble(kind:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/answerString(kind:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/belongs(to:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/sortedOutcomeValues()",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/sortedOutcomeValuesByRecency()"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/belongs(to:)"
       ],
       "title" : "Instance Methods"
     }
@@ -179,116 +175,6 @@
   "title" : "OCKAnyOutcome",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcome"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/answerDouble(kind:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "answerDouble"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "kind"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sd",
-      "text" : "Double"
-    },
-    {
-      "kind" : "text",
-      "text" : "]"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/answerDouble(kind:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "answerDouble(kind:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcome\/answerdouble(kind:)"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/answerString(kind:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "answerString"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "kind"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "]"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/answerString(kind:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "answerString(kind:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcome\/answerstring(kind:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/belongs(to:)": {
   "abstract" : [
@@ -508,72 +394,6 @@
   "title" : "remoteID",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcome\/remoteid"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/sortedOutcomeValues()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "sortedOutcomeValues"
-    },
-    {
-      "kind" : "text",
-      "text" : "() -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/sortedOutcomeValues()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "sortedOutcomeValues()",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcome\/sortedoutcomevalues()"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/sortedOutcomeValuesByRecency()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "sortedOutcomeValuesByRecency"
-    },
-    {
-      "kind" : "text",
-      "text" : "() -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome\/sortedOutcomeValuesByRecency()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "sortedOutcomeValuesByRecency()",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcome\/sortedoutcomevaluesbyrecency()"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcome/taskOccurrenceIndex": {
   "abstract" : [

@@ -81,7 +81,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -483,7 +486,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV16formIntersectionyyqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -572,7 +574,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV23formSymmetricDifferenceyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -653,7 +654,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV9formUnionyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -730,7 +730,29 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
     },
     {
       "kind" : "text",
@@ -811,7 +833,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -820,7 +841,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewVyAEyx_GSD4KeysVyxqd___Gclufc5ValueL_qd__mfp",
       "text" : "Value"
     },
     {
@@ -911,7 +931,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1008,7 +1027,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV12intersectionyAEyx_Gqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -1128,7 +1146,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1230,7 +1247,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV10isDisjoint4withSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -1332,7 +1348,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV14isStrictSubset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -1435,7 +1450,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1525,7 +1539,29 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
     },
     {
       "kind" : "text",
@@ -1627,7 +1663,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1729,7 +1764,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV16isStrictSuperset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -1819,7 +1853,29 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
     },
     {
       "kind" : "text",
@@ -1921,7 +1977,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2023,7 +2078,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV8isSubset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2126,7 +2180,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2228,7 +2281,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV10isSuperset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2314,7 +2366,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV8subtractyyqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2403,7 +2454,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV11subtractingyAEyx_Gqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2514,7 +2564,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV19symmetricDifferenceyAEyx_Gqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2617,7 +2666,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV5unionyAEyx_Gqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {

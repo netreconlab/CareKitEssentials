@@ -191,10 +191,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Values-swift.struct/Element": {
   "abstract" : [
-    {
-      "text" : "The element type of the collection.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -257,10 +254,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Values-swift.struct/Iterator": {
   "abstract" : [
-    {
-      "text" : "The type that allows iteration over the collection’s elements.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -3122,50 +3116,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Values-swift.struct/withContiguousStorageIfAvailable(_:)-8v21t": {
   "abstract" : [
-    {
-      "text" : "Call ",
-      "type" : "text"
-    },
-    {
-      "code" : "body(p)",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", where ",
-      "type" : "text"
-    },
-    {
-      "code" : "p",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " is a buffer pointer to the collection’s",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "contiguous storage. ",
-      "type" : "text"
-    },
-    {
-      "code" : "OrderedDictionary.Values",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " values always have",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "contiguous storage.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -3235,7 +3186,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -3252,7 +3202,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV32withContiguousStorageIfAvailableyqd__Sgqd__SRyq_GKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -3269,7 +3218,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV32withContiguousStorageIfAvailableyqd__Sgqd__SRyq_GKXEKlF1RL_qd__mfp",
       "text" : "R"
     },
     {

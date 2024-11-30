@@ -1,15 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "Reorders the elements of the collection such that all the elements that",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
+      "code" : "MutableCollection.partition(by:)",
+      "type" : "codeVoice"
     },
     {
-      "text" : "match the given predicate are after all the elements that don’t match.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -90,7 +90,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV5Valueq_mfp",
         "text" : "Value"
       },
       {
@@ -130,7 +129,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -191,7 +193,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV5Valueq_mfp",
               "text" : "Value"
             },
             {
@@ -232,226 +233,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A predicate used to partition",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "the collection. All elements satisfying this predicate are ordered",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "after all elements not satisfying it.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "belongsInSecondPartition"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The index of the first element in the reordered collection",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "that matches ",
-              "type" : "text"
-            },
-            {
-              "code" : "belongsInSecondPartition",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ". If no elements in the",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "collection match ",
-              "type" : "text"
-            },
-            {
-              "code" : "belongsInSecondPartition",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", the returned index is",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "equal to the collection’s ",
-              "type" : "text"
-            },
-            {
-              "code" : "endIndex",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "This operation does not reorder the keys of the underlying dictionary,",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "just their associated values.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "After partitioning a collection, there is a pivot index ",
-              "type" : "text"
-            },
-            {
-              "code" : "p",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " where",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "no element before ",
-              "type" : "text"
-            },
-            {
-              "code" : "p",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " satisfies the ",
-              "type" : "text"
-            },
-            {
-              "code" : "belongsInSecondPartition",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "predicate and every element at or after ",
-              "type" : "text"
-            },
-            {
-              "code" : "p",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " satisfies",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "code" : "belongsInSecondPartition",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(",
-                  "type" : "text"
-                },
-                {
-                  "code" : "count",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ")",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -589,18 +370,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Values-swift.struct/partition(by:)-9x0i5": {
   "abstract" : [
-    {
-      "text" : "Reorders the elements of the collection such that all the elements that",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "match the given predicate are after all the elements that don’t match.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -661,7 +431,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV6ValuesV5Valueq_mfp",
       "text" : "Value"
     },
     {

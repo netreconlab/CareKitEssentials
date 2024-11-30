@@ -75,7 +75,6 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SL",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ"
       ],
       "kind" : "relationships",
@@ -104,7 +103,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleEvent\/Comparable-Implementations",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleEvent\/Equatable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -124,11 +122,6 @@
   ]
 , 
 "references": {
-"doc://edu.usc.netreconlab.CareKitEssentials/SL": {
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SL",
-  "title" : "Swift.Comparable",
-  "type" : "unresolvable"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
   "title" : "Swift.Equatable",
@@ -175,17 +168,6 @@
   "title" : "OCKScheduleEvent",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockscheduleevent"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKScheduleEvent/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleEvent\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockscheduleevent\/comparable-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKScheduleEvent/Equatable-Implementations": {
   "abstract" : [

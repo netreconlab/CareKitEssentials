@@ -1,15 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The element type of a dictionary: a tuple containing an individual",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
+      "code" : "Sequence.Element",
+      "type" : "codeVoice"
     },
     {
-      "text" : "key-value pair.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -78,7 +78,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "navigatorTitle" : [
@@ -125,7 +128,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
               "text" : "Key"
             },
             {
@@ -138,7 +140,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
               "text" : "Value"
             },
             {
@@ -209,18 +210,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Element": {
   "abstract" : [
-    {
-      "text" : "The element type of a dictionary: a tuple containing an individual",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "key-value pair.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

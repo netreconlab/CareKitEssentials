@@ -1,19 +1,11 @@
 {
   "abstract" : [
     {
-      "text" : "Returns a new set with the elements that are common to both this set and",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the provided other one, in the order they appear in ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
+      "code" : "SetAlgebra.intersection(_:)",
       "type" : "codeVoice"
     },
     {
@@ -86,7 +78,29 @@
       },
       {
         "kind" : "text",
-        "text" : "(`Self`"
+        "text" : "("
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+        "text" : "OrderedSet"
+      },
+      {
+        "kind" : "text",
+        "text" : "<"
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Element"
+      },
+      {
+        "kind" : "text",
+        "text" : ">."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+        "text" : "UnorderedView"
       },
       {
         "kind" : "text",
@@ -117,7 +131,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -166,7 +183,31 @@
             },
             {
               "kind" : "text",
-              "text" : ": `Self`"
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+              "text" : "OrderedSet"
+            },
+            {
+              "kind" : "text",
+              "text" : "<"
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Element"
+            },
+            {
+              "kind" : "text",
+              "text" : ">."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/UnorderedView",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+              "text" : "UnorderedView"
             },
             {
               "kind" : "text",
@@ -200,101 +241,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Another set.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "other"
-        }
-      ]
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A new set.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "code" : [
-            "let set: OrderedSet<Int>.UnorderedView = [1, 2, 3, 4]",
-            "let other: OrderedSet<Int>.UnorderedView = [6, 4, 2, 0]",
-            "set.intersection(other) \/\/ [2, 4]"
-          ],
-          "syntax" : null,
-          "type" : "codeListing"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "Expected to be O(",
-                  "type" : "text"
-                },
-                {
-                  "code" : "self.count",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : ") on average, if ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "Element",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "implements high-quality hashing.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -444,26 +390,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/UnorderedView/intersection(_:)-3q45l": {
   "abstract" : [
-    {
-      "text" : "Returns a new set with the elements that are common to both this set and",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the provided other one, in the order they appear in ",
-      "type" : "text"
-    },
-    {
-      "code" : "self",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -512,7 +439,29 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
+      "text" : "UnorderedView"
     },
     {
       "kind" : "text",

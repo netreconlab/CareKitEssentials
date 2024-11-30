@@ -35,7 +35,7 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections"
       }
     ],
     "navigatorTitle" : [
@@ -2127,7 +2127,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2144,7 +2143,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV16compactMapValuesyACyxqd__Gqd__Sgq_KXEKlF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -2170,7 +2168,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -2179,7 +2176,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV16compactMapValuesyACyxqd__Gqd__Sgq_KXEKlF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -2321,6 +2317,31 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV",
       "text" : "Elements"
     }
@@ -2395,6 +2416,31 @@
     {
       "kind" : "text",
       "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -2529,7 +2575,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -2675,7 +2720,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV_16uniquingKeysWithACyxq_Gqd___q_q__q_tKXEtKcSTRd__x_q_t7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2692,7 +2736,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2701,7 +2744,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2718,7 +2760,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2803,7 +2844,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV_16uniquingKeysWithACyxq_Gqd___q_q__q_tKXEtKcSTRd__x3key_q_5valuet7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2820,7 +2860,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2829,7 +2868,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2846,7 +2884,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -2947,7 +2984,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8grouping2byACyxSay7ElementQyd__GGqd___xAGKXEtKcAHRs_STRd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2964,7 +3000,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8grouping2byACyxSay7ElementQyd__GGqd___xAGKXEtKcAHRs_STRd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2990,7 +3025,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -3091,7 +3125,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8grouping2byACyxq_Gqd___x7ElementQy_KXEtKcSmR_STRd__AGQyd__AHRSlufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3108,7 +3141,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8grouping2byACyxq_Gqd___x7ElementQy_KXEtKcSmR_STRd__AGQyd__AHRSlufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3134,7 +3166,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -3333,7 +3364,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV19uncheckedUniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc0F0L_qd__mfp",
       "text" : "Keys"
     },
     {
@@ -3350,7 +3380,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV19uncheckedUniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc6ValuesL_qd_0_mfp",
       "text" : "Values"
     },
     {
@@ -3439,7 +3468,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV29uncheckedUniqueKeysWithValuesACyxq_Gqd___tcSTRd__x3key_q_5valuet7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3528,7 +3556,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV29uncheckedUniqueKeysWithValuesACyxq_Gqd___tcSTRd__x_q_t7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3617,7 +3644,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc0E0L_qd__mfp",
       "text" : "Keys"
     },
     {
@@ -3634,7 +3660,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc6ValuesL_qd_0_mfp",
       "text" : "Values"
     },
     {
@@ -3715,7 +3740,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV20uniqueKeysWithValuesACyxq_Gqd___tcSTRd__x_q_t7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3796,7 +3820,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV20uniqueKeysWithValuesACyxq_Gqd___tcSTRd__x3key_q_5valuet7ElementRtd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3963,7 +3986,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -4052,7 +4074,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4069,7 +4090,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV9mapValuesyACyxqd__Gqd__q_KXEKlF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -4095,7 +4115,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -4104,7 +4123,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV9mapValuesyACyxqd__Gqd__q_KXEKlF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -4193,7 +4211,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5merge_16uniquingKeysWithyqd__n_q_q__q_tKXEtKSTRd__x_q_t7ElementRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4210,7 +4227,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4219,7 +4235,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4236,7 +4251,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4329,7 +4343,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5merge_16uniquingKeysWithyqd__n_q_q__q_tKXEtKSTRd__x3key_q_5valuet7ElementRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4346,7 +4359,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4355,7 +4367,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4372,7 +4383,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4473,7 +4483,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV7merging_16uniquingKeysWithACyxq_Gqd__n_q_q__q_tKXEtKSTRd__x3key_q_5valuet7ElementRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4490,7 +4499,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4499,7 +4507,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4516,7 +4523,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4646,7 +4652,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV7merging_16uniquingKeysWithACyxq_Gqd__n_q_q__q_tKXEtKSTRd__x_q_t7ElementRtd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4663,7 +4668,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4672,7 +4676,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4689,7 +4692,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -4811,6 +4813,31 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV7Elementa",
       "text" : "Element"
     },
@@ -4928,6 +4955,31 @@
     {
       "kind" : "text",
       "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5085,11 +5137,32 @@
     },
     {
       "kind" : "text",
-      "text" : ": (`Self`"
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
     },
     {
       "kind" : "text",
-      "text" : "."
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5184,6 +5257,31 @@
     {
       "kind" : "text",
       "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5334,6 +5432,31 @@
     {
       "kind" : "text",
       "text" : "() -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5577,7 +5700,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV14removeSubrangeyyqd__SXRd__Si5BoundRtd__lF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -5658,7 +5780,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -5667,7 +5788,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -5973,7 +6093,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV7shuffle5usingyqd__z_tSGRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -6134,12 +6253,62 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV7Elementa",
       "text" : "Element"
     },
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -6229,7 +6398,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6238,7 +6406,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6319,7 +6486,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6336,7 +6502,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6345,7 +6510,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     }
   ],
@@ -6504,7 +6668,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6521,7 +6684,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6530,7 +6692,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6611,7 +6772,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6628,7 +6788,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6658,7 +6817,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6784,7 +6942,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6801,7 +6958,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6826,7 +6982,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -6843,7 +6998,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV11updateValue6forKey7default4withqd__x_q_yXKqd__q_zKXEtKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -6860,7 +7014,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV11updateValue6forKey7default4withqd__x_q_yXKqd__q_zKXEtKlF1RL_qd__mfp",
       "text" : "R"
     }
   ],
@@ -6965,7 +7118,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -6982,7 +7134,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -7024,7 +7175,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV5Valueq_mfp",
       "text" : "Value"
     },
     {
@@ -7041,7 +7191,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV11updateValue6forKey16insertingDefault2at4withqd__x_q_yXKSiqd__q_zKXEtKlF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -7058,7 +7207,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV11updateValue6forKey16insertingDefault2at4withqd__x_q_yXKSiqd__q_zKXEtKlF1RL_qd__mfp",
       "text" : "R"
     }
   ],
@@ -7124,6 +7272,31 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV",
+      "text" : "OrderedDictionary"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Key"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

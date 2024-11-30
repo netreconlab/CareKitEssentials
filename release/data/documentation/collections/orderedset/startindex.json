@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The position of the first element in a nonempty ordered set.",
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "RandomAccessCollection.startIndex",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -79,7 +87,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -135,82 +146,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "discussion",
-          "level" : 2,
-          "text" : "Discussion",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "For an instance of ",
-              "type" : "text"
-            },
-            {
-              "code" : "OrderedSet",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ", ",
-              "type" : "text"
-            },
-            {
-              "code" : "startIndex",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is always zero. If the set",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "is empty, ",
-              "type" : "text"
-            },
-            {
-              "code" : "startIndex",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " is equal to ",
-              "type" : "text"
-            },
-            {
-              "code" : "endIndex",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "O(1)",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "Complexity",
-          "style" : "note",
-          "type" : "aside"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -282,10 +217,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet/startIndex": {
   "abstract" : [
-    {
-      "text" : "The position of the first element in a nonempty ordered set.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [

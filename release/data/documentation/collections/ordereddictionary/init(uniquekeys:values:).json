@@ -88,7 +88,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc0E0L_qd__mfp",
         "text" : "Keys"
       },
       {
@@ -105,7 +104,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc6ValuesL_qd_0_mfp",
         "text" : "Values"
       },
       {
@@ -115,7 +113,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -176,7 +177,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc0E0L_qd__mfp",
               "text" : "Keys"
             },
             {
@@ -193,7 +193,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc6ValuesL_qd_0_mfp",
               "text" : "Values"
             },
             {
@@ -651,7 +650,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc0E0L_qd__mfp",
       "text" : "Keys"
     },
     {
@@ -668,7 +666,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV10uniqueKeys6valuesACyxq_Gqd___qd_0_tc7ElementQyd__RszAGQyd_0_Rs_STRd__STRd_0_r0_lufc6ValuesL_qd_0_mfp",
       "text" : "Values"
     },
     {

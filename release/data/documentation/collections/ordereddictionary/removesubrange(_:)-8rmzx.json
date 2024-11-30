@@ -80,7 +80,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV14removeSubrangeyyqd__SXRd__Si5BoundRtd__lF1RL_qd__mfp",
         "text" : "R"
       },
       {
@@ -90,7 +89,10 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections",
+        "relatedModules" : [
+          "OrderedCollections"
+        ]
       }
     ],
     "role" : "symbol",
@@ -159,7 +161,6 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV14removeSubrangeyyqd__SXRd__Si5BoundRtd__lF1RL_qd__mfp",
               "text" : "R"
             },
             {
@@ -420,7 +421,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV14removeSubrangeyyqd__SXRd__Si5BoundRtd__lF1RL_qd__mfp",
       "text" : "R"
     },
     {

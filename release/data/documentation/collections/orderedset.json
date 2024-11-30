@@ -35,7 +35,7 @@
     ],
     "modules" : [
       {
-        "name" : "OrderedCollections"
+        "name" : "Collections"
       }
     ],
     "navigatorTitle" : [
@@ -2374,7 +2374,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2497,7 +2496,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV6append10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -2579,16 +2577,28 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
       "kind" : "text",
-      "text" : ">) -> `Self`"
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : "?"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">?"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/applying(_:)",
@@ -2664,7 +2674,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2770,11 +2779,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -2787,7 +2809,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2860,7 +2881,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -2957,7 +2977,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -3039,6 +3058,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
       "text" : "UnorderedView"
     },
@@ -3108,11 +3144,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/formIntersection(_:)-43o1u",
@@ -3188,7 +3237,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV16formIntersectionyyqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3266,6 +3314,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -3358,7 +3423,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV23formSymmetricDifferenceyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3435,11 +3499,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/formSymmetricDifference(_:)-96csi",
@@ -3504,6 +3581,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -3588,7 +3682,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV9formUnionyyqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -3657,11 +3750,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/formUnion(_:)-6pksr",
@@ -3794,7 +3900,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -3803,7 +3908,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetVyACyxGSD4KeysVyxqd___Gclufc5ValueL_qd__mfp",
       "text" : "Value"
     },
     {
@@ -3885,7 +3989,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetVyACyxGqd__c7ElementQyd__RszSkRd__lufc1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -3958,7 +4061,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetVyACyxGqd__c7ElementQyd__RszSTRd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4035,11 +4137,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/init(_:)-68j7",
@@ -4104,6 +4219,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -4189,7 +4321,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -4251,6 +4382,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -4441,7 +4589,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV23uncheckedUniqueElementsACyxGqd___tc7ElementQyd__RszSTRd__lufc1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4522,7 +4669,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -4650,11 +4796,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -4763,7 +4922,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV12intersectionyACyxGqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -4866,6 +5024,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -4975,6 +5150,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
       "text" : "UnorderedView"
     },
@@ -5078,7 +5270,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -5168,11 +5359,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -5269,7 +5473,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV10isDisjoint4withSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -5371,7 +5574,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV14isStrictSubset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -5474,7 +5676,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -5564,11 +5765,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -5654,6 +5868,23 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5748,6 +5979,23 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -5853,7 +6101,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV16isStrictSuperset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -5943,11 +6190,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -6045,7 +6305,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -6136,6 +6395,23 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -6242,7 +6518,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -6344,7 +6619,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV8isSubset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -6434,11 +6708,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -6524,6 +6811,23 @@
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -6617,11 +6921,24 @@
     },
     {
       "kind" : "text",
-      "text" : ": `Self`"
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -6718,7 +7035,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV10isSuperset2ofSbqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -6810,7 +7126,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -6912,7 +7227,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -7010,7 +7324,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -7113,7 +7426,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -7122,7 +7434,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -7208,15 +7519,27 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> `Self`"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementa",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "text" : "Element"
     }
   ],
@@ -7374,7 +7697,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -7468,7 +7790,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     }
   ],
@@ -7618,7 +7939,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     }
   ],
@@ -7858,7 +8178,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV14removeSubrangeyyqd__SXRd__Si5BoundRtd__lF1RL_qd__mfp",
       "text" : "R"
     },
     {
@@ -8164,7 +8483,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7shuffle5usingyqd__z_tSGRd__lF1TL_qd__mfp",
       "text" : "T"
     },
     {
@@ -8325,7 +8643,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -8334,7 +8651,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -8424,11 +8740,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">)"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet\/subtract(_:)-3b6nj",
@@ -8493,6 +8822,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -8577,7 +8923,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV8subtractyyqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -8666,7 +9011,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV11subtractingyACyxGqd__7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -8760,11 +9104,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -8854,6 +9211,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -9037,11 +9411,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -9135,6 +9522,23 @@
     {
       "kind" : "text",
       "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -9248,7 +9652,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV19symmetricDifferenceyACyxGqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -9346,7 +9749,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV5unionyACyxGqd__n7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {
@@ -9436,6 +9838,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
       "text" : "UnorderedView"
     },
@@ -9522,11 +9941,24 @@
     },
     {
       "kind" : "text",
-      "text" : "(`Self`"
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
     },
     {
       "kind" : "text",
-      "text" : ") -> "
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -9623,6 +10055,23 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18OrderedCollections0A3SetV",
+      "text" : "OrderedSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:18OrderedCollections0A3SetV13UnorderedViewV",
       "text" : "UnorderedView"
     }
@@ -9700,7 +10149,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -9726,7 +10174,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     }
   ],
@@ -9803,7 +10250,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -9812,7 +10258,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -9901,7 +10346,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -9931,7 +10375,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A3SetV7Elementxmfp",
       "text" : "Element"
     },
     {

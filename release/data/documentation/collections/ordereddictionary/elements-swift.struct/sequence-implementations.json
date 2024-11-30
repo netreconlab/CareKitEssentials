@@ -188,10 +188,7 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary/Elements-swift.struct/Element": {
   "abstract" : [
-    {
-      "text" : "The element type of the collection.",
-      "type" : "text"
-    }
+
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -1321,7 +1318,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV3Keyxmfp",
       "text" : "Key"
     },
     {
@@ -1330,7 +1326,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18OrderedCollections0A10DictionaryV8ElementsV5Valueq_mfp",
       "text" : "Value"
     },
     {
