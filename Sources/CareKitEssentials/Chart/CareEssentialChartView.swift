@@ -14,9 +14,9 @@ import Foundation
 import os.log
 import SwiftUI
 
-struct CareEssentialChartView: CareKitEssentialView {
+public struct CareEssentialChartView: CareKitEssentialView {
 
-    @Environment(\.careStore) var careStore
+    @Environment(\.careStore) public var careStore
     @CareStoreFetchRequest(query: query()) private var events
 
     let title: String
@@ -26,7 +26,7 @@ struct CareEssentialChartView: CareKitEssentialView {
     let configurations: [CKEDataSeriesConfiguration]
     let paddingSize = 15.0
 
-    var body: some View {
+    public var body: some View {
 
         let dataSeries = graphDataForEvents(events)
         CardView {
@@ -72,6 +72,20 @@ struct CareEssentialChartView: CareKitEssentialView {
         }.onAppear {
             updateQuery()
         }
+    }
+
+    public init(
+        title: String,
+        subtitle: String,
+        dateInterval: DateInterval,
+        period: Calendar.Component,
+        configurations: [CKEDataSeriesConfiguration]
+    ) {
+        self.title = title
+        self.subtitle = subtitle
+        self.dateInterval = dateInterval
+        self.period = period
+        self.configurations = configurations
     }
 
     func updateQuery() {
