@@ -91,7 +91,7 @@ public struct ScheduleUtility {
             let datesAreToday = Calendar.current.isDateInToday(start)
             return !datesAreToday ? loc("ON") + " " + "\(label(for: start))" : nil
         }
-        return loc("FROM") + " \(label(for: start))"  + loc("TO") + " \(label(for: end))"
+        return loc("FROM") + " \(label(for: start)) " + loc("TO") + " \(label(for: end))"
     }
 
     private static func label(for date: Date) -> String {
