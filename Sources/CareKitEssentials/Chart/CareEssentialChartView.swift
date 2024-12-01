@@ -67,6 +67,9 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 .chartYAxis {
                     AxisMarks(position: .leading)
                 }
+                .chartForegroundStyleScale { (_: String) in
+                    .clear
+                }
                 .padding()
             }
         }.onAppear {
