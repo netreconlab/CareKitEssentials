@@ -10,7 +10,7 @@ import Foundation
 
 struct TemporalTaskProgress<Progress> {
 
-    var taskID: String
+    var id: String
     var progressPerDates: [TemporalProgress<Progress>]
 }
 

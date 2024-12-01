@@ -74,6 +74,13 @@ public struct CareEssentialChartView: CareKitEssentialView {
         }
     }
 
+    static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
+        eventQuery(
+            with: taskIDs ?? [],
+            on: .init()
+        )
+    }
+
     public init(
         title: String,
         subtitle: String,
@@ -88,36 +95,21 @@ public struct CareEssentialChartView: CareKitEssentialView {
         self.configurations = configurations
     }
 
-    func updateQuery() {
+    private func updateQuery() {
         var query = OCKEventQuery(dateInterval: dateInterval)
         query.taskIDs = configurations.map(\.taskID)
         events.query = query
     }
 
-    static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
-        eventQuery(
-            with: [""],
-            on: .init()
-        )
-    }
-
-    private static func computeProgress(
+    private func computeProgress(
         for event: OCKAnyEvent,
-        configurations: [CKEDataSeriesConfiguration]
+        configuration: CKEDataSeriesConfiguration
     ) -> LinearCareTaskProgress {
-
-        let computeProgress = configurations
-            .first { $0.taskID == event.task.id }?
-            .computeProgress
-
-        guard let computeProgress else {
-            return event.computeProgress(by: .summingOutcomeValues)
-        }
-
-        return computeProgress(event)
+        configuration
+            .computeProgress(event)
     }
 
-    private static func dataSeries(
+    private func computeDataSeries(
         forProgress allProgress: [TemporalProgress<LinearCareTaskProgress>],
         progressLabels: [String],
         configuration: CKEDataSeriesConfiguration
@@ -156,7 +148,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
     }
 
     // BAKER: Build symbols for rest of calendar periods.
-    func calendarSymbols() -> [String] {
+    private func calendarSymbols() -> [String] {
         switch period {
         case .day:
             return Calendar.current.orderedWeekdaySymbols()
@@ -170,26 +162,46 @@ public struct CareEssentialChartView: CareKitEssentialView {
     ) -> [CKEDataSeries] {
 
         let progressLabels = calendarSymbols()
+        let eventsGroupedByTaskID = groupEventsByTaskID(events)
 
-        let progressSplitByTask = periodicProgressSplitByTask(
-            events: events,
-            per: period,
-            dateInterval: dateInterval,
-            computeProgress: { event in
-                Self.computeProgress(for: event, configurations: configurations)
+        // swiftlint:disable:next line_length
+        let progressForAllConfigurations = configurations.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
+
+            guard let events = eventsGroupedByTaskID[configuration.taskID] else {
+                let progress = TemporalTaskProgress<LinearCareTaskProgress>(
+                    id: configuration.id,
+                    progressPerDates: []
+                )
+                return progress
             }
-        )
+
+            let progress = periodicProgressForConfiguration(
+                id: configuration.id,
+                events: events,
+                per: period,
+                dateInterval: dateInterval,
+                computeProgress: { event in
+                    computeProgress(
+                        for: event,
+                        configuration: configuration
+                    )
+                }
+            )
+
+            return progress
+        }
 
         do {
             let dataSeries = try configurations.map { configuration -> CKEDataSeries in
+
                 // Iterating first through the configurations ensures the final data series order
                 // matches the order of the configurations
-                let periodicProgress = progressSplitByTask
-                    .first { $0.taskID == configuration.taskID }?
-                    .progressPerDates
+                let periodicProgress = progressForAllConfigurations
+                    .first { $0.id == configuration.id }?
+                    .progressPerDates ?? []
 
-                let dataSeries = try Self.dataSeries(
-                    forProgress: periodicProgress ?? [],
+                let dataSeries = try computeDataSeries(
+                    forProgress: periodicProgress,
                     progressLabels: progressLabels,
                     configuration: configuration
                 )
@@ -198,8 +210,11 @@ public struct CareEssentialChartView: CareKitEssentialView {
             }
 
             return dataSeries
+
         } catch {
-            print("Cannot generate data series: \(error)")
+            Logger.essentialChartView.error(
+                "Cannot generate data series: \(error)"
+            )
             return []
         }
     }
@@ -208,6 +223,15 @@ public struct CareEssentialChartView: CareKitEssentialView {
 // MARK: Periodic Progress
 extension CareEssentialChartView {
 
+    func groupEventsByTaskID(
+        _ events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>
+    ) -> [String: [OCKAnyEvent]] {
+        events.reduce(into: [String: [OCKAnyEvent]]()) {
+            let events = $0[$1.result.task.id] ?? [OCKAnyEvent]()
+            $0[$1.result.task.id] = events + [$1.result]
+        }
+    }
+
     /// Computes ordered daily progress for each day in the provided interval.
     /// The progress for each day will be split by task.
     /// Days with no events will have a nil progress value.
@@ -215,36 +239,30 @@ extension CareEssentialChartView {
     ///   - events: Used to fetch the event data.
     ///   - dateInterval: Progress will be computed for each day in the interval.
     ///   - computeProgress: Used to compute progress for an event.
-    func periodicProgressSplitByTask<Progress>(
-        events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>,
+    func periodicProgressForConfiguration<Progress>(
+        id: String,
+        events: [OCKAnyEvent],
         per component: Calendar.Component,
         dateInterval: DateInterval,
         computeProgress: @escaping (OCKAnyEvent) -> Progress
-    ) -> [TemporalTaskProgress<Progress>] {
+    ) -> TemporalTaskProgress<Progress> {
 
-        // Group the events by task
-        let eventsGroupedByTask = events.reduce(into: [String: [OCKAnyEvent]]()) {
-            let events = $0[$1.result.task.id] ?? [OCKAnyEvent]()
-            $0[$1.result.task.id] = events + [$1.result]
-        }
+        let progressPerDays = periodicProgress(
+            for: events,
+            per: component,
+            dateInterval: dateInterval,
+            computeProgress: computeProgress
+        )
 
-        // Compute the progress for each task
-        let progress = eventsGroupedByTask.map { taskID, events -> TemporalTaskProgress<Progress> in
+        let temporalProgress = TemporalTaskProgress(
+            id: id,
+            progressPerDates: progressPerDays
+        )
 
-            let progressPerDays = Self.periodicProgress(
-                for: events,
-                per: component,
-                dateInterval: dateInterval,
-                computeProgress: computeProgress
-            )
-
-            return TemporalTaskProgress(taskID: taskID, progressPerDates: progressPerDays)
-        }
-
-        return progress
+        return temporalProgress
     }
 
-    private static func periodicProgress<Progress>(
+    private func periodicProgress<Progress>(
         for events: [OCKAnyEvent],
         per component: Calendar.Component,
         dateInterval: DateInterval,
@@ -297,8 +315,8 @@ extension CareEssentialChartView {
         return progressPerDay
     }
 
-    private static func uniqueDayComponents(for date: Date) -> DateComponents {
-        return Calendar.current.dateComponents(
+    private func uniqueDayComponents(for date: Date) -> DateComponents {
+        Calendar.current.dateComponents(
             [.year, .month, .day],
             from: date
         )
