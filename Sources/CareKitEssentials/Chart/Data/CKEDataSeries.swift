@@ -24,24 +24,27 @@ public struct CKEDataSeries: Equatable, Identifiable {
         case rectangle
 
         @ChartContentBuilder
-        func chartContent<ValueX, ValueY>(
+        func chartContent<ValueX, ValueY>( // swiftlint:disable:this function_parameter_count
             title: String,
             xLabel: LocalizedStringKey,
             xValue: ValueX,
             yLabel: LocalizedStringKey,
-            yValue: ValueY
+            yValue: ValueY,
+            stacking: MarkStackingMethod
         ) -> some ChartContent where ValueX: Plottable, ValueY: Plottable {
             switch self {
             case .area:
                 AreaMark(
                     x: .value(xLabel, xValue),
-                    y: .value(yLabel, yValue)
+                    y: .value(yLabel, yValue),
+                    stacking: stacking
                 )
                 .lineStyle(by: .value(title, yValue))
             case .bar:
                 BarMark(
                     x: .value(xLabel, xValue),
-                    y: .value(yLabel, yValue)
+                    y: .value(yLabel, yValue),
+                    stacking: stacking
                 )
                 .lineStyle(by: .value(title, yValue))
             case .line:
@@ -84,6 +87,9 @@ public struct CKEDataSeries: Equatable, Identifiable {
     /// Its precise interpretation may vary depending on plot type used.
     public var size: CGFloat
 
+    /// The ways in which you can stack marks in a chart.
+    public var stackingMethod: MarkStackingMethod
+
     var dataPoints: [CKEPoint]
 
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single
@@ -100,7 +106,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
         dataPoints: [CKEPoint],
         title: String,
         size: CGFloat = 10,
-        color: Color? = nil
+        color: Color? = nil,
+        stackingMethod: MarkStackingMethod = .standard
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -108,6 +115,7 @@ public struct CKEDataSeries: Equatable, Identifiable {
         self.gradientStartColor = color
         self.gradientEndColor = color
         self.size = size
+        self.stackingMethod = stackingMethod
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -127,7 +135,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
         title: String,
         gradientStartColor: Color,
         gradientEndColor: Color,
-        size: CGFloat = 10
+        size: CGFloat = 10,
+        stackingMethod: MarkStackingMethod = .standard
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -135,6 +144,7 @@ public struct CKEDataSeries: Equatable, Identifiable {
         self.size = size
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
+        self.stackingMethod = stackingMethod
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -157,7 +167,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
         accessibilityValues: [String]? = nil,
         title: String,
         size: CGFloat = 10,
-        color: Color? = nil
+        color: Color? = nil,
+        stackingMethod: MarkStackingMethod = .standard
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
@@ -178,6 +189,7 @@ public struct CKEDataSeries: Equatable, Identifiable {
         self.size = size
         self.gradientStartColor = color
         self.gradientEndColor = color
+        self.stackingMethod = stackingMethod
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -202,7 +214,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
         title: String,
         gradientStartColor: Color,
         gradientEndColor: Color,
-        size: CGFloat = 10
+        size: CGFloat = 10,
+        stackingMethod: MarkStackingMethod = .standard
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
@@ -223,6 +236,7 @@ public struct CKEDataSeries: Equatable, Identifiable {
         self.size = size
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
+        self.stackingMethod = stackingMethod
     }
 
     static func weekDayCalculation(from date: Date) -> String {
