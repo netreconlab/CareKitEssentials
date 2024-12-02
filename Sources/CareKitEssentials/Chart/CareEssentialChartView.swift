@@ -36,6 +36,8 @@ public struct CareEssentialChartView: CareKitEssentialView {
                     title: title,
                     subtitle: subtitle
                 )
+                .padding(.bottom)
+
                 ChartEssentialChartBodyView(
                     dataSeries: dataSeries
                 )

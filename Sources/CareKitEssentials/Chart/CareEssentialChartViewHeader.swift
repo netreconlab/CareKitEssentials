@@ -19,7 +19,6 @@ struct CareEssentialChartViewHeader: View {
             Text(subtitle)
                 .font(.caption)
         }
-        .padding([.top, .leading])
     }
 }
 
