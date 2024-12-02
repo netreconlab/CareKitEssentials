@@ -24,6 +24,7 @@ struct ChartEssentialChartBodyView: View {
             )
             ForEach(data.dataPoints) { point in
                 data.mark.chartContent(
+                    title: data.title,
                     xLabel: "Date",
                     xValue: String(point.x.prefix(3)),
                     yLabel: "Value",

@@ -25,6 +25,7 @@ public struct CKEDataSeries: Equatable, Identifiable {
 
         @ChartContentBuilder
         func chartContent<ValueX, ValueY>(
+            title: String,
             xLabel: LocalizedStringKey,
             xValue: ValueX,
             yLabel: LocalizedStringKey,
@@ -36,26 +37,31 @@ public struct CKEDataSeries: Equatable, Identifiable {
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
+                .lineStyle(by: .value(title, yValue))
             case .bar:
                 BarMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
+                .lineStyle(by: .value(title, yValue))
             case .line:
                 LineMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
+                .lineStyle(by: .value(title, yValue))
             case .point:
                 PointMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
+                .lineStyle(by: .value(title, yValue))
             case .rectangle:
                 RectangleMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
+                .lineStyle(by: .value(title, yValue))
             }
         }
     }
