@@ -47,6 +47,7 @@ struct ChartEssentialChartBodyView: View {
                 )
             )
             .foregroundStyle(by: .value("Task", data.title))
+            .position(by: .value("Task", data.title))
         }
         .chartXAxis {
             AxisMarks(stroke: StrokeStyle(lineWidth: 0))
