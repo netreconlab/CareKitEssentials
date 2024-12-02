@@ -28,7 +28,7 @@ public struct CKEDataSeriesConfiguration: Identifiable {
 
     /// The color that will be used for data series in the legend.
     /// If `color` is not specified, is not specified, default colors will be assigned.
-    public var color: Color?
+    public var color: Color
 
     /// The first of two colors that will be used in the gradient when plotting the data.
     public var gradientStartColor: Color?
@@ -69,7 +69,7 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         taskID: String,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
-        color: Color? = nil,
+        color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,

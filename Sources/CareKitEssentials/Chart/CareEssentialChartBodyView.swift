@@ -33,24 +33,21 @@ struct CareEssentialChartBodyView: View {
                     )
                 )
             }
-            .if(data.color != nil) { chartContent in
-                chartContent
-                    .foregroundStyle(data.color!)
-            } /*
+            .foregroundStyle(data.color)
             .if(data.gradientStartColor != nil) { chartContent in
                 chartContent.foregroundStyle(
                     .linearGradient(
                         Gradient(
                             colors: [
                                 data.gradientStartColor!,
-                                data.color ?? .accentColor
+                                data.color
                            ]
                         ),
                         startPoint: .bottom,
                         endPoint: .top
                     )
                 )
-            } */
+            }
             .foregroundStyle(by: .value("Data Series", data.title))
             .position(by: .value("Data Series", data.title))
         }
@@ -59,10 +56,10 @@ struct CareEssentialChartBodyView: View {
         }
         .chartYAxis {
             AxisMarks(position: .leading)
-        } /*
+        }
         .chartForegroundStyleScale { (name: String) in
             legendColors[name] ?? .clear
-        } */
+        }
         .onAppear {
             let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
                 colors[series.title] = series.color

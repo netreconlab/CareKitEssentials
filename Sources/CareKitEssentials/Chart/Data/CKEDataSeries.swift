@@ -84,9 +84,9 @@ public struct CKEDataSeries: Identifiable {
     public var title: String
 
     /// The color that will be used for data series in the legend.
-    /// If `gradientEndColor` is not specified, it will also be used as the color
+    /// If `gradientStartColor` is not specified, it will also be used as the color
     /// of the data.
-    public var color: Color?
+    public var color: Color
 
     /// The start color of the gradient this data series will be plotted in.
     public var gradientStartColor: Color?
@@ -119,7 +119,7 @@ public struct CKEDataSeries: Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
-        color: Color? = nil,
+        color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -150,7 +150,7 @@ public struct CKEDataSeries: Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
-        color: Color? = nil,
+        color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -187,7 +187,7 @@ public struct CKEDataSeries: Identifiable {
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
-        color: Color? = nil,
+        color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -236,7 +236,7 @@ public struct CKEDataSeries: Identifiable {
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
-        color: Color? = nil,
+        color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
