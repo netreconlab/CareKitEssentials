@@ -55,7 +55,7 @@ struct ChartEssentialChartBodyView: View {
         }
         .onAppear {
             let newColors = dataSeries.reduce(into: [String: Color]()) { legendColors, series in
-                legendColors[series.id] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
+                legendColors[series.title] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
             }
             colors = newColors
         }
