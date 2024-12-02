@@ -113,6 +113,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
             mark: configuration.mark,
             dataPoints: summedProgressPoints,
             title: configuration.legendTitle,
+            color: configuration.color,
             gradientStartColor: configuration.gradientStartColor,
             width: configuration.width,
             height: configuration.height,

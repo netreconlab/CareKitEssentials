@@ -27,8 +27,7 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     public var legendTitle: String
 
     /// The color that will be used for data series in the legend.
-    /// If `gradientEndColor` is not specified, it will also be used as the color
-    /// of the data.
+    /// If `color` is not specified, is not specified, default colors will be assigned.
     public var color: Color?
 
     /// The first of two colors that will be used in the gradient when plotting the data.
@@ -59,8 +58,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - taskID: A user-provided unique id for a task.
     ///   - mark: The type of mark to display for this configuration.
     ///   - legendTitle: The title that will be used to represent this data series in the legend.
-    ///   - color: The color that will be used for data series in the legend. If `gradientEndColor`
-    ///   is not specified, it will also be used as the color of the data.
+    ///   - color: The color that will be used for data series in the legend. If `color`
+    ///   is not specified, default colors will be assigned.
     ///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
     ///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
@@ -70,8 +69,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         taskID: String,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
-        color: Color?,
-        gradientStartColor: Color?,
+        color: Color? = nil,
+        gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
