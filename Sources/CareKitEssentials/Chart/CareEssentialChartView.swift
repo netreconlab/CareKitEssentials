@@ -113,7 +113,9 @@ public struct CareEssentialChartView: CareKitEssentialView {
             title: configuration.legendTitle,
             gradientStartColor: configuration.gradientStartColor,
             gradientEndColor: configuration.gradientEndColor,
-            size: configuration.markerSize
+            width: configuration.width,
+            height: configuration.height,
+            stackingMethod: configuration.stackingMethod
         )
 
         return series
@@ -302,8 +304,7 @@ extension CareEssentialChartView {
         mark: .bar,
         legendTitle: "Bar",
         gradientStartColor: .gray,
-        gradientEndColor: .red,
-        markerSize: 2
+        gradientEndColor: .red
     )
     let previewStore = Utility.createPreviewStore()
 

@@ -29,6 +29,8 @@ struct ChartEssentialChartBodyView: View {
                     xValue: String(point.x.prefix(3)),
                     yLabel: "Value",
                     yValue: point.y,
+                    width: data.width,
+                    height: data.height,
                     stacking: data.stackingMethod
                 )
                 .accessibilityValue(

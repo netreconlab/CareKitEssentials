@@ -13,7 +13,7 @@ import SwiftUI
 
 /// Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
-public struct CKEDataSeries: Equatable, Identifiable {
+public struct CKEDataSeries: Identifiable {
 
     /// An enumerator specifying the types of marks this chart can display.
     public enum MarkType: String, CaseIterable {
@@ -30,6 +30,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
             xValue: ValueX,
             yLabel: LocalizedStringKey,
             yValue: ValueY,
+            width: MarkDimension,
+            height: MarkDimension,
             stacking: MarkStackingMethod
         ) -> some ChartContent where ValueX: Plottable, ValueY: Plottable {
             switch self {
@@ -44,6 +46,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
                 BarMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue),
+                    width: width,
+                    height: height,
                     stacking: stacking
                 )
                 .lineStyle(by: .value(title, yValue))
@@ -62,7 +66,9 @@ public struct CKEDataSeries: Equatable, Identifiable {
             case .rectangle:
                 RectangleMark(
                     x: .value(xLabel, xValue),
-                    y: .value(yLabel, yValue)
+                    y: .value(yLabel, yValue),
+                    width: width,
+                    height: height
                 )
                 .lineStyle(by: .value(title, yValue))
             }
@@ -85,7 +91,11 @@ public struct CKEDataSeries: Equatable, Identifiable {
 
     /// A size specifying how large this data series should appear on the plot.
     /// Its precise interpretation may vary depending on plot type used.
-    public var size: CGFloat
+    public var width: MarkDimension
+
+    /// A size specifying how large this data series should appear on the plot.
+    /// Its precise interpretation may vary depending on plot type used.
+    public var height: MarkDimension
 
     /// The ways in which you can stack marks in a chart.
     public var stackingMethod: MarkStackingMethod
@@ -105,8 +115,9 @@ public struct CKEDataSeries: Equatable, Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
-        size: CGFloat = 10,
         color: Color? = nil,
+        width: MarkDimension = .automatic,
+        height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
     ) {
         self.mark = mark
@@ -114,8 +125,9 @@ public struct CKEDataSeries: Equatable, Identifiable {
         self.title = title
         self.gradientStartColor = color
         self.gradientEndColor = color
-        self.size = size
         self.stackingMethod = stackingMethod
+        self.width = width
+        self.height = height
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -135,16 +147,18 @@ public struct CKEDataSeries: Equatable, Identifiable {
         title: String,
         gradientStartColor: Color,
         gradientEndColor: Color,
-        size: CGFloat = 10,
+        width: MarkDimension = .automatic,
+        height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
         self.title = title
-        self.size = size
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod
+        self.width = width
+        self.height = height
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -166,8 +180,9 @@ public struct CKEDataSeries: Equatable, Identifiable {
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
-        size: CGFloat = 10,
         color: Color? = nil,
+        width: MarkDimension = .automatic,
+        height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
     ) throws {
         if let accessibilityValues = accessibilityValues {
@@ -186,10 +201,11 @@ public struct CKEDataSeries: Equatable, Identifiable {
             )
         }
         self.title = title
-        self.size = size
         self.gradientStartColor = color
         self.gradientEndColor = color
         self.stackingMethod = stackingMethod
+        self.width = width
+        self.height = height
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -214,7 +230,8 @@ public struct CKEDataSeries: Equatable, Identifiable {
         title: String,
         gradientStartColor: Color,
         gradientEndColor: Color,
-        size: CGFloat = 10,
+        width: MarkDimension = .automatic,
+        height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
     ) throws {
         if let accessibilityValues = accessibilityValues {
@@ -233,10 +250,11 @@ public struct CKEDataSeries: Equatable, Identifiable {
             )
         }
         self.title = title
-        self.size = size
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod
+        self.width = width
+        self.height = height
     }
 
     static func weekDayCalculation(from date: Date) -> String {

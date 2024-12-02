@@ -8,6 +8,7 @@
 
 import CareKitStore
 import SwiftUI
+import Charts
 
 /// A configuration object that specifies which data should be queried and how it should be displayed by the graph.
 public struct CKEDataSeriesConfiguration: Identifiable {
@@ -31,12 +32,22 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     /// The second of two colors that will be used in the gradient when plotting the data.
     public var gradientEndColor: Color
 
-    /// The marker size determines the size of the line, bar, or scatter plot elements.
+    /// The width determines the size of the line, bar, or scatter plot elements.
     /// The precise behavior is different for each type of plot.
     /// - For line plots, it will be the width of the line.
     /// - For scatter plots, it will be the radius of the markers.
     /// - For bar plots, it will be the width of the bar.
-    public var markerSize: CGFloat
+    public var width: MarkDimension
+
+    /// The height determines the size of the line, bar, or scatter plot elements.
+    /// The precise behavior is different for each type of plot.
+    /// - For line plots, it will be the width of the line.
+    /// - For scatter plots, it will be the radius of the markers.
+    /// - For bar plots, it will be the width of the bar.
+    public var height: MarkDimension
+
+    /// The ways in which you can stack marks in a chart.
+    public var stackingMethod: MarkStackingMethod
 
     let computeProgress: (OCKAnyEvent) -> LinearCareTaskProgress
 
@@ -49,6 +60,7 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
     ///   - gradientEndColor: The second of two colors that will be used in the gradient when plotting the data.
     ///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
+    ///   - stackingMethod: The ways in which you can stack marks in a chart.
     ///   The precise behavior varies by plot type.
     ///   - computeProgress: Used to compute progress for an event.
     public init(
@@ -57,7 +69,9 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         legendTitle: String,
         gradientStartColor: Color,
         gradientEndColor: Color,
-        markerSize: CGFloat,
+        width: MarkDimension = .automatic,
+        height: MarkDimension = .automatic,
+        stackingMethod: MarkStackingMethod = .standard,
         computeProgress: @escaping (OCKAnyEvent) -> LinearCareTaskProgress = { event in
             event.computeProgress(by: .summingOutcomeValues)
         }
@@ -67,7 +81,9 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         self.legendTitle = legendTitle
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
-        self.markerSize = markerSize
+        self.width = width
+        self.height = height
+        self.stackingMethod = stackingMethod
         self.computeProgress = computeProgress
     }
 }
