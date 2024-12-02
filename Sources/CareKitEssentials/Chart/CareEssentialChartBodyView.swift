@@ -33,7 +33,6 @@ struct CareEssentialChartBodyView: View {
                     )
                 )
             }
-            .foregroundStyle(data.color)
             .if(data.gradientStartColor != nil) { chartContent in
                 chartContent.foregroundStyle(
                     .linearGradient(
@@ -48,6 +47,7 @@ struct CareEssentialChartBodyView: View {
                     )
                 )
             }
+            .foregroundStyle(data.color)
             .foregroundStyle(by: .value("Data Series", data.title))
             .position(by: .value("Data Series", data.title))
         }
