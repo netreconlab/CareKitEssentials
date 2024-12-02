@@ -1019,7 +1019,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -1038,7 +1038,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -1056,7 +1056,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -1075,7 +1075,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
