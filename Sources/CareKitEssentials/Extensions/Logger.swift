@@ -12,4 +12,5 @@ extension Logger {
     private static var subsystem = Bundle.main.bundleIdentifier!
 
     static let essentialView = Logger(subsystem: subsystem, category: "CareKitEssentialView")
+    static let essentialChartView = Logger(subsystem: subsystem, category: "CareKitEssentialChartView")
 }

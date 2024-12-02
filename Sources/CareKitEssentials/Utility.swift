@@ -65,19 +65,26 @@ class Utility {
     }
 
     class func createPreviewStore() -> OCKStore {
-        let store = OCKStore(name: "noStore", type: .inMemory)
+        let store = OCKStore(
+            name: "noStore",
+            type: .inMemory
+        )
         let patientId = "preview"
         Task {
             do {
                 // If patient exists, assume store is already populated
                 _ = try await store.fetchPatient(withID: patientId)
             } catch {
-                var patient = OCKPatient(id: patientId,
-                                         givenName: "Preview",
-                                         familyName: "Patient")
-                patient.birthday = Calendar.current.date(byAdding: .year,
-                                                         value: -20,
-                                                         to: Date())
+                var patient = OCKPatient(
+                    id: patientId,
+                    givenName: "Preview",
+                    familyName: "Patient"
+                )
+                patient.birthday = Calendar.current.date(
+                    byAdding: .year,
+                    value: -20,
+                    to: Date()
+                )
                 _ = try? await store.addPatient(patient)
                 try? await store.populateSampleData()
             }
