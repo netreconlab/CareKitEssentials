@@ -26,11 +26,16 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     /// The title that will be used to represent this data series in the legend.
     public var legendTitle: String
 
+    /// The color that will be used for data series in the legend.
+    /// If `gradientEndColor` is not specified, it will also be used as the color
+    /// of the data.
+    public var color: Color?
+
     /// The first of two colors that will be used in the gradient when plotting the data.
-    public var gradientStartColor: Color
+    public var gradientStartColor: Color?
 
     /// The second of two colors that will be used in the gradient when plotting the data.
-    public var gradientEndColor: Color
+    public var gradientEndColor: Color?
 
     /// The width determines the size of the line, bar, or scatter plot elements.
     /// The precise behavior is different for each type of plot.
@@ -57,6 +62,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - taskID: A user-provided unique id for a task.
     ///   - mark: The type of mark to display for this configuration.
     ///   - legendTitle: The title that will be used to represent this data series in the legend.
+    ///   - color: The color that will be used for data series in the legend. If `gradientEndColor`
+    ///   is not specified, it will also be used as the color of the data.
     ///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
     ///   - gradientEndColor: The second of two colors that will be used in the gradient when plotting the data.
     ///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
@@ -67,8 +74,9 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         taskID: String,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
-        gradientStartColor: Color,
-        gradientEndColor: Color,
+        color: Color?,
+        gradientStartColor: Color?,
+        gradientEndColor: Color?,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
@@ -79,6 +87,7 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         self.taskID = taskID
         self.mark = mark
         self.legendTitle = legendTitle
+        self.color = color
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
         self.width = width

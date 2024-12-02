@@ -32,13 +32,13 @@ public struct CareEssentialChartView: CareKitEssentialView {
 
         CardView {
             VStack(alignment: .leading) {
-                CareEssentialChartViewHeader(
+                CareEssentialChartHeaderView(
                     title: title,
                     subtitle: subtitle
                 )
                 .padding(.bottom)
 
-                ChartEssentialChartBodyView(
+                CareEssentialChartBodyView(
                     dataSeries: dataSeries
                 )
             }
@@ -305,6 +305,7 @@ extension CareEssentialChartView {
         taskID: task.id,
         mark: .bar,
         legendTitle: "Bar",
+        color: .red,
         gradientStartColor: .gray,
         gradientEndColor: .red
     )

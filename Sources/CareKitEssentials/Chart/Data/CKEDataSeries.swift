@@ -83,6 +83,11 @@ public struct CKEDataSeries: Identifiable {
     /// A title for this data series that will be displayed in the plot legend.
     public var title: String
 
+    /// The color that will be used for data series in the legend.
+    /// If `gradientEndColor` is not specified, it will also be used as the color
+    /// of the data.
+    public var color: Color?
+
     /// The start color of the gradient this data series will be plotted in.
     public var gradientStartColor: Color?
 
@@ -123,8 +128,7 @@ public struct CKEDataSeries: Identifiable {
         self.mark = mark
         self.dataPoints = dataPoints
         self.title = title
-        self.gradientStartColor = color
-        self.gradientEndColor = color
+        self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
@@ -145,8 +149,9 @@ public struct CKEDataSeries: Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
-        gradientStartColor: Color,
-        gradientEndColor: Color,
+        color: Color? = nil,
+        gradientStartColor: Color? = nil,
+        gradientEndColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -154,6 +159,7 @@ public struct CKEDataSeries: Identifiable {
         self.mark = mark
         self.dataPoints = dataPoints
         self.title = title
+        self.color = color
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod
@@ -201,8 +207,7 @@ public struct CKEDataSeries: Identifiable {
             )
         }
         self.title = title
-        self.gradientStartColor = color
-        self.gradientEndColor = color
+        self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
@@ -220,6 +225,7 @@ public struct CKEDataSeries: Identifiable {
     ///   - accessibilityValues: Used to set the accessibility labels of each of the data points. This array should
     ///   either be empty or contain the same number of elements as the data series array.
     ///   - title: A title that will be used to represent this data series in the plot legend.
+    ///   - color: The color that this data series will be plotted in.
     ///   - gradientStartColor: The start color for the gradient.
     ///   - gradientEndColor: The end color for the gradient.
     ///   - size: A size specifying how large this data series should appear on the plot.
@@ -228,8 +234,9 @@ public struct CKEDataSeries: Identifiable {
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
-        gradientStartColor: Color,
-        gradientEndColor: Color,
+        color: Color? = nil,
+        gradientStartColor: Color? = nil,
+        gradientEndColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -250,6 +257,7 @@ public struct CKEDataSeries: Identifiable {
             )
         }
         self.title = title
+        self.color = color
         self.gradientStartColor = gradientStartColor
         self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod

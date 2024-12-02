@@ -19,8 +19,9 @@
 		702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7702CFAA96B00B26710 /* CKEPoint.swift */; };
 		702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7722CFAA97500B26710 /* TemporalProgress.swift */; };
 		702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */; };
-		702FF7772CFAAF0300B26710 /* CareEssentialChartViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */; };
-		702FF7792CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */; };
+		702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */; };
+		702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */; };
+		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
 		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
 		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
 		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
@@ -124,8 +125,9 @@
 		702FF7702CFAA96B00B26710 /* CKEPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEPoint.swift; sourceTree = "<group>"; };
 		702FF7722CFAA97500B26710 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
 		702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
-		702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartViewHeader.swift; sourceTree = "<group>"; };
-		702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEssentialChartBodyView.swift; sourceTree = "<group>"; };
+		702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartHeaderView.swift; sourceTree = "<group>"; };
+		702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartBodyView.swift; sourceTree = "<group>"; };
+		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
 		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
 		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
 		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
@@ -220,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */,
-				702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */,
-				702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */,
+				702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */,
+				702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */,
 				702FF7682CFAA92000B26710 /* Data */,
 				702FF7692CFAA92A00B26710 /* Progress */,
 			);
@@ -343,6 +345,7 @@
 				OBJ_26 /* Calendar+Dates.swift */,
 				4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
+				702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */,
 				OBJ_27 /* Image.swift */,
 				OBJ_32 /* LinearCareTaskProgress+Math.swift */,
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
@@ -616,7 +619,7 @@
 				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
-				702FF7772CFAAF0300B26710 /* CareEssentialChartViewHeader.swift in Sources */,
+				702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
@@ -631,7 +634,7 @@
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				700DA9072C2A66BF00435E2C /* Logger.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
-				702FF7792CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift in Sources */,
+				702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
@@ -644,6 +647,7 @@
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				OBJ_765 /* UIImage.swift in Sources */,
+				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */,

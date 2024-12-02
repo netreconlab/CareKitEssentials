@@ -1,5 +1,5 @@
 //
-//  ChartEssentialChartBodyView.swift
+//  CareEssentialChartBodyView.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 12/1/24.
@@ -9,19 +9,13 @@
 import Charts
 import SwiftUI
 
-struct ChartEssentialChartBodyView: View {
+struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
     @State var legendColors = [String: Color]()
 
     var body: some View {
         Chart(dataSeries) { data in
-            let gradient = Gradient(
-                colors: [
-                    data.gradientStartColor ?? .accentColor,
-                    data.gradientEndColor ?? .accentColor
-                ]
-            )
             ForEach(data.dataPoints) { point in
                 data.mark.chartContent(
                     title: data.title,
@@ -39,28 +33,40 @@ struct ChartEssentialChartBodyView: View {
                     )
                 )
             }
-            .foregroundStyle(
-                .linearGradient(
-                    gradient,
-                    startPoint: .bottom,
-                    endPoint: .top
+            .if(data.color != nil) { chartContent in
+                chartContent
+                    .foregroundStyle(data.color!)
+            }
+            .if(data.gradientEndColor != nil) { chartContent in
+                chartContent.foregroundStyle(
+                    .linearGradient(
+                        Gradient(
+                           colors: [
+                               data.gradientStartColor ?? data.gradientEndColor!,
+                               data.gradientEndColor!
+                           ]
+
+                        ),
+                        startPoint: .bottom,
+                        endPoint: .top
+                    )
                 )
-            )
-            .foregroundStyle(by: .value("Task", data.title))
-            .position(by: .value("Task", data.title))
+            }
+            .foregroundStyle(by: .value("Data Series", data.title))
+            .position(by: .value("Data Series", data.title))
         }
         .chartXAxis {
             AxisMarks(stroke: StrokeStyle(lineWidth: 0))
         }
         .chartYAxis {
             AxisMarks(position: .leading)
-        }
+        } /*
         .chartForegroundStyleScale { (name: String) in
             legendColors[name] ?? .clear
-        }
+        } */
         .onAppear {
             let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
-                colors[series.title] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
+                colors[series.title] = series.gradientEndColor ?? series.color
             }
             legendColors = updatedLegendColors
         }
