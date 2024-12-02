@@ -12,6 +12,7 @@ import SwiftUI
 struct ChartEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
+    let colors: [String: Color]
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -48,6 +49,9 @@ struct ChartEssentialChartBodyView: View {
         }
         .chartYAxis {
             AxisMarks(position: .leading)
+        }
+        .chartForegroundStyleScale { (name: String) in
+            colors[name] ?? .clear
         }
     }
 }

@@ -29,6 +29,8 @@ public struct CareEssentialChartView: CareKitEssentialView {
     public var body: some View {
 
         let dataSeries = graphDataForEvents(events)
+        let colors = getDataSeriesColors(dataSeries)
+
         CardView {
             VStack(alignment: .leading) {
                 CareEssentialChartViewHeader(
@@ -36,7 +38,8 @@ public struct CareEssentialChartView: CareKitEssentialView {
                     subtitle: subtitle
                 )
                 ChartEssentialChartBodyView(
-                    dataSeries: dataSeries
+                    dataSeries: dataSeries,
+                    colors: colors
                 )
             }
             .padding()
@@ -72,16 +75,11 @@ public struct CareEssentialChartView: CareKitEssentialView {
         events.query = query
     }
 
-    private func getDataSeriesGradiantColors(
+    private func getDataSeriesColors(
         _ dataSeries: [CKEDataSeries]
-    ) -> [String: Gradient] {
-        dataSeries.reduce(into: [String: Gradient]()) { legendColors, series in
-            legendColors[series.id] = Gradient(
-                colors: [
-                    series.gradientStartColor ?? .accentColor,
-                    series.gradientEndColor ?? .accentColor
-                ]
-            )
+    ) -> [String: Color] {
+        dataSeries.reduce(into: [String: Color]()) { legendColors, series in
+            legendColors[series.id] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
         }
     }
 
