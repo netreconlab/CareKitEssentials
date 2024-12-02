@@ -35,43 +35,11 @@ public struct CareEssentialChartView: CareKitEssentialView {
                     title: title,
                     subtitle: subtitle
                 )
-
-                Chart(dataSeries) { data in
-                    let gradient = Gradient(
-                        colors: [
-                            data.gradientStartColor ?? .accentColor,
-                            data.gradientEndColor ?? .accentColor
-                        ]
-                    )
-                    ForEach(data.dataPoints) { point in
-                        data.mark.chartContent(
-                            xLabel: "Date",
-                            xValue: String(point.x.prefix(3)),
-                            yLabel: "Value",
-                            yValue: point.y
-                        )
-                        .accessibilityValue(Text(point.accessibilityValue ?? ""))
-                    }
-                    .foregroundStyle(
-                        .linearGradient(
-                            gradient,
-                            startPoint: .bottom,
-                            endPoint: .top
-                        )
-                    )
-                    .foregroundStyle(by: .value("Task", data.title))
-                }
-                .chartXAxis {
-                    AxisMarks(stroke: StrokeStyle(lineWidth: 0))
-                }
-                .chartYAxis {
-                    AxisMarks(position: .leading)
-                }
-                .chartForegroundStyleScale { (_: String) in
-                    .clear
-                }
-                .padding()
+                ChartEssentialChartBodyView(
+                    dataSeries: dataSeries
+                )
             }
+            .padding()
         }.onAppear {
             updateQuery()
         }
@@ -102,6 +70,19 @@ public struct CareEssentialChartView: CareKitEssentialView {
         var query = OCKEventQuery(dateInterval: dateInterval)
         query.taskIDs = configurations.map(\.taskID)
         events.query = query
+    }
+
+    private func getDataSeriesGradiantColors(
+        _ dataSeries: [CKEDataSeries]
+    ) -> [String: Gradient] {
+        dataSeries.reduce(into: [String: Gradient]()) { legendColors, series in
+            legendColors[series.id] = Gradient(
+                colors: [
+                    series.gradientStartColor ?? .accentColor,
+                    series.gradientEndColor ?? .accentColor
+                ]
+            )
+        }
     }
 
     private func computeProgress(

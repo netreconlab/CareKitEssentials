@@ -20,6 +20,7 @@
 		702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7722CFAA97500B26710 /* TemporalProgress.swift */; };
 		702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */; };
 		702FF7772CFAAF0300B26710 /* CareEssentialChartViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */; };
+		702FF7792CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */; };
 		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
 		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
 		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
@@ -124,6 +125,7 @@
 		702FF7722CFAA97500B26710 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
 		702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
 		702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartViewHeader.swift; sourceTree = "<group>"; };
+		702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEssentialChartBodyView.swift; sourceTree = "<group>"; };
 		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
 		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
 		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */,
+				702FF7782CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift */,
 				702FF7762CFAAF0300B26710 /* CareEssentialChartViewHeader.swift */,
 				702FF7682CFAA92000B26710 /* Data */,
 				702FF7692CFAA92A00B26710 /* Progress */,
@@ -628,6 +631,7 @@
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				700DA9072C2A66BF00435E2C /* Logger.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
+				702FF7792CFCFEBD00B26710 /* ChartEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
