@@ -73,14 +73,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
         events.query = query
     }
 
-    private func getDataSeriesColors(
-        _ dataSeries: [CKEDataSeries]
-    ) -> [String: Color] {
-        dataSeries.reduce(into: [String: Color]()) { legendColors, series in
-            legendColors[series.id] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
-        }
-    }
-
     private func computeProgress(
         for event: OCKAnyEvent,
         configuration: CKEDataSeriesConfiguration

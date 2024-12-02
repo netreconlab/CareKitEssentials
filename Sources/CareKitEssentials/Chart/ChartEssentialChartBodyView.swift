@@ -12,7 +12,7 @@ import SwiftUI
 struct ChartEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
-    @State var colors = [String: Color]()
+    @State var legendColors = [String: Color]()
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -51,18 +51,13 @@ struct ChartEssentialChartBodyView: View {
             AxisMarks(position: .leading)
         }
         .chartForegroundStyleScale { (name: String) in
-            colors[name] ?? .clear
+            legendColors[name] ?? .clear
         }
         .onAppear {
-            let newColors = dataSeries.reduce(into: [String: Color]()) { legendColors, series in
-                legendColors[series.title] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
+            let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
+                colors[series.title] = series.gradientEndColor ?? series.gradientStartColor ?? .accentColor
             }
-            colors = newColors
+            legendColors = updatedLegendColors
         }
-    }
-
-    func getColor(_ name: String) -> Color {
-        print(name)
-        return .clear
     }
 }
