@@ -51,7 +51,7 @@ struct ChartEssentialChartBodyView: View {
             AxisMarks(position: .leading)
         }
         .chartForegroundStyleScale { (name: String) in
-            getColor(name)
+            colors[name] ?? .clear
         }
         .onAppear {
             let newColors = dataSeries.reduce(into: [String: Color]()) { legendColors, series in
