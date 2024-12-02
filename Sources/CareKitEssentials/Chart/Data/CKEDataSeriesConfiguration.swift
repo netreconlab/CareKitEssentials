@@ -34,9 +34,6 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     /// The first of two colors that will be used in the gradient when plotting the data.
     public var gradientStartColor: Color?
 
-    /// The second of two colors that will be used in the gradient when plotting the data.
-    public var gradientEndColor: Color?
-
     /// The width determines the size of the line, bar, or scatter plot elements.
     /// The precise behavior is different for each type of plot.
     /// - For line plots, it will be the width of the line.
@@ -65,7 +62,6 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - color: The color that will be used for data series in the legend. If `gradientEndColor`
     ///   is not specified, it will also be used as the color of the data.
     ///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
-    ///   - gradientEndColor: The second of two colors that will be used in the gradient when plotting the data.
     ///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
     ///   The precise behavior varies by plot type.
@@ -76,7 +72,6 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         legendTitle: String,
         color: Color?,
         gradientStartColor: Color?,
-        gradientEndColor: Color?,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
@@ -89,7 +84,6 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         self.legendTitle = legendTitle
         self.color = color
         self.gradientStartColor = gradientStartColor
-        self.gradientEndColor = gradientEndColor
         self.width = width
         self.height = height
         self.stackingMethod = stackingMethod

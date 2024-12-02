@@ -91,15 +91,12 @@ public struct CKEDataSeries: Identifiable {
     /// The start color of the gradient this data series will be plotted in.
     public var gradientStartColor: Color?
 
-    /// The end color of the gradient this data series will be plotted in.
-    public var gradientEndColor: Color?
-
-    /// A size specifying how large this data series should appear on the plot.
-    /// Its precise interpretation may vary depending on plot type used.
+    /// The dimention specifying the width at which this data series should
+    /// appear on the plot.
     public var width: MarkDimension
 
-    /// A size specifying how large this data series should appear on the plot.
-    /// Its precise interpretation may vary depending on plot type used.
+    /// The dimention specifying the height at which this data series should
+    /// appear on the plot.
     public var height: MarkDimension
 
     /// The ways in which you can stack marks in a chart.
@@ -114,8 +111,10 @@ public struct CKEDataSeries: Identifiable {
     ///   - mark: The type of mark to display for this configuration.
     ///   - dataPoints: An array of points in graph space Cartesian coordinates. The origin is in bottom left corner.
     ///   - title: A title that will be used to represent this data series in the plot legend.
-    ///   - size: A size specifying how large this data series should appear on the plot.
     ///   - color: A solid color to be used when plotting the data series.
+    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
+    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - stackingMethod: The ways in which you can stack marks in a chart.
     init(
         mark: MarkType,
         dataPoints: [CKEPoint],
@@ -142,16 +141,17 @@ public struct CKEDataSeries: Identifiable {
     ///   - mark: The type of mark to display for this configuration.
     ///   - dataPoints: An array of points in graph space Cartesian coordinates. The origin is in bottom left corner.
     ///   - title: A title that will be used to represent this data series in the plot legend.
+    ///   - color: The color that this data series will be plotted in.
     ///   - gradientStartColor: The start color for the gradient.
-    ///   - gradientEndColor: The end color for the gradient.
-    ///   - size: A size specifying how large this data series should appear on the plot.
+    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
+    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - stackingMethod: The ways in which you can stack marks in a chart.
     init(
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
         color: Color? = nil,
         gradientStartColor: Color? = nil,
-        gradientEndColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -161,7 +161,6 @@ public struct CKEDataSeries: Identifiable {
         self.title = title
         self.color = color
         self.gradientStartColor = gradientStartColor
-        self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
@@ -179,8 +178,10 @@ public struct CKEDataSeries: Identifiable {
     ///   - accessibilityValues: Used to set the accessibility labels of each of the data points. This array should
     ///   either be empty or contain the same number of elements as the data series array.
     ///   - title: A title that will be used to represent this data series in the plot legend.
-    ///   - size: A size specifying how large this data series should appear on the plot.
     ///   - color: The color that this data series will be plotted in.
+    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
+    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - stackingMethod: The ways in which you can stack marks in a chart.
     public init(
         mark: MarkType,
         values: [Double],
@@ -227,8 +228,9 @@ public struct CKEDataSeries: Identifiable {
     ///   - title: A title that will be used to represent this data series in the plot legend.
     ///   - color: The color that this data series will be plotted in.
     ///   - gradientStartColor: The start color for the gradient.
-    ///   - gradientEndColor: The end color for the gradient.
-    ///   - size: A size specifying how large this data series should appear on the plot.
+    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
+    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - stackingMethod: The ways in which you can stack marks in a chart.
     public init(
         mark: MarkType,
         values: [Double],
@@ -236,7 +238,6 @@ public struct CKEDataSeries: Identifiable {
         title: String,
         color: Color? = nil,
         gradientStartColor: Color? = nil,
-        gradientEndColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard
@@ -259,7 +260,6 @@ public struct CKEDataSeries: Identifiable {
         self.title = title
         self.color = color
         self.gradientStartColor = gradientStartColor
-        self.gradientEndColor = gradientEndColor
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height

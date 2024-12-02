@@ -114,7 +114,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
             dataPoints: summedProgressPoints,
             title: configuration.legendTitle,
             gradientStartColor: configuration.gradientStartColor,
-            gradientEndColor: configuration.gradientEndColor,
             width: configuration.width,
             height: configuration.height,
             stackingMethod: configuration.stackingMethod
@@ -306,8 +305,7 @@ extension CareEssentialChartView {
         mark: .bar,
         legendTitle: "Bar",
         color: .red,
-        gradientStartColor: .gray,
-        gradientEndColor: .red
+        gradientStartColor: .gray
     )
     let previewStore = Utility.createPreviewStore()
 
