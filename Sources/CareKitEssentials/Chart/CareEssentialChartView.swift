@@ -29,7 +29,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
     public var body: some View {
 
         let dataSeries = graphDataForEvents(events)
-        let colors = getDataSeriesColors(dataSeries)
 
         CardView {
             VStack(alignment: .leading) {
@@ -38,8 +37,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
                     subtitle: subtitle
                 )
                 ChartEssentialChartBodyView(
-                    dataSeries: dataSeries,
-                    colors: colors
+                    dataSeries: dataSeries
                 )
             }
             .padding()
