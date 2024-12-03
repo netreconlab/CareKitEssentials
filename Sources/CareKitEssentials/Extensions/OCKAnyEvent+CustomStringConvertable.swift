@@ -9,7 +9,7 @@
 import Foundation
 import CareKitStore
 
-extension OCKAnyEvent: CustomStringConvertible {
+extension OCKAnyEvent: @retroactive CustomStringConvertible {
 
     public var description: String {
         guard let task = self.task as? OCKTask,
@@ -24,7 +24,8 @@ extension OCKAnyEvent: CustomStringConvertible {
     }
 }
 
-extension OCKAnyEvent: Comparable {
+extension OCKAnyEvent: @retroactive Equatable {}
+extension OCKAnyEvent: @retroactive Comparable {
     public static func == (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
         lhs.id == rhs.id
     }

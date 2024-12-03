@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 
 env:
-  CI_XCODE_LATEST: '/Applications/Xcode_15.4.app/Contents/Developer'
+  CI_XCODE_LATEST: '/Applications/Xcode_16.1.app/Contents/Developer'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,19 +17,19 @@ concurrency:
 jobs:
   test:
     timeout-minutes: 15
-    runs-on: macos-14
+    runs-on: macos-15
     strategy:
       matrix:
-        destination: ['platform=iOS\ Simulator,OS=17.5,name=iPhone\ 15\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
+        destination: ['platform=iOS\ Simulator,OS=18.1,name=iPhone\ 16\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 10\ \(46mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,OS=2.1,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
         action: ['test', 'build']
         exclude:
-          - destination: 'platform=iOS\ Simulator,OS=17.5,name=iPhone\ 15\ Pro\ Max'
+          - destination: 'platform=iOS\ Simulator,OS=18.1,name=iPhone\ 16\ Pro\ Max'
             action: 'build'
           - destination: 'platform=macOS CODE_SIGN_IDENTITY=""'
             action: 'build'
-          - destination: 'platform=visionOS\ Simulator,OS=1.2,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""'
+          - destination: 'platform=visionOS\ Simulator,OS=2.1,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""'
             action: 'test'
-          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 9\ \(41mm\)'
+          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 10\ \(46mm\)'
             action: 'test'
     steps:
     - uses: actions/checkout@v4
@@ -48,6 +48,7 @@ jobs:
       with:
         format: lcov
         search-paths: ./DerivedData
+        ignore-conversion-failures: true
       env:
           DEVELOPER_DIR: ${{ env.CI_XCODE_LATEST }}
     - name: Upload coverage to Codecov

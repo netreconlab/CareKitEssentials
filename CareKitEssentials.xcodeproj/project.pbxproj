@@ -13,6 +13,15 @@
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
+		702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */; };
+		702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */; };
+		702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */; };
+		702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7702CFAA96B00B26710 /* CKEPoint.swift */; };
+		702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7722CFAA97500B26710 /* TemporalProgress.swift */; };
+		702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */; };
+		702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */; };
+		702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */; };
+		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
 		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
 		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
 		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
@@ -110,6 +119,15 @@
 		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
 		700DA9062C2A66BF00435E2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartView.swift; sourceTree = "<group>"; };
+		702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeries.swift; sourceTree = "<group>"; };
+		702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeriesConfiguration.swift; sourceTree = "<group>"; };
+		702FF7702CFAA96B00B26710 /* CKEPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEPoint.swift; sourceTree = "<group>"; };
+		702FF7722CFAA97500B26710 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
+		702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
+		702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartHeaderView.swift; sourceTree = "<group>"; };
+		702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartBodyView.swift; sourceTree = "<group>"; };
+		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
 		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
 		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
 		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
@@ -200,6 +218,37 @@
 			path = Mocking;
 			sourceTree = "<group>";
 		};
+		702FF7672CFAA8B300B26710 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */,
+				702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */,
+				702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */,
+				702FF7682CFAA92000B26710 /* Data */,
+				702FF7692CFAA92A00B26710 /* Progress */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		702FF7682CFAA92000B26710 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */,
+				702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */,
+				702FF7702CFAA96B00B26710 /* CKEPoint.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		702FF7692CFAA92A00B26710 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				702FF7722CFAA97500B26710 /* TemporalProgress.swift */,
+				702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
 		70BBCB452A12B8B000759A9C /* Environment */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +267,7 @@
 				OBJ_22 /* InformationHeaderView.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
+				702FF7672CFAA8B300B26710 /* Chart */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -296,6 +346,7 @@
 				OBJ_26 /* Calendar+Dates.swift */,
 				4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
+				702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */,
 				OBJ_27 /* Image.swift */,
 				OBJ_32 /* LinearCareTaskProgress+Math.swift */,
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
@@ -557,6 +608,7 @@
 				70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */,
 				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
 				4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */,
+				702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
@@ -564,18 +616,25 @@
 				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
 				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
+				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
+				702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
+				702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */,
+				702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */,
+				702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */,
 				91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */,
 				OBJ_752 /* Calendar+Dates.swift in Sources */,
 				OBJ_753 /* Image.swift in Sources */,
+				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				700DA9072C2A66BF00435E2C /* Logger.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
+				702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
@@ -588,6 +647,7 @@
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				OBJ_765 /* UIImage.swift in Sources */,
+				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */,
@@ -672,7 +732,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -689,6 +749,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -731,7 +792,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -747,6 +808,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -882,7 +944,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentials_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -904,7 +966,7 @@
 				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -921,7 +983,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentials_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
@@ -943,7 +1005,7 @@
 				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -961,7 +1023,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -980,7 +1042,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -998,7 +1060,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CareKitEssentials.xcodeproj/CareKitEssentialsTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
@@ -1017,7 +1079,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
