@@ -19,7 +19,9 @@ A number of public extensions are available to make using CareKit easier. All of
 You can create SwiftUI views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The following views are based on `CareKitEssentialView`:
 
 ### Shared
-[CareEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareEssentialChartView.swift) to create SwiftUI charts based on CareKit stored data.
+[CareEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts.
+
+<img width="342" alt="image" src="https://github.com/user-attachments/assets/ae54936e-9831-425b-8bdb-ac3421ab883a">
 
 ### iOS
 [SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
