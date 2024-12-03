@@ -267,6 +267,7 @@
 				OBJ_22 /* InformationHeaderView.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
+				702FF7672CFAA8B300B26710 /* Chart */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -433,7 +434,6 @@
 			children = (
 				911BDB312A130A2B004F8442 /* Utility.swift */,
 				OBJ_9 /* Cards */,
-				702FF7672CFAA8B300B26710 /* Chart */,
 				70BBCB452A12B8B000759A9C /* Environment */,
 				OBJ_25 /* Extensions */,
 				OBJ_40 /* Models */,
