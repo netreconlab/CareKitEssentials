@@ -41811,15 +41811,6 @@
                             "path" : "\/documentation\/orderedcollections\/orderedset\/subsequence\/subscript(_:)-8r0e1",
                             "title" : "subscript<R>(R) -> Self.SubSequence",
                             "type" : "subscript"
-                          },
-                          {
-                            "title" : "Type Aliases",
-                            "type" : "groupMarker"
-                          },
-                          {
-                            "path" : "\/documentation\/orderedcollections\/orderedset\/subsequence\/iterator",
-                            "title" : "OrderedSet.SubSequence.Iterator",
-                            "type" : "typealias"
                           }
                         ],
                         "path" : "\/documentation\/orderedcollections\/orderedset\/subsequence\/collection-implementations",
@@ -42143,6 +42134,11 @@
                           {
                             "path" : "\/documentation\/orderedcollections\/orderedset\/subsequence\/element",
                             "title" : "OrderedSet.SubSequence.Element",
+                            "type" : "typealias"
+                          },
+                          {
+                            "path" : "\/documentation\/orderedcollections\/orderedset\/subsequence\/iterator",
+                            "title" : "OrderedSet.SubSequence.Iterator",
                             "type" : "typealias"
                           }
                         ],
