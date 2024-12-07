@@ -82,9 +82,9 @@ public extension CareStoreFetchedResults where Result == OCKAnyTask {
 public extension CareStoreFetchedResults where Result == OCKAnyEvent {
 
     /// Returns the earliest results from the fetched elements.
-    /// All elements are guaranteed to be unique by their respective `id`.
+    /// All elements are guaranteed to be unique by their respective `task.id`.
     var earliest: [CareStoreFetchedResult<Result>] {
-        let resultDictionary = Dictionary(grouping: self, by: \.result.id)
+        let resultDictionary = Dictionary(grouping: self, by: \.result.task.id)
         let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
@@ -92,9 +92,9 @@ public extension CareStoreFetchedResults where Result == OCKAnyEvent {
     }
 
     /// Returns the latest results from the fetched elements.
-    /// All elements are guaranteed to be unique by their respective `id`.
+    /// All elements are guaranteed to be unique by their respective `task.id`.
     var latest: [CareStoreFetchedResult<Result>] {
-        let resultDictionary = Dictionary(grouping: self, by: \.result.id)
+        let resultDictionary = Dictionary(grouping: self, by: \.result.task.id)
         let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
