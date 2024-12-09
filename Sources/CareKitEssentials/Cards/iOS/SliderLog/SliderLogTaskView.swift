@@ -370,36 +370,39 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 
     public var body: some View {
         VStack {
-            Slider(viewModel: viewModel,
-                   minimumImage: minimumImage,
-                   maximumImage: maximumImage,
-                   minimumDescription: minimumDescription,
-                   maximumDescription: maximumDescription,
-                   style: style,
-                   gradientColors: gradientColors)
-
-            SliderLogButton(viewModel: viewModel)
+            Slider(
+                viewModel: viewModel,
+                minimumImage: minimumImage,
+                maximumImage: maximumImage,
+                minimumDescription: minimumDescription,
+                maximumDescription: maximumDescription,
+                style: style,
+                gradientColors: gradientColors
+            )
+            SliderLogButton(
+                viewModel: viewModel
+            )
         }
     }
 }
 
 struct SliderLogTaskView_Previews: PreviewProvider {
+    static let store = Utility.createPreviewStore()
+
     static var previews: some View {
-        if let event = try? Utility.createNauseaEvent() {
-            let store = Utility.createPreviewStore()
-            let viewModel = SliderLogTaskViewModel(
-                event: event,
-                range: 0...10
-            )
-            VStack {
+        VStack {
+            if let event = try? Utility.createNauseaEvent() {
+                let viewModel = SliderLogTaskViewModel(
+                    event: event,
+                    range: 0...10
+                )
                 SliderLogTaskView(
                     title: Text(event.title),
                     detail: Text(event.detail ?? ""),
                     viewModel: viewModel,
                     gradientColors: [.green, .yellow, .red]
                 )
-                .padding()
-
+                Divider()
                 SliderLogTaskView(
                     title: Text(event.title),
                     detail: Text(event.detail ?? ""),
@@ -407,11 +410,11 @@ struct SliderLogTaskView_Previews: PreviewProvider {
                     style: .system,
                     gradientColors: [.green, .yellow, .red]
                 )
-                .padding()
             }
-            .environment(\.careStore, store)
-            .careKitStyle(OCKStyle())
         }
+        .environment(\.careStore, store)
+        .careKitStyle(OCKStyle())
+        .padding()
     }
 }
 
