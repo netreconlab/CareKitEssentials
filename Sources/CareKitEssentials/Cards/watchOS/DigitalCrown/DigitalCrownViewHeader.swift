@@ -51,6 +51,7 @@ struct DigitalCrownViewHeader_Previews: PreviewProvider {
                 event: event
             )
             .environment(\.careStore, Utility.createPreviewStore())
+            .careKitStyle(OCKStyle())
         }
     }
 }

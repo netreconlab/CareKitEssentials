@@ -181,6 +181,7 @@ struct CustomLabelView_Previews: PreviewProvider {
                     .padding()
             }
             .environment(\.careStore, Utility.createPreviewStore())
+            .careKitStyle(OCKStyle())
         }
     }
 }
