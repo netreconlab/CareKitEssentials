@@ -34,7 +34,8 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
       ],
       "title" : "Structures"
     }
@@ -64,34 +65,10 @@
   "type" : "topic",
   "url" : "\/documentation\/collections"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary": {
   "abstract" : [
     {
-      "text" : "A collection implementing a double-ended queue. ",
-      "type" : "text"
-    },
-    {
-      "code" : "Deque",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " (pronounced “deck”)",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "implements an ordered random-access collection that supports efficient",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "insertions and removals from both ends.",
+      "text" : "An ordered collection of key-value pairs.",
       "type" : "text"
     }
   ],
@@ -106,21 +83,55 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Deque"
+      "text" : "OrderedDictionary"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Deque"
+      "text" : "OrderedDictionary"
     }
   ],
   "role" : "symbol",
-  "title" : "Deque",
+  "title" : "OrderedDictionary",
   "type" : "topic",
-  "url" : "\/documentation\/dequemodule\/deque"
+  "url" : "\/documentation\/orderedcollections\/ordereddictionary"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet": {
+  "abstract" : [
+    {
+      "text" : "An ordered collection of unique elements.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OrderedSet"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OrderedSet"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OrderedSet",
+  "type" : "topic",
+  "url" : "\/documentation\/orderedcollections\/orderedset"
 }
 }
 }
