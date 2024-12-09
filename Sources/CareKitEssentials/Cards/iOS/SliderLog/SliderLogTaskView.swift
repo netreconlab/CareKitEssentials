@@ -121,6 +121,8 @@ public extension SliderLogTaskView {
     ///
     /// - parameter instructions: Instructions text to display under the header.
     /// - parameter event: The data that appears in the view.
+    /// - parameter kind: An optional property that can be used to specify what kind of value this
+    /// is (e.g. blood pressure, qualitative stress, weight).
     /// - parameter detailsTitle: An optional title for the event.
     /// - parameter detailsInformation: An optional detailed information string for the event.
     /// - parameter range: The range that includes all possible values.
@@ -130,6 +132,7 @@ public extension SliderLogTaskView {
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
          event: CareStoreFetchedResult<OCKAnyEvent>,
+         kind: String? = nil,
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
          range: ClosedRange<Double>,
@@ -137,17 +140,22 @@ public extension SliderLogTaskView {
          action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
          @ViewBuilder header: () -> Header,
          @ViewBuilder slider: () -> Slider) {
-        self.init(isHeaderPadded: false,
-                  isSliderPadded: false,
-                  instructions: instructions,
-                  viewModel: .init(event: event.result,
-                                   detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   range: range,
-                                   step: step,
-                                   action: action),
-                  header: header,
-                  slider: slider)
+        self.init(
+            isHeaderPadded: false,
+            isSliderPadded: false,
+            instructions: instructions,
+            viewModel: .init(
+                event: event.result,
+                kind: kind,
+                detailsTitle: detailsTitle,
+                detailsInformation: detailsInformation,
+                range: range,
+                step: step,
+                action: action
+            ),
+            header: header,
+            slider: slider
+        )
     }
 
 }

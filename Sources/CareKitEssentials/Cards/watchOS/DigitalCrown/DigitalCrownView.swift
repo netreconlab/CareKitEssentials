@@ -137,6 +137,8 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///
     /// - Parameters:
     ///   - event: The data that appears in the view.
+    ///   - kind: An optional property that can be used to specify what kind of values the
+    ///   outcome values are (e.g. blood pressure, qualitative stress, weight).
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
     ///   - initialValue: The initial value shown for the digital crown.
@@ -149,6 +151,7 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///   - header: Short and descriptive content that identifies the event.
     init(
         event: CareStoreFetchedResult<OCKAnyEvent>,
+        kind: String? = nil,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = nil,
@@ -162,6 +165,7 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ) {
         let viewModel = DigitalCrownViewModel(
             event: event.result,
+            kind: kind,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
             initialValue: initialValue,

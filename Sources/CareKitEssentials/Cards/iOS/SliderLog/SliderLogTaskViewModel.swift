@@ -27,8 +27,6 @@ open class SliderLogTaskViewModel: CardViewModel {
     /// Value of the increment that the slider takes. Default value is 1.
     public private(set) var step: Double
 
-    var kind: String?
-
     /**
      Create an instance with specified content for an event. The view will update when changes
      occur in the store.
@@ -53,7 +51,6 @@ open class SliderLogTaskViewModel: CardViewModel {
         step: Double = 1,
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
-        self.kind = kind
         let outcomeValues = Self.filterAndSortValuesByLatest(event.outcomeValues, by: kind)
         if let values = outcomeValues {
             self.previousValues = values.compactMap { $0.doubleValue }
@@ -75,6 +72,7 @@ open class SliderLogTaskViewModel: CardViewModel {
         }
         super.init(
             event: event,
+            kind: kind,
             initialValue: currentInitialOutcome,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
@@ -82,20 +80,9 @@ open class SliderLogTaskViewModel: CardViewModel {
         )
     }
 
-    static func filterAndSortValuesByLatest(
-        _ values: [OCKOutcomeValue]?,
-        by kind: String?
-    ) -> [OCKOutcomeValue]? {
-        values?.filter { outcomeValue in
-            guard let kind else { return true }
-            return outcomeValue.kind == kind
-        }.sorted { $0.createdDate > $1.createdDate }
-    }
-
     public override func updateOutcome(_ outcome: OCKAnyOutcome) {
         super.updateOutcome(outcome)
-        let values = outcome.sortedOutcomeValuesByRecency().values
-        if let previousValues = Self.filterAndSortValuesByLatest(values, by: kind) {
+        if let previousValues = Self.filterAndSortValuesByLatest(outcome.values, by: kind) {
             self.previousValues = previousValues.compactMap(\.doubleValue)
         }
         self.isActive = false

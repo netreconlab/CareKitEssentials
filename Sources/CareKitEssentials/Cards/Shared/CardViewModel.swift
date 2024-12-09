@@ -63,6 +63,7 @@ open class CardViewModel: ObservableObject {
     /// A custom details information string to display for the task of the view model.
     public private(set) var detailsInformation: String?
 
+    var kind: String?
     var initialValue: OCKOutcomeValue
     var action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)?
 
@@ -70,12 +71,15 @@ open class CardViewModel: ObservableObject {
     /// occur in the store.
     /// - Parameters:
     ///     - event: A event to associate with the view model.
+    ///     - kind: An optional property that can be used to specify what kind of values the
+    ///   outcome values are (e.g. blood pressure, qualitative stress, weight).
     ///     - initialValue: The default outcome value for the view model. Defaults to 0.0.
     ///     - detailsTitle: An optional title for the event.
     ///     - detailsInformation: An optional detailed information string for the event.
     ///     - action: The action to take when event is completed.
     public init(
         event: OCKAnyEvent,
+        kind: String? = nil,
         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
@@ -85,7 +89,9 @@ open class CardViewModel: ObservableObject {
         if let initialValueAsDouble = initialValue.doubleValue {
             self.valueAsDouble = initialValueAsDouble
         }
-        self.value = event.outcomeFirstValue ?? initialValue
+        self.kind = kind
+        let values = Self.filterAndSortValuesByLatest(event.outcomeValues, by: kind)
+        self.value = values?.first ?? initialValue
         self.detailsTitle = detailsTitle
         self.detailsInformation = detailsInformation
         self.event = event
@@ -99,9 +105,18 @@ open class CardViewModel: ObservableObject {
     ///     - event: The current event.
     @MainActor
     public func updateOutcome(_ outcome: OCKAnyOutcome) {
-        let outcomeWithSortedValues = outcome.sortedOutcomeValuesByRecency()
-        value = outcomeWithSortedValues.values.first ?? initialValue
+        let outcomeWithSortedValues = Self.filterAndSortValuesByLatest(event.outcomeValues, by: kind)
+        value = outcomeWithSortedValues?.first ?? initialValue
         initialValue = value
     }
 
+    static func filterAndSortValuesByLatest(
+        _ values: [OCKOutcomeValue]?,
+        by kind: String?
+    ) -> [OCKOutcomeValue]? {
+        values?.filter { outcomeValue in
+            guard let kind else { return true }
+            return outcomeValue.kind == kind
+        }.sorted { $0.createdDate > $1.createdDate }
+    }
 }
