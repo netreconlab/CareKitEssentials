@@ -80,4 +80,14 @@ public extension Date {
     var isLastDayOfMonth: Bool {
         return dayAfter.month != month
     }
+    // Reference: https://stackoverflow.com/a/20158940/4639041
+    var startOfDay: Date {
+        return Calendar.current.startOfDay(for: self)
+    }
+    var endOfDay: Date {
+        var components = DateComponents()
+        components.day = 1
+        components.second = -1
+        return Calendar.current.date(byAdding: components, to: startOfDay)!
+    }
 }
