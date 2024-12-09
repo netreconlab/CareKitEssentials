@@ -410,6 +410,7 @@ struct SliderLogTaskView_Previews: PreviewProvider {
                 .padding()
             }
             .environment(\.careStore, store)
+            .careKitStyle(OCKStyle())
         }
     }
 }

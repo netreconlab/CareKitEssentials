@@ -278,6 +278,7 @@ struct DigitalCrownView_Previews: PreviewProvider {
                 )
             )
             .environment(\.careStore, Utility.createPreviewStore())
+            .careKitStyle(OCKStyle())
         }
     }
 }

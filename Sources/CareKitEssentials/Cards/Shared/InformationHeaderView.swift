@@ -6,6 +6,7 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+import CareKitUI
 import CareKitStore
 import SwiftUI
 
@@ -101,6 +102,7 @@ struct InformationHeaderView_Previews: PreviewProvider {
                 image: event.image(),
                 event: event
             )
+            .careKitStyle(OCKStyle())
         }
     }
 }
