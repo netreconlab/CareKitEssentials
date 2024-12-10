@@ -33,6 +33,7 @@ open class DigitalCrownViewModel: CardViewModel {
         return Color(red: red, green: green, blue: blue)
     }
 
+    /// Determines when the slider is disabled.
     open var isButtonDisabled: Bool {
         guard let currentDouble = value.doubleValue,
               let originalDouble = event.outcomeValueDouble else {

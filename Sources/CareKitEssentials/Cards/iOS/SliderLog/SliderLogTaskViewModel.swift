@@ -18,8 +18,14 @@ open class SliderLogTaskViewModel: CardViewModel {
     /// The binded array of previous outcome values.
     @Published public var previousValues = [Double]()
 
-    /// Specifies if the slider is allowed to be changed.
-    @Published open var isActive = true
+    /// Determines when the slider is disabled.
+    open var isButtonDisabled: Bool {
+        let currentDouble = valueAsDouble
+        guard let originalDouble = previousValues.first else {
+            return false
+        }
+        return Int(currentDouble) == Int(originalDouble)
+    }
 
     /// The range that includes all possible values.
     public private(set) var range: ClosedRange<Double>
@@ -63,12 +69,8 @@ open class SliderLogTaskViewModel: CardViewModel {
             currentInitialDoubleValue = initialValue
         }
         var currentInitialOutcome = OCKOutcomeValue(currentInitialDoubleValue)
-        if let latestOutcomeValue = outcomeValues?.first,
-           let initialOutcomeDouble = latestOutcomeValue.doubleValue {
-            if initialOutcomeDouble != currentInitialDoubleValue {
-                isActive = false
-                currentInitialOutcome = latestOutcomeValue
-            }
+        if let latestOutcomeValue = outcomeValues?.first {
+            currentInitialOutcome = latestOutcomeValue
         }
         super.init(
             event: event,
@@ -85,6 +87,5 @@ open class SliderLogTaskViewModel: CardViewModel {
         if let previousValues = Self.filterAndSortValuesByLatest(outcome.values, by: kind) {
             self.previousValues = previousValues.compactMap(\.doubleValue)
         }
-        self.isActive = false
     }
 }
