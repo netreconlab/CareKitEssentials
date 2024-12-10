@@ -24,6 +24,8 @@
 		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
 		7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */; };
 		70B49A602D06A2520023E5B3 /* SimpleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */; };
+		70B49A682D08C2470023E5B3 /* CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A672D08C2470023E5B3 /* CareStoreFetchedViewable.swift */; };
+		70B49A6A2D08C2520023E5B3 /* EventQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A692D08C2520023E5B3 /* EventQueryView.swift */; };
 		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
 		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
 		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
@@ -132,6 +134,8 @@
 		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
 		7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResults+Sequence.swift"; sourceTree = "<group>"; };
 		70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabelView.swift; sourceTree = "<group>"; };
+		70B49A672D08C2470023E5B3 /* CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchedViewable.swift; sourceTree = "<group>"; };
+		70B49A692D08C2520023E5B3 /* EventQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryView.swift; sourceTree = "<group>"; };
 		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
 		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
 		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
@@ -266,8 +270,10 @@
 			children = (
 				OBJ_23 /* CardViewModel.swift */,
 				700DA9042C2A609600435E2C /* CareKitEssentialView.swift */,
+				70B49A672D08C2470023E5B3 /* CareStoreFetchedViewable.swift */,
 				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
+				70B49A692D08C2520023E5B3 /* EventQueryView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */,
@@ -627,6 +633,7 @@
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
 				702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */,
+				70B49A682D08C2470023E5B3 /* CareStoreFetchedViewable.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
@@ -650,6 +657,7 @@
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				OBJ_758 /* LinearCareTaskProgress+Math.swift in Sources */,
+				70B49A6A2D08C2520023E5B3 /* EventQueryView.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
@@ -1138,7 +1146,7 @@
 			repositoryURL = "https://github.com/cbaker6/CareKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "3.0.0-beta.12";
+				minimumVersion = "3.0.0-beta.30";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
