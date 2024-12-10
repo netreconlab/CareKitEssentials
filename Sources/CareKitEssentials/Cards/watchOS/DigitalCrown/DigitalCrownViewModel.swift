@@ -33,6 +33,7 @@ open class DigitalCrownViewModel: CardViewModel {
         return Color(red: red, green: green, blue: blue)
     }
 
+    /// Determines when the slider is disabled.
     open var isButtonDisabled: Bool {
         guard let currentDouble = value.doubleValue,
               let originalDouble = event.outcomeValueDouble else {
@@ -56,6 +57,8 @@ open class DigitalCrownViewModel: CardViewModel {
     /// published to the view. The view will update when changes occur in the store.
     /// - Parameters:
     ///     - event: A event to associate with the view model.
+    ///     - kind: An optional property that can be used to specify what kind of values the
+    ///   outcome values are (e.g. blood pressure, qualitative stress, weight).
     ///     - detailsTitle: An optional title for the event.
     ///     - detailsInformation: An optional detailed information string for the event.
     ///     - initialValue: The initial value shown for the digital crown.
@@ -67,6 +70,7 @@ open class DigitalCrownViewModel: CardViewModel {
     ///     - action: The action to perform when the log button is tapped.
     public init(
         event: OCKAnyEvent,
+        kind: String? = nil,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = nil,
@@ -91,7 +95,8 @@ open class DigitalCrownViewModel: CardViewModel {
         if let initialValue = initialValue {
 
             var currentInitialOutcome = OCKOutcomeValue(initialValue)
-            if let latestOutcomeValue = event.outcomeFirstValue,
+            let values = Self.filterAndSortValuesByLatest(event.outcomeValues, by: kind)
+            if let latestOutcomeValue = values?.first,
                let initialOutcomeDouble = latestOutcomeValue.doubleValue {
                 if initialOutcomeDouble == initialValue {
                     currentInitialOutcome = latestOutcomeValue

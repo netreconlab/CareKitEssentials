@@ -121,6 +121,8 @@ public extension SliderLogTaskView {
     ///
     /// - parameter instructions: Instructions text to display under the header.
     /// - parameter event: The data that appears in the view.
+    /// - parameter kind: An optional property that can be used to specify what kind of value this
+    /// is (e.g. blood pressure, qualitative stress, weight).
     /// - parameter detailsTitle: An optional title for the event.
     /// - parameter detailsInformation: An optional detailed information string for the event.
     /// - parameter range: The range that includes all possible values.
@@ -130,6 +132,7 @@ public extension SliderLogTaskView {
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
          event: CareStoreFetchedResult<OCKAnyEvent>,
+         kind: String? = nil,
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
          range: ClosedRange<Double>,
@@ -137,17 +140,22 @@ public extension SliderLogTaskView {
          action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
          @ViewBuilder header: () -> Header,
          @ViewBuilder slider: () -> Slider) {
-        self.init(isHeaderPadded: false,
-                  isSliderPadded: false,
-                  instructions: instructions,
-                  viewModel: .init(event: event.result,
-                                   detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   range: range,
-                                   step: step,
-                                   action: action),
-                  header: header,
-                  slider: slider)
+        self.init(
+            isHeaderPadded: false,
+            isSliderPadded: false,
+            instructions: instructions,
+            viewModel: .init(
+                event: event.result,
+                kind: kind,
+                detailsTitle: detailsTitle,
+                detailsInformation: detailsInformation,
+                range: range,
+                step: step,
+                action: action
+            ),
+            header: header,
+            slider: slider
+        )
     }
 
 }
@@ -370,36 +378,39 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
 
     public var body: some View {
         VStack {
-            Slider(viewModel: viewModel,
-                   minimumImage: minimumImage,
-                   maximumImage: maximumImage,
-                   minimumDescription: minimumDescription,
-                   maximumDescription: maximumDescription,
-                   style: style,
-                   gradientColors: gradientColors)
-
-            SliderLogButton(viewModel: viewModel)
+            Slider(
+                viewModel: viewModel,
+                minimumImage: minimumImage,
+                maximumImage: maximumImage,
+                minimumDescription: minimumDescription,
+                maximumDescription: maximumDescription,
+                style: style,
+                gradientColors: gradientColors
+            )
+            SliderLogButton(
+                viewModel: viewModel
+            )
         }
     }
 }
 
 struct SliderLogTaskView_Previews: PreviewProvider {
+    static let store = Utility.createPreviewStore()
+
     static var previews: some View {
-        if let event = try? Utility.createNauseaEvent() {
-            let store = Utility.createPreviewStore()
-            let viewModel = SliderLogTaskViewModel(
-                event: event,
-                range: 0...10
-            )
-            VStack {
+        VStack {
+            if let event = try? Utility.createNauseaEvent() {
+                let viewModel = SliderLogTaskViewModel(
+                    event: event,
+                    range: 0...10
+                )
                 SliderLogTaskView(
                     title: Text(event.title),
                     detail: Text(event.detail ?? ""),
                     viewModel: viewModel,
                     gradientColors: [.green, .yellow, .red]
                 )
-                .padding()
-
+                Divider()
                 SliderLogTaskView(
                     title: Text(event.title),
                     detail: Text(event.detail ?? ""),
@@ -407,11 +418,11 @@ struct SliderLogTaskView_Previews: PreviewProvider {
                     style: .system,
                     gradientColors: [.green, .yellow, .red]
                 )
-                .padding()
             }
-            .environment(\.careStore, store)
-            .careKitStyle(OCKStyle())
         }
+        .environment(\.careStore, store)
+        .careKitStyle(OCKStyle())
+        .padding()
     }
 }
 

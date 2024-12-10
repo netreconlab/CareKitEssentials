@@ -18,16 +18,20 @@ open class SliderLogTaskViewModel: CardViewModel {
     /// The binded array of previous outcome values.
     @Published public var previousValues = [Double]()
 
-    /// Specifies if the slider is allowed to be changed.
-    @Published open var isActive = true
+    /// Determines when the slider is disabled.
+    open var isButtonDisabled: Bool {
+        let currentDouble = valueAsDouble
+        guard let originalDouble = previousValues.first else {
+            return false
+        }
+        return Int(currentDouble) == Int(originalDouble)
+    }
 
     /// The range that includes all possible values.
     public private(set) var range: ClosedRange<Double>
 
     /// Value of the increment that the slider takes. Default value is 1.
     public private(set) var step: Double
-
-    var kind: String?
 
     /**
      Create an instance with specified content for an event. The view will update when changes
@@ -53,8 +57,7 @@ open class SliderLogTaskViewModel: CardViewModel {
         step: Double = 1,
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
-        self.kind = kind
-        let outcomeValues = Self.filterValues(event.outcomeValues, by: kind)
+        let outcomeValues = Self.filterAndSortValuesByLatest(event.outcomeValues, by: kind)
         if let values = outcomeValues {
             self.previousValues = values.compactMap { $0.doubleValue }
         }
@@ -66,15 +69,12 @@ open class SliderLogTaskViewModel: CardViewModel {
             currentInitialDoubleValue = initialValue
         }
         var currentInitialOutcome = OCKOutcomeValue(currentInitialDoubleValue)
-        if let latestOutcomeValue = outcomeValues?.first,
-           let initialOutcomeDouble = latestOutcomeValue.doubleValue {
-            if initialOutcomeDouble != currentInitialDoubleValue {
-                isActive = false
-                currentInitialOutcome = latestOutcomeValue
-            }
+        if let latestOutcomeValue = outcomeValues?.first {
+            currentInitialOutcome = latestOutcomeValue
         }
         super.init(
             event: event,
+            kind: kind,
             initialValue: currentInitialOutcome,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
@@ -82,19 +82,10 @@ open class SliderLogTaskViewModel: CardViewModel {
         )
     }
 
-    static func filterValues(_ values: [OCKOutcomeValue]?, by kind: String?) -> [OCKOutcomeValue]? {
-        values?.filter { outcomeValue in
-            guard let kind else { return true }
-            return outcomeValue.kind == kind
-        }
-    }
-
     public override func updateOutcome(_ outcome: OCKAnyOutcome) {
         super.updateOutcome(outcome)
-        let values = outcome.sortedOutcomeValuesByRecency().values
-        if let previousValues = Self.filterValues(values, by: kind) {
+        if let previousValues = Self.filterAndSortValuesByLatest(outcome.values, by: kind) {
             self.previousValues = previousValues.compactMap(\.doubleValue)
         }
-        self.isActive = false
     }
 }

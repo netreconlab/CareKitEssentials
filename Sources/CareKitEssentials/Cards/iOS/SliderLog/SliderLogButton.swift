@@ -30,7 +30,12 @@ struct SliderLogButton: CareKitEssentialView {
 
     var valueAsString: String {
         // swiftlint:disable:next line_length
-        viewModel.previousValues.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", viewModel.previousValues[0]))
+        viewModel.previousValues.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", latestValue))
+    }
+
+    var latestValue: Double {
+        // Best case is the latest value, middle case is initial value, worst case is 0.
+        viewModel.previousValues.first ?? viewModel.initialValue.doubleValue ?? 0
     }
 
     var body: some View {
@@ -52,8 +57,8 @@ struct SliderLogButton: CareKitEssentialView {
                 .font(Font.subheadline.weight(.medium))
                 .foregroundColor(.accentColor)
             }
-            .disabled(!viewModel.isActive)
-            .foregroundColor(viewModel.isActive ? .accentColor : Color.gray)
+            .disabled(viewModel.isButtonDisabled)
+            .foregroundColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
             .padding(.bottom)
 
             Button(action: {}) {

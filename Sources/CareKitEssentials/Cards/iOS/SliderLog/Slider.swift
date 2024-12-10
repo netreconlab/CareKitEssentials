@@ -85,7 +85,7 @@ struct Slider: View {
                     .foregroundColor(.accentColor)
                     .fontWeight(.semibold)
                     .padding(.bottom, 10)
-                    .disabled(!viewModel.isActive)
+                    .disabled(viewModel.isButtonDisabled)
 
                 HStack(spacing: 0) {
                     minimumImage?
@@ -148,7 +148,7 @@ struct Slider: View {
                             })
                         )
                     addTicks(sliderWidth: sliderWidth)
-                        .if(!viewModel.isActive) {
+                        .if(viewModel.isButtonDisabled) {
                             $0.accentColor(Color.gray)
                         }
                 }
@@ -161,7 +161,7 @@ struct Slider: View {
             if gradientColors != nil {
                 Rectangle()
                     .foregroundColor(.clear)
-                    .background(viewModel.isActive ?
+                    .background(!viewModel.isButtonDisabled ?
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
@@ -173,7 +173,7 @@ struct Slider: View {
 
             SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1, step: viewModel.step)
                 .if(gradientColors == nil) {
-                    $0.accentColor(viewModel.isActive ? .accentColor : Color.gray)
+                    $0.accentColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
                 }
                 .if(gradientColors != nil) { $0.accentColor(.clear) }
         }
@@ -185,35 +185,56 @@ struct Slider: View {
         let barRightSize = CGSize(width: CGFloat(offsetX), height: height)
         let barLeft = Rectangle()
             .if(gradientColors == nil) {
-                $0.foregroundColor(viewModel.isActive ? .accentColor : Color.gray)
+                $0.foregroundColor(
+                    !viewModel.isButtonDisabled ? .accentColor : Color.gray
+                )
             }
             .if(gradientColors != nil) {
                 $0
                     .foregroundColor(.clear)
-                    .background(viewModel.isActive ?
-                                    LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
-                                                   startPoint: .leading,
-                                                   endPoint: .trailing) :
-                                LinearGradient(gradient: Gradient(colors: [Color.gray]),
-                                               startPoint: .leading,
-                                               endPoint: .trailing))
+                    .background(
+                        !viewModel.isButtonDisabled ?
+                        LinearGradient(
+                            gradient: Gradient(
+                                colors: gradientColors ?? []
+                            ),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        ) :
+                        LinearGradient(
+                            gradient: Gradient(
+                                colors: [Color.gray]
+                            ),
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
             }
         let barRight = Color.white
         return
             ZStack {
-                barLeft
-                    .modifier(SliderModifier(sliderWidth: width,
-                                             size: barLeftSize,
-                                             radius: cornerRadius!))
-                barRight
-                    .modifier(SliderModifier(sliderWidth: width,
-                                             size: barRightSize,
-                                             radius: cornerRadius!))
-                RoundedRectangle(cornerRadius: cornerRadius!)
-                    .stroke(
-                        Color.gray,
-                        lineWidth: borderWidth
+                barLeft.modifier(
+                    SliderModifier(
+                        sliderWidth: width,
+                        size: barLeftSize,
+                        radius: cornerRadius!
                     )
+                )
+                barRight
+                    .modifier(
+                        SliderModifier(
+                            sliderWidth: width,
+                            size: barRightSize,
+                            radius: cornerRadius!
+                        )
+                    )
+                RoundedRectangle(
+                    cornerRadius: cornerRadius!
+                )
+                .stroke(
+                    Color.gray,
+                    lineWidth: borderWidth
+                )
             }
     }
 
@@ -246,7 +267,6 @@ struct Slider: View {
         dragValue = dragValue.convert(fromRange: (xrange.min, xrange.max), toRange: (range.0, range.1))
         dragValue = round(dragValue / viewModel.step) * viewModel.step
         self.viewModel.valueAsDouble = dragValue
-        self.viewModel.isActive = true
     }
 
     private func getOffsetX(sliderWidth: CGFloat) -> CGFloat {
