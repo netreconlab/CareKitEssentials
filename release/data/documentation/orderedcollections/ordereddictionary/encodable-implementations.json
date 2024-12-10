@@ -88,7 +88,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary/encode(to:)": {
   "abstract" : [
-
+    {
+      "text" : "Encodes the contents of this dictionary into the given encoder.",
+      "type" : "text"
+    }
   ],
   "conformance" : {
     "availabilityPrefix" : [
@@ -177,7 +180,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",

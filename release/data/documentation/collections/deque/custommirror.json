@@ -1,15 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Inherited from ",
-      "type" : "text"
-    },
-    {
-      "code" : "CustomReflectable.customMirror",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
+      "text" : "The custom mirror for this instance.",
       "type" : "text"
     }
   ],
@@ -55,10 +47,7 @@
     ],
     "modules" : [
       {
-        "name" : "Collections",
-        "relatedModules" : [
-          "DequeModule"
-        ]
+        "name" : "DequeModule"
       }
     ],
     "role" : "symbol",
@@ -209,7 +198,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/customMirror": {
   "abstract" : [
-
+    {
+      "text" : "The custom mirror for this instance.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -125,7 +125,7 @@
     ],
     "modules" : [
       {
-        "name" : "Collections",
+        "name" : "OrderedCollections",
         "relatedModules" : [
           "Swift"
         ]

@@ -59,7 +59,7 @@
     ],
     "modules" : [
       {
-        "name" : "Collections"
+        "name" : "DequeModule"
       }
     ],
     "navigatorTitle" : [
@@ -905,6 +905,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V6append10contentsOfyqd___t7ElementQyd__RszSlRd__lF1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -945,6 +946,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0VyACyxGqd__c7ElementQyd__RszSlRd__lufc1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -1076,6 +1078,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1154,6 +1157,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1194,6 +1198,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     },
     {
@@ -1250,6 +1255,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7prepend10contentsOfyqd___t7ElementQyd__RszSlRd__lF1CL_qd__mfp",
       "text" : "C"
     },
     {
@@ -1306,6 +1312,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7prepend10contentsOfyqd___t7ElementQyd__RszSTRd__lF1SL_qd__mfp",
       "text" : "S"
     },
     {

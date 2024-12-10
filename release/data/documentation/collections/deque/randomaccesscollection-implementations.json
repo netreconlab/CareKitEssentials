@@ -124,7 +124,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/distance(from:to:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns the distance between two indices.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -192,7 +195,18 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/endIndex": {
   "abstract" : [
-
+    {
+      "text" : "The deque’s “past the end” position—that is, the position one greater than",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "the last valid subscript argument.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -226,7 +240,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/formIndex(after:)": {
   "abstract" : [
-
+    {
+      "text" : "Replaces the given index with its successor.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -280,7 +297,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/formIndex(before:)": {
   "abstract" : [
-
+    {
+      "text" : "Replaces the given index with its predecessor.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -334,7 +354,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/index(_:offsetBy:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns an index that is the specified distance from the given index.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -394,7 +417,18 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/index(_:offsetBy:limitedBy:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns an index that is the specified distance from the given index,",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "unless that distance is beyond a given limiting index.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -475,7 +509,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/index(after:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns the position immediately after the given index.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -526,7 +563,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/index(before:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns the position immediately before the given index.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -577,7 +617,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/indices-swift.property": {
   "abstract" : [
-
+    {
+      "text" : "The indices that are valid for subscripting this deque, in ascending order.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -624,7 +667,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/startIndex": {
   "abstract" : [
-
+    {
+      "text" : "The position of the first element in a nonempty deque.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -658,7 +704,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/subscript(_:)-22tpo": {
   "abstract" : [
-
+    {
+      "text" : "Accesses a contiguous subrange of the deque’s elements.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -694,24 +743,11 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:11DequeModule0A0V",
-      "text" : "Deque"
+      "text" : "<`Self`"
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ">>"
+      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque\/subscript(_:)-22tpo",
@@ -723,7 +759,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque/subscript(_:)-9nk44": {
   "abstract" : [
-
+    {
+      "text" : "Accesses the element at the specified position.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -745,6 +784,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:11DequeModule0A0V7Elementxmfp",
       "text" : "Element"
     }
   ],
