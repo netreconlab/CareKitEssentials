@@ -18,3 +18,14 @@ extension OCKOutcomeValue: Identifiable {
         }
     }
 }
+
+/*
+extension OCKScheduleEvent: @retroactive Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(start)
+        hasher.combine(end)
+        hasher.combine(element)
+        hasher.combine(occurrence)
+    }
+}
+*/

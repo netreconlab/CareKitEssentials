@@ -150,7 +150,7 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
     ///   - action: The action to perform when the log button is tapped.
     ///   - header: Short and descriptive content that identifies the event.
     init(
-        event: CareStoreFetchedResult<OCKAnyEvent>,
+        event: OCKAnyEvent,
         kind: String? = nil,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
@@ -164,7 +164,7 @@ public extension DigitalCrownView where Footer == DigitalCrownViewFooter {
         @ViewBuilder header: () -> Header
     ) {
         let viewModel = DigitalCrownViewModel(
-            event: event.result,
+            event: event,
             kind: kind,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
@@ -222,7 +222,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
     ///   - colorRatio: The ratio effect on the color gradient.
     ///   - action: The action to perform when the log button is tapped.
     init(
-        event: CareStoreFetchedResult<OCKAnyEvent>,
+        event: OCKAnyEvent,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = nil,
@@ -233,7 +233,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
         colorRatio: Double = 0.2,
         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
     ) {
-        let event = event.result
+        let event = event
         let viewModel = DigitalCrownViewModel(
             event: event,
             detailsTitle: detailsTitle,

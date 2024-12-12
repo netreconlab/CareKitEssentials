@@ -170,3 +170,9 @@ public extension OCKAnyEvent {
         #endif
     }
 }
+
+extension OCKAnyEvent {
+    func toggleBooleanOutcome<T: OCKAnyEventStore>(store: T) async throws -> OCKAnyOutcome {
+        try await store.toggleBooleanOutcome(for: self)
+    }
+}

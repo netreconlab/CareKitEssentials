@@ -23,19 +23,24 @@ public extension NumericProgressTaskView where Header == InformationHeaderView {
     ///   - event: The data that appears in the view.
     ///   - numberFormatter: An object that formats the progress and target values.
     init(
-        event: CareStoreFetchedResult<OCKAnyEvent>,
+        event: OCKAnyEvent,
         numberFormatter: NumberFormatter? = nil
     ) {
+        let progress = event.computeProgress(by: .summingOutcomeValues)
 
-        let currentEvent = event.result
-
-        self.init(event: event,
-                  numberFormatter: numberFormatter,
-                  header: {
-            InformationHeaderView(title: Text(currentEvent.title),
-                                  information: currentEvent.detailText,
-                                  event: event.result)
-        })
+        self.init(
+            progress: Text(progress.valueDescription(formatter: numberFormatter)),
+            goal: Text(progress.goalDescription(formatter: numberFormatter)),
+            instructions: event.instructionsText,
+            isComplete: progress.isCompleted,
+            header: {
+                InformationHeaderView(
+                    title: Text(event.title),
+                    information: event.detailText,
+                    event: event
+                )
+            }
+        )
     }
 }
 
