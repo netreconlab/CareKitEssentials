@@ -63,9 +63,11 @@ public struct DetailsView: View {
     ///   - event: The event to display details for when the info button is tapped.
     ///   - title: Text to be displayed as the title instead of the task title.
     ///   - details: The text to be displayed as the details instead of the task instructions.
-    public init(event: OCKAnyEvent,
-                title: String? = nil,
-                details: String? = nil) {
+    public init(
+        event: OCKAnyEvent,
+        title: String? = nil,
+        details: String? = nil
+    ) {
         self.event = event
         self.title = title
         self.details = details

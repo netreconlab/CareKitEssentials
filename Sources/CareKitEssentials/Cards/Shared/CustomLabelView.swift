@@ -155,30 +155,42 @@ public extension CustomLabelView where Header == InformationHeaderView {
     ///   - detailsTitle: An optional title for the event.
     ///   - detailsInformation: An optional detailed information string for the event.
     ///   - action: The action to take when event is completed.
-    init(event: CareStoreFetchedResult<OCKAnyEvent>,
-         initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
-         detailsTitle: String? = nil,
-         detailsInformation: String? = nil,
-         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil) {
-        self.init(viewModel: .init(event: event.result,
-                                   initialValue: initialValue,
-                                   detailsTitle: detailsTitle,
-                                   detailsInformation: detailsInformation,
-                                   action: action)
+    init(
+        event: OCKAnyEvent,
+        initialValue: OCKOutcomeValue = OCKOutcomeValue(0.0),
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
+    ) {
+        self.init(
+            viewModel: .init(
+                event: event,
+                initialValue: initialValue,
+                detailsTitle: detailsTitle,
+                detailsInformation: detailsInformation,
+                action: action
+            )
         )
     }
-
 }
 
 struct CustomLabelView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
             VStack {
-                CustomLabelView(viewModel: .init(event: event),
-                                header: EmptyView())
-                    .padding()
-                CustomLabelView(viewModel: .init(event: event))
-                    .padding()
+                CustomLabelView(
+                    viewModel: .init(
+                        event: event
+                    ),
+                    header: EmptyView()
+                )
+                .padding()
+                CustomLabelView(
+                    viewModel: .init(
+                        event: event
+                    )
+                )
+                .padding()
             }
             .environment(\.careStore, Utility.createPreviewStore())
             .careKitStyle(OCKStyle())

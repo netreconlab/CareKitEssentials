@@ -131,7 +131,7 @@ public extension SliderLogTaskView {
     /// - parameter header: Short and descriptive content that identifies the event.
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
     init(instructions: Text? = nil,
-         event: CareStoreFetchedResult<OCKAnyEvent>,
+         event: OCKAnyEvent,
          kind: String? = nil,
          detailsTitle: String? = nil,
          detailsInformation: String? = nil,
@@ -145,7 +145,7 @@ public extension SliderLogTaskView {
             isSliderPadded: false,
             instructions: instructions,
             viewModel: .init(
-                event: event.result,
+                event: event,
                 kind: kind,
                 detailsTitle: detailsTitle,
                 detailsInformation: detailsInformation,
@@ -311,7 +311,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
         title: Text,
         detail: Text? = nil,
         instructions: Text? = nil,
-        event: CareStoreFetchedResult<OCKAnyEvent>,
+        event: OCKAnyEvent,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = 0,
@@ -326,7 +326,7 @@ public extension SliderLogTaskView where Header == InformationHeaderView, Slider
         gradientColors: [Color]? = nil
     ) {
         let viewModel = SliderLogTaskViewModel(
-            event: event.result,
+            event: event,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
             initialValue: initialValue,
