@@ -23,6 +23,7 @@ import SwiftUI
 /// ```
 public struct CustomLabelView<Header: View>: View {
     @Environment(\.careKitStyle) private var style
+    @Environment(\.isCardEnabled) private var isCardEnabled
     @StateObject var viewModel: CardViewModel
 
     let header: Header
@@ -63,7 +64,7 @@ public struct CustomLabelView<Header: View>: View {
                         .foregroundColor(Color.accentColor)
                 }
             }
-            .padding()
+            .padding(isCardEnabled ? [.all] : [])
         }
     }
 }

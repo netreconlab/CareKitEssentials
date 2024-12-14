@@ -19,6 +19,7 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
     // MARK: - Properties
 
     @Environment(\.careKitStyle) private var style
+    @Environment(\.isCardEnabled) private var isCardEnabled
 
     private let isHeaderPadded: Bool
     private let isFooterPadded: Bool
@@ -46,6 +47,7 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
                     $0.padding([.horizontal, .bottom])
                 }
             }
+            .padding(isCardEnabled ? [.all] : [])
         }
     }
 

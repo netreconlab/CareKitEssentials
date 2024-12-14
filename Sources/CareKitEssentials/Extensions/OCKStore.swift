@@ -8,31 +8,34 @@
 import Foundation
 import CareKitStore
 
-extension OCKStore {
+public extension OCKStore {
 
     func addTasksIfNotPresent(_ tasks: [OCKTask]) async throws {
-        let taskIdsToAdd = tasks.compactMap { $0.id }
 
         // Prepare query to see if tasks are already added
         var query = OCKTaskQuery(for: Date())
-        query.ids = taskIdsToAdd
+        query.ids = tasks.compactMap { $0.id }
 
         let foundTasks = try await fetchTasks(query: query)
-        var tasksNotInStore = [OCKTask]()
 
-        // Check results to see if there's a missing task
-        tasks.forEach { potentialTask in
-            if foundTasks.first(where: { $0.id == potentialTask.id }) == nil {
-                tasksNotInStore.append(potentialTask)
+        // Find all missing tasks.
+        let tasksNotInStore = tasks.compactMap { potentialTask -> OCKTask? in
+            guard foundTasks.first(where: { $0.id == potentialTask.id }) == nil else {
+                return nil
             }
+            return potentialTask
         }
 
         // Only add if there's a new task
-        if tasksNotInStore.count > 0 {
-            _ = try? await addTasks(tasksNotInStore)
+        guard tasksNotInStore.count > 0 else {
+            return
         }
-    }
 
+        _ = try await addTasks(tasksNotInStore)
+    }
+}
+
+extension OCKStore {
     func populateSampleData() async throws {
 
         let thisMorning = Calendar.current.startOfDay(for: Date())

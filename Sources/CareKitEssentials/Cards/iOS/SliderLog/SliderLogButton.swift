@@ -15,7 +15,7 @@ import SwiftUI
 
 struct SliderLogButton: CareKitEssentialView {
 
-    @Environment(\.careStore) var careStore
+    @Environment(\.careStore) var store
     @Environment(\.careKitStyle) private var style
     @ObservedObject var viewModel: SliderLogTaskViewModel
 

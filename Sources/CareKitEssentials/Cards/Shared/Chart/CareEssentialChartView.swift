@@ -15,8 +15,8 @@ import os.log
 import SwiftUI
 
 public struct CareEssentialChartView: CareKitEssentialView {
-
-    @Environment(\.careStore) public var careStore
+    @Environment(\.careStore) public var store
+    @Environment(\.isCardEnabled) private var isCardEnabled
     @CareStoreFetchRequest(query: query()) private var events
 
     let title: String
@@ -42,7 +42,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
                     dataSeries: dataSeries
                 )
             }
-            .padding()
+            .padding(isCardEnabled ? [.all] : [])
         }.onAppear {
             updateQuery()
         }
