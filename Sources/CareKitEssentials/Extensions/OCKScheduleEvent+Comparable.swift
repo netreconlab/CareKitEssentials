@@ -7,7 +7,7 @@
 
 import CareKitStore
 
-extension OCKScheduleEvent: Comparable {
+extension OCKScheduleEvent: @retroactive Comparable {
     public static func < (lhs: Self, rhs: Self) -> Bool {
         if lhs.start < rhs.start {
             return true

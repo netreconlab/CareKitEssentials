@@ -13,6 +13,15 @@
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
+		7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */; };
+		7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */; };
+		7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */; };
+		7026DDF12D0CD7E2002EACAA /* OCKSchedule+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF02D0CD7DB002EACAA /* OCKSchedule+Hashable.swift */; };
+		7026DDF32D0CD7F2002EACAA /* OCKScheduleEvent+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF22D0CD7EE002EACAA /* OCKScheduleEvent+Hashable.swift */; };
+		7026DDF52D0D2AF2002EACAA /* OCKAnyEvent+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF42D0D2AE6002EACAA /* OCKAnyEvent+Comparable.swift */; };
+		7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */; };
+		7026DDFB2D0D3C86002EACAA /* CareStoreFetchedResult+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */; };
+		7026DDFD2D0D45B9002EACAA /* OCKStore+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */; };
 		702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */; };
 		702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */; };
 		702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */; };
@@ -32,7 +41,7 @@
 		70B49A8B2D0A86C80023E5B3 /* CareStoreFetchedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A8A2D0A86B30023E5B3 /* CareStoreFetchedResult.swift */; };
 		70B49A8D2D0A88B30023E5B3 /* OCKAnyEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A8C2D0A88A80023E5B3 /* OCKAnyEventStore.swift */; };
 		70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */; };
-		70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */; };
+		70BBCB492A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB482A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift */; };
 		70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */; };
 		70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB502A12BD5000759A9C /* SliderStyle.swift */; };
 		70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBCB522A12BDAC00759A9C /* Slider.swift */; };
@@ -128,6 +137,15 @@
 		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
 		700DA9062C2A66BF00435E2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleElement+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSemanticVersion+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKNote+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDF02D0CD7DB002EACAA /* OCKSchedule+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSchedule+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDF22D0CD7EE002EACAA /* OCKScheduleEvent+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleEvent+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDF42D0D2AE6002EACAA /* OCKAnyEvent+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Comparable.swift"; sourceTree = "<group>"; };
+		7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Equatable.swift"; sourceTree = "<group>"; };
+		7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResult+Hashable.swift"; sourceTree = "<group>"; };
+		7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKStore+Hashable.swift"; sourceTree = "<group>"; };
 		702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartView.swift; sourceTree = "<group>"; };
 		702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeries.swift; sourceTree = "<group>"; };
 		702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeriesConfiguration.swift; sourceTree = "<group>"; };
@@ -147,7 +165,7 @@
 		70B49A8A2D0A86B30023E5B3 /* CareStoreFetchedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchedResult.swift; sourceTree = "<group>"; };
 		70B49A8C2D0A88A80023E5B3 /* OCKAnyEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKAnyEventStore.swift; sourceTree = "<group>"; };
 		70BBCB462A12B8F500759A9C /* CardEnabledEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEnabledEnvironmentKey.swift; sourceTree = "<group>"; };
-		70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleEvent.swift; sourceTree = "<group>"; };
+		70BBCB482A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleEvent+Comparable.swift"; sourceTree = "<group>"; };
 		70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderLogTaskView.swift; sourceTree = "<group>"; };
 		70BBCB502A12BD5000759A9C /* SliderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderStyle.swift; sourceTree = "<group>"; };
 		70BBCB522A12BDAC00759A9C /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
@@ -380,6 +398,7 @@
 			children = (
 				OBJ_26 /* Calendar+Dates.swift */,
 				70B49A8A2D0A86B30023E5B3 /* CareStoreFetchedResult.swift */,
+				7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */,
 				7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */,
 				4B27AD832C4ACC4E00661121 /* CareTaskProgressStrategy.swift */,
 				911BDB272A11C491004F8442 /* CGFloat.swift */,
@@ -390,18 +409,26 @@
 				700DA9062C2A66BF00435E2C /* Logger.swift */,
 				70FDC6152C387C9F00A32137 /* NSImage.swift */,
 				OBJ_29 /* OCKAnyEvent.swift */,
+				7026DDF42D0D2AE6002EACAA /* OCKAnyEvent+Comparable.swift */,
 				OBJ_28 /* OCKAnyEvent+CustomStringConvertable.swift */,
+				7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */,
 				70B49A7C2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift */,
 				70B49A8C2D0A88A80023E5B3 /* OCKAnyEventStore.swift */,
 				OBJ_30 /* OCKAnyOutcome.swift */,
 				70C422C92C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift */,
 				OBJ_31 /* OCKBiologicalSex+Hashable.swift */,
+				7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */,
 				OBJ_33 /* OCKOutcome.swift */,
 				70B49A822D0A56910023E5B3 /* OCKOutcome+Hashable.swift */,
 				70B49A842D0A56B70023E5B3 /* OCKOutcomeValue+Hashable.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
-				70BBCB482A12B9B300759A9C /* OCKScheduleEvent.swift */,
+				7026DDF02D0CD7DB002EACAA /* OCKSchedule+Hashable.swift */,
+				7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */,
+				70BBCB482A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift */,
+				7026DDF22D0CD7EE002EACAA /* OCKScheduleEvent+Hashable.swift */,
+				7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */,
 				911BDB332A130AF9004F8442 /* OCKStore.swift */,
+				7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */,
 				70B49A7E2D0A54380023E5B3 /* OCKTask+Hashable.swift */,
 				OBJ_39 /* UIImage.swift */,
 				911BDB252A11C437004F8442 /* View+Default.swift */,
@@ -651,18 +678,24 @@
 				70BBCB512A12BD5000759A9C /* SliderStyle.swift in Sources */,
 				70BBCB532A12BDAD00759A9C /* Slider.swift in Sources */,
 				70B49A7F2D0A54400023E5B3 /* OCKTask+Hashable.swift in Sources */,
+				7026DDFD2D0D45B9002EACAA /* OCKStore+Hashable.swift in Sources */,
+				7026DDFB2D0D3C86002EACAA /* CareStoreFetchedResult+Hashable.swift in Sources */,
 				70B49A8B2D0A86C80023E5B3 /* CareStoreFetchedResult.swift in Sources */,
 				4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */,
 				702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				70B49A602D06A2520023E5B3 /* SimpleLabelView.swift in Sources */,
 				911BDB282A11C491004F8442 /* CGFloat.swift in Sources */,
+				7026DDF32D0CD7F2002EACAA /* OCKScheduleEvent+Hashable.swift in Sources */,
+				7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
+				7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
 				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
 				70B49A7D2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
 				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
+				7026DDF12D0CD7E2002EACAA /* OCKSchedule+Hashable.swift in Sources */,
 				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
@@ -692,6 +725,8 @@
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
+				7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */,
+				7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */,
 				OBJ_758 /* LinearCareTaskProgress+Math.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
@@ -702,8 +737,9 @@
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */,
 				7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */,
+				7026DDF52D0D2AF2002EACAA /* OCKAnyEvent+Comparable.swift in Sources */,
 				70B49A832D0A56970023E5B3 /* OCKOutcome+Hashable.swift in Sources */,
-				70BBCB492A12B9B300759A9C /* OCKScheduleEvent.swift in Sources */,
+				70BBCB492A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift in Sources */,
 				911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */,
 				OBJ_766 /* OSValue.swift in Sources */,
 				OBJ_767 /* ScheduleUtility.swift in Sources */,

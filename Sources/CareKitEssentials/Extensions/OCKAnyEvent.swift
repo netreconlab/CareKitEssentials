@@ -62,9 +62,10 @@ public extension OCKAnyEvent {
         self.outcome?.sortedOutcomeValuesByRecency()
     }
 
-    /// Returns **true** if the first event is complete.
+    /// Returns **true** if there is at least one `OCKOutcomeValue`
+    /// has been provided for this event..
     var isComplete: Bool {
-        self.outcome != nil
+        self.outcome?.values.isEmpty == false
     }
 
     /// The first event outcome values.

@@ -31,6 +31,7 @@ import SwiftUI
 /// ```
 public struct SimpleLabelView<Header: View>: View {
     @Environment(\.careKitStyle) private var style
+    @Environment(\.isCardEnabled) private var isCardEnabled
 
     let header: Header?
     let title: Text?
@@ -75,7 +76,7 @@ public struct SimpleLabelView<Header: View>: View {
                         .foregroundColor(.accentColor)
                 }
             }
-            .padding()
+            .padding(isCardEnabled ? [.all] : [])
         }
     }
 

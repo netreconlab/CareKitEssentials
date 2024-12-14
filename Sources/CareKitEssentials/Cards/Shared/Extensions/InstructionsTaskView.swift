@@ -48,7 +48,6 @@ public extension InstructionsTaskView where Header == InformationHeaderView {
                     information: event.detailText,
                     event: event
                 )
-
             }
         )
     }

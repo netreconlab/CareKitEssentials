@@ -15,8 +15,7 @@ import SwiftUI
 
 public struct DigitalCrownViewFooter: CareKitEssentialView {
 
-    @Environment(\.careStore) public var careStore
-    @Environment(\.sizeCategory) private var sizeCategory
+    @Environment(\.careStore) public var store
     @StateObject var viewModel: DigitalCrownViewModel
 
     @OSValue<CGFloat>(

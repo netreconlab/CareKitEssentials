@@ -5,7 +5,7 @@
 //  Created by Corey Baker on 12/11/24.
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
-/*
+
 import CareKitStore
 
 extension OCKTask: @retroactive Hashable {
@@ -34,4 +34,3 @@ extension OCKTask: @retroactive Hashable {
         hasher.combine(timezone)
     }
 }
-*/

@@ -13,7 +13,7 @@ import SwiftUI
 public protocol CareKitEssentialView: View {
 
     /// A repository for CareKit information.
-    var careStore: any OCKAnyStoreProtocol { get }
+    var store: any OCKAnyStoreProtocol { get }
 
     /// Update an `OCKAnyEvent` with new `OCKOutcomeValue`'s.
     /// - Parameters:
@@ -52,7 +52,7 @@ public extension CareKitEssentialView {
         guard let outcome = event.outcome else {
             throw CareKitEssentialsError.errorString("The event does not contain an outcome: \(event)")
         }
-        return try await careStore.deleteAnyOutcome(outcome)
+        return try await store.deleteAnyOutcome(outcome)
     }
 
     func updateEvent(
@@ -72,7 +72,7 @@ public extension CareKitEssentialView {
     func saveOutcome(
         _ outcome: OCKAnyOutcome
     ) async throws {
-        _ = try await careStore.addAnyOutcome(outcome)
+        _ = try await store.addAnyOutcome(outcome)
     }
 
     /// Append an `OCKOutcomeValue` to an event's `OCKOutcome`.
@@ -92,10 +92,10 @@ public extension CareKitEssentialView {
                 values,
                 event: event
             )
-            return try await careStore.addAnyOutcome(outcome)
+            return try await store.addAnyOutcome(outcome)
         }
         outcome.values.append(contentsOf: values)
-        return try await careStore.updateAnyOutcome(outcome)
+        return try await store.updateAnyOutcome(outcome)
     }
 
     /// Set/Replace the `OCKOutcomeValue`'s of an event.
@@ -121,11 +121,11 @@ public extension CareKitEssentialView {
                 values,
                 event: event
             )
-            return try await careStore.addAnyOutcome(outcome)
+            return try await store.addAnyOutcome(outcome)
         }
         // Update the outcome with the new values.
         currentOutcome.values = values
-        return try await careStore.updateAnyOutcome(currentOutcome)
+        return try await store.updateAnyOutcome(currentOutcome)
     }
 
     /// Create an outcome for an event.

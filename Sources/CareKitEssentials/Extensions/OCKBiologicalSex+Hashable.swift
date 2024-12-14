@@ -8,10 +8,16 @@
 
 import CareKitStore
 
- // Needed to use OCKBiologicalSex in a Picker.
- // Simple conformance to hashable protocol.
-extension OCKBiologicalSex: Hashable {
+extension OCKBiologicalSex: @retroactive Hashable {
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(self.rawValue)
+        switch self {
+
+        case .male:
+            hasher.combine(0)
+        case .female:
+            hasher.combine(1)
+        case .other(let other):
+            hasher.combine(other)
+        }
     }
 }

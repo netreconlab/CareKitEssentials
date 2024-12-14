@@ -20,18 +20,6 @@ extension OCKAnyEvent: @retroactive CustomStringConvertible {
         }
         let stringTask = String(decoding: encodedTask, as: UTF8.self)
         let stringOutcome = String(decoding: encodedOutcome, as: UTF8.self)
-        return stringTask + stringOutcome
-    }
-}
-
-extension OCKAnyEvent: @retroactive Equatable {}
-extension OCKAnyEvent: @retroactive Comparable {
-    public static func == (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
-        lhs.id == rhs.id
-    }
-
-    public static func < (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
-        lhs.scheduleEvent.start <= rhs.scheduleEvent.start &&
-        lhs.scheduleEvent.end < rhs.scheduleEvent.end
+        return id + stringTask + stringOutcome
     }
 }
