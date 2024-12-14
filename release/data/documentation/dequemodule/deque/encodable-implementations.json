@@ -2,26 +2,25 @@
   "hierarchy" : {
     "paths" : [
       [
-
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/Encodable-Implementations"
   },
-  "kind" : "symbol",
+  "kind" : "article",
   "metadata" : {
-    "externalID" : "Collections",
     "modules" : [
       {
         "name" : "Collections"
       }
     ],
-    "role" : "collection",
-    "roleHeading" : "Framework",
-    "symbolKind" : "module",
-    "title" : "Collections"
+    "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
+    "title" : "Encodable Implementations"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -33,24 +32,11 @@
   ],
   "topicSections" : [
     {
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/encode(to:)"
       ],
-      "title" : "Structures"
-    }
-  ],
-  "variants" : [
-    {
-      "paths" : [
-        "\/documentation\/collections"
-      ],
-      "traits" : [
-        {
-          "interfaceLanguage" : "swift"
-        }
-      ]
+      "title" : "Instance Methods"
     }
   ]
 , 
@@ -124,17 +110,57 @@
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/encode(to:)": {
   "abstract" : [
     {
-      "text" : "An ordered collection of key-value pairs.",
+      "text" : "Encodes the elements of this deque into the given encoder in an unkeyed",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "container.",
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Encodable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "struct"
+      "text" : "func"
     },
     {
       "kind" : "text",
@@ -142,55 +168,40 @@
     },
     {
       "kind" : "identifier",
-      "text" : "OrderedDictionary"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "OrderedDictionary"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "OrderedDictionary",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/ordereddictionary"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet": {
-  "abstract" : [
-    {
-      "text" : "An ordered collection of unique elements.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
+      "text" : "encode"
     },
     {
       "kind" : "text",
-      "text" : " "
+      "text" : "("
     },
     {
-      "kind" : "identifier",
-      "text" : "OrderedSet"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
-  "kind" : "symbol",
-  "navigatorTitle" : [
+      "kind" : "externalParam",
+      "text" : "to"
+    },
     {
-      "kind" : "identifier",
-      "text" : "OrderedSet"
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7EncoderP",
+      "text" : "Encoder"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
     }
   ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/encode(to:)",
+  "kind" : "symbol",
   "role" : "symbol",
-  "title" : "OrderedSet",
+  "title" : "encode(to:)",
   "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset"
+  "url" : "\/documentation\/dequemodule\/deque\/encode(to:)"
 }
 }
 }

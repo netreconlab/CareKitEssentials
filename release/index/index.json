@@ -36904,6 +36904,1079 @@
           {
             "children" : [
               {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/init(_:)-1tqf4",
+                "title" : "init<C>(C)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/init(minimumcapacity:)",
+                "title" : "init(minimumCapacity: Int)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/init(unsafeuninitializedcapacity:initializingwith:)",
+                "title" : "init(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/append(contentsof:)-29aoh",
+                "title" : "func append<C>(contentsOf: C)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/popfirst()",
+                "title" : "func popFirst() -> Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/prepend(_:)",
+                "title" : "func prepend(Element)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/prepend(contentsof:)-51zn6",
+                "title" : "func prepend<C>(contentsOf: C)",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/dequemodule\/deque\/prepend(contentsof:)-96y15",
+                "title" : "func prepend<S>(contentsOf: S)",
+                "type" : "method"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/last",
+                    "title" : "var last: Self.Element?",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/difference(from:)",
+                    "title" : "func difference<C>(from: C) -> CollectionDifference<Self.Element>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/difference(from:by:)",
+                    "title" : "func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/droplast(_:)",
+                    "title" : "func dropLast(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/firstrange(of:)-6o81s",
+                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/joined(separator:)-7f1k2",
+                    "title" : "func joined(separator: String) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/last(where:)",
+                    "title" : "func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/lastindex(of:)",
+                    "title" : "func lastIndex(of: Self.Element) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/lastindex(where:)",
+                    "title" : "func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reversed()",
+                    "title" : "func reversed() -> ReversedCollection<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/suffix(_:)",
+                    "title" : "func suffix(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/bidirectionalcollection-implementations",
+                "title" : "BidirectionalCollection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/count",
+                    "title" : "var count: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/first",
+                    "title" : "var first: Self.Element?",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/isempty",
+                    "title" : "var isEmpty: Bool",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/underestimatedcount",
+                    "title" : "var underestimatedCount: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/contains(_:)-1wjaz",
+                    "title" : "func contains<C>(C) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/drop(while:)",
+                    "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/dropfirst(_:)",
+                    "title" : "func dropFirst(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/firstindex(of:)",
+                    "title" : "func firstIndex(of: Self.Element) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/firstindex(where:)",
+                    "title" : "func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/firstrange(of:)-81nai",
+                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/formindex(_:offsetby:)",
+                    "title" : "func formIndex(inout Self.Index, offsetBy: Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/formindex(_:offsetby:limitedby:)",
+                    "title" : "func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index(of:)",
+                    "title" : "func index(of: Self.Element) -> Self.Index?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/map(_:)-885cp",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/prefix(_:)",
+                    "title" : "func prefix(Int) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/prefix(through:)",
+                    "title" : "func prefix(through: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/prefix(upto:)",
+                    "title" : "func prefix(upTo: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/prefix(while:)",
+                    "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/randomelement()",
+                    "title" : "func randomElement() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/randomelement(using:)",
+                    "title" : "func randomElement<T>(using: inout T) -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/ranges(of:)",
+                    "title" : "func ranges<C>(of: C) -> [Range<Self.Index>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
+                    "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-24der",
+                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-82ctn",
+                    "title" : "func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/suffix(from:)",
+                    "title" : "func suffix(from: Self.Index) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/trimmingprefix(_:)",
+                    "title" : "func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/trimmingprefix(while:)",
+                    "title" : "func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Subscripts",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-1klky",
+                    "title" : "subscript<R>(R) -> Self.SubSequence",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-6ee8i",
+                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-ejld",
+                    "title" : "subscript((UnboundedRange_) -> ()) -> Self.SubSequence",
+                    "type" : "subscript"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index",
+                    "title" : "Deque.Index",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/indices-swift.typealias",
+                    "title" : "Deque.Indices",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subsequence",
+                    "title" : "Deque.SubSequence",
+                    "type" : "typealias"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/collection-implementations",
+                "title" : "Collection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/debugdescription",
+                    "title" : "var debugDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/customdebugstringconvertible-implementations",
+                "title" : "CustomDebugStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/custommirror",
+                    "title" : "var customMirror: Mirror",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/customreflectable-implementations",
+                "title" : "CustomReflectable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/description",
+                    "title" : "var description: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/decodable-implementations",
+                "title" : "Decodable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/encode(to:)",
+                    "title" : "func encode(to: Encoder) throws",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/encodable-implementations",
+                "title" : "Encodable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/==(_:_:)",
+                    "title" : "static func == (`Self`, `Self`) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(arrayliteral:)",
+                    "title" : "init(arrayLiteral: Element...)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/expressiblebyarrayliteral-implementations",
+                "title" : "ExpressibleByArrayLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/hashable-implementations",
+                "title" : "Hashable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/partition(by:)-7fwft",
+                    "title" : "func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/partition(by:)-90y0t",
+                    "title" : "func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reverse()",
+                    "title" : "func reverse()",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/shuffle()",
+                    "title" : "func shuffle()",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/shuffle(using:)",
+                    "title" : "func shuffle<T>(using: inout T)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/sort()",
+                    "title" : "func sort()",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/sort(by:)",
+                    "title" : "func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/swapat(_:_:)-2riuy",
+                    "title" : "func swapAt(Self.Index, Self.Index)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/swapat(_:_:)-7910s",
+                    "title" : "func swapAt(Int, Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/withcontiguousmutablestorageifavailable(_:)-4goyj",
+                    "title" : "func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/withcontiguousmutablestorageifavailable(_:)-9ksuh",
+                    "title" : "func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Subscripts",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-1b1nh",
+                    "title" : "subscript<R>(R) -> Self.SubSequence",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-1li81",
+                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-2gsji",
+                    "title" : "subscript((UnboundedRange_) -> ()) -> Self.SubSequence",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-3hvat",
+                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-47peg",
+                    "title" : "subscript(Range<Self.Index>) -> Self.SubSequence",
+                    "type" : "subscript"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/mutablecollection-implementations",
+                "title" : "MutableCollection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/endindex",
+                    "title" : "var endIndex: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/indices-swift.property",
+                    "title" : "var indices: Range<Int>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/startindex",
+                    "title" : "var startIndex: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/distance(from:to:)",
+                    "title" : "func distance(from: Int, to: Int) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/formindex(after:)",
+                    "title" : "func formIndex(after: inout Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/formindex(before:)",
+                    "title" : "func formIndex(before: inout Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index(_:offsetby:)",
+                    "title" : "func index(Int, offsetBy: Int) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index(_:offsetby:limitedby:)",
+                    "title" : "func index(Int, offsetBy: Int, limitedBy: Int) -> Int?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index(after:)",
+                    "title" : "func index(after: Int) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/index(before:)",
+                    "title" : "func index(before: Int) -> Int",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Subscripts",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-22tpo",
+                    "title" : "subscript(Range<Int>) -> Slice<`Self`>",
+                    "type" : "subscript"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/subscript(_:)-9nk44",
+                    "title" : "subscript(Int) -> Element",
+                    "type" : "subscript"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/randomaccesscollection-implementations",
+                "title" : "RandomAccessCollection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/+(_:_:)-2ezjl",
+                    "title" : "static func + <Other>(Self, Other) -> Self",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/+(_:_:)-2udes",
+                    "title" : "static func + <Other>(Self, Other) -> Self",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/+(_:_:)-647oo",
+                    "title" : "static func + <Other>(Other, Self) -> Self",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/+=(_:_:)",
+                    "title" : "static func += <Other>(inout Self, Other)",
+                    "type" : "op"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init()",
+                    "title" : "init()",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(_:)-2pl79",
+                    "title" : "init<S>(S)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(_:)-8tyaw",
+                    "title" : "init<S>(S)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(repeating:count:)-4v1gt",
+                    "title" : "init(repeating: Element, count: Int)",
+                    "type" : "init"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/init(repeating:count:)-5n2n3",
+                    "title" : "init(repeating: Self.Element, count: Int)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/append(_:)-6xmiz",
+                    "title" : "func append(Self.Element)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/append(_:)-9h4m7",
+                    "title" : "func append(Element)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/append(contentsof:)-6ewjz",
+                    "title" : "func append<S>(contentsOf: S)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/append(contentsof:)-8rqnl",
+                    "title" : "func append<S>(contentsOf: S)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/applying(_:)",
+                    "title" : "func applying(CollectionDifference<Self.Element>) -> Self?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/filter(_:)",
+                    "title" : "func filter((Self.Element) throws -> Bool) rethrows -> Self",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/insert(_:at:)-6fcpk",
+                    "title" : "func insert(Self.Element, at: Self.Index)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/insert(_:at:)-9hsp7",
+                    "title" : "func insert(Element, at: Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/insert(contentsof:at:)-1d60f",
+                    "title" : "func insert<C>(contentsOf: C, at: Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/insert(contentsof:at:)-quf0",
+                    "title" : "func insert<C>(contentsOf: C, at: Self.Index)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/poplast()",
+                    "title" : "func popLast() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/remove(at:)-25pt",
+                    "title" : "func remove(at: Self.Index) -> Self.Element",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/remove(at:)-3imgi",
+                    "title" : "func remove(at: Int) -> Element",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removeall(keepingcapacity:)-2cas8",
+                    "title" : "func removeAll(keepingCapacity: Bool)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removeall(keepingcapacity:)-yeby",
+                    "title" : "func removeAll(keepingCapacity: Bool)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removeall(where:)-2ynh1",
+                    "title" : "func removeAll(where: (Self.Element) throws -> Bool) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removeall(where:)-5e3im",
+                    "title" : "func removeAll(where: (Self.Element) throws -> Bool) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removefirst()-1vdmt",
+                    "title" : "func removeFirst() -> Element",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removefirst()-5sg5i",
+                    "title" : "func removeFirst() -> Self.Element",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removefirst(_:)-2vuji",
+                    "title" : "func removeFirst(Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removefirst(_:)-8phg7",
+                    "title" : "func removeFirst(Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removelast()",
+                    "title" : "func removeLast() -> Self.Element",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removelast(_:)",
+                    "title" : "func removeLast(Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removesubrange(_:)-3ab3y",
+                    "title" : "func removeSubrange<R>(R)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removesubrange(_:)-6dkhw",
+                    "title" : "func removeSubrange(Range<Self.Index>)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/removesubrange(_:)-8oy85",
+                    "title" : "func removeSubrange(Range<Int>)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replace(_:with:maxreplacements:)",
+                    "title" : "func replace<C, Replacement>(C, with: Replacement, maxReplacements: Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replacesubrange(_:with:)-1sroc",
+                    "title" : "func replaceSubrange<C>(Range<Self.Index>, with: C)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replacesubrange(_:with:)-2xunu",
+                    "title" : "func replaceSubrange<C, R>(R, with: C)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replacesubrange(_:with:)-5rtzd",
+                    "title" : "func replaceSubrange<C>(Range<Int>, with: C)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replacing(_:with:maxreplacements:)",
+                    "title" : "func replacing<C, Replacement>(C, with: Replacement, maxReplacements: Int) -> Self",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/replacing(_:with:subrange:maxreplacements:)",
+                    "title" : "func replacing<C, Replacement>(C, with: Replacement, subrange: Range<Self.Index>, maxReplacements: Int) -> Self",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reservecapacity(_:)-7qlut",
+                    "title" : "func reserveCapacity(Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reservecapacity(_:)-9lqxx",
+                    "title" : "func reserveCapacity(Int)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/trimprefix(_:)",
+                    "title" : "func trimPrefix<Prefix>(Prefix)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/trimprefix(while:)",
+                    "title" : "func trimPrefix(while: (Self.Element) throws -> Bool) rethrows",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/rangereplaceablecollection-implementations",
+                "title" : "RangeReplaceableCollection Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Structures",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/dequemodule\/deque\/iterator\/next()",
+                        "title" : "func next() -> Element?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/dequemodule\/deque\/iterator",
+                    "title" : "Deque.Iterator",
+                    "type" : "struct"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/lazy",
+                    "title" : "var lazy: LazySequence<Self>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/allsatisfy(_:)",
+                    "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/compactmap(_:)",
+                    "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/contains(_:)-8w2ss",
+                    "title" : "func contains(Self.Element) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/contains(where:)",
+                    "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/elementsequal(_:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/elementsequal(_:by:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/enumerated()",
+                    "title" : "func enumerated() -> EnumeratedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/first(where:)",
+                    "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/flatmap(_:)-3f66n",
+                    "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/flatmap(_:)-4q9nu",
+                    "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/foreach(_:)",
+                    "title" : "func forEach((Self.Element) throws -> Void) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/joined()",
+                    "title" : "func joined() -> FlattenSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/joined(separator:)-4husz",
+                    "title" : "func joined<Separator>(separator: Separator) -> JoinedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/joined(separator:)-4r7h7",
+                    "title" : "func joined(separator: String) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/lexicographicallyprecedes(_:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/lexicographicallyprecedes(_:by:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/makeiterator()",
+                    "title" : "func makeIterator() -> Iterator",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/map(_:)-47t1m",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/max()",
+                    "title" : "func max() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/max(by:)",
+                    "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/min()",
+                    "title" : "func min() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/min(by:)",
+                    "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reduce(_:_:)",
+                    "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/reduce(into:_:)",
+                    "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/shuffled()",
+                    "title" : "func shuffled() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/shuffled(using:)",
+                    "title" : "func shuffled<T>(using: inout T) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/sorted()",
+                    "title" : "func sorted() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/sorted(by:)",
+                    "title" : "func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-3lk93",
+                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/starts(with:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/starts(with:by:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/withcontiguousstorageifavailable(_:)-4bcpo",
+                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/dequemodule\/deque\/withcontiguousstorageifavailable(_:)-b0eu",
+                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/dequemodule\/deque\/sequence-implementations",
+                "title" : "Sequence Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/dequemodule\/deque",
+            "title" : "Deque",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
                 "title" : "Structures",
                 "type" : "groupMarker"
               },
@@ -41364,1085 +42437,6 @@
         "type" : "module"
       },
       {
-        "children" : [
-          {
-            "title" : "Structures",
-            "type" : "groupMarker"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Initializers",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/init(_:)-1tqf4",
-                "title" : "init<C>(C)",
-                "type" : "init"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/init(minimumcapacity:)",
-                "title" : "init(minimumCapacity: Int)",
-                "type" : "init"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/init(unsafeuninitializedcapacity:initializingwith:)",
-                "title" : "init(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws -> Void) rethrows",
-                "type" : "init"
-              },
-              {
-                "title" : "Instance Methods",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/append(contentsof:)-29aoh",
-                "title" : "func append<C>(contentsOf: C)",
-                "type" : "method"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/popfirst()",
-                "title" : "func popFirst() -> Element?",
-                "type" : "method"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/prepend(_:)",
-                "title" : "func prepend(Element)",
-                "type" : "method"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/prepend(contentsof:)-51zn6",
-                "title" : "func prepend<C>(contentsOf: C)",
-                "type" : "method"
-              },
-              {
-                "path" : "\/documentation\/collections\/deque\/prepend(contentsof:)-96y15",
-                "title" : "func prepend<S>(contentsOf: S)",
-                "type" : "method"
-              },
-              {
-                "title" : "Default Implementations",
-                "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/last",
-                    "title" : "var last: Self.Element?",
-                    "type" : "property"
-                  },
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/difference(from:)",
-                    "title" : "func difference<C>(from: C) -> CollectionDifference<Self.Element>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/difference(from:by:)",
-                    "title" : "func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/droplast(_:)",
-                    "title" : "func dropLast(Int) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/firstrange(of:)-6o81s",
-                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/joined(separator:)-7f1k2",
-                    "title" : "func joined(separator: String) -> String",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/last(where:)",
-                    "title" : "func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/lastindex(of:)",
-                    "title" : "func lastIndex(of: Self.Element) -> Self.Index?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/lastindex(where:)",
-                    "title" : "func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reversed()",
-                    "title" : "func reversed() -> ReversedCollection<Self>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/suffix(_:)",
-                    "title" : "func suffix(Int) -> Self.SubSequence",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/bidirectionalcollection-implementations",
-                "title" : "BidirectionalCollection Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/count",
-                    "title" : "var count: Int",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/first",
-                    "title" : "var first: Self.Element?",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/isempty",
-                    "title" : "var isEmpty: Bool",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/underestimatedcount",
-                    "title" : "var underestimatedCount: Int",
-                    "type" : "property"
-                  },
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/contains(_:)-1wjaz",
-                    "title" : "func contains<C>(C) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/drop(while:)",
-                    "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/dropfirst(_:)",
-                    "title" : "func dropFirst(Int) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/firstindex(of:)",
-                    "title" : "func firstIndex(of: Self.Element) -> Self.Index?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/firstindex(where:)",
-                    "title" : "func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/firstrange(of:)-81nai",
-                    "title" : "func firstRange<C>(of: C) -> Range<Self.Index>?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/formindex(_:offsetby:)",
-                    "title" : "func formIndex(inout Self.Index, offsetBy: Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/formindex(_:offsetby:limitedby:)",
-                    "title" : "func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index(of:)",
-                    "title" : "func index(of: Self.Element) -> Self.Index?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/map(_:)-885cp",
-                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/prefix(_:)",
-                    "title" : "func prefix(Int) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/prefix(through:)",
-                    "title" : "func prefix(through: Self.Index) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/prefix(upto:)",
-                    "title" : "func prefix(upTo: Self.Index) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/prefix(while:)",
-                    "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/randomelement()",
-                    "title" : "func randomElement() -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/randomelement(using:)",
-                    "title" : "func randomElement<T>(using: inout T) -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/ranges(of:)",
-                    "title" : "func ranges<C>(of: C) -> [Range<Self.Index>]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
-                    "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-24der",
-                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-82ctn",
-                    "title" : "func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/suffix(from:)",
-                    "title" : "func suffix(from: Self.Index) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/trimmingprefix(_:)",
-                    "title" : "func trimmingPrefix<Prefix>(Prefix) -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/trimmingprefix(while:)",
-                    "title" : "func trimmingPrefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence",
-                    "type" : "method"
-                  },
-                  {
-                    "title" : "Subscripts",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-1klky",
-                    "title" : "subscript<R>(R) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-6ee8i",
-                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-ejld",
-                    "title" : "subscript((UnboundedRange_) -> ()) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "title" : "Type Aliases",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index",
-                    "title" : "Deque.Index",
-                    "type" : "typealias"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/indices-swift.typealias",
-                    "title" : "Deque.Indices",
-                    "type" : "typealias"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subsequence",
-                    "title" : "Deque.SubSequence",
-                    "type" : "typealias"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/collection-implementations",
-                "title" : "Collection Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/debugdescription",
-                    "title" : "var debugDescription: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/customdebugstringconvertible-implementations",
-                "title" : "CustomDebugStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/custommirror",
-                    "title" : "var customMirror: Mirror",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/customreflectable-implementations",
-                "title" : "CustomReflectable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/description",
-                    "title" : "var description: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Initializers",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(from:)",
-                    "title" : "init(from: Decoder) throws",
-                    "type" : "init"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/decodable-implementations",
-                "title" : "Decodable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/encode(to:)",
-                    "title" : "func encode(to: Encoder) throws",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/encodable-implementations",
-                "title" : "Encodable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Operators",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/!=(_:_:)",
-                    "title" : "static func != (Self, Self) -> Bool",
-                    "type" : "op"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/==(_:_:)",
-                    "title" : "static func == (`Self`, `Self`) -> Bool",
-                    "type" : "op"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/equatable-implementations",
-                "title" : "Equatable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Initializers",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(arrayliteral:)",
-                    "title" : "init(arrayLiteral: Element...)",
-                    "type" : "init"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/expressiblebyarrayliteral-implementations",
-                "title" : "ExpressibleByArrayLiteral Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/hash(into:)",
-                    "title" : "func hash(into: inout Hasher)",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/hashable-implementations",
-                "title" : "Hashable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/partition(by:)-7fwft",
-                    "title" : "func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/partition(by:)-90y0t",
-                    "title" : "func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reverse()",
-                    "title" : "func reverse()",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/shuffle()",
-                    "title" : "func shuffle()",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/shuffle(using:)",
-                    "title" : "func shuffle<T>(using: inout T)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/sort()",
-                    "title" : "func sort()",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/sort(by:)",
-                    "title" : "func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/swapat(_:_:)-2riuy",
-                    "title" : "func swapAt(Self.Index, Self.Index)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/swapat(_:_:)-7910s",
-                    "title" : "func swapAt(Int, Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/withcontiguousmutablestorageifavailable(_:)-4goyj",
-                    "title" : "func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/withcontiguousmutablestorageifavailable(_:)-9ksuh",
-                    "title" : "func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?",
-                    "type" : "method"
-                  },
-                  {
-                    "title" : "Subscripts",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-1b1nh",
-                    "title" : "subscript<R>(R) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-1li81",
-                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-2gsji",
-                    "title" : "subscript((UnboundedRange_) -> ()) -> Self.SubSequence",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-3hvat",
-                    "title" : "subscript(Range<Self.Index>) -> Slice<Self>",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-47peg",
-                    "title" : "subscript(Range<Self.Index>) -> Self.SubSequence",
-                    "type" : "subscript"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/mutablecollection-implementations",
-                "title" : "MutableCollection Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/endindex",
-                    "title" : "var endIndex: Int",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/indices-swift.property",
-                    "title" : "var indices: Range<Int>",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/startindex",
-                    "title" : "var startIndex: Int",
-                    "type" : "property"
-                  },
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/distance(from:to:)",
-                    "title" : "func distance(from: Int, to: Int) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/formindex(after:)",
-                    "title" : "func formIndex(after: inout Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/formindex(before:)",
-                    "title" : "func formIndex(before: inout Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index(_:offsetby:)",
-                    "title" : "func index(Int, offsetBy: Int) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index(_:offsetby:limitedby:)",
-                    "title" : "func index(Int, offsetBy: Int, limitedBy: Int) -> Int?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index(after:)",
-                    "title" : "func index(after: Int) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/index(before:)",
-                    "title" : "func index(before: Int) -> Int",
-                    "type" : "method"
-                  },
-                  {
-                    "title" : "Subscripts",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-22tpo",
-                    "title" : "subscript(Range<Int>) -> Slice<`Self`>",
-                    "type" : "subscript"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/subscript(_:)-9nk44",
-                    "title" : "subscript(Int) -> Element",
-                    "type" : "subscript"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/randomaccesscollection-implementations",
-                "title" : "RandomAccessCollection Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Operators",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/+(_:_:)-2ezjl",
-                    "title" : "static func + <Other>(Self, Other) -> Self",
-                    "type" : "op"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/+(_:_:)-2udes",
-                    "title" : "static func + <Other>(Self, Other) -> Self",
-                    "type" : "op"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/+(_:_:)-647oo",
-                    "title" : "static func + <Other>(Other, Self) -> Self",
-                    "type" : "op"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/+=(_:_:)",
-                    "title" : "static func += <Other>(inout Self, Other)",
-                    "type" : "op"
-                  },
-                  {
-                    "title" : "Initializers",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init()",
-                    "title" : "init()",
-                    "type" : "init"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(_:)-2pl79",
-                    "title" : "init<S>(S)",
-                    "type" : "init"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(_:)-8tyaw",
-                    "title" : "init<S>(S)",
-                    "type" : "init"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(repeating:count:)-4v1gt",
-                    "title" : "init(repeating: Element, count: Int)",
-                    "type" : "init"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/init(repeating:count:)-5n2n3",
-                    "title" : "init(repeating: Self.Element, count: Int)",
-                    "type" : "init"
-                  },
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/append(_:)-6xmiz",
-                    "title" : "func append(Self.Element)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/append(_:)-9h4m7",
-                    "title" : "func append(Element)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/append(contentsof:)-6ewjz",
-                    "title" : "func append<S>(contentsOf: S)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/append(contentsof:)-8rqnl",
-                    "title" : "func append<S>(contentsOf: S)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/applying(_:)",
-                    "title" : "func applying(CollectionDifference<Self.Element>) -> Self?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/filter(_:)",
-                    "title" : "func filter((Self.Element) throws -> Bool) rethrows -> Self",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/insert(_:at:)-6fcpk",
-                    "title" : "func insert(Self.Element, at: Self.Index)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/insert(_:at:)-9hsp7",
-                    "title" : "func insert(Element, at: Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/insert(contentsof:at:)-1d60f",
-                    "title" : "func insert<C>(contentsOf: C, at: Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/insert(contentsof:at:)-quf0",
-                    "title" : "func insert<C>(contentsOf: C, at: Self.Index)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/poplast()",
-                    "title" : "func popLast() -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/remove(at:)-25pt",
-                    "title" : "func remove(at: Self.Index) -> Self.Element",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/remove(at:)-3imgi",
-                    "title" : "func remove(at: Int) -> Element",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removeall(keepingcapacity:)-2cas8",
-                    "title" : "func removeAll(keepingCapacity: Bool)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removeall(keepingcapacity:)-yeby",
-                    "title" : "func removeAll(keepingCapacity: Bool)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removeall(where:)-2ynh1",
-                    "title" : "func removeAll(where: (Self.Element) throws -> Bool) rethrows",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removeall(where:)-5e3im",
-                    "title" : "func removeAll(where: (Self.Element) throws -> Bool) rethrows",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removefirst()-1vdmt",
-                    "title" : "func removeFirst() -> Element",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removefirst()-5sg5i",
-                    "title" : "func removeFirst() -> Self.Element",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removefirst(_:)-2vuji",
-                    "title" : "func removeFirst(Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removefirst(_:)-8phg7",
-                    "title" : "func removeFirst(Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removelast()",
-                    "title" : "func removeLast() -> Self.Element",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removelast(_:)",
-                    "title" : "func removeLast(Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removesubrange(_:)-3ab3y",
-                    "title" : "func removeSubrange<R>(R)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removesubrange(_:)-6dkhw",
-                    "title" : "func removeSubrange(Range<Self.Index>)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/removesubrange(_:)-8oy85",
-                    "title" : "func removeSubrange(Range<Int>)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replace(_:with:maxreplacements:)",
-                    "title" : "func replace<C, Replacement>(C, with: Replacement, maxReplacements: Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replacesubrange(_:with:)-1sroc",
-                    "title" : "func replaceSubrange<C>(Range<Self.Index>, with: C)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replacesubrange(_:with:)-2xunu",
-                    "title" : "func replaceSubrange<C, R>(R, with: C)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replacesubrange(_:with:)-5rtzd",
-                    "title" : "func replaceSubrange<C>(Range<Int>, with: C)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replacing(_:with:maxreplacements:)",
-                    "title" : "func replacing<C, Replacement>(C, with: Replacement, maxReplacements: Int) -> Self",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/replacing(_:with:subrange:maxreplacements:)",
-                    "title" : "func replacing<C, Replacement>(C, with: Replacement, subrange: Range<Self.Index>, maxReplacements: Int) -> Self",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reservecapacity(_:)-7qlut",
-                    "title" : "func reserveCapacity(Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reservecapacity(_:)-9lqxx",
-                    "title" : "func reserveCapacity(Int)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/trimprefix(_:)",
-                    "title" : "func trimPrefix<Prefix>(Prefix)",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/trimprefix(while:)",
-                    "title" : "func trimPrefix(while: (Self.Element) throws -> Bool) rethrows",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/rangereplaceablecollection-implementations",
-                "title" : "RangeReplaceableCollection Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Structures",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "children" : [
-                      {
-                        "title" : "Instance Methods",
-                        "type" : "groupMarker"
-                      },
-                      {
-                        "path" : "\/documentation\/collections\/deque\/iterator\/next()",
-                        "title" : "func next() -> Element?",
-                        "type" : "method"
-                      }
-                    ],
-                    "path" : "\/documentation\/collections\/deque\/iterator",
-                    "title" : "Deque.Iterator",
-                    "type" : "struct"
-                  },
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/lazy",
-                    "title" : "var lazy: LazySequence<Self>",
-                    "type" : "property"
-                  },
-                  {
-                    "title" : "Instance Methods",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/allsatisfy(_:)",
-                    "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/compactmap(_:)",
-                    "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/contains(_:)-8w2ss",
-                    "title" : "func contains(Self.Element) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/contains(where:)",
-                    "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/elementsequal(_:)",
-                    "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/elementsequal(_:by:)",
-                    "title" : "func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/enumerated()",
-                    "title" : "func enumerated() -> EnumeratedSequence<Self>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/first(where:)",
-                    "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/flatmap(_:)-3f66n",
-                    "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/flatmap(_:)-4q9nu",
-                    "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/foreach(_:)",
-                    "title" : "func forEach((Self.Element) throws -> Void) rethrows",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/joined()",
-                    "title" : "func joined() -> FlattenSequence<Self>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/joined(separator:)-4husz",
-                    "title" : "func joined<Separator>(separator: Separator) -> JoinedSequence<Self>",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/joined(separator:)-4r7h7",
-                    "title" : "func joined(separator: String) -> String",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/lexicographicallyprecedes(_:)",
-                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/lexicographicallyprecedes(_:by:)",
-                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/makeiterator()",
-                    "title" : "func makeIterator() -> Iterator",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/map(_:)-47t1m",
-                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/max()",
-                    "title" : "func max() -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/max(by:)",
-                    "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/min()",
-                    "title" : "func min() -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/min(by:)",
-                    "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reduce(_:_:)",
-                    "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/reduce(into:_:)",
-                    "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/shuffled()",
-                    "title" : "func shuffled() -> [Self.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/shuffled(using:)",
-                    "title" : "func shuffled<T>(using: inout T) -> [Self.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/sorted()",
-                    "title" : "func sorted() -> [Self.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/sorted(by:)",
-                    "title" : "func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/split(separator:maxsplits:omittingemptysubsequences:)-3lk93",
-                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/starts(with:)",
-                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/starts(with:by:)",
-                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/withcontiguousstorageifavailable(_:)-4bcpo",
-                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?",
-                    "type" : "method"
-                  },
-                  {
-                    "path" : "\/documentation\/collections\/deque\/withcontiguousstorageifavailable(_:)-b0eu",
-                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
-                    "type" : "method"
-                  }
-                ],
-                "path" : "\/documentation\/collections\/deque\/sequence-implementations",
-                "title" : "Sequence Implementations",
-                "type" : "symbol"
-              }
-            ],
-            "path" : "\/documentation\/collections\/deque",
-            "title" : "Deque",
-            "type" : "struct"
-          }
-        ],
         "path" : "\/documentation\/dequemodule",
         "title" : "DequeModule",
         "type" : "module"

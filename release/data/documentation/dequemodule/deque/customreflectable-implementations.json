@@ -2,26 +2,25 @@
   "hierarchy" : {
     "paths" : [
       [
-
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/CustomReflectable-Implementations"
   },
-  "kind" : "symbol",
+  "kind" : "article",
   "metadata" : {
-    "externalID" : "Collections",
     "modules" : [
       {
         "name" : "Collections"
       }
     ],
-    "role" : "collection",
-    "roleHeading" : "Framework",
-    "symbolKind" : "module",
-    "title" : "Collections"
+    "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
+    "title" : "CustomReflectable Implementations"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -33,24 +32,11 @@
   ],
   "topicSections" : [
     {
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/customMirror"
       ],
-      "title" : "Structures"
-    }
-  ],
-  "variants" : [
-    {
-      "paths" : [
-        "\/documentation\/collections"
-      ],
-      "traits" : [
-        {
-          "interfaceLanguage" : "swift"
-        }
-      ]
+      "title" : "Instance Properties"
     }
   ]
 , 
@@ -124,17 +110,17 @@
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/customMirror": {
   "abstract" : [
     {
-      "text" : "An ordered collection of key-value pairs.",
+      "text" : "The custom mirror for this instance.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "struct"
+      "text" : "var"
     },
     {
       "kind" : "text",
@@ -142,55 +128,24 @@
     },
     {
       "kind" : "identifier",
-      "text" : "OrderedDictionary"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "OrderedDictionary"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "OrderedDictionary",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/ordereddictionary"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet": {
-  "abstract" : [
-    {
-      "text" : "An ordered collection of unique elements.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
+      "text" : "customMirror"
     },
     {
       "kind" : "text",
-      "text" : " "
+      "text" : ": "
     },
     {
-      "kind" : "identifier",
-      "text" : "OrderedSet"
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6MirrorV",
+      "text" : "Mirror"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/customMirror",
   "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "OrderedSet"
-    }
-  ],
   "role" : "symbol",
-  "title" : "OrderedSet",
+  "title" : "customMirror",
   "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset"
+  "url" : "\/documentation\/dequemodule\/deque\/custommirror"
 }
 }
 }
