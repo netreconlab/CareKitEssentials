@@ -54,6 +54,14 @@
 		70C422DA2C3B6C7600E6DC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */; };
 		70C422DF2C3B6C8D00E6DC51 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; };
 		70C422E02C3B6C8D00E6DC51 /* CareKitEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */; };
+		70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30A2D19FC0F00517D5E /* EventViewable.swift */; };
+		70EBE3102D19FC2A00517D5E /* EventQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */; };
+		70EBE3112D19FC2A00517D5E /* EventQueryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */; };
+		70EBE3132D19FF0200517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */; };
+		70EBE3152D19FF9700517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */; };
+		70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */; };
+		70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */; };
 		70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDC6152C387C9F00A32137 /* NSImage.swift */; };
 		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
 		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
@@ -178,6 +186,14 @@
 		70C422D52C3B6C7600E6DC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C422D72C3B6C7600E6DC51 /* TestHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHost.entitlements; sourceTree = "<group>"; };
 		70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70EBE30A2D19FC0F00517D5E /* EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewable.swift; sourceTree = "<group>"; };
+		70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWithContentViewable.swift; sourceTree = "<group>"; };
+		70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryContentView.swift; sourceTree = "<group>"; };
+		70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryView.swift; sourceTree = "<group>"; };
+		70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
+		70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InstructionsTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
+		70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabeledValueTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
+		70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumericProgressTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
 		70FDC6152C387C9F00A32137 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		911BDB252A11C437004F8442 /* View+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Default.swift"; sourceTree = "<group>"; };
 		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -289,7 +305,9 @@
 			isa = PBXGroup;
 			children = (
 				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
+				70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */,
 				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
+				70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,8 +315,10 @@
 		70B49A8E2D0A8FB80023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
+				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
+				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
+				70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,13 +335,14 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_23 /* CardViewModel.swift */,
-				700DA9042C2A609600435E2C /* CareKitEssentialView.swift */,
 				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
 				70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */,
 				702FF7672CFAA8B300B26710 /* Chart */,
+				70EBE3082D19FB8E00517D5E /* EventViews */,
 				70B49A8E2D0A8FB80023E5B3 /* Extensions */,
+				70EBE3092D19FBE300517D5E /* Protocols */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -380,6 +401,25 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70EBE3082D19FB8E00517D5E /* EventViews */ = {
+			isa = PBXGroup;
+			children = (
+				70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */,
+				70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */,
+			);
+			path = EventViews;
+			sourceTree = "<group>";
+		};
+		70EBE3092D19FBE300517D5E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				700DA9042C2A609600435E2C /* CareKitEssentialView.swift */,
+				70EBE30A2D19FC0F00517D5E /* EventViewable.swift */,
+				70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		OBJ_14 /* DigitalCrown */ = {
@@ -682,6 +722,8 @@
 				7026DDFB2D0D3C86002EACAA /* CareStoreFetchedResult+Hashable.swift in Sources */,
 				70B49A8B2D0A86C80023E5B3 /* CareStoreFetchedResult.swift in Sources */,
 				4B27AD842C4ACC4E00661121 /* CareTaskProgressStrategy.swift in Sources */,
+				70EBE3102D19FC2A00517D5E /* EventQueryView.swift in Sources */,
+				70EBE3112D19FC2A00517D5E /* EventQueryContentView.swift in Sources */,
 				702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				70B49A602D06A2520023E5B3 /* SimpleLabelView.swift in Sources */,
@@ -691,6 +733,7 @@
 				OBJ_740 /* CustomLabelView.swift in Sources */,
 				7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
+				70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */,
 				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
 				70B49A7D2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
@@ -704,12 +747,16 @@
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
 				702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */,
+				70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */,
 				702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */,
+				70EBE3152D19FF9700517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift in Sources */,
 				702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */,
 				91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */,
 				OBJ_752 /* Calendar+Dates.swift in Sources */,
 				70B49A852D0A56C10023E5B3 /* OCKOutcomeValue+Hashable.swift in Sources */,
 				OBJ_753 /* Image.swift in Sources */,
+				70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */,
+				70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */,
 				70B49A892D0A83E10023E5B3 /* Double.swift in Sources */,
 				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
@@ -724,6 +771,7 @@
 				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
+				70EBE3132D19FF0200517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */,
 				7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */,

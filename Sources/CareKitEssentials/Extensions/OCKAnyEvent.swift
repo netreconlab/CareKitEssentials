@@ -173,6 +173,39 @@ public extension OCKAnyEvent {
 }
 
 extension OCKAnyEvent {
+    static func createDummyEvent(withTaskID taskID: String) -> OCKAnyEvent {
+
+        let element = OCKScheduleElement(
+            start: Date(),
+            end: nil,
+            interval: .init(day: 1)
+        )
+        let scheduleEvent = OCKScheduleEvent(
+            start: .yesterday,
+            end: .now,
+            element: element,
+            occurrence: 1
+        )
+        let task = OCKTask(
+            id: taskID,
+            title: nil,
+            carePlanUUID: nil,
+            schedule: .dailyAtTime(
+                hour: 0,
+                minutes: 0,
+                start: .now,
+                end: nil,
+                text: nil
+            )
+        )
+        let event = OCKAnyEvent(
+            task: task,
+            outcome: nil,
+            scheduleEvent: scheduleEvent
+        )
+        return event
+    }
+
     func toggleBooleanOutcome<T: OCKAnyEventStore>(store: T) async throws -> OCKAnyOutcome {
         try await store.toggleBooleanOutcome(for: self)
     }

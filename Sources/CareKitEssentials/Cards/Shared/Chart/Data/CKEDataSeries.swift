@@ -1,6 +1,6 @@
 //
 //  CKEDataSeries.swift
-//  Assuage
+//  CareKitEssentials
 //
 //  Created by Alyssa Donawa on 6/11/24.
 //  Copyright © 2024 NetReconLab. All rights reserved.
