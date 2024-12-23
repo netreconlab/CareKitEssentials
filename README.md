@@ -16,7 +16,7 @@ Provides essential cards, views, models, protocols, and extensions to expedite b
 A number of public extensions are available to make using CareKit easier. All of the extensions can be found in the [Extensions](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Extensions) folder.
 
 ## Usage
-You can create SwiftUI views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The following views are based on `CareKitEssentialView`:
+You can create SwiftUI views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The framework adds a number of additional cards that can be found in the [Cards](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Cards) folder. The following add views/cards are based on `CareKitEssentialView`:
 
 ### Shared
 [CareEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts.
