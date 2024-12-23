@@ -1,6 +1,6 @@
 //
 //  CareEssentialChartView.swift
-//  Assuage
+//  CareKitEssentials
 //
 //  Created by Zion Glover on 6/26/24.
 //  Copyright © 2024 NetReconLab. All rights reserved.

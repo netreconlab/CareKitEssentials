@@ -14,4 +14,6 @@ extension Logger {
     static let essentialView = Logger(subsystem: subsystem, category: "CareKitEssentialView")
     static let essentialChartView = Logger(subsystem: subsystem, category: "CareKitEssentialChartView")
     static let careKitAnyEventStore = Logger(subsystem: subsystem, category: "CareKitAnyEventStore")
+    static let instructionsTaskView = Logger(subsystem: subsystem, category: "InstructionsTaskView")
+    static let simpleTaskView = Logger(subsystem: subsystem, category: "SimpleTaskView")
 }
