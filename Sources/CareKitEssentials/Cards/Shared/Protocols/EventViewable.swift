@@ -10,6 +10,8 @@ import CareKit
 import CareKitStore
 import SwiftUI
 
+#if !os(watchOS)
+
 /// Conforming to this protocol ensures your view
 /// consists of the proper initializers to view events.
 public protocol EventViewable: View {
@@ -22,3 +24,5 @@ public protocol EventViewable: View {
         store: any OCKAnyStoreProtocol
     )
 }
+
+#endif
