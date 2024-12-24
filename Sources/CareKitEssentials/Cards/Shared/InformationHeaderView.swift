@@ -36,36 +36,52 @@ public struct InformationHeaderView: View {
     private let event: OCKAnyEvent
     private let detailsTitle: String?
     private let details: String?
+    private let includeDivider: Bool
 
-    @OSValue<Font>(values: [.watchOS: .system(size: 13)],
-                   defaultValue: .caption) private var font
+    @OSValue<Font>(
+        values: [.watchOS: .system(size: 13)],
+        defaultValue: .caption
+    ) private var font
 
     public var body: some View {
-        HStack(spacing: style.dimension.directionalInsets2.trailing) {
-            image?
-                .font(.largeTitle)
-                .foregroundColor(Color.gray)
-            VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top / 4.0) {
-                title
-                    .font(.headline)
-                    .fontWeight(.bold)
+        VStack {
+            HStack(
+                spacing: style.dimension.directionalInsets2.trailing
+            ) {
+                image?
+                    .font(.largeTitle)
+                    .foregroundColor(Color.gray)
+                VStack(
+                    alignment: .leading,
+                    spacing: style.dimension.directionalInsets1.top / 4.0
+                ) {
+                    title
+                        .font(.headline)
+                        .fontWeight(.bold)
 
-                information?
-                    .font(font)
-                    .fontWeight(.medium)
-            }.foregroundColor(Color.primary)
-            Spacer()
-            Button(action: {
-                isShowingDetails = true
-            }) {
-                Image(systemName: "info.circle")
+                    information?
+                        .font(font)
+                        .fontWeight(.medium)
+                }.foregroundColor(Color.primary)
+                Spacer()
+                Button(
+                    action: {
+                        isShowingDetails = true
+                    }
+                ) {
+                    Image(systemName: "info.circle")
+                }
+                .clipShape(Circle())
+                .fixedSize()
             }
-            .clipShape(Circle())
-            .fixedSize()
+            if includeDivider {
+                Divider()
+            }
         }
         .sheet(isPresented: $isShowingDetails) {
             DetailsView(event: event, title: detailsTitle, details: details)
         }
+
     }
 
     // MARK: - Init
@@ -78,18 +94,23 @@ public struct InformationHeaderView: View {
     ///   - event: The event to display details for when the info button is tapped.
     ///   - detailsTitle: The title text to be displayed when the info button is tapped.
     ///   - details: The text to be displayed when the info button is tapped.
-    public init(title: Text,
-                information: Text? = nil,
-                image: Image? = nil,
-                event: OCKAnyEvent,
-                detailsTitle: String? = nil,
-                details: String? = nil) {
+    ///   - includeDivider: Show the divider at the bottom of the header view.
+    public init(
+        title: Text,
+        information: Text? = nil,
+        image: Image? = nil,
+        event: OCKAnyEvent,
+        detailsTitle: String? = nil,
+        details: String? = nil,
+        includeDivider: Bool = true
+    ) {
         self.title = title
         self.information = information
         self.image = image
         self.event = event
         self.detailsTitle = detailsTitle
         self.details = details
+        self.includeDivider = includeDivider
     }
 }
 

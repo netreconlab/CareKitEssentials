@@ -78,8 +78,7 @@ struct Slider: View {
     private func view(geometry: GeometryProxy) -> some View {
         let frameWidth = geometry.size.width
         let imageWidth = (frameWidth / 10).rounded()
-        return
-            VStack(spacing: 0) {
+        let view = VStack(spacing: 0) {
                 Text(String(format: "%g", viewModel.valueAsDouble))
                     .font(.system(size: valueFontSize))
                     .foregroundColor(.accentColor)
@@ -124,6 +123,7 @@ struct Slider: View {
                     }
                 }
             }
+        return view
     }
 
     private func slider(frameWidth: CGFloat, imageWidth: CGFloat) -> some View {
@@ -175,7 +175,9 @@ struct Slider: View {
                 .if(gradientColors == nil) {
                     $0.accentColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
                 }
-                .if(gradientColors != nil) { $0.accentColor(.clear) }
+                .if(gradientColors != nil) {
+                    $0.accentColor(.clear)
+                }
         }
     }
 

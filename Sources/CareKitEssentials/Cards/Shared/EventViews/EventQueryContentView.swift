@@ -12,8 +12,6 @@ import CareKitStore
 import CareKitUI
 import os.log
 
-#if !os(watchOS)
-
 /// A view that wraps any view that is `EventWithContentViewable` and provides
 /// the respective view with an up-to-date latest event matching the
 /// specified event query.
@@ -74,5 +72,3 @@ public struct EventQueryContentView<CareView: EventWithContentViewable>: View {
         self.content = content
     }
 }
-
-#endif

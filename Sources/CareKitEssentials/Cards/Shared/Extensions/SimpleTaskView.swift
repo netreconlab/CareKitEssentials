@@ -5,7 +5,6 @@
 //  Created by Corey Baker on 5/20/23.
 //
 
-import CareKit
 import CareKitStore
 import CareKitUI
 import Foundation
@@ -43,7 +42,8 @@ public extension SimpleTaskView where Header == InformationHeaderView {
                 InformationHeaderView(
                     title: Text(event.title),
                     information: event.detailText,
-                    event: event
+                    event: event,
+                    includeDivider: false
                 )
             }
         )

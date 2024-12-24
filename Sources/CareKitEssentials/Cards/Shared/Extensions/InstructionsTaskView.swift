@@ -5,7 +5,6 @@
 //  Created by Corey Baker on 5/20/23.
 //
 
-import CareKit
 import CareKitStore
 import CareKitUI
 import Foundation

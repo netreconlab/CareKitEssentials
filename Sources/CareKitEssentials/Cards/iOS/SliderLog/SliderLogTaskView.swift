@@ -59,13 +59,10 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
     public var body: some View {
         CardView {
             VStack(alignment: .leading, spacing: style.dimension.directionalInsets1.top) {
-                if !(header is EmptyView) {
-                    VStack {
-                        header
-                        Divider()
+                header
+                    .if(isCardEnabled && isHeaderPadded) {
+                        $0.padding([.horizontal, .top])
                     }
-                    .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .top]) }
-                }
 
                 instructions?
                     .font(.subheadline)
@@ -74,17 +71,21 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
                     .if(isCardEnabled) { $0.padding([.horizontal]) }
 
                 VStack { slider }
-                    .if(isCardEnabled && isHeaderPadded) { $0.padding([.horizontal, .bottom]) }
+                    .if(isCardEnabled && isHeaderPadded) {
+                        $0.padding([.horizontal, .bottom])
+                    }
             }
         }
     }
 
-    init(isHeaderPadded: Bool,
-         isSliderPadded: Bool,
-         instructions: Text?,
-         viewModel: SliderLogTaskViewModel,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder slider: () -> Slider) {
+    init(
+        isHeaderPadded: Bool,
+        isSliderPadded: Bool,
+        instructions: Text?,
+        viewModel: SliderLogTaskViewModel,
+        @ViewBuilder header: () -> Header,
+        @ViewBuilder slider: () -> Slider
+    ) {
         self.isHeaderPadded = isHeaderPadded
         self.isSliderPadded = isSliderPadded
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -103,16 +104,20 @@ public extension SliderLogTaskView {
     /// - parameter viewModel: The view model used to populate the view contents.
     /// - parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
-    init(instructions: Text? = nil,
-         viewModel: SliderLogTaskViewModel,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder slider: () -> Slider) {
-        self.init(isHeaderPadded: false,
-                  isSliderPadded: false,
-                  instructions: instructions,
-                  viewModel: viewModel,
-                  header: header,
-                  slider: slider)
+    init(
+        instructions: Text? = nil,
+        viewModel: SliderLogTaskViewModel,
+        @ViewBuilder header: () -> Header,
+        @ViewBuilder slider: () -> Slider
+    ) {
+        self.init(
+            isHeaderPadded: false,
+            isSliderPadded: false,
+            instructions: instructions,
+            viewModel: viewModel,
+            header: header,
+            slider: slider
+        )
     }
 
     /// Create a view using a view model.
@@ -130,16 +135,18 @@ public extension SliderLogTaskView {
     /// - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
     /// - parameter header: Short and descriptive content that identifies the event.
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
-    init(instructions: Text? = nil,
-         event: OCKAnyEvent,
-         kind: String? = nil,
-         detailsTitle: String? = nil,
-         detailsInformation: String? = nil,
-         range: ClosedRange<Double>,
-         step: Double = 1,
-         action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
-         @ViewBuilder header: () -> Header,
-         @ViewBuilder slider: () -> Slider) {
+    init(
+        instructions: Text? = nil,
+        event: OCKAnyEvent,
+        kind: String? = nil,
+        detailsTitle: String? = nil,
+        detailsInformation: String? = nil,
+        range: ClosedRange<Double>,
+        step: Double = 1,
+        action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil,
+        @ViewBuilder header: () -> Header,
+        @ViewBuilder slider: () -> Slider
+    ) {
         self.init(
             isHeaderPadded: false,
             isSliderPadded: false,
@@ -168,20 +175,27 @@ public extension SliderLogTaskView where Header == InformationHeaderView {
     /// - parameter instructions: Instructions text to display under the header.
     /// - parameter viewModel: The view model used to populate the view contents.
     /// - parameter slider: View to inject under the header. Specified content will be stacked vertically.
-    init(title: Text,
-         detail: Text? = nil,
-         instructions: Text? = nil,
-         viewModel: SliderLogTaskViewModel,
-         @ViewBuilder slider: () -> Slider) {
-        self.init(isHeaderPadded: true,
-                  isSliderPadded: false,
-                  instructions: instructions,
-                  viewModel: viewModel,
-                  header: {
-            InformationHeaderView(title: title,
-                                  information: detail,
-                                  event: viewModel.event)
-        }, slider: slider)
+    init(
+        title: Text,
+        detail: Text? = nil,
+        instructions: Text? = nil,
+        viewModel: SliderLogTaskViewModel,
+        @ViewBuilder slider: () -> Slider
+    ) {
+        self.init(
+            isHeaderPadded: true,
+            isSliderPadded: false,
+            instructions: instructions,
+            viewModel: viewModel,
+            header: {
+                InformationHeaderView(
+                    title: title,
+                    information: detail,
+                    event: viewModel.event
+                )
+            },
+            slider: slider
+        )
     }
 }
 
@@ -201,29 +215,35 @@ public extension SliderLogTaskView where Slider == _SliderLogTaskViewSlider {
     /// being drawn. Defaults to nil. An example usage would set an array of red and green to visually indicate a
     /// scale from bad to good.
     /// - parameter header: Header to inject at the top of the card. Specified content will be stacked vertically.
-    init(instructions: Text? = nil,
-         viewModel: SliderLogTaskViewModel,
-         minimumImage: Image? = nil,
-         maximumImage: Image? = nil,
-         minimumDescription: String? = nil,
-         maximumDescription: String? = nil,
-         style: SliderStyle = .ticked,
-         gradientColors: [Color]? = nil,
-         @ViewBuilder header: () -> Header) {
-        self.init(isHeaderPadded: false,
-                  isSliderPadded: true,
-                  instructions: instructions,
-                  viewModel: viewModel,
-                  header: header,
-                  slider: {
-            _SliderLogTaskViewSlider(viewModel: viewModel,
-                                     minimumImage: minimumImage,
-                                     maximumImage: maximumImage,
-                                     minimumDescription: minimumDescription,
-                                     maximumDescription: maximumDescription,
-                                     style: style,
-                                     gradientColors: gradientColors)
-        })
+    init(
+        instructions: Text? = nil,
+        viewModel: SliderLogTaskViewModel,
+        minimumImage: Image? = nil,
+        maximumImage: Image? = nil,
+        minimumDescription: String? = nil,
+        maximumDescription: String? = nil,
+        style: SliderStyle = .ticked,
+        gradientColors: [Color]? = nil,
+        @ViewBuilder header: () -> Header
+    ) {
+        self.init(
+            isHeaderPadded: false,
+            isSliderPadded: true,
+            instructions: instructions,
+            viewModel: viewModel,
+            header: header,
+            slider: {
+                _SliderLogTaskViewSlider(
+                    viewModel: viewModel,
+                    minimumImage: minimumImage,
+                    maximumImage: maximumImage,
+                    minimumDescription: minimumDescription,
+                    maximumDescription: maximumDescription,
+                    style: style,
+                    gradientColors: gradientColors
+                )
+            }
+        )
     }
 }
 
@@ -360,13 +380,15 @@ public struct _SliderLogTaskViewSlider: View { // swiftlint:disable:this type_na
     fileprivate let style: SliderStyle
     fileprivate let gradientColors: [Color]?
 
-    init(viewModel: SliderLogTaskViewModel,
-         minimumImage: Image?,
-         maximumImage: Image?,
-         minimumDescription: String?,
-         maximumDescription: String?,
-         style: SliderStyle,
-         gradientColors: [Color]?) {
+    init(
+        viewModel: SliderLogTaskViewModel,
+        minimumImage: Image?,
+        maximumImage: Image?,
+        minimumDescription: String?,
+        maximumDescription: String?,
+        style: SliderStyle,
+        gradientColors: [Color]?
+    ) {
         self.viewModel = viewModel
         self.minimumImage = minimumImage
         self.maximumImage = maximumImage

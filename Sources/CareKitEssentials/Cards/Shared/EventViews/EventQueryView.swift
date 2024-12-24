@@ -11,8 +11,6 @@ import CareKitStore
 import CareKitUI
 import SwiftUI
 
-#if !os(watchOS)
-
 /// A view that wraps any view that is `EventViewable` and provides
 /// the respective view with an up-to-date latest event matching the
 /// specified event query.
@@ -78,6 +76,7 @@ public struct EventQueryView<CareView: EventViewable>: View {
         EventQueryView<InstructionsTaskView>(
             query: query
         )
+        #if !os(watchOS)
         Divider()
         EventQueryView<LabeledValueTaskView>(
             query: query
@@ -86,11 +85,10 @@ public struct EventQueryView<CareView: EventViewable>: View {
         EventQueryView<NumericProgressTaskView>(
             query: query
         )
+        #endif
     }
     .environment(\.careStore, Utility.createPreviewStore())
     .accentColor(.red)
     .careKitStyle(OCKStyle())
     .padding()
 }
-
-#endif

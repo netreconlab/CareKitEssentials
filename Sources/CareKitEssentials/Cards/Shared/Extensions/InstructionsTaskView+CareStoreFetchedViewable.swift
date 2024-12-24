@@ -13,8 +13,6 @@ import Foundation
 import SwiftUI
 import os.log
 
-#if !os(watchOS)
-
 extension InstructionsTaskView: EventViewable where Header == InformationHeaderView {
     public init?(
         event: OCKAnyEvent,
@@ -29,5 +27,3 @@ extension InstructionsTaskView: EventViewable where Header == InformationHeaderV
         )
     }
 }
-
-#endif
