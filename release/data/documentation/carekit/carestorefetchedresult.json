@@ -112,8 +112,15 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/init(id:result:store:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/id",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/result"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/result",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/store"
       ],
       "title" : "Instance Properties"
     },
@@ -234,6 +241,81 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresult\/id"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResult/init(id:result:store:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a fetched result.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "result"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7CareKit0A18StoreFetchedResultV0E0xmfp",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "store"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06OCKAnyC8Protocola",
+      "text" : "OCKAnyStoreProtocol"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/init(id:result:store:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(id:result:store:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekit\/carestorefetchedresult\/init(id:result:store:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResult/result": {
   "abstract" : [
     {
@@ -270,6 +352,40 @@
   "title" : "result",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresult\/result"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResult/store": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "store"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06OCKAnyC8Protocola",
+      "text" : "OCKAnyStoreProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/store",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "store",
+  "type" : "topic",
+  "url" : "\/documentation\/carekit\/carestorefetchedresult\/store"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s12IdentifiableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP",

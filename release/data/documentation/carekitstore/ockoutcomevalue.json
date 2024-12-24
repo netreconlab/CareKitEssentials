@@ -137,9 +137,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/description",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/doubleValue",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/endDate",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/integerValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/kind",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/numberValue",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/startDate",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/stringValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/type",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/units",
@@ -611,6 +613,47 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/encode(to:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/endDate": {
+  "abstract" : [
+    {
+      "text" : "The value’s end date.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "endDate"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DateV",
+      "text" : "Date"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/endDate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "endDate",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/enddate"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/init(_:units:)": {
   "abstract" : [
     {
@@ -822,6 +865,47 @@
   "title" : "numberValue",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/numbervalue"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/startDate": {
+  "abstract" : [
+    {
+      "text" : "The value’s start date.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "startDate"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DateV",
+      "text" : "Date"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/startDate",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "startDate",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/startdate"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/stringValue": {
   "abstract" : [

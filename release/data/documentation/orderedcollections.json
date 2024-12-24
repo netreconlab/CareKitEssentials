@@ -34,8 +34,8 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedDictionary",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
       ],
       "title" : "Structures"
     }
@@ -54,7 +54,18 @@
   ]
 , 
 "references": {
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedDictionary": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "OrderedCollections",
+  "type" : "topic",
+  "url" : "\/documentation\/orderedcollections"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary": {
   "abstract" : [
     {
       "text" : "An ordered collection of key-value pairs.",
@@ -75,7 +86,7 @@
       "text" : "OrderedDictionary"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedDictionary",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -86,9 +97,9 @@
   "role" : "symbol",
   "title" : "OrderedDictionary",
   "type" : "topic",
-  "url" : "\/documentation\/collections\/ordereddictionary"
+  "url" : "\/documentation\/orderedcollections\/ordereddictionary"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/OrderedSet": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet": {
   "abstract" : [
     {
       "text" : "An ordered collection of unique elements.",
@@ -109,7 +120,7 @@
       "text" : "OrderedSet"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/OrderedSet",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -120,18 +131,7 @@
   "role" : "symbol",
   "title" : "OrderedSet",
   "type" : "topic",
-  "url" : "\/documentation\/collections\/orderedset"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-  "kind" : "symbol",
-  "role" : "collection",
-  "title" : "OrderedCollections",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections"
+  "url" : "\/documentation\/orderedcollections\/orderedset"
 }
 }
 }

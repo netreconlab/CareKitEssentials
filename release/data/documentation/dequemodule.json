@@ -34,7 +34,7 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ],
       "title" : "Structures"
     }
@@ -53,7 +53,18 @@
   ]
 , 
 "references": {
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/Collections/Deque": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "DequeModule",
+  "type" : "topic",
+  "url" : "\/documentation\/dequemodule"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque": {
   "abstract" : [
     {
       "text" : "A collection implementing a double-ended queue. ",
@@ -98,7 +109,7 @@
       "text" : "Deque"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/Collections\/Deque",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -109,18 +120,7 @@
   "role" : "symbol",
   "title" : "Deque",
   "type" : "topic",
-  "url" : "\/documentation\/collections\/deque"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule",
-  "kind" : "symbol",
-  "role" : "collection",
-  "title" : "DequeModule",
-  "type" : "topic",
-  "url" : "\/documentation\/dequemodule"
+  "url" : "\/documentation\/dequemodule\/deque"
 }
 }
 }
