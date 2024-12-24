@@ -45,10 +45,7 @@ public struct SimpleLabelView<Header: View>: View {
                 alignment: .leading,
                 spacing: style.dimension.directionalInsets1.top
             ) {
-                if let header = header {
-                    header
-                    Divider()
-                }
+                header
                 HStack(
                     spacing: style.dimension.directionalInsets2.trailing
                 ) {

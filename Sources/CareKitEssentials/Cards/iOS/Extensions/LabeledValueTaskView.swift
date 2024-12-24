@@ -42,7 +42,8 @@ public extension LabeledValueTaskView where Header == InformationHeaderView {
                 InformationHeaderView(
                     title: Text(event.title),
                     information: event.detailText,
-                    event: event
+                    event: event,
+                    includeDivider: false
                 )
             }
         )

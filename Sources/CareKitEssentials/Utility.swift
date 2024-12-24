@@ -34,19 +34,26 @@ class Utility {
         let aFewDaysAgo = Calendar.current.date(byAdding: .day, value: -4, to: thisMorning)!
         let beforeBreakfast = Calendar.current.date(byAdding: .hour, value: 8, to: aFewDaysAgo)!
 
-        return OCKScheduleElement(start: beforeBreakfast,
-                                  end: nil,
-                                  interval: DateComponents(day: 1))
+        let schedule = OCKScheduleElement(
+            start: beforeBreakfast,
+            end: nil,
+            interval: DateComponents(day: 1)
+        )
+        return schedule
 
     }
 
     class func createNauseaTask() -> OCKTask {
-        let nauseaSchedule = OCKSchedule(composing: [createMorningScheduleElement()])
+        let nauseaSchedule = OCKSchedule(
+            composing: [createMorningScheduleElement()]
+        )
 
-        var nausea = OCKTask(id: TaskID.nausea,
-                             title: "Track nausea",
-                             carePlanUUID: nil,
-                             schedule: nauseaSchedule)
+        var nausea = OCKTask(
+            id: TaskID.nausea,
+            title: "Track nausea",
+            carePlanUUID: nil,
+            schedule: nauseaSchedule
+        )
         nausea.impactsAdherence = false
         nausea.instructions = "Tap button below."
         nausea.asset = "bed.double"
@@ -57,11 +64,16 @@ class Utility {
         guard let schedule = createNauseaTask().schedule.event(forOccurrenceIndex: 0) else {
             throw CareKitEssentialsError.requiredValueCantBeUnwrapped
         }
-        return OCKAnyEvent(task: createNauseaTask(),
-                           outcome: OCKOutcome(taskUUID: UUID(),
-                                               taskOccurrenceIndex: 0,
-                                               values: []),
-                           scheduleEvent: schedule)
+        let event = OCKAnyEvent(
+            task: createNauseaTask(),
+            outcome: OCKOutcome(
+                taskUUID: UUID(),
+                taskOccurrenceIndex: 0,
+                values: []
+            ),
+            scheduleEvent: schedule
+        )
+        return event
     }
 
     class func createPreviewStore() -> OCKStore {

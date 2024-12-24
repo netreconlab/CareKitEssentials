@@ -32,20 +32,15 @@ public struct DigitalCrownView<Header: View, Footer: View>: View {
                 alignment: .leading,
                 spacing: style.dimension.directionalInsets1.top
             ) {
-                if !(header is EmptyView) {
-                    VStack {
-                        header
-                        Divider()
+                header
+                    .if(isHeaderPadded) {
+                        $0.padding([.horizontal, .top])
                     }
-                    .if(isHeaderPadded) { $0.padding([.horizontal, .top]) }
-                }
 
-                VStack {
-                    footer
-                }
-                .if(isHeaderPadded) {
-                    $0.padding([.horizontal, .bottom])
-                }
+                footer
+                    .if(isHeaderPadded) {
+                        $0.padding([.horizontal, .bottom])
+                    }
             }
             .padding(isCardEnabled ? [.all] : [])
         }

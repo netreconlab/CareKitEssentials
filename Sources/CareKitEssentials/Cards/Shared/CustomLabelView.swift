@@ -26,20 +26,15 @@ public struct CustomLabelView<Header: View>: View {
     @Environment(\.isCardEnabled) private var isCardEnabled
     @StateObject var viewModel: CardViewModel
 
-    let header: Header
+    let header: Header?
 
     public var body: some View {
         CardView {
-            VStack(alignment: .leading,
-                   spacing: style.dimension.directionalInsets1.top) {
-
-                if !(header is EmptyView) {
-                    VStack {
-                        header
-                        Divider()
-                    }
-                }
-
+            VStack(
+                alignment: .leading,
+                spacing: style.dimension.directionalInsets1.top
+            ) {
+                header
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
 
                     viewModel.event.image()?
@@ -77,9 +72,24 @@ public extension CustomLabelView {
     ///
     /// - Parameters:
     ///   - viewModel: The view model used to populate the view contents.
+    init(
+        viewModel: CardViewModel
+    ) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+        self.header = nil
+    }
+
+    /// Create a view using a view model.
+    ///
+    /// This view displays custom label card with  title, detail, and/or image.
+    ///
+    /// - Parameters:
+    ///   - viewModel: The view model used to populate the view contents.
     ///   -  header: Short and descriptive content that identifies the event.
-    init(viewModel: CardViewModel,
-         @ViewBuilder header: () -> Header) {
+    init(
+        viewModel: CardViewModel,
+        @ViewBuilder header: () -> Header
+    ) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.header = header()
     }
@@ -128,21 +138,29 @@ public extension CustomLabelView where Header == InformationHeaderView {
         self._viewModel = StateObject(wrappedValue: viewModel)
         if let informationTitle = viewModel.detailsTitle,
             let informationDetails = viewModel.detailsInformation {
-            self.header = InformationHeaderView(title: Text(viewModel.event.title),
-                                                event: viewModel.event,
-                                                detailsTitle: informationTitle,
-                                                details: informationDetails)
+            self.header = InformationHeaderView(
+                title: Text(viewModel.event.title),
+                event: viewModel.event,
+                detailsTitle: informationTitle,
+                details: informationDetails
+            )
         } else if let informationTitle = viewModel.detailsTitle {
-            self.header = InformationHeaderView(title: Text(viewModel.event.title),
-                                                event: viewModel.event,
-                                                detailsTitle: informationTitle)
+            self.header = InformationHeaderView(
+                title: Text(viewModel.event.title),
+                event: viewModel.event,
+                detailsTitle: informationTitle
+            )
         } else if let informationDetails = viewModel.detailsInformation {
-            self.header = InformationHeaderView(title: Text(viewModel.event.title),
-                                                event: viewModel.event,
-                                                details: informationDetails)
+            self.header = InformationHeaderView(
+                title: Text(viewModel.event.title),
+                event: viewModel.event,
+                details: informationDetails
+            )
         } else {
-            self.header = InformationHeaderView(title: Text(viewModel.event.title),
-                                                event: viewModel.event)
+            self.header = InformationHeaderView(
+                title: Text(viewModel.event.title),
+                event: viewModel.event
+            )
         }
     }
 
@@ -182,8 +200,7 @@ struct CustomLabelView_Previews: PreviewProvider {
                 CustomLabelView(
                     viewModel: .init(
                         event: event
-                    ),
-                    header: EmptyView()
+                    )
                 )
                 .padding()
                 CustomLabelView(
