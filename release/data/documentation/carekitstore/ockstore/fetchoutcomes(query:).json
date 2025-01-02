@@ -78,6 +78,14 @@
       },
       {
         "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12CareKitStore018OCKReadableOutcomeC0P0E0Qa",
         "text" : "Outcome"
       },
@@ -156,6 +164,14 @@
             {
               "kind" : "text",
               "text" : " -> ["
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableOutcomeStore\/Outcome",
@@ -417,6 +433,14 @@
     {
       "kind" : "text",
       "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

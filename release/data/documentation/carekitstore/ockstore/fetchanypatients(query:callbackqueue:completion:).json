@@ -92,7 +92,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<["
+        "text" : "<[any "
       },
       {
         "kind" : "typeIdentifier",
@@ -185,7 +185,7 @@
               "text" : ": "
             },
             {
-              "kind" : "attribute",
+              "kind" : "keyword",
               "text" : "@escaping"
             },
             {
@@ -200,7 +200,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<["
+              "text" : "<[any "
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyPatient",
@@ -527,7 +527,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<["
+      "text" : "<[any "
     },
     {
       "kind" : "typeIdentifier",

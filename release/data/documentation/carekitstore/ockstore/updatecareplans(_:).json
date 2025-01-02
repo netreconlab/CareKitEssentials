@@ -45,6 +45,14 @@
       },
       {
         "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12CareKitStore011OCKReadablea4PlanC0P0E0Qa",
         "text" : "Plan"
       },
@@ -67,6 +75,14 @@
       {
         "kind" : "text",
         "text" : " -> ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "text" : "Self"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -132,6 +148,14 @@
               "text" : ": ["
             },
             {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/Plan",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12CareKitStore011OCKReadablea4PlanC0P0E0Qa",
@@ -156,6 +180,14 @@
             {
               "kind" : "text",
               "text" : " -> ["
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/Plan",
@@ -353,6 +385,14 @@
     },
     {
       "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12CareKitStore011OCKReadablea4PlanC0P0E0Qa",
       "text" : "Plan"
     },
@@ -375,6 +415,14 @@
     {
       "kind" : "text",
       "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
