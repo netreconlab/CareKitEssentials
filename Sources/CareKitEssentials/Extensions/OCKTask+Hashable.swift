@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKTask: @retroactive Hashable {
+extension OCKTask: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(uuid)

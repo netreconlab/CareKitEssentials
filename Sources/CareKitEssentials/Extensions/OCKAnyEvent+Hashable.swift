@@ -9,7 +9,7 @@
 import CareKitStore
 import Foundation
 
-extension OCKAnyEvent: @retroactive Hashable {
+extension OCKAnyEvent: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(scheduleEvent)

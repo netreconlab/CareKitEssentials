@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKSemanticVersion: @retroactive Hashable {
+extension OCKSemanticVersion: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(majorVersion)
         hasher.combine(minorVersion)

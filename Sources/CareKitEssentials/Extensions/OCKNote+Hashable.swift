@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKNote: @retroactive Hashable {
+extension OCKNote: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(author)
         hasher.combine(title)

@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKBiologicalSex: @retroactive Hashable {
+extension OCKBiologicalSex: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
 
