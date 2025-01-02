@@ -8,14 +8,14 @@
 
 import CareKitStore
 
-extension OCKStore: @retroactive Hashable {
+extension OCKStore: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(name)
         hasher.combine(securityApplicationGroupIdentifier)
     }
 }
 
-extension OCKCoreDataStoreType: @retroactive Hashable {
+extension OCKCoreDataStoreType: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
 

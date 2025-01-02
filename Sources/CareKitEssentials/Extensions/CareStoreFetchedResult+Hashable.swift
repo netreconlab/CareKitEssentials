@@ -10,7 +10,7 @@ import CareKit
 import CareKitStore
 import Foundation
 
-extension CareStoreFetchedResult: @retroactive Hashable where Result: Hashable {
+extension CareStoreFetchedResult: Hashable where Result: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
         hasher.combine(result)

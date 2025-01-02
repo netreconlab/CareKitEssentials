@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKAnyEvent: @retroactive Comparable {
+extension OCKAnyEvent: Comparable {
 
     public static func < (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
         lhs.scheduleEvent.start <= rhs.scheduleEvent.start &&

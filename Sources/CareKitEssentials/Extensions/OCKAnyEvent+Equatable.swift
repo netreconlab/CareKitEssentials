@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKAnyEvent: @retroactive Equatable {
+extension OCKAnyEvent: Equatable {
     public static func == (
         lhs: OCKAnyEvent,
         rhs: OCKAnyEvent

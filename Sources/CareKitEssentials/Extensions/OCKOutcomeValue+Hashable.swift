@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKOutcomeValue: @retroactive Hashable {
+extension OCKOutcomeValue: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(kind)
         hasher.combine(units)

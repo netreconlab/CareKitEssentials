@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKScheduleEvent: @retroactive Hashable {
+extension OCKScheduleEvent: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(start)
         hasher.combine(end)

@@ -9,7 +9,7 @@
 import Foundation
 import CareKitStore
 
-extension OCKScheduleElement: @retroactive Hashable {
+extension OCKScheduleElement: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(text)
         hasher.combine(duration)
@@ -20,7 +20,7 @@ extension OCKScheduleElement: @retroactive Hashable {
     }
 }
 
-extension OCKScheduleElement.Duration: @retroactive Hashable {
+extension OCKScheduleElement.Duration: Hashable {
     public func hash(into hasher: inout Hasher) {
         switch self {
         case .seconds(let seconds):
