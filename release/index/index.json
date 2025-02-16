@@ -34105,6 +34105,11 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockhealthkitpassthroughstore\/addtasksifnotpresent(_:)",
+                "title" : "func addTasksIfNotPresent([OCKHealthKitTask]) async throws",
+                "type" : "method"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitpassthroughstore\/checkabilitytodelete(outcomes:)",
                 "title" : "func checkAbilityToDelete(outcomes: [OCKHealthKitOutcome]) throws",
                 "type" : "method"
@@ -41198,6 +41203,22 @@
                 "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/equatable-implementations",
                 "title" : "Equatable Implementations",
                 "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/hashable-implementations",
+                "title" : "Hashable Implementations",
+                "type" : "symbol"
               }
             ],
             "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage",
@@ -41460,6 +41481,22 @@
                 ],
                 "path" : "\/documentation\/carekitstore\/ockhealthkittask\/equatable-implementations",
                 "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockhealthkittask\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockhealthkittask\/hashable-implementations",
+                "title" : "Hashable Implementations",
                 "type" : "symbol"
               }
             ],
