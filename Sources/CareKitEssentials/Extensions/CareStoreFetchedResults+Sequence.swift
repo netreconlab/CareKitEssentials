@@ -16,20 +16,20 @@ public extension CareStoreFetchedResults where Result == OCKAnyPatient {
     /// All elements are guaranteed to be unique by their respective `id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `id`.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }
 
@@ -39,20 +39,20 @@ public extension CareStoreFetchedResults where Result == OCKAnyCarePlan {
     /// All elements are guaranteed to be unique by their respective `id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `id`.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }
 
@@ -62,20 +62,20 @@ public extension CareStoreFetchedResults where Result == OCKAnyTask {
     /// All elements are guaranteed to be unique by their respective `id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `id`.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }
 
@@ -85,20 +85,20 @@ public extension CareStoreFetchedResults where Result == OCKAnyEvent {
     /// All elements are guaranteed to be unique by their respective `task.id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.task.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `task.id`.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.task.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }
 
@@ -108,20 +108,20 @@ public extension CareStoreFetchedResults where Result == OCKAnyContact {
     /// All elements are guaranteed to be unique by their respective `id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `id`.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }
 
@@ -131,19 +131,19 @@ public extension CareStoreFetchedResults where Result == OCKAnyOutcome {
     /// All elements are guaranteed to be unique by their respective `id`.
     var earliest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.first
         }
-        return reducedResults
+        return compactResults
     }
 
     /// Returns the latest results from the fetched elements.
     /// All elements are guaranteed to be unique.
     var latest: [CareStoreFetchedResult<Result>] {
         let resultDictionary = Dictionary(grouping: self, by: \.result.id)
-        let reducedResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+        let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
             results.last
         }
-        return reducedResults
+        return compactResults
     }
 }

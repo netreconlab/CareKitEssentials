@@ -26,24 +26,24 @@ public extension Sequence where Element: OCKAnyOutcome {
         _ keyPath: KeyPath<Element, V?>,
         lessThanEqualTo value: V? = nil
     ) throws -> [Element] where V: Comparable {
-        let outcomes = try compactMap { outcome -> Element?  in
+        let outcomes = try filter { outcome -> Bool  in
             guard let outcomeKeyValue = outcome[keyPath: keyPath] else {
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             // If there's a value to compare to, check that the element
             // is less than or equal to this value.
-            if let value = value {
-                guard outcomeKeyValue <= value else {
-                    return nil
-                }
-                return outcome
+            guard let value = value else {
+                return true
             }
-            return outcome
+            guard outcomeKeyValue <= value else {
+                return false
+            }
+            return true
         }
         let sortedOutcomes = try outcomes.sorted(by: {
             guard let firstKeyValue = $0[keyPath: keyPath],
                   let secondKeyValue = $1[keyPath: keyPath] else {
-                // Should never occur due to compactMap above
+                // Should never occur due to filter above
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             return firstKeyValue > secondKeyValue
@@ -65,18 +65,18 @@ public extension Sequence where Element: OCKAnyOutcome {
         _ keyPath: KeyPath<Element, V>,
         lessThanEqualTo value: V? = nil
     ) -> [Element] where V: Comparable {
-        let outcomes = compactMap { outcome -> Element?  in
+        let outcomes = filter { outcome -> Bool  in
             let outcomeKeyValue = outcome[keyPath: keyPath]
 
             // If there's a value to compare to, check that the element
             // is less than or equal to this value.
-            if let value = value {
-                guard outcomeKeyValue <= value else {
-                    return nil
-                }
-                return outcome
+            guard let value = value else {
+                return true
             }
-            return outcome
+            guard outcomeKeyValue <= value else {
+                return false
+            }
+            return true
         }
         let sortedOutcomes = outcomes.sorted(by: {
             let firstKeyValue = $0[keyPath: keyPath]
