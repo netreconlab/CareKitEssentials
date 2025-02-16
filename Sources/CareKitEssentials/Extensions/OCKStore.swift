@@ -19,11 +19,11 @@ public extension OCKStore {
         let foundTasks = try await fetchTasks(query: query)
 
         // Find all missing tasks.
-        let tasksNotInStore = tasks.compactMap { potentialTask -> OCKTask? in
+        let tasksNotInStore = tasks.filter { potentialTask -> Bool in
             guard foundTasks.first(where: { $0.id == potentialTask.id }) == nil else {
-                return nil
+                return false
             }
-            return potentialTask
+            return true
         }
 
         // Only add if there's a new task
