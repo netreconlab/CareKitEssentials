@@ -41,7 +41,7 @@ public extension Sequence where Element == OCKOutcomeValue {
         let sortedOutcomes = try outcomeValues.sorted(by: {
             guard let firstKeyValue = $0[keyPath: keyPath],
                   let secondKeyValue = $1[keyPath: keyPath] else {
-                // Should never occur due to compactMap above
+                // Should never occur due to filter above
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             return firstKeyValue > secondKeyValue
@@ -115,7 +115,7 @@ public extension Sequence where Element == OCKOutcomeValue {
         let sortedOutcomes = try outcomeValues.sorted(by: {
             guard let firstKeyValue = $0[keyPath: keyPath],
                   let secondKeyValue = $1[keyPath: keyPath] else {
-                // Should never occur due to compactMap above
+                // Should never occur due to filter above
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             return firstKeyValue > secondKeyValue
