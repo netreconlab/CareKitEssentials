@@ -299,25 +299,27 @@ extension CareEssentialChartView {
     }
 }
 
-#Preview {
-    let task = Utility.createNauseaTask()
-    let configurationBar = CKEDataSeriesConfiguration(
-        taskID: task.id,
-        mark: .bar,
-        legendTitle: "Bar",
-        color: .red,
-        gradientStartColor: .gray
-    )
-    let previewStore = Utility.createPreviewStore()
-
-    VStack {
-        CareEssentialChartView(
-            title: task.title ?? "",
-            subtitle: "Week",
-            dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
-            period: .day,
-            configurations: [configurationBar]
+struct CareEssentialChartView_Previews: PreviewProvider {
+    static var previews: some View {
+        let task = Utility.createNauseaTask()
+        let configurationBar = CKEDataSeriesConfiguration(
+            taskID: task.id,
+            mark: .bar,
+            legendTitle: "Bar",
+            color: .red,
+            gradientStartColor: .gray
         )
+        let previewStore = Utility.createPreviewStore()
+
+        VStack {
+            CareEssentialChartView(
+                title: task.title ?? "",
+                subtitle: "Week",
+                dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+                period: .day,
+                configurations: [configurationBar]
+            )
+        }
+        .environment(\.careStore, previewStore)
     }
-    .environment(\.careStore, previewStore)
 }

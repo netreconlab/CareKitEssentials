@@ -110,34 +110,36 @@ public extension SimpleLabelView where Header == InformationHeaderView {
     }
 }
 
-#Preview {
-    VStack {
-        SimpleLabelView(
-            title: Text("Title"),
-            detail: Text("Some details."),
-            image: Image(
-                systemName: "heart.fill"
-            ),
-            value: Text("100")
-        )
-        Divider()
-        if let event = try? Utility.createNauseaEvent() {
+struct SimpleLabelView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
             SimpleLabelView(
-                header: InformationHeaderView(
-                    title: Text(event.title),
-                    information: event.instructionsText,
-                    event: event
-                ),
-                title: Text(event.title),
-                detail: event.detailText,
+                title: Text("Title"),
+                detail: Text("Some details."),
                 image: Image(
                     systemName: "heart.fill"
                 ),
                 value: Text("100")
             )
+            Divider()
+            if let event = try? Utility.createNauseaEvent() {
+                SimpleLabelView(
+                    header: InformationHeaderView(
+                        title: Text(event.title),
+                        information: event.instructionsText,
+                        event: event
+                    ),
+                    title: Text(event.title),
+                    detail: event.detailText,
+                    image: Image(
+                        systemName: "heart.fill"
+                    ),
+                    value: Text("100")
+                )
+            }
         }
+        .padding()
+        .accentColor(.red)
+        .careKitStyle(OCKStyle())
     }
-    .padding()
-    .accentColor(.red)
-    .careKitStyle(OCKStyle())
 }
