@@ -62,35 +62,37 @@ public struct EventQueryView<CareView: EventViewable>: View {
     }
 }
 
-#Preview {
-    var query: OCKEventQuery {
-        var query = OCKEventQuery(for: Date())
-        query.taskIDs = [TaskID.doxylamine]
+struct EventQueryView_Previews: PreviewProvider {
+    static var previews: some View {
+        var query: OCKEventQuery {
+            var query = OCKEventQuery(for: Date())
+            query.taskIDs = [TaskID.doxylamine]
 
-        return query
-    }
+            return query
+        }
 
-    VStack {
-        EventQueryView<SimpleTaskView>(
-            query: query
-        )
-        Divider()
-        EventQueryView<InstructionsTaskView>(
-            query: query
-        )
-        Divider()
-        EventQueryView<LabeledValueTaskView>(
-            query: query
-        )
-        Divider()
-        EventQueryView<NumericProgressTaskView>(
-            query: query
-        )
+        VStack {
+            EventQueryView<SimpleTaskView>(
+                query: query
+            )
+            Divider()
+            EventQueryView<InstructionsTaskView>(
+                query: query
+            )
+            Divider()
+            EventQueryView<LabeledValueTaskView>(
+                query: query
+            )
+            Divider()
+            EventQueryView<NumericProgressTaskView>(
+                query: query
+            )
+        }
+        .environment(\.careStore, Utility.createPreviewStore())
+        .accentColor(.red)
+        .careKitStyle(OCKStyle())
+        .padding()
     }
-    .environment(\.careStore, Utility.createPreviewStore())
-    .accentColor(.red)
-    .careKitStyle(OCKStyle())
-    .padding()
 }
 
 #endif

@@ -22,9 +22,11 @@ struct CareEssentialChartHeaderView: View {
     }
 }
 
-#Preview {
-    CareEssentialChartHeaderView(
-        title: "Title",
-        subtitle: "Subtitle"
-    )
+struct CareEssentialChartHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        CareEssentialChartHeaderView(
+            title: "Title",
+            subtitle: "Subtitle"
+        )
+    }
 }
