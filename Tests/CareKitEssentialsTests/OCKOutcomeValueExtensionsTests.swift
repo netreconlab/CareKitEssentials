@@ -54,6 +54,14 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
              greaterThanEqualTo: afterLunch
         )
         XCTAssertEqual(outcomesAfterLunch.count, 1)
+
+        // Test KeyPath of nil should throw error
+        let stepsWithNilStartDate = OCKOutcomeValue(4000, units: "steps")
+        let updatedOutcomeValues = outcomeValues + [stepsWithNilStartDate]
+        XCTAssertThrowsError(try updatedOutcomeValues.filter(
+            \.startDate,
+             greaterThanEqualTo: lunchTime
+        ))
     }
 
     func testFilteredOutcomeValuesGreaterThanEqualToRequiredKeyPath() {
