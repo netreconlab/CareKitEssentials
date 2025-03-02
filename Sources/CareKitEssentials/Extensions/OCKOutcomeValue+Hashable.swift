@@ -14,6 +14,9 @@ extension OCKOutcomeValue: Hashable {
         hasher.combine(units)
         hasher.combine(createdDate)
         hasher.combine(dateInterval)
+        hasher.combine(sourceRevision)
+        hasher.combine(device)
+        hasher.combine(metadata)
 
         switch type {
 

@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cbaker6/CareKit.git",
       "state" : {
-        "revision" : "9d16edeb92b6d760049d3c095594a9b382ab1574",
-        "version" : "3.0.0-beta.36"
+        "revision" : "419401d2646c46972cabe64170c08cfe22f1ab6d",
+        "version" : "3.0.0-beta.38"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/FHIRModels.git",
       "state" : {
-        "revision" : "861afd5816a98d38f86220eab2f812d76cad84a0",
-        "version" : "0.5.0"
+        "revision" : "ee8b55c245e92389e05b0a56ad2b84d37c1985e5",
+        "version" : "0.6.1"
       }
     },
     {
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-async-algorithms",
       "state" : {
-        "revision" : "6ae9a051f76b81cc668305ceed5b0e0a7fd93d20",
-        "version" : "1.0.1"
+        "revision" : "4c3ea81f81f0a25d0470188459c6d4bf20cf2f97",
+        "version" : "1.0.3"
       }
     },
     {

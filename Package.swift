@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/cbaker6/CareKit.git",
-            .upToNextMajor(from: "3.0.0-beta.36")
+            .upToNextMajor(from: "3.0.0-beta.38")
         )
     ],
     targets: [
