@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "An object indicating the source when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -15,11 +15,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/sourceRevision"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12CareKitStore15OCKOutcomeValueV12dateInterval10Foundation04DateG0VSgvp",
+    "externalID" : "s:12CareKitStore15OCKOutcomeValueV14sourceRevisionAA09OCKSourceG0VSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +31,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "dateInterval"
+        "text" : "sourceRevision"
       },
       {
         "kind" : "text",
@@ -39,8 +39,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-        "text" : "DateInterval"
+        "preciseIdentifier" : "s:12CareKitStore17OCKSourceRevisionV",
+        "text" : "OCKSourceRevision"
       },
       {
         "kind" : "text",
@@ -55,7 +55,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "dateInterval"
+    "title" : "sourceRevision"
   },
   "primaryContentSections" : [
     {
@@ -78,16 +78,17 @@
             },
             {
               "kind" : "identifier",
-              "text" : "dateInterval"
+              "text" : "sourceRevision"
             },
             {
               "kind" : "text",
               "text" : ": "
             },
             {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSourceRevision",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-              "text" : "DateInterval"
+              "preciseIdentifier" : "s:12CareKitStore17OCKSourceRevisionV",
+              "text" : "OCKSourceRevision"
             },
             {
               "kind" : "text",
@@ -110,7 +111,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+        "\/documentation\/carekitstore\/ockoutcomevalue\/sourcerevision"
       ],
       "traits" : [
         {
@@ -182,10 +183,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/dateInterval": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/sourceRevision": {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "An object indicating the source when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -200,7 +201,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "dateInterval"
+      "text" : "sourceRevision"
     },
     {
       "kind" : "text",
@@ -208,20 +209,51 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-      "text" : "DateInterval"
+      "preciseIdentifier" : "s:12CareKitStore17OCKSourceRevisionV",
+      "text" : "OCKSourceRevision"
     },
     {
       "kind" : "text",
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/sourceRevision",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "dateInterval",
+  "title" : "sourceRevision",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/sourcerevision"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKSourceRevision": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKSourceRevision"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSourceRevision",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKSourceRevision"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKSourceRevision",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ocksourcerevision"
 }
 }
 }

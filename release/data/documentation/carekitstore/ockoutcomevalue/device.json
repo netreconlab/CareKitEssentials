@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "A device that generates data for HealthKit when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -15,11 +15,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/device"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12CareKitStore15OCKOutcomeValueV12dateInterval10Foundation04DateG0VSgvp",
+    "externalID" : "s:12CareKitStore15OCKOutcomeValueV6deviceAA9OCKDeviceVSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +31,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "dateInterval"
+        "text" : "device"
       },
       {
         "kind" : "text",
@@ -39,8 +39,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-        "text" : "DateInterval"
+        "preciseIdentifier" : "s:12CareKitStore9OCKDeviceV",
+        "text" : "OCKDevice"
       },
       {
         "kind" : "text",
@@ -55,7 +55,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "dateInterval"
+    "title" : "device"
   },
   "primaryContentSections" : [
     {
@@ -78,16 +78,17 @@
             },
             {
               "kind" : "identifier",
-              "text" : "dateInterval"
+              "text" : "device"
             },
             {
               "kind" : "text",
               "text" : ": "
             },
             {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKDevice",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-              "text" : "DateInterval"
+              "preciseIdentifier" : "s:12CareKitStore9OCKDeviceV",
+              "text" : "OCKDevice"
             },
             {
               "kind" : "text",
@@ -110,7 +111,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+        "\/documentation\/carekitstore\/ockoutcomevalue\/device"
       ],
       "traits" : [
         {
@@ -131,6 +132,37 @@
   "title" : "CareKitStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKDevice": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKDevice"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKDevice",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKDevice"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKDevice",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockdevice"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue": {
   "abstract" : [
@@ -182,10 +214,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/dateInterval": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/device": {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "A device that generates data for HealthKit when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -200,7 +232,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "dateInterval"
+      "text" : "device"
     },
     {
       "kind" : "text",
@@ -208,20 +240,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-      "text" : "DateInterval"
+      "preciseIdentifier" : "s:12CareKitStore9OCKDeviceV",
+      "text" : "OCKDevice"
     },
     {
       "kind" : "text",
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/device",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "dateInterval",
+  "title" : "device",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/device"
 }
 }
 }

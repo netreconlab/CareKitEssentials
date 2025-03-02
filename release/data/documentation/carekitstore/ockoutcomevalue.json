@@ -139,10 +139,13 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/description",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/device",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/doubleValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/integerValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/kind",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/metadata",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/numberValue",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/sourceRevision",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/stringValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/type",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/units",
@@ -480,7 +483,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/dateInterval": {
   "abstract" : [
     {
-      "text" : "The value’s dateInterval.",
+      "text" : "The start date and end date when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -592,6 +595,47 @@
   "title" : "description",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/description"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/device": {
+  "abstract" : [
+    {
+      "text" : "A device that generates data for HealthKit when this value represents a HealthKit sample.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "device"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore9OCKDeviceV",
+      "text" : "OCKDevice"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/device",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "device",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/device"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/doubleValue": {
   "abstract" : [
@@ -858,6 +902,56 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/kind"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/metadata": {
+  "abstract" : [
+    {
+      "text" : "The metadata when this value represents a HealthKit sample.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "metadata"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "]?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/metadata",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "metadata",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/metadata"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/numberValue": {
   "abstract" : [
 
@@ -895,6 +989,47 @@
   "title" : "numberValue",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/numbervalue"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/sourceRevision": {
+  "abstract" : [
+    {
+      "text" : "An object indicating the source when this value represents a HealthKit sample.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sourceRevision"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore17OCKSourceRevisionV",
+      "text" : "OCKSourceRevision"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/sourceRevision",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sourceRevision",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/sourcerevision"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/stringValue": {
   "abstract" : [

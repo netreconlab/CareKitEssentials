@@ -40929,6 +40929,42 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockdevice\/init(from:)",
+                "title" : "init(from: any Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockdevice\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockdevice\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitstore\/ockdevice",
+            "title" : "OCKDevice",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockevent\/init(task:outcome:scheduleevent:)",
                 "title" : "init(task: Task, outcome: Outcome?, scheduleEvent: OCKScheduleEvent)",
                 "type" : "init"
@@ -42017,6 +42053,11 @@
                 "type" : "property"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/device",
+                "title" : "var device: OCKDevice?",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/doublevalue",
                 "title" : "var doubleValue: Double?",
                 "type" : "property"
@@ -42032,8 +42073,18 @@
                 "type" : "property"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/metadata",
+                "title" : "var metadata: [String : String]?",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/numbervalue",
                 "title" : "var numberValue: NSNumber?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/sourcerevision",
+                "title" : "var sourceRevision: OCKSourceRevision?",
                 "type" : "property"
               },
               {
@@ -43336,6 +43387,78 @@
             ],
             "path" : "\/documentation\/carekitstore\/ocksemanticversion",
             "title" : "OCKSemanticVersion",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitstore\/ocksource\/init(from:)",
+                "title" : "init(from: any Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ocksource\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ocksource\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitstore\/ocksource",
+            "title" : "OCKSource",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitstore\/ocksourcerevision\/init(from:)",
+                "title" : "init(from: any Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ocksourcerevision\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ocksourcerevision\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitstore\/ocksourcerevision",
+            "title" : "OCKSourceRevision",
             "type" : "struct"
           },
           {

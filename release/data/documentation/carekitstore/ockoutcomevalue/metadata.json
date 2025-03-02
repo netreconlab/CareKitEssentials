@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "The metadata when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -15,11 +15,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/metadata"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12CareKitStore15OCKOutcomeValueV12dateInterval10Foundation04DateG0VSgvp",
+    "externalID" : "s:12CareKitStore15OCKOutcomeValueV8metadataSDyS2SGSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,20 +31,29 @@
       },
       {
         "kind" : "identifier",
-        "text" : "dateInterval"
+        "text" : "metadata"
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": ["
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-        "text" : "DateInterval"
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
       },
       {
         "kind" : "text",
-        "text" : "?"
+        "text" : " : "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      },
+      {
+        "kind" : "text",
+        "text" : "]?"
       }
     ],
     "modules" : [
@@ -55,7 +64,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "dateInterval"
+    "title" : "metadata"
   },
   "primaryContentSections" : [
     {
@@ -78,20 +87,29 @@
             },
             {
               "kind" : "identifier",
-              "text" : "dateInterval"
+              "text" : "metadata"
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": ["
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-              "text" : "DateInterval"
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
             },
             {
               "kind" : "text",
-              "text" : "? { get }"
+              "text" : " : "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            },
+            {
+              "kind" : "text",
+              "text" : "]? { get }"
             }
           ]
         }
@@ -110,7 +128,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+        "\/documentation\/carekitstore\/ockoutcomevalue\/metadata"
       ],
       "traits" : [
         {
@@ -182,10 +200,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/dateInterval": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/metadata": {
   "abstract" : [
     {
-      "text" : "The start date and end date when this value represents a HealthKit sample.",
+      "text" : "The metadata when this value represents a HealthKit sample.",
       "type" : "text"
     }
   ],
@@ -200,28 +218,37 @@
     },
     {
       "kind" : "identifier",
-      "text" : "dateInterval"
+      "text" : "metadata"
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": ["
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation12DateIntervalV",
-      "text" : "DateInterval"
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
     },
     {
       "kind" : "text",
-      "text" : "?"
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "]?"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/metadata",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "dateInterval",
+  "title" : "metadata",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/metadata"
 }
 }
 }
