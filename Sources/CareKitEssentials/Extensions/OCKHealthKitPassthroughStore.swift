@@ -11,7 +11,7 @@ import CareKitStore
 
 public extension OCKHealthKitPassthroughStore {
 
-    func addTasksIfNotPresent(_ tasks: [OCKHealthKitTask]) async throws {
+    func addTasksIfNotPresent(_ tasks: [OCKHealthKitTask]) async throws -> [OCKHealthKitTask] {
 
         // Prepare query to see if tasks are already added
         var query = OCKTaskQuery(for: Date())
@@ -29,9 +29,10 @@ public extension OCKHealthKitPassthroughStore {
 
         // Only add if there's a new task
         guard tasksNotInStore.count > 0 else {
-            return
+            return []
         }
 
-        _ = try await addTasks(tasksNotInStore)
+        let addedTasks = try await addTasks(tasksNotInStore)
+        return addedTasks
     }
 }
