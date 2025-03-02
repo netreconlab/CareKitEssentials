@@ -25,25 +25,34 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
         let dinnerTime = Calendar.current.date(byAdding: .minute, value: 270, to: lunchTime)!
 
         var stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
-        stepsAtBreakfast.startDate = breakfastTime
+        stepsAtBreakfast.dateInterval = DateInterval(
+            start: breakfastTime,
+            end: lunchTime
+        )
         var stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
-        stepsAtLunch.startDate = lunchTime
+        stepsAtLunch.dateInterval = DateInterval(
+            start: lunchTime,
+            end: dinnerTime
+        )
         var stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
-        stepsAtDinner.startDate = dinnerTime
+        stepsAtDinner.dateInterval = DateInterval(
+            start: dinnerTime,
+            end: dinnerTime+1
+        )
 
         let outcomeValues = [stepsAtBreakfast, stepsAtLunch, stepsAtDinner]
 
         XCTAssertEqual(outcomeValues.count, 3)
 
         let outcomeValuesAfterLunchInclusive = try outcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              greaterThanEqualTo: lunchTime
         )
         XCTAssertEqual(outcomeValuesAfterLunchInclusive.count, 2)
 
         let afterLunch = lunchTime + 1
         let outcomesAfterLunch = try outcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              greaterThanEqualTo: afterLunch
         )
         XCTAssertEqual(outcomesAfterLunch.count, 1)
@@ -52,7 +61,7 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
         let stepsWithNilStartDate = OCKOutcomeValue(4000, units: "steps")
         let updatedOutcomeValues = outcomeValues + [stepsWithNilStartDate]
         XCTAssertThrowsError(try updatedOutcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              greaterThanEqualTo: lunchTime
         ))
     }
@@ -106,23 +115,31 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
         let dinnerTime = Calendar.current.date(byAdding: .minute, value: 270, to: lunchTime)!
 
         var stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
-        stepsAtBreakfast.startDate = breakfastTime
+        stepsAtBreakfast.dateInterval = DateInterval(
+            start: breakfastTime,
+            end: lunchTime
+        )
         var stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
-        stepsAtLunch.startDate = lunchTime
+        stepsAtLunch.dateInterval = DateInterval(
+            start: lunchTime,
+            end: dinnerTime
+        )
         var stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
-        stepsAtDinner.startDate = dinnerTime
-
+        stepsAtDinner.dateInterval = DateInterval(
+            start: dinnerTime,
+            end: dinnerTime+1
+        )
         let outcomeValues = [stepsAtBreakfast, stepsAtLunch, stepsAtDinner]
 
         let outcomeValuesBeforeLunchInclusive = try outcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              lessThanEqualTo: lunchTime
         )
         XCTAssertEqual(outcomeValuesBeforeLunchInclusive.count, 2)
 
         let beforeLunch = lunchTime - 1
         let outcomesBeforeLunch = try outcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              lessThanEqualTo: beforeLunch
         )
 
@@ -132,7 +149,7 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
         let stepsWithNilStartDate = OCKOutcomeValue(4000, units: "steps")
         let updatedOutcomeValues = outcomeValues + [stepsWithNilStartDate]
         XCTAssertThrowsError(try updatedOutcomeValues.filter(
-            \.startDate,
+            \.dateInterval?.start,
              lessThanEqualTo: lunchTime
         ))
     }

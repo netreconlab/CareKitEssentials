@@ -13,8 +13,7 @@ extension OCKOutcomeValue: Hashable {
         hasher.combine(kind)
         hasher.combine(units)
         hasher.combine(createdDate)
-        hasher.combine(startDate)
-        hasher.combine(endDate)
+        hasher.combine(dateInterval)
 
         switch type {
 
