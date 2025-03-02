@@ -34106,7 +34106,7 @@
               },
               {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitpassthroughstore\/addtasksifnotpresent(_:)",
-                "title" : "func addTasksIfNotPresent([OCKHealthKitTask]) async throws",
+                "title" : "func addTasksIfNotPresent([OCKHealthKitTask]) async throws -> [OCKHealthKitTask]",
                 "type" : "method"
               },
               {
@@ -34742,7 +34742,7 @@
               },
               {
                 "path" : "\/documentation\/carekitstore\/ockstore\/addtasksifnotpresent(_:)",
-                "title" : "func addTasksIfNotPresent([OCKTask]) async throws",
+                "title" : "func addTasksIfNotPresent([OCKTask]) async throws -> [OCKTask]",
                 "type" : "method"
               },
               {
@@ -42002,6 +42002,11 @@
                 "type" : "property"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval",
+                "title" : "var dateInterval: DateInterval?",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/datevalue",
                 "title" : "var dateValue: Date?",
                 "type" : "property"
@@ -42017,11 +42022,6 @@
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/enddate",
-                "title" : "var endDate: Date?",
-                "type" : "property"
-              },
-              {
                 "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/integervalue",
                 "title" : "var integerValue: Int?",
                 "type" : "property"
@@ -42034,11 +42034,6 @@
               {
                 "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/numbervalue",
                 "title" : "var numberValue: NSNumber?",
-                "type" : "property"
-              },
-              {
-                "path" : "\/documentation\/carekitstore\/ockoutcomevalue\/startdate",
-                "title" : "var startDate: Date?",
                 "type" : "property"
               },
               {

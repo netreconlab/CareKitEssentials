@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The value’s end date.",
+      "text" : "The value’s dateInterval.",
       "type" : "text"
     }
   ],
@@ -15,11 +15,11 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/endDate"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12CareKitStore15OCKOutcomeValueV7endDate10Foundation0G0VSgvp",
+    "externalID" : "s:12CareKitStore15OCKOutcomeValueV12dateInterval10Foundation04DateG0VSgvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -31,7 +31,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "endDate"
+        "text" : "dateInterval"
       },
       {
         "kind" : "text",
@@ -39,8 +39,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation4DateV",
-        "text" : "Date"
+        "preciseIdentifier" : "s:10Foundation12DateIntervalV",
+        "text" : "DateInterval"
       },
       {
         "kind" : "text",
@@ -55,7 +55,7 @@
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
-    "title" : "endDate"
+    "title" : "dateInterval"
   },
   "primaryContentSections" : [
     {
@@ -78,7 +78,7 @@
             },
             {
               "kind" : "identifier",
-              "text" : "endDate"
+              "text" : "dateInterval"
             },
             {
               "kind" : "text",
@@ -86,8 +86,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation4DateV",
-              "text" : "Date"
+              "preciseIdentifier" : "s:10Foundation12DateIntervalV",
+              "text" : "DateInterval"
             },
             {
               "kind" : "text",
@@ -110,7 +110,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/carekitstore\/ockoutcomevalue\/enddate"
+        "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
       ],
       "traits" : [
         {
@@ -182,10 +182,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/endDate": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/dateInterval": {
   "abstract" : [
     {
-      "text" : "The value’s end date.",
+      "text" : "The value’s dateInterval.",
       "type" : "text"
     }
   ],
@@ -200,7 +200,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "endDate"
+      "text" : "dateInterval"
     },
     {
       "kind" : "text",
@@ -208,20 +208,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation4DateV",
-      "text" : "Date"
+      "preciseIdentifier" : "s:10Foundation12DateIntervalV",
+      "text" : "DateInterval"
     },
     {
       "kind" : "text",
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/endDate",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/dateInterval",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "endDate",
+  "title" : "dateInterval",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/enddate"
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/dateinterval"
 }
 }
 }

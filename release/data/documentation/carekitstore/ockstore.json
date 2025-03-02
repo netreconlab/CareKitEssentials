@@ -1613,6 +1613,19 @@
     {
       "kind" : "keyword",
       "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore7OCKTaskV",
+      "text" : "OCKTask"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/addTasksIfNotPresent(_:)",

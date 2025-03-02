@@ -14,7 +14,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "CareKitStore",
-    "externalID" : "s:12CareKitStore09OCKHealthb11PassthroughC0C0aB10EssentialsE20addTasksIfNotPresentyySayAA0dB4TaskVGYaKF",
+    "externalID" : "s:12CareKitStore09OCKHealthb11PassthroughC0C0aB10EssentialsE20addTasksIfNotPresentySayAA0dB4TaskVGAHYaKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -52,6 +52,19 @@
       {
         "kind" : "keyword",
         "text" : "throws"
+      },
+      {
+        "kind" : "text",
+        "text" : " -> ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12CareKitStore09OCKHealthB4TaskV",
+        "text" : "OCKHealthKitTask"
+      },
+      {
+        "kind" : "text",
+        "text" : "]"
       }
     ],
     "modules" : [
@@ -128,6 +141,20 @@
             {
               "kind" : "keyword",
               "text" : "throws"
+            },
+            {
+              "kind" : "text",
+              "text" : " -> ["
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitTask",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12CareKitStore09OCKHealthB4TaskV",
+              "text" : "OCKHealthKitTask"
+            },
+            {
+              "kind" : "text",
+              "text" : "]"
             }
           ]
         }
@@ -243,6 +270,19 @@
     {
       "kind" : "keyword",
       "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore09OCKHealthB4TaskV",
+      "text" : "OCKHealthKitTask"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore\/addTasksIfNotPresent(_:)",

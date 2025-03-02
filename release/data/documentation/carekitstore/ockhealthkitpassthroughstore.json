@@ -751,6 +751,19 @@
     {
       "kind" : "keyword",
       "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore09OCKHealthB4TaskV",
+      "text" : "OCKHealthKitTask"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore\/addTasksIfNotPresent(_:)",
