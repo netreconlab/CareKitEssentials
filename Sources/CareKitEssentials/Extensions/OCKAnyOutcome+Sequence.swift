@@ -28,6 +28,7 @@ public extension Sequence where Element: OCKAnyOutcome {
     ) throws -> [Element] where V: Comparable {
         let outcomes = try filter { outcome -> Bool  in
             guard let outcomeKeyValue = outcome[keyPath: keyPath] else {
+                // Should never happen.
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             guard outcomeKeyValue <= value else {
@@ -83,6 +84,7 @@ public extension Sequence where Element: OCKAnyOutcome {
     ) throws -> [Element] where V: Comparable {
         let outcomes = try filter { outcome -> Bool  in
             guard let outcomeKeyValue = outcome[keyPath: keyPath] else {
+                // Should never happen.
                 throw CareKitEssentialsError.couldntUnwrapRequiredField
             }
             guard outcomeKeyValue >= value else {
