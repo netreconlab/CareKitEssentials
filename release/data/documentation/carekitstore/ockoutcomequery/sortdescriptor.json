@@ -9,17 +9,17 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor"
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:12CareKitStore16OCKCarePlanQueryV14SortDescriptorO",
+    "externalID" : "s:12CareKitStore15OCKOutcomeQueryV14SortDescriptorO",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -48,7 +48,7 @@
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
-    "title" : "OCKCarePlanQuery.SortDescriptor"
+    "title" : "OCKOutcomeQuery.SortDescriptor"
   },
   "primaryContentSections" : [
     {
@@ -100,16 +100,15 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/effectiveDate(ascending:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/groupIdentifier(ascending:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/title(ascending:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/effectiveDate(ascending:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/groupIdentifier(ascending:)"
       ],
       "title" : "Enumeration Cases"
     },
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/Equatable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/Equatable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -117,7 +116,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor"
+        "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor"
       ],
       "traits" : [
         {
@@ -144,10 +143,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeQuery": {
   "abstract" : [
     {
-      "text" : "A query that limits which care plans will be returned when fetching.",
+      "text" : "A query that limits which outcomes will be returned when fetching.",
       "type" : "text"
     }
   ],
@@ -162,23 +161,23 @@
     },
     {
       "kind" : "identifier",
-      "text" : "OCKCarePlanQuery"
+      "text" : "OCKOutcomeQuery"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "OCKCarePlanQuery"
+      "text" : "OCKOutcomeQuery"
     }
   ],
   "role" : "symbol",
-  "title" : "OCKCarePlanQuery",
+  "title" : "OCKOutcomeQuery",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery"
+  "url" : "\/documentation\/carekitstore\/ockoutcomequery"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery/SortDescriptor": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeQuery/SortDescriptor": {
   "abstract" : [
     {
       "text" : "Specifies the order in which query results will be sorted.",
@@ -199,7 +198,7 @@
       "text" : "SortDescriptor"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
@@ -208,22 +207,22 @@
     }
   ],
   "role" : "symbol",
-  "title" : "OCKCarePlanQuery.SortDescriptor",
+  "title" : "OCKOutcomeQuery.SortDescriptor",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor"
+  "url" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery/SortDescriptor/Equatable-Implementations": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeQuery/SortDescriptor/Equatable-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/Equatable-Implementations",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/Equatable-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
   "title" : "Equatable Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/equatable-implementations"
+  "url" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/equatable-implementations"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery/SortDescriptor/effectiveDate(ascending:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeQuery/SortDescriptor/effectiveDate(ascending:)": {
   "abstract" : [
 
   ],
@@ -262,14 +261,14 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/effectiveDate(ascending:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/effectiveDate(ascending:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "OCKCarePlanQuery.SortDescriptor.effectiveDate(ascending:)",
+  "title" : "OCKOutcomeQuery.SortDescriptor.effectiveDate(ascending:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/effectivedate(ascending:)"
+  "url" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/effectivedate(ascending:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery/SortDescriptor/groupIdentifier(ascending:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeQuery/SortDescriptor/groupIdentifier(ascending:)": {
   "abstract" : [
 
   ],
@@ -308,58 +307,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/groupIdentifier(ascending:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeQuery\/SortDescriptor\/groupIdentifier(ascending:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "OCKCarePlanQuery.SortDescriptor.groupIdentifier(ascending:)",
+  "title" : "OCKOutcomeQuery.SortDescriptor.groupIdentifier(ascending:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/groupidentifier(ascending:)"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanQuery/SortDescriptor/title(ascending:)": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "case"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "title"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "ascending"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ")"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/title(ascending:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "OCKCarePlanQuery.SortDescriptor.title(ascending:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/title(ascending:)"
+  "url" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/groupidentifier(ascending:)"
 }
 }
 }

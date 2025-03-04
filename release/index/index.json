@@ -40499,6 +40499,11 @@
                     "type" : "case"
                   },
                   {
+                    "path" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/groupidentifier(ascending:)",
+                    "title" : "case groupIdentifier(ascending: Bool)",
+                    "type" : "case"
+                  },
+                  {
                     "path" : "\/documentation\/carekitstore\/ockcareplanquery\/sortdescriptor\/title(ascending:)",
                     "title" : "case title(ascending: Bool)",
                     "type" : "case"
@@ -40870,6 +40875,11 @@
                   {
                     "path" : "\/documentation\/carekitstore\/ockcontactquery\/sortdescriptor\/givenname(ascending:)",
                     "title" : "case givenName(ascending: Bool)",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockcontactquery\/sortdescriptor\/groupidentifier(ascending:)",
+                    "title" : "case groupIdentifier(ascending: Bool)",
                     "type" : "case"
                   },
                   {
@@ -41944,6 +41954,11 @@
                 "type" : "property"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptors",
+                "title" : "var sortDescriptors: [SortDescriptor]",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockoutcomequery\/tags",
                 "title" : "var tags: [String]",
                 "type" : "property"
@@ -41967,6 +41982,51 @@
                 "path" : "\/documentation\/carekitstore\/ockoutcomequery\/uuids",
                 "title" : "var uuids: [UUID]",
                 "type" : "property"
+              },
+              {
+                "title" : "Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Enumeration Cases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/effectivedate(ascending:)",
+                    "title" : "case effectiveDate(ascending: Bool)",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/groupidentifier(ascending:)",
+                    "title" : "case groupIdentifier(ascending: Bool)",
+                    "type" : "case"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockoutcomequery\/sortdescriptor",
+                "title" : "OCKOutcomeQuery.SortDescriptor",
+                "type" : "enum"
               },
               {
                 "title" : "Default Implementations",
