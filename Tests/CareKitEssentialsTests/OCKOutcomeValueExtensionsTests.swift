@@ -170,4 +170,80 @@ final class OCKOutcomeValueExtensionsTests: XCTestCase {
         )
         XCTAssertEqual(outcomesBeforeLunch.count, 1)
     }
+
+    func testSortedOutcomeValuesLowestRequiredKeyPath() {
+        // A date that represents 00h 00m 00s today or midnight.
+        let startOfDay = Calendar.current.startOfDay(for: Date())
+
+        // A date that represents 08h 00m 00s today or 8am.
+        let breakfastTime = Calendar.current.date(byAdding: .hour, value: 8, to: startOfDay)!
+
+        // A date that represents 13h 00m 00s or 1pm.
+        let lunchTime = Calendar.current.date(byAdding: .hour, value: 5, to: breakfastTime)!
+
+        // A date that represents 19h 30m 00s or 7.30pm.
+        let dinnerTime = Calendar.current.date(byAdding: .minute, value: 270, to: lunchTime)!
+
+        var stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
+        stepsAtBreakfast.createdDate = breakfastTime
+        var stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
+        stepsAtLunch.createdDate = lunchTime
+        var stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
+        stepsAtDinner.createdDate = dinnerTime
+        let outcomeValues = [stepsAtLunch, stepsAtBreakfast, stepsAtDinner]
+        let expectedOutcomeValues = [stepsAtBreakfast, stepsAtLunch, stepsAtDinner]
+
+        let sortedOutcomeValues = outcomeValues.sortedByLowest(\.createdDate)
+        XCTAssertEqual(sortedOutcomeValues, expectedOutcomeValues)
+    }
+
+    func testSortedOutcomeValuesLowestOptionalKeyPath() throws {
+
+        let stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
+        let stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
+        let stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
+        let outcomeValues = [stepsAtLunch, stepsAtBreakfast, stepsAtDinner]
+        let expectedOutcomeValues = [stepsAtBreakfast, stepsAtLunch, stepsAtDinner]
+
+        let sortedOutcomeValues = try outcomeValues.sortedByLowest(\.integerValue)
+        XCTAssertEqual(sortedOutcomeValues, expectedOutcomeValues)
+    }
+
+    func testSortedOutcomeValuesHighestRequiredKeyPath() {
+        // A date that represents 00h 00m 00s today or midnight.
+        let startOfDay = Calendar.current.startOfDay(for: Date())
+
+        // A date that represents 08h 00m 00s today or 8am.
+        let breakfastTime = Calendar.current.date(byAdding: .hour, value: 8, to: startOfDay)!
+
+        // A date that represents 13h 00m 00s or 1pm.
+        let lunchTime = Calendar.current.date(byAdding: .hour, value: 5, to: breakfastTime)!
+
+        // A date that represents 19h 30m 00s or 7.30pm.
+        let dinnerTime = Calendar.current.date(byAdding: .minute, value: 270, to: lunchTime)!
+
+        var stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
+        stepsAtBreakfast.createdDate = breakfastTime
+        var stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
+        stepsAtLunch.createdDate = lunchTime
+        var stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
+        stepsAtDinner.createdDate = dinnerTime
+        let outcomeValues = [stepsAtLunch, stepsAtBreakfast, stepsAtDinner]
+        let expectedOutcomeValues = [stepsAtDinner, stepsAtLunch, stepsAtBreakfast]
+
+        let sortedOutcomeValues = outcomeValues.sortedByHighest(\.createdDate)
+        XCTAssertEqual(sortedOutcomeValues, expectedOutcomeValues)
+    }
+
+    func testSortedOutcomeValuesHighestOptionalKeyPath() throws {
+
+        let stepsAtBreakfast = OCKOutcomeValue(1000, units: "steps")
+        let stepsAtLunch = OCKOutcomeValue(2000, units: "steps")
+        let stepsAtDinner = OCKOutcomeValue(3000, units: "steps")
+        let outcomeValues = [stepsAtLunch, stepsAtBreakfast, stepsAtDinner]
+        let expectedOutcomeValues = [stepsAtDinner, stepsAtLunch, stepsAtBreakfast]
+
+        let sortedOutcomeValues = try outcomeValues.sortedByHighest(\.integerValue)
+        XCTAssertEqual(sortedOutcomeValues, expectedOutcomeValues)
+    }
 }
