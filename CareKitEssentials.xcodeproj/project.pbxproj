@@ -37,6 +37,12 @@
 		70721CE42D658EC300270799 /* OCKOutcomeValue+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */; };
 		70721CE62D65990700270799 /* OCKOutcomeValueExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */; };
 		7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */; };
+		709530AF2DAC398300E18A59 /* ResearchCareForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530AE2DAC398300E18A59 /* ResearchCareForm.swift */; };
+		709530B02DAC398300E18A59 /* ResearchSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530AD2DAC398300E18A59 /* ResearchSurveyView.swift */; };
+		709530B32DAC3AFB00E18A59 /* SurveyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530B12DAC3AFB00E18A59 /* SurveyQuestion.swift */; };
+		709530B42DAC3AFB00E18A59 /* SurveyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530B22DAC3AFB00E18A59 /* SurveyStep.swift */; };
+		709530B62DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530B52DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift */; };
+		709530B82DAC3DFF00E18A59 /* CareKitEssentialsUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709530B72DAC3DF400E18A59 /* CareKitEssentialsUserInfoKey.swift */; };
 		70B49A602D06A2520023E5B3 /* SimpleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */; };
 		70B49A7D2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A7C2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift */; };
 		70B49A7F2D0A54400023E5B3 /* OCKTask+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B49A7E2D0A54380023E5B3 /* OCKTask+Hashable.swift */; };
@@ -174,6 +180,12 @@
 		70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Sequence.swift"; sourceTree = "<group>"; };
 		70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcomeValueExtensionsTests.swift; sourceTree = "<group>"; };
 		7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResults+Sequence.swift"; sourceTree = "<group>"; };
+		709530AD2DAC398300E18A59 /* ResearchSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchSurveyView.swift; sourceTree = "<group>"; };
+		709530AE2DAC398300E18A59 /* ResearchCareForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchCareForm.swift; sourceTree = "<group>"; };
+		709530B12DAC3AFB00E18A59 /* SurveyQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestion.swift; sourceTree = "<group>"; };
+		709530B22DAC3AFB00E18A59 /* SurveyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStep.swift; sourceTree = "<group>"; };
+		709530B52DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKTask+ResearchKitSwiftUI.swift"; sourceTree = "<group>"; };
+		709530B72DAC3DF400E18A59 /* CareKitEssentialsUserInfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialsUserInfoKey.swift; sourceTree = "<group>"; };
 		70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabelView.swift; sourceTree = "<group>"; };
 		70B49A7C2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Hashable.swift"; sourceTree = "<group>"; };
 		70B49A7E2D0A54380023E5B3 /* OCKTask+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKTask+Hashable.swift"; sourceTree = "<group>"; };
@@ -311,6 +323,15 @@
 			path = Progress;
 			sourceTree = "<group>";
 		};
+		709530AC2DAC396900E18A59 /* ResearchSurveyView */ = {
+			isa = PBXGroup;
+			children = (
+				709530AE2DAC398300E18A59 /* ResearchCareForm.swift */,
+				709530AD2DAC398300E18A59 /* ResearchSurveyView.swift */,
+			);
+			path = ResearchSurveyView;
+			sourceTree = "<group>";
+		};
 		70B49A7B2D0A271E0023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +374,7 @@
 				70EBE3082D19FB8E00517D5E /* EventViews */,
 				70B49A8E2D0A8FB80023E5B3 /* Extensions */,
 				70EBE3092D19FBE300517D5E /* Protocols */,
+				709530AC2DAC396900E18A59 /* ResearchSurveyView */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -484,6 +506,7 @@
 				911BDB332A130AF9004F8442 /* OCKStore.swift */,
 				7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */,
 				70B49A7E2D0A54380023E5B3 /* OCKTask+Hashable.swift */,
+				709530B52DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift */,
 				OBJ_39 /* UIImage.swift */,
 				911BDB252A11C437004F8442 /* View+Default.swift */,
 			);
@@ -494,8 +517,11 @@
 			isa = PBXGroup;
 			children = (
 				911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */,
+				709530B72DAC3DF400E18A59 /* CareKitEssentialsUserInfoKey.swift */,
 				OBJ_41 /* OSValue.swift */,
 				OBJ_42 /* ScheduleUtility.swift */,
+				709530B12DAC3AFB00E18A59 /* SurveyQuestion.swift */,
+				709530B22DAC3AFB00E18A59 /* SurveyStep.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -775,6 +801,7 @@
 				OBJ_753 /* Image.swift in Sources */,
 				70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */,
 				70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */,
+				709530B62DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift in Sources */,
 				70B49A892D0A83E10023E5B3 /* Double.swift in Sources */,
 				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
@@ -785,6 +812,8 @@
 				702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
+				709530AF2DAC398300E18A59 /* ResearchCareForm.swift in Sources */,
+				709530B02DAC398300E18A59 /* ResearchSurveyView.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
 				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
@@ -802,6 +831,8 @@
 				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
+				709530B32DAC3AFB00E18A59 /* SurveyQuestion.swift in Sources */,
+				709530B42DAC3AFB00E18A59 /* SurveyStep.swift in Sources */,
 				70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */,
 				7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */,
 				7026DDF52D0D2AF2002EACAA /* OCKAnyEvent+Comparable.swift in Sources */,
@@ -810,6 +841,7 @@
 				911BDB2C2A12F0D3004F8442 /* CareKitEssentialsError.swift in Sources */,
 				OBJ_766 /* OSValue.swift in Sources */,
 				OBJ_767 /* ScheduleUtility.swift in Sources */,
+				709530B82DAC3DFF00E18A59 /* CareKitEssentialsUserInfoKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
