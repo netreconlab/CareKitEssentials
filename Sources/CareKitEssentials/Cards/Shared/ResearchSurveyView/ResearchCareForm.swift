@@ -14,6 +14,8 @@ import os.log
 import ResearchKitSwiftUI
 import SwiftUI
 
+/// A form that displays a `ResearchForm` view. This form will automatically
+/// convert and save the `ResearchFormResult` and convert it to CareKit.
 public struct ResearchCareForm<Content: View>: CareKitEssentialView {
     @Environment(\.careStore) public var store
     @Environment(\.dismiss) var dismiss
@@ -179,6 +181,14 @@ public struct ResearchCareForm<Content: View>: CareKitEssentialView {
 
 public extension ResearchCareForm {
 
+	/// Create an instance of `ResearchCareForm`.
+	///
+	/// This view displays a `ResearchForm`.
+	///
+	/// - Parameters:
+	///   - event: The CareKit event related to the survey. The results from the
+	///   survey will be saved to the respective event.
+	///   - steps: The steps that make up the survey.
 	init(
 		event: OCKAnyEvent,
 		steps: @escaping () -> Content

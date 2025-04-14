@@ -12,6 +12,7 @@ import CareKitUI
 import os.log
 import SwiftUI
 
+/// A card that displays a header view and a button that displays a ResearchKitSwiftUI view. The whole view is tappable.
 public struct ResearchSurveyView<Content: View>: View {
     @Environment(\.careKitStyle) var style
     @Environment(\.isCardEnabled) private var isCardEnabled
@@ -75,6 +76,14 @@ public struct ResearchSurveyView<Content: View>: View {
 
 public extension ResearchSurveyView {
 
+	/// Create an instance of `ResearchSurveyView`.
+	///
+	/// This view displays a card that can present a ResearchKitSwiftUI survey.
+	///
+	/// - Parameters:
+	///   - event: The CareKit event related to the survey.
+	///   - form: The form that will be presented when the button is tapped.
+	///   This is usually a `ResearchCareForm`.
 	init(
 		event: OCKAnyEvent,
 		form: @escaping () -> Content
