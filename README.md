@@ -23,6 +23,11 @@ You can create SwiftUI views that conform to [CareKitEssentialView](https://gith
 
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/ae54936e-9831-425b-8bdb-ac3421ab883a">
 
+Easily create surveys with [ResearchKitSwiftUI](https://github.com/ResearchKit/ResearchKit/pull/1585) for all supported platforms.
+
+<img width="342" alt="image" src="https://github.com/user-attachments/assets/90e3eca8-4cea-4148-834d-2c595577fddd">
+<img width="342" alt="image" src="https://github.com/user-attachments/assets/54352f9a-481a-4368-ac1c-c18e46d1d667">
+
 ### iOS
 [SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
 
