@@ -48,8 +48,7 @@ public struct ResearchSurveyView<Content: View>: View {
                         .buttonStyle(NoHighlightStyle())
                     }
 					.frame(
-						idealHeight: 30,
-						maxHeight: 70
+						maxHeight: 40
 					)
                 }
                 .padding(.vertical)
