@@ -38,7 +38,6 @@ public struct DetailsView: View {
             Image.asset(event.task.asset)?
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(Color.accentColor)
                 .padding()
 
             Text(title ?? event.title)
