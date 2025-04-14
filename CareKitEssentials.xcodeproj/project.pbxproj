@@ -674,7 +674,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftMigration = 9999;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1630;
 				ORGANIZATIONNAME = "Network Reconnaissance Lab";
 				TargetAttributes = {
 					70C422CE2C3B6C7600E6DC51 = {
@@ -1122,6 +1122,7 @@
 		OBJ_737 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
@@ -1161,6 +1162,7 @@
 		OBJ_738 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
@@ -1200,7 +1202,6 @@
 		OBJ_788 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -1237,7 +1238,6 @@
 		OBJ_789 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -1318,7 +1318,7 @@
 			repositoryURL = "https://github.com/cbaker6/CareKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "3.0.0-beta.40";
+				minimumVersion = "3.0.0-beta.42";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
