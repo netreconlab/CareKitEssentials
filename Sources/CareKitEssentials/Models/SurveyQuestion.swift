@@ -8,11 +8,10 @@
 
 #if canImport(ResearchKitSwiftUI)
 import ResearchKitSwiftUI
-#endif
 
 import SwiftUI
 
-/// A ResearchKitSwiftUI survey
+/// A ResearchKitSwiftUI survey question.
 public struct SurveyQuestion: Codable, Hashable, Identifiable {
 	/// The unique identifier for this
 	public var id: String
@@ -26,8 +25,13 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 	public var detail: String?
 	/// Max characters that can be entered.
 	public var characterLimit: Int?
+	/// A set of ResearchKitSwiftUI text choices.
+	public var textChoices: [TextChoice]?
+	// public var imageChoices: [ImageChoice]?
 	/// Whether or not the images should be displayed horizontally or vertically in a `ImageChoiceQuestion`.
 	public var vertical: Bool?
+	/// A ResearchKitSwiftUI number of of choices that can be selected.
+	public var choiceSelectionLimit: ChoiceSelectionLimit?
 	/// A ResearchKitSwiftUI placeholder for a survey
 	public var prompt: String?
 	/// A ResearchKitSwiftUI `SliderQuestion` integer range.
@@ -40,6 +44,8 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 	public var dateRange: ClosedRange<Date>?
 	/// A ResearchKitSwiftUI `DateTimeQuestion` default date.
 	public var defaultDate: Date?
+	/// The measurement system for this
+	public var measurementSystem: MeasurementSystem?
 	/// The selected value for `SliderQuestion`.
 	public var selection: Int?
 	/// The default value for a `WeightQuestion`.
@@ -49,16 +55,7 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 	/// The maximum value for a `WeightQuestion`.
 	public var maximumValue: Double?
 
-	#if canImport(ResearchKitSwiftUI)
-	/// A set of ResearchKitSwiftUI text choices.
-	public var textChoices: [TextChoice]?
-	// public var imageChoices: [ImageChoice]?
-	/// A ResearchKitSwiftUI number of of choices that can be selected.
-	public var choiceSelectionLimit: ChoiceSelectionLimit?
-	/// The measurement system for this
-	public var measurementSystem: MeasurementSystem?
-	#endif
-
+	/// The specific question type.
 	public enum QuestionType: String, Codable, CaseIterable {
 		case multipleChoice = "Multiple Choice"
 
@@ -77,10 +74,54 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 		case imageChoice = "Image Choice"
 	}
 
+	/// Creates an instance of a survey question.
+	public init(
+		id: String,
+		type: QuestionType,
+		required: Bool = false,
+		title: String,
+		detail: String? = nil,
+		characterLimit: Int? = nil,
+		textChoices: [TextChoice]? = nil,
+		vertical: Bool? = nil,
+		choiceSelectionLimit: ChoiceSelectionLimit? = nil,
+		prompt: String? = nil,
+		integerRange: ClosedRange<Int>? = nil,
+		doubleRange: ClosedRange<Double>? = nil,
+		sliderStepValue: Double? = nil,
+		dateRange: ClosedRange<Date>? = nil,
+		defaultDate: Date? = nil,
+		measurementSystem: MeasurementSystem? = nil,
+		selection: Int? = nil,
+		defaultValue: Double? = nil,
+		minimumValue: Double? = nil,
+		maximumValue: Double? = nil
+	) {
+		self.id = id
+		self.type = type
+		self.required = required
+		self.title = title
+		self.detail = detail
+		self.characterLimit = characterLimit
+		self.textChoices = textChoices
+		self.vertical = vertical
+		self.choiceSelectionLimit = choiceSelectionLimit
+		self.prompt = prompt
+		self.integerRange = integerRange
+		self.doubleRange = doubleRange
+		self.sliderStepValue = sliderStepValue
+		self.dateRange = dateRange
+		self.defaultDate = defaultDate
+		self.measurementSystem = measurementSystem
+		self.selection = selection
+		self.defaultValue = defaultValue
+		self.minimumValue = minimumValue
+		self.maximumValue = maximumValue
+	}
+
 	// MARK: ResearchKit (Swift UI)
 
-	#if canImport(ResearchKitSwiftUI)
-	// Builds the respective SwiftUI ResearchKitSwiftUI question view.
+	/// Builds the respective SwiftUI ResearchKitSwiftUI question view.
 	@ViewBuilder public func view() -> some View {
 
 		switch type {
@@ -157,6 +198,7 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 			)
 			.questionRequired(required)
 			#else
+			// Currently not supported by ResearchKitSwiftUI on the watch.
 			EmptyView()
 			#endif
 		case .imageChoice:
@@ -171,5 +213,6 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 			.questionRequired(required)
 		}
 	}
-	#endif
 }
+
+#endif

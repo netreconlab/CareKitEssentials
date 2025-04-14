@@ -6,6 +6,8 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(ResearchKitSwiftUI)
+
 import CareKitStore
 import Foundation
 import os.log
@@ -49,3 +51,5 @@ extension OCKTask {
         }
     }
 }
+
+#endif
