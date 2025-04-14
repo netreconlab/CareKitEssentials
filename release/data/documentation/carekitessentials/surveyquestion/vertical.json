@@ -1,0 +1,227 @@
+{
+  "abstract" : [
+    {
+      "text" : "Whether or not the images should be displayed horizontally or vertically in a ",
+      "type" : "text"
+    },
+    {
+      "code" : "ImageChoiceQuestion",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion\/vertical"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:17CareKitEssentials14SurveyQuestionV8verticalSbSgvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "vertical"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitEssentials"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "vertical"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "watchOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "vertical"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sb",
+              "text" : "Bool"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitessentials\/surveyquestion\/vertical"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitEssentials",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion": {
+  "abstract" : [
+    {
+      "text" : "A ResearchKitSwiftUI survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyQuestion",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion/vertical": {
+  "abstract" : [
+    {
+      "text" : "Whether or not the images should be displayed horizontally or vertically in a ",
+      "type" : "text"
+    },
+    {
+      "code" : "ImageChoiceQuestion",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "vertical"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion\/vertical",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "vertical",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion\/vertical"
+}
+}
+}

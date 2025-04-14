@@ -1,0 +1,227 @@
+{
+  "abstract" : [
+    {
+      "text" : "The default value for a ",
+      "type" : "text"
+    },
+    {
+      "code" : "WeightQuestion",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion\/defaultValue"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:17CareKitEssentials14SurveyQuestionV12defaultValueSdSgvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "defaultValue"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sd",
+        "text" : "Double"
+      },
+      {
+        "kind" : "text",
+        "text" : "?"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitEssentials"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "defaultValue"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "watchOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "defaultValue"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sd",
+              "text" : "Double"
+            },
+            {
+              "kind" : "text",
+              "text" : "?"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitessentials\/surveyquestion\/defaultvalue"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitEssentials",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion": {
+  "abstract" : [
+    {
+      "text" : "A ResearchKitSwiftUI survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyQuestion",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion/defaultValue": {
+  "abstract" : [
+    {
+      "text" : "The default value for a ",
+      "type" : "text"
+    },
+    {
+      "code" : "WeightQuestion",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion\/defaultValue",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultValue",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion\/defaultvalue"
+}
+}
+}

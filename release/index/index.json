@@ -31234,6 +31234,2817 @@
           {
             "children" : [
               {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/researchsurveyview\/init(event:form:)",
+                "title" : "init(event: OCKAnyEvent, form: () -> Content)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/researchsurveyview\/body",
+                "title" : "var body: some View",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accentcolor(_:)",
+                    "title" : "func accentColor(Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(activationpoint:)-732ns",
+                    "title" : "func accessibility(activationPoint: CGPoint) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(activationpoint:)-7v9rh",
+                    "title" : "func accessibility(activationPoint: UnitPoint) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(addtraits:)",
+                    "title" : "func accessibility(addTraits: AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(hidden:)",
+                    "title" : "func accessibility(hidden: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(hint:)",
+                    "title" : "func accessibility(hint: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(identifier:)",
+                    "title" : "func accessibility(identifier: String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(inputlabels:)",
+                    "title" : "func accessibility(inputLabels: [Text]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(label:)",
+                    "title" : "func accessibility(label: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(removetraits:)",
+                    "title" : "func accessibility(removeTraits: AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(selectionidentifier:)",
+                    "title" : "func accessibility(selectionIdentifier: AnyHashable) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(sortpriority:)",
+                    "title" : "func accessibility(sortPriority: Double) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibility(value:)",
+                    "title" : "func accessibility(value: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaction(_:_:)",
+                    "title" : "func accessibilityAction(AccessibilityActionKind, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaction(action:label:)",
+                    "title" : "func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaction(named:_:)-17uuf",
+                    "title" : "func accessibilityAction<S>(named: S, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaction(named:_:)-7fjd0",
+                    "title" : "func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaction(named:_:)-8vvob",
+                    "title" : "func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactions(_:)",
+                    "title" : "func accessibilityActions<Content>(() -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactivationpoint(_:)-2v9u7",
+                    "title" : "func accessibilityActivationPoint(UnitPoint) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactivationpoint(_:)-4f81o",
+                    "title" : "func accessibilityActivationPoint(CGPoint) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityaddtraits(_:)",
+                    "title" : "func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityadjustableaction(_:)",
+                    "title" : "func accessibilityAdjustableAction((AccessibilityAdjustmentDirection) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitychartdescriptor(_:)",
+                    "title" : "func accessibilityChartDescriptor<R>(R) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitychildren(children:)",
+                    "title" : "func accessibilityChildren<V>(children: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-1ccgx",
+                    "title" : "func accessibilityCustomContent(Text, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-2svf5",
+                    "title" : "func accessibilityCustomContent(LocalizedStringKey, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-429v5",
+                    "title" : "func accessibilityCustomContent<V>(AccessibilityCustomContentKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-64919",
+                    "title" : "func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-6vn7",
+                    "title" : "func accessibilityCustomContent(LocalizedStringKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-7ius9",
+                    "title" : "func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-9svfu",
+                    "title" : "func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitycustomcontent(_:_:importance:)-9u4po",
+                    "title" : "func accessibilityCustomContent(AccessibilityCustomContentKey, Text?, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitydirecttouch(_:options:)",
+                    "title" : "func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityelement(children:)",
+                    "title" : "func accessibilityElement(children: AccessibilityChildBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityfocused(_:)",
+                    "title" : "func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityfocused(_:equals:)",
+                    "title" : "func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityheading(_:)",
+                    "title" : "func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhidden(_:)",
+                    "title" : "func accessibilityHidden(Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:)-1p3nd",
+                    "title" : "func accessibilityHint<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:)-4jlnd",
+                    "title" : "func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:)-87jqy",
+                    "title" : "func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityidentifier(_:)",
+                    "title" : "func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityignoresinvertcolors(_:)",
+                    "title" : "func accessibilityIgnoresInvertColors(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:)-131vj",
+                    "title" : "func accessibilityInputLabels<S>([S]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:)-2090x",
+                    "title" : "func accessibilityInputLabels([Text]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:)-23sgi",
+                    "title" : "func accessibilityInputLabels([LocalizedStringKey]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:)-2qr0k",
+                    "title" : "func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:)-8721e",
+                    "title" : "func accessibilityLabel<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:)-9egkf",
+                    "title" : "func accessibilityLabel(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabeledpair(role:id:in:)",
+                    "title" : "func accessibilityLabeledPair<ID>(role: AccessibilityLabeledPairRole, id: ID, in: Namespace.ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylinkedgroup(id:in:)",
+                    "title" : "func accessibilityLinkedGroup<ID>(id: ID, in: Namespace.ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityquickaction(style:content:)",
+                    "title" : "func accessibilityQuickAction<Style, Content>(style: Style, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityquickaction(style:isactive:content:)",
+                    "title" : "func accessibilityQuickAction<Style, Content>(style: Style, isActive: Binding<Bool>, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityremovetraits(_:)",
+                    "title" : "func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrepresentation(representation:)",
+                    "title" : "func accessibilityRepresentation<V>(representation: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrespondstouserinteraction(_:)",
+                    "title" : "func accessibilityRespondsToUserInteraction(Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:)-29ely",
+                    "title" : "func accessibilityRotor<L, Content>(L, entries: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:)-6lgk4",
+                    "title" : "func accessibilityRotor<Content>(LocalizedStringKey, entries: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:)-6y9n5",
+                    "title" : "func accessibilityRotor<Content>(Text, entries: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:)-7sk9o",
+                    "title" : "func accessibilityRotor<Content>(AccessibilitySystemRotor, entries: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entryid:entrylabel:)-23qe6",
+                    "title" : "func accessibilityRotor<L, EntryModel, ID>(L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entryid:entrylabel:)-36pki",
+                    "title" : "func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entryid:entrylabel:)-85o8p",
+                    "title" : "func accessibilityRotor<EntryModel, ID>(AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entryid:entrylabel:)-8xgus",
+                    "title" : "func accessibilityRotor<EntryModel, ID>(LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entrylabel:)-1ycwy",
+                    "title" : "func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entrylabel:)-5s5t8",
+                    "title" : "func accessibilityRotor<L, EntryModel>(L, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entrylabel:)-67ffm",
+                    "title" : "func accessibilityRotor<EntryModel>(AccessibilitySystemRotor, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:entries:entrylabel:)-6oiin",
+                    "title" : "func accessibilityRotor<EntryModel>(LocalizedStringKey, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:textranges:)-14a5j",
+                    "title" : "func accessibilityRotor<L>(L, textRanges: [Range<String.Index>]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:textranges:)-1nsn5",
+                    "title" : "func accessibilityRotor(Text, textRanges: [Range<String.Index>]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:textranges:)-2tox4",
+                    "title" : "func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotor(_:textranges:)-77sxo",
+                    "title" : "func accessibilityRotor(AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrotorentry(id:in:)",
+                    "title" : "func accessibilityRotorEntry<ID>(id: ID, in: Namespace.ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityscrollaction(_:)",
+                    "title" : "func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityshowslargecontentviewer()",
+                    "title" : "func accessibilityShowsLargeContentViewer() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityshowslargecontentviewer(_:)",
+                    "title" : "func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitysortpriority(_:)",
+                    "title" : "func accessibilitySortPriority(Double) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitytextcontenttype(_:)",
+                    "title" : "func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:)-1r22y",
+                    "title" : "func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:)-3lw72",
+                    "title" : "func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:)-3q2s",
+                    "title" : "func accessibilityValue(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityzoomaction(_:)",
+                    "title" : "func accessibilityZoomAction((AccessibilityZoomGestureAction) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/actionsheet(ispresented:content:)",
+                    "title" : "func actionSheet(isPresented: Binding<Bool>, content: () -> ActionSheet) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/actionsheet(item:content:)",
+                    "title" : "func actionSheet<T>(item: Binding<T?>, content: (T) -> ActionSheet) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:)-715uz",
+                    "title" : "func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:)-9kvvw",
+                    "title" : "func alert<A>(Text, isPresented: Binding<Bool>, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:)-9v9qw",
+                    "title" : "func alert<A>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:message:)-1s8m3",
+                    "title" : "func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:message:)-1ul0k",
+                    "title" : "func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:actions:message:)-2e4n3",
+                    "title" : "func alert<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:)-17uln",
+                    "title" : "func alert<A, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:)-400jn",
+                    "title" : "func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:)-5rcj3",
+                    "title" : "func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:message:)-3kjh2",
+                    "title" : "func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:message:)-49vq6",
+                    "title" : "func alert<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(_:ispresented:presenting:actions:message:)-5k0vw",
+                    "title" : "func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(ispresented:content:)",
+                    "title" : "func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(ispresented:error:actions:)",
+                    "title" : "func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(ispresented:error:actions:message:)",
+                    "title" : "func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alert(item:content:)",
+                    "title" : "func alert<Item>(item: Binding<Item?>, content: (Item) -> Alert) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alignmentguide(_:computevalue:)-42nt2",
+                    "title" : "func alignmentGuide(VerticalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/alignmentguide(_:computevalue:)-44cad",
+                    "title" : "func alignmentGuide(HorizontalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/allowshittesting(_:)",
+                    "title" : "func allowsHitTesting(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/allowstightening(_:)",
+                    "title" : "func allowsTightening(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/anchorpreference(key:value:transform:)",
+                    "title" : "func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/animation(_:)",
+                    "title" : "func animation(Animation?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/animation(_:body:)",
+                    "title" : "func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/animation(_:value:)",
+                    "title" : "func animation<V>(Animation?, value: V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/aspectratio(_:contentmode:)-2smd8",
+                    "title" : "func aspectRatio(CGSize, contentMode: ContentMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/aspectratio(_:contentmode:)-6rzgx",
+                    "title" : "func aspectRatio(CGFloat?, contentMode: ContentMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/autocorrectiondisabled(_:)",
+                    "title" : "func autocorrectionDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(_:alignment:)",
+                    "title" : "func background<Background>(Background, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(_:ignoressafeareaedges:)",
+                    "title" : "func background<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(_:in:fillstyle:)-4cas9",
+                    "title" : "func background<S, T>(S, in: T, fillStyle: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(_:in:fillstyle:)-78exz",
+                    "title" : "func background<S, T>(S, in: T, fillStyle: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(alignment:content:)",
+                    "title" : "func background<V>(alignment: Alignment, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(ignoressafeareaedges:)",
+                    "title" : "func background(ignoresSafeAreaEdges: Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(in:fillstyle:)-1aoma",
+                    "title" : "func background<S>(in: S, fillStyle: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/background(in:fillstyle:)-9yasa",
+                    "title" : "func background<S>(in: S, fillStyle: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/backgroundpreferencevalue(_:_:)",
+                    "title" : "func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/backgroundpreferencevalue(_:alignment:_:)",
+                    "title" : "func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/backgroundstyle(_:)",
+                    "title" : "func backgroundStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/baselineoffset(_:)",
+                    "title" : "func baselineOffset(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/blendmode(_:)",
+                    "title" : "func blendMode(BlendMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/blur(radius:opaque:)",
+                    "title" : "func blur(radius: CGFloat, opaque: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/bold(_:)",
+                    "title" : "func bold(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/border(_:width:)",
+                    "title" : "func border<S>(S, width: CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/brightness(_:)",
+                    "title" : "func brightness(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/buttonbordershape(_:)",
+                    "title" : "func buttonBorderShape(ButtonBorderShape) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/buttonrepeatbehavior(_:)",
+                    "title" : "func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/buttonstyle(_:)-942xx",
+                    "title" : "func buttonStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/buttonstyle(_:)-9sc8",
+                    "title" : "func buttonStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/carekitstyle(_:)",
+                    "title" : "func careKitStyle(any OCKStyler) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartangleselection(value:)",
+                    "title" : "func chartAngleSelection<P>(value: Binding<P?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartbackground(alignment:content:)",
+                    "title" : "func chartBackground<V>(alignment: Alignment, content: (ChartProxy) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(_:)",
+                    "title" : "func chartForegroundStyleScale<DataValue, S>(KeyValuePairs<DataValue, S>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(domain:mapping:)",
+                    "title" : "func chartForegroundStyleScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(domain:range:type:)",
+                    "title" : "func chartForegroundStyleScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(domain:type:)",
+                    "title" : "func chartForegroundStyleScale<Domain>(domain: Domain, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(mapping:)",
+                    "title" : "func chartForegroundStyleScale<DataValue, S>(mapping: (DataValue) -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(range:type:)",
+                    "title" : "func chartForegroundStyleScale<Range>(range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartforegroundstylescale(type:)",
+                    "title" : "func chartForegroundStyleScale(type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartgesture(_:)",
+                    "title" : "func chartGesture((ChartProxy) -> some Gesture) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlegend(_:)",
+                    "title" : "func chartLegend(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlegend(position:alignment:spacing:)",
+                    "title" : "func chartLegend(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlegend(position:alignment:spacing:content:)",
+                    "title" : "func chartLegend<Content>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(_:)",
+                    "title" : "func chartLineStyleScale<DataValue>(KeyValuePairs<DataValue, StrokeStyle>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(domain:)",
+                    "title" : "func chartLineStyleScale<Domain>(domain: Domain) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(domain:mapping:)",
+                    "title" : "func chartLineStyleScale<Domain>(domain: Domain, mapping: (Domain.Element) -> StrokeStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(domain:range:)",
+                    "title" : "func chartLineStyleScale<Domain, Range>(domain: Domain, range: Range) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(mapping:)",
+                    "title" : "func chartLineStyleScale<DataValue>(mapping: (DataValue) -> StrokeStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartlinestylescale(range:)",
+                    "title" : "func chartLineStyleScale<Range>(range: Range) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartoverlay(alignment:content:)",
+                    "title" : "func chartOverlay<V>(alignment: Alignment, content: (ChartProxy) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartplotstyle(content:)",
+                    "title" : "func chartPlotStyle<Content>(content: (ChartPlotContent) -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrollposition(initialx:)",
+                    "title" : "func chartScrollPosition(initialX: some Plottable) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrollposition(initialy:)",
+                    "title" : "func chartScrollPosition(initialY: some Plottable) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrollposition(x:)",
+                    "title" : "func chartScrollPosition(x: Binding<some Plottable>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrollposition(y:)",
+                    "title" : "func chartScrollPosition(y: Binding<some Plottable>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrolltargetbehavior(_:)",
+                    "title" : "func chartScrollTargetBehavior(some ChartScrollTargetBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartscrollableaxes(_:)",
+                    "title" : "func chartScrollableAxes(Axis.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(_:)-5i1w7",
+                    "title" : "func chartSymbolScale<DataValue>(KeyValuePairs<DataValue, any ChartSymbolShape>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(_:)-6nw52",
+                    "title" : "func chartSymbolScale<DataValue, S>(KeyValuePairs<DataValue, S>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(domain:)",
+                    "title" : "func chartSymbolScale<Domain>(domain: Domain) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(domain:mapping:)",
+                    "title" : "func chartSymbolScale<Domain, S>(domain: Domain, mapping: (Domain.Element) -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(domain:range:)-1dlz2",
+                    "title" : "func chartSymbolScale<Domain>(domain: Domain, range: [any ChartSymbolShape]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(domain:range:)-78be3",
+                    "title" : "func chartSymbolScale<Domain, Range>(domain: Domain, range: Range) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(mapping:)",
+                    "title" : "func chartSymbolScale<DataValue, S>(mapping: (DataValue) -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolscale(range:)",
+                    "title" : "func chartSymbolScale(range: [any ChartSymbolShape]) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(_:)",
+                    "title" : "func chartSymbolSizeScale<DataValue>(KeyValuePairs<DataValue, CGFloat>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(domain:mapping:)",
+                    "title" : "func chartSymbolSizeScale<Domain>(domain: Domain, mapping: (Domain.Element) -> CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(domain:range:type:)",
+                    "title" : "func chartSymbolSizeScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(domain:type:)",
+                    "title" : "func chartSymbolSizeScale<Domain>(domain: Domain, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(mapping:)",
+                    "title" : "func chartSymbolSizeScale<DataValue>(mapping: (DataValue) -> CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(range:type:)",
+                    "title" : "func chartSymbolSizeScale<Range>(range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartsymbolsizescale(type:)",
+                    "title" : "func chartSymbolSizeScale(type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxaxis(_:)",
+                    "title" : "func chartXAxis(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxaxis(content:)",
+                    "title" : "func chartXAxis<Content>(content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxaxislabel(_:position:alignment:spacing:)",
+                    "title" : "func chartXAxisLabel(LocalizedStringKey, position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxaxislabel(position:alignment:spacing:content:)",
+                    "title" : "func chartXAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxaxisstyle(content:)",
+                    "title" : "func chartXAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxscale(domain:range:type:)",
+                    "title" : "func chartXScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxscale(domain:type:)",
+                    "title" : "func chartXScale<Domain>(domain: Domain, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxscale(range:type:)",
+                    "title" : "func chartXScale<Range>(range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxscale(type:)",
+                    "title" : "func chartXScale(type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxselection(range:)",
+                    "title" : "func chartXSelection<P>(range: Binding<ClosedRange<P>?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxselection(value:)",
+                    "title" : "func chartXSelection<P>(value: Binding<P?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartxvisibledomain(length:)",
+                    "title" : "func chartXVisibleDomain<P>(length: P) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyaxis(_:)",
+                    "title" : "func chartYAxis(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyaxis(content:)",
+                    "title" : "func chartYAxis<Content>(content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyaxislabel(_:position:alignment:spacing:)",
+                    "title" : "func chartYAxisLabel(LocalizedStringKey, position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyaxislabel(position:alignment:spacing:content:)",
+                    "title" : "func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyaxisstyle(content:)",
+                    "title" : "func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyscale(domain:range:type:)",
+                    "title" : "func chartYScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyscale(domain:type:)",
+                    "title" : "func chartYScale<Domain>(domain: Domain, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyscale(range:type:)",
+                    "title" : "func chartYScale<Range>(range: Range, type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyscale(type:)",
+                    "title" : "func chartYScale(type: ScaleType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyselection(range:)",
+                    "title" : "func chartYSelection<P>(range: Binding<ClosedRange<P>?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyselection(value:)",
+                    "title" : "func chartYSelection<P>(value: Binding<P?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/chartyvisibledomain(length:)",
+                    "title" : "func chartYVisibleDomain<P>(length: P) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/clipshape(_:style:)",
+                    "title" : "func clipShape<S>(S, style: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/clipped(antialiased:)",
+                    "title" : "func clipped(antialiased: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/colorinvert()",
+                    "title" : "func colorInvert() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/colormultiply(_:)",
+                    "title" : "func colorMultiply(Color) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/colorscheme(_:)",
+                    "title" : "func colorScheme(ColorScheme) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/compositinggroup()",
+                    "title" : "func compositingGroup() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:)-1ixk1",
+                    "title" : "func confirmationDialog<S, A>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:)-8oer6",
+                    "title" : "func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:)-9zeqp",
+                    "title" : "func confirmationDialog<A>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-3pyg3",
+                    "title" : "func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-lamy",
+                    "title" : "func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-u2yl",
+                    "title" : "func confirmationDialog<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-1gwqn",
+                    "title" : "func confirmationDialog<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-24f7d",
+                    "title" : "func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-8yut9",
+                    "title" : "func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-3pb4j",
+                    "title" : "func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-6byvh",
+                    "title" : "func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-6c05y",
+                    "title" : "func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containerbackground(_:for:)",
+                    "title" : "func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containerbackground(for:alignment:content:)",
+                    "title" : "func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containerrelativeframe(_:alignment:)",
+                    "title" : "func containerRelativeFrame(Axis.Set, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containerrelativeframe(_:alignment:_:)",
+                    "title" : "func containerRelativeFrame(Axis.Set, alignment: Alignment, (CGFloat, Axis) -> CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containerrelativeframe(_:count:span:spacing:alignment:)",
+                    "title" : "func containerRelativeFrame(Axis.Set, count: Int, span: Int, spacing: CGFloat, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/containershape(_:)",
+                    "title" : "func containerShape<T>(T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contentmargins(_:_:for:)-7d375",
+                    "title" : "func contentMargins(Edge.Set, EdgeInsets, for: ContentMarginPlacement) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contentmargins(_:_:for:)-8f0aw",
+                    "title" : "func contentMargins(Edge.Set, CGFloat?, for: ContentMarginPlacement) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contentmargins(_:for:)",
+                    "title" : "func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contentshape(_:_:eofill:)",
+                    "title" : "func contentShape<S>(ContentShapeKinds, S, eoFill: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contentshape(_:eofill:)",
+                    "title" : "func contentShape<S>(S, eoFill: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contenttransition(_:)",
+                    "title" : "func contentTransition(ContentTransition) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contextmenu(_:)",
+                    "title" : "func contextMenu<MenuItems>(ContextMenu<MenuItems>?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contextmenu(menuitems:)",
+                    "title" : "func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/contrast(_:)",
+                    "title" : "func contrast(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/controlsize(_:)",
+                    "title" : "func controlSize(ControlSize) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/coordinatespace(_:)",
+                    "title" : "func coordinateSpace(NamedCoordinateSpace) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/coordinatespace(name:)",
+                    "title" : "func coordinateSpace<T>(name: T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/cornerradius(_:antialiased:)",
+                    "title" : "func cornerRadius(CGFloat, antialiased: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/datepickerstyle(_:)",
+                    "title" : "func datePickerStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultappstorage(_:)",
+                    "title" : "func defaultAppStorage(UserDefaults) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultfocus(_:_:priority:)",
+                    "title" : "func defaultFocus<V>(FocusState<V>.Binding, V, priority: DefaultFocusEvaluationPriority) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultscrollanchor(_:)",
+                    "title" : "func defaultScrollAnchor(UnitPoint?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultwheelpickeritemheight(_:)",
+                    "title" : "func defaultWheelPickerItemHeight(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/deletedisabled(_:)",
+                    "title" : "func deleteDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogicon(_:)",
+                    "title" : "func dialogIcon(Image?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogseverity(_:)",
+                    "title" : "func dialogSeverity(DialogSeverity) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogsuppressiontoggle(_:issuppressed:)-1rvbr",
+                    "title" : "func dialogSuppressionToggle(Text, isSuppressed: Binding<Bool>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogsuppressiontoggle(_:issuppressed:)-5roie",
+                    "title" : "func dialogSuppressionToggle<S>(S, isSuppressed: Binding<Bool>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogsuppressiontoggle(_:issuppressed:)-5y5uw",
+                    "title" : "func dialogSuppressionToggle(LocalizedStringKey, isSuppressed: Binding<Bool>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dialogsuppressiontoggle(issuppressed:)",
+                    "title" : "func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownaccessory(_:)",
+                    "title" : "func digitalCrownAccessory(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownaccessory(content:)",
+                    "title" : "func digitalCrownAccessory<Content>(content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(_:)",
+                    "title" : "func digitalCrownRotation<V>(Binding<V>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(_:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:)",
+                    "title" : "func digitalCrownRotation<V>(Binding<V>, from: V, through: V, by: V.Stride?, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(_:from:through:sensitivity:iscontinuous:ishapticfeedbackenabled:onchange:onidle:)",
+                    "title" : "func digitalCrownRotation<V>(Binding<V>, from: V, through: V, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(_:onchange:onidle:)",
+                    "title" : "func digitalCrownRotation<V>(Binding<V>, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(detent:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:onchange:onidle:)-805t0",
+                    "title" : "func digitalCrownRotation<V>(detent: Binding<V>, from: V, through: V, by: V.Stride, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/digitalcrownrotation(detent:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:onchange:onidle:)-977mw",
+                    "title" : "func digitalCrownRotation<V>(detent: Binding<V>, from: V, through: V, by: V.Stride, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool, onChange: (DigitalCrownEvent) -> Void, onIdle: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/disableautocorrection(_:)",
+                    "title" : "func disableAutocorrection(Bool?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/disabled(_:)",
+                    "title" : "func disabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/drawinggroup(opaque:colormode:)",
+                    "title" : "func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/dynamictypesize(_:)",
+                    "title" : "func dynamicTypeSize(DynamicTypeSize) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/edgesignoringsafearea(_:)",
+                    "title" : "func edgesIgnoringSafeArea(Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/environment(_:)",
+                    "title" : "func environment<T>(T?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/environment(_:_:)",
+                    "title" : "func environment<V>(WritableKeyPath<EnvironmentValues, V>, V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/environmentobject(_:)",
+                    "title" : "func environmentObject<T>(T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fixedsize()",
+                    "title" : "func fixedSize() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fixedsize(horizontal:vertical:)",
+                    "title" : "func fixedSize(horizontal: Bool, vertical: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/flipsforrighttoleftlayoutdirection(_:)",
+                    "title" : "func flipsForRightToLeftLayoutDirection(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focuseffectdisabled(_:)",
+                    "title" : "func focusEffectDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusscope(_:)",
+                    "title" : "func focusScope(Namespace.ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusable(_:)",
+                    "title" : "func focusable(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusable(_:interactions:)",
+                    "title" : "func focusable(Bool, interactions: FocusInteractions) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusable(_:onfocuschange:)",
+                    "title" : "func focusable(Bool, onFocusChange: (Bool) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focused(_:)",
+                    "title" : "func focused(FocusState<Bool>.Binding) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focused(_:equals:)",
+                    "title" : "func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedobject(_:)-4l56h",
+                    "title" : "func focusedObject<T>(T?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedobject(_:)-m5db",
+                    "title" : "func focusedObject<T>(T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedsceneobject(_:)-71o1p",
+                    "title" : "func focusedSceneObject<T>(T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedsceneobject(_:)-9m50k",
+                    "title" : "func focusedSceneObject<T>(T?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedscenevalue(_:_:)-11y23",
+                    "title" : "func focusedSceneValue<T>(WritableKeyPath<FocusedValues, T?>, T?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedscenevalue(_:_:)-1hj6g",
+                    "title" : "func focusedSceneValue<T>(WritableKeyPath<FocusedValues, T?>, T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedvalue(_:)",
+                    "title" : "func focusedValue<T>(T?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedvalue(_:_:)-38uk1",
+                    "title" : "func focusedValue<Value>(WritableKeyPath<FocusedValues, Value?>, Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedvalue(_:_:)-8bwo",
+                    "title" : "func focusedValue<Value>(WritableKeyPath<FocusedValues, Value?>, Value?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/font(_:)",
+                    "title" : "func font(Font?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fontdesign(_:)",
+                    "title" : "func fontDesign(Font.Design?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fontweight(_:)",
+                    "title" : "func fontWeight(Font.Weight?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fontwidth(_:)",
+                    "title" : "func fontWidth(Font.Width?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/foregroundcolor(_:)",
+                    "title" : "func foregroundColor(Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/foregroundstyle(_:)",
+                    "title" : "func foregroundStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/foregroundstyle(_:_:)",
+                    "title" : "func foregroundStyle<S1, S2>(S1, S2) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/foregroundstyle(_:_:_:)",
+                    "title" : "func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/formstyle(_:)",
+                    "title" : "func formStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/frame()",
+                    "title" : "func frame() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:)",
+                    "title" : "func frame(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/frame(width:height:alignment:)",
+                    "title" : "func frame(width: CGFloat?, height: CGFloat?, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fullscreencover(ispresented:ondismiss:content:)",
+                    "title" : "func fullScreenCover<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/fullscreencover(item:ondismiss:content:)",
+                    "title" : "func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gaugestyle(_:)",
+                    "title" : "func gaugeStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/geometrygroup()",
+                    "title" : "func geometryGroup() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gesture(_:including:)",
+                    "title" : "func gesture<T>(T, including: GestureMask) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/grayscale(_:)",
+                    "title" : "func grayscale(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gridcellanchor(_:)",
+                    "title" : "func gridCellAnchor(UnitPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gridcellcolumns(_:)",
+                    "title" : "func gridCellColumns(Int) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gridcellunsizedaxes(_:)",
+                    "title" : "func gridCellUnsizedAxes(Axis.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/gridcolumnalignment(_:)",
+                    "title" : "func gridColumnAlignment(HorizontalAlignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/headerprominence(_:)",
+                    "title" : "func headerProminence(Prominence) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/help(_:)-25ueb",
+                    "title" : "func help(Text) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/help(_:)-6wa7s",
+                    "title" : "func help<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/help(_:)-o96n",
+                    "title" : "func help(LocalizedStringKey) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/hidden()",
+                    "title" : "func hidden() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/highprioritygesture(_:including:)",
+                    "title" : "func highPriorityGesture<T>(T, including: GestureMask) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/huerotation(_:)",
+                    "title" : "func hueRotation(Angle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/id(_:)",
+                    "title" : "func id<ID>(ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/ignoressafearea(_:edges:)",
+                    "title" : "func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/imagescale(_:)",
+                    "title" : "func imageScale(Image.Scale) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/indexviewstyle(_:)",
+                    "title" : "func indexViewStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/interactionactivitytrackingtag(_:)",
+                    "title" : "func interactionActivityTrackingTag(String) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/interactivedismissdisabled(_:)",
+                    "title" : "func interactiveDismissDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/invalidatablecontent(_:)",
+                    "title" : "func invalidatableContent(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/italic(_:)",
+                    "title" : "func italic(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/itemprovider(_:)",
+                    "title" : "func itemProvider(Optional<() -> NSItemProvider?>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/kerning(_:)",
+                    "title" : "func kerning(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/keyframeanimator(initialvalue:repeating:content:keyframes:)",
+                    "title" : "func keyframeAnimator<Value>(initialValue: Value, repeating: Bool, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/keyframeanimator(initialvalue:trigger:content:keyframes:)",
+                    "title" : "func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/labelstyle(_:)",
+                    "title" : "func labelStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/labeledcontentstyle(_:)",
+                    "title" : "func labeledContentStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/labelshidden()",
+                    "title" : "func labelsHidden() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/layoutdirectionbehavior(_:)",
+                    "title" : "func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/layoutpriority(_:)",
+                    "title" : "func layoutPriority(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/layoutvalue(key:value:)",
+                    "title" : "func layoutValue<K>(key: K.Type, value: K.Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linelimit(_:)-5utrp",
+                    "title" : "func lineLimit(PartialRangeFrom<Int>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linelimit(_:)-6gmpt",
+                    "title" : "func lineLimit(PartialRangeThrough<Int>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linelimit(_:)-6gws2",
+                    "title" : "func lineLimit(Int?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linelimit(_:)-9c04d",
+                    "title" : "func lineLimit(ClosedRange<Int>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linelimit(_:reservesspace:)",
+                    "title" : "func lineLimit(Int, reservesSpace: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/linespacing(_:)",
+                    "title" : "func lineSpacing(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listitemtint(_:)-2z7ei",
+                    "title" : "func listItemTint(ListItemTint?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listitemtint(_:)-3maqh",
+                    "title" : "func listItemTint(Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listrowbackground(_:)",
+                    "title" : "func listRowBackground<V>(V?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listrowinsets(_:)",
+                    "title" : "func listRowInsets(EdgeInsets?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listrowplattercolor(_:)",
+                    "title" : "func listRowPlatterColor(Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listsectionspacing(_:)-3k64k",
+                    "title" : "func listSectionSpacing(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/listsectionspacing(_:)-4kuik",
+                    "title" : "func listSectionSpacing(ListSectionSpacing) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/liststyle(_:)",
+                    "title" : "func listStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/luminancetoalpha()",
+                    "title" : "func luminanceToAlpha() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/mask(_:)",
+                    "title" : "func mask<Mask>(Mask) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/mask(alignment:_:)",
+                    "title" : "func mask<Mask>(alignment: Alignment, () -> Mask) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/matchedgeometryeffect(id:in:properties:anchor:issource:)",
+                    "title" : "func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/menuactiondismissbehavior(_:)",
+                    "title" : "func menuActionDismissBehavior(MenuActionDismissBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/menuorder(_:)",
+                    "title" : "func menuOrder(MenuOrder) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/minimumscalefactor(_:)",
+                    "title" : "func minimumScaleFactor(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/modifier(_:)",
+                    "title" : "func modifier<T>(T) -> ModifiedContent<Self, T>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/monospaced(_:)",
+                    "title" : "func monospaced(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/monospaceddigit()",
+                    "title" : "func monospacedDigit() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/movedisabled(_:)",
+                    "title" : "func moveDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/multilinetextalignment(_:)",
+                    "title" : "func multilineTextAlignment(TextAlignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbarbackbuttonhidden(_:)",
+                    "title" : "func navigationBarBackButtonHidden(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbarhidden(_:)",
+                    "title" : "func navigationBarHidden(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:)-6gbes",
+                    "title" : "func navigationBarTitle(LocalizedStringKey) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:)-7gyvb",
+                    "title" : "func navigationBarTitle(Text) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:)-7mqsx",
+                    "title" : "func navigationBarTitle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:displaymode:)-5xe91",
+                    "title" : "func navigationBarTitle(Text, displayMode: NavigationBarItem.TitleDisplayMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:displaymode:)-6bh12",
+                    "title" : "func navigationBarTitle<S>(S, displayMode: NavigationBarItem.TitleDisplayMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitle(_:displaymode:)-71kvf",
+                    "title" : "func navigationBarTitle(LocalizedStringKey, displayMode: NavigationBarItem.TitleDisplayMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationbartitledisplaymode(_:)",
+                    "title" : "func navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdestination(for:destination:)",
+                    "title" : "func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdestination(ispresented:destination:)",
+                    "title" : "func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdestination(item:destination:)",
+                    "title" : "func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdocument(_:)",
+                    "title" : "func navigationDocument(URL) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdocument(_:preview:)-28bfq",
+                    "title" : "func navigationDocument<D, I>(D, preview: SharePreview<Never, I>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdocument(_:preview:)-3lyam",
+                    "title" : "func navigationDocument<D>(D, preview: SharePreview<Never, Never>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdocument(_:preview:)-76tlk",
+                    "title" : "func navigationDocument<D, I>(D, preview: SharePreview<I, Never>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationdocument(_:preview:)-9ltmc",
+                    "title" : "func navigationDocument<D, I1, I2>(D, preview: SharePreview<I1, I2>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationsplitviewcolumnwidth(_:)",
+                    "title" : "func navigationSplitViewColumnWidth(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationsplitviewcolumnwidth(min:ideal:max:)",
+                    "title" : "func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationsplitviewstyle(_:)",
+                    "title" : "func navigationSplitViewStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-1z29l",
+                    "title" : "func navigationTitle(Binding<String>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-3w5n",
+                    "title" : "func navigationTitle<V>(() -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-6zpe4",
+                    "title" : "func navigationTitle(LocalizedStringKey) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-7h97r",
+                    "title" : "func navigationTitle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-ngqj",
+                    "title" : "func navigationTitle(Text) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationviewstyle(_:)",
+                    "title" : "func navigationViewStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/offset(_:)",
+                    "title" : "func offset(CGSize) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/offset(x:y:)",
+                    "title" : "func offset(x: CGFloat, y: CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onappear(perform:)",
+                    "title" : "func onAppear(perform: (() -> Void)?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onchange(of:initial:_:)-2cauk",
+                    "title" : "func onChange<V>(of: V, initial: Bool, () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onchange(of:initial:_:)-5gpk0",
+                    "title" : "func onChange<V>(of: V, initial: Bool, (V, V) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onchange(of:perform:)",
+                    "title" : "func onChange<V>(of: V, perform: (V) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/oncontinueuseractivity(_:perform:)",
+                    "title" : "func onContinueUserActivity(String, perform: (NSUserActivity) -> ()) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/ondisappear(perform:)",
+                    "title" : "func onDisappear(perform: (() -> Void)?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:)",
+                    "title" : "func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onlongpressgesture(minimumduration:maximumdistance:pressing:perform:)",
+                    "title" : "func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, pressing: ((Bool) -> Void)?, perform: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onlongpressgesture(minimumduration:perform:onpressingchanged:)",
+                    "title" : "func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onlongpressgesture(minimumduration:pressing:perform:)",
+                    "title" : "func onLongPressGesture(minimumDuration: Double, pressing: ((Bool) -> Void)?, perform: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onopenurl(perform:)",
+                    "title" : "func onOpenURL(perform: (URL) -> ()) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onpreferencechange(_:perform:)",
+                    "title" : "func onPreferenceChange<K>(K.Type, perform: (K.Value) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onreceive(_:perform:)",
+                    "title" : "func onReceive<P>(P, perform: (P.Output) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/onsubmit(of:_:)",
+                    "title" : "func onSubmit(of: SubmitTriggers, (() -> Void)) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/ontapgesture(count:coordinatespace:perform:)",
+                    "title" : "func onTapGesture(count: Int, coordinateSpace: CoordinateSpace, perform: (CGPoint) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/ontapgesture(count:perform:)",
+                    "title" : "func onTapGesture(count: Int, perform: () -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/opacity(_:)",
+                    "title" : "func opacity(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlay(_:alignment:)",
+                    "title" : "func overlay<Overlay>(Overlay, alignment: Alignment) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlay(_:ignoressafeareaedges:)",
+                    "title" : "func overlay<S>(S, ignoresSafeAreaEdges: Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlay(_:in:fillstyle:)",
+                    "title" : "func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlay(alignment:content:)",
+                    "title" : "func overlay<V>(alignment: Alignment, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlaypreferencevalue(_:_:)",
+                    "title" : "func overlayPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/overlaypreferencevalue(_:alignment:_:)",
+                    "title" : "func overlayPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/padding(_:)-30hrv",
+                    "title" : "func padding(EdgeInsets) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/padding(_:)-6zpof",
+                    "title" : "func padding(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/padding(_:_:)",
+                    "title" : "func padding(Edge.Set, CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/persistentsystemoverlays(_:)",
+                    "title" : "func persistentSystemOverlays(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/phaseanimator(_:content:animation:)",
+                    "title" : "func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/phaseanimator(_:trigger:content:animation:)",
+                    "title" : "func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/pickerstyle(_:)",
+                    "title" : "func pickerStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/position(_:)",
+                    "title" : "func position(CGPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/position(x:y:)",
+                    "title" : "func position(x: CGFloat, y: CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/preference(key:value:)",
+                    "title" : "func preference<K>(key: K.Type, value: K.Value) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/preferredcolorscheme(_:)",
+                    "title" : "func preferredColorScheme(ColorScheme?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/prefersdefaultfocus(_:in:)",
+                    "title" : "func prefersDefaultFocus(Bool, in: Namespace.ID) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationbackground(_:)",
+                    "title" : "func presentationBackground<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationbackground(alignment:content:)",
+                    "title" : "func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationbackgroundinteraction(_:)",
+                    "title" : "func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationcompactadaptation(_:)",
+                    "title" : "func presentationCompactAdaptation(PresentationAdaptation) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationcompactadaptation(horizontal:vertical:)",
+                    "title" : "func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationcontentinteraction(_:)",
+                    "title" : "func presentationContentInteraction(PresentationContentInteraction) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationcornerradius(_:)",
+                    "title" : "func presentationCornerRadius(CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationdetents(_:)",
+                    "title" : "func presentationDetents(Set<PresentationDetent>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationdetents(_:selection:)",
+                    "title" : "func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationdragindicator(_:)",
+                    "title" : "func presentationDragIndicator(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/previewcontext(_:)",
+                    "title" : "func previewContext<C>(C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/previewdevice(_:)",
+                    "title" : "func previewDevice(PreviewDevice?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/previewdisplayname(_:)",
+                    "title" : "func previewDisplayName(String?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/previewinterfaceorientation(_:)",
+                    "title" : "func previewInterfaceOrientation(InterfaceOrientation) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/previewlayout(_:)",
+                    "title" : "func previewLayout(PreviewLayout) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/privacysensitive(_:)",
+                    "title" : "func privacySensitive(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/progressviewstyle(_:)",
+                    "title" : "func progressViewStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/projectioneffect(_:)",
+                    "title" : "func projectionEffect(ProjectionTransform) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/redacted(reason:)",
+                    "title" : "func redacted(reason: RedactionReasons) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/refreshable(action:)",
+                    "title" : "func refreshable(action: () async -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/renameaction(_:)-7e6bn",
+                    "title" : "func renameAction(FocusState<Bool>.Binding) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/renameaction(_:)-80r5o",
+                    "title" : "func renameAction(() -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/rotation3deffect(_:axis:anchor:anchorz:perspective:)",
+                    "title" : "func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/rotationeffect(_:anchor:)",
+                    "title" : "func rotationEffect(Angle, anchor: UnitPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/safeareainset(edge:alignment:spacing:content:)-8n0tx",
+                    "title" : "func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/safeareainset(edge:alignment:spacing:content:)-8wznl",
+                    "title" : "func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/safeareapadding(_:)-1zjii",
+                    "title" : "func safeAreaPadding(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/safeareapadding(_:)-77o8f",
+                    "title" : "func safeAreaPadding(EdgeInsets) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/safeareapadding(_:_:)",
+                    "title" : "func safeAreaPadding(Edge.Set, CGFloat?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/saturation(_:)",
+                    "title" : "func saturation(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scaleeffect(_:anchor:)-5gm93",
+                    "title" : "func scaleEffect(CGFloat, anchor: UnitPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scaleeffect(_:anchor:)-p8at",
+                    "title" : "func scaleEffect(CGSize, anchor: UnitPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scaleeffect(x:y:anchor:)",
+                    "title" : "func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scaledtofill()",
+                    "title" : "func scaledToFill() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scaledtofit()",
+                    "title" : "func scaledToFit() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scenepadding(_:)",
+                    "title" : "func scenePadding(Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scenepadding(_:edges:)",
+                    "title" : "func scenePadding(ScenePadding, edges: Edge.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollbouncebehavior(_:axes:)",
+                    "title" : "func scrollBounceBehavior(ScrollBounceBehavior, axes: Axis.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollclipdisabled(_:)",
+                    "title" : "func scrollClipDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollcontentbackground(_:)",
+                    "title" : "func scrollContentBackground(Visibility) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolldisabled(_:)",
+                    "title" : "func scrollDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolldismisseskeyboard(_:)",
+                    "title" : "func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollindicators(_:axes:)",
+                    "title" : "func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollindicatorsflash(onappear:)",
+                    "title" : "func scrollIndicatorsFlash(onAppear: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollindicatorsflash(trigger:)",
+                    "title" : "func scrollIndicatorsFlash(trigger: some Equatable) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollposition(id:anchor:)",
+                    "title" : "func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolltargetbehavior(_:)",
+                    "title" : "func scrollTargetBehavior(some ScrollTargetBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolltargetlayout(isenabled:)",
+                    "title" : "func scrollTargetLayout(isEnabled: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolltransition(_:axis:transition:)",
+                    "title" : "func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/scrolltransition(topleading:bottomtrailing:axis:transition:)",
+                    "title" : "func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchcompletion(_:)",
+                    "title" : "func searchCompletion(String) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchpresentationtoolbarbehavior(_:)",
+                    "title" : "func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchsuggestions(_:)",
+                    "title" : "func searchSuggestions<S>(() -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchsuggestions(_:for:)",
+                    "title" : "func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:)-3b09n",
+                    "title" : "func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:)-5it2x",
+                    "title" : "func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:)-71h9q",
+                    "title" : "func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:suggestions:)-20dgq",
+                    "title" : "func searchable<V, S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S, suggestions: () -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:suggestions:)-71v33",
+                    "title" : "func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?, suggestions: () -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "deprecated" : true,
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/searchable(text:placement:prompt:suggestions:)-88aur",
+                    "title" : "func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, suggestions: () -> S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/selectiondisabled(_:)",
+                    "title" : "func selectionDisabled(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/sensoryfeedback(_:trigger:)",
+                    "title" : "func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/sensoryfeedback(_:trigger:condition:)",
+                    "title" : "func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/sensoryfeedback(trigger:_:)",
+                    "title" : "func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/shadow(color:radius:x:y:)",
+                    "title" : "func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/sheet(ispresented:ondismiss:content:)",
+                    "title" : "func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/sheet(item:ondismiss:content:)",
+                    "title" : "func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)?, content: (Item) -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/simultaneousgesture(_:including:)",
+                    "title" : "func simultaneousGesture<T>(T, including: GestureMask) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/speechadjustedpitch(_:)",
+                    "title" : "func speechAdjustedPitch(Double) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/speechalwaysincludespunctuation(_:)",
+                    "title" : "func speechAlwaysIncludesPunctuation(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/speechannouncementsqueued(_:)",
+                    "title" : "func speechAnnouncementsQueued(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/speechspellsoutcharacters(_:)",
+                    "title" : "func speechSpellsOutCharacters(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/springloadingbehavior(_:)",
+                    "title" : "func springLoadingBehavior(SpringLoadingBehavior) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/strikethrough(_:pattern:color:)",
+                    "title" : "func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/submitlabel(_:)",
+                    "title" : "func submitLabel(SubmitLabel) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/submitscope(_:)",
+                    "title" : "func submitScope(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/swipeactions(edge:allowsfullswipe:content:)",
+                    "title" : "func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/symboleffect(_:options:isactive:)",
+                    "title" : "func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/symboleffect(_:options:value:)",
+                    "title" : "func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/symboleffectsremoved(_:)",
+                    "title" : "func symbolEffectsRemoved(Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/symbolrenderingmode(_:)",
+                    "title" : "func symbolRenderingMode(SymbolRenderingMode?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/symbolvariant(_:)",
+                    "title" : "func symbolVariant(SymbolVariants) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/tabitem(_:)",
+                    "title" : "func tabItem<V>(() -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/tabviewstyle(_:)",
+                    "title" : "func tabViewStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/tag(_:)",
+                    "title" : "func tag<V>(V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/task(id:priority:_:)",
+                    "title" : "func task<T>(id: T, priority: TaskPriority, () async -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/task(priority:_:)",
+                    "title" : "func task(priority: TaskPriority, () async -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/textcase(_:)",
+                    "title" : "func textCase(Text.Case?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/textcontenttype(_:)",
+                    "title" : "func textContentType(WKTextContentType?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/textfieldstyle(_:)",
+                    "title" : "func textFieldStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/textinputautocapitalization(_:)",
+                    "title" : "func textInputAutocapitalization(TextInputAutocapitalization?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/textscale(_:isenabled:)",
+                    "title" : "func textScale(Text.Scale, isEnabled: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/tint(_:)",
+                    "title" : "func tint(Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/togglestyle(_:)",
+                    "title" : "func toggleStyle<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbar(_:for:)",
+                    "title" : "func toolbar(Visibility, for: ToolbarPlacement...) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbar(content:)-28hre",
+                    "title" : "func toolbar<Content>(content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbar(content:)-4qbfg",
+                    "title" : "func toolbar<Content>(content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbar(id:content:)",
+                    "title" : "func toolbar<Content>(id: String, content: () -> Content) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbar(removing:)",
+                    "title" : "func toolbar(removing: ToolbarDefaultItemKind?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarbackground(_:for:)",
+                    "title" : "func toolbarBackground(Visibility, for: ToolbarPlacement...) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarcolorscheme(_:for:)",
+                    "title" : "func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarrole(_:)",
+                    "title" : "func toolbarRole(ToolbarRole) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbartitledisplaymode(_:)",
+                    "title" : "func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbartitlemenu(content:)",
+                    "title" : "func toolbarTitleMenu<C>(content: () -> C) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/tracking(_:)",
+                    "title" : "func tracking(CGFloat) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transaction(_:)",
+                    "title" : "func transaction((inout Transaction) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transaction(_:body:)",
+                    "title" : "func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transaction(value:_:)",
+                    "title" : "func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transformanchorpreference(key:value:transform:)",
+                    "title" : "func transformAnchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (inout K.Value, Anchor<A>) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transformeffect(_:)",
+                    "title" : "func transformEffect(CGAffineTransform) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transformenvironment(_:transform:)",
+                    "title" : "func transformEnvironment<V>(WritableKeyPath<EnvironmentValues, V>, transform: (inout V) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transformpreference(_:_:)",
+                    "title" : "func transformPreference<K>(K.Type, (inout K.Value) -> Void) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/transition(_:)",
+                    "title" : "func transition(AnyTransition) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/truncationmode(_:)",
+                    "title" : "func truncationMode(Text.TruncationMode) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/typeselectequivalent(_:)-1fi3a",
+                    "title" : "func typeSelectEquivalent<S>(S) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/typeselectequivalent(_:)-1po92",
+                    "title" : "func typeSelectEquivalent(Text?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/typeselectequivalent(_:)-535bu",
+                    "title" : "func typeSelectEquivalent(LocalizedStringKey) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/typesettinglanguage(_:isenabled:)-2rjuq",
+                    "title" : "func typesettingLanguage(TypesettingLanguage, isEnabled: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/typesettinglanguage(_:isenabled:)-6wfaj",
+                    "title" : "func typesettingLanguage(Locale.Language, isEnabled: Bool) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/underline(_:pattern:color:)",
+                    "title" : "func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/unredacted()",
+                    "title" : "func unredacted() -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/useractivity(_:element:_:)",
+                    "title" : "func userActivity<P>(String, element: P?, (P, NSUserActivity) -> ()) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/useractivity(_:isactive:_:)",
+                    "title" : "func userActivity(String, isActive: Bool, (NSUserActivity) -> ()) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/visualeffect(_:)",
+                    "title" : "func visualEffect((EmptyVisualEffect, GeometryProxy) -> some VisualEffect) -> some View",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/researchsurveyview\/zindex(_:)",
+                    "title" : "func zIndex(Double) -> some View",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/carekitessentials\/researchsurveyview\/view-implementations",
+                "title" : "View Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitessentials\/researchsurveyview",
+            "title" : "ResearchSurveyView",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
                 "title" : "Type Methods",
                 "type" : "groupMarker"
               },
@@ -34076,6 +36887,304 @@
             ],
             "path" : "\/documentation\/carekitessentials\/simplelabelview",
             "title" : "SimpleLabelView",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/init(from:)",
+                "title" : "init(from: any Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/characterlimit",
+                "title" : "var characterLimit: Int?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/daterange",
+                "title" : "var dateRange: ClosedRange<Date>?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/defaultdate",
+                "title" : "var defaultDate: Date?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/defaultvalue",
+                "title" : "var defaultValue: Double?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/detail",
+                "title" : "var detail: String?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/doublerange",
+                "title" : "var doubleRange: ClosedRange<Double>?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/id",
+                "title" : "var id: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/integerrange",
+                "title" : "var integerRange: ClosedRange<Int>?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/maximumvalue",
+                "title" : "var maximumValue: Double?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/minimumvalue",
+                "title" : "var minimumValue: Double?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/prompt",
+                "title" : "var prompt: String?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/required",
+                "title" : "var required: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/selection",
+                "title" : "var selection: Int?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/sliderstepvalue",
+                "title" : "var sliderStepValue: Double?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/title",
+                "title" : "var title: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/type",
+                "title" : "var type: QuestionType",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/vertical",
+                "title" : "var vertical: Bool?",
+                "type" : "property"
+              },
+              {
+                "title" : "Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Enumeration Cases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/datetime",
+                    "title" : "case dateTime",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/height",
+                    "title" : "case height",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/imagechoice",
+                    "title" : "case imageChoice",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/multiplechoice",
+                    "title" : "case multipleChoice",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/numericquestion",
+                    "title" : "case numericQuestion",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/slider",
+                    "title" : "case slider",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/text",
+                    "title" : "case text",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/weight",
+                    "title" : "case weight",
+                    "type" : "case"
+                  },
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/init(rawvalue:)",
+                    "title" : "init?(rawValue: String)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/init(from:)",
+                        "title" : "init(from: any Decoder) throws",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/hashvalue",
+                        "title" : "var hashValue: Int",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/encode(to:)",
+                        "title" : "func encode(to: any Encoder) throws",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/hash(into:)",
+                        "title" : "func hash(into: inout Hasher)",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype\/rawrepresentable-implementations",
+                    "title" : "RawRepresentable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/questiontype",
+                "title" : "SurveyQuestion.QuestionType",
+                "type" : "enum"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveyquestion\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitessentials\/surveyquestion\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitessentials\/surveyquestion",
+            "title" : "SurveyQuestion",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveystep\/init(from:)",
+                "title" : "init(from: any Decoder) throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveystep\/id",
+                "title" : "var id: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitessentials\/surveystep\/questions",
+                "title" : "var questions: [SurveyQuestion]",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitessentials\/surveystep\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitessentials\/surveystep\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/carekitessentials\/surveystep",
+            "title" : "SurveyStep",
             "type" : "struct"
           }
         ],
@@ -41109,6 +44218,11 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/init(categoryidentifier:)",
+                "title" : "init(categoryIdentifier: HKCategoryTypeIdentifier)",
+                "type" : "init"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/init(from:)",
                 "title" : "init(from: any Decoder) throws",
                 "type" : "init"
@@ -41123,18 +44237,23 @@
                 "type" : "groupMarker"
               },
               {
+                "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/categoryidentifier",
+                "title" : "var categoryIdentifier: HKCategoryTypeIdentifier?",
+                "type" : "property"
+              },
+              {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/quantityidentifier",
-                "title" : "var quantityIdentifier: HKQuantityTypeIdentifier",
+                "title" : "var quantityIdentifier: HKQuantityTypeIdentifier?",
                 "type" : "property"
               },
               {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/quantitytype-swift.property",
-                "title" : "var quantityType: QuantityType",
+                "title" : "var quantityType: QuantityType?",
                 "type" : "property"
               },
               {
                 "path" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/unit",
-                "title" : "var unit: HKUnit",
+                "title" : "var unit: HKUnit?",
                 "type" : "property"
               },
               {
@@ -43619,6 +46738,11 @@
               {
                 "path" : "\/documentation\/carekitstore\/ocktask\/source",
                 "title" : "var source: String?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/carekitstore\/ocktask\/surveysteps",
+                "title" : "var surveySteps: [SurveyStep]?",
                 "type" : "property"
               },
               {

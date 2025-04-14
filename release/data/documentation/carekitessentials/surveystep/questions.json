@@ -1,0 +1,234 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep\/questions"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:17CareKitEssentials10SurveyStepV9questionsSayAA0D8QuestionVGvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "questions"
+      },
+      {
+        "kind" : "text",
+        "text" : ": ["
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:17CareKitEssentials14SurveyQuestionV",
+        "text" : "SurveyQuestion"
+      },
+      {
+        "kind" : "text",
+        "text" : "]"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitEssentials"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "questions"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "watchOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "questions"
+            },
+            {
+              "kind" : "text",
+              "text" : ": ["
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:17CareKitEssentials14SurveyQuestionV",
+              "text" : "SurveyQuestion"
+            },
+            {
+              "kind" : "text",
+              "text" : "]"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitessentials\/surveystep\/questions"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitEssentials",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion": {
+  "abstract" : [
+    {
+      "text" : "A ResearchKitSwiftUI survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyQuestion",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyStep": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyStep"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyStep"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyStep",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveystep"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyStep/questions": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "questions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:17CareKitEssentials14SurveyQuestionV",
+      "text" : "SurveyQuestion"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep\/questions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "questions",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveystep\/questions"
+}
+}
+}

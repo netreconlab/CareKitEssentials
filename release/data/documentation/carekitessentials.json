@@ -57,8 +57,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ScheduleUtility",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SimpleLabelView"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SimpleLabelView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep"
       ],
       "title" : "Structures"
     }
@@ -516,6 +519,40 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/informationheaderview"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView": {
+  "abstract" : [
+    {
+      "text" : "A card that displays a header view and a button that displays a ResearchKitSwiftUI view. The whole view is tappable.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ResearchSurveyView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ResearchSurveyView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ResearchSurveyView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ScheduleUtility": {
   "abstract" : [
 
@@ -638,6 +675,71 @@
   "title" : "SliderLogTaskViewModel",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion": {
+  "abstract" : [
+    {
+      "text" : "A ResearchKitSwiftUI survey",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyQuestion"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyQuestion",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveyquestion"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyStep": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SurveyStep"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SurveyStep"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SurveyStep",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/surveystep"
 }
 }
 }

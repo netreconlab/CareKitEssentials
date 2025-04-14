@@ -102,6 +102,7 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/init(categoryIdentifier:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/init(from:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/init(quantityIdentifier:quantityType:unit:)"
       ],
@@ -109,6 +110,7 @@
     },
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/categoryIdentifier",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/quantityIdentifier",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/quantityType-swift.property",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/unit"
@@ -262,6 +264,88 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/quantitytype-swift.enum"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/categoryIdentifier": {
+  "abstract" : [
+    {
+      "text" : "A HKCategoryTypeIdentifier that describes the outcome’s data type.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "categoryIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@T@HKCategoryTypeIdentifier",
+      "text" : "HKCategoryTypeIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/categoryIdentifier",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "categoryIdentifier",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/categoryidentifier"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/init(categoryIdentifier:)": {
+  "abstract" : [
+    {
+      "text" : "Initialize by specifying HealthKit types.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "categoryIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@T@HKCategoryTypeIdentifier",
+      "text" : "HKCategoryTypeIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/init(categoryIdentifier:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(categoryIdentifier:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/init(categoryidentifier:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/init(from:)": {
   "abstract" : [
 
@@ -407,6 +491,10 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "c:@T@HKQuantityTypeIdentifier",
       "text" : "HKQuantityTypeIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/quantityIdentifier",
@@ -444,6 +532,10 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12CareKitStore09OCKHealthB7LinkageV12QuantityTypeO",
       "text" : "QuantityType"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/quantityType-swift.property",
@@ -481,6 +573,10 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "c:objc(cs)HKUnit",
       "text" : "HKUnit"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
     }
   ],
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/unit",
