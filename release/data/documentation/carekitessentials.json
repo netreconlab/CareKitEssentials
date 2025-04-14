@@ -59,9 +59,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ScheduleUtility",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SimpleLabelView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SimpleLabelView"
       ],
       "title" : "Structures"
     }
@@ -675,71 +673,6 @@
   "title" : "SliderLogTaskViewModel",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/sliderlogtaskviewmodel"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyQuestion": {
-  "abstract" : [
-    {
-      "text" : "A ResearchKitSwiftUI survey",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "SurveyQuestion"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyQuestion",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SurveyQuestion"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SurveyQuestion",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/surveyquestion"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/SurveyStep": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "SurveyStep"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SurveyStep",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SurveyStep"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SurveyStep",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/surveystep"
 }
 }
 }

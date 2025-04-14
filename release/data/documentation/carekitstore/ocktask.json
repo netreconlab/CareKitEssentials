@@ -159,7 +159,6 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/schedule",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/schemaVersion",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/source",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/surveySteps",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/tags",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/timezone",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/title",
@@ -1288,47 +1287,6 @@
   "title" : "source",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocktask\/source"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTask/surveySteps": {
-  "abstract" : [
-    {
-      "text" : "A set of ResearchKitSwiftUI survey steps.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "surveySteps"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:17CareKitEssentials10SurveyStepV",
-      "text" : "SurveyStep"
-    },
-    {
-      "kind" : "text",
-      "text" : "]?"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTask\/surveySteps",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "surveySteps",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocktask\/surveysteps"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTask/tags": {
   "abstract" : [
