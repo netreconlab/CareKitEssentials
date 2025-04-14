@@ -28,6 +28,54 @@ Easily create surveys with [ResearchKitSwiftUI](https://github.com/ResearchKit/R
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/90e3eca8-4cea-4148-834d-2c595577fddd">
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/54352f9a-481a-4368-ac1c-c18e46d1d667">
 
+Use [EventQueryView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/EventViews/EventQueryView.swift) and [EventQueryContentView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/EventViews/EventQueryContentView.swift) to display SwiftUI views inside of CareKit UIKit views such as `OCKDailyPageViewController`'s. Some examples are below:
+
+```swift
+// Displaying the out-of-the-box `NumericProgressTaskView`
+let card = EventQueryView<NumericProgressTaskView>(
+					query: query
+)
+.formattedHostingController()
+
+return card
+
+// Displaying a ResearchKitSwiftUI survey card
+let surveyViewController = EventQueryContentView<ResearchSurveyView>(
+			query: query
+		) {
+			EventQueryContentView<ResearchCareForm>(
+				query: query
+			) {
+				ForEach(steps) { step in
+					ResearchFormStep(
+						image: step.image,
+						title: step.title,
+						subtitle: step.subtitle
+					) {
+						ForEach(step.questions) { question in
+							question.view()
+						}
+						.tint(tintColor)
+					}
+				}
+			}
+			.tint(tintColor)
+		}
+		.tint(tintColor)
+		.formattedHostingController()
+return surveyViewController
+
+// Extention to make life easier
+private extension View {
+    /// Convert SwiftUI view to UIKit view.
+    func formattedHostingController() -> UIHostingController<Self> {
+        let viewController = UIHostingController(rootView: self)
+        viewController.view.backgroundColor = .clear
+        return viewController
+    }
+}
+```
+
 ### iOS
 [SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
 
