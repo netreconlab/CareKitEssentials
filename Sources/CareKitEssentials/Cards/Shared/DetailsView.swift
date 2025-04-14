@@ -78,7 +78,6 @@ struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
             DetailsView(event: event)
-				.accentColor(.red)
         }
     }
 }
