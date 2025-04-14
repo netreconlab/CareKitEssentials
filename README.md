@@ -18,7 +18,16 @@ A number of public extensions are available to make using CareKit easier. All of
 ## Usage
 You can create SwiftUI views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The framework adds a number of additional cards that can be found in the [Cards](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Cards) folder. The following add views/cards are based on `CareKitEssentialView`:
 
+### watchOS
+[DigitalCrownView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/watchOS/DigitalCrown/DigitalCrownView.swift) can be used to quickly create a view that responds to the crown
+
+<img width="332" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/02023682-75f4-4dff-a575-fa3ffd213cc3">
+
 ### Shared
+[SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
+
+<img width="342" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/3efb4226-50e2-41e1-beef-91bc84cc7d63">
+
 [CareEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts.
 
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/ae54936e-9831-425b-8bdb-ac3421ab883a">
@@ -75,13 +84,3 @@ private extension View {
     }
 }
 ```
-
-### iOS
-[SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
-
-<img width="342" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/3efb4226-50e2-41e1-beef-91bc84cc7d63">
-
-### watchOS
-[DigitalCrownView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/watchOS/DigitalCrown/DigitalCrownView.swift) can be used to quickly create a view that responds to the crown
-
-<img width="332" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/02023682-75f4-4dff-a575-fa3ffd213cc3">
