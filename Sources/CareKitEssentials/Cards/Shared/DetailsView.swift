@@ -38,7 +38,6 @@ public struct DetailsView: View {
             Image.asset(event.task.asset)?
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(Color.accentColor)
                 .padding()
 
             Text(title ?? event.title)
@@ -79,6 +78,7 @@ struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
             DetailsView(event: event)
+				.accentColor(.red)
         }
     }
 }

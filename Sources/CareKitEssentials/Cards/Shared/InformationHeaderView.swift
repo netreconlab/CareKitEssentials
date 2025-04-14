@@ -79,7 +79,11 @@ public struct InformationHeaderView: View {
             }
         }
         .sheet(isPresented: $isShowingDetails) {
-            DetailsView(event: event, title: detailsTitle, details: details)
+            DetailsView(
+				event: event,
+				title: detailsTitle,
+				details: details
+			)
         }
 
     }
@@ -124,6 +128,8 @@ struct InformationHeaderView_Previews: PreviewProvider {
                 event: event
             )
             .careKitStyle(OCKStyle())
+			.tint(.red)
+			.padding()
         }
     }
 }
