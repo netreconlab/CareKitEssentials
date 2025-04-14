@@ -332,22 +332,15 @@
 			path = ResearchSurveyView;
 			sourceTree = "<group>";
 		};
-		70B49A7B2D0A271E0023E5B3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
-				70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */,
-				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
-				70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		70B49A8E2D0A8FB80023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
+				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
+				70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */,
+				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
+				70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */,
 				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
 				70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */,
 			);
@@ -375,17 +368,9 @@
 				70B49A8E2D0A8FB80023E5B3 /* Extensions */,
 				70EBE3092D19FBE300517D5E /* Protocols */,
 				709530AC2DAC396900E18A59 /* ResearchSurveyView */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		70BBCB4B2A12BA4600759A9C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				70B49A7B2D0A271E0023E5B3 /* Extensions */,
 				70BBCB4F2A12BD2500759A9C /* SliderLog */,
 			);
-			path = iOS;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		70BBCB4C2A12BA4E00759A9C /* watchOS */ = {
@@ -597,7 +582,6 @@
 			isa = PBXGroup;
 			children = (
 				70BBCB4A2A12BA3600759A9C /* Shared */,
-				70BBCB4B2A12BA4600759A9C /* iOS */,
 				70BBCB4C2A12BA4E00759A9C /* watchOS */,
 			);
 			path = Cards;
