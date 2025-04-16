@@ -16,7 +16,6 @@ extension OCKAnyEvent: Hashable {
         if let task = task as? OCKTask {
             hasher.combine(task)
         } else {
-            hasher.combine(task.id)
             // OCKAnyTask
             hasher.combine(task.id)
             hasher.combine(task.title)
