@@ -10,7 +10,7 @@
 [![codecov](https://codecov.io/gh/netreconlab/CareKitEssentials/branch/main/graph/badge.svg?token=o1iDOdx3Sz)](https://codecov.io/gh/netreconlab/CareKitEssentials)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/netreconlab/ParseCareKit/#license)
 
-Provides essential cards, views, models, protocols, and extensions to expedite building [CareKit](https://github.com/carekit-apple/CareKit) based applications.
+Provides essential cards, views, models, protocols, and extensions to expedite building [CareKit](https://github.com/carekit-apple/CareKit) based applications. If you are using `CareKit` models in SwiftUI views, `CareKitEssentials` adds a number of extensions to `CareKit` models to enable your views to update properly. Simply add `import CareKitEssentials` to each of your SwiftUI view files and your SwiftUI views will start working correctly. 
 
 ## Entensions
 A number of public extensions are available to make using CareKit easier. All of the extensions can be found in the [Extensions](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Extensions) folder.
