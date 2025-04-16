@@ -124,7 +124,7 @@ extension ResearchKitSwiftUI.Result {
 			return [outcomeValue]
 
 		@unknown default:
-			throw CareKitEssentialsError.errorString("Reach an unsupported case in convertToOCKOutcomeValue()")
+			throw CareKitEssentialsError.errorString("Reached an unsupported case in convertToOCKOutcomeValue()")
 		}
 	}
 }
