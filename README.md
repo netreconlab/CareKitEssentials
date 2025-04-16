@@ -74,7 +74,7 @@ let surveyViewController = EventQueryContentView<ResearchSurveyView>(
 		.formattedHostingController()
 return surveyViewController
 
-// Extention to make life easier
+// Extension to make life easier
 private extension View {
     /// Convert SwiftUI view to UIKit view.
     func formattedHostingController() -> UIHostingController<Self> {
