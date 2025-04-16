@@ -7,6 +7,7 @@
 //
 
 #if canImport(ResearchKitSwiftUI)
+import CareKitStore
 import ResearchKitSwiftUI
 
 extension ResearchKitSwiftUI.Result {
