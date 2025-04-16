@@ -53,7 +53,7 @@ extension ResearchKitSwiftUI.Result {
 
 		case .weight(let weight):
 			guard let weight = weight else {
-				CareKitEssentialsError.errorString("Could not unwrap weight")
+				throw CareKitEssentialsError.errorString("Could not unwrap weight")
 			}
 
 			var outcomeValue = OCKOutcomeValue(
@@ -64,7 +64,7 @@ extension ResearchKitSwiftUI.Result {
 
 		case .height(let height):
 			guard let height = height else {
-				CareKitEssentialsError.errorString("Could not unwrap height")
+				throw CareKitEssentialsError.errorString("Could not unwrap height")
 			}
 
 			var outcomeValue = OCKOutcomeValue(
