@@ -65,6 +65,7 @@
 		70C422DA2C3B6C7600E6DC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */; };
 		70C422DF2C3B6C8D00E6DC51 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; };
 		70C422E02C3B6C8D00E6DC51 /* CareKitEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70E342102DB02510005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3420F2DB02507005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift */; };
 		70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */; };
 		70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30A2D19FC0F00517D5E /* EventViewable.swift */; };
 		70EBE3102D19FC2A00517D5E /* EventQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */; };
@@ -208,6 +209,7 @@
 		70C422D52C3B6C7600E6DC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C422D72C3B6C7600E6DC51 /* TestHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHost.entitlements; sourceTree = "<group>"; };
 		70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70E3420F2DB02507005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+ResearchKitSwiftUIResult.swift"; sourceTree = "<group>"; };
 		70EBE30A2D19FC0F00517D5E /* EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewable.swift; sourceTree = "<group>"; };
 		70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWithContentViewable.swift; sourceTree = "<group>"; };
 		70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryContentView.swift; sourceTree = "<group>"; };
@@ -481,8 +483,9 @@
 				OBJ_33 /* OCKOutcome.swift */,
 				70B49A822D0A56910023E5B3 /* OCKOutcome+Hashable.swift */,
 				70B49A842D0A56B70023E5B3 /* OCKOutcomeValue+Hashable.swift */,
-				70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */,
 				OBJ_34 /* OCKOutcomeValue+Identifiable.swift */,
+				70E3420F2DB02507005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift */,
+				70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */,
 				7026DDF02D0CD7DB002EACAA /* OCKSchedule+Hashable.swift */,
 				7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */,
 				70BBCB482A12B9B300759A9C /* OCKScheduleEvent+Comparable.swift */,
@@ -757,6 +760,7 @@
 				7026DDF32D0CD7F2002EACAA /* OCKScheduleEvent+Hashable.swift in Sources */,
 				7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */,
 				OBJ_740 /* CustomLabelView.swift in Sources */,
+				70E342102DB02510005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift in Sources */,
 				7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
 				70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */,

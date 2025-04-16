@@ -68,109 +68,18 @@ public struct ResearchCareForm<Content: View>: CareKitEssentialView {
         dismiss()
     }
 
-    // swiftlint:disable:next cyclomatic_complexity
     func createOutcomeValuesFromResearchKitResults(
         _ results: ResearchFormResult
     ) -> [OCKOutcomeValue] {
 
-        let outcomeKindPrefix = self.event.task.id
         let multipleOutcomeValues = results.compactMap { result -> [OCKOutcomeValue]? in
-            switch result.answer {
-            case .date(let date):
-                guard let date = date else { return nil }
-
-                var outcomeValue = OCKOutcomeValue(
-                    date
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            case .text(let text):
-                guard let text = text else { return nil }
-
-                var outcomeValue = OCKOutcomeValue(
-                    text
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            case .numeric(let numeric):
-                guard let numeric = numeric else { return nil }
-
-                var outcomeValue = OCKOutcomeValue(
-                    numeric
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            case .weight(let weight):
-                guard let weight = weight else { return nil }
-
-                var outcomeValue = OCKOutcomeValue(
-                    weight
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            case .height(let height):
-                guard let height = height else { return nil }
-
-                var outcomeValue = OCKOutcomeValue(
-                    height
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            case .multipleChoice(let choices):
-                guard let choices = choices else { return nil }
-
-                let values = choices.compactMap { choice -> OCKOutcomeValue? in
-                    switch choice {
-
-                    case .int(let valueInteger):
-                        var outcomeValue = OCKOutcomeValue(
-                            valueInteger
-                        )
-                        outcomeValue.kind = outcomeKindPrefix
-                        return outcomeValue
-
-                    case .string(let valueString):
-                        var outcomeValue = OCKOutcomeValue(
-                            valueString
-                        )
-                        outcomeValue.kind = outcomeKindPrefix
-                        return outcomeValue
-
-                    case .date(let valueDate):
-                        var outcomeValue = OCKOutcomeValue(
-                            valueDate
-                        )
-                        outcomeValue.kind = outcomeKindPrefix
-                        return outcomeValue
-
-                    @unknown default:
-                        return nil
-                    }
-                }
-                return values
-
-            case .image:
-                let errorMessage = "Image outcomes are not supported yet."
-                Logger.researchCareForm.error("\(errorMessage)")
-                return nil
-
-            case .scale(let scaleValue):
-                guard let scaleValue = scaleValue else { return nil }
-                let scaleIntValue = Int(round(scaleValue))
-                var outcomeValue = OCKOutcomeValue(
-                    scaleIntValue
-                )
-                outcomeValue.kind = outcomeKindPrefix
-                return [outcomeValue]
-
-            @unknown default:
-                return nil
-            }
+			do {
+				let convertedResult = try result.convertToOCKOutcomeValues()
+				return convertedResult
+			} catch {
+				Logger.researchCareForm.error("Cannot convert result to OCKOutcomeValue's: \(error)")
+				return nil
+			}
         }
 
         // Flatten results as they are currently multi-dimentional arrays
