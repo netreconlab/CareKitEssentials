@@ -13,7 +13,7 @@ import ResearchKitSwiftUI
 
 extension ResearchKitSwiftUI.Result {
 
-	/// Converts an `ResearchKitSwiftUI.Result` to an array of `OCKOutcomeValue`'s.
+	/// Converts a `ResearchKitSwiftUI.Result` to an array of `OCKOutcomeValue`'s.
 	// swiftlint:disable:next cyclomatic_complexity
 	public func convertToOCKOutcomeValues() throws -> [OCKOutcomeValue] {
 
@@ -132,7 +132,7 @@ extension ResearchKitSwiftUI.Result {
 
 extension OCKOutcomeValue {
 
-	/// Converts an `OCKOutcomeValue` to a `ResearchKitSwiftUI.Result`.
+	/// Converts n `OCKOutcomeValue` to a `ResearchKitSwiftUI.Result`.
 	public func convertToResearchKitResult() throws -> ResearchKitSwiftUI.Result {
 
 		guard let identifier = kind else {
