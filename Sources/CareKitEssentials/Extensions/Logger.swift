@@ -39,4 +39,8 @@ extension Logger {
 		subsystem: subsystem,
 		category: "OCKTaskResearchKitSwiftUI"
 	)
+	static let ockOutcomeValueResearchKitResult = Logger(
+		subsystem: subsystem,
+		category: "OCKOutcomeValueResearchKitResult"
+	)
 }
