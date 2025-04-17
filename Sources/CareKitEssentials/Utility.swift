@@ -54,7 +54,7 @@ class Utility {
             carePlanUUID: nil,
             schedule: nauseaSchedule
         )
-        nausea.impactsAdherence = false
+        nausea.impactsAdherence = true
         nausea.instructions = "Tap button below."
         nausea.asset = "bed.double"
         return nausea
