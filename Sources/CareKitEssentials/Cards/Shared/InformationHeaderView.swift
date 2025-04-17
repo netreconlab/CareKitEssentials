@@ -64,16 +64,37 @@ public struct InformationHeaderView: View {
                         .fontWeight(.medium)
                 }.foregroundColor(Color.primary)
                 Spacer()
-                Button(
-                    action: {
-                        isShowingDetails = true
-                    }
-                ) {
-                    Image(systemName: "info.circle")
-                }
-                .clipShape(Circle())
-                .fixedSize()
+				VStack {
+					Button(
+						action: {
+							isShowingDetails = true
+						}
+					) {
+						Image(systemName: "info.circle")
+					}
+					.clipShape(Circle())
+					.fixedSize()
+				}
             }
+			if event.task.impactsAdherence {
+				HStack {
+					Spacer()
+					Text("Required")
+						.font(font)
+						.bold()
+						.foregroundStyle(Color.secondary)
+						.padding(.all, 3)
+						.background(
+							RoundedRectangle(cornerRadius: 4)
+								.stroke()
+								.foregroundStyle(Color.secondary)
+								.shadow(
+									color: .secondary,
+									radius: 3
+								)
+						)
+				}
+			}
             if includeDivider {
                 Divider()
             }
