@@ -1,0 +1,182 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/Hashable-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "CareKitStore"
+      }
+    ],
+    "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
+    "title" : "Hashable Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/hash(into:)"
+      ],
+      "title" : "Instance Methods"
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitStore",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator": {
+  "abstract" : [
+    {
+      "code" : "OCKStoreCoordinator",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " is a special kind of pass through store that forwards to a group of other stores.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "It has different behavior during ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "read",
+          "type" : "text"
+        }
+      ],
+      "type" : "strong"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "write",
+          "type" : "text"
+        }
+      ],
+      "type" : "strong"
+    },
+    {
+      "text" : " operations.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKStoreCoordinator"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKStoreCoordinator"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKStoreCoordinator",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockstorecoordinator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/hash(into:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "hash"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "into"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6HasherV",
+      "text" : "Hasher"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/hash(into:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "hash(into:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/hash(into:)"
+}
+}
+}

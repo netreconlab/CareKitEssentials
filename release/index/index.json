@@ -38907,22 +38907,59 @@
               {
                 "children" : [
                   {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/==(_:_:)",
+                    "title" : "static func == (CareKitStore.OCKStoreCoordinator, CareKitStore.OCKStoreCoordinator) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/hashable-implementations",
+                "title" : "Hashable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
                     "title" : "Instance Methods",
                     "type" : "groupMarker"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycareplan(_:)",
-                    "title" : "func addAnyCarePlan(OCKAnyCarePlan) async throws -> OCKAnyCarePlan",
+                    "title" : "func addAnyCarePlan(any OCKAnyCarePlan) async throws -> any OCKAnyCarePlan",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycareplan(_:callbackqueue:completion:)",
-                    "title" : "func addAnyCarePlan(OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyCarePlan>?)",
+                    "title" : "func addAnyCarePlan(any OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyCarePlan>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycareplans(_:)",
-                    "title" : "func addAnyCarePlans([OCKAnyCarePlan]) async throws -> [OCKAnyCarePlan]",
+                    "title" : "func addAnyCarePlans([any OCKAnyCarePlan]) async throws -> [any OCKAnyCarePlan]",
                     "type" : "method"
                   },
                   {
@@ -38932,17 +38969,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycareplan(_:)",
-                    "title" : "func deleteAnyCarePlan(OCKAnyCarePlan) async throws -> OCKAnyCarePlan",
+                    "title" : "func deleteAnyCarePlan(any OCKAnyCarePlan) async throws -> any OCKAnyCarePlan",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycareplan(_:callbackqueue:completion:)",
-                    "title" : "func deleteAnyCarePlan(OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyCarePlan>?)",
+                    "title" : "func deleteAnyCarePlan(any OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyCarePlan>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycareplans(_:)",
-                    "title" : "func deleteAnyCarePlans([OCKAnyCarePlan]) async throws -> [OCKAnyCarePlan]",
+                    "title" : "func deleteAnyCarePlans([any OCKAnyCarePlan]) async throws -> [any OCKAnyCarePlan]",
                     "type" : "method"
                   },
                   {
@@ -38952,17 +38989,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycareplan(_:)",
-                    "title" : "func updateAnyCarePlan(OCKAnyCarePlan) async throws -> OCKAnyCarePlan",
+                    "title" : "func updateAnyCarePlan(any OCKAnyCarePlan) async throws -> any OCKAnyCarePlan",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycareplan(_:callbackqueue:completion:)",
-                    "title" : "func updateAnyCarePlan(OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyCarePlan>?)",
+                    "title" : "func updateAnyCarePlan(any OCKAnyCarePlan, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyCarePlan>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycareplans(_:)",
-                    "title" : "func updateAnyCarePlans([OCKAnyCarePlan]) async throws -> [OCKAnyCarePlan]",
+                    "title" : "func updateAnyCarePlans([any OCKAnyCarePlan]) async throws -> [any OCKAnyCarePlan]",
                     "type" : "method"
                   },
                   {
@@ -38983,17 +39020,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycontact(_:)",
-                    "title" : "func addAnyContact(OCKAnyContact) async throws -> OCKAnyContact",
+                    "title" : "func addAnyContact(any OCKAnyContact) async throws -> any OCKAnyContact",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycontact(_:callbackqueue:completion:)",
-                    "title" : "func addAnyContact(OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyContact>?)",
+                    "title" : "func addAnyContact(any OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyContact>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanycontacts(_:)",
-                    "title" : "func addAnyContacts([OCKAnyContact]) async throws -> [OCKAnyContact]",
+                    "title" : "func addAnyContacts([any OCKAnyContact]) async throws -> [any OCKAnyContact]",
                     "type" : "method"
                   },
                   {
@@ -39003,17 +39040,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycontact(_:)",
-                    "title" : "func deleteAnyContact(OCKAnyContact) async throws -> OCKAnyContact",
+                    "title" : "func deleteAnyContact(any OCKAnyContact) async throws -> any OCKAnyContact",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycontact(_:callbackqueue:completion:)",
-                    "title" : "func deleteAnyContact(OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyContact>?)",
+                    "title" : "func deleteAnyContact(any OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyContact>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanycontacts(_:)",
-                    "title" : "func deleteAnyContacts([OCKAnyContact]) async throws -> [OCKAnyContact]",
+                    "title" : "func deleteAnyContacts([any OCKAnyContact]) async throws -> [any OCKAnyContact]",
                     "type" : "method"
                   },
                   {
@@ -39023,17 +39060,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycontact(_:)",
-                    "title" : "func updateAnyContact(OCKAnyContact) async throws -> OCKAnyContact",
+                    "title" : "func updateAnyContact(any OCKAnyContact) async throws -> any OCKAnyContact",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycontact(_:callbackqueue:completion:)",
-                    "title" : "func updateAnyContact(OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyContact>?)",
+                    "title" : "func updateAnyContact(any OCKAnyContact, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyContact>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanycontacts(_:)",
-                    "title" : "func updateAnyContacts([OCKAnyContact]) async throws -> [OCKAnyContact]",
+                    "title" : "func updateAnyContacts([any OCKAnyContact]) async throws -> [any OCKAnyContact]",
                     "type" : "method"
                   },
                   {
@@ -39054,17 +39091,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanyoutcome(_:)",
-                    "title" : "func addAnyOutcome(OCKAnyOutcome) async throws -> OCKAnyOutcome",
+                    "title" : "func addAnyOutcome(any OCKAnyOutcome) async throws -> any OCKAnyOutcome",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanyoutcome(_:callbackqueue:completion:)",
-                    "title" : "func addAnyOutcome(OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyOutcome>?)",
+                    "title" : "func addAnyOutcome(any OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyOutcome>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanyoutcomes(_:)",
-                    "title" : "func addAnyOutcomes([OCKAnyOutcome]) async throws -> [OCKAnyOutcome]",
+                    "title" : "func addAnyOutcomes([any OCKAnyOutcome]) async throws -> [any OCKAnyOutcome]",
                     "type" : "method"
                   },
                   {
@@ -39074,17 +39111,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanyoutcome(_:)",
-                    "title" : "func deleteAnyOutcome(OCKAnyOutcome) async throws -> OCKAnyOutcome",
+                    "title" : "func deleteAnyOutcome(any OCKAnyOutcome) async throws -> any OCKAnyOutcome",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanyoutcome(_:callbackqueue:completion:)",
-                    "title" : "func deleteAnyOutcome(OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyOutcome>?)",
+                    "title" : "func deleteAnyOutcome(any OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyOutcome>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanyoutcomes(_:)",
-                    "title" : "func deleteAnyOutcomes([OCKAnyOutcome]) async throws -> [OCKAnyOutcome]",
+                    "title" : "func deleteAnyOutcomes([any OCKAnyOutcome]) async throws -> [any OCKAnyOutcome]",
                     "type" : "method"
                   },
                   {
@@ -39094,17 +39131,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanyoutcome(_:)",
-                    "title" : "func updateAnyOutcome(OCKAnyOutcome) async throws -> OCKAnyOutcome",
+                    "title" : "func updateAnyOutcome(any OCKAnyOutcome) async throws -> any OCKAnyOutcome",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanyoutcome(_:callbackqueue:completion:)",
-                    "title" : "func updateAnyOutcome(OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyOutcome>?)",
+                    "title" : "func updateAnyOutcome(any OCKAnyOutcome, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyOutcome>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanyoutcomes(_:)",
-                    "title" : "func updateAnyOutcomes([OCKAnyOutcome]) async throws -> [OCKAnyOutcome]",
+                    "title" : "func updateAnyOutcomes([any OCKAnyOutcome]) async throws -> [any OCKAnyOutcome]",
                     "type" : "method"
                   },
                   {
@@ -39125,17 +39162,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanypatient(_:)",
-                    "title" : "func addAnyPatient(OCKAnyPatient) async throws -> OCKAnyPatient",
+                    "title" : "func addAnyPatient(any OCKAnyPatient) async throws -> any OCKAnyPatient",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanypatient(_:callbackqueue:completion:)",
-                    "title" : "func addAnyPatient(OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyPatient>?)",
+                    "title" : "func addAnyPatient(any OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyPatient>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanypatients(_:)",
-                    "title" : "func addAnyPatients([OCKAnyPatient]) async throws -> [OCKAnyPatient]",
+                    "title" : "func addAnyPatients([any OCKAnyPatient]) async throws -> [any OCKAnyPatient]",
                     "type" : "method"
                   },
                   {
@@ -39145,17 +39182,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanypatient(_:)",
-                    "title" : "func deleteAnyPatient(OCKAnyPatient) async throws -> OCKAnyPatient",
+                    "title" : "func deleteAnyPatient(any OCKAnyPatient) async throws -> any OCKAnyPatient",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanypatient(_:callbackqueue:completion:)",
-                    "title" : "func deleteAnyPatient(OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyPatient>?)",
+                    "title" : "func deleteAnyPatient(any OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyPatient>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanypatients(_:)",
-                    "title" : "func deleteAnyPatients([OCKAnyPatient]) async throws -> [OCKAnyPatient]",
+                    "title" : "func deleteAnyPatients([any OCKAnyPatient]) async throws -> [any OCKAnyPatient]",
                     "type" : "method"
                   },
                   {
@@ -39165,17 +39202,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanypatient(_:)",
-                    "title" : "func updateAnyPatient(OCKAnyPatient) async throws -> OCKAnyPatient",
+                    "title" : "func updateAnyPatient(any OCKAnyPatient) async throws -> any OCKAnyPatient",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanypatient(_:callbackqueue:completion:)",
-                    "title" : "func updateAnyPatient(OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyPatient>?)",
+                    "title" : "func updateAnyPatient(any OCKAnyPatient, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyPatient>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanypatients(_:)",
-                    "title" : "func updateAnyPatients([OCKAnyPatient]) async throws -> [OCKAnyPatient]",
+                    "title" : "func updateAnyPatients([any OCKAnyPatient]) async throws -> [any OCKAnyPatient]",
                     "type" : "method"
                   },
                   {
@@ -39201,17 +39238,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycareplan(withid:)",
-                    "title" : "func fetchAnyCarePlan(withID: String) async throws -> OCKAnyCarePlan",
+                    "title" : "func fetchAnyCarePlan(withID: String) async throws -> any OCKAnyCarePlan",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycareplan(withid:callbackqueue:completion:)",
-                    "title" : "func fetchAnyCarePlan(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyCarePlan>)",
+                    "title" : "func fetchAnyCarePlan(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyCarePlan>)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycareplans(query:)",
-                    "title" : "func fetchAnyCarePlans(query: OCKCarePlanQuery) async throws -> [OCKAnyCarePlan]",
+                    "title" : "func fetchAnyCarePlans(query: OCKCarePlanQuery) async throws -> [any OCKAnyCarePlan]",
                     "type" : "method"
                   },
                   {
@@ -39237,17 +39274,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycontact(withid:)",
-                    "title" : "func fetchAnyContact(withID: String) async throws -> OCKAnyContact",
+                    "title" : "func fetchAnyContact(withID: String) async throws -> any OCKAnyContact",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycontact(withid:callbackqueue:completion:)",
-                    "title" : "func fetchAnyContact(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyContact>)",
+                    "title" : "func fetchAnyContact(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyContact>)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanycontacts(query:)",
-                    "title" : "func fetchAnyContacts(query: OCKContactQuery) async throws -> [OCKAnyContact]",
+                    "title" : "func fetchAnyContacts(query: OCKContactQuery) async throws -> [any OCKAnyContact]",
                     "type" : "method"
                   },
                   {
@@ -39283,7 +39320,7 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanyevent(fortask:occurrence:)",
-                    "title" : "func fetchAnyEvent(forTask: OCKAnyTask, occurrence: Int) async throws -> OCKAnyEvent",
+                    "title" : "func fetchAnyEvent(forTask: any OCKAnyTask, occurrence: Int) async throws -> OCKAnyEvent",
                     "type" : "method"
                   },
                   {
@@ -39319,17 +39356,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanyoutcome(query:)",
-                    "title" : "func fetchAnyOutcome(query: OCKOutcomeQuery) async throws -> OCKAnyOutcome",
+                    "title" : "func fetchAnyOutcome(query: OCKOutcomeQuery) async throws -> any OCKAnyOutcome",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanyoutcome(query:callbackqueue:completion:)",
-                    "title" : "func fetchAnyOutcome(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyOutcome>)",
+                    "title" : "func fetchAnyOutcome(query: OCKOutcomeQuery, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyOutcome>)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanyoutcomes(query:)",
-                    "title" : "func fetchAnyOutcomes(query: OCKOutcomeQuery) async throws -> [OCKAnyOutcome]",
+                    "title" : "func fetchAnyOutcomes(query: OCKOutcomeQuery) async throws -> [any OCKAnyOutcome]",
                     "type" : "method"
                   },
                   {
@@ -39355,17 +39392,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanypatient(withid:)",
-                    "title" : "func fetchAnyPatient(withID: String) async throws -> OCKAnyPatient",
+                    "title" : "func fetchAnyPatient(withID: String) async throws -> any OCKAnyPatient",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanypatient(withid:callbackqueue:completion:)",
-                    "title" : "func fetchAnyPatient(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyPatient>)",
+                    "title" : "func fetchAnyPatient(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyPatient>)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanypatients(query:)",
-                    "title" : "func fetchAnyPatients(query: OCKPatientQuery) async throws -> [OCKAnyPatient]",
+                    "title" : "func fetchAnyPatients(query: OCKPatientQuery) async throws -> [any OCKAnyPatient]",
                     "type" : "method"
                   },
                   {
@@ -39391,17 +39428,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanytask(withid:)",
-                    "title" : "func fetchAnyTask(withID: String) async throws -> OCKAnyTask",
+                    "title" : "func fetchAnyTask(withID: String) async throws -> any OCKAnyTask",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanytask(withid:callbackqueue:completion:)",
-                    "title" : "func fetchAnyTask(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyTask>)",
+                    "title" : "func fetchAnyTask(withID: String, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyTask>)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/fetchanytasks(query:)",
-                    "title" : "func fetchAnyTasks(query: OCKTaskQuery) async throws -> [OCKAnyTask]",
+                    "title" : "func fetchAnyTasks(query: OCKTaskQuery) async throws -> [any OCKAnyTask]",
                     "type" : "method"
                   },
                   {
@@ -39422,17 +39459,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanytask(_:)",
-                    "title" : "func addAnyTask(OCKAnyTask) async throws -> OCKAnyTask",
+                    "title" : "func addAnyTask(any OCKAnyTask) async throws -> any OCKAnyTask",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanytask(_:callbackqueue:completion:)",
-                    "title" : "func addAnyTask(OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyTask>?)",
+                    "title" : "func addAnyTask(any OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyTask>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/addanytasks(_:)",
-                    "title" : "func addAnyTasks([OCKAnyTask]) async throws -> [OCKAnyTask]",
+                    "title" : "func addAnyTasks([any OCKAnyTask]) async throws -> [any OCKAnyTask]",
                     "type" : "method"
                   },
                   {
@@ -39442,17 +39479,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanytask(_:)",
-                    "title" : "func deleteAnyTask(OCKAnyTask) async throws -> OCKAnyTask",
+                    "title" : "func deleteAnyTask(any OCKAnyTask) async throws -> any OCKAnyTask",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanytask(_:callbackqueue:completion:)",
-                    "title" : "func deleteAnyTask(OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyTask>?)",
+                    "title" : "func deleteAnyTask(any OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyTask>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/deleteanytasks(_:)",
-                    "title" : "func deleteAnyTasks([OCKAnyTask]) async throws -> [OCKAnyTask]",
+                    "title" : "func deleteAnyTasks([any OCKAnyTask]) async throws -> [any OCKAnyTask]",
                     "type" : "method"
                   },
                   {
@@ -39462,17 +39499,17 @@
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanytask(_:)",
-                    "title" : "func updateAnyTask(OCKAnyTask) async throws -> OCKAnyTask",
+                    "title" : "func updateAnyTask(any OCKAnyTask) async throws -> any OCKAnyTask",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanytask(_:callbackqueue:completion:)",
-                    "title" : "func updateAnyTask(OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<OCKAnyTask>?)",
+                    "title" : "func updateAnyTask(any OCKAnyTask, callbackQueue: DispatchQueue, completion: OCKResultClosure<any OCKAnyTask>?)",
                     "type" : "method"
                   },
                   {
                     "path" : "\/documentation\/carekitstore\/ockstorecoordinator\/updateanytasks(_:)",
-                    "title" : "func updateAnyTasks([OCKAnyTask]) async throws -> [OCKAnyTask]",
+                    "title" : "func updateAnyTasks([any OCKAnyTask]) async throws -> [any OCKAnyTask]",
                     "type" : "method"
                   },
                   {

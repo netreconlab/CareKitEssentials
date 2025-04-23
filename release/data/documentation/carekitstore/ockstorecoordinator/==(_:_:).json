@@ -1,0 +1,387 @@
+{
+  "abstract" : [
+    {
+      "text" : "Inherited from ",
+      "type" : "text"
+    },
+    {
+      "code" : "Equatable.==(_:_:)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/Equatable-Implementations"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/==(_:_:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "CareKitStore",
+    "externalID" : "s:12CareKitStore19OCKStoreCoordinatorC0aB10EssentialsE2eeoiySbAC_ACtFZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "func"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "=="
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "text",
+        "text" : "(CareKitStore"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+        "text" : "OCKStoreCoordinator"
+      },
+      {
+        "kind" : "text",
+        "text" : ", CareKitStore"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+        "text" : "OCKStoreCoordinator"
+      },
+      {
+        "kind" : "text",
+        "text" : ") -> "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sb",
+        "text" : "Bool"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "CareKitStore"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Operator",
+    "symbolKind" : "op",
+    "title" : "==(_:_:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "watchOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "func"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "=="
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "lhs"
+            },
+            {
+              "kind" : "text",
+              "text" : ": CareKitStore"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+              "text" : "OCKStoreCoordinator"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "rhs"
+            },
+            {
+              "kind" : "text",
+              "text" : ": CareKitStore"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+              "text" : "OCKStoreCoordinator"
+            },
+            {
+              "kind" : "text",
+              "text" : ") -> "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sb",
+              "text" : "Bool"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/carekitstore\/ockstorecoordinator\/==(_:_:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "CareKitStore",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator": {
+  "abstract" : [
+    {
+      "code" : "OCKStoreCoordinator",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " is a special kind of pass through store that forwards to a group of other stores.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "It has different behavior during ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "read",
+          "type" : "text"
+        }
+      ],
+      "type" : "strong"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "write",
+          "type" : "text"
+        }
+      ],
+      "type" : "strong"
+    },
+    {
+      "text" : " operations.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OCKStoreCoordinator"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OCKStoreCoordinator"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OCKStoreCoordinator",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockstorecoordinator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/==(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "=="
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "text",
+      "text" : "(CareKitStore"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+      "text" : "OCKStoreCoordinator"
+    },
+    {
+      "kind" : "text",
+      "text" : ", CareKitStore"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore19OCKStoreCoordinatorC",
+      "text" : "OCKStoreCoordinator"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/==(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "==(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/==(_:_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/equatable-implementations"
+}
+}
+}
