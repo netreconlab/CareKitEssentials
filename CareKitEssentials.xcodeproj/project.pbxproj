@@ -65,6 +65,7 @@
 		70C422DA2C3B6C7600E6DC51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */; };
 		70C422DF2C3B6C8D00E6DC51 /* CareKitEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; };
 		70C422E02C3B6C8D00E6DC51 /* CareKitEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "carekitessentials::CareKitEssentials::Product" /* CareKitEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70CA3AFA2DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA3AF92DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift */; };
 		70E342102DB02510005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3420F2DB02507005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift */; };
 		70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */; };
 		70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30A2D19FC0F00517D5E /* EventViewable.swift */; };
@@ -209,6 +210,7 @@
 		70C422D52C3B6C7600E6DC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C422D72C3B6C7600E6DC51 /* TestHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHost.entitlements; sourceTree = "<group>"; };
 		70C422D92C3B6C7600E6DC51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70CA3AF92DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKStoreCoordinator+Hashable.swift"; sourceTree = "<group>"; };
 		70E3420F2DB02507005124F9 /* OCKOutcomeValue+ResearchKitSwiftUIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+ResearchKitSwiftUIResult.swift"; sourceTree = "<group>"; };
 		70EBE30A2D19FC0F00517D5E /* EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewable.swift; sourceTree = "<group>"; };
 		70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWithContentViewable.swift; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 				7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */,
 				911BDB332A130AF9004F8442 /* OCKStore.swift */,
 				7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */,
+				70CA3AF92DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift */,
 				70B49A7E2D0A54380023E5B3 /* OCKTask+Hashable.swift */,
 				709530B52DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift */,
 				OBJ_39 /* UIImage.swift */,
@@ -813,6 +816,7 @@
 				7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */,
 				OBJ_758 /* LinearCareTaskProgress+Math.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
+				70CA3AFA2DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift in Sources */,
 				OBJ_759 /* OCKOutcome.swift in Sources */,
 				OBJ_760 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				OBJ_765 /* UIImage.swift in Sources */,
