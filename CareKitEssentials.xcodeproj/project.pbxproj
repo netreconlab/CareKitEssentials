@@ -176,6 +176,9 @@
 		702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartHeaderView.swift; sourceTree = "<group>"; };
 		702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartBodyView.swift; sourceTree = "<group>"; };
 		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
+		704D034D2DB9F7B900AFE855 /* CareKitEssentials copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CareKitEssentials copy-Info.plist"; path = "/Users/coreybaker/Documents/Xcode_Projects/CareKitEssentials/CareKitEssentials copy-Info.plist"; sourceTree = "<absolute>"; };
+		704D03512DBA10EA00AFE855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = en; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		704D03532DBA132C00AFE855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKHealthKitPassthroughStore.swift; sourceTree = "<group>"; };
 		7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitTask+Hashable.swift"; sourceTree = "<group>"; };
 		7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitLinkage+Hashable.swift"; sourceTree = "<group>"; };
@@ -325,6 +328,23 @@
 				702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */,
 			);
 			path = Progress;
+			sourceTree = "<group>";
+		};
+		704D02E32DB9F34500AFE855 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				704D034F2DBA10A100AFE855 /* en.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		704D034F2DBA10A100AFE855 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				704D03522DBA132C00AFE855 /* Localizable.strings */,
+				704D03502DBA10EA00AFE855 /* Localizable.xcstrings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		709530AC2DAC396900E18A59 /* ResearchSurveyView */ = {
@@ -560,6 +580,7 @@
 				OBJ_420 /* LICENSE */,
 				OBJ_421 /* README.md */,
 				70C422DE2C3B6C8D00E6DC51 /* Frameworks */,
+				704D034D2DB9F7B900AFE855 /* CareKitEssentials copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -579,6 +600,7 @@
 				70BBCB452A12B8B000759A9C /* Environment */,
 				OBJ_25 /* Extensions */,
 				OBJ_40 /* Models */,
+				704D02E32DB9F34500AFE855 /* Resources */,
 			);
 			name = CareKitEssentials;
 			path = Sources/CareKitEssentials;
@@ -869,6 +891,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		704D03502DBA10EA00AFE855 /* Localizable.xcstrings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704D03512DBA10EA00AFE855 /* en */,
+			);
+			name = Localizable.xcstrings;
+			sourceTree = "<group>";
+		};
+		704D03522DBA132C00AFE855 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704D03532DBA132C00AFE855 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		70C422DC2C3B6C7600E6DC51 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1046,6 +1087,7 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -1104,6 +1146,7 @@
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;

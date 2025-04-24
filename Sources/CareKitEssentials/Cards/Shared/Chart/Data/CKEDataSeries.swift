@@ -283,35 +283,63 @@ enum ChartParameters {
 
         case .day:
             return [
-                CKEDataSeries.weekDayCalculation(from: Date())
+				"0",
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10",
+				"11",
+				"12",
+				"13",
+				"14",
+				"15",
+				"16",
+				"17",
+				"18",
+				"19",
+				"20",
+				"21",
+				"22",
+				"23"
             ]
         case .week:
             return [
-            "Sun",
-            "Mon",
-            "Tue",
-            "Wed",
-            "Thu",
-            "Fri",
-            "Sat"
+				String(localized: "SUN"),
+				String(localized: "MON"),
+				String(localized: "TUE"),
+				String(localized: "WED"),
+				String(localized: "THU"),
+				String(localized: "FRI"),
+				String(localized: "SAT")
             ]
         case .month:
             return [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5"
             ]
         case .year:
             return [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
+				String(localized: "JAN"),
+				String(localized: "FEB"),
+				String(localized: "MAR"),
+				String(localized: "APR"),
+				String(localized: "MAY"),
+				String(localized: "JUN"),
+				String(localized: "JUL"),
+				String(localized: "AUG"),
+				String(localized: "SEP"),
+				String(localized: "OCT"),
+				String(localized: "NOV"),
+				String(localized: "DEC")
             ]
         }
     }

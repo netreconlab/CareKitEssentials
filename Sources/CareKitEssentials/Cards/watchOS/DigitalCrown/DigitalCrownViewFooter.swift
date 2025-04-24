@@ -24,8 +24,8 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
     ) private var padding
 
     @OSValue<Font>(
-        values: [.watchOS: .system(size: 13)],
-        defaultValue: .caption
+        values: [.watchOS: .system(size: 15)],
+        defaultValue: .title
     ) private var font
 
     private var content: some View {
@@ -70,6 +70,7 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
                     HStack {
                         Spacer()
                         content
+							.font(font)
                         Spacer()
                     }
                     .padding(padding.scaled())

@@ -32,6 +32,14 @@ import SwiftUI
 public struct SimpleLabelView<Header: View>: View {
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 13)],
+		defaultValue: .headline
+	) private var font
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 25)],
+		defaultValue: .largeTitle
+	) private var labelFont
 
     let header: Header?
     let title: Text?
@@ -58,17 +66,20 @@ public struct SimpleLabelView<Header: View>: View {
                         alignment: .leading,
                         spacing: style.dimension.directionalInsets2.bottom
                     ) {
-                        title?
-                            .font(.headline)
-                            .fontWeight(.bold)
-                        detail?
-                            .font(.subheadline)
-                            .fontWeight(.medium)
+						if header == nil {
+							title?
+								.font(.headline)
+								.fontWeight(.bold)
+						}
+						detail?
+							.font(font)
+							.fontWeight(.medium)
+
                     }
                     .foregroundColor(Color.primary)
                     Spacer()
                     value?
-                        .font(.title)
+                        .font(labelFont)
                         .bold()
                         .foregroundColor(.accentColor)
                 }

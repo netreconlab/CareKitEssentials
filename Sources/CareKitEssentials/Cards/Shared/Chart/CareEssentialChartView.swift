@@ -24,7 +24,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
     let dateInterval: DateInterval
     let period: Calendar.Component
     let configurations: [CKEDataSeriesConfiguration]
-    let paddingSize = 15.0
 
     public var body: some View {
 
@@ -311,12 +310,12 @@ struct CareEssentialChartView_Previews: PreviewProvider {
         )
         let previewStore = Utility.createPreviewStore()
 
-        VStack {
+        ScrollView {
             CareEssentialChartView(
                 title: task.title ?? "",
                 subtitle: "Week",
                 dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
-                period: .day,
+                period: .weekday,
                 configurations: [configurationBar]
             )
         }

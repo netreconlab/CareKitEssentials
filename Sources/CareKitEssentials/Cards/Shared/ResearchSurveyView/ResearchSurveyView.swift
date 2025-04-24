@@ -17,6 +17,10 @@ public struct ResearchSurveyView<Content: View>: View {
     @Environment(\.careKitStyle) var style
     @Environment(\.isCardEnabled) private var isCardEnabled
     @State private var isPresented = false
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 15)],
+		defaultValue: .headline
+	) private var font
 
     let event: OCKAnyEvent
     @ViewBuilder let form: () -> Content
@@ -39,6 +43,7 @@ public struct ResearchSurveyView<Content: View>: View {
                             RectangularCompletionView(isComplete: isComplete) {
                                 Spacer()
                                 Text(buttonText)
+									.font(font)
                                     .foregroundColor(foregroundColor)
                                     .frame(maxWidth: .infinity)
                                     .padding()
