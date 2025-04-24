@@ -125,10 +125,32 @@ public struct CareEssentialChartView: CareKitEssentialView {
     // BAKER: Build symbols for rest of calendar periods.
     private func calendarSymbols() -> [String] {
         switch period {
+
         case .day:
-            return Calendar.current.orderedWeekdaySymbols()
+			return ChartParameters.day.xAxisLabels
+
+		case .weekday:
+			#if watchOS
+			return Calendar.current.orderedWeekdaySymbolsShort()
+			#else
+			return Calendar.current.orderedWeekdaySymbols()
+			#endif
+
+		case .month:
+			return ChartParameters.month.xAxisLabels
+
+		case .year:
+			#if watchOS
+			return Calendar.current.veryShortMonthSymbols()
+			#else
+			return Calendar.current.standaloneMonthSymbols
+			#endif
         default:
-            return Calendar.current.orderedWeekdaySymbols()
+			#if watchOS
+			return Calendar.current.orderedWeekdaySymbolsShort()
+			#else
+			return Calendar.current.orderedWeekdaySymbols()
+			#endif
         }
     }
 
@@ -311,13 +333,37 @@ struct CareEssentialChartView_Previews: PreviewProvider {
         let previewStore = Utility.createPreviewStore()
 
         ScrollView {
-            CareEssentialChartView(
-                title: task.title ?? "",
-                subtitle: "Week",
-                dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
-                period: .weekday,
-                configurations: [configurationBar]
-            )
+			VStack {
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Day",
+					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					period: .day,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Week",
+					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					period: .weekday,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Month",
+					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					period: .month,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Year",
+					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					period: .year,
+					configurations: [configurationBar]
+				)
+			}
+			.padding()
         }
         .environment(\.careStore, previewStore)
     }

@@ -47,6 +47,20 @@ public extension Calendar {
         return symbols
     }
 
+	/// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
+	/// This differs with the Foundation `Calendar.shortWeekdaySymbols` in that the ordering is changed such
+	/// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
+	///
+	/// This method is required for handling certain regions in which the first day of the week is Monday.
+	func orderedWeekdaySymbolsShort() -> [String] {
+		var symbols = shortWeekdaySymbols
+		Array(1..<firstWeekday).forEach { _ in
+			let symbol = symbols.removeFirst()
+			symbols.append(symbol)
+		}
+		return symbols
+	}
+
     /// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
     /// This differs with the Foundation `Calendar.weekdaySymbols` in that the ordering is changed such
     /// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
@@ -60,6 +74,48 @@ public extension Calendar {
         }
         return symbols
     }
+
+	/// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
+	/// This differs with the Foundation `Calendar.shortStandaloneMonthSymbols` in that the ordering is changed such
+	/// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
+	///
+	/// This method is required for handling certain regions in which the first day of the week is Monday.
+	func orderedMonthSymbolsShort() -> [String] {
+		var symbols = shortStandaloneMonthSymbols
+		Array(1..<firstWeekday).forEach { _ in
+			let symbol = symbols.removeFirst()
+			symbols.append(symbol)
+		}
+		return symbols
+	}
+
+	/// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
+	/// This differs with the Foundation `Calendar.veryShortStandaloneMonthSymbols` in that the ordering is changed such
+	/// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
+	///
+	/// This method is required for handling certain regions in which the first day of the week is Monday.
+	func orderedMonthSymbolsVeryShort() -> [String] {
+		var symbols = veryShortStandaloneMonthSymbols
+		Array(1..<firstWeekday).forEach { _ in
+			let symbol = symbols.removeFirst()
+			symbols.append(symbol)
+		}
+		return symbols
+	}
+
+	/// Returns string representations of the quarters, in the order the quarters occur on the local calendar.
+	/// This differs with the Foundation `Calendar.shortQuarterSymbols` in that the ordering is changed such
+	/// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
+	///
+	/// This method is required for handling certain regions in which the first day of the week is Monday.
+	func orderedQuarterSymbolsShort() -> [String] {
+		var symbols = shortQuarterSymbols
+		Array(1..<firstWeekday).forEach { _ in
+			let symbol = symbols.removeFirst()
+			symbols.append(symbol)
+		}
+		return symbols
+	}
 }
 
 public extension Date {
