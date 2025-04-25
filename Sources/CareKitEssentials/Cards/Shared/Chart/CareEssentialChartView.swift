@@ -244,7 +244,7 @@ extension CareEssentialChartView {
         computeProgress: @escaping (OCKAnyEvent) -> Progress
     ) -> TemporalTaskProgress<Progress> {
 
-        let progressPerDays = periodicProgress(
+        let progressPerPeriod = periodicProgress(
             for: events,
             per: component,
             dateInterval: dateInterval,
@@ -253,7 +253,7 @@ extension CareEssentialChartView {
 
         let temporalProgress = TemporalTaskProgress(
             id: id,
-            progressPerDates: progressPerDays
+            progressPerDates: progressPerPeriod
         )
 
         return temporalProgress
@@ -271,7 +271,7 @@ extension CareEssentialChartView {
         // Create a dictionary that has a key for each component in the provided interval.
 
 		var periodComponentsInInterval: [(DateComponents, Calendar.Component)] = []
-        var currentDate = dateInterval.start
+		var currentDate = dateInterval.start.startOfDay
 
         while currentDate < dateInterval.end {
             let periodComponent = uniqueComponents(
