@@ -124,34 +124,34 @@ public struct CareEssentialChartView: CareKitEssentialView {
 
     // BAKER: Build symbols for rest of calendar periods.
     private func calendarSymbols() -> [String] {
-        switch period {
+		switch period {
 
 		case .day, .dayOfYear:
 			return ChartParameters.day.xAxisLabels
 
 		case .weekday, .weekOfMonth, .weekOfYear:
-			#if watchOS
+#if watchOS
 			return Calendar.current.orderedWeekdaySymbolsShort()
-			#else
+#else
 			return Calendar.current.orderedWeekdaySymbols()
-			#endif
+#endif
 
 		case .month:
 			return ChartParameters.month.xAxisLabels
 
 		case .year:
-			#if watchOS
+#if watchOS
 			return Calendar.current.veryShortMonthSymbols()
-			#else
+#else
 			return Calendar.current.standaloneMonthSymbols
-			#endif
-        default:
-			#if watchOS
+#endif
+		default:
+#if watchOS
 			return Calendar.current.orderedWeekdaySymbolsShort()
-			#else
+#else
 			return Calendar.current.orderedWeekdaySymbols()
-			#endif
-        }
+#endif
+		}
     }
 
     private func graphDataForEvents(
@@ -298,6 +298,7 @@ extension CareEssentialChartView {
         )
 
         // Iterate through the events on each component and update the stored progress values
+		// swiftlint:disable:next line_length
         let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
 
 			let events = eventsGroupedByPeriodComponent[periodComponent.0] ?? []
