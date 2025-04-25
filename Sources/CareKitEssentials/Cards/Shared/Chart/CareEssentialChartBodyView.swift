@@ -12,10 +12,6 @@ import SwiftUI
 struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
-	let legendColors: [String: Color]
-	let xRange: ClosedRange<CGFloat>
-	let yRange: ClosedRange<CGFloat>
-	let scaleType: ScaleType?
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -23,7 +19,7 @@ struct CareEssentialChartBodyView: View {
                 data.mark.chartContent(
                     title: data.title,
                     xLabel: "Date",
-                    xValue: String(point.x),
+					xValue: String(point.x.prefix(3)),
                     yLabel: "Value",
                     yValue: point.y,
                     width: data.width,
@@ -55,22 +51,5 @@ struct CareEssentialChartBodyView: View {
             .foregroundStyle(by: .value("Data Series", data.title))
             .position(by: .value("Data Series", data.title))
         }
-        .chartXAxis {
-            AxisMarks(stroke: StrokeStyle(lineWidth: 0))
-        }
-        .chartYAxis {
-            AxisMarks(position: .leading)
-        }
-		.chartXScale(
-			range: xRange,
-			type: scaleType
-		)
-		.chartYScale(
-			range: yRange,
-			type: scaleType
-		)
-		.chartForegroundStyleScale { (name: String) in
-			legendColors[name] ?? .clear
-		}
     }
 }

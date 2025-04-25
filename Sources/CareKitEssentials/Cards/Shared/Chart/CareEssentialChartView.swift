@@ -26,9 +26,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
     let dateInterval: DateInterval
     let period: Calendar.Component
     let configurations: [CKEDataSeriesConfiguration]
-	let xRange: ClosedRange<CGFloat>
-	let yRange: ClosedRange<CGFloat>
-	let scaleType: ScaleType?
 
 	@State var legendColors = [String: Color]()
 
@@ -45,12 +42,17 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 .padding(.bottom)
 
                 CareEssentialChartBodyView(
-                    dataSeries: dataSeries,
-					legendColors: legendColors,
-					xRange: xRange,
-					yRange: yRange,
-					scaleType: scaleType
+                    dataSeries: dataSeries
                 )
+				.chartXAxis {
+					AxisMarks(stroke: StrokeStyle(lineWidth: 0))
+				}
+				.chartYAxis {
+					AxisMarks(position: .leading)
+				}
+				.chartForegroundStyleScale { (name: String) in
+					legendColors[name] ?? .clear
+				}
 
             }
             .padding(isCardEnabled ? [.all] : [])
@@ -75,19 +77,13 @@ public struct CareEssentialChartView: CareKitEssentialView {
         subtitle: String,
         dateInterval: DateInterval,
         period: Calendar.Component,
-        configurations: [CKEDataSeriesConfiguration],
-		xRange: ClosedRange<CGFloat> = -10...10,
-		yRange: ClosedRange<CGFloat> = -10...10,
-		scaleType: ScaleType? = nil
+        configurations: [CKEDataSeriesConfiguration]
     ) {
         self.title = title
         self.subtitle = subtitle
         self.dateInterval = dateInterval
         self.period = period
         self.configurations = configurations
-		self.xRange = xRange
-		self.yRange = yRange
-		self.scaleType = scaleType
     }
 
     private func updateQuery() {
@@ -296,6 +292,7 @@ extension CareEssentialChartView {
 		var currentDate = dateInterval.start.startOfDay
 
 		while currentDate < dateInterval.end.endOfDay {
+			let valueToIncrementBy = component == .hour ? 2 : 1
             let periodComponent = uniqueComponents(
 				for: currentDate,
 				during: component
@@ -303,7 +300,7 @@ extension CareEssentialChartView {
             periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
 				byAdding: periodComponent.1,
-                value: 1,
+                value: valueToIncrementBy,
                 to: currentDate
             )!
         }
