@@ -12,7 +12,6 @@ import SwiftUI
 struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
-    @State var legendColors = [String: Color]()
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -20,13 +19,14 @@ struct CareEssentialChartBodyView: View {
                 data.mark.chartContent(
                     title: data.title,
                     xLabel: "Date",
-                    xValue: String(point.x.prefix(3)),
+                    xValue: String(point.x),
                     yLabel: "Value",
                     yValue: point.y,
                     width: data.width,
                     height: data.height,
                     stacking: data.stackingMethod
                 )
+				.lineStyle(by: .value(data.title, point.y))
                 .accessibilityValue(
                     Text(
                         point.accessibilityValue ?? ""
@@ -51,8 +51,8 @@ struct CareEssentialChartBodyView: View {
             .foregroundStyle(by: .value("Data Series", data.title))
             .position(by: .value("Data Series", data.title))
         }
-        .chartXAxis {
-            AxisMarks(stroke: StrokeStyle(lineWidth: 0))
+        /* .chartXAxis {
+            AxisMarks(stroke: stroke)
         }
         .chartYAxis {
             AxisMarks(position: .leading)
@@ -65,6 +65,6 @@ struct CareEssentialChartBodyView: View {
                 colors[series.title] = series.color
             }
             legendColors = updatedLegendColors
-        }
+        } */
     }
 }

@@ -15,6 +15,71 @@ import SwiftUI
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
 public struct CKEDataSeries: Identifiable {
 
+	/// An enumerator specifying the types of marks this chart can display.
+	@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
+	public enum PlotType: String, CaseIterable {
+		case area
+		case line
+
+		@ChartContentBuilder
+		func chartContent( // swiftlint:disable:this function_parameter_count
+			title: String,
+			xLabel: LocalizedStringKey,
+			yLabel: LocalizedStringKey,
+			yEndLabel: LocalizedStringKey? = nil,
+			tLabel: LocalizedStringKey? = nil,
+			domain: ClosedRange<Double>? = nil,
+			function: (@Sendable (Double) -> Double)?,
+			parametricFunction: (@Sendable (Double) -> (x: Double, y: Double))?,
+			areaParametricFunction: (@Sendable (Double) -> (yStart: Double, yEnd: Double))?
+		) throws -> some ChartContent {
+			switch self {
+			case .area:
+				if let yEndLabel = yEndLabel,
+				   let areaParametricFunction = areaParametricFunction {
+					AreaPlot(
+						x: xLabel,
+						yStart: yLabel,
+						yEnd: yEndLabel,
+						domain: domain,
+						function: areaParametricFunction
+					)
+				} else if let function {
+					AreaPlot(
+						x: xLabel,
+						y: yLabel,
+						domain: domain,
+						function: function
+					)
+				} else {
+					throw CareKitEssentialsError.couldntUnwrapRequiredField
+				}
+			case .line:
+				if let tLabel = tLabel,
+				   let domain,
+				   let parametricFunction {
+					LinePlot(
+						x: xLabel,
+						y: yLabel,
+						t: tLabel,
+						domain: domain,
+						function: parametricFunction
+					)
+				} else if let function {
+					LinePlot(
+						x: xLabel,
+						y: yLabel,
+						domain: domain,
+						function: function
+					)
+				} else {
+					throw CareKitEssentialsError.couldntUnwrapRequiredField
+				}
+			}
+		}
+
+	}
+
     /// An enumerator specifying the types of marks this chart can display.
     public enum MarkType: String, CaseIterable {
         case area
@@ -41,7 +106,6 @@ public struct CKEDataSeries: Identifiable {
                     y: .value(yLabel, yValue),
                     stacking: stacking
                 )
-                .lineStyle(by: .value(title, yValue))
             case .bar:
                 BarMark(
                     x: .value(xLabel, xValue),
@@ -50,19 +114,16 @@ public struct CKEDataSeries: Identifiable {
                     height: height,
                     stacking: stacking
                 )
-                .lineStyle(by: .value(title, yValue))
             case .line:
                 LineMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
-                .lineStyle(by: .value(title, yValue))
             case .point:
                 PointMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
                 )
-                .lineStyle(by: .value(title, yValue))
             case .rectangle:
                 RectangleMark(
                     x: .value(xLabel, xValue),
@@ -70,7 +131,6 @@ public struct CKEDataSeries: Identifiable {
                     width: width,
                     height: height
                 )
-                .lineStyle(by: .value(title, yValue))
             }
         }
     }

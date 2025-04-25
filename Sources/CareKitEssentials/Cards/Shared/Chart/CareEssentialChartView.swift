@@ -24,6 +24,11 @@ public struct CareEssentialChartView: CareKitEssentialView {
     let dateInterval: DateInterval
     let period: Calendar.Component
     let configurations: [CKEDataSeriesConfiguration]
+	var xRange: ClosedRange<CGFloat> = -10...10
+	var yRange: ClosedRange<CGFloat> = -10...10
+	var scaleType: ScaleType?
+
+	@State var legendColors = [String: Color]()
 
     public var body: some View {
 
@@ -40,9 +45,30 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 CareEssentialChartBodyView(
                     dataSeries: dataSeries
                 )
+				.chartXScale(
+					range: xRange,
+					type: scaleType
+				)
+				.chartYScale(
+					range: yRange,
+					type: scaleType
+				)
+				.chartXAxis {
+					AxisMarks(stroke: StrokeStyle())
+				}
+				.chartYAxis {
+					AxisMarks(position: .leading)
+				}
+				.chartForegroundStyleScale { (name: String) in
+					legendColors[name] ?? .clear
+				}
             }
             .padding(isCardEnabled ? [.all] : [])
         }.onAppear {
+			let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
+				colors[series.title] = series.color
+			}
+			legendColors = updatedLegendColors
             updateQuery()
         }
     }
@@ -59,13 +85,19 @@ public struct CareEssentialChartView: CareKitEssentialView {
         subtitle: String,
         dateInterval: DateInterval,
         period: Calendar.Component,
-        configurations: [CKEDataSeriesConfiguration]
+        configurations: [CKEDataSeriesConfiguration],
+		xRange: ClosedRange<CGFloat> = -10...10,
+		yRange: ClosedRange<CGFloat> = -10...10,
+		scaleType: ScaleType? = nil
     ) {
         self.title = title
         self.subtitle = subtitle
         self.dateInterval = dateInterval
         self.period = period
         self.configurations = configurations
+		self.xRange = xRange
+		self.yRange = yRange
+		self.scaleType = scaleType
     }
 
     private func updateQuery() {
