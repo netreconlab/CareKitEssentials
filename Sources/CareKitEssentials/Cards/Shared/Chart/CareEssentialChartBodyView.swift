@@ -51,12 +51,12 @@ struct CareEssentialChartBodyView: View {
             .foregroundStyle(by: .value("Data Series", data.title))
             .position(by: .value("Data Series", data.title))
         }
-        /* .chartXAxis {
-            AxisMarks(stroke: stroke)
+        .chartXAxis {
+            AxisMarks(stroke: StrokeStyle(lineWidth: 0))
         }
         .chartYAxis {
             AxisMarks(position: .leading)
-        }
+        } /*
         .chartForegroundStyleScale { (name: String) in
             legendColors[name] ?? .clear
         }

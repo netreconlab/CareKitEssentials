@@ -55,12 +55,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 					range: yRange,
 					type: scaleType
 				)
-				.chartXAxis {
-					AxisMarks(stroke: StrokeStyle())
-				}
-				.chartYAxis {
-					AxisMarks(position: .leading)
-				}
 				.chartForegroundStyleScale { (name: String) in
 					legendColors[name] ?? .clear
 				}
