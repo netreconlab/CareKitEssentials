@@ -270,7 +270,7 @@ extension CareEssentialChartView {
 
         // Create a dictionary that has a key for each component in the provided interval.
 
-        var periodComponentsInInterval: [DateComponents] = []
+		var periodComponentsInInterval: [(DateComponents, Calendar.Component)] = []
         var currentDate = dateInterval.start
 
         while currentDate < dateInterval.end {
@@ -280,34 +280,34 @@ extension CareEssentialChartView {
 			)
             periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
-                byAdding: component,
+				byAdding: periodComponent.1,
                 value: 1,
                 to: currentDate
             )!
         }
 
         // Group the events by the component they started
-
+		let periodComponent = periodComponentsInInterval.last?.1 ?? .day
         let eventsGroupedByPeriodComponent = Dictionary(
             grouping: events,
 			by: {
 				uniqueComponents(
 					for: $0.scheduleEvent.start,
-					during: component
-				)
+					during: periodComponent
+				).0
 			}
         )
 
         // Iterate through the events on each component and update the stored progress values
         let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
 
-            let events = eventsGroupedByPeriodComponent[periodComponent] ?? []
+			let events = eventsGroupedByPeriodComponent[periodComponent.0] ?? []
 
             let progressForEvents = events.map { event in
                 computeProgress(event)
             }
 
-            let dateOfPeriodComponent = calendar.date(from: periodComponent)!
+			let dateOfPeriodComponent = calendar.date(from: periodComponent.0)!
 
             let temporalProgress = TemporalProgress(
                 values: progressForEvents,
@@ -320,33 +320,46 @@ extension CareEssentialChartView {
         return progressPerPeriodComponent
     }
 
-	private func uniqueComponents(for date: Date, during period: Calendar.Component) -> DateComponents {
+	private func uniqueComponents(
+		for date: Date,
+		during period: Calendar.Component
+	) -> (DateComponents, Calendar.Component) {
 		switch period {
 		case .day, .dayOfYear:
-			return Calendar.current.dateComponents(
-				[.hour],
+			let component = Calendar.Component.hour
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, .month, .day, component],
 				from: date
 			)
+			return (dateComponents, component)
 		case .weekday, .weekOfMonth, .weekOfYear:
-			return Calendar.current.dateComponents(
-				[.year, .month, .day],
+			let component = Calendar.Component.day
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, .month, component],
 				from: date
 			)
+			return (dateComponents, component)
 		case .month:
-			return Calendar.current.dateComponents(
-				[.weekOfMonth],
+			let component = Calendar.Component.weekOfMonth
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, component],
 				from: date
 			)
+			return (dateComponents, component)
 		case .year:
-			return Calendar.current.dateComponents(
-				[.month],
+			let component = Calendar.Component.month
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, component],
 				from: date
 			)
+			return (dateComponents, component)
 		default:
-			return Calendar.current.dateComponents(
-				[.year, .month, .day],
+			let component = Calendar.Component.day
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, .month, component],
 				from: date
 			)
+			return (dateComponents, component)
 		}
 	}
 }
