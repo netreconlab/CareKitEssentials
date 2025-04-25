@@ -291,7 +291,7 @@ extension CareEssentialChartView {
             grouping: events,
 			by: {
 				uniqueComponents(
-					for: $0.scheduleEvent.start,
+					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start,
 					during: component
 				).0
 			}
