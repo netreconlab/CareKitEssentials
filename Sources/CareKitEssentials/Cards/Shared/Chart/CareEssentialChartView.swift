@@ -324,7 +324,7 @@ extension CareEssentialChartView {
 		switch period {
 		case .day, .dayOfYear:
 			return Calendar.current.dateComponents(
-				[.year, .month, .day, .hour],
+				[.hour],
 				from: date
 			)
 		case .weekday, .weekOfMonth, .weekOfYear:
@@ -334,12 +334,12 @@ extension CareEssentialChartView {
 			)
 		case .month:
 			return Calendar.current.dateComponents(
-				[.year, .weekOfMonth],
+				[.weekOfMonth],
 				from: date
 			)
 		case .year:
 			return Calendar.current.dateComponents(
-				[.year, .month],
+				[.month],
 				from: date
 			)
 		default:
