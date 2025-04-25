@@ -287,13 +287,12 @@ extension CareEssentialChartView {
         }
 
         // Group the events by the component they started
-		let periodComponent = periodComponentsInInterval.last?.1 ?? .day
         let eventsGroupedByPeriodComponent = Dictionary(
             grouping: events,
 			by: {
 				uniqueComponents(
 					for: $0.scheduleEvent.start,
-					during: periodComponent
+					during: component
 				).0
 			}
         )
