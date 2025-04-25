@@ -14,6 +14,8 @@ import Foundation
 import os.log
 import SwiftUI
 
+// swiftlint:disable vertical_parameter_alignment
+
 public struct CareEssentialChartView: CareKitEssentialView {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
