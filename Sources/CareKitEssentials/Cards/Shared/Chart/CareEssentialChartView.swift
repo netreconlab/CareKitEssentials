@@ -126,10 +126,10 @@ public struct CareEssentialChartView: CareKitEssentialView {
     private func calendarSymbols() -> [String] {
         switch period {
 
-        case .day:
+		case .day, .dayOfYear:
 			return ChartParameters.day.xAxisLabels
 
-		case .weekday:
+		case .weekday, .weekOfMonth, .weekOfYear:
 			#if watchOS
 			return Calendar.current.orderedWeekdaySymbolsShort()
 			#else
@@ -268,14 +268,17 @@ extension CareEssentialChartView {
 
         let calendar = Calendar.current
 
-        // Create a dictionary that has a key for each day in the provided interval.
+        // Create a dictionary that has a key for each component in the provided interval.
 
-        var daysInInterval: [DateComponents] = []
+        var periodComponentsInInterval: [DateComponents] = []
         var currentDate = dateInterval.start
 
         while currentDate < dateInterval.end {
-            let day = uniqueDayComponents(for: currentDate)
-            daysInInterval.append(day)
+            let periodComponent = uniqueComponents(
+				for: currentDate,
+				during: component
+			)
+            periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
                 byAdding: component,
                 value: 1,
@@ -283,41 +286,69 @@ extension CareEssentialChartView {
             )!
         }
 
-        // Group the events by the day they started
+        // Group the events by the component they started
 
-        let eventsGroupedByDay = Dictionary(
+        let eventsGroupedByPeriodComponent = Dictionary(
             grouping: events,
-            by: { uniqueDayComponents(for: $0.scheduleEvent.start) }
+			by: {
+				uniqueComponents(
+					for: $0.scheduleEvent.start,
+					during: component
+				)
+			}
         )
 
-        // Iterate through the events on each day and update the stored progress values
-        let progressPerDay = daysInInterval.map { day -> TemporalProgress<Progress> in
+        // Iterate through the events on each component and update the stored progress values
+        let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
 
-            let events = eventsGroupedByDay[day] ?? []
+            let events = eventsGroupedByPeriodComponent[periodComponent] ?? []
 
             let progressForEvents = events.map { event in
                 computeProgress(event)
             }
 
-            let dateOfDay = calendar.date(from: day)!
+            let dateOfPeriodComponent = calendar.date(from: periodComponent)!
 
             let temporalProgress = TemporalProgress(
                 values: progressForEvents,
-                date: dateOfDay
+                date: dateOfPeriodComponent
             )
 
             return temporalProgress
         }
 
-        return progressPerDay
+        return progressPerPeriodComponent
     }
 
-    private func uniqueDayComponents(for date: Date) -> DateComponents {
-        Calendar.current.dateComponents(
-            [.year, .month, .day],
-            from: date
-        )
-    }
+	private func uniqueComponents(for date: Date, during period: Calendar.Component) -> DateComponents {
+		switch period {
+		case .day, .dayOfYear:
+			return Calendar.current.dateComponents(
+				[.year, .month, .day, .hour],
+				from: date
+			)
+		case .weekday, .weekOfMonth, .weekOfYear:
+			return Calendar.current.dateComponents(
+				[.year, .month, .day],
+				from: date
+			)
+		case .month:
+			return Calendar.current.dateComponents(
+				[.year, .weekOfMonth],
+				from: date
+			)
+		case .year:
+			return Calendar.current.dateComponents(
+				[.year, .month],
+				from: date
+			)
+		default:
+			return Calendar.current.dateComponents(
+				[.year, .month, .day],
+				from: date
+			)
+		}
+	}
 }
 
 struct CareEssentialChartView_Previews: PreviewProvider {
