@@ -273,7 +273,7 @@ extension CareEssentialChartView {
 		var periodComponentsInInterval: [(DateComponents, Calendar.Component)] = []
 		var currentDate = dateInterval.start.startOfDay
 
-        while currentDate < dateInterval.end {
+		while currentDate < dateInterval.end.endOfDay {
             let periodComponent = uniqueComponents(
 				for: currentDate,
 				during: component
