@@ -26,9 +26,9 @@ public struct CareEssentialChartView: CareKitEssentialView {
     let dateInterval: DateInterval
     let period: Calendar.Component
     let configurations: [CKEDataSeriesConfiguration]
-	var xRange: ClosedRange<CGFloat> = -10...10
-	var yRange: ClosedRange<CGFloat> = -10...10
-	var scaleType: ScaleType?
+	let xRange: ClosedRange<CGFloat>
+	let yRange: ClosedRange<CGFloat>
+	let scaleType: ScaleType?
 
 	@State var legendColors = [String: Color]()
 
@@ -45,19 +45,13 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 .padding(.bottom)
 
                 CareEssentialChartBodyView(
-                    dataSeries: dataSeries
+                    dataSeries: dataSeries,
+					legendColors: legendColors,
+					xRange: xRange,
+					yRange: yRange,
+					scaleType: scaleType
                 )
-				.chartXScale(
-					range: xRange,
-					type: scaleType
-				)
-				.chartYScale(
-					range: yRange,
-					type: scaleType
-				)
-				.chartForegroundStyleScale { (name: String) in
-					legendColors[name] ?? .clear
-				}
+
             }
             .padding(isCardEnabled ? [.all] : [])
         }.onAppear {
