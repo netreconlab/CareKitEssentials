@@ -52,6 +52,12 @@ public struct CareEssentialChartView: CareKitEssentialView {
 				}
 				.chartForegroundStyleScale { (name: String) in
 					legendColors[name] ?? .clear
+				}.chartOverlay { proxy in
+					GeometryReader { geometry in
+						Rectangle()
+							.fill(Color.clear)
+							.contentShape(Rectangle())
+					}
 				}
 
             }
@@ -292,7 +298,7 @@ extension CareEssentialChartView {
 		var currentDate = dateInterval.start.startOfDay
 
 		while currentDate < dateInterval.end.endOfDay {
-			let valueToIncrementBy = component == .hour ? 2 : 1
+			let valueToIncrementBy = 1
             let periodComponent = uniqueComponents(
 				for: currentDate,
 				during: component
