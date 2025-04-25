@@ -28,19 +28,20 @@ public struct ResearchCareForm<Content: View>: CareKitEssentialView {
             id: event.id,
             steps: steps,
             onResearchFormCompletion: { completion in
-                switch completion {
-                case .completed(let results), .saved(let results):
-                    do {
-                        try save(results)
-                    } catch {
-                        Logger.researchCareForm.error("Cannot save results: \(error)")
-                        dismiss()
-                    }
+				switch completion {
+				case .completed(let results), .saved(let results):
+					do {
+						try save(results)
+					} catch {
+						Logger.researchCareForm.error("Cannot save results: \(error)")
+						dismiss()
+					}
 				case .discarded:
 					cancel()
 				default:
+					Logger.researchCareForm.error("Reached an unsupported case: \"\(completion)\"")
 					cancel()
-                }
+				}
             }
         )
     }
