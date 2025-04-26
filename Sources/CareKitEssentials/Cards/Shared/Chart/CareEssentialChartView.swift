@@ -46,9 +46,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 				.chartYAxis {
 					AxisMarks(position: .leading)
 				}
-				.chartForegroundStyleScale { (name: String) in
-					legendColors[name] ?? .clear
-				}
             }
             .padding(isCardEnabled ? [.all] : [])
         }
@@ -65,13 +62,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 			updateQuery()
 		}
     }
-
-	private var legendColors: [String: Color] {
-		let updatedLegendColors = configurations.reduce(into: [String: Color]()) { colors, configuration in
-			colors[configuration.legendTitle] = configuration.color
-		}
-		return updatedLegendColors
-	}
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
 		eventQuery(

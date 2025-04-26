@@ -13,6 +13,7 @@ import SwiftUI
 struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
+	@State var legendColors = [String: LinearGradient]()
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -36,26 +37,48 @@ struct CareEssentialChartBodyView: View {
 			.if(data.symbol != nil) { chartContent in
 				chartContent.symbol(data.symbol!)
 			}
-            .if(data.gradientStartColor != nil) { chartContent in
-                chartContent.foregroundStyle(
-                    .linearGradient(
-                        Gradient(
-                            colors: [
-                                data.gradientStartColor!,
-                                data.color
-                           ]
-                        ),
-                        startPoint: .bottom,
-                        endPoint: .top
-                    )
-                )
-            }
-            .foregroundStyle(data.color)
+			.foregroundStyle(
+				createLinearGradientColor(for: data)
+			)
             .foregroundStyle(by: .value("DATA_SERIES", data.title))
             .position(by: .value("DATA_SERIES", data.title))
         }
+		.chartForegroundStyleScale { (name: String) in
+			legendColors[name] ?? LinearGradient(
+				gradient: Gradient(
+					colors: [
+						Color.accentColor.opacity(0.4),
+						Color.accentColor
+					]
+				),
+				startPoint: .bottom,
+				endPoint: .top
+			)
+		}
 		.if(dataSeries.isEmpty == false) { chart in
 			chart.accessibilityChartDescriptor(dataSeries.last!)
 		}
-    }
+		.onAppear {
+			updateLegendColors()
+		}
+	}
+
+	private func updateLegendColors() {
+		dataSeries.forEach { data in
+			legendColors[data.title] = createLinearGradientColor(for: data)
+		}
+	}
+
+	private func createLinearGradientColor(for data: CKEDataSeries) -> LinearGradient {
+		LinearGradient(
+			gradient: Gradient(
+				colors: [
+					data.gradientStartColor ?? data.color.opacity(0.4),
+					data.color
+				]
+			),
+			startPoint: .bottom,
+			endPoint: .top
+		)
+	}
 }
