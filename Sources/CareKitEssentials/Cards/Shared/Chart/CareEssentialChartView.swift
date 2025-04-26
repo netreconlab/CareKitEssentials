@@ -61,6 +61,9 @@ public struct CareEssentialChartView: CareKitEssentialView {
 		.onChange(of: configurations) { _ in
 			updateQuery()
 		}
+		.onReceive(events.publisher) { _ in
+			updateQuery()
+		}
     }
 
 	private var legendColors: [String: Color] {
