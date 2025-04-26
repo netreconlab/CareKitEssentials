@@ -14,8 +14,6 @@ import Foundation
 import os.log
 import SwiftUI
 
-// swiftlint:disable vertical_parameter_alignment
-
 public struct CareEssentialChartView: CareKitEssentialView {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
@@ -52,10 +50,10 @@ public struct CareEssentialChartView: CareKitEssentialView {
 				}
 				.chartForegroundStyleScale { (name: String) in
 					legendColors[name] ?? .clear
-				}.chartOverlay { proxy in
-					GeometryReader { geometry in
+				}.chartOverlay { _ in
+					GeometryReader { _ in
 						Rectangle()
-							.fill(Color.clear)
+							.fill(Color.accentColor.opacity(0.2))
 							.contentShape(Rectangle())
 					}
 				}
@@ -84,7 +82,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
         dateInterval: DateInterval,
         period: Calendar.Component,
         configurations: [CKEDataSeriesConfiguration]
-    ) {
+	) {
         self.title = title
         self.subtitle = subtitle
         self.dateInterval = dateInterval
@@ -145,14 +143,8 @@ public struct CareEssentialChartView: CareKitEssentialView {
         }
 
         let series = CKEDataSeries(
-            mark: configuration.mark,
             dataPoints: summedProgressPoints,
-            title: configuration.legendTitle,
-            color: configuration.color,
-            gradientStartColor: configuration.gradientStartColor,
-            width: configuration.width,
-            height: configuration.height,
-            stackingMethod: configuration.stackingMethod
+			configuration: configuration
         )
 
         return series

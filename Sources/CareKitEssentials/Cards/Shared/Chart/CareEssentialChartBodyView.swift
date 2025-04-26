@@ -18,21 +18,22 @@ struct CareEssentialChartBodyView: View {
             ForEach(data.dataPoints) { point in
                 data.mark.chartContent(
                     title: data.title,
-                    xLabel: "Date",
+					xLabel: data.xLabel,
 					xValue: String(point.x.prefix(3)),
-                    yLabel: "Value",
+					yLabel: data.yLabel,
                     yValue: point.y,
                     width: data.width,
                     height: data.height,
                     stacking: data.stackingMethod
                 )
 				.lineStyle(by: .value(data.title, point.y))
-                .accessibilityValue(
-                    Text(
-                        point.accessibilityValue ?? ""
-                    )
-                )
             }
+			.if(data.interpolation != nil) { chartContent in
+				chartContent.interpolationMethod(data.interpolation!)
+			}
+			.if(data.symbol != nil) { chartContent in
+				chartContent.symbol(data.symbol!)
+			}
             .if(data.gradientStartColor != nil) { chartContent in
                 chartContent.foregroundStyle(
                     .linearGradient(
@@ -48,8 +49,11 @@ struct CareEssentialChartBodyView: View {
                 )
             }
             .foregroundStyle(data.color)
-            .foregroundStyle(by: .value("Data Series", data.title))
-            .position(by: .value("Data Series", data.title))
+            .foregroundStyle(by: .value("DATA_SERIES", data.title))
+            .position(by: .value("DATA_SERIES", data.title))
         }
+		.if(dataSeries.isEmpty == false) { chart in
+			chart.accessibilityChartDescriptor(dataSeries.first!)
+		}
     }
 }

@@ -11,11 +11,13 @@ import Charts
 import Foundation
 import SwiftUI
 
+// swiftlint:disable vertical_parameter_alignment
+
 /// Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
 public struct CKEDataSeries: Identifiable {
 
-	/// An enumerator specifying the types of marks this chart can display.
+	/// An enumerator specifying the types of plots that can be used to display data series.
 	@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
 	public enum PlotType: String, CaseIterable {
 		case area
@@ -24,10 +26,10 @@ public struct CKEDataSeries: Identifiable {
 		@ChartContentBuilder
 		func chartContent( // swiftlint:disable:this function_parameter_count
 			title: String,
-			xLabel: LocalizedStringKey,
-			yLabel: LocalizedStringKey,
-			yEndLabel: LocalizedStringKey? = nil,
-			tLabel: LocalizedStringKey? = nil,
+			xLabel: String,
+			yLabel: String,
+			yEndLabel: String? = nil,
+			tLabel: String? = nil,
 			domain: ClosedRange<Double>? = nil,
 			function: (@Sendable (Double) -> Double)?,
 			parametricFunction: (@Sendable (Double) -> (x: Double, y: Double))?,
@@ -80,7 +82,7 @@ public struct CKEDataSeries: Identifiable {
 
 	}
 
-    /// An enumerator specifying the types of marks this chart can display.
+    /// An enumerator specifying the types of marks that can be used to display data series.
     public enum MarkType: String, CaseIterable {
         case area
         case bar
@@ -91,9 +93,9 @@ public struct CKEDataSeries: Identifiable {
         @ChartContentBuilder
         func chartContent<ValueX, ValueY>( // swiftlint:disable:this function_parameter_count
             title: String,
-            xLabel: LocalizedStringKey,
+            xLabel: String,
             xValue: ValueX,
-            yLabel: LocalizedStringKey,
+            yLabel: String,
             yValue: ValueY,
             width: MarkDimension,
             height: MarkDimension,
@@ -123,7 +125,7 @@ public struct CKEDataSeries: Identifiable {
                 PointMark(
                     x: .value(xLabel, xValue),
                     y: .value(yLabel, yValue)
-                )
+				)
             case .rectangle:
                 RectangleMark(
                     x: .value(xLabel, xValue),
@@ -143,6 +145,17 @@ public struct CKEDataSeries: Identifiable {
     /// A title for this data series that will be displayed in the plot legend.
     public var title: String
 
+	/// A summary describing the data.
+	public var summary: String?
+	public var xLabel: String = String(localized: "DATE")
+	public var yLabel: String = String(localized: "VALUE")
+	public var yEndLabel: String?
+	public var tLabel: String?
+	public var domain: ClosedRange<Double>?
+	public var function: (@Sendable (Double) -> Double)?
+	public var parametricFunction: (@Sendable (Double) -> (x: Double, y: Double))?
+	public var areaParametricFunction: (@Sendable (Double) -> (yStart: Double, yEnd: Double))?
+
     /// The color that will be used for data series in the legend.
     /// If `gradientStartColor` is not specified, it will also be used as the color
     /// of the data.
@@ -161,6 +174,12 @@ public struct CKEDataSeries: Identifiable {
 
     /// The ways in which you can stack marks in a chart.
     public var stackingMethod: MarkStackingMethod
+
+	/// A basic chart symbol shape.
+	public var symbol: BasicChartSymbolShape?
+
+	/// The ways in which line or area marks interpolate their data.
+	public var interpolation: InterpolationMethod?
 
     var dataPoints: [CKEPoint]
 
@@ -182,7 +201,9 @@ public struct CKEDataSeries: Identifiable {
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
-        stackingMethod: MarkStackingMethod = .standard
+        stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil,
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -191,6 +212,8 @@ public struct CKEDataSeries: Identifiable {
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
+		self.symbol = symbol
+		self.interpolation = interpolation
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -214,7 +237,9 @@ public struct CKEDataSeries: Identifiable {
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
-        stackingMethod: MarkStackingMethod = .standard
+        stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil,
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -224,7 +249,27 @@ public struct CKEDataSeries: Identifiable {
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
+		self.symbol = symbol
+		self.interpolation = interpolation
     }
+
+	init(
+		dataPoints: [CKEPoint],
+		configuration: CKEDataSeriesConfiguration
+	) {
+		self.init(
+			mark: configuration.mark,
+			dataPoints: dataPoints,
+			title: configuration.legendTitle,
+			color: configuration.color,
+			gradientStartColor: configuration.gradientStartColor,
+			width: configuration.width,
+			height: configuration.height,
+			stackingMethod: configuration.stackingMethod,
+			symbol: configuration.symbol,
+			interpolation: configuration.interpolation
+		)
+	}
 
     /// Creates a new data series that can be passed to a chart to be plotted.
     /// The series will be plotted in a single solid color.
@@ -242,6 +287,8 @@ public struct CKEDataSeries: Identifiable {
     ///   - width: The dimention specifying the width at which this data series should appear on the plot.
     ///   - height: The dimention specifying the height at which this data series should appear on the plot.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
+	///   - symbol: A basic chart symbol shape.
+	///   - interpolation: The ways in which line or area marks interpolate their data.
     public init(
         mark: MarkType,
         values: [Double],
@@ -250,7 +297,9 @@ public struct CKEDataSeries: Identifiable {
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
-        stackingMethod: MarkStackingMethod = .standard
+        stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil,
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
@@ -272,6 +321,8 @@ public struct CKEDataSeries: Identifiable {
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
+		self.symbol = symbol
+		self.interpolation = interpolation
     }
 
     /// Creates a new data series that can be passed to a chart to be plotted.
@@ -291,6 +342,8 @@ public struct CKEDataSeries: Identifiable {
     ///   - width: The dimention specifying the width at which this data series should appear on the plot.
     ///   - height: The dimention specifying the height at which this data series should appear on the plot.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
+	///   - symbol: A basic chart symbol shape.
+	///   - interpolation: The ways in which line or area marks interpolate their data.
     public init(
         mark: MarkType,
         values: [Double],
@@ -300,7 +353,9 @@ public struct CKEDataSeries: Identifiable {
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
-        stackingMethod: MarkStackingMethod = .standard
+        stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil,
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
@@ -323,6 +378,8 @@ public struct CKEDataSeries: Identifiable {
         self.stackingMethod = stackingMethod
         self.width = width
         self.height = height
+		self.symbol = symbol
+		self.interpolation = interpolation
     }
 
     static func weekDayCalculation(from date: Date) -> String {

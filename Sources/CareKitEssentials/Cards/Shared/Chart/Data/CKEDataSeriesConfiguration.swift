@@ -10,6 +10,8 @@ import CareKitStore
 import SwiftUI
 import Charts
 
+// swiftlint:disable vertical_parameter_alignment
+
 /// A configuration object that specifies which data should be queried and how it should be displayed by the graph.
 public struct CKEDataSeriesConfiguration: Identifiable {
 
@@ -50,6 +52,12 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     /// The ways in which you can stack marks in a chart.
     public var stackingMethod: MarkStackingMethod
 
+	/// A basic chart symbol shape.
+	public var symbol: BasicChartSymbolShape?
+
+	/// The ways in which line or area marks interpolate their data.
+	public var interpolation: InterpolationMethod?
+
     let computeProgress: (OCKAnyEvent) -> LinearCareTaskProgress
 
     /// Initialize a new `CareKitEssentialsDataSeriesConfiguration`.
@@ -63,7 +71,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
     ///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
-    ///   The precise behavior varies by plot type.
+	///   - symbol: A basic chart symbol shape.
+	///   - interpolation: The ways in which line or area marks interpolate their data.
     ///   - computeProgress: Used to compute progress for an event.
     public init(
         taskID: String,
@@ -74,6 +83,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil,
         computeProgress: @escaping (OCKAnyEvent) -> LinearCareTaskProgress = { event in
             event.computeProgress(by: .summingOutcomeValues)
         }
@@ -86,6 +97,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         self.width = width
         self.height = height
         self.stackingMethod = stackingMethod
+		self.symbol = symbol
+		self.interpolation = interpolation
         self.computeProgress = computeProgress
     }
 }

@@ -13,6 +13,7 @@
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
+		70116AF12DBC634D0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */; };
 		7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */; };
 		7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */; };
 		7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */; };
@@ -158,6 +159,7 @@
 		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
 		700DA9062C2A66BF00435E2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKEDataSeries+AXChartDescriptorRepresentable.swift"; sourceTree = "<group>"; };
 		7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleElement+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSemanticVersion+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKNote+Hashable.swift"; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 		70B49A8E2D0A8FB80023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
 				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
@@ -852,6 +855,7 @@
 				OBJ_766 /* OSValue.swift in Sources */,
 				OBJ_767 /* ScheduleUtility.swift in Sources */,
 				709530B82DAC3DFF00E18A59 /* CareKitEssentialsUserInfoKey.swift in Sources */,
+				70116AF12DBC634D0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,12 +19,12 @@ struct SliderLogButton: CareKitEssentialView {
     @Environment(\.careKitStyle) private var style
     @ObservedObject var viewModel: SliderLogTaskViewModel
 
-    var shape: RoundedRectangle {
+    var symbol: RoundedRectangle {
         RoundedRectangle(cornerRadius: style.appearance.cornerRadius2, style: .continuous)
     }
 
     var background: some View {
-        shape
+        symbol
             .fill(Color.accentColor)
     }
 
@@ -52,7 +52,7 @@ struct SliderLogButton: CareKitEssentialView {
                     Spacer()
                 }
                 .padding([.top, .bottom])
-                .clipShape(shape)
+                .clipShape(symbol)
                 .background(background)
                 .font(Font.subheadline.weight(.medium))
                 .foregroundColor(.accentColor)
