@@ -50,12 +50,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 				}
 				.chartForegroundStyleScale { (name: String) in
 					legendColors[name] ?? .clear
-				}.chartOverlay { _ in
-					GeometryReader { _ in
-						Rectangle()
-							.fill(Color.accentColor.opacity(0.2))
-							.contentShape(Rectangle())
-					}
 				}
 
             }
