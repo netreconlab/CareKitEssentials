@@ -67,15 +67,10 @@ public struct CareEssentialChartView: CareKitEssentialView {
     }
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
-		let interval = Calendar.current.dateInterval(
-			of: .weekOfYear,
-			for: Date()
-		)!
-
-		var query = OCKEventQuery(dateInterval: interval)
-		query.taskIDs = taskIDs ?? []
-
-		return query
+		eventQuery(
+			with: taskIDs ?? [],
+			on: Date()
+		)
     }
 
 	/// Create an instance of chart for displaying CareKit data.
@@ -103,11 +98,12 @@ public struct CareEssentialChartView: CareKitEssentialView {
     private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
 		let updatedTaskIDs = Set(configurations.map(\.taskID))
-		events.query.dateInterval = dateInterval
 		if currentTaskIDs != updatedTaskIDs {
 			events.query.taskIDs = Array(updatedTaskIDs)
 		}
-
+		if events.query.dateInterval != dateInterval {
+			events.query.dateInterval = dateInterval
+		}
     }
 
 	private func updateLegendColors(dataSeries: [CKEDataSeries]) {
