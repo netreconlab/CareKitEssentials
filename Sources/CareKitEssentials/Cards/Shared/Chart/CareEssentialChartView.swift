@@ -87,10 +87,11 @@ public struct CareEssentialChartView: CareKitEssentialView {
     private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
 		let updatedTaskIDs = Set(configurations.map(\.taskID))
+		events.query.dateInterval = dateInterval
 		if currentTaskIDs != updatedTaskIDs {
 			events.query.taskIDs = Array(updatedTaskIDs)
 		}
-		events.query.dateInterval = dateInterval
+
     }
 
 	private func updateLegendColors(dataSeries: [CKEDataSeries]) {
