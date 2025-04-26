@@ -370,7 +370,8 @@ extension CareEssentialChartView {
 
 	private func uniqueComponents(
 		for date: Date,
-		during period: Calendar.Component
+		during period: Calendar.Component,
+		forGrouping: Bool = false
 	) -> (DateComponents, Calendar.Component) {
 		switch period {
 		case .day, .dayOfYear:
@@ -389,15 +390,30 @@ extension CareEssentialChartView {
 			return (dateComponents, component)
 		case .month:
 			let component = Calendar.Component.weekOfMonth
+			guard !forGrouping else {
+				let dateComponents = Calendar.current.dateComponents(
+					[.year, .month, component],
+					from: date
+				)
+				return (dateComponents, component)
+
+			}
 			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, component],
+				[.year, .month, .day, component],
 				from: date
 			)
 			return (dateComponents, component)
 		case .year:
 			let component = Calendar.Component.month
+			guard !forGrouping else {
+				let dateComponents = Calendar.current.dateComponents(
+					[.year, component],
+					from: date
+				)
+				return (dateComponents, component)
+			}
 			let dateComponents = Calendar.current.dateComponents(
-				[.year, component],
+				[.year, .day, component],
 				from: date
 			)
 			return (dateComponents, component)
