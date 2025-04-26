@@ -13,17 +13,17 @@ import Charts
 // swiftlint:disable vertical_parameter_alignment
 
 /// A configuration object that specifies which data should be queried and how it should be displayed by the graph.
-public struct CKEDataSeriesConfiguration: Identifiable {
+public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 
-    public var id: String {
-        taskID + "_" + legendTitle
-    }
-
-	public enum DataStrategy {
+	public enum DataStrategy: Hashable {
 		case sum
 		case average
 		case median
 	}
+
+    public var id: String {
+        taskID + "_" + legendTitle
+    }
 
     /// The type of mark to display for this configuration.
     public var mark: CKEDataSeries.MarkType
@@ -178,5 +178,29 @@ public struct CKEDataSeriesConfiguration: Identifiable {
 				event.computeProgress(by: .medianOutcomeValues(kind: kind))
 			}
 		}
+	}
+}
+
+extension CKEDataSeriesConfiguration {
+	public static func == (lhs: CKEDataSeriesConfiguration, rhs: CKEDataSeriesConfiguration) -> Bool {
+		lhs.id == rhs.id
+		&& lhs.mark == rhs.mark
+		&& lhs.dataStrategy == rhs.dataStrategy
+		&& lhs.taskID == rhs.taskID
+		&& lhs.kind == rhs.kind
+		&& lhs.legendTitle == rhs.legendTitle
+		&& lhs.color == rhs.color
+		&& lhs.gradientStartColor == rhs.gradientStartColor
+	}
+
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+		hasher.combine(mark)
+		hasher.combine(dataStrategy)
+		hasher.combine(taskID)
+		hasher.combine(kind)
+		hasher.combine(legendTitle)
+		hasher.combine(color)
+		hasher.combine(gradientStartColor)
 	}
 }

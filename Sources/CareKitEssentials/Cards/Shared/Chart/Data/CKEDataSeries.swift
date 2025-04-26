@@ -15,11 +15,11 @@ import SwiftUI
 
 /// Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
-public struct CKEDataSeries: Identifiable {
+public struct CKEDataSeries: Identifiable, Hashable {
 
 	/// An enumerator specifying the types of plots that can be used to display data series.
 	@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
-	public enum PlotType: String, CaseIterable {
+	public enum PlotType: String, CaseIterable, Hashable {
 		case area
 		case line
 
@@ -83,7 +83,7 @@ public struct CKEDataSeries: Identifiable {
 	}
 
     /// An enumerator specifying the types of marks that can be used to display data series.
-    public enum MarkType: String, CaseIterable {
+    public enum MarkType: String, CaseIterable, Hashable {
         case area
         case bar
         case line
@@ -91,26 +91,27 @@ public struct CKEDataSeries: Identifiable {
         case rectangle
 
         @ChartContentBuilder
-        func chartContent<ValueX, ValueY>( // swiftlint:disable:this function_parameter_count
+        func chartContent<ValueY>( // swiftlint:disable:this function_parameter_count
             title: String,
             xLabel: String,
-            xValue: ValueX,
+            xValue: Date,
+			xValueUnit: Calendar.Component,
             yLabel: String,
             yValue: ValueY,
             width: MarkDimension,
             height: MarkDimension,
             stacking: MarkStackingMethod
-        ) -> some ChartContent where ValueX: Plottable, ValueY: Plottable {
+        ) -> some ChartContent where ValueY: Plottable {
             switch self {
             case .area:
                 AreaMark(
-                    x: .value(xLabel, xValue),
+					x: .value(xLabel, xValue, unit: xValueUnit),
                     y: .value(yLabel, yValue),
                     stacking: stacking
                 )
             case .bar:
                 BarMark(
-                    x: .value(xLabel, xValue),
+                    x: .value(xLabel, xValue, unit: xValueUnit),
                     y: .value(yLabel, yValue),
                     width: width,
                     height: height,
@@ -118,17 +119,17 @@ public struct CKEDataSeries: Identifiable {
                 )
             case .line:
                 LineMark(
-                    x: .value(xLabel, xValue),
+                    x: .value(xLabel, xValue, unit: xValueUnit),
                     y: .value(yLabel, yValue)
                 )
             case .point:
                 PointMark(
-                    x: .value(xLabel, xValue),
+                    x: .value(xLabel, xValue, unit: xValueUnit),
                     y: .value(yLabel, yValue)
 				)
             case .rectangle:
                 RectangleMark(
-                    x: .value(xLabel, xValue),
+                    x: .value(xLabel, xValue, unit: xValueUnit),
                     y: .value(yLabel, yValue),
                     width: width,
                     height: height
@@ -304,6 +305,8 @@ public struct CKEDataSeries: Identifiable {
 	///   - interpolation: The ways in which line or area marks interpolate their data.
     public init(
         mark: MarkType,
+		dates: [Date],
+		dateComponent: Calendar.Component,
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
@@ -323,11 +326,14 @@ public struct CKEDataSeries: Identifiable {
             }
         }
         self.mark = mark
-        self.dataPoints = values.enumerated().map { index, value in
+        self.dataPoints = zip(
+			dates,
+			values
+		).map { date, value in
             CKEPoint(
-                x: "A",
-                y: value,
-                accessibilityValue: accessibilityValues?[index]
+                x: date,
+				xUnit: dateComponent,
+                y: value
             )
         }
         self.title = title
@@ -361,6 +367,8 @@ public struct CKEDataSeries: Identifiable {
 	///   - interpolation: The ways in which line or area marks interpolate their data.
     public init(
         mark: MarkType,
+		dates: [Date],
+		dateComponent: Calendar.Component,
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
@@ -380,13 +388,16 @@ public struct CKEDataSeries: Identifiable {
             }
         }
         self.mark = mark
-        self.dataPoints = values.enumerated().map { index, value in
-            CKEPoint(
-                x: "A",
-                y: value,
-                accessibilityValue: accessibilityValues?[index]
-            )
-        }
+        self.dataPoints = zip(
+			dates,
+			values
+		).map { date, value in
+			CKEPoint(
+				x: date,
+				xUnit: dateComponent,
+				y: value
+			)
+		}
         self.title = title
         self.color = color
         self.gradientStartColor = gradientStartColor
@@ -402,6 +413,38 @@ public struct CKEDataSeries: Identifiable {
         dateFormatter.dateFormat = "EEE"
         return dateFormatter.string(from: date)
     }
+}
+
+extension CKEDataSeries {
+	public static func == (lhs: CKEDataSeries, rhs: CKEDataSeries) -> Bool {
+		lhs.id == rhs.id
+		&& lhs.mark == rhs.mark
+		&& lhs.dataPoints == rhs.dataPoints
+		&& lhs.title == rhs.title
+		&& lhs.summary == rhs.summary
+		&& lhs.xLabel == rhs.xLabel
+		&& lhs.yLabel == rhs.yLabel
+		&& lhs.yEndLabel == rhs.yEndLabel
+		&& lhs.tLabel == rhs.tLabel
+		&& lhs.domain == rhs.domain
+		&& lhs.color == rhs.color
+		&& lhs.gradientStartColor == rhs.gradientStartColor
+	}
+
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+		hasher.combine(mark)
+		hasher.combine(dataPoints)
+		hasher.combine(title)
+		hasher.combine(summary)
+		hasher.combine(xLabel)
+		hasher.combine(yLabel)
+		hasher.combine(yEndLabel)
+		hasher.combine(tLabel)
+		hasher.combine(domain)
+		hasher.combine(color)
+		hasher.combine(gradientStartColor)
+	}
 }
 
 enum ChartParameters {

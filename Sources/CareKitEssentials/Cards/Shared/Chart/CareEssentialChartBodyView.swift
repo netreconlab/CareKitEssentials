@@ -20,7 +20,8 @@ struct CareEssentialChartBodyView: View {
                 data.mark.chartContent(
                     title: data.title,
 					xLabel: data.xLabel,
-					xValue: String(point.x.prefix(3)),
+					xValue: point.x,
+					xValueUnit: point.xUnit,
 					yLabel: data.yLabel,
                     yValue: point.y,
                     width: data.width,

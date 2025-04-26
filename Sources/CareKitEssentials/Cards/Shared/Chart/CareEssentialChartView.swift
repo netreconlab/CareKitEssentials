@@ -129,11 +129,10 @@ public struct CareEssentialChartView: CareKitEssentialView {
 
     private func computeDataSeries(
         forProgress allProgress: [TemporalProgress<LinearCareTaskProgress>],
-        progressLabels: [String],
         configuration: CKEDataSeriesConfiguration
     ) throws -> CKEDataSeries {
 
-        let combinedProgressValues = allProgress.map { progress -> Double in
+		let combinedProgress = allProgress.map { progress -> CombinedProgress in
 
             let combinedProgressValues = progress.values
                 .map { $0.value }
@@ -142,27 +141,40 @@ public struct CareEssentialChartView: CareKitEssentialView {
 			case .sum:
 				let combinedProgressValue = combinedProgressValues.reduce(0, +)
 
-				return combinedProgressValue
+				let combined = CombinedProgress(
+					value: combinedProgressValue,
+					date: progress.date,
+					dateComponent: progress.dateComponent
+				)
+				return combined
 			case .average:
 				let combinedProgressValue = LinearCareTaskProgress.computeProgressByAveraging(for: combinedProgressValues).value
 
-				return combinedProgressValue
+				let combined = CombinedProgress(
+					value: combinedProgressValue,
+					date: progress.date,
+					dateComponent: progress.dateComponent
+				)
+				return combined
 			case .median:
 				let combinedProgressValue = LinearCareTaskProgress.computeProgressByMedian(for: combinedProgressValues).value
 
-				return combinedProgressValue
+				let combined = CombinedProgress(
+					value: combinedProgressValue,
+					date: progress.date,
+					dateComponent: progress.dateComponent
+				)
+				return combined
 			}
 
         }
 
-        let combinedProgressPoints = zip(
-            progressLabels,
-			combinedProgressValues
-        ).map {
+        let combinedProgressPoints = combinedProgress.map {
             CKEPoint(
-                x: $0,
-                y: $1,
-                accessibilityValue: "\(configuration.legendTitle), \($0), \($1)"
+				x: $0.date,
+				xUnit: $0.dateComponent,
+				y: $0.value,
+				accessibilityValue: "\(configuration.legendTitle), \($0.date), \($0.value)"
             )
         }
 
@@ -210,7 +222,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
         _ events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>
     ) -> [CKEDataSeries] {
 
-        let progressLabels = calendarSymbols()
         let eventsGroupedByTaskID = groupEventsByTaskID(events)
 
         // swiftlint:disable:next line_length
@@ -251,7 +262,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 
                 let dataSeries = try computeDataSeries(
                     forProgress: periodicProgress,
-                    progressLabels: progressLabels,
                     configuration: configuration
                 )
 
@@ -364,7 +374,8 @@ extension CareEssentialChartView {
 
             let temporalProgress = TemporalProgress(
                 values: progressForEvents,
-                date: dateOfPeriodComponent
+                date: dateOfPeriodComponent,
+				dateComponent: periodComponent.1
             )
 
             return temporalProgress

@@ -10,7 +10,9 @@ import Foundation
 
 struct CKEPoint: Hashable, Identifiable {
     let id = UUID()
-    var x: String // swiftlint:disable:this identifier_name
+    var x: Date // swiftlint:disable:this identifier_name
+	var xUnit: Calendar.Component
     var y: Double // swiftlint:disable:this identifier_name
+	var yUnit: String?
     var accessibilityValue: String?
 }

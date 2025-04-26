@@ -12,7 +12,7 @@ extension CKEDataSeries: AXChartDescriptorRepresentable {
 	public func makeChartDescriptor() -> AXChartDescriptor {
 		let xAxis = AXCategoricalDataAxisDescriptor(
 			title: xLabel,
-			categoryOrder: dataPoints.map(\.x)
+			categoryOrder: dataPoints.map { "\($0.x)" }
 		)
 
 		let yValues = dataPoints.map(\.y)
@@ -30,7 +30,7 @@ extension CKEDataSeries: AXChartDescriptorRepresentable {
 		let series = AXDataSeriesDescriptor(
 			name: "DATA_SERIES",
 			isContinuous: isContinuous,
-			dataPoints: dataPoints.map { .init(x: $0.x, y: $0.y) }
+			dataPoints: dataPoints.map { .init(x: "\($0.x)", y: $0.y) }
 		)
 
 		let chart = AXChartDescriptor(
