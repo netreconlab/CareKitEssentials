@@ -56,16 +56,5 @@ struct CareEssentialChartBodyView: View {
 		.if(dataSeries.isEmpty == false) { chart in
 			chart.accessibilityChartDescriptor(dataSeries.first!)
 		}
-		.chartOverlay { proxy in
-			GeometryReader { _ in
-				Rectangle()
-					.fill(Color.accentColor.opacity(0.2))
-					.contentShape(Rectangle())
-					.onTapGesture { location in
-						let value = proxy.value(atX: location.x) ?? 0
-						Logger.essentialChartView.debug("Tapped on: \(value)")
-					}
-			}
-		}
     }
 }
