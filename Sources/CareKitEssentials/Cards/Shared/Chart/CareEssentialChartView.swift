@@ -25,8 +25,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
     let period: Calendar.Component
     let configurations: [CKEDataSeriesConfiguration]
 
-	@State var legendColors = [String: Color]()
-
     public var body: some View {
 
         let dataSeries = graphDataForEvents(events)
@@ -51,7 +49,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 				.chartForegroundStyleScale { (name: String) in
 					legendColors[name] ?? .clear
 				}
-
             }
             .padding(isCardEnabled ? [.all] : [])
         }
@@ -61,10 +58,17 @@ public struct CareEssentialChartView: CareKitEssentialView {
 		.onChange(of: dateInterval) { _ in
 			updateQuery()
 		}
-		.onReceive(events.publisher) { _ in
-			updateLegendColors(dataSeries: dataSeries)
+		.onChange(of: configurations) { _ in
+			updateQuery()
 		}
     }
+
+	private var legendColors: [String: Color] {
+		let updatedLegendColors = configurations.reduce(into: [String: Color]()) { colors, configuration in
+			colors[configuration.legendTitle] = configuration.color
+		}
+		return updatedLegendColors
+	}
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
 		eventQuery(
@@ -105,18 +109,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
 			events.query.dateInterval = dateInterval
 		}
     }
-
-	private func updateLegendColors(dataSeries: [CKEDataSeries]) {
-		let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
-			colors[series.title] = series.color
-		}
-		let updatedUniqueLegendColors = Set(updatedLegendColors.keys)
-		let currentUniqueLegendColors = Set(legendColors.keys)
-		guard updatedUniqueLegendColors != currentUniqueLegendColors else {
-			return
-		}
-		legendColors = updatedLegendColors
-	}
 
     private func computeProgress(
         for event: OCKAnyEvent,
