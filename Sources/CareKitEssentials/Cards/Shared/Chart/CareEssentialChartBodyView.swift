@@ -54,7 +54,7 @@ struct CareEssentialChartBodyView: View {
             .position(by: .value("DATA_SERIES", data.title))
         }
 		.if(dataSeries.isEmpty == false) { chart in
-			chart.accessibilityChartDescriptor(dataSeries.first!)
+			chart.accessibilityChartDescriptor(dataSeries.last!)
 		}
     }
 }

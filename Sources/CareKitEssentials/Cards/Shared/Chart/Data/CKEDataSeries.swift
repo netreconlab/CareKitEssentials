@@ -207,6 +207,7 @@ public struct CKEDataSeries: Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
+		summary: String? = nil,
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -217,6 +218,7 @@ public struct CKEDataSeries: Identifiable {
         self.mark = mark
         self.dataPoints = dataPoints
         self.title = title
+		self.summary = summary
         self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
@@ -242,6 +244,7 @@ public struct CKEDataSeries: Identifiable {
         mark: MarkType,
         dataPoints: [CKEPoint],
         title: String,
+		summary: String? = nil,
         color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
@@ -253,6 +256,7 @@ public struct CKEDataSeries: Identifiable {
         self.mark = mark
         self.dataPoints = dataPoints
         self.title = title
+		self.summary = summary
         self.color = color
         self.gradientStartColor = gradientStartColor
         self.stackingMethod = stackingMethod
@@ -303,6 +307,7 @@ public struct CKEDataSeries: Identifiable {
         values: [Double],
         accessibilityValues: [String]? = nil,
         title: String,
+		summary: String? = nil,
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -326,6 +331,7 @@ public struct CKEDataSeries: Identifiable {
             )
         }
         self.title = title
+		self.summary = summary
         self.color = color
         self.stackingMethod = stackingMethod
         self.width = width

@@ -75,6 +75,14 @@ public struct CareEssentialChartView: CareKitEssentialView {
 		return query
     }
 
+	/// Create an instance of chart for displaying CareKit data.
+	/// - title: The title for the chart.
+	/// - subtitle: The subtitle for the chart.
+	/// - dateInterval: The date interval of data to display
+	/// - period: The frequency at which data should be combined.
+	/// - configurations: A configuration object that specifies
+	/// which data should be queried and how it should be
+	/// displayed by the graph.
     public init(
         title: String,
         subtitle: String,
