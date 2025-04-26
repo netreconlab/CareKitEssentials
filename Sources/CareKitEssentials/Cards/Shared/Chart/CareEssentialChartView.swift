@@ -62,13 +62,13 @@ public struct CareEssentialChartView: CareKitEssentialView {
 
             }
             .padding(isCardEnabled ? [.all] : [])
-        }.onAppear {
-			let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
-				colors[series.title] = series.color
-			}
-			legendColors = updatedLegendColors
-            updateQuery()
         }
+		.onAppear {
+            updateQuery()
+		}
+		.onReceive(events.publisher) { _ in
+			updateLegendColors(dataSeries: dataSeries)
+		}
     }
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
@@ -97,6 +97,18 @@ public struct CareEssentialChartView: CareKitEssentialView {
         query.taskIDs = configurations.map(\.taskID)
         events.query = query
     }
+
+	private func updateLegendColors(dataSeries: [CKEDataSeries]) {
+		let updatedLegendColors = dataSeries.reduce(into: [String: Color]()) { colors, series in
+			colors[series.title] = series.color
+		}
+		let updatedUniqueLegendColors = Set(updatedLegendColors.keys)
+		let currentUniqueLegendColors = Set(legendColors.keys)
+		guard updatedUniqueLegendColors != currentUniqueLegendColors else {
+			return
+		}
+		legendColors = updatedLegendColors
+	}
 
     private func computeProgress(
         for event: OCKAnyEvent,
