@@ -85,9 +85,12 @@ public struct CareEssentialChartView: CareKitEssentialView {
     }
 
     private func updateQuery() {
-        var query = OCKEventQuery(dateInterval: dateInterval)
-        query.taskIDs = configurations.map(\.taskID)
-        events.query = query
+		let currentTaskIDs = Set(events.query.taskIDs)
+		let updatedTaskIDs = Set(configurations.map(\.taskID))
+		if currentTaskIDs != updatedTaskIDs {
+			events.query.taskIDs = Array(updatedTaskIDs)
+		}
+		events.query.dateInterval = dateInterval
     }
 
 	private func updateLegendColors(dataSeries: [CKEDataSeries]) {
