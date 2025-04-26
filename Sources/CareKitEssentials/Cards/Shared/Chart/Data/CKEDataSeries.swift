@@ -181,6 +181,15 @@ public struct CKEDataSeries: Identifiable {
 	/// The ways in which line or area marks interpolate their data.
 	public var interpolation: InterpolationMethod?
 
+	var isContinuous: Bool {
+		switch mark {
+		case .point, .bar:
+			return false
+		default:
+			return true
+		}
+	}
+
     var dataPoints: [CKEPoint]
 
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single

@@ -19,11 +19,23 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         taskID + "_" + legendTitle
     }
 
+	public enum DataStrategy {
+		case sum
+		case average
+		case median
+	}
+
     /// The type of mark to display for this configuration.
     public var mark: CKEDataSeries.MarkType
 
+	/// The type of strategy used to combine the date the plot.
+	public var dataStrategy: DataStrategy
+
     /// A user-provided unique id for a task.
     public var taskID: String
+
+	/// The kind property of the OCKOutcomeValue to graph.
+	public var kind: String?
 
     /// The title that will be used to represent this data series in the legend.
     public var legendTitle: String
@@ -64,6 +76,9 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///
     /// - Parameters:
     ///   - taskID: A user-provided unique id for a task.
+	///   - dataStrategy: The type of strategy used to combine the date the plot. Be sure
+	///   the `dataStrategy` matches the same strategy used for `computeProgress`.
+	///   - kind: The kind property of the OCKOutcomeValue to graph.
     ///   - mark: The type of mark to display for this configuration.
     ///   - legendTitle: The title that will be used to represent this data series in the legend.
     ///   - color: The color that will be used for data series in the legend. If `color`
@@ -76,6 +91,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
     ///   - computeProgress: Used to compute progress for an event.
     public init(
         taskID: String,
+		dataStrategy: DataStrategy = .sum,
+		kind: String? = nil,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
         color: Color,
@@ -90,6 +107,8 @@ public struct CKEDataSeriesConfiguration: Identifiable {
         }
     ) {
         self.taskID = taskID
+		self.dataStrategy = dataStrategy
+		self.kind = kind
         self.mark = mark
         self.legendTitle = legendTitle
         self.color = color
@@ -101,4 +120,63 @@ public struct CKEDataSeriesConfiguration: Identifiable {
 		self.interpolation = interpolation
         self.computeProgress = computeProgress
     }
+
+	/// Initialize a new `CareKitEssentialsDataSeriesConfiguration`.
+	///
+	/// - Parameters:
+	///   - taskID: A user-provided unique id for a task.
+	///   - dataStrategy: The type of strategy used to combine the date the plot.
+	///   - kind: The kind property of the OCKOutcomeValue to graph.
+	///   - mark: The type of mark to display for this configuration.
+	///   - legendTitle: The title that will be used to represent this data series in the legend.
+	///   - color: The color that will be used for data series in the legend. If `color`
+	///   is not specified, default colors will be assigned.
+	///   - gradientStartColor: The first of two colors that will be used in the gradient when plotting the data.
+	///   - markerSize: The marker size determines the size of the line, bar, or scatter plot elements.
+	///   - stackingMethod: The ways in which you can stack marks in a chart.
+	///   - symbol: A basic chart symbol shape.
+	///   - interpolation: The ways in which line or area marks interpolate their data.
+	///   - computeProgress: Used to compute progress for an event.
+	public init(
+		taskID: String,
+		dataStrategy: DataStrategy,
+		kind: String? = nil,
+		mark: CKEDataSeries.MarkType,
+		legendTitle: String,
+		color: Color,
+		gradientStartColor: Color? = nil,
+		width: MarkDimension = .automatic,
+		height: MarkDimension = .automatic,
+		stackingMethod: MarkStackingMethod = .standard,
+		symbol: BasicChartSymbolShape? = nil,
+		interpolation: InterpolationMethod? = nil
+	) {
+		self.taskID = taskID
+		self.dataStrategy = dataStrategy
+		self.kind = kind
+		self.mark = mark
+		self.legendTitle = legendTitle
+		self.color = color
+		self.gradientStartColor = gradientStartColor
+		self.width = width
+		self.height = height
+		self.stackingMethod = stackingMethod
+		self.symbol = symbol
+		self.interpolation = interpolation
+		switch dataStrategy {
+
+		case .sum:
+			self.computeProgress =  { event in
+				event.computeProgress(by: .summingOutcomeValues)
+			}
+		case .average:
+			self.computeProgress =  { event in
+				event.computeProgress(by: .averagingOutcomeValues(kind: kind))
+			}
+		case .median:
+			self.computeProgress =  { event in
+				event.computeProgress(by: .medianOutcomeValues(kind: kind))
+			}
+		}
+	}
 }

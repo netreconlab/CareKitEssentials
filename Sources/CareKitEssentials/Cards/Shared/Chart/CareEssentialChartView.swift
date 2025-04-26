@@ -122,18 +122,31 @@ public struct CareEssentialChartView: CareKitEssentialView {
         configuration: CKEDataSeriesConfiguration
     ) throws -> CKEDataSeries {
 
-        let summedProgressValues = allProgress.map { progress -> Double in
+        let combinedProgressValues = allProgress.map { progress -> Double in
 
-            let summedProgressValue = progress.values
+            let combinedProgressValues = progress.values
                 .map { $0.value }
-                .reduce(0, +)
 
-            return summedProgressValue
+			switch configuration.dataStrategy {
+			case .sum:
+				let combinedProgressValue = combinedProgressValues.reduce(0, +)
+
+				return combinedProgressValue
+			case .average:
+				let combinedProgressValue = LinearCareTaskProgress.computeProgressByAveraging(for: combinedProgressValues).value
+
+				return combinedProgressValue
+			case .median:
+				let combinedProgressValue = LinearCareTaskProgress.computeProgressByMedian(for: combinedProgressValues).value
+
+				return combinedProgressValue
+			}
+
         }
 
-        let summedProgressPoints = zip(
+        let combinedProgressPoints = zip(
             progressLabels,
-            summedProgressValues
+			combinedProgressValues
         ).map {
             CKEPoint(
                 x: $0,
@@ -143,7 +156,7 @@ public struct CareEssentialChartView: CareKitEssentialView {
         }
 
         let series = CKEDataSeries(
-            dataPoints: summedProgressPoints,
+            dataPoints: combinedProgressPoints,
 			configuration: configuration
         )
 

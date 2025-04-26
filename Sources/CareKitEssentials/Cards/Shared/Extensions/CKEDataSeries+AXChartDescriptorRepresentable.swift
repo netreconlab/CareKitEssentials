@@ -29,7 +29,7 @@ extension CKEDataSeries: AXChartDescriptorRepresentable {
 
 		let series = AXDataSeriesDescriptor(
 			name: "DATA_SERIES",
-			isContinuous: false,
+			isContinuous: isContinuous,
 			dataPoints: dataPoints.map { .init(x: $0.x, y: $0.y) }
 		)
 

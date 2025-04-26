@@ -75,10 +75,15 @@ public extension LinearCareTaskProgress {
             .reduce(nil) { partialResult, nextTarget -> Double? in
                 sum(partialResult, nextTarget)
             }
-        var value = 0.0
-        if completedOutcomesValues >= 1.0 {
-            value = summedOutcomesValue / completedOutcomesValues
+
+        guard completedOutcomesValues >= 1.0 else {
+			return LinearCareTaskProgress(
+				value: 0.0,
+				goal: summedTargetValue
+			)
         }
+
+		let value = summedOutcomesValue / completedOutcomesValues
         let progress = LinearCareTaskProgress(
             value: value,
             goal: summedTargetValue
@@ -106,24 +111,79 @@ public extension LinearCareTaskProgress {
                 sum(partialResult, nextTarget)
             }
 
-        var value = 0.0
-        if !allOutcomesValue.isEmpty {
-            let valueCount = allOutcomesValue.count
-            if (valueCount % 2) == 0 {
-                let index = valueCount / 2
-                value = (allOutcomesValue[index] + allOutcomesValue[index - 1]) / 2.0
-            } else {
-                value = allOutcomesValue[valueCount / 2]
-            }
+        guard !allOutcomesValue.isEmpty else {
+			return LinearCareTaskProgress(
+				value: 0.0,
+				goal: summedTargetValue
+			)
         }
 
-        let progress = LinearCareTaskProgress(
-            value: value,
-            goal: summedTargetValue
-        )
-
-        return progress
+		let valueCount = allOutcomesValue.count
+		if (valueCount % 2) == 0 {
+			let index = valueCount / 2
+			let value = (allOutcomesValue[index] + allOutcomesValue[index - 1]) / 2.0
+			let progress = LinearCareTaskProgress(
+				value: value,
+				goal: summedTargetValue
+			)
+			return progress
+		} else {
+			let value = allOutcomesValue[valueCount / 2]
+			let progress = LinearCareTaskProgress(
+				value: value,
+				goal: summedTargetValue
+			)
+			return progress
+		}
     }
+
+	static func computeProgressByAveraging(
+		for points: [Double]
+	) -> LinearCareTaskProgress {
+
+		let summedPoints = points
+			.reduce(0, +)
+
+		let totalPointsCount = Double(points.count)
+
+		guard totalPointsCount >= 1.0 else {
+			return LinearCareTaskProgress(value: 0.0)
+		}
+		let value = summedPoints / totalPointsCount
+		let progress = LinearCareTaskProgress(
+			value: value
+		)
+
+		return progress
+
+	}
+
+	static func computeProgressByMedian(
+		for points: [Double]
+	) -> LinearCareTaskProgress {
+
+		let sortedPoints = points.sorted()
+
+		guard !sortedPoints.isEmpty else {
+			return LinearCareTaskProgress(value: 0.0)
+		}
+
+		let valueCount = sortedPoints.count
+		if (valueCount % 2) == 0 {
+			let index = valueCount / 2
+			let value = (sortedPoints[index] + sortedPoints[index - 1]) / 2.0
+			let progress = LinearCareTaskProgress(
+				value: value
+			)
+			return progress
+		} else {
+			let value = sortedPoints[valueCount / 2]
+			let progress = LinearCareTaskProgress(
+				value: value
+			)
+			return progress
+		}
+	}
 }
 
 extension LinearCareTaskProgress {
