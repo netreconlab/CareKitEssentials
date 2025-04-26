@@ -397,14 +397,14 @@ extension CareEssentialChartView {
 		case .month:
 			let component = Calendar.Component.weekOfMonth
 			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, component],
+				[.year, .month, .day, component],
 				from: date
 			)
 			return (dateComponents, component)
 		case .year:
 			let component = Calendar.Component.month
 			let dateComponents = Calendar.current.dateComponents(
-				[.year, component],
+				[.year, .day, component],
 				from: date
 			)
 			return (dateComponents, component)
