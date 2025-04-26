@@ -64,10 +64,15 @@ public struct CareEssentialChartView: CareKitEssentialView {
     }
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
-        eventQuery(
-            with: taskIDs ?? [],
-            on: .init()
-        )
+		let interval = Calendar.current.dateInterval(
+			of: .weekOfYear,
+			for: Date()
+		)!
+
+		var query = OCKEventQuery(dateInterval: interval)
+		query.taskIDs = taskIDs ?? []
+
+		return query
     }
 
     public init(
