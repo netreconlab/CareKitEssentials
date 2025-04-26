@@ -58,6 +58,9 @@ public struct CareEssentialChartView: CareKitEssentialView {
 		.onAppear {
             updateQuery()
 		}
+		.onChange(of: dateInterval) { _ in
+			updateQuery()
+		}
 		.onReceive(events.publisher) { _ in
 			updateLegendColors(dataSeries: dataSeries)
 		}
