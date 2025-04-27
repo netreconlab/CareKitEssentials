@@ -20,6 +20,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
     @CareStoreFetchRequest(query: query()) private var events
+	@State var dataSeries = [CKEDataSeries]()
 
     let title: String
     let subtitle: String
@@ -52,13 +53,12 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 						.padding(.bottom)
 					}
 
-					let dataSeries = graphDataForEvents(events)
-
 					CareKitEssentialChartBodyView(
 						dataSeries: dataSeries
 					)
 					.onAppear {
 						updateQuery()
+						dataSeries = graphDataForEvents(events)
 					}
 					.onChange(of: dateInterval) { _ in
 						updateQuery()
@@ -68,6 +68,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					}
 					.onReceive(events.publisher) { _ in
 						updateQuery()
+						dataSeries = graphDataForEvents(events)
 					}
 				}
 				.padding(isCardEnabled ? [.all] : [])
