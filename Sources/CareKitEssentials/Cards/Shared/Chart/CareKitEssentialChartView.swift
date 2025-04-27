@@ -130,24 +130,21 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			return dateInterval
 		}
 		var weekDateInterval: DateInterval {
-			let interval = Calendar.current.dateInterval(
-				of: .weekOfYear,
+			let interval = Calendar.current.dateIntervalOfWeek(
 				for: Date()
-			)!
+			)
 			return interval
 		}
 		var monthDateInterval: DateInterval {
-			let interval = Calendar.current.dateInterval(
-				of: .month,
+			let interval = Calendar.current.dateIntervalOfMonth(
 				for: Date()
-			)!
+			)
 			return interval
 		}
 		var yearDateInterval: DateInterval {
-			let interval = Calendar.current.dateInterval(
-				of: .year,
+			let interval = Calendar.current.dateIntervalOfYear(
 				for: Date()
-			)!
+			)
 			return interval
 		}
 
