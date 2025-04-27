@@ -74,13 +74,16 @@ struct CareKitEssentialChartBodyView: View {
         }
 		.chartXAxis {
 			AxisMarks { _ in
-				if dataSeries.first?.dataPoints.first?.xUnit == .day {
+				if dataSeries.first?.dataPoints.first?.xUnit == .hour {
 					AxisValueLabel(
-						format: .dateTime.weekday(.abbreviated),
-						centered: true
+						format: .dateTime.hour(.defaultDigits(amPM: .abbreviated))
+					)
+				} else if dataSeries.first?.dataPoints.first?.xUnit == .day {
+					AxisValueLabel(
+						format: .dateTime.weekday(.abbreviated)
 					)
 				} else {
-					AxisValueLabel(centered: true)
+					AxisValueLabel()
 				}
 			}
 		}
