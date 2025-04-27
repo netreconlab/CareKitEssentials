@@ -170,38 +170,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
         return series
     }
 
-    // BAKER: Build symbols for rest of calendar periods.
-    private func calendarSymbols() -> [String] {
-		switch period {
-
-		case .day, .dayOfYear:
-			return ChartParameters.day.xAxisLabels
-
-		case .weekday, .weekOfMonth, .weekOfYear:
-#if watchOS
-			return Calendar.current.orderedWeekdaySymbolsShort()
-#else
-			return Calendar.current.orderedWeekdaySymbols()
-#endif
-
-		case .month:
-			return ChartParameters.month.xAxisLabels
-
-		case .year:
-#if watchOS
-			return Calendar.current.veryShortMonthSymbols()
-#else
-			return Calendar.current.standaloneMonthSymbols
-#endif
-		default:
-#if watchOS
-			return Calendar.current.orderedWeekdaySymbolsShort()
-#else
-			return Calendar.current.orderedWeekdaySymbols()
-#endif
-		}
-    }
-
     private func graphDataForEvents(
         _ events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>
     ) -> [CKEDataSeries] {
@@ -334,8 +302,7 @@ extension CareEssentialChartView {
 			let valueToIncrementBy = 1
             let periodComponent = try uniqueComponents(
 				for: currentDate,
-				during: component,
-				forGrouping: true
+				during: component
 			)
             periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
@@ -351,8 +318,7 @@ extension CareEssentialChartView {
 			by: {
 				try uniqueComponents(
 					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start,
-					during: component,
-					forGrouping: true
+					during: component
 				).componentsForProgress
 			}
         )
@@ -383,8 +349,7 @@ extension CareEssentialChartView {
 
 	private func uniqueComponents(
 		for date: Date,
-		during period: Calendar.Component,
-		forGrouping: Bool = false
+		during period: Calendar.Component
 	) throws -> DateComponentsForProgress {
 		switch period {
 		case .day, .dayOfYear:
