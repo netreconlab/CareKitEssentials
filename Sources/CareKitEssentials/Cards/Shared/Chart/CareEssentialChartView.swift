@@ -323,7 +323,8 @@ extension CareEssentialChartView {
 			let valueToIncrementBy = 1
             let periodComponent = uniqueComponents(
 				for: currentDate,
-				during: component
+				during: component,
+				forGrouping: true
 			)
             periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
@@ -340,7 +341,7 @@ extension CareEssentialChartView {
 				uniqueComponents(
 					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start,
 					during: component,
-					forGrouping: false
+					forGrouping: true
 				).0
 			}
         )
