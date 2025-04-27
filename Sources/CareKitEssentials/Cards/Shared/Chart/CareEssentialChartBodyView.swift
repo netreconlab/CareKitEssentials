@@ -74,14 +74,20 @@ struct CareEssentialChartBodyView: View {
         }
 		.chartXAxis {
 			AxisMarks { _ in
-				AxisGridLine()
 				if dataSeries.first?.dataPoints.first?.xUnit == .day {
-					AxisValueLabel(format: .dateTime.weekday(.abbreviated))
+					AxisValueLabel(
+						format: .dateTime.weekday(.abbreviated),
+						centered: true
+					)
+				} else {
+					AxisValueLabel(centered: true)
 				}
 			}
 		}
 		.chartYAxis {
-			AxisMarks(position: .leading)
+			AxisMarks(position: .leading) { _ in
+				AxisGridLine()
+			}
 		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
