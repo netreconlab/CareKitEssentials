@@ -39,6 +39,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					)
 					Spacer()
 					Image(systemName: "chevron.right")
+						.imageScale(.small)
 					#if os(iOS) || os(visionOS)
 						.foregroundColor(Color(style.color.secondaryLabel))
 					#else
@@ -166,7 +167,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 			return interval
 		}
 
-		NavigationStack {
+		ScrollView {
 			VStack {
 				CareKitEssentialChartView(
 					title: task.title ?? "",
