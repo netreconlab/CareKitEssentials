@@ -45,30 +45,31 @@ struct CareEssentialChartBodyView: View {
             .foregroundStyle(by: .value("DATA_SERIES", data.title))
             .position(by: .value("DATA_SERIES", data.title))
 
-			if showMeanMarker {
-				let mean = data.meanYValue
-				RuleMark(y: .value("AVERAGE", mean))
-					.foregroundStyle(.gray)
-					.annotation(
-						position: .bottom,
-						alignment: .bottomLeading
-					) {
-						Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
-							.font(.caption)
-					}
-			}
-
-			if showMedianMarker {
-				let median = data.medianYValue
-				RuleMark(y: .value("MEDIAN", median))
-					.foregroundStyle(.gray)
-					.annotation(
-						position: .bottom,
-						alignment: .bottomLeading
-					) {
-						Text(markerLocalizedString("MEDIAN_VALUE", value: median))
-							.font(.caption)
-					}
+			if data == dataSeries.last {
+				if showMeanMarker {
+					let mean = data.meanYValue
+					RuleMark(y: .value("AVERAGE", mean))
+						.foregroundStyle(.gray)
+						.annotation(
+							position: .bottom,
+							alignment: .bottomLeading
+						) {
+							Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
+								.font(.caption)
+						}
+				}
+				if showMedianMarker {
+					let median = data.medianYValue
+					RuleMark(y: .value("MEDIAN", median))
+						.foregroundStyle(.gray)
+						.annotation(
+							position: .bottom,
+							alignment: .bottomLeading
+						) {
+							Text(markerLocalizedString("MEDIAN_VALUE", value: median))
+								.font(.caption)
+						}
+				}
 			}
         }
 		.chartForegroundStyleScale { (name: String) in
@@ -88,10 +89,6 @@ struct CareEssentialChartBodyView: View {
 		}
 		.onAppear {
 			updateLegendColors()
-		}
-
-		if showMeanMarker {
-			EmptyView()
 		}
 	}
 
