@@ -425,34 +425,66 @@ struct CareEssentialChartView_Previews: PreviewProvider {
             gradientStartColor: .gray
         )
         let previewStore = Utility.createPreviewStore()
+		var dayDateInterval: DateInterval {
+			let now = Date()
+			let startOfDay = Calendar.current.startOfDay(
+				for: now
+			)
+			let dateInterval = DateInterval(
+				start: startOfDay,
+				end: now
+			)
+			return dateInterval
+		}
+		var weekDateInterval: DateInterval {
+			let interval = Calendar.current.dateInterval(
+				of: .weekOfYear,
+				for: Date()
+			)!
+			return interval
+		}
+		var monthDateInterval: DateInterval {
+			let interval = Calendar.current.dateInterval(
+				of: .month,
+				for: Date()
+			)!
+			return interval
+		}
+		var yearDateInterval: DateInterval {
+			let interval = Calendar.current.dateInterval(
+				of: .year,
+				for: Date()
+			)!
+			return interval
+		}
 
         ScrollView {
 			VStack {
 				CareEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Day",
-					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					dateInterval: dayDateInterval,
 					period: .day,
 					configurations: [configurationBar]
 				)
 				CareEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Week",
-					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					dateInterval: weekDateInterval,
 					period: .weekday,
 					configurations: [configurationBar]
 				)
 				CareEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Month",
-					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					dateInterval: monthDateInterval,
 					period: .month,
 					configurations: [configurationBar]
 				)
 				CareEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Year",
-					dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
+					dateInterval: yearDateInterval,
 					period: .year,
 					configurations: [configurationBar]
 				)

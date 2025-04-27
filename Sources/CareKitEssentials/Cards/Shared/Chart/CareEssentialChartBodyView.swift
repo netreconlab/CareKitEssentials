@@ -43,6 +43,9 @@ struct CareEssentialChartBodyView: View {
             .foregroundStyle(by: .value("DATA_SERIES", data.title))
             .position(by: .value("DATA_SERIES", data.title))
         }
+		.if(dataSeries.first != nil) { chartContent in
+			chartContent.chartXScale(domain: dataSeries.first!.minXValue...dataSeries.first!.maxXValue)
+		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
 				gradient: Gradient(

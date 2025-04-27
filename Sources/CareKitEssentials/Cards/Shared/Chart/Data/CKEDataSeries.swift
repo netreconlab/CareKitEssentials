@@ -13,7 +13,7 @@ import SwiftUI
 
 // swiftlint:disable vertical_parameter_alignment
 
-/// Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data
+/// Represents a single group of data to be plotted. In most cases, CareKitEssentials plots accept multiple data
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
 public struct CKEDataSeries: Identifiable, Hashable {
 
@@ -182,6 +182,25 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	/// The ways in which line or area marks interpolate their data.
 	public var interpolation: InterpolationMethod?
 
+    var dataPoints: [CKEPoint]
+	var xValues: [Date] {
+		dataPoints.map(\.x)
+	}
+	var maxXValue: Date {
+		xValues.max() ?? Date()
+	}
+	var minXValue: Date {
+		xValues.min() ?? Date()
+	}
+	var yValues: [Double] {
+		dataPoints.map(\.y)
+	}
+	var maxYValue: Double {
+		yValues.max() ?? 0
+	}
+	var minYValue: Double {
+		yValues.min() ?? 0
+	}
 	var isContinuous: Bool {
 		switch mark {
 		case .point, .bar:
@@ -191,8 +210,6 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 	}
 
-    var dataPoints: [CKEPoint]
-
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single
     /// solid color. Use this initialize if you wish to plot data at precise or irregular intervals.
     ///
@@ -200,9 +217,10 @@ public struct CKEDataSeries: Identifiable, Hashable {
     ///   - mark: The type of mark to display for this configuration.
     ///   - dataPoints: An array of points in graph space Cartesian coordinates. The origin is in bottom left corner.
     ///   - title: A title that will be used to represent this data series in the plot legend.
+	///   - summary: A summary describing the data.
     ///   - color: A solid color to be used when plotting the data series.
-    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
-    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - width: The width determines the size of the line, bar, or scatter plot elements.
+    ///   - height: The height determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
     init(
         mark: MarkType,
@@ -238,8 +256,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
     ///   - title: A title that will be used to represent this data series in the plot legend.
     ///   - color: The color that this data series will be plotted in.
     ///   - gradientStartColor: The start color for the gradient.
-    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
-    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - width: The width determines the size of the line, bar, or scatter plot elements.
+    ///   - height: The height determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
     init(
         mark: MarkType,
@@ -297,9 +315,10 @@ public struct CKEDataSeries: Identifiable, Hashable {
     ///   - accessibilityValues: Used to set the accessibility labels of each of the data points. This array should
     ///   either be empty or contain the same number of elements as the data series array.
     ///   - title: A title that will be used to represent this data series in the plot legend.
+	///   - summary: A summary describing the data.
     ///   - color: The color that this data series will be plotted in.
-    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
-    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - width: The width determines the size of the line, bar, or scatter plot elements.
+    ///   - height: The height determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
 	///   - symbol: A basic chart symbol shape.
 	///   - interpolation: The ways in which line or area marks interpolate their data.
@@ -360,8 +379,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
     ///   - title: A title that will be used to represent this data series in the plot legend.
     ///   - color: The color that this data series will be plotted in.
     ///   - gradientStartColor: The start color for the gradient.
-    ///   - width: The dimention specifying the width at which this data series should appear on the plot.
-    ///   - height: The dimention specifying the height at which this data series should appear on the plot.
+    ///   - width: The width determines the size of the line, bar, or scatter plot elements.
+    ///   - height: The height determines the size of the line, bar, or scatter plot elements.
     ///   - stackingMethod: The ways in which you can stack marks in a chart.
 	///   - symbol: A basic chart symbol shape.
 	///   - interpolation: The ways in which line or area marks interpolate their data.

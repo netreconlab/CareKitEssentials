@@ -15,10 +15,6 @@ extension CKEDataSeries: AXChartDescriptorRepresentable {
 			categoryOrder: dataPoints.map { "\($0.x)" }
 		)
 
-		let yValues = dataPoints.map(\.y)
-		let maxYValue = yValues.max() ?? 0
-		let minYValue = yValues.min() ?? 0
-
 		let yAxis = AXNumericDataAxisDescriptor(
 			title: yLabel,
 			range: minYValue...maxYValue,
