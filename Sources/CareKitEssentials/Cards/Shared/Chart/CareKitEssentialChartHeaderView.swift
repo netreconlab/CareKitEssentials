@@ -9,16 +9,28 @@
 import SwiftUI
 
 struct CareKitEssentialChartHeaderView: View {
+	@Environment(\.careKitStyle) private var style
     var title: String
     var subtitle: String
 
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 13)],
+		defaultValue: .caption
+	) private var font
+
     var body: some View {
-        VStack(alignment: .leading) {
+		VStack(
+			alignment: .leading,
+			spacing: style.dimension.directionalInsets1.top / 4.0
+		) {
             Text(title)
                 .font(.headline)
+				.fontWeight(.bold)
             Text(subtitle)
-                .font(.caption)
+                .font(font)
+				.fontWeight(.medium)
         }
+		.foregroundColor(Color(style.color.label))
     }
 }
 

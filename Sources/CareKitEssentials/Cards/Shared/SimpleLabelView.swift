@@ -76,7 +76,7 @@ public struct SimpleLabelView<Header: View>: View {
 							.fontWeight(.medium)
 
                     }
-                    .foregroundColor(Color.primary)
+					.foregroundColor(Color(style.color.label))
                     Spacer()
                     value?
                         .font(labelFont)

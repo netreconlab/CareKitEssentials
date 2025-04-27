@@ -61,7 +61,7 @@ public struct CustomLabelView<Header: View>: View {
                                 .fontWeight(.medium)
                         }
                     }
-                    .foregroundColor(Color.primary)
+					.foregroundColor(Color(style.color.label))
                     Spacer()
                     Text(viewModel.valueAsString)
                         .font(labelFont)

@@ -62,19 +62,11 @@ public struct InformationHeaderView: View {
                     information?
                         .font(font)
                         .fontWeight(.medium)
-                }.foregroundColor(Color.primary)
+                }
+				.foregroundColor(Color(style.color.label))
                 Spacer()
-				VStack {
-					Button(
-						action: {
-							isShowingDetails = true
-						}
-					) {
-						Image(systemName: "chevron.right")
-					}
-					.clipShape(Circle())
-					.fixedSize()
-				}
+				Image(systemName: "chevron.right")
+					.foregroundColor(Color(style.color.secondaryLabel))
             }
 			if event.task.impactsAdherence {
 				HStack {
@@ -99,6 +91,9 @@ public struct InformationHeaderView: View {
                 Divider()
             }
         }
+		.onTapGesture {
+			isShowingDetails.toggle()
+		}
         .sheet(isPresented: $isShowingDetails) {
             DetailsView(
 				event: event,

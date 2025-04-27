@@ -19,6 +19,7 @@ public typealias CareEssentialChartView = CareKitEssentialChartView
 public struct CareKitEssentialChartView: CareKitEssentialChartable {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
+	@Environment(\.careKitStyle) private var style
     @CareStoreFetchRequest(query: query()) private var events
 	@State var isShowingDetail: Bool = false
 
@@ -38,11 +39,13 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					)
 					Spacer()
 					Image(systemName: "chevron.right")
+						.foregroundColor(Color(style.color.secondaryLabel))
 				}
 				.padding(.bottom)
 				.onTapGesture {
 					isShowingDetail.toggle()
 				}
+				Divider()
 
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
