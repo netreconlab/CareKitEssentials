@@ -70,7 +70,7 @@ public struct InformationHeaderView: View {
 							isShowingDetails = true
 						}
 					) {
-						Image(systemName: "info.circle")
+						Image(systemName: "chevron.right")
 					}
 					.clipShape(Circle())
 					.fixedSize()

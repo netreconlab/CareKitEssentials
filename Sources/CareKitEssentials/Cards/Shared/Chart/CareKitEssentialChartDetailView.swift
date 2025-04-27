@@ -16,6 +16,7 @@ import SwiftUI
 
 struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@Environment(\.careStore) public var store
+	@Environment(\.dismiss) var dismiss
 	@CareStoreFetchRequest(query: query()) private var events
 
 	let title: String
@@ -25,32 +26,48 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	var configurations: [CKEDataSeriesConfiguration]
 
 	var body: some View {
+		NavigationView {
+			VStack(alignment: .leading) {
+				CareKitEssentialChartHeaderView(
+					title: title,
+					subtitle: subtitle
+				)
+				.padding(.bottom)
 
-		let dataSeries = graphDataForEvents(events)
-
-		VStack(alignment: .leading) {
-			CareKitEssentialChartHeaderView(
-				title: title,
-				subtitle: subtitle
-			)
-			.padding(.bottom)
-
-			CareKitEssentialChartBodyView(
-				dataSeries: dataSeries,
-				useFullAspectRating: true
-			)
+				let dataSeries = graphDataForEvents(events)
+				CareKitEssentialChartBodyView(
+					dataSeries: dataSeries,
+					useFullAspectRating: true
+				)
+				.onAppear {
+					updateQuery()
+				}
+				.onChange(of: dateInterval) { _ in
+					updateQuery()
+				}
+				.onChange(of: configurations) { _ in
+					updateQuery()
+				}
+				.onReceive(events.publisher) { _ in
+					updateQuery()
+				}
+			}
 		}
-		.onAppear {
-			updateQuery()
-		}
-		.onChange(of: dateInterval) { _ in
-			updateQuery()
-		}
-		.onChange(of: configurations) { _ in
-			updateQuery()
-		}
-		.onReceive(events.publisher) { _ in
-			updateQuery()
+		.toolbar {
+			ToolbarItem(placement: .topBarLeading) {
+				Text(title)
+					.font(.title)
+					.bold()
+			}
+			ToolbarItem(placement: .topBarTrailing) {
+				Button(action: {
+					dismiss()
+				}) {
+					Image(systemName: "x.circle.fill")
+						.foregroundStyle(.gray)
+						.opacity(0.5)
+				}
+			}
 		}
 	}
 
@@ -95,7 +112,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	}
 }
 
-struct CareEssentialChartDetailView_Previews: PreviewProvider {
+struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 	static var previews: some View {
 		let task = Utility.createNauseaTask()
 		let configurationBar = CKEDataSeriesConfiguration(
@@ -136,7 +153,7 @@ struct CareEssentialChartDetailView_Previews: PreviewProvider {
 			return interval
 		}
 
-		ScrollView {
+		NavigationStack {
 			VStack { /*
 				CareKitEssentialChartView(
 					title: task.title ?? "",
@@ -145,7 +162,7 @@ struct CareEssentialChartDetailView_Previews: PreviewProvider {
 					period: .day,
 					configurations: [configurationBar]
 				) */
-				CareKitEssentialChartView(
+				CareKitEssentialChartDetailView(
 					title: task.title ?? "",
 					subtitle: "Week",
 					dateInterval: weekDateInterval,

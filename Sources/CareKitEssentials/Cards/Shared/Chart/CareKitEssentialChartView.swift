@@ -20,7 +20,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
     @CareStoreFetchRequest(query: query()) private var events
-	@State var dataSeries = [CKEDataSeries]()
 	@State var isShowingDetail: Bool = false
 
     let title: String
@@ -32,26 +31,25 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
     public var body: some View {
 		CardView {
 			VStack(alignment: .leading) {
-				Button(action: {
+				HStack {
+					CareKitEssentialChartHeaderView(
+						title: title,
+						subtitle: subtitle
+					)
+					Spacer()
+					Image(systemName: "chevron.right")
+				}
+				.padding(.bottom)
+				.onTapGesture {
 					isShowingDetail.toggle()
-				}) {
-					HStack {
-						CareKitEssentialChartHeaderView(
-							title: title,
-							subtitle: subtitle
-						)
-						Spacer()
-						Image(systemName: "chevron.right")
-					}
-					.padding(.bottom)
 				}
 
+				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries
 				)
 				.onAppear {
 					updateQuery()
-					dataSeries = graphDataForEvents(events)
 				}
 				.onChange(of: dateInterval) { _ in
 					updateQuery()
@@ -61,20 +59,21 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				}
 				.onReceive(events.publisher) { _ in
 					updateQuery()
-					dataSeries = graphDataForEvents(events)
 				}
 			}
 			.padding(isCardEnabled ? [.all] : [])
 		}
-		.fullScreenCover(isPresented: $isShowingDetail) {
-			CareKitEssentialChartDetailView(
-				title: title,
-				subtitle: subtitle,
-				dateInterval: dateInterval,
-				period: period,
-				configurations: configurations
-			)
-			.padding()
+		.sheet(isPresented: $isShowingDetail) {
+			NavigationStack {
+				CareKitEssentialChartDetailView(
+					title: title,
+					subtitle: subtitle,
+					dateInterval: dateInterval,
+					period: period,
+					configurations: configurations
+				)
+				.padding()
+			}
 		}
     }
 
@@ -119,7 +118,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	}
 }
 
-struct CareEssentialChartView_Previews: PreviewProvider {
+struct CareKitEssentialChartView_Previews: PreviewProvider {
     static var previews: some View {
         let task = Utility.createNauseaTask()
         let configurationBar = CKEDataSeriesConfiguration(
@@ -160,7 +159,7 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			return interval
 		}
 
-		ScrollView {
+		NavigationStack {
 			VStack {
 				CareKitEssentialChartView(
 					title: task.title ?? "",
