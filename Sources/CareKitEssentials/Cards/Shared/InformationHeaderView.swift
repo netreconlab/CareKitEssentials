@@ -43,6 +43,10 @@ public struct InformationHeaderView: View {
         defaultValue: .caption
     ) private var font
 
+	var grayColor: Color {
+		Color(style.color.customGray)
+	}
+
     public var body: some View {
         VStack {
             HStack(
@@ -50,7 +54,7 @@ public struct InformationHeaderView: View {
             ) {
                 image?
                     .font(.largeTitle)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(grayColor)
                 VStack(
                     alignment: .leading,
                     spacing: style.dimension.directionalInsets1.top / 4.0
@@ -74,14 +78,14 @@ public struct InformationHeaderView: View {
 					Text("Required")
 						.font(font)
 						.bold()
-						.foregroundStyle(Color.secondary)
+						.foregroundStyle(Color(style.color.customGray))
 						.padding(.all, 3)
 						.background(
 							RoundedRectangle(cornerRadius: 4)
 								.stroke()
-								.foregroundStyle(Color.secondary)
+								.foregroundStyle(Color(style.color.customGray))
 								.shadow(
-									color: .secondary,
+									color: Color(style.color.customGray),
 									radius: 3
 								)
 						)

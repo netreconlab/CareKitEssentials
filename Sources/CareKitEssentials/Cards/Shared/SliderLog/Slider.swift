@@ -68,6 +68,10 @@ struct Slider: View {
         maximumDescription == nil ? String(format: "%g", range.1) : String(format: "%g", range.1) + ": " + maximumDescription!
     }
 
+	var grayColor: Color {
+		Color(style.color.customGray)
+	}
+
     public var body: some View {
         GeometryReader { geometry in
             view(geometry: geometry)
@@ -149,7 +153,7 @@ struct Slider: View {
                         )
                     addTicks(sliderWidth: sliderWidth)
                         .if(viewModel.isButtonDisabled) {
-                            $0.accentColor(Color.gray)
+                            $0.accentColor(grayColor)
                         }
                 }
                 .frame(width: sliderWidth, height: sliderHeight)
@@ -165,7 +169,7 @@ struct Slider: View {
                                     LinearGradient(gradient: Gradient(colors: gradientColors ?? []),
                                                    startPoint: .leading,
                                                    endPoint: .trailing) :
-                                    LinearGradient(gradient: Gradient(colors: [Color.gray]),
+                                    LinearGradient(gradient: Gradient(colors: [grayColor]),
                                                    startPoint: .leading,
                                                    endPoint: .trailing))
                     .mask(SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1))
@@ -173,7 +177,7 @@ struct Slider: View {
 
             SwiftUI.Slider(value: $viewModel.valueAsDouble, in: range.0...range.1, step: viewModel.step)
                 .if(gradientColors == nil) {
-                    $0.accentColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
+                    $0.accentColor(!viewModel.isButtonDisabled ? .accentColor : grayColor)
                 }
                 .if(gradientColors != nil) {
                     $0.accentColor(.clear)
@@ -188,7 +192,7 @@ struct Slider: View {
         let barLeft = Rectangle()
             .if(gradientColors == nil) {
                 $0.foregroundColor(
-                    !viewModel.isButtonDisabled ? .accentColor : Color.gray
+                    !viewModel.isButtonDisabled ? .accentColor : grayColor
                 )
             }
             .if(gradientColors != nil) {
@@ -205,14 +209,14 @@ struct Slider: View {
                         ) :
                         LinearGradient(
                             gradient: Gradient(
-                                colors: [Color.gray]
+                                colors: [grayColor]
                             ),
                             startPoint: .leading,
                             endPoint: .trailing
                         )
                     )
             }
-        let barRight = Color.white
+		let barRight = Color(style.color.white)
         return
             ZStack {
                 barLeft.modifier(
@@ -234,7 +238,7 @@ struct Slider: View {
                     cornerRadius: cornerRadius!
                 )
                 .stroke(
-                    Color.gray,
+					grayColor,
                     lineWidth: borderWidth
                 )
             }
@@ -288,7 +292,7 @@ private struct SliderTickMark: View {
     private let sliderHeight: CGFloat
     private let width: CGFloat
     private var color: Color {
-        value > sliderValue ? Color.gray : value == sliderValue ? .clear : Color.white
+        value > sliderValue ? grayColor : value == sliderValue ? .clear : Color(style.color.white)
     }
 
     public init(sliderValue: Binding<Double>,
@@ -307,6 +311,10 @@ private struct SliderTickMark: View {
             .fill(color)
             .frame(width: width, height: sliderHeight)
     }
+
+	var grayColor: Color {
+		Color(style.color.customGray)
+	}
 }
 
 private struct SliderModifier: ViewModifier {

@@ -37,6 +37,7 @@ public struct DetailsView: View {
         VStack {
             Image.asset(event.task.asset)?
                 .resizable()
+				.foregroundStyle(Color.accentColor)
                 .aspectRatio(contentMode: .fit)
                 .padding()
 

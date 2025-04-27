@@ -28,6 +28,10 @@ struct SliderLogButton: CareKitEssentialView {
             .fill(Color.accentColor)
     }
 
+	var grayColor: Color {
+		Color(style.color.customGray)
+	}
+
     var valueAsString: String {
         // swiftlint:disable:next line_length
         viewModel.previousValues.count == 0 ? loc("NO_VALUES_LOGGED") : (loc("LATEST_VALUE") + ": " + String(format: "%g", latestValue))
@@ -58,7 +62,7 @@ struct SliderLogButton: CareKitEssentialView {
                 .foregroundColor(.accentColor)
             }
             .disabled(viewModel.isButtonDisabled)
-            .foregroundColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
+            .foregroundColor(!viewModel.isButtonDisabled ? .accentColor : grayColor)
             .padding(.bottom)
 
             Button(action: {}) {
