@@ -10,6 +10,8 @@ import CareKitUI
 import CareKitStore
 import SwiftUI
 
+// swiftlint:disable vertical_parameter_alignment
+
 /// Header used for most CareKit cards.
 ///
 /// # Style
