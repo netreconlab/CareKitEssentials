@@ -47,10 +47,8 @@ public struct CustomLabelView<Header: View>: View {
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
 
                     viewModel.event.image()?
-                        .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 25, height: 30)
-                        .foregroundColor(Color.accentColor)
+						.imageScale(.large)
+						.foregroundColor(Color.accentColor)
 						.padding()
 
                     VStack(alignment: .leading,

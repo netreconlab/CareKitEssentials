@@ -153,22 +153,7 @@ public extension OCKAnyEvent {
     }
 
     func image() -> Image? {
-        #if canImport(UIKit)
-        guard let asset = self.asset else {
-            return nil
-        }
-        return Image(uiImage: asset)
-        #elseif canImport(AppKit)
-        guard let asset = self.asset else {
-            return nil
-        }
-        return Image(nsImage: asset)
-        #else
-        guard let asset = self.task.asset else {
-            return nil
-        }
-        return Image(name: asset)
-        #endif
+		Image.asset(self.task.asset)
     }
 }
 

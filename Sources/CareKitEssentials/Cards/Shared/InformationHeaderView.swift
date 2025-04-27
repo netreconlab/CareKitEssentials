@@ -76,6 +76,7 @@ public struct InformationHeaderView: View {
 				#endif
                 Spacer()
 				Image(systemName: "chevron.right")
+					.imageScale(.small)
 				#if os(iOS) || os(visionOS)
 					.foregroundColor(Color(style.color.secondaryLabel))
 				#else

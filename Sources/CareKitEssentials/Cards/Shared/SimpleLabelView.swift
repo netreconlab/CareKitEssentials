@@ -58,9 +58,7 @@ public struct SimpleLabelView<Header: View>: View {
                     spacing: style.dimension.directionalInsets2.trailing
                 ) {
                     image?
-                        .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 25, height: 30)
+						.imageScale(.large)
                         .foregroundColor(Color.accentColor)
                     VStack(
                         alignment: .leading,
