@@ -13,7 +13,7 @@ import SwiftUI
 struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
-	@State var showMeanMarker: Bool = true
+	@State var showMeanMarker: Bool = false
 	@State var showMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
 
@@ -51,8 +51,8 @@ struct CareEssentialChartBodyView: View {
 					RuleMark(y: .value("AVERAGE", mean))
 						.foregroundStyle(.gray)
 						.annotation(
-							position: .bottom,
-							alignment: .bottomLeading
+							position: .top,
+							alignment: .topLeading
 						) {
 							Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
 								.font(.caption)
@@ -63,8 +63,8 @@ struct CareEssentialChartBodyView: View {
 					RuleMark(y: .value("MEDIAN", median))
 						.foregroundStyle(.gray)
 						.annotation(
-							position: .bottom,
-							alignment: .bottomLeading
+							position: .top,
+							alignment: .topLeading
 						) {
 							Text(markerLocalizedString("MEDIAN_VALUE", value: median))
 								.font(.caption)
@@ -72,6 +72,17 @@ struct CareEssentialChartBodyView: View {
 				}
 			}
         }
+		.chartXAxis {
+			AxisMarks { _ in
+				AxisGridLine()
+				if dataSeries.first?.dataPoints.first?.xUnit == .day {
+					AxisValueLabel(format: .dateTime.weekday(.abbreviated))
+				}
+			}
+		}
+		.chartYAxis {
+			AxisMarks(position: .leading)
+		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
 				gradient: Gradient(

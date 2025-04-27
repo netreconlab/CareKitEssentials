@@ -40,12 +40,6 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 CareEssentialChartBodyView(
                     dataSeries: dataSeries
                 )
-				.chartXAxis {
-					AxisMarks(stroke: StrokeStyle(lineWidth: 0))
-				}
-				.chartYAxis {
-					AxisMarks(position: .leading)
-				}
             }
             .padding(isCardEnabled ? [.all] : [])
         }
