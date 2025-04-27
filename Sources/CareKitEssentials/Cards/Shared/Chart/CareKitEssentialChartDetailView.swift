@@ -28,12 +28,13 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	var body: some View {
 		NavigationView {
 			VStack(alignment: .leading) {
+				/*
 				CareKitEssentialChartHeaderView(
 					title: title,
 					subtitle: subtitle
 				)
 				.padding(.bottom)
-
+				 */
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries,
@@ -53,11 +54,11 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				}
 			}
 		}
-		#if !os(watchOS)
+		#if !os(watchOS) && !os(macOS)
 		.toolbar {
 			ToolbarItem(placement: .topBarLeading) {
 				Text(title)
-					.font(.title)
+					.font(.title3)
 					.bold()
 			}
 			ToolbarItem(placement: .topBarTrailing) {
