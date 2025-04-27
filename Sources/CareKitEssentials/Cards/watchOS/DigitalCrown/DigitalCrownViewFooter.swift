@@ -18,11 +18,6 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
     @Environment(\.careStore) public var store
     @StateObject var viewModel: DigitalCrownViewModel
 
-    @OSValue<CGFloat>(
-        values: [.watchOS: 8],
-        defaultValue: 14
-    ) private var padding
-
     @OSValue<Font>(
         values: [.watchOS: .system(size: 15)],
         defaultValue: .title
@@ -73,7 +68,7 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
 							.font(font)
                         Spacer()
                     }
-                    .padding(padding.scaled())
+                    .padding()
                 }
             }
             .buttonStyle(NoHighlightStyle())
