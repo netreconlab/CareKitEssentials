@@ -53,6 +53,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				}
 			}
 		}
+		#if !os(watchOS)
 		.toolbar {
 			ToolbarItem(placement: .topBarLeading) {
 				Text(title)
@@ -69,6 +70,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				}
 			}
 		}
+		#endif
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
