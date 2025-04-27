@@ -54,12 +54,12 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			}
 		}
 		.toolbar {
-			ToolbarItem(placement: .navigationBarLeading) {
+			ToolbarItem(placement: .topBarLeading) {
 				Text(title)
 					.font(.title)
 					.bold()
 			}
-			ToolbarItem(placement: .navigationBarTrailing) {
+			ToolbarItem(placement: .topBarTrailing) {
 				Button(action: {
 					dismiss()
 				}) {
