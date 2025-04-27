@@ -69,7 +69,11 @@ struct Slider: View {
     }
 
 	var grayColor: Color {
+		#if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
 	}
 
     public var body: some View {
@@ -313,7 +317,11 @@ private struct SliderTickMark: View {
     }
 
 	var grayColor: Color {
+		#if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
 	}
 }
 

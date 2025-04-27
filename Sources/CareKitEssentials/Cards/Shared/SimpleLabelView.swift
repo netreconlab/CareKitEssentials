@@ -76,7 +76,11 @@ public struct SimpleLabelView<Header: View>: View {
 							.fontWeight(.medium)
 
                     }
-					.foregroundColor(Color(style.color.label))
+					#if os(iOS) || os(visionOS)
+					.foregroundColor(Color(style.color.secondaryLabel))
+					#else
+					.foregroundColor(Color.secondary)
+					#endif
                     Spacer()
                     value?
                         .font(labelFont)

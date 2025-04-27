@@ -24,7 +24,6 @@ public struct SurveyStep: Codable, Hashable, Identifiable {
 	/// The image displayed in the header.
 	public var image: Image? {
 		Image.asset(asset)
-			.foregroundStyle(Color.accentColor)
 	}
 
 	/// Creates an instance.

@@ -44,7 +44,11 @@ public struct InformationHeaderView: View {
     ) private var font
 
 	var grayColor: Color {
+		#if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
 	}
 
     public var body: some View {
@@ -67,10 +71,16 @@ public struct InformationHeaderView: View {
                         .font(font)
                         .fontWeight(.medium)
                 }
+				#if os(iOS) || os(visionOS)
 				.foregroundColor(Color(style.color.label))
+				#endif
                 Spacer()
 				Image(systemName: "chevron.right")
+				#if os(iOS) || os(visionOS)
 					.foregroundColor(Color(style.color.secondaryLabel))
+				#else
+					.foregroundColor(Color.secondary)
+				#endif
             }
 			if event.task.impactsAdherence {
 				HStack {
@@ -78,14 +88,14 @@ public struct InformationHeaderView: View {
 					Text("Required")
 						.font(font)
 						.bold()
-						.foregroundStyle(Color(style.color.customGray))
+						.foregroundStyle(grayColor)
 						.padding(.all, 3)
 						.background(
 							RoundedRectangle(cornerRadius: 4)
 								.stroke()
-								.foregroundStyle(Color(style.color.customGray))
+								.foregroundStyle(grayColor)
 								.shadow(
-									color: Color(style.color.customGray),
+									color: grayColor,
 									radius: 3
 								)
 						)

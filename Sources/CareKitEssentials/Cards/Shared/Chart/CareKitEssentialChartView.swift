@@ -39,7 +39,11 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					)
 					Spacer()
 					Image(systemName: "chevron.right")
+					#if os(iOS) || os(visionOS)
 						.foregroundColor(Color(style.color.secondaryLabel))
+					#else
+						.foregroundColor(Color.secondary)
+					#endif
 				}
 				.padding(.bottom)
 				.onTapGesture {

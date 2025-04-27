@@ -29,7 +29,11 @@ struct SliderLogButton: CareKitEssentialView {
     }
 
 	var grayColor: Color {
+		#if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
 	}
 
     var valueAsString: String {

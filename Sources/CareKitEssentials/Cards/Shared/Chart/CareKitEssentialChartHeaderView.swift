@@ -30,7 +30,9 @@ struct CareKitEssentialChartHeaderView: View {
                 .font(font)
 				.fontWeight(.medium)
         }
+		#if os(iOS) || os(visionOS)
 		.foregroundColor(Color(style.color.label))
+		#endif
     }
 }
 

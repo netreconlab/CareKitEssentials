@@ -61,7 +61,9 @@ public struct CustomLabelView<Header: View>: View {
                                 .fontWeight(.medium)
                         }
                     }
+					#if os(iOS) || os(visionOS)
 					.foregroundColor(Color(style.color.label))
+					#endif
                     Spacer()
                     Text(viewModel.valueAsString)
                         .font(labelFont)
