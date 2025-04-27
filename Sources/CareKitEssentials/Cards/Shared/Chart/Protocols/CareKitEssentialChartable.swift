@@ -8,7 +8,6 @@
 
 import CareKit
 import CareKitStore
-import CareKitUI
 import Charts
 import Foundation
 import os.log
@@ -57,7 +56,7 @@ extension CareKitEssentialChartable {
 
 				return progress
 			} catch {
-				Logger.essentialChartView.error(
+				Logger.essentialChartable.error(
 					"Cannot compute progress for configuration \(configuration.id) because of error: \(error)"
 				)
 				let progress = TemporalTaskProgress<LinearCareTaskProgress>(
@@ -88,7 +87,7 @@ extension CareKitEssentialChartable {
 			return dataSeries
 
 		} catch {
-			Logger.essentialChartView.error(
+			Logger.essentialChartable.error(
 				"Cannot generate data series: \(error)"
 			)
 			return []

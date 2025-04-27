@@ -1,5 +1,5 @@
 //
-//  CareEssentialChartView.swift
+//  CareKitEssentialChartView.swift
 //  CareKitEssentials
 //
 //  Created by Zion Glover on 6/26/24.
@@ -14,10 +14,13 @@ import Foundation
 import os.log
 import SwiftUI
 
-public struct CareEssentialChartView: CareKitEssentialChartable {
+public typealias CareEssentialChartView = CareKitEssentialChartView
+
+public struct CareKitEssentialChartView: CareKitEssentialChartable {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
     @CareStoreFetchRequest(query: query()) private var events
+	@State var isShowingDetails = false
 
     let title: String
     let subtitle: String
@@ -31,13 +34,13 @@ public struct CareEssentialChartView: CareKitEssentialChartable {
 
         CardView {
             VStack(alignment: .leading) {
-                CareEssentialChartHeaderView(
+                CareKitEssentialChartHeaderView(
                     title: title,
                     subtitle: subtitle
                 )
                 .padding(.bottom)
 
-                CareEssentialChartBodyView(
+                CareKitEssentialChartBodyView(
                     dataSeries: dataSeries
                 )
             }
@@ -54,6 +57,12 @@ public struct CareEssentialChartView: CareKitEssentialChartable {
 		}
 		.onReceive(events.publisher) { _ in
 			updateQuery()
+		}
+		.onTapGesture {
+			isShowingDetails.toggle()
+		}
+		.sheet(isPresented: $isShowingDetails) {
+			EmptyView()
 		}
     }
 
@@ -144,28 +153,28 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 
         ScrollView {
 			VStack {
-				CareEssentialChartView(
+				CareKitEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Day",
 					dateInterval: dayDateInterval,
 					period: .day,
 					configurations: [configurationBar]
 				)
-				CareEssentialChartView(
+				CareKitEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
 					period: .weekday,
 					configurations: [configurationBar]
 				)
-				CareEssentialChartView(
+				CareKitEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Month",
 					dateInterval: monthDateInterval,
 					period: .month,
 					configurations: [configurationBar]
 				)
-				CareEssentialChartView(
+				CareKitEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Year",
 					dateInterval: yearDateInterval,

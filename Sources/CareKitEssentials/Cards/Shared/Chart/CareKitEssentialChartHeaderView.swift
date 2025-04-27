@@ -1,5 +1,5 @@
 //
-//  Header.swift
+//  CareKitEssentialChartHeaderView.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 11/29/24.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CareEssentialChartHeaderView: View {
+struct CareKitEssentialChartHeaderView: View {
     var title: String
     var subtitle: String
 
@@ -24,7 +24,7 @@ struct CareEssentialChartHeaderView: View {
 
 struct CareEssentialChartHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        CareEssentialChartHeaderView(
+        CareKitEssentialChartHeaderView(
             title: "Title",
             subtitle: "Subtitle"
         )

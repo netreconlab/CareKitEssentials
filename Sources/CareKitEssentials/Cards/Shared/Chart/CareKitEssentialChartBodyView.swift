@@ -1,5 +1,5 @@
 //
-//  CareEssentialChartBodyView.swift
+//  CareKitEssentialChartBodyView.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 12/1/24.
@@ -10,11 +10,11 @@ import Charts
 import os.log
 import SwiftUI
 
-struct CareEssentialChartBodyView: View {
+struct CareKitEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
-	@State var showMeanMarker: Bool = false
-	@State var showMedianMarker: Bool = false
+	@State var isShowingMeanMarker: Bool = false
+	@State var isShowingMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
 
     var body: some View {
@@ -46,7 +46,7 @@ struct CareEssentialChartBodyView: View {
             .position(by: .value("DATA_SERIES", data.title))
 
 			if data == dataSeries.last {
-				if showMeanMarker {
+				if isShowingMeanMarker {
 					let mean = data.meanYValue
 					RuleMark(y: .value("AVERAGE", mean))
 						.foregroundStyle(.gray)
@@ -58,7 +58,7 @@ struct CareEssentialChartBodyView: View {
 								.font(.caption)
 						}
 				}
-				if showMedianMarker {
+				if isShowingMedianMarker {
 					let median = data.medianYValue
 					RuleMark(y: .value("MEDIAN", median))
 						.foregroundStyle(.gray)

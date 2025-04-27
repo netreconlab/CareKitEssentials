@@ -25,14 +25,14 @@
 		7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */; };
 		7026DDFB2D0D3C86002EACAA /* CareStoreFetchedResult+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */; };
 		7026DDFD2D0D45B9002EACAA /* OCKStore+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */; };
-		702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */; };
+		702FF76B2CFAA93C00B26710 /* CareKitEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */; };
 		702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */; };
 		702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */; };
 		702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7702CFAA96B00B26710 /* CKEPoint.swift */; };
 		702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7722CFAA97500B26710 /* TemporalProgress.swift */; };
 		702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */; };
-		702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */; };
-		702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */; };
+		702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */; };
+		702FF7792CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */; };
 		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
 		7068BD3D2D62774400212E4A /* OCKHealthKitPassthroughStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */; };
 		7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */; };
@@ -173,14 +173,14 @@
 		7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Equatable.swift"; sourceTree = "<group>"; };
 		7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResult+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKStore+Hashable.swift"; sourceTree = "<group>"; };
-		702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartView.swift; sourceTree = "<group>"; };
+		702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartView.swift; sourceTree = "<group>"; };
 		702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeries.swift; sourceTree = "<group>"; };
 		702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeriesConfiguration.swift; sourceTree = "<group>"; };
 		702FF7702CFAA96B00B26710 /* CKEPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEPoint.swift; sourceTree = "<group>"; };
 		702FF7722CFAA97500B26710 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
 		702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
-		702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartHeaderView.swift; sourceTree = "<group>"; };
-		702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartBodyView.swift; sourceTree = "<group>"; };
+		702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartHeaderView.swift; sourceTree = "<group>"; };
+		702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartBodyView.swift; sourceTree = "<group>"; };
 		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
 		704D03532DBA132C00AFE855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKHealthKitPassthroughStore.swift; sourceTree = "<group>"; };
@@ -314,9 +314,9 @@
 		702FF7672CFAA8B300B26710 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */,
-				702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */,
-				702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */,
+				702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */,
+				702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */,
+				702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */,
 				702FF7682CFAA92000B26710 /* Data */,
 				702FF7692CFAA92A00B26710 /* Progress */,
 				70116AF62DBDF5A00024BB89 /* Protocols */,
@@ -812,11 +812,11 @@
 				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
-				702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */,
+				702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
-				702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */,
+				702FF76B2CFAA93C00B26710 /* CareKitEssentialChartView.swift in Sources */,
 				70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */,
 				702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */,
 				7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */,
@@ -836,7 +836,7 @@
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				700DA9072C2A66BF00435E2C /* Logger.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
-				702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */,
+				702FF7792CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				709530AF2DAC398300E18A59 /* ResearchCareForm.swift in Sources */,
