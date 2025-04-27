@@ -88,7 +88,6 @@ public struct InformationHeaderView: View {
             }
 			if event.task.impactsAdherence {
 				HStack {
-					Spacer()
 					Text("Required")
 						.font(font)
 						.bold()
@@ -103,6 +102,7 @@ public struct InformationHeaderView: View {
 									radius: 3
 								)
 						)
+					Spacer()
 				}
 			}
             if includeDivider {
