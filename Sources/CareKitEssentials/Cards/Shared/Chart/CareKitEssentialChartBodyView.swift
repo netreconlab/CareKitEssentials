@@ -13,6 +13,7 @@ import SwiftUI
 struct CareKitEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
+	var useFullAspectRating: Bool = false
 	@State var isShowingMeanMarker: Bool = false
 	@State var isShowingMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
@@ -103,6 +104,9 @@ struct CareKitEssentialChartBodyView: View {
 				startPoint: .bottom,
 				endPoint: .top
 			)
+		}
+		.if(useFullAspectRating) { chart in
+			chart.aspectRatio(1, contentMode: .fit)
 		}
 		.if(dataSeries.isEmpty == false) { chart in
 			chart.accessibilityChartDescriptor(dataSeries.last!)

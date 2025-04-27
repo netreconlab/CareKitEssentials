@@ -20,7 +20,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
     @Environment(\.careStore) public var store
     @Environment(\.isCardEnabled) private var isCardEnabled
     @CareStoreFetchRequest(query: query()) private var events
-	@State var isShowingDetails = false
 
     let title: String
     let subtitle: String
@@ -29,41 +28,51 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
     var configurations: [CKEDataSeriesConfiguration]
 
     public var body: some View {
+		NavigationStack {
+			CardView {
+				VStack(alignment: .leading) {
+					NavigationLink {
+						CareKitEssentialChartDetailView(
+							title: title,
+							subtitle: subtitle,
+							dateInterval: dateInterval,
+							period: period,
+							configurations: configurations
+						)
+						.padding()
+					} label: {
+						HStack {
+							CareKitEssentialChartHeaderView(
+								title: title,
+								subtitle: subtitle
+							)
+							Spacer()
+							Image(systemName: "chevron.right")
+						}
+						.padding(.bottom)
+					}
 
-        let dataSeries = graphDataForEvents(events)
+					let dataSeries = graphDataForEvents(events)
 
-        CardView {
-            VStack(alignment: .leading) {
-                CareKitEssentialChartHeaderView(
-                    title: title,
-                    subtitle: subtitle
-                )
-                .padding(.bottom)
-
-                CareKitEssentialChartBodyView(
-                    dataSeries: dataSeries
-                )
-            }
-            .padding(isCardEnabled ? [.all] : [])
+					CareKitEssentialChartBodyView(
+						dataSeries: dataSeries
+					)
+					.onAppear {
+						updateQuery()
+					}
+					.onChange(of: dateInterval) { _ in
+						updateQuery()
+					}
+					.onChange(of: configurations) { _ in
+						updateQuery()
+					}
+					.onReceive(events.publisher) { _ in
+						updateQuery()
+					}
+				}
+				.padding(isCardEnabled ? [.all] : [])
+			}
         }
-		.onAppear {
-            updateQuery()
-		}
-		.onChange(of: dateInterval) { _ in
-			updateQuery()
-		}
-		.onChange(of: configurations) { _ in
-			updateQuery()
-		}
-		.onReceive(events.publisher) { _ in
-			updateQuery()
-		}
-		.onTapGesture {
-			isShowingDetails.toggle()
-		}
-		.sheet(isPresented: $isShowingDetails) {
-			EmptyView()
-		}
     }
 
     static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
@@ -148,7 +157,7 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			return interval
 		}
 
-        ScrollView {
+		NavigationStack {
 			VStack {
 				CareKitEssentialChartView(
 					title: task.title ?? "",
