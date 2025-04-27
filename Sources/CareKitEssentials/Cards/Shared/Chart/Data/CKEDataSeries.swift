@@ -201,6 +201,12 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	var minYValue: Double {
 		yValues.min() ?? 0
 	}
+	var meanYValue: Double {
+		LinearCareTaskProgress.computeProgressByAveraging(for: yValues).value
+	}
+	var medianYValue: Double {
+		LinearCareTaskProgress.computeProgressByMedian(for: yValues).value
+	}
 	var isContinuous: Bool {
 		switch mark {
 		case .point, .bar:

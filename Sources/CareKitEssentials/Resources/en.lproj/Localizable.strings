@@ -2,3 +2,7 @@
 "VALUE" = "Value";
 "DATA_SERIES" = "Data Series";
 "VALUE_POINT" = "%D point";
+"AVERAGE" = "Average";
+"MEDIAN" = "Median";
+"AVERAGE_VALUE" = "Average: %D";
+"MEDIAN_VALUE" = "Median: %D";

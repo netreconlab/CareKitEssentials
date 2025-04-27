@@ -13,6 +13,8 @@ import SwiftUI
 struct CareEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
+	@State var showMeanMarker: Bool = true
+	@State var showMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
 
     var body: some View {
@@ -42,10 +44,33 @@ struct CareEssentialChartBodyView: View {
 			)
             .foregroundStyle(by: .value("DATA_SERIES", data.title))
             .position(by: .value("DATA_SERIES", data.title))
+
+			if showMeanMarker {
+				let mean = data.meanYValue
+				RuleMark(y: .value("AVERAGE", mean))
+					.foregroundStyle(.gray)
+					.annotation(
+						position: .bottom,
+						alignment: .bottomLeading
+					) {
+						Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
+							.font(.caption)
+					}
+			}
+
+			if showMedianMarker {
+				let median = data.medianYValue
+				RuleMark(y: .value("MEDIAN", median))
+					.foregroundStyle(.gray)
+					.annotation(
+						position: .bottom,
+						alignment: .bottomLeading
+					) {
+						Text(markerLocalizedString("MEDIAN_VALUE", value: median))
+							.font(.caption)
+					}
+			}
         }
-		.if(dataSeries.first != nil) { chartContent in
-			chartContent.chartXScale(domain: dataSeries.first!.minXValue...dataSeries.first!.maxXValue)
-		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
 				gradient: Gradient(
@@ -64,6 +89,20 @@ struct CareEssentialChartBodyView: View {
 		.onAppear {
 			updateLegendColors()
 		}
+
+		if showMeanMarker {
+			EmptyView()
+		}
+	}
+
+	private func markerLocalizedString(_ key: String, value: Double) -> String {
+		String(
+			format: NSLocalizedString(
+				key,
+				comment: ""
+			),
+			value
+		)
 	}
 
 	private func updateLegendColors() {
