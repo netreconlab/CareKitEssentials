@@ -14,6 +14,7 @@
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
 		70116AF12DBC634D0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */; };
+		70116AF52DBDC5B10024BB89 /* DateComponentsForProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */; };
 		7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */; };
 		7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */; };
 		7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */; };
@@ -160,6 +161,7 @@
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
 		700DA9062C2A66BF00435E2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKEDataSeries+AXChartDescriptorRepresentable.swift"; sourceTree = "<group>"; };
+		70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsForProgress.swift; sourceTree = "<group>"; };
 		7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleElement+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSemanticVersion+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKNote+Hashable.swift"; sourceTree = "<group>"; };
@@ -529,6 +531,7 @@
 			children = (
 				911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */,
 				709530B72DAC3DF400E18A59 /* CareKitEssentialsUserInfoKey.swift */,
+				70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */,
 				OBJ_41 /* OSValue.swift */,
 				OBJ_42 /* ScheduleUtility.swift */,
 				709530B12DAC3AFB00E18A59 /* SurveyQuestion.swift */,
@@ -843,6 +846,7 @@
 				OBJ_765 /* UIImage.swift in Sources */,
 				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
+				70116AF52DBDC5B10024BB89 /* DateComponentsForProgress.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				709530B32DAC3AFB00E18A59 /* SurveyQuestion.swift in Sources */,
 				709530B42DAC3AFB00E18A59 /* SurveyStep.swift in Sources */,

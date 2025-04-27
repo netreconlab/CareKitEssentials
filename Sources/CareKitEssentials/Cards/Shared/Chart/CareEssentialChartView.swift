@@ -219,20 +219,31 @@ public struct CareEssentialChartView: CareKitEssentialView {
                 return progress
             }
 
-            let progress = periodicProgressForConfiguration(
-                id: configuration.id,
-                events: events,
-                per: period,
-                dateInterval: dateInterval,
-                computeProgress: { event in
-                    computeProgress(
-                        for: event,
-                        configuration: configuration
-                    )
-                }
-            )
+			do {
+				let progress = try periodicProgressForConfiguration(
+					id: configuration.id,
+					events: events,
+					per: period,
+					dateInterval: dateInterval,
+					computeProgress: { event in
+						computeProgress(
+							for: event,
+							configuration: configuration
+						)
+					}
+				)
 
-            return progress
+				return progress
+			} catch {
+				Logger.essentialChartView.error(
+					"Cannot compute progress for configuration \(configuration.id) because of error: \(error)"
+				)
+				let progress = TemporalTaskProgress<LinearCareTaskProgress>(
+					id: configuration.id,
+					progressPerDates: []
+				)
+				return progress
+			}
         }
 
         do {
@@ -288,9 +299,9 @@ extension CareEssentialChartView {
         per component: Calendar.Component,
         dateInterval: DateInterval,
         computeProgress: @escaping (OCKAnyEvent) -> Progress
-    ) -> TemporalTaskProgress<Progress> {
+    ) throws -> TemporalTaskProgress<Progress> {
 
-        let progressPerPeriod = periodicProgress(
+        let progressPerPeriod = try periodicProgress(
             for: events,
             per: component,
             dateInterval: dateInterval,
@@ -310,39 +321,39 @@ extension CareEssentialChartView {
         per component: Calendar.Component,
         dateInterval: DateInterval,
         computeProgress: @escaping (OCKAnyEvent) -> Progress
-    ) -> [TemporalProgress<Progress>] {
+    ) throws -> [TemporalProgress<Progress>] {
 
         let calendar = Calendar.current
 
         // Create a dictionary that has a key for each component in the provided interval.
 
-		var periodComponentsInInterval: [(DateComponents, Calendar.Component)] = []
+		var periodComponentsInInterval: [DateComponentsForProgress] = []
 		var currentDate = dateInterval.start.startOfDay
 
 		while currentDate < dateInterval.end.endOfDay {
 			let valueToIncrementBy = 1
-            let periodComponent = uniqueComponents(
+            let periodComponent = try uniqueComponents(
 				for: currentDate,
 				during: component,
 				forGrouping: true
 			)
             periodComponentsInInterval.append(periodComponent)
             currentDate = calendar.date(
-				byAdding: periodComponent.1,
+				byAdding: periodComponent.componentToIncrement,
                 value: valueToIncrementBy,
                 to: currentDate
             )!
         }
 
         // Group the events by the component they started
-        let eventsGroupedByPeriodComponent = Dictionary(
+        let eventsGroupedByPeriodComponent = try Dictionary(
             grouping: events,
 			by: {
-				uniqueComponents(
+				try uniqueComponents(
 					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start,
 					during: component,
 					forGrouping: true
-				).0
+				).componentsForProgress
 			}
         )
 
@@ -350,18 +361,18 @@ extension CareEssentialChartView {
 		// swiftlint:disable:next line_length
         let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
 
-			let events = eventsGroupedByPeriodComponent[periodComponent.0] ?? []
+			let events = eventsGroupedByPeriodComponent[periodComponent.componentsForProgress] ?? []
 
             let progressForEvents = events.map { event in
                 computeProgress(event)
             }
 
-			let dateOfPeriodComponent = calendar.date(from: periodComponent.0)!
+			let dateOfPeriodComponent = calendar.date(from: periodComponent.componentsForProgressWithDay)!
 
             let temporalProgress = TemporalProgress(
                 values: progressForEvents,
                 date: dateOfPeriodComponent,
-				dateComponent: periodComponent.1
+				dateComponent: periodComponent.componentToIncrement
             )
 
             return temporalProgress
@@ -374,7 +385,7 @@ extension CareEssentialChartView {
 		for date: Date,
 		during period: Calendar.Component,
 		forGrouping: Bool = false
-	) -> (DateComponents, Calendar.Component) {
+	) throws -> DateComponentsForProgress {
 		switch period {
 		case .day, .dayOfYear:
 			let component = Calendar.Component.hour
@@ -382,50 +393,58 @@ extension CareEssentialChartView {
 				[.year, .month, .day, component],
 				from: date
 			)
-			return (dateComponents, component)
+			let progressComponents = DateComponentsForProgress(
+				componentsForProgress: dateComponents,
+				componentsForProgressWithDay: dateComponents,
+				componentToIncrement: component
+			)
+			return progressComponents
 		case .weekday, .weekOfMonth, .weekOfYear:
 			let component = Calendar.Component.day
 			let dateComponents = Calendar.current.dateComponents(
 				[.year, .month, component],
 				from: date
 			)
-			return (dateComponents, component)
+			let progressComponents = DateComponentsForProgress(
+				componentsForProgress: dateComponents,
+				componentsForProgressWithDay: dateComponents,
+				componentToIncrement: component
+			)
+			return progressComponents
 		case .month:
 			let component = Calendar.Component.weekOfMonth
-			guard !forGrouping else {
-				let dateComponents = Calendar.current.dateComponents(
-					[.year, .month, component],
-					from: date
-				)
-				return (dateComponents, component)
-
-			}
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, .day, component],
-				from: date
-			)
-			return (dateComponents, component)
-		case .year:
-			let component = Calendar.Component.month
-			guard !forGrouping else {
-				let dateComponents = Calendar.current.dateComponents(
-					[.year, component],
-					from: date
-				)
-				return (dateComponents, component)
-			}
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, .day, component],
-				from: date
-			)
-			return (dateComponents, component)
-		default:
-			let component = Calendar.Component.day
 			let dateComponents = Calendar.current.dateComponents(
 				[.year, .month, component],
 				from: date
 			)
-			return (dateComponents, component)
+			let dateComponentsWithDay = Calendar.current.dateComponents(
+				[.year, .month, .day, component],
+				from: date
+			)
+			let progressComponents = DateComponentsForProgress(
+				componentsForProgress: dateComponents,
+				componentsForProgressWithDay: dateComponentsWithDay,
+				componentToIncrement: component
+			)
+			return progressComponents
+		case .year:
+			let component = Calendar.Component.month
+			let dateComponents = Calendar.current.dateComponents(
+				[.year, component],
+				from: date
+			)
+			let dateComponentsWithDay = Calendar.current.dateComponents(
+				[.year, .day, component],
+				from: date
+			)
+			let progressComponents = DateComponentsForProgress(
+				componentsForProgress: dateComponents,
+				componentsForProgressWithDay: dateComponentsWithDay,
+				componentToIncrement: component
+			)
+			return progressComponents
+		default:
+			throw CareKitEssentialsError.errorString("Unsupported type of period")
 		}
 	}
 }
