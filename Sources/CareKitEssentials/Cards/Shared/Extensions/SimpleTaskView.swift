@@ -43,7 +43,8 @@ public extension SimpleTaskView where Header == InformationHeaderView {
                     title: Text(event.title),
                     information: event.detailText,
                     event: event,
-                    includeDivider: false
+                    includeDivider: false,
+					includeChevron: false
                 )
             }
         )

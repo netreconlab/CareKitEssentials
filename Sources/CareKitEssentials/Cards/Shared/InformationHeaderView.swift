@@ -37,6 +37,7 @@ public struct InformationHeaderView: View {
     private let detailsTitle: String?
     private let details: String?
     private let includeDivider: Bool
+	private let includeChevron: Bool
 
     @OSValue<Font>(
         values: [.watchOS: .system(size: 13)],
@@ -75,13 +76,15 @@ public struct InformationHeaderView: View {
 				.foregroundColor(Color(style.color.label))
 				#endif
                 Spacer()
-				Image(systemName: "chevron.right")
-					.imageScale(.small)
-				#if os(iOS) || os(visionOS)
-					.foregroundColor(Color(style.color.secondaryLabel))
-				#else
-					.foregroundColor(Color.secondary)
-				#endif
+				if includeChevron {
+					Image(systemName: "chevron.right")
+						.imageScale(.small)
+						#if os(iOS) || os(visionOS)
+						.foregroundColor(Color(style.color.secondaryLabel))
+						#else
+						.foregroundColor(Color.secondary)
+						#endif
+				}
             }
 			if event.task.impactsAdherence {
 				HStack {
@@ -129,7 +132,8 @@ public struct InformationHeaderView: View {
     ///   - event: The event to display details for when the info button is tapped.
     ///   - detailsTitle: The title text to be displayed when the info button is tapped.
     ///   - details: The text to be displayed when the info button is tapped.
-    ///   - includeDivider: Show the divider at the bottom of the header view.
+    ///   - includeDivider: Show the divider on the bottom of the header view.
+	///   - includeChevron: Show the chevron on the right of the header view.
     public init(
         title: Text,
         information: Text? = nil,
@@ -137,7 +141,8 @@ public struct InformationHeaderView: View {
         event: OCKAnyEvent,
         detailsTitle: String? = nil,
         details: String? = nil,
-        includeDivider: Bool = true
+        includeDivider: Bool = true,
+		includeChevron: Bool = true
     ) {
         self.title = title
         self.information = information
@@ -146,19 +151,31 @@ public struct InformationHeaderView: View {
         self.detailsTitle = detailsTitle
         self.details = details
         self.includeDivider = includeDivider
+		self.includeChevron = includeChevron
     }
 }
 
 struct InformationHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            InformationHeaderView(
-                title: Text(event.title),
-                information: Text(event.detail ?? ""),
-                image: event.image(),
-                event: event
-            )
-            .careKitStyle(OCKStyle())
+			VStack {
+				InformationHeaderView(
+					title: Text(event.title),
+					information: Text(event.detail ?? ""),
+					image: event.image(),
+					event: event
+				)
+
+				InformationHeaderView(
+					title: Text(event.title),
+					information: Text(event.detail ?? ""),
+					image: event.image(),
+					event: event,
+					includeDivider: false,
+					includeChevron: false
+				)
+			}
+			.careKitStyle(OCKStyle())
 			.tint(.red)
 			.padding()
         }
