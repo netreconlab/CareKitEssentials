@@ -10,12 +10,14 @@ import Foundation
 
 struct CombinedProgress<Progress> {
 	var value: Progress
+	var unit: String?
 	var date: Date
 	var period: PeriodComponent
 }
 
 struct TemporalProgress<Progress> {
     var values: [Progress]
+	var units: [String]?
     var date: Date
 	var period: PeriodComponent
 }

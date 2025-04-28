@@ -181,9 +181,7 @@ struct CareKitEssentialChartBodyView: View {
 		if let selected = selectedDateValue(series: series) {
 			VStack {
 				dateFormatted(date: selected.0, series: series)
-				if let unit = series.dataPoints.first?.yUnit {
-					Text("\(unit):" + selected.1.formatted())
-				}
+				Text(markerLocalizedString("VALUE_DISPLAY", value: selected.1))
 			}
 			.font(.caption)
 		} else if let selectedDate {
@@ -222,7 +220,7 @@ struct CareKitEssentialChartBodyView: View {
 				key,
 				comment: ""
 			),
-			value
+			value.formatted()
 		)
 	}
 

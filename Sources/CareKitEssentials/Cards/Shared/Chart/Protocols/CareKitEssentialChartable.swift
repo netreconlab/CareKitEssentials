@@ -106,13 +106,25 @@ extension CareKitEssentialChartable {
 
 			let combinedProgressValues = progress.values
 				.map { $0.value }
+			// Always use last unit
+			let combinedProgressUnit = progress.units?.last
+
+			// Do a unit check and output warning if multiple
+			if let units = progress.units {
+				let uniqueUnits = Set(units)
+				if uniqueUnits.count > 1 {
+					Logger.essentialChartable.warning(
+						"Multiple units found for progress: \(units), using last one: \(combinedProgressUnit ?? "")"
+					)
+				}
+			}
 
 			switch configuration.dataStrategy {
 			case .sum:
 				let combinedProgressValue = combinedProgressValues.reduce(0, +)
-
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
 				)
@@ -122,6 +134,7 @@ extension CareKitEssentialChartable {
 
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
 				)
@@ -131,6 +144,7 @@ extension CareKitEssentialChartable {
 
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
 				)
@@ -143,6 +157,7 @@ extension CareKitEssentialChartable {
 			CKEPoint(
 				x: $0.date,
 				y: $0.value,
+				yUnit: $0.unit,
 				period: $0.period,
 				accessibilityValue: "\(configuration.legendTitle), \($0.date), \($0.value)"
 			)
@@ -242,10 +257,17 @@ extension CareKitEssentialChartable {
 				computeProgress(event)
 			}
 
+			let valueUnits = events.reduce(into: [String]()) { units, event in
+				guard let currentUnits = event.outcome?.values.compactMap(\.units) else {
+					return
+				}
+				units.append(contentsOf: currentUnits)
+			}
 			let dateOfPeriodComponent = calendar.date(from: periodComponent.componentsForProgressWithDay)!
 
 			let temporalProgress = TemporalProgress(
 				values: progressForEvents,
+				units: valueUnits,
 				date: dateOfPeriodComponent,
 				period: period
 			)
