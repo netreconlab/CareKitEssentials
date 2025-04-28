@@ -37,7 +37,7 @@ struct CareKitEssentialChartBodyView: View {
 					stacking: data.stackingMethod
 				)
 				.lineStyle(by: .value(data.title, point.y))
-				// .opacity(selectedDate == nil || selectedDate == point.x ? 1 : 0.5)
+				.opacity(selectedDate == nil || selectedDate == point.x ? 1 : 0.5)
 			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
@@ -61,7 +61,7 @@ struct CareKitEssentialChartBodyView: View {
 					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
 						.foregroundStyle(grayColor.opacity(0.3))
 						.annotation(
-							position: .automatic,
+							position: .bottomLeading,
 							spacing: 0
 						) {
 							selectionPopover(series: data)
