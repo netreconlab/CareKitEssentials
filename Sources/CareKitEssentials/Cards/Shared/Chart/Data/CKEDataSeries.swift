@@ -217,7 +217,23 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	}
 
 	func selectedDataValue(for date: Date) -> Double? {
-		dataPoints.first(where: { $0.x == date })?.y
+		guard let component = dataPoints.first?.xUnit else {
+			return nil
+		}
+
+		let calendar = Calendar.current
+		let foundDataPoint = dataPoints.first(where: { dataPoint -> Bool in
+			let endDate = calendar.date(
+				byAdding: component,
+				value: 1,
+				to: date
+			)!
+
+			let range = date...endDate
+			return range.contains(dataPoint.x)
+		})
+
+		return foundDataPoint?.y
 	}
 
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single
