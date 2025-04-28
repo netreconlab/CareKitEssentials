@@ -37,7 +37,7 @@ struct CareKitEssentialChartBodyView: View {
 					stacking: data.stackingMethod
 				)
 				.lineStyle(by: .value(data.title, point.y))
-				.opacity(selectedDate == nil || selectedDate == point.x ? 1 : 0.5)
+				// .opacity(selectedDate == nil || selectedDate == point.x ? 1 : 0.5)
 			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
