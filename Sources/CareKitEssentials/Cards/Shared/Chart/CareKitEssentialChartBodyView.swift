@@ -220,7 +220,7 @@ struct CareKitEssentialChartBodyView: View {
 				key,
 				comment: ""
 			),
-			value.formatted()
+			value
 		)
 	}
 
