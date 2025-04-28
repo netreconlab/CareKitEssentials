@@ -208,9 +208,9 @@ extension CareKitEssentialChartable {
 		// Create a dictionary that has a key for each component in the provided interval.
 
 		var periodComponentsInInterval: [DateComponentsForProgress] = []
-		var currentDate = dateInterval.start.startOfDay
+		var currentDate = dateInterval.start
 
-		while currentDate < dateInterval.end.endOfDay {
+		while currentDate <= dateInterval.end {
 			let valueToIncrementBy = 1
 			let periodComponent = periodComponent.relevantComponentsForProgress(
 				for: currentDate
