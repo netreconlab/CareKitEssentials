@@ -178,11 +178,11 @@ struct CareKitEssentialChartBodyView: View {
 
 	@ViewBuilder
 	private func selectionPopover(series: CKEDataSeries) -> some View {
-		if let selectedDateValue {
+		if let selected = selectedDateValue(series: series) {
 			VStack {
-				dateFormatted(date: selectedDateValue.0, series: series)
-				if let unit = dataSeries.first?.dataPoints.first?.yUnit {
-					Text("\(unit):" + selectedDateValue.1.formatted())
+				dateFormatted(date: selected.0, series: series)
+				if let unit = series.dataPoints.first?.yUnit {
+					Text("\(unit):" + selected.1.formatted())
 				}
 			}
 			.font(.caption)
@@ -207,9 +207,9 @@ struct CareKitEssentialChartBodyView: View {
 		)
 	}
 
-	private var selectedDateValue: (Date, Double)? {
+	private func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
 		guard let selectedDate,
-			  let value = dataSeries.first?.selectedDataValue(for: selectedDate) else {
+			  let value = series.selectedDataValue(for: selectedDate) else {
 			return nil
 		}
 
