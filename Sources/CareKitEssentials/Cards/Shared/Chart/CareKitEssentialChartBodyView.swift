@@ -37,7 +37,7 @@ struct CareKitEssentialChartBodyView: View {
 					stacking: data.stackingMethod
 				)
 				.lineStyle(by: .value(data.title, point.y))
-				.opacity(selectedDate == nil || selectedDateValue(series: data)?.1 == point.y ? 1 : 0.5)
+				.opacity(selectedDate == nil || selectedDate == point.x ? 1 : 0.5)
 			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
@@ -88,7 +88,6 @@ struct CareKitEssentialChartBodyView: View {
 						Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
 							.font(.caption)
 					}
-					.opacity(selectedDate == nil || selectedDateValue(series: data)?.1 == mean ? 1 : 0.5)
 			}
 			if data.showMedianMark {
 				let median = data.medianYValue
@@ -101,7 +100,6 @@ struct CareKitEssentialChartBodyView: View {
 						Text(markerLocalizedString("MEDIAN_VALUE", value: median))
 							.font(.caption)
 					}
-					.opacity(selectedDate == nil || selectedDateValue(series: data)?.1 == median ? 1 : 0.5)
 			}
 		}
 		.chartXAxis {
