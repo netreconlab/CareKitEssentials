@@ -95,6 +95,7 @@ struct CareKitEssentialChartBodyView: View {
 		.chartYAxis {
 			AxisMarks(position: .leading) { _ in
 				AxisGridLine()
+				AxisValueLabel()
 			}
 		}
 		.chartForegroundStyleScale { (name: String) in
