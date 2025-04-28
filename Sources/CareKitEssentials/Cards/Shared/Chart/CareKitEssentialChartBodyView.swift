@@ -13,7 +13,7 @@ import SwiftUI
 struct CareKitEssentialChartBodyView: View {
 
 	@Environment(\.careKitStyle) private var style
-    let dataSeries: [CKEDataSeries]
+	let dataSeries: [CKEDataSeries]
 	var useFullAspectRating: Bool = false
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
@@ -22,22 +22,22 @@ struct CareKitEssentialChartBodyView: View {
 	@State var legendColors = [String: LinearGradient]()
 	@State var selectedDate: Date? = nil
 
-    var body: some View {
-        Chart(dataSeries) { data in
-            ForEach(data.dataPoints) { point in
-                data.mark.chartContent(
-                    title: data.title,
+	var body: some View {
+		Chart(dataSeries) { data in
+			ForEach(data.dataPoints) { point in
+				data.mark.chartContent(
+					title: data.title,
 					xLabel: data.xLabel,
 					xValue: point.x,
 					xValueUnit: point.xUnit,
 					yLabel: data.yLabel,
-                    yValue: point.y,
-                    width: data.width,
-                    height: data.height,
-                    stacking: data.stackingMethod
-                )
+					yValue: point.y,
+					width: data.width,
+					height: data.height,
+					stacking: data.stackingMethod
+				)
 				.lineStyle(by: .value(data.title, point.y))
-            }
+			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
 			}
@@ -47,22 +47,23 @@ struct CareKitEssentialChartBodyView: View {
 			.foregroundStyle(
 				createLinearGradientColor(for: data)
 			)
-            .foregroundStyle(by: .value("DATA_SERIES", data.title))
-            .position(by: .value("DATA_SERIES", data.title))
+			.foregroundStyle(by: .value("DATA_SERIES", data.title))
+			.position(by: .value("DATA_SERIES", data.title))
+
+			if let selectedDate,
+			   let dateUnit = data.dataPoints.first?.xUnit {
+				RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
+					.foregroundStyle(markColor(name: data.title).opacity(0.3))
+					.annotation(
+						position: .automatic,
+						spacing: 0
+					) {
+						selectionPopover
+					}
+			}
 
 			// Add all Marks here.
 			if data == dataSeries.last {
-				if let selectedDate,
-				   let dateUnit = data.dataPoints.first?.xUnit {
-					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
-						.foregroundStyle(grayColor.opacity(0.3))
-						.annotation(
-							position: .top,
-							spacing: 0
-						) {
-							selectionPopover
-						}
-				}
 				if isShowingMeanMarker {
 					let mean = data.meanYValue
 					RuleMark(y: .value("AVERAGE", mean))
@@ -88,7 +89,7 @@ struct CareKitEssentialChartBodyView: View {
 						}
 				}
 			}
-        }
+		}
 		.chartXAxis {
 			AxisMarks { _ in
 				if showGridLines {
@@ -114,16 +115,7 @@ struct CareKitEssentialChartBodyView: View {
 			}
 		}
 		.chartForegroundStyleScale { (name: String) in
-			legendColors[name] ?? LinearGradient(
-				gradient: Gradient(
-					colors: [
-						Color.accentColor.opacity(0.4),
-						Color.accentColor
-					]
-				),
-				startPoint: .bottom,
-				endPoint: .top
-			)
+			markColor(name: name)
 		}
 		.if(useFullAspectRating) { chart in
 			chart.aspectRatio(1, contentMode: .fit)
@@ -150,11 +142,11 @@ struct CareKitEssentialChartBodyView: View {
 	}
 
 	private var grayColor: Color {
-		#if os(iOS) || os(visionOS)
+#if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
-		#else
+#else
 		Color.gray
-		#endif
+#endif
 	}
 
 	@ViewBuilder
@@ -171,6 +163,19 @@ struct CareKitEssentialChartBodyView: View {
 			}
 			.font(.caption)
 		}
+	}
+
+	private func markColor(name: String) -> LinearGradient {
+		legendColors[name] ?? LinearGradient(
+			gradient: Gradient(
+				colors: [
+					Color.accentColor.opacity(0.4),
+					Color.accentColor
+				]
+			),
+			startPoint: .bottom,
+			endPoint: .top
+		)
 	}
 
 	private var selectedDateValue: (Date, Double)? {
