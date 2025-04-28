@@ -23,4 +23,7 @@ extension View {
             ViewBuilder.buildEither(first: trueContent(self)) :
             ViewBuilder.buildEither(second: self)
     }
+
+	// Reference: https://stackoverflow.com/a/77735876
+	func apply<V: View>(@ViewBuilder _ block: (Self) -> V) -> V { block(self) }
 }

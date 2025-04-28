@@ -98,6 +98,13 @@ struct CareKitEssentialChartBodyView: View {
 				AxisValueLabel()
 			}
 		}
+		.apply { chart in
+			if #available(iOS 17.0, watchOS 10.0, *) {
+				chart.chartScrollableAxes(.horizontal)
+			} else {
+				chart
+			}
+		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
 				gradient: Gradient(
