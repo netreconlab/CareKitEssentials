@@ -53,12 +53,20 @@ struct CareKitEssentialChartBodyView: View {
 			if let selectedDate,
 			   let dateUnit = data.dataPoints.first?.xUnit {
 				RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
-					.foregroundStyle(markColor(name: data.title).opacity(0.3))
+					.foregroundStyle(grayColor.opacity(0.3))
 					.annotation(
 						position: .automatic,
 						spacing: 0
 					) {
-						selectionPopover
+						ZStack {
+							RoundedRectangle(
+								cornerRadius: 2
+							)
+							.foregroundStyle(markColor(name: data.title).opacity(0.2))
+							Spacer()
+							selectionPopover(series: data)
+						}
+
 					}
 			}
 
@@ -149,17 +157,38 @@ struct CareKitEssentialChartBodyView: View {
 #endif
 	}
 
+
 	@ViewBuilder
-	private var selectionPopover: some View {
+	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
+		if let period = dataSeries.first?.dataPoints.first?.period {
+			switch period {
+			case .day:
+				Text(date.formatted(.dateTime.month().day().hour()))
+			case .week:
+				Text(date.formatted(.dateTime.month().day()))
+			case .month:
+				Text(date.formatted(.dateTime.month().week(.weekOfMonth)))
+			case .year:
+				Text(date.formatted(.dateTime.month()))
+			}
+		} else {
+			Text(date.formatted(.dateTime.month().day().hour()))
+		}
+	}
+
+	@ViewBuilder
+	private func selectionPopover(series: CKEDataSeries) -> some View {
 		if let selectedDateValue {
 			VStack {
-				Text(selectedDateValue.0.formatted(.dateTime.month().day().hour()))
-				Text(selectedDateValue.1.formatted())
+				dateFormatted(date: selectedDateValue.0, series: series)
+				if let unit = dataSeries.first?.dataPoints.first?.yUnit {
+					Text("\(unit):" + selectedDateValue.1.formatted())
+				}
 			}
 			.font(.caption)
 		} else if let selectedDate {
 			VStack {
-				Text(selectedDate.formatted(.dateTime.month().day().hour()))
+				dateFormatted(date: selectedDate, series: series)
 			}
 			.font(.caption)
 		}

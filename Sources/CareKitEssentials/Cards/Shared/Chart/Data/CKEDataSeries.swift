@@ -376,11 +376,19 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			dates,
 			values
 		).map { date, value in
-            CKEPoint(
-                x: date,
-				xUnit: dateComponent,
-                y: value
-            )
+			if let period = try? PeriodComponent(component: dateComponent) {
+				return CKEPoint(
+					x: date,
+					y: value,
+					period: period
+				)
+			} else {
+				return CKEPoint(
+					x: date,
+					y: value,
+					period: .week
+				)
+			}
         }
         self.title = title
 		self.summary = summary
@@ -438,11 +446,19 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			dates,
 			values
 		).map { date, value in
-			CKEPoint(
-				x: date,
-				xUnit: dateComponent,
-				y: value
-			)
+			if let period = try? PeriodComponent(component: dateComponent) {
+				return CKEPoint(
+					x: date,
+					y: value,
+					period: period
+				)
+			} else {
+				return CKEPoint(
+					x: date,
+					y: value,
+					period: .week
+				)
+			}
 		}
         self.title = title
         self.color = color

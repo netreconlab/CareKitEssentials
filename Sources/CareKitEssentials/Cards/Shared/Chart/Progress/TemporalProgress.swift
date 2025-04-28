@@ -11,13 +11,13 @@ import Foundation
 struct CombinedProgress<Progress> {
 	var value: Progress
 	var date: Date
-	var dateComponent: Calendar.Component
+	var period: PeriodComponent
 }
 
 struct TemporalProgress<Progress> {
     var values: [Progress]
     var date: Date
-	var dateComponent: Calendar.Component
+	var period: PeriodComponent
 }
 
 extension TemporalProgress: Hashable, Equatable where Progress: Hashable {}

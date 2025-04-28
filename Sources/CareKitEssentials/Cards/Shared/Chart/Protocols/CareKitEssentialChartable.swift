@@ -114,7 +114,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					date: progress.date,
-					dateComponent: progress.dateComponent
+					period: progress.period
 				)
 				return combined
 			case .average:
@@ -123,7 +123,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					date: progress.date,
-					dateComponent: progress.dateComponent
+					period: progress.period
 				)
 				return combined
 			case .median:
@@ -132,7 +132,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					date: progress.date,
-					dateComponent: progress.dateComponent
+					period: progress.period
 				)
 				return combined
 			}
@@ -142,8 +142,8 @@ extension CareKitEssentialChartable {
 		let combinedProgressPoints = combinedProgress.map {
 			CKEPoint(
 				x: $0.date,
-				xUnit: $0.dateComponent,
 				y: $0.value,
+				period: $0.period,
 				accessibilityValue: "\(configuration.legendTitle), \($0.date), \($0.value)"
 			)
 		}
@@ -247,7 +247,7 @@ extension CareKitEssentialChartable {
 			let temporalProgress = TemporalProgress(
 				values: progressForEvents,
 				date: dateOfPeriodComponent,
-				dateComponent: periodComponent.componentToIncrement
+				period: period
 			)
 
 			return temporalProgress
