@@ -36,6 +36,17 @@ struct CareKitEssentialChartBodyView: View {
 				)
 				.lineStyle(by: .value(data.title, point.y))
 				.opacity(selectedDate == nil || selectedDateValue(series: data)?.1 == point.y ? 1 : 0.2)
+
+				// Add special marks for specific charts here.
+				if data.mark == .bar {
+					if point.y == data.maxYValue {
+						RectangleMark(
+							x: .value(data.xLabel, point.x, unit: point.xUnit),
+							y: .value(data.yLabel, point.y),
+							height: 3
+						)
+					}
+				}
 			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
