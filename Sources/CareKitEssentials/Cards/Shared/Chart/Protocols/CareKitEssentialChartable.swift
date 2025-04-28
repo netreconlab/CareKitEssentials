@@ -18,7 +18,7 @@ protocol CareKitEssentialChartable: CareKitEssentialView {
 	var subtitle: String { get }
 	var dateInterval: DateInterval { get set }
 	var period: PeriodComponent { get set }
-	var configurations: [CKEDataSeriesConfiguration] { get set }
+	var configurations: [String: CKEDataSeriesConfiguration] { get set }
 }
 
 extension CareKitEssentialChartable {
@@ -30,7 +30,7 @@ extension CareKitEssentialChartable {
 		let eventsGroupedByTaskID = groupEventsByTaskID(events)
 
 		// swiftlint:disable:next line_length
-		let progressForAllConfigurations = configurations.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
+		let progressForAllConfigurations = configurations.values.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
 
 			guard let events = eventsGroupedByTaskID[configuration.taskID] else {
 				let progress = TemporalTaskProgress<LinearCareTaskProgress>(
@@ -57,7 +57,7 @@ extension CareKitEssentialChartable {
 		}
 
 		do {
-			let dataSeries = try configurations.map { configuration -> CKEDataSeries in
+			let dataSeries = try configurations.values.map { configuration -> CKEDataSeries in
 
 				// Iterating first through the configurations ensures the final data series order
 				// matches the order of the configurations

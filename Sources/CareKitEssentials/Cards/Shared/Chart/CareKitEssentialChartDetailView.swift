@@ -23,7 +23,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	let subtitle: String
 	@State var dateInterval: DateInterval
 	@State var period: PeriodComponent
-	@State var configurations: [CKEDataSeriesConfiguration]
+	@State var configurations: [String: CKEDataSeriesConfiguration]
 
 	var body: some View {
 		NavigationView {
@@ -84,7 +84,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 
 	private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
-		let updatedTaskIDs = Set(configurations.map(\.taskID))
+		let updatedTaskIDs = Set(configurations.values.map(\.taskID))
 		if currentTaskIDs != updatedTaskIDs {
 			events.query.taskIDs = Array(updatedTaskIDs)
 		}
@@ -105,66 +105,23 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 			gradientStartColor: .gray
 		)
 		let previewStore = Utility.createPreviewStore()
-		var dayDateInterval: DateInterval {
-			let now = Date()
-			let startOfDay = Calendar.current.startOfDay(
-				for: now
-			)
-			let dateInterval = DateInterval(
-				start: startOfDay,
-				end: now
-			)
-			return dateInterval
-		}
+
 		var weekDateInterval: DateInterval {
 			let interval = Calendar.current.dateIntervalOfWeek(
 				for: Date()
 			)
 			return interval
 		}
-		var monthDateInterval: DateInterval {
-			let interval = Calendar.current.dateIntervalOfMonth(
-				for: Date()
-			)
-			return interval
-		}
-		var yearDateInterval: DateInterval {
-			let interval = Calendar.current.dateIntervalOfYear(
-				for: Date()
-			)
-			return interval
-		}
 
 		NavigationStack {
-			VStack { /*
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Day",
-					dateInterval: dayDateInterval,
-					period: .day,
-					configurations: [configurationBar]
-				) */
+			VStack {
 				CareKitEssentialChartDetailView(
 					title: task.title ?? "",
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
 					period: .week,
-					configurations: [configurationBar]
-				) /*
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Month",
-					dateInterval: monthDateInterval,
-					period: .month,
-					configurations: [configurationBar]
+					configurations: [task.id: configurationBar]
 				)
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Year",
-					dateInterval: yearDateInterval,
-					period: .year,
-					configurations: [configurationBar]
-				) */
 			}
 			.padding()
 		}

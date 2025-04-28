@@ -24,7 +24,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	let subtitle: String
 	@Binding var dateInterval: DateInterval
 	@Binding var period: PeriodComponent
-	var configurations: [CKEDataSeriesConfiguration]
+	var configurations: [String: CKEDataSeriesConfiguration]
 
 	public var body: some View {
 		CardView {
@@ -102,14 +102,16 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	) {
 		self.title = title
 		self.subtitle = subtitle
-		self.configurations = configurations
+		self.configurations = configurations.reduce(into: [String: CKEDataSeriesConfiguration]()) { currentConfigurations, configuration in
+			currentConfigurations[configuration.id] = configuration
+		}
 		_dateInterval = dateInterval
 		_period = period
 	}
 
 	private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
-		let updatedTaskIDs = Set(configurations.map(\.taskID))
+		let updatedTaskIDs = Set(configurations.values.map(\.taskID))
 		if currentTaskIDs != updatedTaskIDs {
 			events.query.taskIDs = Array(updatedTaskIDs)
 		}
