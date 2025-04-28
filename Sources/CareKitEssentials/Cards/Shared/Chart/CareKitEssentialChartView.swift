@@ -61,9 +61,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				.onChange(of: configurations) { _ in
 					updateQuery()
 				}
-				.onReceive(events.publisher) { _ in
-					updateQuery()
-				}
 			}
 			.padding(isCardEnabled ? [.all] : [])
 		}
@@ -137,7 +134,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 		@State var intervalSelected = 1
 		@State var dateInterval: DateInterval = weekDateInterval
 		@State var period: PeriodComponent = .week
-		var configurations: [CKEDataSeriesConfiguration] = [
+		let configurations: [CKEDataSeriesConfiguration] = [
 			CKEDataSeriesConfiguration(
 				taskID: task.id,
 				mark: .bar,
