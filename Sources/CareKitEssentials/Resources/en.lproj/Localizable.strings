@@ -1,11 +1,11 @@
 "DATE" = "Date";
 "VALUE" = "Value";
 "DATA_SERIES" = "Data Series";
-"VALUE_DISPLAY" = "Value: %S";
+"VALUE_DISPLAY" = "Value: %F";
 "AVERAGE" = "Average";
 "MEDIAN" = "Median";
-"AVERAGE_VALUE" = "Average: %D";
-"MEDIAN_VALUE" = "Median: %D";
+"AVERAGE_VALUE" = "Average: %F";
+"MEDIAN_VALUE" = "Median: %F";
 "DAY" = "Day";
 "WEEK" = "Week";
 "MONTH" = "Month";

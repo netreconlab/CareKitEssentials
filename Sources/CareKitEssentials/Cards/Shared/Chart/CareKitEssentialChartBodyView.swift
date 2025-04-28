@@ -52,22 +52,27 @@ struct CareKitEssentialChartBodyView: View {
 
 			if let selectedDate,
 			   let dateUnit = data.dataPoints.first?.xUnit {
-				RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
-					.foregroundStyle(grayColor.opacity(0.3))
-					.annotation(
-						position: .automatic,
-						spacing: 0
-					) {
-						ZStack {
-							RoundedRectangle(
-								cornerRadius: 2
-							)
-							.foregroundStyle(markColor(name: data.title).opacity(0.2))
-							Spacer()
-							selectionPopover(series: data)
-						}
 
-					}
+				// Currently only show for first, can add option in config later
+				// To should multiple.
+				if data == dataSeries.first {
+					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
+						.foregroundStyle(grayColor.opacity(0.3))
+						.annotation(
+							position: .automatic,
+							spacing: 0
+						) {
+							ZStack {
+								RoundedRectangle(
+									cornerRadius: 2
+								)
+								.foregroundStyle(markColor(name: data.title).opacity(0.2))
+								Spacer()
+								selectionPopover(series: data)
+							}
+							
+						}
+				}
 			}
 
 			// Add all Marks here.
