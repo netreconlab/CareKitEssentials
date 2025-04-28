@@ -23,8 +23,8 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	let title: String
 	let subtitle: String
 	@Binding var dateInterval: DateInterval
-	@Binding var periodComponent: PeriodComponent
-	@Binding var configurations: [CKEDataSeriesConfiguration]
+	@Binding var period: PeriodComponent
+	var configurations: [CKEDataSeriesConfiguration]
 
 	public var body: some View {
 		CardView {
@@ -47,7 +47,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				.onTapGesture {
 					isShowingDetail.toggle()
 				}
-				Divider()
 
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
@@ -74,7 +73,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					title: title,
 					subtitle: subtitle,
 					dateInterval: dateInterval,
-					periodComponent: periodComponent,
+					period: period,
 					configurations: configurations
 				)
 				.padding()
@@ -101,14 +100,14 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 		title: String,
 		subtitle: String,
 		dateInterval: Binding<DateInterval>,
-		periodComponent: Binding<PeriodComponent>,
-		configurations: Binding<[CKEDataSeriesConfiguration]>
+		period: Binding<PeriodComponent>,
+		configurations: [CKEDataSeriesConfiguration]
 	) {
 		self.title = title
 		self.subtitle = subtitle
+		self.configurations = configurations
 		_dateInterval = dateInterval
-		_periodComponent = periodComponent
-		_configurations = configurations
+		_period = period
 	}
 
 	private func updateQuery() {
@@ -137,8 +136,8 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 		let previewStore = Utility.createPreviewStore()
 		@State var intervalSelected = 1
 		@State var dateInterval: DateInterval = weekDateInterval
-		@State var periodComponent: PeriodComponent = .week
-		@State var configurations: [CKEDataSeriesConfiguration] = [
+		@State var period: PeriodComponent = .week
+		var configurations: [CKEDataSeriesConfiguration] = [
 			CKEDataSeriesConfiguration(
 				taskID: task.id,
 				mark: .bar,
@@ -153,8 +152,8 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 				title: task.title ?? "",
 				subtitle: "Chart",
 				dateInterval: $dateInterval,
-				periodComponent: $periodComponent,
-				configurations: $configurations
+				period: $period,
+				configurations: configurations
 			)
 		}
 		.padding()

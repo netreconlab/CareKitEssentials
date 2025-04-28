@@ -21,21 +21,17 @@ public struct CareEssentialChartView: View {
 
 	@Binding var bindedDateInterval: DateInterval
 	@Binding var periodComponent: PeriodComponent
-	@Binding var bindedConfigurations: [CKEDataSeriesConfiguration]
 
 	public var body: some View {
 		CareKitEssentialChartView(
 			title: title,
 			subtitle: subtitle,
 			dateInterval: $bindedDateInterval,
-			periodComponent: $periodComponent,
-			configurations: $bindedConfigurations
+			period: $periodComponent,
+			configurations: configurations
 		)
 		.onChange(of: dateInterval) { newDateInterval in
 			bindedDateInterval = newDateInterval
-		}
-		.onChange(of: configurations) { newConfigurations in
-			bindedConfigurations = newConfigurations
 		}
 		.onChange(of: period) { newPeriod in
 			do {
@@ -74,8 +70,6 @@ public struct CareEssentialChartView: View {
 		self.configurations = configurations
 		@State var stateDateInterval = dateInterval
 		_bindedDateInterval = $stateDateInterval
-		@State var stateConfigutations: [CKEDataSeriesConfiguration] = configurations
-		_bindedConfigurations = $stateConfigutations
 		do {
 			let newPeriodComponent = try PeriodComponent(
 				component: period

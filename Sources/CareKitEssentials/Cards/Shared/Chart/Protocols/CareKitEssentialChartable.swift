@@ -17,7 +17,7 @@ protocol CareKitEssentialChartable: CareKitEssentialView {
 	var title: String { get }
 	var subtitle: String { get }
 	var dateInterval: DateInterval { get set }
-	var periodComponent: PeriodComponent { get set }
+	var period: PeriodComponent { get set }
 	var configurations: [CKEDataSeriesConfiguration] { get set }
 }
 
@@ -43,7 +43,7 @@ extension CareKitEssentialChartable {
 			let progress = periodicProgressForConfiguration(
 				id: configuration.id,
 				events: events,
-				per: periodComponent,
+				per: period,
 				dateInterval: dateInterval,
 				computeProgress: { event in
 					computeProgress(

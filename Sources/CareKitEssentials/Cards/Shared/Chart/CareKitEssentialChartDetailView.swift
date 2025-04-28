@@ -22,7 +22,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	let title: String
 	let subtitle: String
 	@State var dateInterval: DateInterval
-	@State var periodComponent: PeriodComponent
+	@State var period: PeriodComponent
 	@State var configurations: [CKEDataSeriesConfiguration]
 
 	var body: some View {
@@ -148,7 +148,7 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 					title: task.title ?? "",
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
-					periodComponent: .week,
+					period: .week,
 					configurations: [configurationBar]
 				) /*
 				CareKitEssentialChartView(
