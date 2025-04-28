@@ -222,14 +222,15 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 
 		let calendar = Calendar.current
+		let startOfDate = date.startOfDay
 		let foundDataPoint = dataPoints.first(where: { dataPoint -> Bool in
 			let endDate = calendar.date(
 				byAdding: component,
 				value: 1,
-				to: date
-			)!
+				to: startOfDate
+			)!.endOfDay
 
-			let range = date...endDate
+			let range = startOfDate...endDate
 			return range.contains(dataPoint.x)
 		})
 
