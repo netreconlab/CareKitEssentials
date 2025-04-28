@@ -19,6 +19,7 @@ protocol CareKitEssentialChartable: CareKitEssentialView {
 	var dateInterval: DateInterval { get set }
 	var period: PeriodComponent { get set }
 	var configurations: [String: CKEDataSeriesConfiguration] { get set }
+	var orderedConfigurations: [CKEDataSeriesConfiguration] { get }
 }
 
 extension CareKitEssentialChartable {
@@ -30,9 +31,10 @@ extension CareKitEssentialChartable {
 		let eventsGroupedByTaskID = groupEventsByTaskID(events)
 
 		// swiftlint:disable:next line_length
-		let progressForAllConfigurations = configurations.values.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
+		let progressForAllConfigurations = orderedConfigurations.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
 
-			guard let events = eventsGroupedByTaskID[configuration.taskID] else {
+			guard let currentConfiguration = configurations[configuration.id],
+				let events = eventsGroupedByTaskID[configuration.taskID] else {
 				let progress = TemporalTaskProgress<LinearCareTaskProgress>(
 					id: configuration.id,
 					progressPerDates: []
@@ -41,14 +43,14 @@ extension CareKitEssentialChartable {
 			}
 
 			let progress = periodicProgressForConfiguration(
-				id: configuration.id,
+				id: currentConfiguration.id,
 				events: events,
 				per: period,
 				dateInterval: dateInterval,
 				computeProgress: { event in
 					computeProgress(
 						for: event,
-						configuration: configuration
+						configuration: currentConfiguration
 					)
 				}
 			)
@@ -57,17 +59,21 @@ extension CareKitEssentialChartable {
 		}
 
 		do {
-			let dataSeries = try configurations.values.map { configuration -> CKEDataSeries in
+			let dataSeries = try orderedConfigurations.map { configuration -> CKEDataSeries in
 
 				// Iterating first through the configurations ensures the final data series order
 				// matches the order of the configurations
+				guard let currentConfiguration = configurations[configuration.id] else {
+					throw CareKitEssentialsError.errorString("Configuration not found")
+				}
+
 				let periodicProgress = progressForAllConfigurations
-					.first { $0.id == configuration.id }?
+					.first { $0.id == currentConfiguration.id }?
 					.progressPerDates ?? []
 
 				let dataSeries = try computeDataSeries(
 					forProgress: periodicProgress,
-					configuration: configuration
+					configuration: currentConfiguration
 				)
 
 				return dataSeries

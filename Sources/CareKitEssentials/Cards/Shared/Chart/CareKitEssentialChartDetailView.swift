@@ -24,6 +24,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var dateInterval: DateInterval
 	@State var period: PeriodComponent
 	@State var configurations: [String: CKEDataSeriesConfiguration]
+	let orderedConfigurations: [CKEDataSeriesConfiguration]
 
 	var body: some View {
 		NavigationView {
@@ -120,7 +121,8 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
 					period: .week,
-					configurations: [task.id: configurationBar]
+					configurations: [task.id: configurationBar],
+					orderedConfigurations: [configurationBar]
 				)
 			}
 			.padding()

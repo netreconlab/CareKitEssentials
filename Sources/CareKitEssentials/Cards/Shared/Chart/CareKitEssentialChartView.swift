@@ -25,6 +25,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Binding var dateInterval: DateInterval
 	@Binding var period: PeriodComponent
 	var configurations: [String: CKEDataSeriesConfiguration]
+	let orderedConfigurations: [CKEDataSeriesConfiguration]
 
 	public var body: some View {
 		CardView {
@@ -71,7 +72,8 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					subtitle: subtitle,
 					dateInterval: dateInterval,
 					period: period,
-					configurations: configurations
+					configurations: configurations,
+					orderedConfigurations: orderedConfigurations
 				)
 				.padding()
 			}
@@ -102,6 +104,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	) {
 		self.title = title
 		self.subtitle = subtitle
+		self.orderedConfigurations = configurations
 		self.configurations = configurations.reduce(into: [String: CKEDataSeriesConfiguration]()) { currentConfigurations, configuration in
 			currentConfigurations[configuration.id] = configuration
 		}
