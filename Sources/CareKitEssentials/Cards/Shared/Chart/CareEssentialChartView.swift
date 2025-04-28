@@ -93,6 +93,8 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			taskID: task.id,
 			mark: .bar,
 			legendTitle: "Bar",
+			showMarkWhenHighlighted: true,
+			showMeanMark: true,
 			color: .red,
 			gradientStartColor: .gray
 		)
