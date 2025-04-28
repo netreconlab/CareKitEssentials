@@ -125,33 +125,8 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 
 struct CareKitEssentialChartView_Previews: PreviewProvider {
 
-	static var dayDateInterval: DateInterval {
-		let now = Date()
-		let startOfDay = Calendar.current.startOfDay(
-			for: now
-		)
-		let dateInterval = DateInterval(
-			start: startOfDay,
-			end: now
-		)
-		return dateInterval
-	}
 	static var weekDateInterval: DateInterval {
 		let interval = Calendar.current.dateIntervalOfWeek(
-			for: Date()
-		)
-		return interval
-
-	}
-	static var monthDateInterval: DateInterval {
-		let interval = Calendar.current.dateIntervalOfMonth(
-			for: Date()
-		)
-		return interval
-
-	}
-	static var yearDateInterval: DateInterval {
-		let interval = Calendar.current.dateIntervalOfYear(
 			for: Date()
 		)
 		return interval
@@ -160,9 +135,9 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 	static var previews: some View {
 		let task = Utility.createNauseaTask()
 		let previewStore = Utility.createPreviewStore()
-		@State var intervalSelected = 0
-		@State var dateInterval: DateInterval = dayDateInterval
-		@State var periodComponent: PeriodComponent = .day
+		@State var intervalSelected = 1
+		@State var dateInterval: DateInterval = weekDateInterval
+		@State var periodComponent: PeriodComponent = .week
 		@State var configurations: [CKEDataSeriesConfiguration] = [
 			CKEDataSeriesConfiguration(
 				taskID: task.id,
@@ -172,48 +147,15 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 				gradientStartColor: .gray
 			)
 		]
-		var subtitle: String {
-			switch intervalSelected {
-			case 0:
-				return String(localized: "TODAY")
-			case 1:
-				return String(localized: "WEEK")
-			case 2:
-				return String(localized: "MONTH")
-			case 3:
-				return String(localized: "YEAR")
-			default:
-				return String(localized: "WEEK")
-			}
-		}
 
-		VStack {
-
-			Picker(
-				"CHOOSE_DATE_INTERVAL",
-				selection: $intervalSelected
-			) {
-				Text("TODAY")
-					.tag(0)
-				Text("WEEK")
-					.tag(1)
-				Text("MONTH")
-					.tag(2)
-				Text("YEAR")
-					.tag(3)
-			}
-			.pickerStyle(.segmented)
-			.padding(.vertical)
-
-			Spacer()
+		ScrollView {
 			CareKitEssentialChartView(
 				title: task.title ?? "",
-				subtitle: subtitle,
+				subtitle: "Chart",
 				dateInterval: $dateInterval,
 				periodComponent: $periodComponent,
 				configurations: $configurations
 			)
-			Spacer()
 		}
 		.padding()
 		.environment(\.careStore, previewStore)
