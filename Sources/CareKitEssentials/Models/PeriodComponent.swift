@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 public enum PeriodComponent: String, CaseIterable, Hashable, Codable, Identifiable, CustomStringConvertible {
 
@@ -108,6 +109,19 @@ public enum PeriodComponent: String, CaseIterable, Hashable, Codable, Identifiab
 				componentToIncrement: component
 			)
 			return progressComponents
+		}
+	}
+
+	func formattedDateString(_ date: Date) -> String {
+		switch self {
+		case .day:
+			return date.formatted(.dateTime.month().day().hour())
+		case .week:
+			return date.formatted(.dateTime.month().day())
+		case .month:
+			return date.formatted(.dateTime.month().week(.weekOfMonth))
+		case .year:
+			return date.formatted(.dateTime.month())
 		}
 	}
 }

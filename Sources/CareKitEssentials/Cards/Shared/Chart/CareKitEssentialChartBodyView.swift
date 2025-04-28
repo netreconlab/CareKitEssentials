@@ -17,8 +17,6 @@ struct CareKitEssentialChartBodyView: View {
 	var useFullAspectRating: Bool = false
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
-	@State var isShowingMeanMarker: Bool = false
-	@State var isShowingMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
 	@State var selectedDate: Date? = nil
 
@@ -165,16 +163,7 @@ struct CareKitEssentialChartBodyView: View {
 	@ViewBuilder
 	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
 		if let period = dataSeries.first?.dataPoints.first?.period {
-			switch period {
-			case .day:
-				Text(date.formatted(.dateTime.month().day().hour()))
-			case .week:
-				Text(date.formatted(.dateTime.month().day()))
-			case .month:
-				Text(date.formatted(.dateTime.month().week(.weekOfMonth)))
-			case .year:
-				Text(date.formatted(.dateTime.month()))
-			}
+			Text(period.formattedDateString(date))
 		} else {
 			Text(date.formatted(.dateTime.month().day().hour()))
 		}

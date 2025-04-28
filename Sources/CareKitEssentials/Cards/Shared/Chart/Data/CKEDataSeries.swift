@@ -201,8 +201,28 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	var maxYValue: Double {
 		yValues.max() ?? 0
 	}
+	var maxYValueDays: [Date] {
+		let maxValue = maxYValue
+		let matchingDates = dataPoints.compactMap({ point -> Date? in
+			guard point.y == maxValue else {
+				return nil
+			}
+			return point.x
+		})
+		return matchingDates
+	}
 	var minYValue: Double {
 		yValues.min() ?? 0
+	}
+	var minYValueDays: [Date] {
+		let minValue = minYValue
+		let matchingDates = dataPoints.compactMap({ point -> Date? in
+			guard point.y == minValue else {
+				return nil
+			}
+			return point.x
+		})
+		return matchingDates
 	}
 	var meanYValue: Double {
 		LinearCareTaskProgress.computeProgressByAveraging(for: yValues).value
