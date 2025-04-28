@@ -148,6 +148,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
 
 	/// A summary describing the data.
 	public var summary: String?
+	public var showMarkWhenHighlighted: Bool = false
+	public var showMeanMark: Bool = false
+	public var showMedianMark: Bool = false
 	public var xLabel: String = String(localized: "DATE")
 	public var yLabel: String = String(localized: "VALUE")
 	public var yEndLabel: String?
@@ -252,6 +255,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
         dataPoints: [CKEPoint],
         title: String,
 		summary: String? = nil,
+		showMarkWhenHighlighted: Bool = false,
+		showMeanMark: Bool = false,
+		showMedianMark: Bool = false,
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -263,6 +269,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
         self.dataPoints = dataPoints
         self.title = title
 		self.summary = summary
+		self.showMarkWhenHighlighted = showMarkWhenHighlighted
+		self.showMeanMark = showMeanMark
+		self.showMedianMark = showMedianMark
         self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
@@ -289,6 +298,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
         dataPoints: [CKEPoint],
         title: String,
 		summary: String? = nil,
+		showMarkWhenHighlighted: Bool = false,
+		showMeanMark: Bool = false,
+		showMedianMark: Bool = false,
         color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
@@ -301,6 +313,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
         self.dataPoints = dataPoints
         self.title = title
 		self.summary = summary
+		self.showMarkWhenHighlighted = showMarkWhenHighlighted
+		self.showMeanMark = showMeanMark
+		self.showMedianMark = showMedianMark
         self.color = color
         self.gradientStartColor = gradientStartColor
         self.stackingMethod = stackingMethod
@@ -318,6 +333,9 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			mark: configuration.mark,
 			dataPoints: dataPoints,
 			title: configuration.legendTitle,
+			showMarkWhenHighlighted: configuration.showMarkWhenHighlighted,
+			showMeanMark: configuration.showMeanMark,
+			showMedianMark: configuration.showMedianMark,
 			color: configuration.color,
 			gradientStartColor: configuration.gradientStartColor,
 			width: configuration.width,

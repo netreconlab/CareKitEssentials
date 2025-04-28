@@ -43,6 +43,10 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 	/// The label to use for the yAxis.
 	public var yAxisLabel: String?
 
+	public var showMarkWhenHighlighted: Bool = false
+	public var showMeanMark: Bool = false
+	public var showMedianMark: Bool = false
+
     /// The color that will be used for data series in the legend.
     /// If `color` is not specified, is not specified, default colors will be assigned.
     public var color: Color
@@ -98,6 +102,10 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 		kind: String? = nil,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
+		yAxisLabel: String? = nil,
+		showMarkWhenHighlighted: Bool = false,
+		showMeanMark: Bool = false,
+		showMedianMark: Bool = false,
         color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
@@ -114,6 +122,10 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 		self.kind = kind
         self.mark = mark
         self.legendTitle = legendTitle
+		self.yAxisLabel = yAxisLabel
+		self.showMarkWhenHighlighted = showMarkWhenHighlighted
+		self.showMeanMark = showMeanMark
+		self.showMedianMark = showMedianMark
         self.color = color
         self.gradientStartColor = gradientStartColor
         self.width = width
@@ -147,6 +159,9 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 		mark: CKEDataSeries.MarkType,
 		legendTitle: String,
 		yAxisLabel: String? = nil,
+		showMarkWhenHighlighted: Bool = false,
+		showMeanMark: Bool = false,
+		showMedianMark: Bool = false,
 		color: Color,
 		gradientStartColor: Color? = nil,
 		width: MarkDimension = .automatic,
@@ -161,6 +176,9 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 		self.mark = mark
 		self.legendTitle = legendTitle
 		self.yAxisLabel = yAxisLabel
+		self.showMarkWhenHighlighted = showMarkWhenHighlighted
+		self.showMeanMark = showMeanMark
+		self.showMedianMark = showMedianMark
 		self.color = color
 		self.gradientStartColor = gradientStartColor
 		self.width = width

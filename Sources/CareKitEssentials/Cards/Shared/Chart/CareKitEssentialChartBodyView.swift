@@ -50,12 +50,13 @@ struct CareKitEssentialChartBodyView: View {
 			.foregroundStyle(by: .value("DATA_SERIES", data.title))
 			.position(by: .value("DATA_SERIES", data.title))
 
+			// Add all Marks here.
 			if let selectedDate,
 			   let dateUnit = data.dataPoints.first?.xUnit {
 
 				// Currently only show for first, can add option in config later
 				// To should multiple.
-				if data == dataSeries.first {
+				if data.showMarkWhenHighlighted {
 					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
 						.foregroundStyle(grayColor.opacity(0.3))
 						.annotation(
@@ -70,37 +71,34 @@ struct CareKitEssentialChartBodyView: View {
 								Spacer()
 								selectionPopover(series: data)
 							}
-							
+
 						}
 				}
 			}
 
-			// Add all Marks here.
-			if data == dataSeries.last {
-				if isShowingMeanMarker {
-					let mean = data.meanYValue
-					RuleMark(y: .value("AVERAGE", mean))
-						.foregroundStyle(grayColor)
-						.annotation(
-							position: .top,
-							alignment: .topLeading
-						) {
-							Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
-								.font(.caption)
-						}
-				}
-				if isShowingMedianMarker {
-					let median = data.medianYValue
-					RuleMark(y: .value("MEDIAN", median))
-						.foregroundStyle(.gray)
-						.annotation(
-							position: .top,
-							alignment: .topLeading
-						) {
-							Text(markerLocalizedString("MEDIAN_VALUE", value: median))
-								.font(.caption)
-						}
-				}
+			if data.showMeanMark {
+				let mean = data.meanYValue
+				RuleMark(y: .value("AVERAGE", mean))
+					.foregroundStyle(grayColor)
+					.annotation(
+						position: .top,
+						alignment: .topLeading
+					) {
+						Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
+							.font(.caption)
+					}
+			}
+			if data.showMedianMark {
+				let median = data.medianYValue
+				RuleMark(y: .value("MEDIAN", median))
+					.foregroundStyle(.gray)
+					.annotation(
+						position: .top,
+						alignment: .topLeading
+					) {
+						Text(markerLocalizedString("MEDIAN_VALUE", value: median))
+							.font(.caption)
+					}
 			}
 		}
 		.chartXAxis {
