@@ -12,12 +12,15 @@ import SwiftUI
 
 struct CareKitEssentialChartBodyView: View {
 
+	@Environment(\.careKitStyle) private var style
     let dataSeries: [CKEDataSeries]
 	var useFullAspectRating: Bool = false
 	@State var showGridLines: Bool = false
+	@State var isAllowingHorizontalScroll: Bool = false
 	@State var isShowingMeanMarker: Bool = false
 	@State var isShowingMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
+	@State var selectedDate: Date? = nil
 
     var body: some View {
         Chart(dataSeries) { data in
@@ -47,11 +50,23 @@ struct CareKitEssentialChartBodyView: View {
             .foregroundStyle(by: .value("DATA_SERIES", data.title))
             .position(by: .value("DATA_SERIES", data.title))
 
+			// Add all Marks here.
 			if data == dataSeries.last {
+				if let selectedDate,
+				   let dateUnit = data.dataPoints.first?.xUnit {
+					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
+						.foregroundStyle(grayColor.opacity(0.3))
+						.annotation(
+							position: .top,
+							spacing: 0
+						) {
+							selectionPopover
+						}
+				}
 				if isShowingMeanMarker {
 					let mean = data.meanYValue
 					RuleMark(y: .value("AVERAGE", mean))
-						.foregroundStyle(.gray)
+						.foregroundStyle(grayColor)
 						.annotation(
 							position: .top,
 							alignment: .topLeading
@@ -98,13 +113,6 @@ struct CareKitEssentialChartBodyView: View {
 				AxisValueLabel()
 			}
 		}
-		.apply { chart in
-			if #available(iOS 17.0, watchOS 10.0, *) {
-				chart.chartScrollableAxes(.horizontal)
-			} else {
-				chart
-			}
-		}
 		.chartForegroundStyleScale { (name: String) in
 			legendColors[name] ?? LinearGradient(
 				gradient: Gradient(
@@ -123,9 +131,55 @@ struct CareKitEssentialChartBodyView: View {
 		.if(dataSeries.isEmpty == false) { chart in
 			chart.accessibilityChartDescriptor(dataSeries.last!)
 		}
+		.apply { chart in
+			if #available(iOS 17.0, watchOS 10.0, *) {
+				if isAllowingHorizontalScroll {
+					chart
+						.chartScrollableAxes(.horizontal)
+						.chartXSelection(value: $selectedDate)
+				} else {
+					chart.chartXSelection(value: $selectedDate)
+				}
+			} else {
+				chart
+			}
+		}
 		.onAppear {
 			updateLegendColors()
 		}
+	}
+
+	private var grayColor: Color {
+		#if os(iOS) || os(visionOS)
+		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
+	}
+
+	@ViewBuilder
+	private var selectionPopover: some View {
+		if let selectedDateValue {
+			VStack {
+				Text(selectedDateValue.0.formatted(.dateTime.month().day().hour()))
+				Text(selectedDateValue.1.formatted())
+			}
+			.font(.caption)
+		} else if let selectedDate {
+			VStack {
+				Text(selectedDate.formatted(.dateTime.month().day().hour()))
+			}
+			.font(.caption)
+		}
+	}
+
+	private var selectedDateValue: (Date, Double)? {
+		guard let selectedDate,
+			  let value = dataSeries.first?.selectedDataValue(for: selectedDate) else {
+			return nil
+		}
+
+		return (selectedDate, value)
 	}
 
 	private func markerLocalizedString(_ key: String, value: Double) -> String {

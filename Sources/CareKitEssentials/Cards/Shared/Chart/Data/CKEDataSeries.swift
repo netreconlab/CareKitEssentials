@@ -216,6 +216,10 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 	}
 
+	func selectedDataValue(for date: Date) -> Double? {
+		dataPoints.first(where: { $0.x == date })?.y
+	}
+
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single
     /// solid color. Use this initialize if you wish to plot data at precise or irregular intervals.
     ///
