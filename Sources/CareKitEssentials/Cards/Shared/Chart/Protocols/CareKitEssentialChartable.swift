@@ -17,7 +17,7 @@ protocol CareKitEssentialChartable: CareKitEssentialView {
 	var title: String { get }
 	var subtitle: String { get }
 	var dateInterval: DateInterval { get set }
-	var period: Calendar.Component { get set }
+	var periodComponent: PeriodComponent { get set }
 	var configurations: [CKEDataSeriesConfiguration] { get set }
 }
 
@@ -40,31 +40,20 @@ extension CareKitEssentialChartable {
 				return progress
 			}
 
-			do {
-				let progress = try periodicProgressForConfiguration(
-					id: configuration.id,
-					events: events,
-					per: period,
-					dateInterval: dateInterval,
-					computeProgress: { event in
-						computeProgress(
-							for: event,
-							configuration: configuration
-						)
-					}
-				)
+			let progress = periodicProgressForConfiguration(
+				id: configuration.id,
+				events: events,
+				per: periodComponent,
+				dateInterval: dateInterval,
+				computeProgress: { event in
+					computeProgress(
+						for: event,
+						configuration: configuration
+					)
+				}
+			)
 
-				return progress
-			} catch {
-				Logger.essentialChartable.error(
-					"Cannot compute progress for configuration \(configuration.id) because of error: \(error)"
-				)
-				let progress = TemporalTaskProgress<LinearCareTaskProgress>(
-					id: configuration.id,
-					progressPerDates: []
-				)
-				return progress
-			}
+			return progress
 		}
 
 		do {
@@ -181,14 +170,14 @@ extension CareKitEssentialChartable {
 	private func periodicProgressForConfiguration<Progress>(
 		id: String,
 		events: [OCKAnyEvent],
-		per component: Calendar.Component,
+		per periodComponent: PeriodComponent,
 		dateInterval: DateInterval,
 		computeProgress: @escaping (OCKAnyEvent) -> Progress
-	) throws -> TemporalTaskProgress<Progress> {
+	) -> TemporalTaskProgress<Progress> {
 
-		let progressPerPeriod = try periodicProgress(
+		let progressPerPeriod = periodicProgress(
 			for: events,
-			per: component,
+			per: periodComponent,
 			dateInterval: dateInterval,
 			computeProgress: computeProgress
 		)
@@ -203,10 +192,10 @@ extension CareKitEssentialChartable {
 
 	private func periodicProgress<Progress>(
 		for events: [OCKAnyEvent],
-		per component: Calendar.Component,
+		per periodComponent: PeriodComponent,
 		dateInterval: DateInterval,
 		computeProgress: @escaping (OCKAnyEvent) -> Progress
-	) throws -> [TemporalProgress<Progress>] {
+	) -> [TemporalProgress<Progress>] {
 
 		let calendar = Calendar.current
 
@@ -217,9 +206,8 @@ extension CareKitEssentialChartable {
 
 		while currentDate < dateInterval.end.endOfDay {
 			let valueToIncrementBy = 1
-			let periodComponent = try uniqueComponents(
-				for: currentDate,
-				during: component
+			let periodComponent = periodComponent.relevantComponentsForProgress(
+				for: currentDate
 			)
 			periodComponentsInInterval.append(periodComponent)
 			currentDate = calendar.date(
@@ -230,12 +218,11 @@ extension CareKitEssentialChartable {
 		}
 
 		// Group the events by the component they started
-		let eventsGroupedByPeriodComponent = try Dictionary(
+		let eventsGroupedByPeriodComponent = Dictionary(
 			grouping: events,
 			by: {
-				try uniqueComponents(
-					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start,
-					during: component
+				periodComponent.relevantComponentsForProgress(
+					for: $0.sortedOutcome?.values.first?.createdDate ?? $0.scheduleEvent.start
 				).componentsForProgress
 			}
 		)
@@ -261,71 +248,5 @@ extension CareKitEssentialChartable {
 		}
 
 		return progressPerPeriodComponent
-	}
-
-	private func uniqueComponents(
-		for date: Date,
-		during period: Calendar.Component
-	) throws -> DateComponentsForProgress {
-		switch period {
-		case .day, .dayOfYear:
-			let component = Calendar.Component.hour
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, .day, component],
-				from: date
-			)
-			let progressComponents = DateComponentsForProgress(
-				componentsForProgress: dateComponents,
-				componentsForProgressWithDay: dateComponents,
-				componentToIncrement: component
-			)
-			return progressComponents
-		case .weekday, .weekOfMonth, .weekOfYear:
-			let component = Calendar.Component.day
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, component],
-				from: date
-			)
-			let progressComponents = DateComponentsForProgress(
-				componentsForProgress: dateComponents,
-				componentsForProgressWithDay: dateComponents,
-				componentToIncrement: component
-			)
-			return progressComponents
-		case .month:
-			let component = Calendar.Component.weekOfMonth
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, .month, component],
-				from: date
-			)
-			let dateComponentsWithDay = Calendar.current.dateComponents(
-				[.year, .month, .day, component],
-				from: date
-			)
-			let progressComponents = DateComponentsForProgress(
-				componentsForProgress: dateComponents,
-				componentsForProgressWithDay: dateComponentsWithDay,
-				componentToIncrement: component
-			)
-			return progressComponents
-		case .year:
-			let component = Calendar.Component.month
-			let dateComponents = Calendar.current.dateComponents(
-				[.year, component],
-				from: date
-			)
-			let dateComponentsWithDay = Calendar.current.dateComponents(
-				[.year, .day, component],
-				from: date
-			)
-			let progressComponents = DateComponentsForProgress(
-				componentsForProgress: dateComponents,
-				componentsForProgressWithDay: dateComponentsWithDay,
-				componentToIncrement: component
-			)
-			return progressComponents
-		default:
-			throw CareKitEssentialsError.errorString("Unsupported type of period")
-		}
 	}
 }

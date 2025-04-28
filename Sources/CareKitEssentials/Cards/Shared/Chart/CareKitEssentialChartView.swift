@@ -2,8 +2,7 @@
 //  CareKitEssentialChartView.swift
 //  CareKitEssentials
 //
-//  Created by Zion Glover on 6/26/24.
-//  Copyright © 2024 NetReconLab. All rights reserved.
+//  Created by Corey Baker on 4/27/25.
 //
 
 import CareKit
@@ -14,22 +13,20 @@ import Foundation
 import os.log
 import SwiftUI
 
-public typealias CareEssentialChartView = CareKitEssentialChartView
-
 public struct CareKitEssentialChartView: CareKitEssentialChartable {
-    @Environment(\.careStore) public var store
-    @Environment(\.isCardEnabled) private var isCardEnabled
+	@Environment(\.careStore) public var store
+	@Environment(\.isCardEnabled) private var isCardEnabled
 	@Environment(\.careKitStyle) private var style
-    @CareStoreFetchRequest(query: query()) private var events
+	@CareStoreFetchRequest(query: query()) private var events
 	@State var isShowingDetail: Bool = false
 
-    let title: String
-    let subtitle: String
-    var dateInterval: DateInterval
-    var period: Calendar.Component
-    var configurations: [CKEDataSeriesConfiguration]
+	let title: String
+	let subtitle: String
+	@Binding var dateInterval: DateInterval
+	@Binding var periodComponent: PeriodComponent
+	@Binding var configurations: [CKEDataSeriesConfiguration]
 
-    public var body: some View {
+	public var body: some View {
 		CardView {
 			VStack(alignment: .leading) {
 				HStack {
@@ -77,20 +74,20 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					title: title,
 					subtitle: subtitle,
 					dateInterval: dateInterval,
-					period: period,
+					periodComponent: periodComponent,
 					configurations: configurations
 				)
 				.padding()
 			}
 		}
-    }
+	}
 
-    static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
+	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
 		eventQuery(
 			with: taskIDs ?? [],
 			on: Date()
 		)
-    }
+	}
 
 	/// Create an instance of chart for displaying CareKit data.
 	/// - title: The title for the chart.
@@ -100,19 +97,19 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	/// - configurations: A configuration object that specifies
 	/// which data should be queried and how it should be
 	/// displayed by the graph.
-    public init(
-        title: String,
-        subtitle: String,
-        dateInterval: DateInterval,
-        period: Calendar.Component,
-        configurations: [CKEDataSeriesConfiguration]
+	public init(
+		title: String,
+		subtitle: String,
+		dateInterval: Binding<DateInterval>,
+		periodComponent: Binding<PeriodComponent>,
+		configurations: Binding<[CKEDataSeriesConfiguration]>
 	) {
-        self.title = title
-        self.subtitle = subtitle
-        self.dateInterval = dateInterval
-        self.period = period
-        self.configurations = configurations
-    }
+		self.title = title
+		self.subtitle = subtitle
+		_dateInterval = dateInterval
+		_periodComponent = periodComponent
+		_configurations = configurations
+	}
 
 	private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
@@ -127,79 +124,98 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 }
 
 struct CareKitEssentialChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        let task = Utility.createNauseaTask()
-        let configurationBar = CKEDataSeriesConfiguration(
-            taskID: task.id,
-            mark: .bar,
-            legendTitle: "Bar",
-            color: .red,
-            gradientStartColor: .gray
-        )
-        let previewStore = Utility.createPreviewStore()
-		var dayDateInterval: DateInterval {
-			let now = Date()
-			let startOfDay = Calendar.current.startOfDay(
-				for: now
+
+	static var dayDateInterval: DateInterval {
+		let now = Date()
+		let startOfDay = Calendar.current.startOfDay(
+			for: now
+		)
+		let dateInterval = DateInterval(
+			start: startOfDay,
+			end: now
+		)
+		return dateInterval
+	}
+	static var weekDateInterval: DateInterval {
+		let interval = Calendar.current.dateIntervalOfWeek(
+			for: Date()
+		)
+		return interval
+
+	}
+	static var monthDateInterval: DateInterval {
+		let interval = Calendar.current.dateIntervalOfMonth(
+			for: Date()
+		)
+		return interval
+
+	}
+	static var yearDateInterval: DateInterval {
+		let interval = Calendar.current.dateIntervalOfYear(
+			for: Date()
+		)
+		return interval
+
+	}
+	static var previews: some View {
+		let task = Utility.createNauseaTask()
+		let previewStore = Utility.createPreviewStore()
+		@State var intervalSelected = 0
+		@State var dateInterval: DateInterval = dayDateInterval
+		@State var periodComponent: PeriodComponent = .day
+		@State var configurations: [CKEDataSeriesConfiguration] = [
+			CKEDataSeriesConfiguration(
+				taskID: task.id,
+				mark: .bar,
+				legendTitle: "Bar",
+				color: .red,
+				gradientStartColor: .gray
 			)
-			let dateInterval = DateInterval(
-				start: startOfDay,
-				end: now
-			)
-			return dateInterval
-		}
-		var weekDateInterval: DateInterval {
-			let interval = Calendar.current.dateIntervalOfWeek(
-				for: Date()
-			)
-			return interval
-		}
-		var monthDateInterval: DateInterval {
-			let interval = Calendar.current.dateIntervalOfMonth(
-				for: Date()
-			)
-			return interval
-		}
-		var yearDateInterval: DateInterval {
-			let interval = Calendar.current.dateIntervalOfYear(
-				for: Date()
-			)
-			return interval
+		]
+		var subtitle: String {
+			switch intervalSelected {
+			case 0:
+				return String(localized: "TODAY")
+			case 1:
+				return String(localized: "WEEK")
+			case 2:
+				return String(localized: "MONTH")
+			case 3:
+				return String(localized: "YEAR")
+			default:
+				return String(localized: "WEEK")
+			}
 		}
 
-		ScrollView {
-			VStack {
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Day",
-					dateInterval: dayDateInterval,
-					period: .day,
-					configurations: [configurationBar]
-				)
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Week",
-					dateInterval: weekDateInterval,
-					period: .weekday,
-					configurations: [configurationBar]
-				)
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Month",
-					dateInterval: monthDateInterval,
-					period: .month,
-					configurations: [configurationBar]
-				)
-				CareKitEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Year",
-					dateInterval: yearDateInterval,
-					period: .year,
-					configurations: [configurationBar]
-				)
+		VStack {
+
+			Picker(
+				"CHOOSE_DATE_INTERVAL",
+				selection: $intervalSelected
+			) {
+				Text("TODAY")
+					.tag(0)
+				Text("WEEK")
+					.tag(1)
+				Text("MONTH")
+					.tag(2)
+				Text("YEAR")
+					.tag(3)
 			}
-			.padding()
-        }
-        .environment(\.careStore, previewStore)
-    }
+			.pickerStyle(.segmented)
+			.padding(.vertical)
+
+			Spacer()
+			CareKitEssentialChartView(
+				title: task.title ?? "",
+				subtitle: subtitle,
+				dateInterval: $dateInterval,
+				periodComponent: $periodComponent,
+				configurations: $configurations
+			)
+			Spacer()
+		}
+		.padding()
+		.environment(\.careStore, previewStore)
+	}
 }

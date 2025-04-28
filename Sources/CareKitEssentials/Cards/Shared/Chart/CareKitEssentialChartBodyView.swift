@@ -14,6 +14,7 @@ struct CareKitEssentialChartBodyView: View {
 
     let dataSeries: [CKEDataSeries]
 	var useFullAspectRating: Bool = false
+	@State var showGridLines: Bool = false
 	@State var isShowingMeanMarker: Bool = false
 	@State var isShowingMedianMarker: Bool = false
 	@State var legendColors = [String: LinearGradient]()
@@ -75,6 +76,9 @@ struct CareKitEssentialChartBodyView: View {
         }
 		.chartXAxis {
 			AxisMarks { _ in
+				if showGridLines {
+					AxisGridLine()
+				}
 				if dataSeries.first?.dataPoints.first?.xUnit == .hour {
 					AxisValueLabel(
 						format: .dateTime.hour(.defaultDigits(amPM: .abbreviated))

@@ -21,9 +21,9 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 
 	let title: String
 	let subtitle: String
-	var dateInterval: DateInterval
-	var period: Calendar.Component
-	var configurations: [CKEDataSeriesConfiguration]
+	@State var dateInterval: DateInterval
+	@State var periodComponent: PeriodComponent
+	@State var configurations: [CKEDataSeriesConfiguration]
 
 	var body: some View {
 		NavigationView {
@@ -38,7 +38,8 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries,
-					useFullAspectRating: true
+					useFullAspectRating: true,
+					showGridLines: true
 				)
 				.onAppear {
 					updateQuery()
@@ -79,28 +80,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			with: taskIDs ?? [],
 			on: Date()
 		)
-	}
-
-	/// Create an instance of chart for displaying CareKit data.
-	/// - title: The title for the chart.
-	/// - subtitle: The subtitle for the chart.
-	/// - dateInterval: The date interval of data to display
-	/// - period: The frequency at which data should be combined.
-	/// - configurations: A configuration object that specifies
-	/// which data should be queried and how it should be
-	/// displayed by the graph.
-	public init(
-		title: String,
-		subtitle: String,
-		dateInterval: DateInterval,
-		period: Calendar.Component,
-		configurations: [CKEDataSeriesConfiguration]
-	) {
-		self.title = title
-		self.subtitle = subtitle
-		self.dateInterval = dateInterval
-		self.period = period
-		self.configurations = configurations
 	}
 
 	private func updateQuery() {
@@ -169,7 +148,7 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 					title: task.title ?? "",
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
-					period: .weekday,
+					periodComponent: .week,
 					configurations: [configurationBar]
 				) /*
 				CareKitEssentialChartView(
