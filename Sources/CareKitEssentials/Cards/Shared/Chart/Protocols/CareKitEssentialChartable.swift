@@ -130,7 +130,7 @@ extension CareKitEssentialChartable {
 					period: progress.period
 				)
 				return combined
-			case .average:
+			case .mean:
 				let combinedProgressValue = LinearCareTaskProgress.computeProgressByAveraging(for: combinedProgressValues).value
 
 				let combined = CombinedProgress(

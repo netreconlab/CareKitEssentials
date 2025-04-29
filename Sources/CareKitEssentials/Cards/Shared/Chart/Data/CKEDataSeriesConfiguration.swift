@@ -17,7 +17,7 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 
 	public enum DataStrategy: Hashable {
 		case sum
-		case average
+		case mean
 		case median
 	}
 
@@ -145,6 +145,10 @@ extension CKEDataSeriesConfiguration {
 		&& lhs.taskID == rhs.taskID
 		&& lhs.kind == rhs.kind
 		&& lhs.legendTitle == rhs.legendTitle
+		&& lhs.yAxisLabel == rhs.yAxisLabel
+		&& lhs.showMarkWhenHighlighted == rhs.showMarkWhenHighlighted
+		&& lhs.showMedianMark == rhs.showMedianMark
+		&& lhs.showMeanMark == rhs.showMeanMark
 		&& lhs.color == rhs.color
 		&& lhs.gradientStartColor == rhs.gradientStartColor
 	}
@@ -156,6 +160,10 @@ extension CKEDataSeriesConfiguration {
 		hasher.combine(taskID)
 		hasher.combine(kind)
 		hasher.combine(legendTitle)
+		hasher.combine(yAxisLabel)
+		hasher.combine(showMarkWhenHighlighted)
+		hasher.combine(showMedianMark)
+		hasher.combine(showMeanMark)
 		hasher.combine(color)
 		hasher.combine(gradientStartColor)
 	}

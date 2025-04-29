@@ -29,13 +29,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	var body: some View {
 		NavigationView {
 			VStack(alignment: .leading) {
-				/*
-				CareKitEssentialChartHeaderView(
-					title: title,
-					subtitle: subtitle
-				)
-				.padding(.bottom)
-				 */
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries,
@@ -53,6 +46,27 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				}
 				.onReceive(events.publisher) { _ in
 					updateQuery()
+				}
+
+				Divider()
+
+				ForEach(orderedConfigurations) { configuration in
+					let configurationId = configuration.id
+					let currentConfiguration = configurations[configurationId] ?? configuration
+
+					Text(currentConfiguration.legendTitle)
+						.font(.title)
+						.bold()
+
+					CKEConfigurationView(
+						configurationId: configurationId,
+						configurations: $configurations,
+						markSelected: currentConfiguration.mark,
+						dataStrategySelected: currentConfiguration.dataStrategy,
+						isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+						isShowingMeanMark: currentConfiguration.showMeanMark,
+						isShowingMedianMark: currentConfiguration.showMedianMark
+					)
 				}
 			}
 		}

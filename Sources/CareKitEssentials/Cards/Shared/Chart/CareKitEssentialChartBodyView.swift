@@ -118,17 +118,19 @@ struct CareKitEssentialChartBodyView: View {
 
 	@ViewBuilder
 	func selectionPopover(series: CKEDataSeries) -> some View {
-		if let selected = selectedDateValue(series: series) {
-			VStack {
-				dateFormatted(date: selected.0, series: series)
-				Text(markerLocalizedString("VALUE_DISPLAY", value: selected.1))
+		if series.showMarkWhenHighlighted {
+			if let selected = selectedDateValue(series: series) {
+				VStack {
+					dateFormatted(date: selected.0, series: series)
+					Text(markerLocalizedString("VALUE_DISPLAY", value: selected.1))
+				}
+				.font(.caption)
+			} else if let selectedDate {
+				VStack {
+					dateFormatted(date: selectedDate, series: series)
+				}
+				.font(.caption)
 			}
-			.font(.caption)
-		} else if let selectedDate {
-			VStack {
-				dateFormatted(date: selectedDate, series: series)
-			}
-			.font(.caption)
 		}
 	}
 
