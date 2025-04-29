@@ -36,10 +36,9 @@ struct CareKitEssentialChartBodyView: View {
 				.lineStyle(by: .value(data.title, point.y))
 				.opacity(selectedDate == nil || selectedDateValue(series: data)?.1 == point.y ? 1 : 0.2)
 
-				// Add special marks for specific charts here.
-				if data.mark == .bar {
-					makeAdditionalChartsForBarMarks(series: data, at: point)
-				}
+				// Add special marks that rely on the specific point
+				// to the method below.
+				makeAllAdditionalMarks(series: data, at: point)
 			}
 			.if(data.interpolation != nil) { chartContent in
 				chartContent.interpolationMethod(data.interpolation!)
@@ -53,56 +52,9 @@ struct CareKitEssentialChartBodyView: View {
 			.foregroundStyle(by: .value("DATA_SERIES", data.title))
 			.position(by: .value("DATA_SERIES", data.title))
 
-			// Add all Marks here.
-			if let selectedDate,
-			   let dateUnit = data.dataPoints.first?.xUnit {
-
-				// Currently only show for first, can add option in config later
-				// To should multiple.
-				if data.showMarkWhenHighlighted {
-					RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
-						.foregroundStyle(grayColor.opacity(0.3))
-						.annotation(
-							position: .automatic,
-							spacing: 0
-						) {
-							selectionPopover(series: data)
-								.padding(2)
-								.background {
-									RoundedRectangle(
-										cornerRadius: 4
-									)
-									.shadow(radius: 2)
-									.foregroundStyle(markColor(name: data.title).opacity(0.2))
-								}
-						}
-				}
-			}
-
-			if data.showMeanMark {
-				let mean = data.meanYValue
-				RuleMark(y: .value("AVERAGE", mean))
-					.foregroundStyle(grayColor)
-					.annotation(
-						position: .top,
-						alignment: .topLeading
-					) {
-						Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
-							.font(.caption)
-					}
-			}
-			if data.showMedianMark {
-				let median = data.medianYValue
-				RuleMark(y: .value("MEDIAN", median))
-					.foregroundStyle(.gray)
-					.annotation(
-						position: .top,
-						alignment: .topLeading
-					) {
-						Text(markerLocalizedString("MEDIAN_VALUE", value: median))
-							.font(.caption)
-					}
-			}
+			// Add all Marks that don't rely on a specific point
+			// to the method below.
+			makeAllAdditionalMarks(series: data)
 		}
 		.chartXAxis {
 			AxisMarks { _ in
@@ -155,7 +107,8 @@ struct CareKitEssentialChartBodyView: View {
 		}
 	}
 
-	private var grayColor: Color {
+	// MARK: Public Helpers
+	var grayColor: Color {
 #if os(iOS) || os(visionOS)
 		Color(style.color.customGray)
 #else
@@ -163,36 +116,8 @@ struct CareKitEssentialChartBodyView: View {
 #endif
 	}
 
-	@ChartContentBuilder
-	func makeAdditionalChartsForBarMarks(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
-		if point.y == series.maxYValue {
-			RectangleMark(
-				x: .value(series.xLabel, point.x, unit: point.xUnit),
-				y: .value(series.yLabel, point.y),
-				height: 3
-			)
-		}
-
-		ForEach(0..<point.originalValues.count, id: \.self) { index in
-			PointMark(
-				x: .value(series.xLabel, point.x, unit: point.xUnit),
-				y: .value(series.yLabel, point.originalValues[index])
-			)
-			.opacity(0.3)
-		}
-	}
-
 	@ViewBuilder
-	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
-		if let period = dataSeries.first?.dataPoints.first?.period {
-			Text(period.formattedDateString(date))
-		} else {
-			Text(date.formatted(.dateTime.month().day().hour()))
-		}
-	}
-
-	@ViewBuilder
-	private func selectionPopover(series: CKEDataSeries) -> some View {
+	func selectionPopover(series: CKEDataSeries) -> some View {
 		if let selected = selectedDateValue(series: series) {
 			VStack {
 				dateFormatted(date: selected.0, series: series)
@@ -207,7 +132,17 @@ struct CareKitEssentialChartBodyView: View {
 		}
 	}
 
-	private func markColor(name: String) -> LinearGradient {
+	func markerLocalizedString(_ key: String, value: Double) -> String {
+		String(
+			format: NSLocalizedString(
+				key,
+				comment: ""
+			),
+			value
+		)
+	}
+
+	func markColor(name: String) -> LinearGradient {
 		legendColors[name] ?? LinearGradient(
 			gradient: Gradient(
 				colors: [
@@ -220,6 +155,16 @@ struct CareKitEssentialChartBodyView: View {
 		)
 	}
 
+	// MARK: Private Helpers
+	@ViewBuilder
+	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
+		if let period = dataSeries.first?.dataPoints.first?.period {
+			Text(period.formattedDateString(date))
+		} else {
+			Text(date.formatted(.dateTime.month().day().hour()))
+		}
+	}
+
 	private func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
 		guard let selectedDate,
 			  let value = series.selectedDataValue(for: selectedDate) else {
@@ -227,16 +172,6 @@ struct CareKitEssentialChartBodyView: View {
 		}
 
 		return (selectedDate, value)
-	}
-
-	private func markerLocalizedString(_ key: String, value: Double) -> String {
-		String(
-			format: NSLocalizedString(
-				key,
-				comment: ""
-			),
-			value
-		)
 	}
 
 	private func updateLegendColors() {

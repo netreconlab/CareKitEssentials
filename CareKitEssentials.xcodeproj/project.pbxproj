@@ -21,6 +21,7 @@
 		70116B182DBF122D0024BB89 /* PeriodComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B172DBF122D0024BB89 /* PeriodComponent.swift */; };
 		70116B3C2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3B2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift */; };
 		70116B3E2DC0674C0024BB89 /* CKEConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3D2DC0674C0024BB89 /* CKEConfigurationView.swift */; };
+		70116B402DC06DC60024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */; };
 		7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */; };
 		7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */; };
 		7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */; };
@@ -174,6 +175,7 @@
 		70116B172DBF122D0024BB89 /* PeriodComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodComponent.swift; sourceTree = "<group>"; };
 		70116B3B2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryCareTaskProgress+Math.swift"; sourceTree = "<group>"; };
 		70116B3D2DC0674C0024BB89 /* CKEConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEConfigurationView.swift; sourceTree = "<group>"; };
+		70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareKitEssentialChartBodyView+ChartContent.swift"; sourceTree = "<group>"; };
 		7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleElement+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSemanticVersion+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKNote+Hashable.swift"; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 		70B49A8E2D0A8FB80023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */,
 				70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
@@ -825,6 +828,7 @@
 				7026DDF12D0CD7E2002EACAA /* OCKSchedule+Hashable.swift in Sources */,
 				7068BD3D2D62774400212E4A /* OCKHealthKitPassthroughStore.swift in Sources */,
 				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
+				70116B402DC06DC60024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
 				702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */,
