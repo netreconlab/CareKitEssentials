@@ -58,6 +58,34 @@ public extension LinearCareTaskProgress {
         return sum
     }
 
+	static func computeProgressBySummingOutcomeValues(
+		for event: OCKAnyEvent,
+		kind: String?
+	) -> LinearCareTaskProgress {
+
+		let outcomeValues = event.outcome?.values ?? []
+		let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+
+		let summedOutcomesValue = filteredOutcomeValues
+			.map(accumulableDoubleValue)
+			.reduce(0, +)
+
+		let targetValues = event.scheduleEvent.element.targetValues
+
+		let summedTargetValue = targetValues
+			.map(accumulableDoubleValue)
+			.reduce(nil) { partialResult, nextTarget -> Double? in
+				return sum(partialResult, nextTarget)
+			}
+
+		let progress = LinearCareTaskProgress(
+			value: summedOutcomesValue,
+			goal: summedTargetValue
+		)
+
+		return progress
+	}
+
     static func computeProgressByAveragingOutcomeValues(
         for event: OCKAnyEvent,
         kind: String? = nil

@@ -18,13 +18,12 @@ struct CareKitEssentialChartBodyView: View {
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
 	@State var legendColors = [String: LinearGradient]()
-	@State var selectedDate: Date? = nil
+	@State var selectedDate: Date?
 
 	var body: some View {
 		Chart(dataSeries) { data in
 			ForEach(data.dataPoints) { point in
 				data.mark.chartContent(
-					title: data.title,
 					xLabel: data.xLabel,
 					xValue: point.x,
 					xValueUnit: point.xUnit,
@@ -163,7 +162,6 @@ struct CareKitEssentialChartBodyView: View {
 		Color.gray
 #endif
 	}
-
 
 	@ChartContentBuilder
 	func makeAdditionalChartsForBarMarks(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {

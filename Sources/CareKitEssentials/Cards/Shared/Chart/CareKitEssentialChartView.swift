@@ -105,7 +105,9 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 		self.title = title
 		self.subtitle = subtitle
 		self.orderedConfigurations = configurations
-		self.configurations = configurations.reduce(into: [String: CKEDataSeriesConfiguration]()) { currentConfigurations, configuration in
+		self.configurations = configurations.reduce(
+			into: [String: CKEDataSeriesConfiguration]()
+		) { currentConfigurations, configuration in
 			currentConfigurations[configuration.id] = configuration
 		}
 		_dateInterval = dateInterval

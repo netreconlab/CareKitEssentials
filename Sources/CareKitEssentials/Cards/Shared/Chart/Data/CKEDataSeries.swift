@@ -92,7 +92,6 @@ public struct CKEDataSeries: Identifiable, Hashable {
 
         @ChartContentBuilder
         func chartContent<ValueY>( // swiftlint:disable:this function_parameter_count
-            title: String,
             xLabel: String,
             xValue: Date,
 			xValueUnit: Calendar.Component,
