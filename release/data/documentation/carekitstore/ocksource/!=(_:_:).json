@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSource",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSource\/Equatable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSource"
       ]
     ]
   },
@@ -301,17 +300,6 @@
   "title" : "!=(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocksource\/!=(_:_:)"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKSource/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSource\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocksource\/equatable-implementations"
 }
 }
 }

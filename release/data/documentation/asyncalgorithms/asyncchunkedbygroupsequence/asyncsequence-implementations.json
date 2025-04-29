@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/adjacentPairs()",
@@ -59,8 +60,10 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/dropFirst(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/filter(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/first(where:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-2er67",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-3xr2i",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-5ckkd",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-d79b",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-6bk2s",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/interspersed(every:with:)-2h8jg",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/interspersed(every:with:)-4egaj",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/interspersed(every:with:)-6m64f",
@@ -2887,6 +2890,196 @@
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/first(where:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/flatMap(_:)-2er67": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-2er67",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/flatmap(_:)-2er67"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/flatMap(_:)-3xr2i": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-3xr2i",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/flatmap(_:)-3xr2i"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/flatMap(_:)-5ckkd": {
   "abstract" : [
 
@@ -2990,7 +3183,7 @@
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/flatmap(_:)-5ckkd"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/flatMap(_:)-d79b": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/flatMap(_:)-6bk2s": {
   "abstract" : [
 
   ],
@@ -3078,12 +3271,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-d79b",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunkedByGroupSequence\/flatMap(_:)-6bk2s",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "flatMap(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/flatmap(_:)-d79b"
+  "url" : "\/documentation\/asyncalgorithms\/asyncchunkedbygroupsequence\/flatmap(_:)-6bk2s"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunkedByGroupSequence/interspersed(every:with:)-2h8jg": {
   "abstract" : [
@@ -3595,6 +3788,38 @@
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AsyncSequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -3660,6 +3885,38 @@
       "type" : "text"
     }
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "AsyncSequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",

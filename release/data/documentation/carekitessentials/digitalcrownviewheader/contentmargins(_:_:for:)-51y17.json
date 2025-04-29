@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE14contentMargins__3forQrAA4EdgeO3SetV_AA0G6InsetsVAA22ContentMarginPlacementVtF::SYNTHESIZED::s:17CareKitEssentials22DigitalCrownViewHeaderV",
     "fragments" : [
       {
@@ -109,7 +108,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -159,6 +158,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -356,17 +363,6 @@
   "title" : "DigitalCrownViewHeader",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownviewheader"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewHeader/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewHeader\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/digitalcrownviewheader\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewHeader/contentMargins(_:_:for:)-51y17": {
   "abstract" : [

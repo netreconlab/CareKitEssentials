@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/anyContacts(matching:)",
@@ -138,7 +139,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -216,7 +217,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> any "
+      "text" : " -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -308,7 +309,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -386,7 +387,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> [any "
+      "text" : " -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -482,7 +483,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<[any "
+      "text" : "<["
     },
     {
       "kind" : "typeIdentifier",

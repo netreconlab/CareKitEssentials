@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE18accessibilityRotor_10textRangesQrAA18LocalizedStringKeyV_SaySnySS5IndexVGGtF::SYNTHESIZED::s:17CareKitEssentials21InformationHeaderViewV",
     "fragments" : [
       {
@@ -109,7 +108,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -159,6 +158,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -324,17 +331,6 @@
   "title" : "InformationHeaderView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/informationheaderview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/informationheaderview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/accessibilityRotor(_:textRanges:)-5h62b": {
   "abstract" : [

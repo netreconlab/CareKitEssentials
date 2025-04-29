@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/HeaderView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/HeaderView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/HeaderView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE10background_2in9fillStyleQrqd___qd_0_AA04FillG0VtAA05ShapeG0Rd__AA010InsettableI0Rd_0_r0_lF::SYNTHESIZED::s:9CareKitUI10HeaderViewV",
     "fragments" : [
       {
@@ -122,7 +121,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -172,6 +171,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -400,17 +407,6 @@
   "title" : "HeaderView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/headerview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/HeaderView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/HeaderView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/headerview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/HeaderView/background(_:in:fillStyle:)-70vb3": {
   "abstract" : [

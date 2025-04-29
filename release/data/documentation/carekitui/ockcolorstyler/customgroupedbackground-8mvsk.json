@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground-2znid"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler"
       ]
     ]
   },
@@ -165,42 +164,6 @@
   "title" : "OCKColorStyler",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockcolorstyler"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGroupedBackground-2znid": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "customGroupedBackground"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/customGroupedBackground-2znid",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "customGroupedBackground",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/customgroupedbackground-2znid"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/customGroupedBackground-8mvsk": {
   "abstract" : [

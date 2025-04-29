@@ -228,6 +228,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sci"
       ],
@@ -246,12 +247,15 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncDebounceSequence\/Iterator"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncDebounceSequence\/AsyncSequence-Implementations"
@@ -460,6 +464,11 @@
   "title" : "AsyncDebounceSequence.Iterator",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncdebouncesequence\/iterator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",

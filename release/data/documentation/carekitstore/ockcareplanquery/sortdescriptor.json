@@ -82,7 +82,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -99,6 +100,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/effectiveDate(ascending:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/groupIdentifier(ascending:)",
@@ -107,6 +110,7 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor\/Equatable-Implementations"
@@ -128,6 +132,11 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
   "title" : "Swift.Equatable",

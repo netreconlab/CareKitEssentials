@@ -125,6 +125,7 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SK",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sl",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
@@ -149,12 +150,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Values-swift.struct\/elements"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Values-swift.struct\/withUnsafeBufferPointer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Values-swift.struct\/withUnsafeMutableBufferPointer(_:)"
@@ -162,6 +167,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Values-swift.struct\/BidirectionalCollection-Implementations",
@@ -782,6 +788,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {

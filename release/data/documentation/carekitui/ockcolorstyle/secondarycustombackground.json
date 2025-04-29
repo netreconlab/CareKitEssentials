@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyle",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyle\/OCKColorStyler-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyle"
       ]
     ]
   },
@@ -179,17 +178,6 @@
   "title" : "OCKColorStyle",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockcolorstyle"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyle/OCKColorStyler-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyle\/OCKColorStyler-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKColorStyler Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyle\/ockcolorstyler-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyle/secondaryCustomBackground": {
   "abstract" : [

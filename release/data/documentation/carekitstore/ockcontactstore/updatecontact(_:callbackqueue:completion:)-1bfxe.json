@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)-4pk6a"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore"
       ]
     ]
   },
@@ -427,96 +426,6 @@
   "title" : "updateContact(_:callbackQueue:completion:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcontactstore\/updatecontact(_:callbackqueue:completion:)-1bfxe"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/updateContact(_:callbackQueue:completion:)-4pk6a": {
-  "abstract" : [
-    {
-      "code" : "updateContact",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " asynchronously updates a contacts in the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "updateContact"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore018OCKReadableContactC0P0E0Qa",
-      "text" : "Contact"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "callbackQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "completion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKResultClosurea",
-      "text" : "OCKResultClosure"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore018OCKReadableContactC0P0E0Qa",
-      "text" : "Contact"
-    },
-    {
-      "kind" : "text",
-      "text" : ">?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)-4pk6a",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "updateContact(_:callbackQueue:completion:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcontactstore\/updatecontact(_:callbackqueue:completion:)-4pk6a"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadableContactStore/Contact": {
   "abstract" : [

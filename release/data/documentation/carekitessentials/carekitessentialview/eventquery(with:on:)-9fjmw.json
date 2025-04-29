@@ -25,8 +25,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)-96h06"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView"
       ]
     ]
   },
@@ -345,103 +344,6 @@
   "title" : "CareKitEssentialView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/eventQuery(with:on:)-96h06": {
-  "abstract" : [
-    {
-      "text" : "Create an ",
-      "type" : "text"
-    },
-    {
-      "code" : "OCKEventQuery",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " constrained to a set of ",
-      "type" : "text"
-    },
-    {
-      "code" : "taskIDs",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " on a particular date.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "eventQuery"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "with"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "], "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "on"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation4DateV",
-      "text" : "Date"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKEventQueryV",
-      "text" : "OCKEventQuery"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)-96h06",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "eventQuery(with:on:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/eventquery(with:on:)-96h06"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/eventQuery(with:on:)-9fjmw": {
   "abstract" : [

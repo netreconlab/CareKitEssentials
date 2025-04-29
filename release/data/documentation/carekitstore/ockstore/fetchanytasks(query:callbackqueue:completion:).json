@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyReadOnlyTaskStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -88,7 +87,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<[any "
+        "text" : "<["
       },
       {
         "kind" : "typeIdentifier",
@@ -181,7 +180,7 @@
               "text" : ": "
             },
             {
-              "kind" : "keyword",
+              "kind" : "attribute",
               "text" : "@escaping"
             },
             {
@@ -196,7 +195,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<[any "
+              "text" : "<["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTask",
@@ -401,17 +400,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyReadOnlyTaskStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyReadOnlyTaskStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyReadOnlyTaskStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanyreadonlytaskstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/fetchAnyTasks(query:callbackQueue:completion:)": {
   "abstract" : [
     {
@@ -485,7 +473,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<[any "
+      "text" : "<["
     },
     {
       "kind" : "typeIdentifier",

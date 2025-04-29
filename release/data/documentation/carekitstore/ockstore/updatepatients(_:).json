@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKPatientStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -45,14 +44,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Self"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12CareKitStore018OCKReadablePatientC0P0E0Qa",
         "text" : "Patient"
       },
@@ -75,14 +66,6 @@
       {
         "kind" : "text",
         "text" : " -> ["
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Self"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -148,14 +131,6 @@
               "text" : ": ["
             },
             {
-              "kind" : "typeIdentifier",
-              "text" : "Self"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/Patient",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:12CareKitStore018OCKReadablePatientC0P0E0Qa",
@@ -180,14 +155,6 @@
             {
               "kind" : "text",
               "text" : " -> ["
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Self"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/Patient",
@@ -344,17 +311,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKPatientStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKPatientStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKPatientStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockpatientstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/updatePatients(_:)": {
   "abstract" : [
     {
@@ -385,14 +341,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:12CareKitStore018OCKReadablePatientC0P0E0Qa",
       "text" : "Patient"
     },
@@ -415,14 +363,6 @@
     {
       "kind" : "text",
       "text" : " -> ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

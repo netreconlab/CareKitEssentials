@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncCombineLatest2Sequence",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncCombineLatest2Sequence\/AsyncSequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncCombineLatest2Sequence"
       ]
     ]
   },
@@ -297,17 +296,6 @@
   "title" : "AsyncCombineLatest2Sequence",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asynccombinelatest2sequence"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncCombineLatest2Sequence/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncCombineLatest2Sequence\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/asyncalgorithms\/asynccombinelatest2sequence\/asyncsequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncCombineLatest2Sequence/removeDuplicates(by:)": {
   "abstract" : [

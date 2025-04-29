@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/RandomAccessCollection-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
       ]
     ]
   },
@@ -198,6 +197,7 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SK",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sl",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
@@ -221,6 +221,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/SubSequence\/BidirectionalCollection-Implementations",
@@ -323,17 +324,6 @@
   "title" : "OrderedSet",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/orderedset"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/RandomAccessCollection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/RandomAccessCollection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RandomAccessCollection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset\/randomaccesscollection-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/SubSequence": {
   "abstract" : [
@@ -497,6 +487,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {

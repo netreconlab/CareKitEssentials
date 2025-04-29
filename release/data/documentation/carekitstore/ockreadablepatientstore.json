@@ -125,6 +125,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Associated-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/Patient",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/Patients"
@@ -132,9 +134,11 @@
       "title" : "Associated Types"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatient(withID:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatient(withID:callbackQueue:completion:)-2k7xi",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatient(withID:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatients(query:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatients(query:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/patients(matching:)"
@@ -489,7 +493,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockreadablepatientstore\/fetchpatient(withid:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadablePatientStore/fetchPatient(withID:callbackQueue:completion:)-2k7xi": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadablePatientStore/fetchPatient(withID:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchPatient",
@@ -587,13 +591,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatient(withID:callbackQueue:completion:)-2k7xi",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadablePatientStore\/fetchPatient(withID:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchPatient(withID:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockreadablepatientstore\/fetchpatient(withid:callbackqueue:completion:)-2k7xi"
+  "url" : "\/documentation\/carekitstore\/ockreadablepatientstore\/fetchpatient(withid:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadablePatientStore/fetchPatients(query:)": {
   "abstract" : [

@@ -162,19 +162,21 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlan(_:callbackQueue:completion:)-22ln2",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)-oozn",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlan(_:callbackQueue:completion:)-2eqy7",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlans(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlans(_:callbackQueue:completion:)-1mp4b",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlans(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlan(_:callbackQueue:completion:)-16z29",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlans(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlans(_:callbackQueue:completion:)-37t1l"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlans(_:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -300,7 +302,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlan(_:callbackQueue:completion:)-22ln2": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously adds a single care plan to the store.",
@@ -378,13 +380,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlan(_:callbackQueue:completion:)-22ln2",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplan(_:callbackqueue:completion:)-22ln2"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlans(_:)": {
   "abstract" : [
@@ -452,7 +454,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplans(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlans(_:callbackQueue:completion:)-oozn": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlans(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously adds an array of care plans to the store.",
@@ -530,13 +532,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)-oozn",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyCarePlans(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplans(_:callbackqueue:completion:)-oozn"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplans(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlan(_:)": {
   "abstract" : [
@@ -600,7 +602,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlan(_:callbackQueue:completion:)-2eqy7": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously deletes a single care plan from the store.",
@@ -678,13 +680,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlan(_:callbackQueue:completion:)-2eqy7",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplan(_:callbackqueue:completion:)-2eqy7"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlans(_:)": {
   "abstract" : [
@@ -752,7 +754,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplans(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlans(_:callbackQueue:completion:)-1mp4b": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/deleteAnyCarePlans(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously deletes an array of care plans from the store.",
@@ -830,13 +832,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlans(_:callbackQueue:completion:)-1mp4b",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/deleteAnyCarePlans(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyCarePlans(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplans(_:callbackqueue:completion:)-1mp4b"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/deleteanycareplans(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlan(_:)": {
   "abstract" : [
@@ -900,7 +902,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlan(_:callbackQueue:completion:)-16z29": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously updates a single care plan in the store.",
@@ -978,13 +980,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlan(_:callbackQueue:completion:)-16z29",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplan(_:callbackqueue:completion:)-16z29"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlans(_:)": {
   "abstract" : [
@@ -1052,7 +1054,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplans(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlans(_:callbackQueue:completion:)-37t1l": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/updateAnyCarePlans(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously updates an array of care plans in the store.",
@@ -1130,13 +1132,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlans(_:callbackQueue:completion:)-37t1l",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/updateAnyCarePlans(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyCarePlans(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplans(_:callbackqueue:completion:)-37t1l"
+  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/updateanycareplans(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore": {
   "abstract" : [

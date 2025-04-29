@@ -149,24 +149,6 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "The synchronization policy. Defaults to ",
-                  "type" : "text"
-                },
-                {
-                  "code" : ".mergeDeviceRecordsWithRemote",
-                  "type" : "codeVoice"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "policy"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
                   "text" : "A completion closure that will be called when syncing completes.",
                   "type" : "text"
                 }

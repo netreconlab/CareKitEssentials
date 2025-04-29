@@ -93,10 +93,20 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingChannel\/Iterator\/next()"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingChannel\/Iterator\/AsyncIteratorProtocol-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -193,6 +203,17 @@
   "title" : "AsyncThrowingChannel.Iterator",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncthrowingchannel\/iterator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncThrowingChannel/Iterator/AsyncIteratorProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingChannel\/Iterator\/AsyncIteratorProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncIteratorProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/asyncalgorithms\/asyncthrowingchannel\/iterator\/asynciteratorprotocol-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncThrowingChannel/Iterator/next()": {
   "abstract" : [

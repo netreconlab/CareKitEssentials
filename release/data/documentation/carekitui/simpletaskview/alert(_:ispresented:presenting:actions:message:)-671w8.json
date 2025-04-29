@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE5alert_11isPresented10presenting7actions7messageQrAA18LocalizedStringKeyV_AA7BindingVySbGqd_1_Sgqd__qd_1_XEqd_0_qd_1_XEtAaBRd__AaBRd_0_r1_lF::SYNTHESIZED::s:9CareKitUI14SimpleTaskViewV",
     "fragments" : [
       {
@@ -188,7 +187,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -238,6 +237,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -558,17 +565,6 @@
   "title" : "SimpleTaskView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/simpletaskview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/alert(_:isPresented:presenting:actions:message:)-671w8": {
   "abstract" : [

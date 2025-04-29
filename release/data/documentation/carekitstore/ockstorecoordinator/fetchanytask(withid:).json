@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyReadOnlyTaskStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator"
       ]
     ]
   },
@@ -353,17 +352,6 @@
   "title" : "OCKStoreCoordinator",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstorecoordinator"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/OCKAnyReadOnlyTaskStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyReadOnlyTaskStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyReadOnlyTaskStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/ockanyreadonlytaskstore-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/fetchAnyTask(withID:)": {
   "abstract" : [

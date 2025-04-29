@@ -327,18 +327,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncZip3Sequence\/Iterator"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncZip3Sequence\/makeAsyncIterator()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncZip3Sequence\/AsyncIterator",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncZip3Sequence\/Element"
@@ -346,6 +352,7 @@
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncZip3Sequence\/AsyncSequence-Implementations"

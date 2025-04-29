@@ -123,19 +123,21 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcome(_:callbackQueue:completion:)-8fewj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcomes(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcomes(_:callbackQueue:completion:)-70fi7",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcomes(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcome(_:callbackQueue:completion:)-7z9j9",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcomes(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcomes(_:callbackQueue:completion:)-348no",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcomes(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcome(_:callbackQueue:completion:)-6m13u",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcomes(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcomes(_:callbackQueue:completion:)-99hj6"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcomes(_:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -308,7 +310,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/addAnyOutcome(_:callbackQueue:completion:)-8fewj": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/addAnyOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously add an outcome to the store.",
@@ -386,13 +388,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcome(_:callbackQueue:completion:)-8fewj",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcome(_:callbackqueue:completion:)-8fewj"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/addAnyOutcomes(_:)": {
   "abstract" : [
@@ -460,7 +462,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcomes(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/addAnyOutcomes(_:callbackQueue:completion:)-70fi7": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/addAnyOutcomes(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously add an array of outcomes to the store.",
@@ -538,13 +540,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcomes(_:callbackQueue:completion:)-70fi7",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/addAnyOutcomes(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyOutcomes(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcomes(_:callbackqueue:completion:)-70fi7"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/addanyoutcomes(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcome(_:)": {
   "abstract" : [
@@ -608,7 +610,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcome(_:callbackQueue:completion:)-7z9j9": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously delete an outcome from the store.",
@@ -686,13 +688,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcome(_:callbackQueue:completion:)-7z9j9",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcome(_:callbackqueue:completion:)-7z9j9"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcomes(_:)": {
   "abstract" : [
@@ -760,7 +762,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcomes(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcomes(_:callbackQueue:completion:)-348no": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/deleteAnyOutcomes(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously delete an array of outcomes from the store.",
@@ -838,13 +840,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcomes(_:callbackQueue:completion:)-348no",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/deleteAnyOutcomes(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyOutcomes(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcomes(_:callbackqueue:completion:)-348no"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/deleteanyoutcomes(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcome(_:)": {
   "abstract" : [
@@ -908,7 +910,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcome(_:callbackQueue:completion:)-6m13u": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously update an outcome in the store.",
@@ -986,13 +988,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcome(_:callbackQueue:completion:)-6m13u",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcome(_:callbackqueue:completion:)-6m13u"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcomes(_:)": {
   "abstract" : [
@@ -1060,7 +1062,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcomes(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcomes(_:callbackQueue:completion:)-99hj6": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyOutcomeStore/updateAnyOutcomes(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously update an array of outcomes in the store.",
@@ -1138,13 +1140,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcomes(_:callbackQueue:completion:)-99hj6",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcomeStore\/updateAnyOutcomes(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyOutcomes(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcomes(_:callbackqueue:completion:)-99hj6"
+  "url" : "\/documentation\/carekitstore\/ockanyoutcomestore\/updateanyoutcomes(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore": {
   "abstract" : [

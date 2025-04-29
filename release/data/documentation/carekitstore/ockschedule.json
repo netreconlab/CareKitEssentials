@@ -160,6 +160,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
@@ -180,6 +181,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/init(composing:)-35hze",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/init(composing:)-6h2mg",
@@ -188,12 +191,16 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/elements"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/endDate()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/event(forOccurrenceIndex:)",
@@ -204,12 +211,16 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Subscripts",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/subscript(_:)"
       ],
       "title" : "Subscripts"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/dailyAtTime(hour:minutes:start:end:text:duration:targetValues:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/weeklyAtTime(weekday:hours:minutes:start:end:targetValues:text:duration:)"
@@ -217,6 +228,7 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSchedule\/Equatable-Implementations",
@@ -1216,6 +1228,11 @@
   "title" : "weeklyAtTime(weekday:hours:minutes:start:end:targetValues:text:duration:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockschedule\/weeklyattime(weekday:hours:minutes:start:end:targetvalues:text:duration:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

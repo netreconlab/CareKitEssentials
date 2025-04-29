@@ -13,12 +13,22 @@
       "type" : "text"
     }
   ],
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "Use `Tab(title:image:value:content:)` and related initializers instead",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView"
       ]
     ]
   },
@@ -28,7 +38,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE7tabItemyQrqd__yXEAaBRd__lF::SYNTHESIZED::s:17CareKitEssentials11DetailsViewV",
     "fragments" : [
       {
@@ -81,7 +91,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -89,28 +99,36 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "deprecatedAt" : "100000.0",
         "introducedAt" : "13.0",
+        "message" : "Use `Tab(title:image:value:content:)` and related initializers instead",
         "name" : "iOS",
         "unavailable" : false
       },
       {
         "beta" : false,
         "deprecated" : false,
+        "deprecatedAt" : "100000.0",
         "introducedAt" : "10.15",
+        "message" : "Use `Tab(title:image:value:content:)` and related initializers instead",
         "name" : "macOS",
         "unavailable" : false
       },
       {
         "beta" : false,
         "deprecated" : false,
+        "deprecatedAt" : "100000.0",
         "introducedAt" : "13.0",
+        "message" : "Use `Tab(title:image:value:content:)` and related initializers instead",
         "name" : "tvOS",
         "unavailable" : false
       },
       {
         "beta" : false,
         "deprecated" : false,
+        "deprecatedAt" : "100000.0",
         "introducedAt" : "7.0",
+        "message" : "Use `Tab(title:image:value:content:)` and related initializers instead",
         "name" : "watchOS",
         "unavailable" : false
       }
@@ -131,6 +149,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -307,21 +333,11 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/detailsview"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DetailsView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/detailsview\/view-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DetailsView/tabItem(_:)": {
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

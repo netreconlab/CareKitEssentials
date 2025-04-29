@@ -300,22 +300,36 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncBufferedByteIterator\/init(capacity:readFunction:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncBufferedByteIterator\/next()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncBufferedByteIterator\/Element"
       ],
       "title" : "Type Aliases"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncBufferedByteIterator\/AsyncIteratorProtocol-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -413,6 +427,17 @@
   "title" : "AsyncBufferedByteIterator",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncbufferedbyteiterator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncBufferedByteIterator/AsyncIteratorProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncBufferedByteIterator\/AsyncIteratorProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncIteratorProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/asyncalgorithms\/asyncbufferedbyteiterator\/asynciteratorprotocol-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncBufferedByteIterator/Element": {
   "abstract" : [

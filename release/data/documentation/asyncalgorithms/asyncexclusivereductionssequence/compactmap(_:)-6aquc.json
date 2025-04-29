@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncExclusiveReductionsSequence",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncExclusiveReductionsSequence\/AsyncSequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncExclusiveReductionsSequence"
       ]
     ]
   },
@@ -378,17 +377,6 @@
   "title" : "AsyncExclusiveReductionsSequence",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncexclusivereductionssequence"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncExclusiveReductionsSequence/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncExclusiveReductionsSequence\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/asyncalgorithms\/asyncexclusivereductionssequence\/asyncsequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncExclusiveReductionsSequence/compactMap(_:)-6aquc": {
   "abstract" : [

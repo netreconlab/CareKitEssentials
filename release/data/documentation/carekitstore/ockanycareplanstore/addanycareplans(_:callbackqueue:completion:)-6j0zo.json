@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)-oozn"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore"
       ]
     ]
   },
@@ -437,92 +436,6 @@
   "title" : "addAnyCarePlans(_:callbackQueue:completion:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplans(_:callbackqueue:completion:)-6j0zo"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyCarePlanStore/addAnyCarePlans(_:callbackQueue:completion:)-oozn": {
-  "abstract" : [
-    {
-      "text" : "Asynchronously adds an array of care plans to the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "addAnyCarePlans"
-    },
-    {
-      "kind" : "text",
-      "text" : "(["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore06OCKAnyA4PlanP",
-      "text" : "OCKAnyCarePlan"
-    },
-    {
-      "kind" : "text",
-      "text" : "], "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "callbackQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "completion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKResultClosurea",
-      "text" : "OCKResultClosure"
-    },
-    {
-      "kind" : "text",
-      "text" : "<["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore06OCKAnyA4PlanP",
-      "text" : "OCKAnyCarePlan"
-    },
-    {
-      "kind" : "text",
-      "text" : "]>?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlanStore\/addAnyCarePlans(_:callbackQueue:completion:)-oozn",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "addAnyCarePlans(_:callbackQueue:completion:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycareplanstore\/addanycareplans(_:callbackqueue:completion:)-oozn"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKResultClosure": {
   "abstract" : [

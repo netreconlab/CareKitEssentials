@@ -61,6 +61,19 @@
           ],
           "tokens" : [
             {
+              "kind" : "attribute",
+              "text" : "@"
+            },
+            {
+              "kind" : "attribute",
+              "preciseIdentifier" : "s:ScM",
+              "text" : "MainActor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
               "kind" : "keyword",
               "text" : "struct"
             },
@@ -121,6 +134,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI4ViewP"
       ],
       "kind" : "relationships",
@@ -138,18 +152,23 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/init(title:information:image:event:detailsTitle:details:includeDivider:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/init(title:information:image:event:detailsTitle:details:includeDivider:includeChevron:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/body"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/View-Implementations"
@@ -173,7 +192,7 @@
 "references": {
 "doc://edu.usc.netreconlab.CareKitEssentials/7SwiftUI4ViewP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI4ViewP",
-  "title" : "SwiftUI.View",
+  "title" : "SwiftUICore.View",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
@@ -274,7 +293,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/informationheaderview\/body"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/init(title:information:image:event:detailsTitle:details:includeDivider:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/init(title:information:image:event:detailsTitle:details:includeDivider:includeChevron:)": {
   "abstract" : [
     {
       "text" : "Create an instance.",
@@ -407,15 +426,37 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "includeChevron"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/init(title:information:image:event:detailsTitle:details:includeDivider:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/init(title:information:image:event:detailsTitle:details:includeDivider:includeChevron:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(title:information:image:event:detailsTitle:details:includeDivider:)",
+  "title" : "init(title:information:image:event:detailsTitle:details:includeDivider:includeChevron:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/informationheaderview\/init(title:information:image:event:detailstitle:details:includedivider:)"
+  "url" : "\/documentation\/carekitessentials\/informationheaderview\/init(title:information:image:event:detailstitle:details:includedivider:includechevron:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

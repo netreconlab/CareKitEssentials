@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)-1uub8"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore"
       ]
     ]
   },
@@ -320,96 +319,6 @@
   "title" : "OCKOutcomeStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomestore"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/updateOutcome(_:callbackQueue:completion:)-1uub8": {
-  "abstract" : [
-    {
-      "code" : "updateOutcome",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " asynchronously updates an outcome in the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "updateOutcome"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore018OCKReadableOutcomeC0P0E0Qa",
-      "text" : "Outcome"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "callbackQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "completion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKResultClosurea",
-      "text" : "OCKResultClosure"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore018OCKReadableOutcomeC0P0E0Qa",
-      "text" : "Outcome"
-    },
-    {
-      "kind" : "text",
-      "text" : ">?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)-1uub8",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "updateOutcome(_:callbackQueue:completion:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/updateoutcome(_:callbackqueue:completion:)-1uub8"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/updateOutcome(_:callbackQueue:completion:)-437j2": {
   "abstract" : [

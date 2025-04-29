@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE26accessibilityCustomContent__10importanceAA08ModifiedF0VyxAA31AccessibilityAttachmentModifierVGAA18LocalizedStringKeyV_qd__So08AXCustomF10ImportanceVtSyRd__lF::SYNTHESIZED::s:9CareKitUI8CardViewV",
     "fragments" : [
       {
@@ -129,7 +128,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -179,6 +178,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -397,17 +404,6 @@
   "title" : "CardView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/cardview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/accessibilityCustomContent(_:_:importance:)-3eia2": {
   "abstract" : [

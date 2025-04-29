@@ -110,6 +110,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRemoteSynchronizationDelegate\/didRequestSynchronization(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRemoteSynchronizationDelegate\/remote(_:didUpdateProgress:)"

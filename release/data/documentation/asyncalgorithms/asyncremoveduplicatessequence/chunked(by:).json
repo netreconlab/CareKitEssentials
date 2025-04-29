@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncRemoveDuplicatesSequence",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncRemoveDuplicatesSequence\/AsyncSequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncRemoveDuplicatesSequence"
       ]
     ]
   },
@@ -333,17 +332,6 @@
   "title" : "AsyncRemoveDuplicatesSequence",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncremoveduplicatessequence"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncRemoveDuplicatesSequence/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncRemoveDuplicatesSequence\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/asyncalgorithms\/asyncremoveduplicatessequence\/asyncsequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncRemoveDuplicatesSequence/chunked(by:)": {
   "abstract" : [

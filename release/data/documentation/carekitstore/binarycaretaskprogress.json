@@ -156,12 +156,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/init(isCompleted:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/fractionCompleted",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/isCompleted"
@@ -169,6 +173,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/computeProgressByCheckingOutcomeExists(for:kind:)"
+      ],
+      "title" : "Type Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/Equatable-Implementations"
@@ -255,6 +268,82 @@
   "title" : "Equatable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/binarycaretaskprogress\/equatable-implementations"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/BinaryCareTaskProgress/computeProgressByCheckingOutcomeExists(for:kind:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "computeProgressByCheckingOutcomeExists"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore11OCKAnyEventV",
+      "text" : "OCKAnyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06BinaryA12TaskProgressV",
+      "text" : "BinaryCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/BinaryCareTaskProgress\/computeProgressByCheckingOutcomeExists(for:kind:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "computeProgressByCheckingOutcomeExists(for:kind:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/binarycaretaskprogress\/computeprogressbycheckingoutcomeexists(for:kind:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/BinaryCareTaskProgress/fractionCompleted": {
   "abstract" : [

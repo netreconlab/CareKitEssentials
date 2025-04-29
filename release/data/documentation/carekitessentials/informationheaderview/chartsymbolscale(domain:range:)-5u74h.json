@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewP6ChartsE16chartSymbolScale6domain5rangeQrqd___qd_0_tAD0G6DomainRd__AD0G5RangeRd_0_AD05ChartF5Shape11VisualValueRpd_0_r0_lF::SYNTHESIZED::s:17CareKitEssentials21InformationHeaderViewV",
     "fragments" : [
       {
@@ -113,7 +112,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -163,6 +162,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -384,17 +391,6 @@
   "title" : "InformationHeaderView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/informationheaderview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/InformationHeaderView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/informationheaderview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/InformationHeaderView/chartSymbolScale(domain:range:)-5u74h": {
   "abstract" : [

@@ -148,10 +148,20 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingExclusiveReductionsSequence\/Iterator\/next()"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingExclusiveReductionsSequence\/Iterator\/AsyncIteratorProtocol-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -299,6 +309,17 @@
   "title" : "AsyncThrowingExclusiveReductionsSequence.Iterator",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncthrowingexclusivereductionssequence\/iterator"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncThrowingExclusiveReductionsSequence/Iterator/AsyncIteratorProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncThrowingExclusiveReductionsSequence\/Iterator\/AsyncIteratorProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncIteratorProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/asyncalgorithms\/asyncthrowingexclusivereductionssequence\/iterator\/asynciteratorprotocol-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncThrowingExclusiveReductionsSequence/Iterator/next()": {
   "abstract" : [

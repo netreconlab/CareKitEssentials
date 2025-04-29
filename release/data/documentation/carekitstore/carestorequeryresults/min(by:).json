@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/AsyncSequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults"
       ]
     ]
   },
@@ -406,17 +405,6 @@
   "title" : "CareStoreQueryResults",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/carestorequeryresults"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareStoreQueryResults/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/carestorequeryresults\/asyncsequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareStoreQueryResults/min(by:)": {
   "abstract" : [

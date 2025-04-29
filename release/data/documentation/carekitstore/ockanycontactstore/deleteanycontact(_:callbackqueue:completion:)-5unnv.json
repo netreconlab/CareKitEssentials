@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)-5xl3x"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore"
       ]
     ]
   },
@@ -469,96 +468,6 @@
   "title" : "deleteAnyContact(_:callbackQueue:completion:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontact(_:callbackqueue:completion:)-5unnv"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContact(_:callbackQueue:completion:)-5xl3x": {
-  "abstract" : [
-    {
-      "code" : "deleteAnyContact",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " asynchronously deletes a single contact from the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "deleteAnyContact"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKAnyContactP",
-      "text" : "OCKAnyContact"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "callbackQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "completion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKResultClosurea",
-      "text" : "OCKResultClosure"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKAnyContactP",
-      "text" : "OCKAnyContact"
-    },
-    {
-      "kind" : "text",
-      "text" : ">?)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)-5xl3x",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "deleteAnyContact(_:callbackQueue:completion:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontact(_:callbackqueue:completion:)-5xl3x"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKResultClosure": {
   "abstract" : [

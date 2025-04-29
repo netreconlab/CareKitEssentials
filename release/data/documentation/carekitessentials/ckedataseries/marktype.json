@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "An enumerator specifying the types of marks this chart can display.",
+      "text" : "An enumerator specifying the types of marks that can be used to display data series.",
       "type" : "text"
     }
   ],
@@ -102,6 +102,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/area",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/bar",
@@ -112,12 +114,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/Equatable-Implementations",
@@ -169,7 +174,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries": {
   "abstract" : [
     {
-      "text" : "Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data",
+      "text" : "Represents a single group of data to be plotted. In most cases, CareKitEssentials plots accept multiple data",
       "type" : "text"
     },
     {
@@ -211,7 +216,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/MarkType": {
   "abstract" : [
     {
-      "text" : "An enumerator specifying the types of marks this chart can display.",
+      "text" : "An enumerator specifying the types of marks that can be used to display data series.",
       "type" : "text"
     }
   ],

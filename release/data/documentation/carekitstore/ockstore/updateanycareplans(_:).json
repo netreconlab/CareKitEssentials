@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyCarePlanStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -37,7 +36,7 @@
       },
       {
         "kind" : "text",
-        "text" : "([any "
+        "text" : "(["
       },
       {
         "kind" : "typeIdentifier",
@@ -62,7 +61,7 @@
       },
       {
         "kind" : "text",
-        "text" : " -> [any "
+        "text" : " -> ["
       },
       {
         "kind" : "typeIdentifier",
@@ -125,7 +124,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": [any "
+              "text" : ": ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlan",
@@ -151,7 +150,7 @@
             },
             {
               "kind" : "text",
-              "text" : " -> [any "
+              "text" : " -> ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyCarePlan",
@@ -289,17 +288,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyCarePlanStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyCarePlanStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyCarePlanStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanycareplanstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/updateAnyCarePlans(_:)": {
   "abstract" : [
     {
@@ -322,7 +310,7 @@
     },
     {
       "kind" : "text",
-      "text" : "([any "
+      "text" : "(["
     },
     {
       "kind" : "typeIdentifier",
@@ -347,7 +335,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> [any "
+      "text" : " -> ["
     },
     {
       "kind" : "typeIdentifier",

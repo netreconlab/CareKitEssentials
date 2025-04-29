@@ -61,6 +61,19 @@
           ],
           "tokens" : [
             {
+              "kind" : "attribute",
+              "text" : "@"
+            },
+            {
+              "kind" : "attribute",
+              "preciseIdentifier" : "s:ScM",
+              "text" : "MainActor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
               "kind" : "keyword",
               "text" : "struct"
             },
@@ -177,6 +190,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI4ViewP"
       ],
       "kind" : "relationships",
@@ -194,6 +208,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/init(event:header:onError:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/init(event:onError:)",
@@ -204,12 +220,15 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/body"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/View-Implementations"
@@ -233,7 +252,7 @@
 "references": {
 "doc://edu.usc.netreconlab.CareKitEssentials/7SwiftUI4ViewP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI4ViewP",
-  "title" : "SwiftUI.View",
+  "title" : "SwiftUICore.View",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI": {
@@ -915,6 +934,11 @@
   "title" : "init(title:detail:instructions:isComplete:action:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/init(title:detail:instructions:iscomplete:action:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

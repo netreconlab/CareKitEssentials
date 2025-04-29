@@ -127,12 +127,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)-1fueu",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlan(withID:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlan(withID:callbackQueue:completion:)-v9kd",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlan(withID:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlans(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlans(query:callbackQueue:completion:)-5jg20"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlans(query:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -230,7 +232,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/anyCarePlans(matching:)-1fueu": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/anyCarePlans(matching:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of care plans that exist in the store.",
@@ -291,13 +293,13 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)-1fueu",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "anyCarePlans(matching:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/anycareplans(matching:)-1fueu"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/anycareplans(matching:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlan(withID:)": {
   "abstract" : [
@@ -369,7 +371,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplan(withid:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlan(withID:callbackQueue:completion:)-v9kd": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlan(withID:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously retrieves a single care plan from the store.",
@@ -455,13 +457,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlan(withID:callbackQueue:completion:)-v9kd",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlan(withID:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyCarePlan(withID:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplan(withid:callbackqueue:completion:)-v9kd"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplan(withid:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlans(query:)": {
   "abstract" : [
@@ -537,7 +539,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplans(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlans(query:callbackQueue:completion:)-5jg20": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/fetchAnyCarePlans(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of care plans that exist in the store. The stream yields a new value whenever",
@@ -631,13 +633,13 @@
       "text" : "]>)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlans(query:callbackQueue:completion:)-5jg20",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/fetchAnyCarePlans(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyCarePlans(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplans(query:callbackqueue:completion:)-5jg20"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/fetchanycareplans(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyResettableStore": {
   "abstract" : [

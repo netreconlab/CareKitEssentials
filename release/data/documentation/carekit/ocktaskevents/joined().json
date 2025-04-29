@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents"
       ]
     ]
   },
@@ -28,6 +27,38 @@
   },
   "kind" : "symbol",
   "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "Element",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "Sequence",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
     "extendedModule" : "Swift",
     "externalID" : "s:STsST7ElementRpzrlE6joineds15FlattenSequenceVyxGyF::SYNTHESIZED::s:7CareKit13OCKTaskEventsV",
     "fragments" : [
@@ -195,21 +226,42 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/sequence-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/joined()": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",

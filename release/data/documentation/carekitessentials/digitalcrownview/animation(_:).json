@@ -28,8 +28,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView"
       ]
     ]
   },
@@ -39,7 +38,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE9animationyQrAA9AnimationVSgF::SYNTHESIZED::s:17CareKitEssentials16DigitalCrownViewV",
     "fragments" : [
       {
@@ -85,7 +84,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -120,19 +119,19 @@
       {
         "beta" : false,
         "deprecated" : false,
-        "deprecatedAt" : "8.0",
-        "introducedAt" : "6.0",
+        "deprecatedAt" : "1.0",
+        "introducedAt" : "1.0",
         "message" : "Use withAnimation or animation(_:value:) instead.",
-        "name" : "watchOS",
+        "name" : "visionOS",
         "unavailable" : false
       },
       {
         "beta" : false,
         "deprecated" : false,
-        "deprecatedAt" : "1.0",
-        "introducedAt" : "1.0",
+        "deprecatedAt" : "8.0",
+        "introducedAt" : "6.0",
         "message" : "Use withAnimation or animation(_:value:) instead.",
-        "name" : "visionOS",
+        "name" : "watchOS",
         "unavailable" : false
       }
     ],
@@ -152,6 +151,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -279,17 +286,6 @@
   "title" : "DigitalCrownView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/animation(_:)": {
   "abstract" : [

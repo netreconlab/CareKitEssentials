@@ -164,12 +164,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/init(value:goal:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/fractionCompleted",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/goal",
@@ -178,15 +182,21 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/accumulableDoubleValue(for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByAveraging(for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByAveragingOutcomeValues(for:kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByMedian(for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByMedianOutcomeValues(for:kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressBySummingOutcomeValues(for:kind:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/sum(_:_:)"
       ],
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/CareTaskProgress-Implementations",
@@ -398,6 +408,65 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/accumulabledoublevalue(for:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressByAveraging(for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "computeProgressByAveraging"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "]) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByAveraging(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "computeProgressByAveraging(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbyaveraging(for:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressByAveragingOutcomeValues(for:kind:)": {
   "abstract" : [
 
@@ -474,6 +543,65 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbyaveragingoutcomevalues(for:kind:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressByMedian(for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "computeProgressByMedian"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "]) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressByMedian(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "computeProgressByMedian(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbymedian(for:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressByMedianOutcomeValues(for:kind:)": {
   "abstract" : [
 
@@ -549,6 +677,82 @@
   "title" : "computeProgressByMedianOutcomeValues(for:kind:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbymedianoutcomevalues(for:kind:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/computeProgressBySummingOutcomeValues(for:kind:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "computeProgressBySummingOutcomeValues"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore11OCKAnyEventV",
+      "text" : "OCKAnyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/computeProgressBySummingOutcomeValues(for:kind:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "computeProgressBySummingOutcomeValues(for:kind:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/computeprogressbysummingoutcomevalues(for:kind:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/fractionCompleted": {
   "abstract" : [

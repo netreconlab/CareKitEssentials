@@ -82,6 +82,7 @@
     {
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SL",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
@@ -104,12 +105,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/_(_:_:)-38m1c"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/_(_:_:)"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/init(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/init(from:)",
@@ -118,6 +123,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/description",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/majorVersion",
@@ -127,18 +134,23 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/parse(_:)"
       ],
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/ParsingError"
       ],
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/Comparable-Implementations",
@@ -307,7 +319,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocksemanticversion\/parsingerror"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKSemanticVersion/_(_:_:)-38m1c": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKSemanticVersion/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -364,12 +376,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/_(_:_:)-38m1c",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKSemanticVersion\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocksemanticversion\/_(_:_:)-38m1c"
+  "url" : "\/documentation\/carekitstore\/ocksemanticversion\/_(_:_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKSemanticVersion/description": {
   "abstract" : [
@@ -791,6 +803,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s25LosslessStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s25LosslessStringConvertibleP",
   "title" : "Swift.LosslessStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 }
 }

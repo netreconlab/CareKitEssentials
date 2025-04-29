@@ -25,8 +25,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunksOfCountSequence",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunksOfCountSequence\/AsyncSequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunksOfCountSequence"
       ]
     ]
   },
@@ -579,17 +578,6 @@
   "title" : "AsyncChunksOfCountSequence",
   "type" : "topic",
   "url" : "\/documentation\/asyncalgorithms\/asyncchunksofcountsequence"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunksOfCountSequence/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/AsyncAlgorithms\/AsyncChunksOfCountSequence\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/asyncalgorithms\/asyncchunksofcountsequence\/asyncsequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/AsyncAlgorithms/AsyncChunksOfCountSequence/chunked(by:into:)-3pq9r": {
   "abstract" : [

@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyReadOnlyOutcomeStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -70,7 +69,7 @@
       },
       {
         "kind" : "text",
-        "text" : " -> any "
+        "text" : " -> "
       },
       {
         "kind" : "typeIdentifier",
@@ -147,7 +146,7 @@
             },
             {
               "kind" : "text",
-              "text" : " -> any "
+              "text" : " -> "
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome",
@@ -343,17 +342,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyReadOnlyOutcomeStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyReadOnlyOutcomeStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyReadOnlyOutcomeStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanyreadonlyoutcomestore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/fetchAnyOutcome(query:)": {
   "abstract" : [
     {
@@ -409,7 +397,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> any "
+      "text" : " -> "
     },
     {
       "kind" : "typeIdentifier",

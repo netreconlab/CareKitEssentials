@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKReadOnlyEventStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -153,14 +152,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Self"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:12CareKitStore016OCKReadOnlyEventC0P0F0a",
         "text" : "Event"
       },
@@ -283,7 +274,7 @@
               "text" : ": "
             },
             {
-              "kind" : "keyword",
+              "kind" : "attribute",
               "text" : "@escaping"
             },
             {
@@ -299,14 +290,6 @@
             {
               "kind" : "text",
               "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Self"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/Event",
@@ -353,20 +336,6 @@
             }
           ],
           "name" : "occurrence"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "The queue that the completion closure should be called on. In most cases this should be the main queue.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "queue"
         },
         {
           "content" : [
@@ -558,17 +527,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKReadOnlyEventStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKReadOnlyEventStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKReadOnlyEventStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockreadonlyeventstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/fetchEvent(forTask:occurrence:callbackQueue:completion:)": {
   "abstract" : [
     {
@@ -704,14 +662,6 @@
     {
       "kind" : "text",
       "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

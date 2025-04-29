@@ -81,6 +81,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
@@ -102,6 +103,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/female",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/male",
@@ -110,25 +113,32 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/init(from:)-1bbpq",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/init(from:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/rawValue"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/encode(to:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/Equatable-Implementations",
@@ -330,7 +340,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockbiologicalsex\/female"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKBiologicalSex/init(from:)-1bbpq": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKBiologicalSex/init(from:)": {
   "abstract" : [
 
   ],
@@ -365,12 +375,12 @@
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/init(from:)-1bbpq",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKBiologicalSex\/init(from:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(from:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockbiologicalsex\/init(from:)-1bbpq"
+  "url" : "\/documentation\/carekitstore\/ockbiologicalsex\/init(from:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKBiologicalSex/init(rawValue:)": {
   "abstract" : [
@@ -506,6 +516,11 @@
   "title" : "rawValue",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockbiologicalsex\/rawvalue"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

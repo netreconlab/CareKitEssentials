@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyTaskStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -37,7 +36,7 @@
       },
       {
         "kind" : "text",
-        "text" : "([any "
+        "text" : "(["
       },
       {
         "kind" : "typeIdentifier",
@@ -62,7 +61,7 @@
       },
       {
         "kind" : "text",
-        "text" : " -> [any "
+        "text" : " -> ["
       },
       {
         "kind" : "typeIdentifier",
@@ -125,7 +124,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": [any "
+              "text" : ": ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTask",
@@ -151,7 +150,7 @@
             },
             {
               "kind" : "text",
-              "text" : " -> [any "
+              "text" : " -> ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTask",
@@ -167,25 +166,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "An array of tasks the function deletes. The tasks must exist in the store.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "task"
-        }
-      ]
     }
   ],
   "schemaVersion" : {
@@ -297,17 +277,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyTaskStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyTaskStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyTaskStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanytaskstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/deleteAnyTasks(_:)": {
   "abstract" : [
     {
@@ -330,7 +299,7 @@
     },
     {
       "kind" : "text",
-      "text" : "([any "
+      "text" : "(["
     },
     {
       "kind" : "typeIdentifier",
@@ -355,7 +324,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> [any "
+      "text" : " -> ["
     },
     {
       "kind" : "typeIdentifier",

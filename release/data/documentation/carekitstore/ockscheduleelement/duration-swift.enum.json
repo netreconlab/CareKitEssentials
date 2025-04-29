@@ -82,6 +82,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
@@ -102,6 +103,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/allDay",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/seconds(_:)"
@@ -109,18 +112,24 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/encode(to:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/hours(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/minutes(_:)"
@@ -128,6 +137,7 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKScheduleElement\/Duration-swift.enum\/Equatable-Implementations",
@@ -555,6 +565,11 @@
   "title" : "OCKScheduleElement.Duration.seconds(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockscheduleelement\/duration-swift.enum\/seconds(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

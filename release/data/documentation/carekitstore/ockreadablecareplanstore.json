@@ -125,6 +125,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Associated-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/Plan",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/Plans"
@@ -132,10 +134,12 @@
       "title" : "Associated Types"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/carePlans(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlan(withID:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlan(withID:callbackQueue:completion:)-3an8l",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlan(withID:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlans(query:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlans(query:callbackQueue:completion:)"
       ],
@@ -544,7 +548,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockreadablecareplanstore\/fetchcareplan(withid:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadableCarePlanStore/fetchCarePlan(withID:callbackQueue:completion:)-3an8l": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadableCarePlanStore/fetchCarePlan(withID:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchCarePlan",
@@ -642,13 +646,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlan(withID:callbackQueue:completion:)-3an8l",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadableCarePlanStore\/fetchCarePlan(withID:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchCarePlan(withID:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockreadablecareplanstore\/fetchcareplan(withid:callbackqueue:completion:)-3an8l"
+  "url" : "\/documentation\/carekitstore\/ockreadablecareplanstore\/fetchcareplan(withid:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadableCarePlanStore/fetchCarePlans(query:)": {
   "abstract" : [

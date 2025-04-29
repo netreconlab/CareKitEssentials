@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accentColor(_:)",
@@ -53,8 +54,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityAction(named:_:)-8h6i4",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityAction(named:_:)-8vqvy",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActions(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActions(category:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:)-3k55o",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:)-9o61j",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:isEnabled:)-5njdn",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:isEnabled:)-oeb7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityAddTraits(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityAdjustableAction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityChartDescriptor(_:)",
@@ -73,17 +77,29 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityFocused(_:equals:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHeading(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHidden(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHidden(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:)-65evg",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:)-8mff5",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:)-cfs8",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-7h7av",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-8snnz",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-9cacq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityIdentifier(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityIdentifier(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityIgnoresInvertColors(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:)-4676",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:)-6y0dn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:)-983ps",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-1m6zj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-795zx",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-991v1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:)-1b7ir",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:)-3t9pq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:)-815fv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-1jqo6",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-6u48s",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-hjzp",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabeledPair(role:id:in:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLinkedGroup(id:in:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityQuickAction(style:content:)",
@@ -91,6 +107,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRemoveTraits(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRepresentation(representation:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRespondsToUserInteraction(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRespondsToUserInteraction(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRotor(_:entries:)-294uk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRotor(_:entries:)-5nh6j",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRotor(_:entries:)-6md4p",
@@ -116,6 +133,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:)-3thgn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:)-409fr",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:)-p95l",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-5lwrg",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-5y78r",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-a348",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityZoomAction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/actionSheet(isPresented:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/actionSheet(item:content:)",
@@ -258,11 +278,14 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/containerRelativeFrame(_:alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/containerRelativeFrame(_:count:span:spacing:alignment:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/containerShape(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/containerValue(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentMargins(_:_:for:)-1j0s7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentMargins(_:_:for:)-9mh6i",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentMargins(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentShape(_:_:eoFill:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentShape(_:eoFill:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentToolbar(for:content:)-1mb6y",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentToolbar(for:content:)-3xmhd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentTransition(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contextMenu(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contextMenu(menuItems:)",
@@ -275,6 +298,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultAppStorage(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultFocus(_:_:priority:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultScrollAnchor(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultScrollAnchor(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultWheelPickerItemHeight(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/deleteDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/dialogIcon(_:)",
@@ -313,6 +337,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedObject(_:)-66404",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneObject(_:)-2b2fw",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneObject(_:)-477ox",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneValue(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneValue(_:_:)-4btsb",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneValue(_:_:)-re65",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedValue(_:)",
@@ -335,17 +360,22 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gaugeStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/geometryGroup()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/grayscale(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gridCellAnchor(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gridCellColumns(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gridCellUnsizedAxes(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gridColumnAlignment(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/handGestureShortcut(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/headerProminence(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/help(_:)-1fr43",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/help(_:)-3q13d",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/help(_:)-62rrp",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/hidden()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/highPriorityGesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/highPriorityGesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/highPriorityGesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/hueRotation(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/id(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/ignoresSafeArea(_:edges:)",
@@ -362,6 +392,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/labelStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/labeledContentStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/labelsHidden()",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/labelsVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/layoutDirectionBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/layoutPriority(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/layoutValue(key:value:)",
@@ -383,6 +414,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/mask(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/mask(alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/matchedGeometryEffect(id:in:properties:anchor:isSource:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/matchedTransitionSource(id:in:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/matchedTransitionSource(id:in:configuration:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/materialActiveAppearance(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/menuActionDismissBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/menuOrder(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/minimumScaleFactor(_:)",
@@ -416,6 +450,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationTitle(_:)-91ibs",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationTitle(_:)-x5v3",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationTitle(_:)-xdp5",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationTransition(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationViewStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/offset(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/offset(x:y:)",
@@ -425,6 +460,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onChange(of:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onContinueUserActivity(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onDisappear(perform:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onGeometryChange(for:of:action:)-5atmo",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onGeometryChange(for:of:action:)-9921f",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onLongPressGesture(minimumDuration:maximumDistance:pressing:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onLongPressGesture(minimumDuration:perform:onPressingChanged:)",
@@ -432,6 +469,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onOpenURL(perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onPreferenceChange(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onReceive(_:perform:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollGeometryChange(for:of:action:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollPhaseChange(_:)-68smj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollPhaseChange(_:)-7l6fk",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollTargetVisibilityChange(idType:threshold:_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollVisibilityChange(threshold:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onSubmit(of:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onTapGesture(count:coordinateSpace:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onTapGesture(count:perform:)",
@@ -464,6 +506,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/presentationDetents(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/presentationDetents(_:selection:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/presentationDragIndicator(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/presentationSizing(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/previewContext(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/previewDevice(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/previewDisplayName(_:)",
@@ -499,6 +542,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollIndicators(_:axes:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollIndicatorsFlash(onAppear:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollIndicatorsFlash(trigger:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollInputBehavior(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollPosition(_:anchor:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollPosition(id:anchor:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollTargetBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollTargetLayout(isEnabled:)",
@@ -522,6 +567,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/sheet(isPresented:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/sheet(item:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/simultaneousGesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/simultaneousGesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/simultaneousGesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/speechAdjustedPitch(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/speechAlwaysIncludesPunctuation(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/speechAnnouncementsQueued(_:)",
@@ -538,14 +585,16 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/symbolVariant(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tabItem(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tabViewStyle(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tag(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tag(_:includeOptional:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/task(id:priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/task(priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textCase(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textContentType(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textFieldStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textInputAutocapitalization(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textRenderer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textScale(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textSelectionAffinity(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tint(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toggleStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbar(_:for:)",
@@ -554,10 +603,13 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbar(id:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbar(removing:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarBackground(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarBackgroundVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarColorScheme(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarForegroundStyle(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarRole(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarTitleDisplayMode(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarTitleMenu(content:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tracking(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/transaction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/transaction(_:body:)",
@@ -578,6 +630,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/userActivity(_:element:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/userActivity(_:isActive:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/visualEffect(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/windowToolbarFullScreenVisibility(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/writingToolsAffordanceVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/zIndex(_:)"
       ],
       "title" : "Instance Methods"
@@ -2019,6 +2073,81 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityactions(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityActions(category:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActions"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "category"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI27AccessibilityActionCategoryV",
+      "text" : "AccessibilityActionCategory"
+    },
+    {
+      "kind" : "text",
+      "text" : ", () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActions(category:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActions(category:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityactions(category:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityActivationPoint(_:)-3k55o": {
   "abstract" : [
 
@@ -2146,6 +2275,168 @@
   "title" : "accessibilityActivationPoint(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityactivationpoint(_:)-9o61j"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityActivationPoint(_:isEnabled:)-5njdn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActivationPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:isEnabled:)-5njdn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActivationPoint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityactivationpoint(_:isenabled:)-5njdn"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityActivationPoint(_:isEnabled:)-oeb7": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActivationPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGPoint",
+      "text" : "CGPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityActivationPoint(_:isEnabled:)-oeb7",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActivationPoint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityactivationpoint(_:isenabled:)-oeb7"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityAddTraits(_:)": {
   "abstract" : [
@@ -3658,6 +3949,87 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhidden(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityHidden(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHidden"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHidden(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHidden(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhidden(_:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityHint(_:)-65evg": {
   "abstract" : [
 
@@ -3857,6 +4229,256 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhint(_:)-cfs8"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityHint(_:isEnabled:)-7h7av": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-7h7av",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhint(_:isenabled:)-7h7av"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityHint(_:isEnabled:)-8snnz": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-8snnz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhint(_:isenabled:)-8snnz"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityHint(_:isEnabled:)-9cacq": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityHint(_:isEnabled:)-9cacq",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityhint(_:isenabled:)-9cacq"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityIdentifier(_:)": {
   "abstract" : [
 
@@ -3920,6 +4542,87 @@
   "title" : "accessibilityIdentifier(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityidentifier(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityIdentifier(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityIdentifier(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityIdentifier(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityidentifier(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityIgnoresInvertColors(_:)": {
   "abstract" : [
@@ -4171,6 +4874,256 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityinputlabels(_:)-983ps"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityInputLabels(_:isEnabled:)-1m6zj": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-1m6zj",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityinputlabels(_:isenabled:)-1m6zj"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityInputLabels(_:isEnabled:)-795zx": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-795zx",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityinputlabels(_:isenabled:)-795zx"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityInputLabels(_:isEnabled:)-991v1": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityInputLabels(_:isEnabled:)-991v1",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityinputlabels(_:isenabled:)-991v1"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabel(_:)-1b7ir": {
   "abstract" : [
 
@@ -4369,6 +5322,339 @@
   "title" : "accessibilityLabel(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilitylabel(_:)-815fv"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabel(_:isEnabled:)-1jqo6": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-1jqo6",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilitylabel(_:isenabled:)-1jqo6"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabel(_:isEnabled:)-6u48s": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-6u48s",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilitylabel(_:isenabled:)-6u48s"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabel(_:isEnabled:)-hjzp": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(_:isEnabled:)-hjzp",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilitylabel(_:isenabled:)-hjzp"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabel(content:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI22PlaceholderContentViewV",
+      "text" : "PlaceholderContentView"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityLabel(content:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilitylabel(content:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityLabeledPair(role:id:in:)": {
   "abstract" : [
@@ -4970,6 +6256,87 @@
   "title" : "accessibilityRespondsToUserInteraction(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityrespondstouserinteraction(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityRespondsToUserInteraction(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRespondsToUserInteraction"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityRespondsToUserInteraction(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRespondsToUserInteraction(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityrespondstouserinteraction(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityRotor(_:entries:)-294uk": {
   "abstract" : [
@@ -7270,6 +8637,256 @@
   "title" : "accessibilityValue(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityvalue(_:)-p95l"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityValue(_:isEnabled:)-5lwrg": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-5lwrg",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityvalue(_:isenabled:)-5lwrg"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityValue(_:isEnabled:)-5y78r": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-5y78r",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityvalue(_:isenabled:)-5y78r"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityValue(_:isEnabled:)-a348": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/accessibilityValue(_:isEnabled:)-a348",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/accessibilityvalue(_:isenabled:)-a348"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/accessibilityZoomAction(_:)": {
   "abstract" : [
@@ -12757,7 +14374,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13717,7 +15342,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13776,7 +15409,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13844,7 +15485,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<some "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13912,7 +15561,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<some "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13963,7 +15620,15 @@
     },
     {
       "kind" : "text",
-      "text" : "(some "
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -19887,6 +21552,90 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/containershape(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/containerValue(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containerValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s15WritableKeyPathC",
+      "text" : "WritableKeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ContainerValuesV",
+      "text" : "ContainerValues"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/containerValue(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerValue(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/containervalue(_:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/contentMargins(_:_:for:)-1j0s7": {
   "abstract" : [
 
@@ -20285,6 +22034,172 @@
   "title" : "contentShape(_:eoFill:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/contentshape(_:eofill:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/contentToolbar(for:content:)-1mb6y": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contentToolbar"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23ContentToolbarPlacementV",
+      "text" : "ContentToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentToolbar(for:content:)-1mb6y",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contentToolbar(for:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/contenttoolbar(for:content:)-1mb6y"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/contentToolbar(for:content:)-3xmhd": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contentToolbar"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23ContentToolbarPlacementV",
+      "text" : "ContentToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/contentToolbar(for:content:)-3xmhd",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contentToolbar(for:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/contenttoolbar(for:content:)-3xmhd"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/contentTransition(_:)": {
   "abstract" : [
@@ -21020,6 +22935,74 @@
   "title" : "defaultScrollAnchor(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/defaultscrollanchor(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/defaultScrollAnchor(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultScrollAnchor"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ScrollAnchorRoleV",
+      "text" : "ScrollAnchorRole"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/defaultScrollAnchor(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultScrollAnchor(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/defaultscrollanchor(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/defaultWheelPickerItemHeight(_:)": {
   "abstract" : [
@@ -24006,6 +25989,64 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/focusedsceneobject(_:)-477ox"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/focusedSceneValue(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "focusedSceneValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/focusedSceneValue(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "focusedSceneValue(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/focusedscenevalue(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/focusedSceneValue(_:_:)-4btsb": {
   "abstract" : [
 
@@ -25668,6 +27709,173 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/gesture(_:including:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/gesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "gesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "gesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/gesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/gesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "gesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/gesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "gesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/gesture(_:name:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/grayscale(_:)": {
   "abstract" : [
 
@@ -25931,6 +28139,74 @@
   "title" : "gridColumnAlignment(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/gridcolumnalignment(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/handGestureShortcut(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "handGestureShortcut"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI19HandGestureShortcutV",
+      "text" : "HandGestureShortcut"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/handGestureShortcut(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "handGestureShortcut(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/handgestureshortcut(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/headerProminence(_:)": {
   "abstract" : [
@@ -26259,6 +28535,173 @@
   "title" : "highPriorityGesture(_:including:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/highprioritygesture(_:including:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/highPriorityGesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "highPriorityGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/highPriorityGesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "highPriorityGesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/highprioritygesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/highPriorityGesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "highPriorityGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/highPriorityGesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "highPriorityGesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/highprioritygesture(_:name:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/hueRotation(_:)": {
   "abstract" : [
@@ -26972,7 +29415,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -26997,7 +29448,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27080,7 +29539,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27122,7 +29589,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27147,7 +29622,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27336,6 +29819,57 @@
   "title" : "labelsHidden()",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/labelshidden()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/labelsVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "labelsVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/labelsVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "labelsVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/labelsvisibility(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/layoutDirectionBehavior(_:)": {
   "abstract" : [
@@ -28621,6 +31155,277 @@
   "title" : "matchedGeometryEffect(id:in:properties:anchor:isSource:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/matchedgeometryeffect(id:in:properties:anchor:issource:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/matchedTransitionSource(id:in:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "matchedTransitionSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/matchedTransitionSource(id:in:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "matchedTransitionSource(id:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/matchedtransitionsource(id:in:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/matchedTransitionSource(id:in:configuration:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "matchedTransitionSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI41EmptyMatchedTransitionSourceConfigurationV",
+      "text" : "EmptyMatchedTransitionSourceConfiguration"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI36MatchedTransitionSourceConfigurationP",
+      "text" : "MatchedTransitionSourceConfiguration"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/matchedTransitionSource(id:in:configuration:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "matchedTransitionSource(id:in:configuration:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/matchedtransitionsource(id:in:configuration:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/materialActiveAppearance(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "materialActiveAppearance"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI24MaterialActiveAppearanceV",
+      "text" : "MaterialActiveAppearance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/materialActiveAppearance(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "materialActiveAppearance(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/materialactiveappearance(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/menuActionDismissBehavior(_:)": {
   "abstract" : [
@@ -30844,6 +33649,65 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/navigationtitle(_:)-xdp5"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/navigationTransition(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "navigationTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI20NavigationTransitionP",
+      "text" : "NavigationTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/navigationTransition(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "navigationTransition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/navigationtransition(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/navigationViewStyle(_:)": {
   "abstract" : [
 
@@ -31507,6 +34371,246 @@
   "title" : "onDisappear(perform:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/ondisappear(perform:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onGeometryChange(for:of:action:)-5atmo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI13GeometryProxyV",
+      "text" : "GeometryProxy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onGeometryChange(for:of:action:)-5atmo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/ongeometrychange(for:of:action:)-5atmo"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onGeometryChange(for:of:action:)-9921f": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI13GeometryProxyV",
+      "text" : "GeometryProxy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onGeometryChange(for:of:action:)-9921f",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/ongeometrychange(for:of:action:)-9921f"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)": {
   "abstract" : [
@@ -32195,6 +35299,454 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onreceive(_:perform:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onScrollGeometryChange(for:of:action:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14ScrollGeometryV",
+      "text" : "ScrollGeometry"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollGeometryChange(for:of:action:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onscrollgeometrychange(for:of:action:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onScrollPhaseChange(_:)-68smj": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollPhaseChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollPhaseChange(_:)-68smj",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollPhaseChange(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onscrollphasechange(_:)-68smj"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onScrollPhaseChange(_:)-7l6fk": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollPhaseChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI24ScrollPhaseChangeContextV",
+      "text" : "ScrollPhaseChangeContext"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollPhaseChange(_:)-7l6fk",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollPhaseChange(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onscrollphasechange(_:)-7l6fk"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onScrollTargetVisibilityChange(idType:threshold:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollTargetVisibilityChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "idType"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "threshold"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", (["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : "]) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollTargetVisibilityChange(idType:threshold:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollTargetVisibilityChange(idType:threshold:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onscrolltargetvisibilitychange(idtype:threshold:_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onScrollVisibilityChange(threshold:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollVisibilityChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "threshold"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/onScrollVisibilityChange(threshold:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollVisibilityChange(threshold:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/onscrollvisibilitychange(threshold:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/onSubmit(of:_:)": {
   "abstract" : [
 
@@ -32231,7 +35783,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", (() -> "
+      "text" : ", () -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -32240,7 +35792,7 @@
     },
     {
       "kind" : "text",
-      "text" : ")) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "keyword",
@@ -33283,7 +36835,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">(some "
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33325,7 +36885,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33409,7 +36977,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">(some "
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33426,7 +37002,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33468,7 +37052,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -34546,6 +38138,65 @@
   "title" : "presentationDragIndicator(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/presentationdragindicator(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/presentationSizing(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "presentationSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18PresentationSizingP",
+      "text" : "PresentationSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/presentationSizing(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "presentationSizing(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/presentationsizing(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/previewContext(_:)": {
   "abstract" : [
@@ -36782,7 +40433,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -36813,6 +40472,151 @@
   "title" : "scrollIndicatorsFlash(trigger:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/scrollindicatorsflash(trigger:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/scrollInputBehavior(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollInputBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI19ScrollInputBehaviorV",
+      "text" : "ScrollInputBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ScrollInputKindV",
+      "text" : "ScrollInputKind"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollInputBehavior(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollInputBehavior(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/scrollinputbehavior(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/scrollPosition(_:anchor:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollPosition"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14ScrollPositionV",
+      "text" : "ScrollPosition"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "anchor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/scrollPosition(_:anchor:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollPosition(_:anchor:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/scrollposition(_:anchor:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/scrollPosition(id:anchor:)": {
   "abstract" : [
@@ -36850,7 +40654,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<(some "
+      "text" : "<("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -36918,7 +40730,15 @@
     },
     {
       "kind" : "text",
-      "text" : "(some "
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -37080,7 +40900,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -37208,7 +41036,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -38921,6 +42757,173 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/simultaneousgesture(_:including:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/simultaneousGesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "simultaneousGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/simultaneousGesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "simultaneousGesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/simultaneousgesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/simultaneousGesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "simultaneousGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/simultaneousGesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "simultaneousGesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/simultaneousgesture(_:name:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/speechAdjustedPitch(_:)": {
   "abstract" : [
 
@@ -39829,6 +43832,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -39941,7 +43945,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/tabviewstyle(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/tag(_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/tag(_:includeOptional:)": {
   "abstract" : [
 
   ],
@@ -39976,6 +43980,23 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "includeOptional"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
       "text" : ") -> "
     },
     {
@@ -39992,12 +44013,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tag(_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/tag(_:includeOptional:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "tag(_:)",
+  "title" : "tag(_:includeOptional:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/tag(_:)"
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/tag(_:includeoptional:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/task(id:priority:_:)": {
   "abstract" : [
@@ -40395,6 +44416,64 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/textinputautocapitalization(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/textRenderer(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "textRenderer"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textRenderer(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "textRenderer(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/textrenderer(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/textScale(_:isEnabled:)": {
   "abstract" : [
 
@@ -40471,6 +44550,57 @@
   "title" : "textScale(_:isEnabled:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/textscale(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/textSelectionAffinity(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "textSelectionAffinity"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI21TextSelectionAffinityO",
+      "text" : "TextSelectionAffinity"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/textSelectionAffinity(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "textSelectionAffinity(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/textselectionaffinity(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/tint(_:)": {
   "abstract" : [
@@ -40585,6 +44715,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -40927,6 +45058,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -40990,6 +45122,74 @@
   "title" : "toolbarBackground(_:for:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbarbackground(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/toolbarBackgroundVisibility(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarBackgroundVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarBackgroundVisibility(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarBackgroundVisibility(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbarbackgroundvisibility(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/toolbarColorScheme(_:for:)": {
   "abstract" : [
@@ -41058,6 +45258,81 @@
   "title" : "toolbarColorScheme(_:for:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbarcolorscheme(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/toolbarForegroundStyle(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarForegroundStyle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarForegroundStyle(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarForegroundStyle(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbarforegroundstyle(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/toolbarRole(_:)": {
   "abstract" : [
@@ -41226,6 +45501,74 @@
   "title" : "toolbarTitleMenu(content:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbartitlemenu(content:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/toolbarVisibility(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/toolbarVisibility(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarVisibility(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/toolbarvisibility(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/tracking(_:)": {
   "abstract" : [
@@ -41482,7 +45825,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -42726,7 +47077,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -42757,6 +47116,108 @@
   "title" : "visualEffect(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownview\/visualeffect(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/windowToolbarFullScreenVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "windowToolbarFullScreenVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI33WindowToolbarFullScreenVisibilityV",
+      "text" : "WindowToolbarFullScreenVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/windowToolbarFullScreenVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "windowToolbarFullScreenVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/windowtoolbarfullscreenvisibility(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/writingToolsAffordanceVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writingToolsAffordanceVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView\/writingToolsAffordanceVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "writingToolsAffordanceVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownview\/writingtoolsaffordancevisibility(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView/zIndex(_:)": {
   "abstract" : [

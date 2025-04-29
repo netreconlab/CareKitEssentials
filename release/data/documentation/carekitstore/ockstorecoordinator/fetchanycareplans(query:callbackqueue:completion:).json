@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyReadOnlyCarePlanStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator"
       ]
     ]
   },
@@ -266,20 +265,6 @@
               "inlineContent" : [
                 {
                   "text" : "A query that matches care plans in the store.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "query"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A query that constrains the values the method fetches.",
                   "type" : "text"
                 }
               ],
@@ -582,17 +567,6 @@
   "title" : "OCKStoreCoordinator",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstorecoordinator"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/OCKAnyReadOnlyCarePlanStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyReadOnlyCarePlanStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyReadOnlyCarePlanStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/ockanyreadonlycareplanstore-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/fetchAnyCarePlans(query:callbackQueue:completion:)": {
   "abstract" : [

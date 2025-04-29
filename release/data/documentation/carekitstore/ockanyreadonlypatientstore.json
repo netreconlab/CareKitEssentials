@@ -127,12 +127,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/anyPatients(matching:)-2qi38",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/anyPatients(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatient(withID:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatient(withID:callbackQueue:completion:)-4hg58",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatient(withID:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)-59q5b"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -246,7 +248,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/anyPatients(matching:)-2qi38": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/anyPatients(matching:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of patients that exist in the store.",
@@ -307,13 +309,13 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/anyPatients(matching:)-2qi38",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/anyPatients(matching:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "anyPatients(matching:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/anypatients(matching:)-2qi38"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/anypatients(matching:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatient(withID:)": {
   "abstract" : [
@@ -389,7 +391,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatient(withid:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatient(withID:callbackQueue:completion:)-4hg58": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatient(withID:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchAnyPatient",
@@ -479,13 +481,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatient(withID:callbackQueue:completion:)-4hg58",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatient(withID:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyPatient(withID:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatient(withid:callbackqueue:completion:)-4hg58"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatient(withid:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatients(query:)": {
   "abstract" : [
@@ -565,7 +567,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatients(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatients(query:callbackQueue:completion:)-59q5b": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatients(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchAnyPatients",
@@ -655,13 +657,13 @@
       "text" : "]>)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)-59q5b",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyPatients(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatients(query:callbackqueue:completion:)-59q5b"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatients(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyResettableStore": {
   "abstract" : [

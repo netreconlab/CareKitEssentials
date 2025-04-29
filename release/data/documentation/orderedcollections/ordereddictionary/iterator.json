@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary"
       ]
     ]
   },
@@ -142,6 +141,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Iterator\/next()"
       ],
@@ -326,17 +327,6 @@
   "title" : "next()",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/ordereddictionary\/iterator\/next()"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/ordereddictionary\/sequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",

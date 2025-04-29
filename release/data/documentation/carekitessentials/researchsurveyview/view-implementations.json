@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accentColor(_:)",
@@ -53,8 +54,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityAction(named:_:)-7fjd0",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityAction(named:_:)-8vvob",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActions(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActions(category:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:)-2v9u7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:)-4f81o",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:isEnabled:)-23367",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:isEnabled:)-35sx8",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityAddTraits(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityAdjustableAction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityChartDescriptor(_:)",
@@ -73,17 +77,29 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityFocused(_:equals:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHeading(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHidden(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHidden(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:)-1p3nd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:)-4jlnd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:)-87jqy",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-10c66",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-4cpqo",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-93o0z",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityIdentifier(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityIdentifier(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityIgnoresInvertColors(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:)-131vj",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:)-2090x",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:)-23sgi",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-6fak6",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-7tokv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-95eir",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:)-2qr0k",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:)-8721e",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:)-9egkf",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-27vjf",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-6nv78",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-92srg",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabeledPair(role:id:in:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLinkedGroup(id:in:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityQuickAction(style:content:)",
@@ -91,6 +107,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRemoveTraits(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRepresentation(representation:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRespondsToUserInteraction(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRespondsToUserInteraction(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRotor(_:entries:)-29ely",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRotor(_:entries:)-6lgk4",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRotor(_:entries:)-6y9n5",
@@ -116,6 +133,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:)-1r22y",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:)-3lw72",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:)-3q2s",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-14ugn",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-1p60g",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-4eqdc",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityZoomAction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/actionSheet(isPresented:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/actionSheet(item:content:)",
@@ -258,11 +278,14 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/containerRelativeFrame(_:alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/containerRelativeFrame(_:count:span:spacing:alignment:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/containerShape(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/containerValue(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentMargins(_:_:for:)-7d375",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentMargins(_:_:for:)-8f0aw",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentMargins(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentShape(_:_:eoFill:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentShape(_:eoFill:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentToolbar(for:content:)-59oaz",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentToolbar(for:content:)-meyb",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentTransition(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contextMenu(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contextMenu(menuItems:)",
@@ -275,6 +298,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultAppStorage(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultFocus(_:_:priority:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultScrollAnchor(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultScrollAnchor(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultWheelPickerItemHeight(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/deleteDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/dialogIcon(_:)",
@@ -313,6 +337,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedObject(_:)-m5db",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneObject(_:)-71o1p",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneObject(_:)-9m50k",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneValue(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneValue(_:_:)-11y23",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneValue(_:_:)-1hj6g",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedValue(_:)",
@@ -335,17 +360,22 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gaugeStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/geometryGroup()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/grayscale(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gridCellAnchor(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gridCellColumns(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gridCellUnsizedAxes(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gridColumnAlignment(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/handGestureShortcut(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/headerProminence(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/help(_:)-25ueb",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/help(_:)-6wa7s",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/help(_:)-o96n",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/hidden()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/highPriorityGesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/highPriorityGesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/highPriorityGesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/hueRotation(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/id(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/ignoresSafeArea(_:edges:)",
@@ -362,6 +392,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/labelStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/labeledContentStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/labelsHidden()",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/labelsVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/layoutDirectionBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/layoutPriority(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/layoutValue(key:value:)",
@@ -383,6 +414,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/mask(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/mask(alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/matchedGeometryEffect(id:in:properties:anchor:isSource:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/matchedTransitionSource(id:in:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/matchedTransitionSource(id:in:configuration:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/materialActiveAppearance(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/menuActionDismissBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/menuOrder(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/minimumScaleFactor(_:)",
@@ -416,6 +450,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationTitle(_:)-6zpe4",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationTitle(_:)-7h97r",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationTitle(_:)-ngqj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationTransition(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationViewStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/offset(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/offset(x:y:)",
@@ -425,6 +460,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onChange(of:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onContinueUserActivity(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onDisappear(perform:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onGeometryChange(for:of:action:)-2dmmt",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onGeometryChange(for:of:action:)-9t191",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onLongPressGesture(minimumDuration:maximumDistance:pressing:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onLongPressGesture(minimumDuration:perform:onPressingChanged:)",
@@ -432,6 +469,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onOpenURL(perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onPreferenceChange(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onReceive(_:perform:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollGeometryChange(for:of:action:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollPhaseChange(_:)-8z2v0",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollPhaseChange(_:)-9655b",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollTargetVisibilityChange(idType:threshold:_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollVisibilityChange(threshold:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onSubmit(of:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onTapGesture(count:coordinateSpace:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onTapGesture(count:perform:)",
@@ -464,6 +506,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/presentationDetents(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/presentationDetents(_:selection:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/presentationDragIndicator(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/presentationSizing(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/previewContext(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/previewDevice(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/previewDisplayName(_:)",
@@ -499,6 +542,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollIndicators(_:axes:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollIndicatorsFlash(onAppear:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollIndicatorsFlash(trigger:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollInputBehavior(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollPosition(_:anchor:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollPosition(id:anchor:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollTargetBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollTargetLayout(isEnabled:)",
@@ -522,6 +567,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/sheet(isPresented:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/sheet(item:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/simultaneousGesture(_:including:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/simultaneousGesture(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/simultaneousGesture(_:name:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/speechAdjustedPitch(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/speechAlwaysIncludesPunctuation(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/speechAnnouncementsQueued(_:)",
@@ -538,14 +585,16 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/symbolVariant(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tabItem(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tabViewStyle(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tag(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tag(_:includeOptional:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/task(id:priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/task(priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textCase(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textContentType(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textFieldStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textInputAutocapitalization(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textRenderer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textScale(_:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textSelectionAffinity(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tint(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toggleStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbar(_:for:)",
@@ -554,10 +603,13 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbar(id:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbar(removing:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarBackground(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarBackgroundVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarColorScheme(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarForegroundStyle(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarRole(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarTitleDisplayMode(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarTitleMenu(content:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tracking(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/transaction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/transaction(_:body:)",
@@ -578,6 +630,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/userActivity(_:element:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/userActivity(_:isActive:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/visualEffect(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/windowToolbarFullScreenVisibility(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/writingToolsAffordanceVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/zIndex(_:)"
       ],
       "title" : "Instance Methods"
@@ -2022,6 +2076,81 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactions(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityActions(category:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActions"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "category"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI27AccessibilityActionCategoryV",
+      "text" : "AccessibilityActionCategory"
+    },
+    {
+      "kind" : "text",
+      "text" : ", () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActions(category:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActions(category:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactions(category:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityActivationPoint(_:)-2v9u7": {
   "abstract" : [
 
@@ -2149,6 +2278,168 @@
   "title" : "accessibilityActivationPoint(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactivationpoint(_:)-4f81o"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityActivationPoint(_:isEnabled:)-23367": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActivationPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:isEnabled:)-23367",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActivationPoint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactivationpoint(_:isenabled:)-23367"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityActivationPoint(_:isEnabled:)-35sx8": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityActivationPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@S@CGPoint",
+      "text" : "CGPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityActivationPoint(_:isEnabled:)-35sx8",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityActivationPoint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityactivationpoint(_:isenabled:)-35sx8"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityAddTraits(_:)": {
   "abstract" : [
@@ -3661,6 +3952,87 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhidden(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityHidden(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHidden"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHidden(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHidden(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhidden(_:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityHint(_:)-1p3nd": {
   "abstract" : [
 
@@ -3860,6 +4232,256 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:)-87jqy"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityHint(_:isEnabled:)-10c66": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-10c66",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:isenabled:)-10c66"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityHint(_:isEnabled:)-4cpqo": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-4cpqo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:isenabled:)-4cpqo"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityHint(_:isEnabled:)-93o0z": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityHint(_:isEnabled:)-93o0z",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityhint(_:isenabled:)-93o0z"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityIdentifier(_:)": {
   "abstract" : [
 
@@ -3923,6 +4545,87 @@
   "title" : "accessibilityIdentifier(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityidentifier(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityIdentifier(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityIdentifier(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityIdentifier(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityidentifier(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityIgnoresInvertColors(_:)": {
   "abstract" : [
@@ -4174,6 +4877,256 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:)-23sgi"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityInputLabels(_:isEnabled:)-6fak6": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-6fak6",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:isenabled:)-6fak6"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityInputLabels(_:isEnabled:)-7tokv": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-7tokv",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:isenabled:)-7tokv"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityInputLabels(_:isEnabled:)-95eir": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityInputLabels"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityInputLabels(_:isEnabled:)-95eir",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityInputLabels(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityinputlabels(_:isenabled:)-95eir"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabel(_:)-2qr0k": {
   "abstract" : [
 
@@ -4372,6 +5325,339 @@
   "title" : "accessibilityLabel(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:)-9egkf"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabel(_:isEnabled:)-27vjf": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-27vjf",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:isenabled:)-27vjf"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabel(_:isEnabled:)-6nv78": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-6nv78",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:isenabled:)-6nv78"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabel(_:isEnabled:)-92srg": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(_:isEnabled:)-92srg",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(_:isenabled:)-92srg"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabel(content:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI22PlaceholderContentViewV",
+      "text" : "PlaceholderContentView"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityLabel(content:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilitylabel(content:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityLabeledPair(role:id:in:)": {
   "abstract" : [
@@ -4973,6 +6259,87 @@
   "title" : "accessibilityRespondsToUserInteraction(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrespondstouserinteraction(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityRespondsToUserInteraction(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRespondsToUserInteraction"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityRespondsToUserInteraction(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRespondsToUserInteraction(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityrespondstouserinteraction(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityRotor(_:entries:)-29ely": {
   "abstract" : [
@@ -7273,6 +8640,256 @@
   "title" : "accessibilityValue(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:)-3q2s"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityValue(_:isEnabled:)-14ugn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-14ugn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:isenabled:)-14ugn"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityValue(_:isEnabled:)-1p60g": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-1p60g",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:isenabled:)-1p60g"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityValue(_:isEnabled:)-4eqdc": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/accessibilityValue(_:isEnabled:)-4eqdc",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/accessibilityvalue(_:isenabled:)-4eqdc"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/accessibilityZoomAction(_:)": {
   "abstract" : [
@@ -12760,7 +14377,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13720,7 +15345,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13779,7 +15412,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13847,7 +15488,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<some "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13915,7 +15564,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<some "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -13966,7 +15623,15 @@
     },
     {
       "kind" : "text",
-      "text" : "(some "
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -19890,6 +21555,90 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/containershape(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/containerValue(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containerValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s15WritableKeyPathC",
+      "text" : "WritableKeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ContainerValuesV",
+      "text" : "ContainerValues"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/containerValue(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerValue(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/containervalue(_:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/contentMargins(_:_:for:)-7d375": {
   "abstract" : [
 
@@ -20288,6 +22037,172 @@
   "title" : "contentShape(_:eoFill:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/contentshape(_:eofill:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/contentToolbar(for:content:)-59oaz": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contentToolbar"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23ContentToolbarPlacementV",
+      "text" : "ContentToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentToolbar(for:content:)-59oaz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contentToolbar(for:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/contenttoolbar(for:content:)-59oaz"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/contentToolbar(for:content:)-meyb": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "contentToolbar"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23ContentToolbarPlacementV",
+      "text" : "ContentToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/contentToolbar(for:content:)-meyb",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "contentToolbar(for:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/contenttoolbar(for:content:)-meyb"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/contentTransition(_:)": {
   "abstract" : [
@@ -21023,6 +22938,74 @@
   "title" : "defaultScrollAnchor(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultscrollanchor(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/defaultScrollAnchor(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultScrollAnchor"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ScrollAnchorRoleV",
+      "text" : "ScrollAnchorRole"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/defaultScrollAnchor(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultScrollAnchor(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/defaultscrollanchor(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/defaultWheelPickerItemHeight(_:)": {
   "abstract" : [
@@ -24009,6 +25992,64 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedsceneobject(_:)-9m50k"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/focusedSceneValue(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "focusedSceneValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/focusedSceneValue(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "focusedSceneValue(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/focusedscenevalue(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/focusedSceneValue(_:_:)-11y23": {
   "abstract" : [
 
@@ -25671,6 +27712,173 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/gesture(_:including:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/gesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "gesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "gesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/gesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/gesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "gesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/gesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "gesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/gesture(_:name:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/grayscale(_:)": {
   "abstract" : [
 
@@ -25934,6 +28142,74 @@
   "title" : "gridColumnAlignment(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/gridcolumnalignment(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/handGestureShortcut(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "handGestureShortcut"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI19HandGestureShortcutV",
+      "text" : "HandGestureShortcut"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/handGestureShortcut(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "handGestureShortcut(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/handgestureshortcut(_:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/headerProminence(_:)": {
   "abstract" : [
@@ -26262,6 +28538,173 @@
   "title" : "highPriorityGesture(_:including:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/highprioritygesture(_:including:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/highPriorityGesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "highPriorityGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/highPriorityGesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "highPriorityGesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/highprioritygesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/highPriorityGesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "highPriorityGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/highPriorityGesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "highPriorityGesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/highprioritygesture(_:name:isenabled:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/hueRotation(_:)": {
   "abstract" : [
@@ -26975,7 +29418,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27000,7 +29451,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27083,7 +29542,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27125,7 +29592,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27150,7 +29625,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -27339,6 +29822,57 @@
   "title" : "labelsHidden()",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/labelshidden()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/labelsVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "labelsVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/labelsVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "labelsVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/labelsvisibility(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/layoutDirectionBehavior(_:)": {
   "abstract" : [
@@ -28624,6 +31158,277 @@
   "title" : "matchedGeometryEffect(id:in:properties:anchor:isSource:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/matchedgeometryeffect(id:in:properties:anchor:issource:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/matchedTransitionSource(id:in:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "matchedTransitionSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/matchedTransitionSource(id:in:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "matchedTransitionSource(id:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/matchedtransitionsource(id:in:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/matchedTransitionSource(id:in:configuration:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "matchedTransitionSource"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI41EmptyMatchedTransitionSourceConfigurationV",
+      "text" : "EmptyMatchedTransitionSourceConfiguration"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI36MatchedTransitionSourceConfigurationP",
+      "text" : "MatchedTransitionSourceConfiguration"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/matchedTransitionSource(id:in:configuration:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "matchedTransitionSource(id:in:configuration:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/matchedtransitionsource(id:in:configuration:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/materialActiveAppearance(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "materialActiveAppearance"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI24MaterialActiveAppearanceV",
+      "text" : "MaterialActiveAppearance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/materialActiveAppearance(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "materialActiveAppearance(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/materialactiveappearance(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/menuActionDismissBehavior(_:)": {
   "abstract" : [
@@ -30847,6 +33652,65 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtitle(_:)-ngqj"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/navigationTransition(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "navigationTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI20NavigationTransitionP",
+      "text" : "NavigationTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/navigationTransition(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "navigationTransition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/navigationtransition(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/navigationViewStyle(_:)": {
   "abstract" : [
 
@@ -31510,6 +34374,246 @@
   "title" : "onDisappear(perform:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/ondisappear(perform:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onGeometryChange(for:of:action:)-2dmmt": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI13GeometryProxyV",
+      "text" : "GeometryProxy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onGeometryChange(for:of:action:)-2dmmt",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/ongeometrychange(for:of:action:)-2dmmt"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onGeometryChange(for:of:action:)-9t191": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI13GeometryProxyV",
+      "text" : "GeometryProxy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onGeometryChange(for:of:action:)-9t191",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/ongeometrychange(for:of:action:)-9t191"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)": {
   "abstract" : [
@@ -32198,6 +35302,454 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onreceive(_:perform:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onScrollGeometryChange(for:of:action:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollGeometryChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14ScrollGeometryV",
+      "text" : "ScrollGeometry"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "action"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollGeometryChange(for:of:action:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollGeometryChange(for:of:action:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onscrollgeometrychange(for:of:action:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onScrollPhaseChange(_:)-8z2v0": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollPhaseChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI24ScrollPhaseChangeContextV",
+      "text" : "ScrollPhaseChangeContext"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollPhaseChange(_:)-8z2v0",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollPhaseChange(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onscrollphasechange(_:)-8z2v0"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onScrollPhaseChange(_:)-9655b": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollPhaseChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI11ScrollPhaseO",
+      "text" : "ScrollPhase"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollPhaseChange(_:)-9655b",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollPhaseChange(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onscrollphasechange(_:)-9655b"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onScrollTargetVisibilityChange(idType:threshold:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollTargetVisibilityChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "idType"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "threshold"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", (["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : "]) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollTargetVisibilityChange(idType:threshold:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollTargetVisibilityChange(idType:threshold:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onscrolltargetvisibilitychange(idtype:threshold:_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onScrollVisibilityChange(threshold:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onScrollVisibilityChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "threshold"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/onScrollVisibilityChange(threshold:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onScrollVisibilityChange(threshold:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/onscrollvisibilitychange(threshold:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/onSubmit(of:_:)": {
   "abstract" : [
 
@@ -32234,7 +35786,7 @@
     },
     {
       "kind" : "text",
-      "text" : ", (() -> "
+      "text" : ", () -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -32243,7 +35795,7 @@
     },
     {
       "kind" : "text",
-      "text" : ")) -> "
+      "text" : ") -> "
     },
     {
       "kind" : "keyword",
@@ -33286,7 +36838,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">(some "
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33328,7 +36888,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33412,7 +36980,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">(some "
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33429,7 +37005,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -33471,7 +37055,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -34549,6 +38141,65 @@
   "title" : "presentationDragIndicator(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationdragindicator(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/presentationSizing(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "presentationSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18PresentationSizingP",
+      "text" : "PresentationSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/presentationSizing(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "presentationSizing(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/presentationsizing(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/previewContext(_:)": {
   "abstract" : [
@@ -36785,7 +40436,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -36816,6 +40475,151 @@
   "title" : "scrollIndicatorsFlash(trigger:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollindicatorsflash(trigger:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/scrollInputBehavior(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollInputBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI19ScrollInputBehaviorV",
+      "text" : "ScrollInputBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ScrollInputKindV",
+      "text" : "ScrollInputKind"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollInputBehavior(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollInputBehavior(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollinputbehavior(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/scrollPosition(_:anchor:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollPosition"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14ScrollPositionV",
+      "text" : "ScrollPosition"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "anchor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9UnitPointV",
+      "text" : "UnitPoint"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/scrollPosition(_:anchor:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollPosition(_:anchor:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/scrollposition(_:anchor:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/scrollPosition(id:anchor:)": {
   "abstract" : [
@@ -36853,7 +40657,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<(some "
+      "text" : "<("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -36921,7 +40733,15 @@
     },
     {
       "kind" : "text",
-      "text" : "(some "
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -37083,7 +40903,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -37211,7 +41039,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -38924,6 +42760,173 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/simultaneousgesture(_:including:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/simultaneousGesture(_:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "simultaneousGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/simultaneousGesture(_:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "simultaneousGesture(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/simultaneousgesture(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/simultaneousGesture(_:name:isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "simultaneousGesture"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/simultaneousGesture(_:name:isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "simultaneousGesture(_:name:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/simultaneousgesture(_:name:isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/speechAdjustedPitch(_:)": {
   "abstract" : [
 
@@ -39832,6 +43835,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -39944,7 +43948,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/tabviewstyle(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/tag(_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/tag(_:includeOptional:)": {
   "abstract" : [
 
   ],
@@ -39979,6 +43983,23 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "includeOptional"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
       "text" : ") -> "
     },
     {
@@ -39995,12 +44016,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tag(_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/tag(_:includeOptional:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "tag(_:)",
+  "title" : "tag(_:includeOptional:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/tag(_:)"
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/tag(_:includeoptional:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/task(id:priority:_:)": {
   "abstract" : [
@@ -40398,6 +44419,64 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/textinputautocapitalization(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/textRenderer(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "textRenderer"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textRenderer(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "textRenderer(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/textrenderer(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/textScale(_:isEnabled:)": {
   "abstract" : [
 
@@ -40474,6 +44553,57 @@
   "title" : "textScale(_:isEnabled:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/textscale(_:isenabled:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/textSelectionAffinity(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "textSelectionAffinity"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI21TextSelectionAffinityO",
+      "text" : "TextSelectionAffinity"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/textSelectionAffinity(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "textSelectionAffinity(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/textselectionaffinity(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/tint(_:)": {
   "abstract" : [
@@ -40588,6 +44718,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -40930,6 +45061,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -40993,6 +45125,74 @@
   "title" : "toolbarBackground(_:for:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarbackground(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/toolbarBackgroundVisibility(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarBackgroundVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarBackgroundVisibility(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarBackgroundVisibility(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarbackgroundvisibility(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/toolbarColorScheme(_:for:)": {
   "abstract" : [
@@ -41061,6 +45261,81 @@
   "title" : "toolbarColorScheme(_:for:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarcolorscheme(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/toolbarForegroundStyle(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarForegroundStyle"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarForegroundStyle(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarForegroundStyle(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarforegroundstyle(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/toolbarRole(_:)": {
   "abstract" : [
@@ -41229,6 +45504,74 @@
   "title" : "toolbarTitleMenu(content:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbartitlemenu(content:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/toolbarVisibility(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "toolbarVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
+      "text" : "ToolbarPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "...) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/toolbarVisibility(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "toolbarVisibility(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/toolbarvisibility(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/tracking(_:)": {
   "abstract" : [
@@ -41485,7 +45828,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -42729,7 +47080,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -42760,6 +47119,108 @@
   "title" : "visualEffect(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/researchsurveyview\/visualeffect(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/windowToolbarFullScreenVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "windowToolbarFullScreenVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI33WindowToolbarFullScreenVisibilityV",
+      "text" : "WindowToolbarFullScreenVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/windowToolbarFullScreenVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "windowToolbarFullScreenVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/windowtoolbarfullscreenvisibility(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/writingToolsAffordanceVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writingToolsAffordanceVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ResearchSurveyView\/writingToolsAffordanceVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "writingToolsAffordanceVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/researchsurveyview\/writingtoolsaffordancevisibility(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ResearchSurveyView/zIndex(_:)": {
   "abstract" : [

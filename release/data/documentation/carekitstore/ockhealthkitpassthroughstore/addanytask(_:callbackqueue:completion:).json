@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore\/OCKAnyTaskStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore"
       ]
     ]
   },
@@ -361,17 +360,6 @@
   "title" : "OCKHealthKitPassthroughStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockhealthkitpassthroughstore"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitPassthroughStore/OCKAnyTaskStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitPassthroughStore\/OCKAnyTaskStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyTaskStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockhealthkitpassthroughstore\/ockanytaskstore-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitPassthroughStore/addAnyTask(_:callbackQueue:completion:)": {
   "abstract" : [

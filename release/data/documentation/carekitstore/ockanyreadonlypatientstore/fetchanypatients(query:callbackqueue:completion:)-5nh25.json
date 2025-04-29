@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)-59q5b"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore"
       ]
     ]
   },
@@ -373,104 +372,6 @@
   "title" : "OCKAnyReadOnlyPatientStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatients(query:callbackQueue:completion:)-59q5b": {
-  "abstract" : [
-    {
-      "code" : "fetchAnyPatients",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " asynchronously retrieves an array of patients from the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "fetchAnyPatients"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "query"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore15OCKPatientQueryV",
-      "text" : "OCKPatientQuery"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "callbackQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "completion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKResultClosurea",
-      "text" : "OCKResultClosure"
-    },
-    {
-      "kind" : "text",
-      "text" : "<["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKAnyPatientP",
-      "text" : "OCKAnyPatient"
-    },
-    {
-      "kind" : "text",
-      "text" : "]>)"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyPatientStore\/fetchAnyPatients(query:callbackQueue:completion:)-59q5b",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "fetchAnyPatients(query:callbackQueue:completion:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlypatientstore\/fetchanypatients(query:callbackqueue:completion:)-59q5b"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyPatientStore/fetchAnyPatients(query:callbackQueue:completion:)-5nh25": {
   "abstract" : [

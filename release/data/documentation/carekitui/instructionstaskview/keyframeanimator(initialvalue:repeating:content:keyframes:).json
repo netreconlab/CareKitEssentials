@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE16keyframeAnimator12initialValue9repeating7content9keyframesQrqd___Sbqd_0_AA018PlaceholderContentC0VyxG_qd__tYbcqd_1_qd__ct0G0Qyd_1_Rsd__AaBRd_0_AA9KeyframesRd_1_r1_lF::SYNTHESIZED::s:9CareKitUI20InstructionsTaskViewV",
     "fragments" : [
       {
@@ -119,7 +118,15 @@
       },
       {
         "kind" : "text",
-        "text" : ") -> some "
+        "text" : ") -> "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "some"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -144,7 +151,15 @@
       },
       {
         "kind" : "text",
-        "text" : ") -> some "
+        "text" : ") -> "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "some"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -173,7 +188,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -223,6 +238,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -332,7 +355,15 @@
             },
             {
               "kind" : "text",
-              "text" : ") -> some "
+              "text" : ") -> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "some"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -390,7 +421,15 @@
             },
             {
               "kind" : "text",
-              "text" : ") -> some "
+              "text" : ") -> "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "some"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -491,17 +530,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/instructionstaskview\/view-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/keyframeAnimator(initialValue:repeating:content:keyframes:)": {
   "abstract" : [
 
@@ -595,7 +623,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -620,7 +656,15 @@
     },
     {
       "kind" : "text",
-      "text" : ") -> some "
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

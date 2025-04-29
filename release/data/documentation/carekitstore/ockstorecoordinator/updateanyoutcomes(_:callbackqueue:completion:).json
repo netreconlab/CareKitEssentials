@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyOutcomeStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator"
       ]
     ]
   },
@@ -427,17 +426,6 @@
   "title" : "OCKStoreCoordinator",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstorecoordinator"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/OCKAnyOutcomeStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStoreCoordinator\/OCKAnyOutcomeStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyOutcomeStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstorecoordinator\/ockanyoutcomestore-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStoreCoordinator/updateAnyOutcomes(_:callbackQueue:completion:)": {
   "abstract" : [

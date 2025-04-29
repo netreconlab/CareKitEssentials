@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE18accessibilityRotor_7entries10entryLabelQrAA019AccessibilitySystemE0V_Sayqd__Gs7KeyPathCyqd__SSGts12IdentifiableRd__lF::SYNTHESIZED::s:17CareKitEssentials22DigitalCrownViewFooterV",
     "fragments" : [
       {
@@ -132,7 +131,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -182,6 +181,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -392,17 +399,6 @@
   "title" : "DigitalCrownViewFooter",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/digitalcrownviewfooter"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewFooter/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/digitalcrownviewfooter\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewFooter/accessibilityRotor(_:entries:entryLabel:)-4ityn": {
   "abstract" : [

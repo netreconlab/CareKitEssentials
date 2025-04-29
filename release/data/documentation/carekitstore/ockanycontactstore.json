@@ -142,19 +142,21 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContact(_:callbackQueue:completion:)-1ynz9",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContacts(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContacts(_:callbackQueue:completion:)-7xdx2",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContacts(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)-5xl3x",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContacts(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContacts(_:callbackQueue:completion:)-2mgwe",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContacts(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContact(_:callbackQueue:completion:)-2aaxo",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContacts(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContacts(_:callbackQueue:completion:)-26k85"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContacts(_:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -300,7 +302,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/addAnyContact(_:callbackQueue:completion:)-1ynz9": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/addAnyContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addAnyContact",
@@ -382,13 +384,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContact(_:callbackQueue:completion:)-1ynz9",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontact(_:callbackqueue:completion:)-1ynz9"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/addAnyContacts(_:)": {
   "abstract" : [
@@ -460,7 +462,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontacts(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/addAnyContacts(_:callbackQueue:completion:)-7xdx2": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/addAnyContacts(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addAnyContacts",
@@ -542,13 +544,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContacts(_:callbackQueue:completion:)-7xdx2",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/addAnyContacts(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyContacts(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontacts(_:callbackqueue:completion:)-7xdx2"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/addanycontacts(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContact(_:)": {
   "abstract" : [
@@ -616,7 +618,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContact(_:callbackQueue:completion:)-5xl3x": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteAnyContact",
@@ -698,13 +700,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)-5xl3x",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontact(_:callbackqueue:completion:)-5xl3x"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContacts(_:)": {
   "abstract" : [
@@ -776,7 +778,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontacts(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContacts(_:callbackQueue:completion:)-2mgwe": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/deleteAnyContacts(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteAnyContacts",
@@ -858,13 +860,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContacts(_:callbackQueue:completion:)-2mgwe",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/deleteAnyContacts(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyContacts(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontacts(_:callbackqueue:completion:)-2mgwe"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/deleteanycontacts(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContact(_:)": {
   "abstract" : [
@@ -932,7 +934,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContact(_:callbackQueue:completion:)-2aaxo": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateAnyContact",
@@ -1014,13 +1016,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContact(_:callbackQueue:completion:)-2aaxo",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontact(_:callbackqueue:completion:)-2aaxo"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContacts(_:)": {
   "abstract" : [
@@ -1092,7 +1094,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontacts(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContacts(_:callbackQueue:completion:)-26k85": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyContactStore/updateAnyContacts(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateAnyContacts",
@@ -1174,13 +1176,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContacts(_:callbackQueue:completion:)-26k85",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContactStore\/updateAnyContacts(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyContacts(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontacts(_:callbackqueue:completion:)-26k85"
+  "url" : "\/documentation\/carekitstore\/ockanycontactstore\/updateanycontacts(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore": {
   "abstract" : [

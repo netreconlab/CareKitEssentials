@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/async",
@@ -41,14 +42,14 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/allSatisfy(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/compactMap(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/compare(_:_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/contains(_:)-6i584",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/contains(where:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/elementsEqual(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/count(where:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/elementsEqual(_:by:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/enumerated()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/filter(_:)",
@@ -60,7 +61,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/joined()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/joined(separator:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/lexicographicallyPrecedes(_:by:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/map(_:)-4wyjy",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/map(_:)-6s6wz",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/max(by:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/min(by:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/reduce(_:_:)",
@@ -71,8 +72,6 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/sorted(by:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/sorted(using:)-8wz7j",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/sorted(using:)-987k8",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/split(separator:maxSplits:omittingEmptySubsequences:)-g1m4",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/starts(with:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/starts(with:by:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/withContiguousStorageIfAvailable(_:)"
       ],
@@ -410,89 +409,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents\/compare(_:_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/contains(_:)-6i584": {
-  "abstract" : [
-
-  ],
-  "conformance" : {
-    "availabilityPrefix" : [
-      {
-        "text" : "Available when",
-        "type" : "text"
-      }
-    ],
-    "conformancePrefix" : [
-      {
-        "text" : "Conforms when",
-        "type" : "text"
-      }
-    ],
-    "constraints" : [
-      {
-        "code" : "Element",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "Equatable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ".",
-        "type" : "text"
-      }
-    ]
-  },
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "contains"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:ST7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/contains(_:)-6i584",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "contains(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/contains(_:)-6i584"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/contains(where:)": {
   "abstract" : [
 
@@ -577,42 +493,10 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents\/contains(where:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/elementsEqual(_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/count(where:)": {
   "abstract" : [
 
   ],
-  "conformance" : {
-    "availabilityPrefix" : [
-      {
-        "text" : "Available when",
-        "type" : "text"
-      }
-    ],
-    "conformancePrefix" : [
-      {
-        "text" : "Conforms when",
-        "type" : "text"
-      }
-    ],
-    "constraints" : [
-      {
-        "code" : "Element",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "Equatable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ".",
-        "type" : "text"
-      }
-    ]
-  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -624,7 +508,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "elementsEqual"
+      "text" : "count"
     },
     {
       "kind" : "text",
@@ -632,15 +516,48 @@
     },
     {
       "kind" : "genericParameter",
-      "text" : "OtherSequence"
+      "text" : "E"
     },
     {
       "kind" : "text",
       "text" : ">("
     },
     {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
       "kind" : "typeIdentifier",
-      "text" : "OtherSequence"
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
     },
     {
       "kind" : "text",
@@ -650,14 +567,39 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:Sb",
       "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/elementsEqual(_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/count(where:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "elementsEqual(_:)",
+  "title" : "count(where:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/elementsequal(_:)"
+  "url" : "\/documentation\/carekit\/ocktaskevents\/count(where:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/elementsEqual(_:by:)": {
   "abstract" : [
@@ -1317,6 +1259,38 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1363,6 +1337,38 @@
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Sequence",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1592,7 +1598,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents\/lexicographicallyprecedes(_:by:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/map(_:)-4wyjy": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/map(_:)-6s6wz": {
   "abstract" : [
 
   ],
@@ -1616,6 +1622,14 @@
     {
       "kind" : "genericParameter",
       "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
     },
     {
       "kind" : "text",
@@ -1644,7 +1658,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1656,11 +1678,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> ["
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -1671,12 +1701,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/map(_:)-4wyjy",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/map(_:)-6s6wz",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/map(_:)-4wyjy"
+  "url" : "\/documentation\/carekit\/ocktaskevents\/map(_:)-6s6wz"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/max(by:)": {
   "abstract" : [
@@ -2602,242 +2632,6 @@
   "title" : "sorted(using:)",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents\/sorted(using:)-987k8"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/split(separator:maxSplits:omittingEmptySubsequences:)-g1m4": {
-  "abstract" : [
-
-  ],
-  "conformance" : {
-    "availabilityPrefix" : [
-      {
-        "text" : "Available when",
-        "type" : "text"
-      }
-    ],
-    "conformancePrefix" : [
-      {
-        "text" : "Conforms when",
-        "type" : "text"
-      }
-    ],
-    "constraints" : [
-      {
-        "code" : "Element",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "Equatable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ".",
-        "type" : "text"
-      }
-    ]
-  },
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "split"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "separator"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:ST7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "maxSplits"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Si",
-      "text" : "Int"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "omittingEmptySubsequences"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s10ArraySliceV",
-      "text" : "ArraySlice"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:ST7ElementQa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : ">]"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/split(separator:maxSplits:omittingEmptySubsequences:)-g1m4",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "split(separator:maxSplits:omittingEmptySubsequences:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/split(separator:maxsplits:omittingemptysubsequences:)-g1m4"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/starts(with:)": {
-  "abstract" : [
-
-  ],
-  "conformance" : {
-    "availabilityPrefix" : [
-      {
-        "text" : "Available when",
-        "type" : "text"
-      }
-    ],
-    "conformancePrefix" : [
-      {
-        "text" : "Conforms when",
-        "type" : "text"
-      }
-    ],
-    "constraints" : [
-      {
-        "code" : "Element",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "Equatable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ".",
-        "type" : "text"
-      }
-    ]
-  },
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "starts"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "PossiblePrefix"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "with"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "PossiblePrefix"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/starts(with:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "starts(with:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/starts(with:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/starts(with:by:)": {
   "abstract" : [

@@ -88,12 +88,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKDataSeriesConfiguration\/init(taskID:legendTitle:gradientStartColor:gradientEndColor:markerSize:computeProgress:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKDataSeriesConfiguration\/gradientEndColor",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKDataSeriesConfiguration\/gradientStartColor",

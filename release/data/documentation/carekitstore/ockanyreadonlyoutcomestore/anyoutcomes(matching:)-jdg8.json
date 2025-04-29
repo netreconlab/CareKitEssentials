@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)-4bn93"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore"
       ]
     ]
   },
@@ -379,75 +378,6 @@
   "title" : "OCKAnyReadOnlyOutcomeStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/anyOutcomes(matching:)-4bn93": {
-  "abstract" : [
-    {
-      "text" : "A continuous stream of outcomes that exist in the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "anyOutcomes"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "matching"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore15OCKOutcomeQueryV",
-      "text" : "OCKOutcomeQuery"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore0aC12QueryResultsV",
-      "text" : "CareStoreQueryResults"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKAnyOutcomeP",
-      "text" : "OCKAnyOutcome"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)-4bn93",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "anyOutcomes(matching:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/anyoutcomes(matching:)-4bn93"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/anyOutcomes(matching:)-jdg8": {
   "abstract" : [

@@ -28,8 +28,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView"
       ]
     ]
   },
@@ -39,7 +38,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE5frameQryF::SYNTHESIZED::s:9CareKitUI22CircularCompletionViewV",
     "fragments" : [
       {
@@ -76,7 +75,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -108,6 +107,12 @@
         "introducedAt" : "6.0",
         "name" : "watchOS",
         "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "message" : "Please pass one or more parameters.",
+        "unavailable" : false
       }
     ],
     "role" : "symbol",
@@ -126,6 +131,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -247,17 +260,6 @@
   "title" : "CircularCompletionView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/circularcompletionview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/frame()": {
   "abstract" : [

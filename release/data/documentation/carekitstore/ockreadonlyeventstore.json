@@ -150,22 +150,28 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Associated-Types",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/Events"
       ],
       "title" : "Associated Types"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/events(matching:)-spn",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/events(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvent(forTask:occurrence:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvent(forTask:occurrence:callbackQueue:completion:)-4v8pa",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvent(forTask:occurrence:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvents(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvents(query:callbackQueue:completion:)-x40u"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvents(query:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/Event"
       ],
@@ -509,7 +515,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/events"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/events(matching:)-spn": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/events(matching:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of events (occurrences of tasks) that exist in the store.",
@@ -557,13 +563,13 @@
       "text" : "Events"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/events(matching:)-spn",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/events(matching:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "events(matching:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/events(matching:)-spn"
+  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/events(matching:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvent(forTask:occurrence:)": {
   "abstract" : [
@@ -656,7 +662,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevent(fortask:occurrence:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvent(forTask:occurrence:callbackQueue:completion:)-4v8pa": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvent(forTask:occurrence:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchEvent",
@@ -763,13 +769,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvent(forTask:occurrence:callbackQueue:completion:)-4v8pa",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvent(forTask:occurrence:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchEvent(forTask:occurrence:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevent(fortask:occurrence:callbackqueue:completion:)-4v8pa"
+  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevent(fortask:occurrence:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvents(query:)": {
   "abstract" : [
@@ -849,7 +855,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevents(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvents(query:callbackQueue:completion:)-x40u": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadOnlyEventStore/fetchEvents(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "The completion will be called with an error if there’s an issue accessing the store or fetching results.",
@@ -935,13 +941,13 @@
       "text" : "]>)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvents(query:callbackQueue:completion:)-x40u",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKReadOnlyEventStore\/fetchEvents(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchEvents(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevents(query:callbackqueue:completion:)-x40u"
+  "url" : "\/documentation\/carekitstore\/ockreadonlyeventstore\/fetchevents(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKReadableOutcomeStore": {
   "abstract" : [

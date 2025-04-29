@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE18onLongPressGesture15minimumDuration15maximumDistance8pressing7performQrSd_14CoreFoundation7CGFloatVySbcSgyyctF::SYNTHESIZED::s:17CareKitEssentials0A18EssentialChartViewV",
     "fragments" : [
       {
@@ -142,7 +141,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -162,6 +161,14 @@
         "deprecatedAt" : "100000.0",
         "introducedAt" : "10.15",
         "name" : "macOS",
+        "renamed" : "onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:)",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "100000.0",
+        "name" : "visionOS",
         "renamed" : "onLongPressGesture(minimumDuration:maximumDuration:perform:onPressingChanged:)",
         "unavailable" : false
       },
@@ -191,6 +198,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -360,6 +375,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -386,17 +402,6 @@
   "title" : "CareEssentialChartView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/careessentialchartview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareEssentialChartView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/careessentialchartview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareEssentialChartView/onLongPressGesture(minimumDuration:maximumDistance:pressing:perform:)": {
   "abstract" : [

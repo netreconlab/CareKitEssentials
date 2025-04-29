@@ -145,17 +145,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContact(_:callbackQueue:completion:)-4ol1p",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContacts(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContacts(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContact(_:callbackQueue:completion:)-1m7m5",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContacts(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContacts(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)-4pk6a",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContacts(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContacts(_:callbackQueue:completion:)"
       ],
@@ -418,7 +420,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcontactstore\/addcontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/addContact(_:callbackQueue:completion:)-4ol1p": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/addContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addContact",
@@ -500,13 +502,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContact(_:callbackQueue:completion:)-4ol1p",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/addContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcontactstore\/addcontact(_:callbackqueue:completion:)-4ol1p"
+  "url" : "\/documentation\/carekitstore\/ockcontactstore\/addcontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/addContacts(_:)": {
   "abstract" : [
@@ -733,7 +735,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcontactstore\/deletecontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/deleteContact(_:callbackQueue:completion:)-1m7m5": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/deleteContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteContact",
@@ -815,13 +817,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContact(_:callbackQueue:completion:)-1m7m5",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/deleteContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcontactstore\/deletecontact(_:callbackqueue:completion:)-1m7m5"
+  "url" : "\/documentation\/carekitstore\/ockcontactstore\/deletecontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/deleteContacts(_:)": {
   "abstract" : [
@@ -1048,7 +1050,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcontactstore\/updatecontact(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/updateContact(_:callbackQueue:completion:)-4pk6a": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/updateContact(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateContact",
@@ -1130,13 +1132,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)-4pk6a",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKContactStore\/updateContact(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateContact(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcontactstore\/updatecontact(_:callbackqueue:completion:)-4pk6a"
+  "url" : "\/documentation\/carekitstore\/ockcontactstore\/updatecontact(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKContactStore/updateContacts(_:)": {
   "abstract" : [

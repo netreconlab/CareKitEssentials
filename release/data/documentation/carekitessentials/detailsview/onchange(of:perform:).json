@@ -28,8 +28,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView"
       ]
     ]
   },
@@ -39,7 +38,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE8onChange2of7performQrqd___yqd__ctSQRd__lF::SYNTHESIZED::s:17CareKitEssentials11DetailsViewV",
     "fragments" : [
       {
@@ -125,7 +124,7 @@
       {
         "name" : "CareKitEssentials",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -160,6 +159,14 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "deprecatedAt" : "1.0",
+        "message" : "Use `onChange` with a two or zero parameter action closure instead.",
+        "name" : "visionOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "deprecatedAt" : "10.0",
         "introducedAt" : "7.0",
         "message" : "Use `onChange` with a two or zero parameter action closure instead.",
@@ -183,6 +190,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -386,17 +401,6 @@
   "title" : "DetailsView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/detailsview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DetailsView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/detailsview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DetailsView/onChange(of:perform:)": {
   "abstract" : [

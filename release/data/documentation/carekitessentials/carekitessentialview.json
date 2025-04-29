@@ -106,7 +106,7 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialChartView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter"
       ],
       "kind" : "relationships",
@@ -124,25 +124,31 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/store"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/appendOutcomeValues(_:event:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/createOutcomeForEvent(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/deleteEventOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)-26ykh",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcomeValues(_:event:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/updateEvent(_:with:)-42gv0"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/updateEvent(_:with:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)-96h06"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)"
       ],
       "title" : "Type Methods"
     }
@@ -163,7 +169,7 @@
 "references": {
 "doc://edu.usc.netreconlab.CareKitEssentials/7SwiftUI4ViewP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI4ViewP",
-  "title" : "SwiftUI.View",
+  "title" : "SwiftUICore.View",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
@@ -177,7 +183,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareEssentialChartView": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialChartView": {
   "abstract" : [
 
   ],
@@ -192,21 +198,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "CareEssentialChartView"
+      "text" : "CareKitEssentialChartView"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialChartView",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "CareEssentialChartView"
+      "text" : "CareKitEssentialChartView"
     }
   ],
   "role" : "symbol",
-  "title" : "CareEssentialChartView",
+  "title" : "CareKitEssentialChartView",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/careessentialchartview"
+  "url" : "\/documentation\/carekitessentials\/carekitessentialchartview"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView": {
   "abstract" : [
@@ -450,7 +456,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview\/deleteeventoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/eventQuery(with:on:)-96h06": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/eventQuery(with:on:)": {
   "abstract" : [
     {
       "text" : "Create an ",
@@ -539,15 +545,15 @@
       "text" : "OCKEventQuery"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)-96h06",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/eventQuery(with:on:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "eventQuery(with:on:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/eventquery(with:on:)-96h06"
+  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/eventquery(with:on:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/saveOutcome(_:)-26ykh": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/saveOutcome(_:)": {
   "abstract" : [
     {
       "text" : "Save a new ",
@@ -602,13 +608,13 @@
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)-26ykh",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "saveOutcome(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/saveoutcome(_:)-26ykh"
+  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/saveoutcome(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/saveOutcomeValues(_:event:)": {
   "abstract" : [
@@ -743,7 +749,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview\/store"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/updateEvent(_:with:)-42gv0": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/updateEvent(_:with:)": {
   "abstract" : [
     {
       "text" : "Update an ",
@@ -832,13 +838,13 @@
       "text" : "OCKAnyOutcome"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/updateEvent(_:with:)-42gv0",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/updateEvent(_:with:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateEvent(_:with:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/updateevent(_:with:)-42gv0"
+  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/updateevent(_:with:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownViewFooter": {
   "abstract" : [

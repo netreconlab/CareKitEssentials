@@ -45,7 +45,12 @@
       }
     ],
     "platforms" : [
-
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "renamed" : "CareTaskProgressStrategy",
+        "unavailable" : false
+      }
     ],
     "role" : "symbol",
     "roleHeading" : "Enumeration",
@@ -91,6 +96,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventAggregator\/countOutcomeValues",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventAggregator\/countOutcomes",
@@ -99,6 +106,8 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventAggregator\/aggregate(events:)"
       ],

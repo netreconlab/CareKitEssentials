@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents"
       ]
     ]
   },
@@ -366,17 +365,6 @@
   "title" : "OCKTaskEvents",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/ocktaskevents"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/OCKTaskEvents\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/ocktaskevents\/sequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKTaskEvents/compare(_:_:)": {
   "abstract" : [

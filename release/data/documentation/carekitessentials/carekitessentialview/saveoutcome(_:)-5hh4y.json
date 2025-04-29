@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)-26ykh"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView"
       ]
     ]
   },
@@ -278,69 +277,6 @@
   "title" : "CareKitEssentialView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/saveOutcome(_:)-26ykh": {
-  "abstract" : [
-    {
-      "text" : "Save a new ",
-      "type" : "text"
-    },
-    {
-      "code" : "OCKAnyOutcome",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "saveOutcome"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore13OCKAnyOutcomeP",
-      "text" : "OCKAnyOutcome"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView\/saveOutcome(_:)-26ykh",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "saveOutcome(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/carekitessentialview\/saveoutcome(_:)-26ykh"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView/saveOutcome(_:)-5hh4y": {
   "abstract" : [

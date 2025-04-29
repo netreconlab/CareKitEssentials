@@ -82,12 +82,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStylable\/customStyle"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStylable\/style()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStylable\/styleDidChange()"

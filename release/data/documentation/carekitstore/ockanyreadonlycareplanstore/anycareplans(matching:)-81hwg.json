@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)-1fueu"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore"
       ]
     ]
   },
@@ -425,75 +424,6 @@
   "title" : "OCKAnyReadOnlyCarePlanStore",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/anyCarePlans(matching:)-1fueu": {
-  "abstract" : [
-    {
-      "text" : "A continuous stream of care plans that exist in the store.",
-      "type" : "text"
-    }
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "anyCarePlans"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "matching"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore16OCKCarePlanQueryV",
-      "text" : "OCKCarePlanQuery"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore0aC12QueryResultsV",
-      "text" : "CareStoreQueryResults"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:12CareKitStore06OCKAnyA4PlanP",
-      "text" : "OCKAnyCarePlan"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyCarePlanStore\/anyCarePlans(matching:)-1fueu",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "anyCarePlans(matching:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycareplanstore\/anycareplans(matching:)-1fueu"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyCarePlanStore/anyCarePlans(matching:)-81hwg": {
   "abstract" : [

@@ -127,12 +127,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/anyContacts(matching:)-6s462",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/anyContacts(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContact(withID:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContact(withID:callbackQueue:completion:)-iivk",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContact(withID:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContacts(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContacts(query:callbackQueue:completion:)-4v9vi"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContacts(query:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -246,7 +248,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/anyContacts(matching:)-6s462": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/anyContacts(matching:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of contacts that exist in the store.",
@@ -307,13 +309,13 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/anyContacts(matching:)-6s462",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/anyContacts(matching:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "anyContacts(matching:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/anycontacts(matching:)-6s462"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/anycontacts(matching:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContact(withID:)": {
   "abstract" : [
@@ -389,7 +391,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontact(withid:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContact(withID:callbackQueue:completion:)-iivk": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContact(withID:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchAnyContact",
@@ -479,13 +481,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContact(withID:callbackQueue:completion:)-iivk",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContact(withID:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyContact(withID:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontact(withid:callbackqueue:completion:)-iivk"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontact(withid:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContacts(query:)": {
   "abstract" : [
@@ -565,7 +567,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontacts(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContacts(query:callbackQueue:completion:)-4v9vi": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyContactStore/fetchAnyContacts(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "fetchAnyContacts",
@@ -655,13 +657,13 @@
       "text" : "]>)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContacts(query:callbackQueue:completion:)-4v9vi",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyContactStore\/fetchAnyContacts(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyContacts(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontacts(query:callbackqueue:completion:)-4v9vi"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlycontactstore\/fetchanycontacts(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyResettableStore": {
   "abstract" : [

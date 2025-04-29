@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/count",
@@ -42,6 +43,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/contains(_:)-5gcld",
@@ -54,8 +56,10 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/formIndex(_:offsetBy:limitedBy:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/formIndex(after:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/index(of:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/indices(of:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/indices(where:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/makeIterator()",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/map(_:)-1f62x",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/map(_:)-90dpm",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/prefix(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/prefix(through:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/prefix(upTo:)",
@@ -63,6 +67,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/randomElement()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/randomElement(using:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/ranges(of:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/removingSubranges(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/split(maxSplits:omittingEmptySubsequences:whereSeparator:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/split(separator:maxSplits:omittingEmptySubsequences:)-42zcq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/split(separator:maxSplits:omittingEmptySubsequences:)-78sye",
@@ -1073,6 +1078,223 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresults\/index(of:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/indices(of:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "indices"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/indices(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "indices(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekit\/carestorefetchedresults\/indices(of:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/indices(where:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "indices"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/indices(where:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "indices(where:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekit\/carestorefetchedresults\/indices(where:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/isEmpty": {
   "abstract" : [
 
@@ -1185,7 +1407,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresults\/makeiterator()"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/map(_:)-1f62x": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/map(_:)-90dpm": {
   "abstract" : [
 
   ],
@@ -1209,6 +1431,14 @@
     {
       "kind" : "genericParameter",
       "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
     },
     {
       "kind" : "text",
@@ -1237,7 +1467,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1249,11 +1487,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> ["
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -1264,12 +1510,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/map(_:)-1f62x",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/map(_:)-90dpm",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekit\/carestorefetchedresults\/map(_:)-1f62x"
+  "url" : "\/documentation\/carekit\/carestorefetchedresults\/map(_:)-90dpm"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/prefix(_:)": {
   "abstract" : [
@@ -1782,6 +2028,78 @@
   "title" : "ranges(of:)",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresults\/ranges(of:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/removingSubranges(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "removingSubranges"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s18DiscontiguousSliceV",
+      "text" : "DiscontiguousSlice"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/removingSubranges(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "removingSubranges(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekit\/carestorefetchedresults\/removingsubranges(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/split(maxSplits:omittingEmptySubsequences:whereSeparator:)": {
   "abstract" : [

@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Determines if tasks with no events should be included in the query results or not. False be default.",
+      "text" : "Determines if tasks with no events should be included in the query results or not. False by default.",
       "type" : "text"
     }
   ],
@@ -161,7 +161,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskQuery/excludesTasksWithNoEvents": {
   "abstract" : [
     {
-      "text" : "Determines if tasks with no events should be included in the query results or not. False be default.",
+      "text" : "Determines if tasks with no events should be included in the query results or not. False by default.",
       "type" : "text"
     }
   ],

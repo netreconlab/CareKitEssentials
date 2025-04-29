@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyOutcomeStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -37,7 +36,7 @@
       },
       {
         "kind" : "text",
-        "text" : "(any "
+        "text" : "("
       },
       {
         "kind" : "typeIdentifier",
@@ -80,7 +79,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<any "
+        "text" : "<"
       },
       {
         "kind" : "typeIdentifier",
@@ -143,7 +142,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": any "
+              "text" : ": "
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome",
@@ -188,7 +187,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<any "
+              "text" : "<"
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome",
@@ -385,17 +384,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyOutcomeStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyOutcomeStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyOutcomeStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanyoutcomestore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/deleteAnyOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
@@ -418,7 +406,7 @@
     },
     {
       "kind" : "text",
-      "text" : "(any "
+      "text" : "("
     },
     {
       "kind" : "typeIdentifier",
@@ -461,7 +449,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",

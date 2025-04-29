@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyContactStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -41,7 +40,7 @@
       },
       {
         "kind" : "text",
-        "text" : "([any "
+        "text" : "(["
       },
       {
         "kind" : "typeIdentifier",
@@ -66,7 +65,7 @@
       },
       {
         "kind" : "text",
-        "text" : " -> [any "
+        "text" : " -> ["
       },
       {
         "kind" : "typeIdentifier",
@@ -129,7 +128,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": [any "
+              "text" : ": ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContact",
@@ -155,7 +154,7 @@
             },
             {
               "kind" : "text",
-              "text" : " -> [any "
+              "text" : " -> ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyContact",
@@ -301,17 +300,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyContactStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyContactStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyContactStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanycontactstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/updateAnyContacts(_:)": {
   "abstract" : [
     {
@@ -338,7 +326,7 @@
     },
     {
       "kind" : "text",
-      "text" : "([any "
+      "text" : "(["
     },
     {
       "kind" : "typeIdentifier",
@@ -363,7 +351,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> [any "
+      "text" : " -> ["
     },
     {
       "kind" : "typeIdentifier",

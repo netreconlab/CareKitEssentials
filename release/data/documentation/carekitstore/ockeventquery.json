@@ -81,7 +81,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -98,6 +99,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/init(dateInterval:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/init(for:)"
@@ -105,8 +108,11 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/dateInterval",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/excludesTasksWithNoEvents",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/taskGroupIdentifiers",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/taskIDs",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/taskTags"
@@ -114,6 +120,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/Equatable-Implementations"
@@ -135,6 +142,11 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
   "title" : "Swift.Equatable",
@@ -232,6 +244,43 @@
   "title" : "dateInterval",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockeventquery\/dateinterval"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKEventQuery/excludesTasksWithNoEvents": {
+  "abstract" : [
+    {
+      "text" : "Determines if tasks with no events should be included in the query results or not. False by default.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "excludesTasksWithNoEvents"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKEventQuery\/excludesTasksWithNoEvents",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "excludesTasksWithNoEvents",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockeventquery\/excludestaskswithnoevents"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKEventQuery/init(dateInterval:)": {
   "abstract" : [

@@ -133,6 +133,7 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SK",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sl",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s17CustomReflectableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
@@ -157,6 +158,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct\/keys",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct\/values"
@@ -164,6 +167,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct\/index(forKey:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct\/partition(by:)",
@@ -186,6 +191,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct\/BidirectionalCollection-Implementations",
@@ -2096,6 +2102,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {

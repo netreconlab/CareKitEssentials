@@ -145,19 +145,21 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTask(_:callbackQueue:completion:)-37cfz",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTasks(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTasks(_:callbackQueue:completion:)-2z3ae",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTasks(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTask(_:callbackQueue:completion:)-6i5s0",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTasks(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTasks(_:callbackQueue:completion:)-9rz4z",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTasks(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTask(_:callbackQueue:completion:)-2uvf7",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTasks(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTasks(_:callbackQueue:completion:)-9avik"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTasks(_:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -414,7 +416,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/addAnyTask(_:callbackQueue:completion:)-37cfz": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/addAnyTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously add a task to the store.",
@@ -510,13 +512,13 @@
       "text" : ")?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTask(_:callbackQueue:completion:)-37cfz",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytask(_:callbackqueue:completion:)-37cfz"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/addAnyTasks(_:)": {
   "abstract" : [
@@ -584,7 +586,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytasks(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/addAnyTasks(_:callbackQueue:completion:)-2z3ae": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/addAnyTasks(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously add an array of tasks to the store.",
@@ -662,13 +664,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTasks(_:callbackQueue:completion:)-2z3ae",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/addAnyTasks(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addAnyTasks(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytasks(_:callbackqueue:completion:)-2z3ae"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/addanytasks(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTask(_:)": {
   "abstract" : [
@@ -732,7 +734,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTask(_:callbackQueue:completion:)-6i5s0": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously delete a task from the store.",
@@ -828,13 +830,13 @@
       "text" : ")?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTask(_:callbackQueue:completion:)-6i5s0",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytask(_:callbackqueue:completion:)-6i5s0"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTasks(_:)": {
   "abstract" : [
@@ -902,7 +904,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytasks(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTasks(_:callbackQueue:completion:)-9rz4z": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/deleteAnyTasks(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously delete an array of tasks from the store.",
@@ -980,13 +982,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTasks(_:callbackQueue:completion:)-9rz4z",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/deleteAnyTasks(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteAnyTasks(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytasks(_:callbackqueue:completion:)-9rz4z"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/deleteanytasks(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTask(_:)": {
   "abstract" : [
@@ -1050,7 +1052,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTask(_:callbackQueue:completion:)-2uvf7": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously update a task in the store.",
@@ -1146,13 +1148,13 @@
       "text" : ")?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTask(_:callbackQueue:completion:)-2uvf7",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytask(_:callbackqueue:completion:)-2uvf7"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTasks(_:)": {
   "abstract" : [
@@ -1220,7 +1222,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytasks(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTasks(_:callbackQueue:completion:)-9avik": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyTaskStore/updateAnyTasks(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Asynchronously update an array of tasks in the store.",
@@ -1298,13 +1300,13 @@
       "text" : "]>?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTasks(_:callbackQueue:completion:)-9avik",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyTaskStore\/updateAnyTasks(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateAnyTasks(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytasks(_:callbackqueue:completion:)-9avik"
+  "url" : "\/documentation\/carekitstore\/ockanytaskstore\/updateanytasks(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKEventStore": {
   "abstract" : [

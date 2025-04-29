@@ -69,6 +69,19 @@
               "text" : " "
             },
             {
+              "kind" : "attribute",
+              "text" : "@"
+            },
+            {
+              "kind" : "attribute",
+              "preciseIdentifier" : "s:ScM",
+              "text" : "MainActor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
               "kind" : "keyword",
               "text" : "struct"
             },
@@ -336,6 +349,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI15DynamicPropertyP"
       ],
       "kind" : "relationships",
@@ -353,12 +367,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/Configuration"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/init(query:)-76xs7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/init(query:)-7io2h",
@@ -370,6 +388,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/projectedValue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/wrappedValue"
@@ -377,6 +397,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchRequest\/update()"
       ],
@@ -399,7 +421,7 @@
 "references": {
 "doc://edu.usc.netreconlab.CareKitEssentials/7SwiftUI15DynamicPropertyP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI15DynamicPropertyP",
-  "title" : "SwiftUI.DynamicProperty",
+  "title" : "SwiftUICore.DynamicProperty",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit": {
@@ -1208,6 +1230,11 @@
   "title" : "wrappedValue",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchrequest\/wrappedvalue"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 },
 "https://developer.apple.com/documentation/uikit/uiapplication/1623059-significanttimechangenotificatio": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/uikit\/uiapplication\/1623059-significanttimechangenotificatio",

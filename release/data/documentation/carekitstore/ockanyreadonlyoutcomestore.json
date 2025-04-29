@@ -132,12 +132,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)-4bn93",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcome(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcome(query:callbackQueue:completion:)-17jly",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcome(query:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcomes(query:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcomes(query:callbackQueue:completion:)-30bjn"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcomes(query:callbackQueue:completion:)"
       ],
       "title" : "Instance Methods"
     }
@@ -316,7 +318,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/anyOutcomes(matching:)-4bn93": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/anyOutcomes(matching:)": {
   "abstract" : [
     {
       "text" : "A continuous stream of outcomes that exist in the store.",
@@ -377,13 +379,13 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)-4bn93",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/anyOutcomes(matching:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "anyOutcomes(matching:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/anyoutcomes(matching:)-4bn93"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/anyoutcomes(matching:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcome(query:)": {
   "abstract" : [
@@ -455,7 +457,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcome(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcome(query:callbackQueue:completion:)-17jly": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcome(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Fetch an outcome from the store.",
@@ -541,13 +543,13 @@
       "text" : ">)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcome(query:callbackQueue:completion:)-17jly",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcome(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyOutcome(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcome(query:callbackqueue:completion:)-17jly"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcome(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcomes(query:)": {
   "abstract" : [
@@ -623,7 +625,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcomes(query:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcomes(query:callbackQueue:completion:)-30bjn": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyReadOnlyOutcomeStore/fetchAnyOutcomes(query:callbackQueue:completion:)": {
   "abstract" : [
     {
       "text" : "Fetch a list of outcomes that exist in the store.",
@@ -709,13 +711,13 @@
       "text" : "]>)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcomes(query:callbackQueue:completion:)-30bjn",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyReadOnlyOutcomeStore\/fetchAnyOutcomes(query:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "fetchAnyOutcomes(query:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcomes(query:callbackqueue:completion:)-30bjn"
+  "url" : "\/documentation\/carekitstore\/ockanyreadonlyoutcomestore\/fetchanyoutcomes(query:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKAnyResettableStore": {
   "abstract" : [

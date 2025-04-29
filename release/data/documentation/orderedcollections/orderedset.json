@@ -2433,6 +2433,7 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SK",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sl",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s17CustomReflectableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
@@ -2460,12 +2461,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/UnorderedView"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/init()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/init(_:)-2d3a9",
@@ -2481,6 +2486,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/elements",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/unordered"
@@ -2488,12 +2495,14 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/append(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/append(contentsOf:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/applying(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/contains(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/difference(from:)-30bkk",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/difference(from:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/filter(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/firstIndex(of:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/formIntersection(_:)-2a4y4",
@@ -2570,6 +2579,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/BidirectionalCollection-Implementations",
@@ -3282,7 +3292,7 @@
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/orderedset\/contains(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/difference(from:)-30bkk": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/difference(from:)": {
   "abstract" : [
     {
       "text" : "Returns the collection difference between the parameter and the",
@@ -3393,12 +3403,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/difference(from:)-30bkk",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/difference(from:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "difference(from:)",
   "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset\/difference(from:)-30bkk"
+  "url" : "\/documentation\/orderedcollections\/orderedset\/difference(from:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/elements": {
   "abstract" : [
@@ -11164,6 +11174,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s28CustomDebugStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
   "title" : "Swift.CustomDebugStringConvertible",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {

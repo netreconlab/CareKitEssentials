@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/Collection-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
       ]
     ]
   },
@@ -370,17 +369,6 @@
   "title" : "OrderedSet",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/orderedset"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/Collection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/Collection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Collection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset\/collection-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/split(maxSplits:omittingEmptySubsequences:whereSeparator:)": {
   "abstract" : [

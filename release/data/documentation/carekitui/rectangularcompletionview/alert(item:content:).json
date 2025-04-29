@@ -28,8 +28,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView"
       ]
     ]
   },
@@ -39,7 +38,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE5alert4item7contentQrAA7BindingVyqd__SgG_AA5AlertVqd__XEts12IdentifiableRd__lF::SYNTHESIZED::s:9CareKitUI25RectangularCompletionViewV",
     "fragments" : [
       {
@@ -134,7 +133,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -170,18 +169,18 @@
         "beta" : false,
         "deprecated" : false,
         "deprecatedAt" : "100000.0",
-        "introducedAt" : "6.0",
+        "introducedAt" : "1.0",
         "message" : "use `alert(title:isPresented:presenting::actions:) instead.",
-        "name" : "watchOS",
+        "name" : "visionOS",
         "unavailable" : false
       },
       {
         "beta" : false,
         "deprecated" : false,
         "deprecatedAt" : "100000.0",
-        "introducedAt" : "1.0",
+        "introducedAt" : "6.0",
         "message" : "use `alert(title:isPresented:presenting::actions:) instead.",
-        "name" : "visionOS",
+        "name" : "watchOS",
         "unavailable" : false
       }
     ],
@@ -201,6 +200,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -389,17 +396,6 @@
   "title" : "RectangularCompletionView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/rectangularcompletionview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/RectangularCompletionView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/rectangularcompletionview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/RectangularCompletionView/alert(item:content:)": {
   "abstract" : [

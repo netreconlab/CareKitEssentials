@@ -135,12 +135,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/_(_:_:)-4glug"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/_(_:_:)"
       ],
       "title" : "Operators"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/init(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/init(from:)"
@@ -148,6 +152,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/processes",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/uuids"
@@ -155,6 +161,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/clock(for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/encode(to:)",
@@ -164,6 +172,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/Comparable-Implementations",
@@ -352,7 +361,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockrevisionrecord\/knowledgevector-swift.struct\/equatable-implementations"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKRevisionRecord/KnowledgeVector-swift.struct/_(_:_:)-4glug": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKRevisionRecord/KnowledgeVector-swift.struct/_(_:_:)": {
   "abstract" : [
     {
       "text" : "A knowledge vector A is strictly less than another knowledge vector B if the clocks",
@@ -446,12 +455,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/_(_:_:)-4glug",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKRevisionRecord\/KnowledgeVector-swift.struct\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockrevisionrecord\/knowledgevector-swift.struct\/_(_:_:)-4glug"
+  "url" : "\/documentation\/carekitstore\/ockrevisionrecord\/knowledgevector-swift.struct\/_(_:_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKRevisionRecord/KnowledgeVector-swift.struct/clock(for:)": {
   "abstract" : [

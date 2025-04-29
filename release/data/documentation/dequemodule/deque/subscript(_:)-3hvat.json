@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/MutableCollection-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ]
     ]
   },
@@ -281,17 +280,6 @@
   "title" : "Deque",
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/MutableCollection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/MutableCollection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "MutableCollection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/dequemodule\/deque\/mutablecollection-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/subscript(_:)-3hvat": {
   "abstract" : [

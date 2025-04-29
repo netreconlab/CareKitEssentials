@@ -132,17 +132,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcome(_:callbackQueue:completion:)-2ul82",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcomes(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcomes(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcome(_:callbackQueue:completion:)-8tvje",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcomes(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcomes(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)-1uub8",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcomes(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcomes(_:callbackQueue:completion:)"
       ],
@@ -443,7 +445,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomestore\/addoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/addOutcome(_:callbackQueue:completion:)-2ul82": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/addOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addOutcome",
@@ -525,13 +527,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcome(_:callbackQueue:completion:)-2ul82",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/addOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/addoutcome(_:callbackqueue:completion:)-2ul82"
+  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/addoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/addOutcomes(_:)": {
   "abstract" : [
@@ -758,7 +760,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomestore\/deleteoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/deleteOutcome(_:callbackQueue:completion:)-8tvje": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/deleteOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteOutcome",
@@ -840,13 +842,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcome(_:callbackQueue:completion:)-8tvje",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/deleteOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/deleteoutcome(_:callbackqueue:completion:)-8tvje"
+  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/deleteoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/deleteOutcomes(_:)": {
   "abstract" : [
@@ -1073,7 +1075,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomestore\/updateoutcome(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/updateOutcome(_:callbackQueue:completion:)-1uub8": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/updateOutcome(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateOutcome",
@@ -1155,13 +1157,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)-1uub8",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeStore\/updateOutcome(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateOutcome(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/updateoutcome(_:callbackqueue:completion:)-1uub8"
+  "url" : "\/documentation\/carekitstore\/ockoutcomestore\/updateoutcome(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeStore/updateOutcomes(_:)": {
   "abstract" : [

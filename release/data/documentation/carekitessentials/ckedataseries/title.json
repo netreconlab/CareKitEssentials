@@ -127,7 +127,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries": {
   "abstract" : [
     {
-      "text" : "Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data",
+      "text" : "Represents a single group of data to be plotted. In most cases, CareKitEssentials plots accept multiple data",
       "type" : "text"
     },
     {

@@ -145,17 +145,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlan(_:callbackQueue:completion:)-83d6",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlans(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlans(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlan(_:callbackQueue:completion:)-2qmea",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlans(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlans(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlan(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlan(_:callbackQueue:completion:)-8zwct",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlan(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlans(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlans(_:callbackQueue:completion:)"
       ],
@@ -402,7 +404,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcareplanstore\/addcareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/addCarePlan(_:callbackQueue:completion:)-83d6": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/addCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addCarePlan",
@@ -484,13 +486,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlan(_:callbackQueue:completion:)-83d6",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/addCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/addcareplan(_:callbackqueue:completion:)-83d6"
+  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/addcareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/addCarePlans(_:)": {
   "abstract" : [
@@ -717,7 +719,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcareplanstore\/deletecareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/deleteCarePlan(_:callbackQueue:completion:)-2qmea": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/deleteCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteCarePlan",
@@ -799,13 +801,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlan(_:callbackQueue:completion:)-2qmea",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/deleteCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/deletecareplan(_:callbackqueue:completion:)-2qmea"
+  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/deletecareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/deleteCarePlans(_:)": {
   "abstract" : [
@@ -1032,7 +1034,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockcareplanstore\/updatecareplan(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/updateCarePlan(_:callbackQueue:completion:)-8zwct": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/updateCarePlan(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateCarePlan",
@@ -1114,13 +1116,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlan(_:callbackQueue:completion:)-8zwct",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanStore\/updateCarePlan(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateCarePlan(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/updatecareplan(_:callbackqueue:completion:)-8zwct"
+  "url" : "\/documentation\/carekitstore\/ockcareplanstore\/updatecareplan(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKCarePlanStore/updateCarePlans(_:)": {
   "abstract" : [

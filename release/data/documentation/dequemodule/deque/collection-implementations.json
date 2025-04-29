@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/count",
@@ -42,6 +43,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/contains(_:)-1wjaz",
@@ -53,7 +55,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/formIndex(_:offsetBy:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/formIndex(_:offsetBy:limitedBy:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/index(of:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/map(_:)-885cp",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/indices(of:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/indices(where:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/map(_:)-2p786",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/prefix(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/prefix(through:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/prefix(upTo:)",
@@ -61,6 +65,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/randomElement()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/randomElement(using:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/ranges(of:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/removingSubranges(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/split(maxSplits:omittingEmptySubsequences:whereSeparator:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/split(separator:maxSplits:omittingEmptySubsequences:)-24der",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/split(separator:maxSplits:omittingEmptySubsequences:)-82ctn",
@@ -71,15 +76,18 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Subscripts",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/subscript(_:)-1klky",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/subscript(_:)-6ee8i",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/subscript(_:)-98fty",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/subscript(_:)-ejld"
       ],
       "title" : "Subscripts"
     },
     {
+      "anchor" : "Type-Aliases",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/Index",
@@ -1147,6 +1155,223 @@
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque\/index(of:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/indices(of:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Equatable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "indices"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "of"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/indices(of:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "indices(of:)",
+  "type" : "topic",
+  "url" : "\/documentation\/dequemodule\/deque\/indices(of:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/indices(where:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "indices"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "where"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/indices(where:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "indices(where:)",
+  "type" : "topic",
+  "url" : "\/documentation\/dequemodule\/deque\/indices(where:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/isEmpty": {
   "abstract" : [
 
@@ -1181,7 +1406,7 @@
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque\/isempty"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/map(_:)-885cp": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/map(_:)-2p786": {
   "abstract" : [
 
   ],
@@ -1205,6 +1430,14 @@
     {
       "kind" : "genericParameter",
       "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
     },
     {
       "kind" : "text",
@@ -1233,7 +1466,15 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -1245,11 +1486,19 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> ["
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> ["
     },
     {
       "kind" : "typeIdentifier",
@@ -1260,12 +1509,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/map(_:)-885cp",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/map(_:)-2p786",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "map(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/dequemodule\/deque\/map(_:)-885cp"
+  "url" : "\/documentation\/dequemodule\/deque\/map(_:)-2p786"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/prefix(_:)": {
   "abstract" : [
@@ -1778,6 +2027,78 @@
   "title" : "ranges(of:)",
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque\/ranges(of:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/removingSubranges(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "removingSubranges"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s18DiscontiguousSliceV",
+      "text" : "DiscontiguousSlice"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/removingSubranges(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "removingSubranges(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/dequemodule\/deque\/removingsubranges(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/split(maxSplits:omittingEmptySubsequences:whereSeparator:)": {
   "abstract" : [
@@ -2327,6 +2648,70 @@
   "title" : "subscript(_:)",
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque\/subscript(_:)-6ee8i"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/subscript(_:)-98fty": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "subscript"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8RangeSetV",
+      "text" : "RangeSet"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s18DiscontiguousSliceV",
+      "text" : "DiscontiguousSlice"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/subscript(_:)-98fty",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "subscript(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/dequemodule\/deque\/subscript(_:)-98fty"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/subscript(_:)-ejld": {
   "abstract" : [

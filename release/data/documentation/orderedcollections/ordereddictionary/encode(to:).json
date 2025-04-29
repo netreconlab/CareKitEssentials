@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Encodable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary"
       ]
     ]
   },
@@ -395,17 +394,6 @@
   "title" : "OrderedDictionary",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/ordereddictionary"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary/Encodable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Encodable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Encodable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/ordereddictionary\/encodable-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedDictionary/encode(to:)": {
   "abstract" : [

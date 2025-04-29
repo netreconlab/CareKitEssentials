@@ -18,8 +18,7 @@
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/QuantityType-swift.enum",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/QuantityType-swift.enum\/RawRepresentable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/QuantityType-swift.enum"
       ]
     ]
   },
@@ -290,17 +289,6 @@
   "title" : "OCKHealthKitLinkage.QuantityType",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/quantitytype-swift.enum"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/QuantityType-swift.enum/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKHealthKitLinkage\/QuantityType-swift.enum\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockhealthkitlinkage\/quantitytype-swift.enum\/rawrepresentable-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/QuantityType-swift.enum/encode(to:)": {
   "abstract" : [

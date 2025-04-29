@@ -81,7 +81,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -98,6 +99,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/init()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/init(dateInterval:)",
@@ -107,6 +110,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/dateInterval",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/groupIdentifiers",
@@ -124,12 +129,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/SortDescriptor"
       ],
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKCarePlanQuery\/Equatable-Implementations"
@@ -151,6 +159,11 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
   "title" : "Swift.Equatable",

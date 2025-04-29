@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/BidirectionalCollection-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults"
       ]
     ]
   },
@@ -463,17 +462,6 @@
   "title" : "CareStoreFetchedResults",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresults"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/BidirectionalCollection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/BidirectionalCollection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "BidirectionalCollection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/carestorefetchedresults\/bidirectionalcollection-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/difference(from:by:)": {
   "abstract" : [

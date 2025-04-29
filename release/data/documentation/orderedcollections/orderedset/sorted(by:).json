@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet"
       ]
     ]
   },
@@ -336,17 +335,6 @@
   "title" : "OrderedSet",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/orderedset"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedSet\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/orderedcollections\/orderedset\/sequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/OrderedCollections/OrderedSet/sorted(by:)": {
   "abstract" : [

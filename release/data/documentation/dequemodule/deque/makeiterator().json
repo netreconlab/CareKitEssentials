@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ]
     ]
   },
@@ -245,17 +244,6 @@
   "title" : "Deque.Iterator",
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque\/iterator"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/dequemodule\/deque\/sequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/makeIterator()": {
   "abstract" : [

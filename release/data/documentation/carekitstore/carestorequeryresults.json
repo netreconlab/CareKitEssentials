@@ -148,6 +148,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/makeAsyncIterator()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/next()"
@@ -155,14 +157,18 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/Element"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/AsyncIteratorProtocol-Implementations",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/AsyncSequence-Implementations"
       ],
       "title" : "Default Implementations"
@@ -236,6 +242,17 @@
   "title" : "CareStoreQueryResults",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/carestorequeryresults"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareStoreQueryResults/AsyncIteratorProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareStoreQueryResults\/AsyncIteratorProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncIteratorProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/carestorequeryresults\/asynciteratorprotocol-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareStoreQueryResults/AsyncSequence-Implementations": {
   "abstract" : [

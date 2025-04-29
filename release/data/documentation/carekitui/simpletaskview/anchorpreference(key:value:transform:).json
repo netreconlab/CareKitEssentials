@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE16anchorPreference3key5value9transformQrqd_0_m_AA6AnchorV6SourceVyqd___G5ValueQyd_0_AIyqd__GctAA0E3KeyRd_0_r0_lF::SYNTHESIZED::s:9CareKitUI14SimpleTaskViewV",
     "fragments" : [
       {
@@ -173,7 +172,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -223,6 +222,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -477,17 +484,6 @@
   "title" : "SimpleTaskView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/simpletaskview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/anchorPreference(key:value:transform:)": {
   "abstract" : [

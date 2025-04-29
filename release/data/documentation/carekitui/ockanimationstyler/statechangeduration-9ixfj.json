@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKAnimationStyler",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKAnimationStyler\/stateChangeDuration-486fh"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKAnimationStyler"
       ]
     ]
   },
@@ -165,42 +164,6 @@
   "title" : "OCKAnimationStyler",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockanimationstyler"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKAnimationStyler/stateChangeDuration-486fh": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "stateChangeDuration"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sd",
-      "text" : "Double"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKAnimationStyler\/stateChangeDuration-486fh",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "stateChangeDuration",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockanimationstyler\/statechangeduration-486fh"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKAnimationStyler/stateChangeDuration-9ixfj": {
   "abstract" : [

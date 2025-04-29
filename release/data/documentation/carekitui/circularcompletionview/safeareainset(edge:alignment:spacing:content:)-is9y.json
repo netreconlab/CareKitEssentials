@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE13safeAreaInset4edge9alignment7spacing7contentQrAA14HorizontalEdgeO_AA17VerticalAlignmentV14CoreFoundation7CGFloatVSgqd__yXEtAaBRd__lF::SYNTHESIZED::s:9CareKitUI22CircularCompletionViewV",
     "fragments" : [
       {
@@ -140,7 +139,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -190,6 +189,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -424,17 +431,6 @@
   "title" : "CircularCompletionView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/circularcompletionview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/safeAreaInset(edge:alignment:spacing:content:)-is9y": {
   "abstract" : [

@@ -154,17 +154,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTask(_:callbackQueue:completion:)-hgtj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTasks(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTasks(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTask(_:callbackQueue:completion:)-135nm",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTasks(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTasks(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTask(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTask(_:callbackQueue:completion:)-8xfom",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTask(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTasks(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTasks(_:callbackQueue:completion:)"
       ],
@@ -571,7 +573,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocktaskstore\/addtask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/addTask(_:callbackQueue:completion:)-hgtj": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/addTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addTask",
@@ -653,13 +655,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTask(_:callbackQueue:completion:)-hgtj",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/addTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocktaskstore\/addtask(_:callbackqueue:completion:)-hgtj"
+  "url" : "\/documentation\/carekitstore\/ocktaskstore\/addtask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/addTasks(_:)": {
   "abstract" : [
@@ -886,7 +888,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocktaskstore\/deletetask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/deleteTask(_:callbackQueue:completion:)-135nm": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/deleteTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deleteTask",
@@ -968,13 +970,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTask(_:callbackQueue:completion:)-135nm",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/deleteTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deleteTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocktaskstore\/deletetask(_:callbackqueue:completion:)-135nm"
+  "url" : "\/documentation\/carekitstore\/ocktaskstore\/deletetask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/deleteTasks(_:)": {
   "abstract" : [
@@ -1201,7 +1203,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ocktaskstore\/updatetask(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/updateTask(_:callbackQueue:completion:)-8xfom": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/updateTask(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updateTask",
@@ -1283,13 +1285,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTask(_:callbackQueue:completion:)-8xfom",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskStore\/updateTask(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updateTask(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ocktaskstore\/updatetask(_:callbackqueue:completion:)-8xfom"
+  "url" : "\/documentation\/carekitstore\/ocktaskstore\/updatetask(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskStore/updateTasks(_:)": {
   "abstract" : [

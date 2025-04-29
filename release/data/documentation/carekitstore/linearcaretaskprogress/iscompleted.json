@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/CareTaskProgress-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress"
       ]
     ]
   },
@@ -179,17 +178,6 @@
   "title" : "LinearCareTaskProgress",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/linearcaretaskprogress"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/CareTaskProgress-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/LinearCareTaskProgress\/CareTaskProgress-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CareTaskProgress Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/linearcaretaskprogress\/caretaskprogress-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/LinearCareTaskProgress/isCompleted": {
   "abstract" : [

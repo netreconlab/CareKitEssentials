@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/Equatable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult"
       ]
     ]
   },
@@ -427,17 +426,6 @@
   "title" : "==(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresult\/==(_:_:)"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResult/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResult\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/carestorefetchedresult\/equatable-implementations"
 }
 }
 }

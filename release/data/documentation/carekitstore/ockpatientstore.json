@@ -145,17 +145,19 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatient(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatient(_:callbackQueue:completion:)-6aoyv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatient(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatients(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatients(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatient(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatient(_:callbackQueue:completion:)-1zba2",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatient(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatients(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatients(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatient(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatient(_:callbackQueue:completion:)-pln1",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatient(_:callbackQueue:completion:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatients(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatients(_:callbackQueue:completion:)"
       ],
@@ -418,7 +420,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockpatientstore\/addpatient(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/addPatient(_:callbackQueue:completion:)-6aoyv": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/addPatient(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "addPatient",
@@ -500,13 +502,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatient(_:callbackQueue:completion:)-6aoyv",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/addPatient(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "addPatient(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockpatientstore\/addpatient(_:callbackqueue:completion:)-6aoyv"
+  "url" : "\/documentation\/carekitstore\/ockpatientstore\/addpatient(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/addPatients(_:)": {
   "abstract" : [
@@ -733,7 +735,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockpatientstore\/deletepatient(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/deletePatient(_:callbackQueue:completion:)-1zba2": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/deletePatient(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "deletePatient",
@@ -815,13 +817,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatient(_:callbackQueue:completion:)-1zba2",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/deletePatient(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "deletePatient(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockpatientstore\/deletepatient(_:callbackqueue:completion:)-1zba2"
+  "url" : "\/documentation\/carekitstore\/ockpatientstore\/deletepatient(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/deletePatients(_:)": {
   "abstract" : [
@@ -1048,7 +1050,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockpatientstore\/updatepatient(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/updatePatient(_:callbackQueue:completion:)-pln1": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/updatePatient(_:callbackQueue:completion:)": {
   "abstract" : [
     {
       "code" : "updatePatient",
@@ -1130,13 +1132,13 @@
       "text" : ">?)"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatient(_:callbackQueue:completion:)-pln1",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKPatientStore\/updatePatient(_:callbackQueue:completion:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "updatePatient(_:callbackQueue:completion:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockpatientstore\/updatepatient(_:callbackqueue:completion:)-pln1"
+  "url" : "\/documentation\/carekitstore\/ockpatientstore\/updatepatient(_:callbackqueue:completion:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKPatientStore/updatePatients(_:)": {
   "abstract" : [

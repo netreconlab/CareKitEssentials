@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStyle",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStyle\/OCKStyler-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStyle"
       ]
     ]
   },
@@ -211,17 +210,6 @@
   "title" : "OCKStyle",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockstyle"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKStyle/OCKStyler-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKStyle\/OCKStyler-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKStyler Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockstyle\/ockstyler-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKStyle/appearance": {
   "abstract" : [

@@ -28,8 +28,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/Sequence-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults"
       ]
     ]
   },
@@ -125,7 +124,15 @@
       }
     ],
     "platforms" : [
-
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "deprecatedAt" : "4.1",
+        "message" : "Please use compactMap(_:) for the case where closure returns an optional value",
+        "name" : "Swift",
+        "renamed" : "compactMap(_:)",
+        "unavailable" : false
+      }
     ],
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -304,17 +311,6 @@
   "title" : "CareStoreFetchedResults",
   "type" : "topic",
   "url" : "\/documentation\/carekit\/carestorefetchedresults"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/Sequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKit\/CareStoreFetchedResults\/Sequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Sequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekit\/carestorefetchedresults\/sequence-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchedResults/flatMap(_:)-8r3rc": {
   "abstract" : [

@@ -48,7 +48,12 @@
       }
     ],
     "platforms" : [
-
+      {
+        "beta" : false,
+        "deprecated" : true,
+        "renamed" : "CareTaskProgressStrategy",
+        "unavailable" : false
+      }
     ],
     "role" : "symbol",
     "roleHeading" : "Case",

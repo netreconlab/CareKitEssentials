@@ -13,8 +13,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyPatientStore-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore"
       ]
     ]
   },
@@ -41,7 +40,7 @@
       },
       {
         "kind" : "text",
-        "text" : "([any "
+        "text" : "(["
       },
       {
         "kind" : "typeIdentifier",
@@ -84,7 +83,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<[any "
+        "text" : "<["
       },
       {
         "kind" : "typeIdentifier",
@@ -147,7 +146,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": [any "
+              "text" : ": ["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyPatient",
@@ -192,7 +191,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<[any "
+              "text" : "<["
             },
             {
               "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyPatient",
@@ -397,17 +396,6 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockstore"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/OCKAnyPatientStore-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKStore\/OCKAnyPatientStore-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyPatientStore Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockstore\/ockanypatientstore-implementations"
-},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKStore/updateAnyPatients(_:callbackQueue:completion:)": {
   "abstract" : [
     {
@@ -434,7 +422,7 @@
     },
     {
       "kind" : "text",
-      "text" : "([any "
+      "text" : "(["
     },
     {
       "kind" : "typeIdentifier",
@@ -477,7 +465,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<[any "
+      "text" : "<["
     },
     {
       "kind" : "typeIdentifier",

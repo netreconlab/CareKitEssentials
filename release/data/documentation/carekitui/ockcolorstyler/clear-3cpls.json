@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear-h4j"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler"
       ]
     ]
   },
@@ -199,42 +198,6 @@
   "title" : "clear",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockcolorstyler\/clear-3cpls"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKColorStyler/clear-h4j": {
-  "abstract" : [
-
-  ],
-  "defaultImplementations" : 1,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "clear"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)UIColor",
-      "text" : "UIColor"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKColorStyler\/clear-h4j",
-  "kind" : "symbol",
-  "required" : true,
-  "role" : "symbol",
-  "title" : "clear",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockcolorstyler\/clear-h4j"
 }
 }
 }

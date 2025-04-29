@@ -1789,6 +1789,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s28CustomDebugStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s17CustomReflectableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
@@ -1815,6 +1816,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Elements-swift.struct",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Values-swift.struct"
@@ -1822,6 +1825,8 @@
       "title" : "Structures"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/init()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/init(_:uniquingKeysWith:)-2y39b",
@@ -1839,6 +1844,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/count",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/elements-swift.property",
@@ -1849,6 +1856,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/compactMapValues(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/filter(_:)",
@@ -1884,6 +1893,8 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Subscripts",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/subscript(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/subscript(_:default:)"
@@ -1891,12 +1902,15 @@
       "title" : "Subscripts"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/Index"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/OrderedCollections\/OrderedDictionary\/CustomDebugStringConvertible-Implementations",
@@ -6850,7 +6864,15 @@
     },
     {
       "kind" : "text",
-      "text" : " _: () -> "
+      "text" : " _: "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -7315,7 +7337,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -7496,7 +7526,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure"
+    },
+    {
+      "kind" : "text",
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -7708,6 +7746,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s30ExpressibleByDictionaryLiteralP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s30ExpressibleByDictionaryLiteralP",
   "title" : "Swift.ExpressibleByDictionaryLiteral",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {

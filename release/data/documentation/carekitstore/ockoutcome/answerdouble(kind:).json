@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcome",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcome\/OCKAnyOutcome-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcome"
       ]
     ]
   },
@@ -233,17 +232,6 @@
   "title" : "OCKOutcome",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcome"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcome/OCKAnyOutcome-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcome\/OCKAnyOutcome-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKAnyOutcome Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/ockoutcome\/ockanyoutcome-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcome/answerDouble(kind:)": {
   "abstract" : [

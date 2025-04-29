@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/AggregatedCareTaskProgress",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/AggregatedCareTaskProgress\/CareTaskProgress-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/AggregatedCareTaskProgress"
       ]
     ]
   },
@@ -179,17 +178,6 @@
   "title" : "AggregatedCareTaskProgress",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/aggregatedcaretaskprogress"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/AggregatedCareTaskProgress/CareTaskProgress-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/AggregatedCareTaskProgress\/CareTaskProgress-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CareTaskProgress Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitstore\/aggregatedcaretaskprogress\/caretaskprogress-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/AggregatedCareTaskProgress/isCompleted": {
   "abstract" : [

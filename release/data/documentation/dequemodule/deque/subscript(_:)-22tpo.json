@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/RandomAccessCollection-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque"
       ]
     ]
   },
@@ -306,17 +305,6 @@
   "title" : "Deque",
   "type" : "topic",
   "url" : "\/documentation\/dequemodule\/deque"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/RandomAccessCollection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/DequeModule\/Deque\/RandomAccessCollection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RandomAccessCollection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/dequemodule\/deque\/randomaccesscollection-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/DequeModule/Deque/subscript(_:)-22tpo": {
   "abstract" : [

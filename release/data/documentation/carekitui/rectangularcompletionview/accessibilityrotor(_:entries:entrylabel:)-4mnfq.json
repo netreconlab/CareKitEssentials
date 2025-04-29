@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView\/View-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView"
       ]
     ]
   },
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "extendedModule" : "SwiftUI",
+    "extendedModule" : "SwiftUICore",
     "externalID" : "s:7SwiftUI4ViewPAAE18accessibilityRotor_7entries10entryLabelQrAA18LocalizedStringKeyV_Sayqd__Gs0K4PathCyqd__SSGts12IdentifiableRd__lF::SYNTHESIZED::s:9CareKitUI25RectangularCompletionViewV",
     "fragments" : [
       {
@@ -132,7 +131,7 @@
       {
         "name" : "CareKitUI",
         "relatedModules" : [
-          "SwiftUI"
+          "SwiftUICore"
         ]
       }
     ],
@@ -182,6 +181,14 @@
             "watchOS"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "nonisolated"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "func"
@@ -395,17 +402,6 @@
   "title" : "RectangularCompletionView",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/rectangularcompletionview"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/RectangularCompletionView/View-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/RectangularCompletionView\/View-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "View Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/rectangularcompletionview\/view-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/RectangularCompletionView/accessibilityRotor(_:entries:entryLabel:)-4mnfq": {
   "abstract" : [

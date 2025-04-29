@@ -81,7 +81,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -98,6 +99,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/init()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/init(dateInterval:)",
@@ -107,6 +110,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/carePlanIDs",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/carePlanRemoteIDs",
@@ -125,12 +130,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/SortDescriptor"
       ],
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKTaskQuery\/Equatable-Implementations"
@@ -152,6 +160,11 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
   "title" : "Swift.Equatable",
@@ -422,7 +435,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKTaskQuery/excludesTasksWithNoEvents": {
   "abstract" : [
     {
-      "text" : "Determines if tasks with no events should be included in the query results or not. False be default.",
+      "text" : "Determines if tasks with no events should be included in the query results or not. False by default.",
       "type" : "text"
     }
   ],

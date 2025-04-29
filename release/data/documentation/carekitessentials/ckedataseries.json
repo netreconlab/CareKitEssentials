@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data",
+      "text" : "Represents a single group of data to be plotted. In most cases, CareKitEssentials plots accept multiple data",
       "type" : "text"
     },
     {
@@ -89,7 +89,11 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI30AXChartDescriptorRepresentableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -106,30 +110,61 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:values:accessibilityValues:title:color:width:height:stackingMethod:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/areaParametricFunction",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/color",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/domain",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/function",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/gradientStartColor",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/height",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/id",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/interpolation",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/mark",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/parametricFunction",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMarkWhenHighlighted",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMeanMark",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMedianMark",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/stackingMethod",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/summary",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/symbol",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/tLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/title",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/width"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/width",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/xLabel",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yEndLabel",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yLabel"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/PlotType"
       ],
       "title" : "Enumerations"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/AXChartDescriptorRepresentable-Implementations",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/Equatable-Implementations",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/Hashable-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -146,6 +181,21 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/7SwiftUI30AXChartDescriptorRepresentableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/7SwiftUI30AXChartDescriptorRepresentableP",
+  "title" : "SwiftUICore.AXChartDescriptorRepresentable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/SH": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/SQ": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials": {
   "abstract" : [
 
@@ -160,7 +210,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries": {
   "abstract" : [
     {
-      "text" : "Represents a single group of data to be plotted. In most cases, CareKit plots accept multiple data",
+      "text" : "Represents a single group of data to be plotted. In most cases, CareKitEssentials plots accept multiple data",
       "type" : "text"
     },
     {
@@ -199,10 +249,43 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/AXChartDescriptorRepresentable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/AXChartDescriptorRepresentable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AXChartDescriptorRepresentable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/axchartdescriptorrepresentable-implementations"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/equatable-implementations"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/Hashable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/Hashable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Hashable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/hashable-implementations"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/MarkType": {
   "abstract" : [
     {
-      "text" : "An enumerator specifying the types of marks this chart can display.",
+      "text" : "An enumerator specifying the types of marks that can be used to display data series.",
       "type" : "text"
     }
   ],
@@ -232,6 +315,104 @@
   "title" : "CKEDataSeries.MarkType",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/marktype"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/PlotType": {
+  "abstract" : [
+    {
+      "text" : "An enumerator specifying the types of plots that can be used to display data series.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PlotType"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/PlotType",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PlotType"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CKEDataSeries.PlotType",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/plottype"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/areaParametricFunction": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "areaParametricFunction"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> (yStart"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", yEnd"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "))?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/areaParametricFunction",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "areaParametricFunction",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/areaparametricfunction"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/color": {
   "abstract" : [
@@ -293,6 +474,100 @@
   "title" : "color",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/color"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/domain": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "domain"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SN",
+      "text" : "ClosedRange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ">?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/domain",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "domain",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/domain"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/function": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "function"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ")?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/function",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "function",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/function"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/gradientStartColor": {
   "abstract" : [
@@ -414,7 +689,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/id"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:dates:dateComponent:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:)": {
   "abstract" : [
     {
       "text" : "Creates a new data series that can be passed to a chart to be plotted.",
@@ -474,6 +749,49 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:17CareKitEssentials13CKEDataSeriesV8MarkTypeO",
       "text" : "MarkType"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dates"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DateV",
+      "text" : "Date"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dateComponent"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation8CalendarV",
+      "text" : "Calendar"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation8CalendarV9ComponentO",
+      "text" : "Component"
     },
     {
       "kind" : "text",
@@ -613,21 +931,55 @@
     },
     {
       "kind" : "text",
-      "text" : ") "
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "symbol"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts21BasicChartSymbolShapeV",
+      "text" : "BasicChartSymbolShape"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "interpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts19InterpolationMethodV",
+      "text" : "InterpolationMethod"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) "
     },
     {
       "kind" : "keyword",
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(mark:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:)",
+  "title" : "init(mark:dates:dateComponent:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:values:accessibilityvalues:title:color:gradientstartcolor:width:height:stackingmethod:)"
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:dates:datecomponent:values:accessibilityvalues:title:color:gradientstartcolor:width:height:stackingmethod:symbol:interpolation:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:values:accessibilityValues:title:color:width:height:stackingMethod:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)": {
   "abstract" : [
     {
       "text" : "Creates a new data series that can be passed to a chart to be plotted.",
@@ -694,6 +1046,49 @@
     },
     {
       "kind" : "externalParam",
+      "text" : "dates"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation4DateV",
+      "text" : "Date"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "dateComponent"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation8CalendarV",
+      "text" : "Calendar"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation8CalendarV9ComponentO",
+      "text" : "Component"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
       "text" : "values"
     },
     {
@@ -742,6 +1137,23 @@
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "summary"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
     },
     {
       "kind" : "externalParam",
@@ -809,19 +1221,94 @@
     },
     {
       "kind" : "text",
-      "text" : ") "
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "symbol"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts21BasicChartSymbolShapeV",
+      "text" : "BasicChartSymbolShape"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "interpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts19InterpolationMethodV",
+      "text" : "InterpolationMethod"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) "
     },
     {
       "kind" : "keyword",
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:values:accessibilityValues:title:color:width:height:stackingMethod:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(mark:values:accessibilityValues:title:color:width:height:stackingMethod:)",
+  "title" : "init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:values:accessibilityvalues:title:color:width:height:stackingmethod:)"
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:dates:datecomponent:values:accessibilityvalues:title:summary:color:width:height:stackingmethod:symbol:interpolation:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/interpolation": {
+  "abstract" : [
+    {
+      "text" : "The ways in which line or area marks interpolate their data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "interpolation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts19InterpolationMethodV",
+      "text" : "InterpolationMethod"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/interpolation",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "interpolation",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/interpolation"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/mark": {
   "abstract" : [
@@ -860,6 +1347,172 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/mark"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/parametricFunction": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "parametricFunction"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> (x"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : ", y"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sd",
+      "text" : "Double"
+    },
+    {
+      "kind" : "text",
+      "text" : "))?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/parametricFunction",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "parametricFunction",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/parametricfunction"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/showMarkWhenHighlighted": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showMarkWhenHighlighted"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMarkWhenHighlighted",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "showMarkWhenHighlighted",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/showmarkwhenhighlighted"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/showMeanMark": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showMeanMark"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMeanMark",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "showMeanMark",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/showmeanmark"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/showMedianMark": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "showMedianMark"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/showMedianMark",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "showMedianMark",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/showmedianmark"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/stackingMethod": {
   "abstract" : [
     {
@@ -896,6 +1549,126 @@
   "title" : "stackingMethod",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/stackingmethod"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/summary": {
+  "abstract" : [
+    {
+      "text" : "A summary describing the data.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "summary"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/summary",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "summary",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/summary"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/symbol": {
+  "abstract" : [
+    {
+      "text" : "A basic chart symbol shape.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "symbol"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:6Charts21BasicChartSymbolShapeV",
+      "text" : "BasicChartSymbolShape"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/symbol",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "symbol",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/symbol"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/tLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/tLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/tlabel"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/title": {
   "abstract" : [
@@ -979,9 +1752,120 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/width"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/xLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "xLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/xLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "xLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/xlabel"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/yEndLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yEndLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yEndLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yEndLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/yendlabel"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/yLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/ylabel"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/s12IdentifiableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP",
   "title" : "Swift.Identifiable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
+  "title" : "Swift.Copyable",
   "type" : "unresolvable"
 }
 }

@@ -451,20 +451,6 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "The default outcome value for the view model. Defaults to 0.0.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "value"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
                   "text" : "An optional title for the event.",
                   "type" : "text"
                 }

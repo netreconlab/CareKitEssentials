@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/OCKDimensionStyler-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle"
       ]
     ]
   },
@@ -179,17 +178,6 @@
   "title" : "OCKDimensionStyle",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/ockdimensionstyle"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKDimensionStyle/OCKDimensionStyler-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/OCKDimensionStyle\/OCKDimensionStyler-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OCKDimensionStyler Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/ockdimensionstyle\/ockdimensionstyler-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/OCKDimensionStyle/symbolPointSize2": {
   "abstract" : [
