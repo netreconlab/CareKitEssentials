@@ -10,6 +10,7 @@ import Foundation
 
 struct CombinedProgress<Progress> {
 	var value: Progress
+	var originalValues: [Progress]
 	var unit: String?
 	var date: Date
 	var period: PeriodComponent

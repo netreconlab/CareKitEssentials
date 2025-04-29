@@ -39,13 +39,7 @@ struct CareKitEssentialChartBodyView: View {
 
 				// Add special marks for specific charts here.
 				if data.mark == .bar {
-					if point.y == data.maxYValue {
-						RectangleMark(
-							x: .value(data.xLabel, point.x, unit: point.xUnit),
-							y: .value(data.yLabel, point.y),
-							height: 3
-						)
-					}
+					makeAdditionalChartsForBarMarks(series: data, at: point)
 				}
 			}
 			.if(data.interpolation != nil) { chartContent in
@@ -170,6 +164,25 @@ struct CareKitEssentialChartBodyView: View {
 #endif
 	}
 
+
+	@ChartContentBuilder
+	func makeAdditionalChartsForBarMarks(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
+		if point.y == series.maxYValue {
+			RectangleMark(
+				x: .value(series.xLabel, point.x, unit: point.xUnit),
+				y: .value(series.yLabel, point.y),
+				height: 3
+			)
+		}
+
+		ForEach(0..<point.originalValues.count, id: \.self) { index in
+			PointMark(
+				x: .value(series.xLabel, point.x, unit: point.xUnit),
+				y: .value(series.yLabel, point.originalValues[index])
+			)
+			.opacity(0.3)
+		}
+	}
 
 	@ViewBuilder
 	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {

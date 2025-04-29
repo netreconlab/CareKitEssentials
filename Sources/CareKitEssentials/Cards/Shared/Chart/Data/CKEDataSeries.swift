@@ -416,13 +416,15 @@ public struct CKEDataSeries: Identifiable, Hashable {
 				return CKEPoint(
 					x: date,
 					y: value,
-					period: period
+					period: period,
+					originalValues: values
 				)
 			} else {
 				return CKEPoint(
 					x: date,
 					y: value,
-					period: .week
+					period: .week,
+					originalValues: values
 				)
 			}
         }
@@ -486,13 +488,15 @@ public struct CKEDataSeries: Identifiable, Hashable {
 				return CKEPoint(
 					x: date,
 					y: value,
-					period: period
+					period: period,
+					originalValues: values
 				)
 			} else {
 				return CKEPoint(
 					x: date,
 					y: value,
-					period: .week
+					period: .week,
+					originalValues: values
 				)
 			}
 		}

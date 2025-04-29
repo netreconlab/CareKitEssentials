@@ -124,6 +124,7 @@ extension CareKitEssentialChartable {
 				let combinedProgressValue = combinedProgressValues.reduce(0, +)
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					originalValues: combinedProgressValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -134,6 +135,7 @@ extension CareKitEssentialChartable {
 
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					originalValues: combinedProgressValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -144,6 +146,7 @@ extension CareKitEssentialChartable {
 
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
+					originalValues: combinedProgressValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -159,6 +162,7 @@ extension CareKitEssentialChartable {
 				y: $0.value,
 				yUnit: $0.unit,
 				period: $0.period,
+				originalValues: $0.originalValues,
 				accessibilityValue: "\(configuration.legendTitle), \($0.date), \($0.value)"
 			)
 		}

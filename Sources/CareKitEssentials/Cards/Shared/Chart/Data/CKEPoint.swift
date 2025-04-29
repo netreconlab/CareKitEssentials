@@ -6,6 +6,7 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+import CareKitStore
 import Foundation
 
 struct CKEPoint: Hashable, Identifiable {
@@ -17,5 +18,6 @@ struct CKEPoint: Hashable, Identifiable {
     var y: Double // swiftlint:disable:this identifier_name
 	var yUnit: String?
 	var period: PeriodComponent
+	var originalValues: [Double]
     var accessibilityValue: String?
 }
