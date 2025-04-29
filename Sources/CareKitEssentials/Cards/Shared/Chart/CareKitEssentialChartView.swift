@@ -13,6 +13,20 @@ import Foundation
 import os.log
 import SwiftUI
 
+/// Displays a SwiftUI Chart above an axis. The initializer takes an an array of
+/// `CKEDataSeriesConfiguration`'s which each support
+/// `CKEDataSeries.MarkType` that allows you to overlay from several
+/// graph types that conform to `ChartContent`.
+///
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     | [title]                                               |
+///     | [detail]                                              |
+///     |                                                       |
+///     | [graph]                                               |
+///     |                                                       |
+///     +-------------------------------------------------------+
+///
 public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Environment(\.careStore) public var store
 	@Environment(\.isCardEnabled) private var isCardEnabled
