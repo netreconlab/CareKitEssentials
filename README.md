@@ -28,7 +28,7 @@ You can create SwiftUI views that conform to [CareKitEssentialView](https://gith
 
 <img width="342" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/3efb4226-50e2-41e1-beef-91bc84cc7d63">
 
-[CareKitEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareKitEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts. See #48 for more details.
+[CareKitEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareKitEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts. See https://github.com/netreconlab/CareKitEssentials/pull/48 for more details.
 
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/5aca133c-21f7-4a7d-b99d-36e7edab4c9c"><img width="342" alt="image" src="https://github.com/user-attachments/assets/33489c38-bb2d-4f88-8e36-a5116d1940c1">
 
