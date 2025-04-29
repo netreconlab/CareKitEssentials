@@ -287,7 +287,9 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/averagingOutcomeValues(kind:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/checkingOutcomeExists(kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/maxOutcomeValue(kind:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/medianOutcomeValues(kind:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/minOutcomeValue(kind:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/summingOutcomeValues(kind:)"
       ],
       "title" : "Type Methods"
@@ -708,6 +710,113 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/init(computeprogress:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/maxOutcomeValue(kind:)": {
+  "abstract" : [
+    {
+      "text" : "A strategy that computes progress for a task.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Progress",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CareTaskProgress",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "maxOutcomeValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore0A20TaskProgressStrategyV",
+      "text" : "CareTaskProgressStrategy"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/maxOutcomeValue(kind:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "maxOutcomeValue(kind:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/maxoutcomevalue(kind:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/medianOutcomeValues(kind:)": {
   "abstract" : [
     {
@@ -814,6 +923,113 @@
   "title" : "medianOutcomeValues(kind:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/medianoutcomevalues(kind:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/minOutcomeValue(kind:)": {
+  "abstract" : [
+    {
+      "text" : "A strategy that computes progress for a task.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Progress",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "CareTaskProgress",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "minOutcomeValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "kind"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore0A20TaskProgressStrategyV",
+      "text" : "CareTaskProgressStrategy"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12CareKitStore06LinearA12TaskProgressV",
+      "text" : "LinearCareTaskProgress"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/CareTaskProgressStrategy\/minOutcomeValue(kind:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "minOutcomeValue(kind:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/caretaskprogressstrategy\/minoutcomevalue(kind:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/CareTaskProgressStrategy/summingOutcomeValues": {
   "abstract" : [

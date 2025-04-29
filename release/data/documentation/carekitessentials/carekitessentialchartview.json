@@ -1,4 +1,50 @@
 {
+  "abstract" : [
+    {
+      "text" : "Displays a SwiftUI Chart above an axis. The initializer takes an an array of",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeriesConfiguration",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s which each support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeries.MarkType",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " that allows you to overlay from several",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "graph types that conform to ",
+      "type" : "text"
+    },
+    {
+      "code" : "ChartContent",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -83,6 +129,31 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "code" : [
+            "+-------------------------------------------------------+",
+            "|                                                       |",
+            "| [title]                                               |",
+            "| [detail]                                              |",
+            "|                                                       |",
+            "| [graph]                                               |",
+            "|                                                       |",
+            "+-------------------------------------------------------+"
+          ],
+          "syntax" : null,
+          "type" : "codeListing"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "relationshipsSections" : [
@@ -165,7 +236,50 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialChartView": {
   "abstract" : [
-
+    {
+      "text" : "Displays a SwiftUI Chart above an axis. The initializer takes an an array of",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeriesConfiguration",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s which each support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeries.MarkType",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " that allows you to overlay from several",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "graph types that conform to ",
+      "type" : "text"
+    },
+    {
+      "code" : "ChartContent",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

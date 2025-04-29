@@ -17,7 +17,7 @@
     {
       "inlineContent" : [
         {
-          "text" : "Renamed to \\\"CareKitEssentialChartView\\\" and \\\"dateInterval\\\", \\\"period\\\", and \\\"configurations\\\" are now @Binding",
+          "text" : "Renamed to `CareKitEssentialChartView` and `dateInterval`, `period`, and `configurations` are now @Binding",
           "type" : "text"
         }
       ],
@@ -79,7 +79,7 @@
       {
         "beta" : false,
         "deprecated" : true,
-        "message" : "Renamed to \\\"CareKitEssentialChartView\\\" and \\\"dateInterval\\\", \\\"period\\\", and \\\"configurations\\\" are now @Binding",
+        "message" : "Renamed to `CareKitEssentialChartView` and `dateInterval`, `period`, and `configurations` are now @Binding",
         "unavailable" : false
       }
     ],
@@ -194,7 +194,50 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareEssentialChartView": {
   "abstract" : [
-
+    {
+      "text" : "Displays a SwiftUI Chart above an axis. The initializer takes an an array of",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeriesConfiguration",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : "’s which each support",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "code" : "CKEDataSeries.MarkType",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " that allows you to overlay from several",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "graph types that conform to ",
+      "type" : "text"
+    },
+    {
+      "code" : "ChartContent",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
   ],
   "deprecated" : true,
   "fragments" : [
