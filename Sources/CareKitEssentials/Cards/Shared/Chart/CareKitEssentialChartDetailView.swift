@@ -28,7 +28,8 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 
 	var body: some View {
 		NavigationView {
-			VStack(alignment: .leading) {
+			VStack {
+
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries,
@@ -47,26 +48,43 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				.onReceive(events.publisher) { _ in
 					updateQuery()
 				}
+				.frame(maxWidth: .infinity)
 
 				Divider()
 
-				ForEach(orderedConfigurations) { configuration in
-					let configurationId = configuration.id
-					let currentConfiguration = configurations[configurationId] ?? configuration
+				VStack(alignment: .leading) {
+					List {
+						Section(
+							header: Text("PERIOD")
+						) {
+							periodPickerView
+						}
+						Section(
+							header: Text("DATE_RANGE")
+						) {
+							startDatePickerView
+							endDatePickerView
+						}
+					}.listStyle(.automatic)
 
-					Text(currentConfiguration.legendTitle)
-						.font(.title)
-						.bold()
+					ForEach(orderedConfigurations) { configuration in
+						let configurationId = configuration.id
+						let currentConfiguration = configurations[configurationId] ?? configuration
 
-					CKEConfigurationView(
-						configurationId: configurationId,
-						configurations: $configurations,
-						markSelected: currentConfiguration.mark,
-						dataStrategySelected: currentConfiguration.dataStrategy,
-						isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-						isShowingMeanMark: currentConfiguration.showMeanMark,
-						isShowingMedianMark: currentConfiguration.showMedianMark
-					)
+						Section(
+							header: Text(currentConfiguration.legendTitle)
+						) {
+							CKEConfigurationView(
+								configurationId: configurationId,
+								configurations: $configurations,
+								markSelected: currentConfiguration.mark,
+								dataStrategySelected: currentConfiguration.dataStrategy,
+								isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+								isShowingMeanMark: currentConfiguration.showMeanMark,
+								isShowingMedianMark: currentConfiguration.showMedianMark
+							)
+						}
+					}
 				}
 			}
 		}
@@ -97,6 +115,45 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 		)
 	}
 
+	var startDatePickerView: some View {
+		DatePicker(
+			"START_DATE",
+			selection: $dateInterval.start,
+			displayedComponents: [.date, .hourAndMinute]
+		)
+		.datePickerStyle(.automatic)
+	}
+
+	var endDatePickerView: some View {
+		DatePicker(
+			"END_DATE",
+			selection: $dateInterval.end,
+			displayedComponents: [.date, .hourAndMinute]
+		)
+		.datePickerStyle(.automatic)
+	}
+
+	var periodPickerView: some View {
+		Picker(
+			"CHOOSE_PERIOD",
+			selection: $period.animation()
+		) {
+			Text("DAY")
+				.tag(PeriodComponent.day)
+			Text("WEEK")
+				.tag(PeriodComponent.week)
+			Text("MONTH")
+				.tag(PeriodComponent.month)
+			Text("YEAR")
+				.tag(PeriodComponent.year)
+		}
+		#if !os(watchOS)
+		.pickerStyle(.segmented)
+		#else
+		.pickerStyle(.automatic)
+		#endif
+	}
+
 	private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
 		let updatedTaskIDs = Set(configurations.values.map(\.taskID))
@@ -119,6 +176,13 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 			color: .red,
 			gradientStartColor: .gray
 		)
+		let configurationLine = CKEDataSeriesConfiguration(
+			taskID: task.id,
+			mark: .line,
+			legendTitle: "Line",
+			color: .red,
+			gradientStartColor: .gray
+		)
 		let previewStore = Utility.createPreviewStore()
 
 		var weekDateInterval: DateInterval {
@@ -135,8 +199,14 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 					subtitle: "Week",
 					dateInterval: weekDateInterval,
 					period: .week,
-					configurations: [task.id: configurationBar],
-					orderedConfigurations: [configurationBar]
+					configurations: [
+						configurationBar.id: configurationBar,
+						configurationLine.id: configurationLine
+					],
+					orderedConfigurations: [
+						configurationBar,
+						configurationLine
+					]
 				)
 			}
 			.padding()

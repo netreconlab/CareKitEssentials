@@ -19,7 +19,7 @@ struct CKEConfigurationView: View {
 	@State var isShowingMedianMark: Bool = false
 
     var body: some View {
-		Form {
+		List {
 			Section(
 				header: Text(String(localized: "CHART_TYPE"))
 			) {
@@ -38,6 +38,7 @@ struct CKEConfigurationView: View {
 				Toggle("SHOW_MEDIAN", isOn: $isShowingMedianMark)
 			}
 		}
+		.listStyle(.automatic)
 		.onChange(of: markSelected) { newValue in
 			configurations[configurationId]?.mark = newValue
 		}

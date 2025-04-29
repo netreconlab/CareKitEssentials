@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "CareKitEssentials",
 	defaultLocalization: "en",
-    platforms: [.iOS(.v16), .macOS(.v14), .watchOS(.v9)],
+    platforms: [.iOS(.v16), .macOS(.v14), .watchOS(.v10)],
     products: [
         .library(
             name: "CareKitEssentials",
