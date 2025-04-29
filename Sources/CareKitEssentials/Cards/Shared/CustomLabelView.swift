@@ -25,6 +25,15 @@ public struct CustomLabelView<Header: View>: View {
     @Environment(\.careKitStyle) private var style
     @Environment(\.isCardEnabled) private var isCardEnabled
     @StateObject var viewModel: CardViewModel
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 13)],
+		defaultValue: .headline
+	) private var font
+
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 25)],
+		defaultValue: .largeTitle
+	) private var labelFont
 
     let header: Header?
 
@@ -38,23 +47,24 @@ public struct CustomLabelView<Header: View>: View {
                 HStack(spacing: style.dimension.directionalInsets2.trailing) {
 
                     viewModel.event.image()?
-                        .resizable()
-                        .renderingMode(.template)
-                        .frame(width: 25, height: 30)
-                        .foregroundColor(Color.accentColor)
+						.imageScale(.large)
+						.foregroundColor(Color.accentColor)
+						.padding()
 
                     VStack(alignment: .leading,
                            spacing: style.dimension.directionalInsets2.bottom) {
                         if let detail = viewModel.event.instructions {
                             Text(detail)
-                                .font(.subheadline)
+                                .font(font)
                                 .fontWeight(.medium)
                         }
                     }
-                    .foregroundColor(Color.primary)
+					#if os(iOS) || os(visionOS)
+					.foregroundColor(Color(style.color.label))
+					#endif
                     Spacer()
                     Text(viewModel.valueAsString)
-                        .font(.title)
+                        .font(labelFont)
                         .bold()
                         .foregroundColor(Color.accentColor)
                 }
@@ -196,7 +206,7 @@ public extension CustomLabelView where Header == InformationHeaderView {
 struct CustomLabelView_Previews: PreviewProvider {
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            VStack {
+            ScrollView {
                 CustomLabelView(
                     viewModel: .init(
                         event: event

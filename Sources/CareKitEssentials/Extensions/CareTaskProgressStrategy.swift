@@ -10,6 +10,39 @@ import Foundation
 
 public extension CareTaskProgressStrategy {
 
+	/// A strategy that computes progress for a task by checking for the existence of an outcome.
+	///
+	/// - Parameters:
+	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// when computing the progress for the event. Defaults to ``nil``.
+	///
+	/// The task is considered completed if an ``OCKAnyEvent/outcome`` exists that contains an
+	/// `OCKOutcomeValue` with the specified `kind`.
+	static func checkingOutcomeExists(kind: String? = nil) -> CareTaskProgressStrategy<BinaryCareTaskProgress> {
+		CareTaskProgressStrategy<BinaryCareTaskProgress> { event in
+			BinaryCareTaskProgress.computeProgressByCheckingOutcomeExists(for: event, kind: kind)
+		}
+	}
+
+	/// A strategy that computes progress for a task.
+	///
+	/// The strategy sums the ``OCKScheduleElement/targetValues`` for the event and compares
+	/// the two results. The task is considered completed if the summed value reaches the summed target.
+	///
+	/// - Parameters:
+	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// when computing the progress for the event. Defaults to ``nil``.
+	///
+	/// - Note:
+	/// If any of the outcome ``OCKAnyOutcome/values`` or ``OCKScheduleElement/targetValues``
+	/// aren't numeric and can't be summed properly, they're assigned a value of one during the summation
+	/// process.
+	static func summingOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
+		CareTaskProgressStrategy<LinearCareTaskProgress> { event in
+			LinearCareTaskProgress.computeProgressBySummingOutcomeValues(for: event, kind: kind)
+		}
+	}
+
     /// Computes the average outcome values for a given event
     ///
     /// This function uses the ``LinearCareTaskProgress.computeProgressByAveragingOutcomeValues`` 
@@ -17,10 +50,12 @@ public extension CareTaskProgressStrategy {
     /// Event is passed to ``computeProgressByAveragingOutcomeValues`` method as the argument
     ///
     ///
-    /// Paremter:  kind: An optional ``String`` that specifies the kind of the event. Defaults to ``nil``
+	/// - Parameters:
+	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// when computing the progress for the event. Defaults to ``nil``.
     ///
-    /// Returns:: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
-    /// object that's the strategy for computing the progress of a care task
+    /// - Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
+    /// object that's the strategy for computing the progress of a care task.
     ///
     ///
     static func averagingOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
@@ -35,10 +70,12 @@ public extension CareTaskProgressStrategy {
     /// to compute the median outcome values for a given envet.
     /// Event is pased to the ``computeProgressByMedianOutcomeValues`` method as an argument
     ///
-    /// Parameter kind: An optional ``String`` that specifies the kind of an event. Defaults to ``nil``
+	/// - Parameters:
+	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// when computing the progress for the event. Defaults to ``nil``.
     ///
-    /// Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>``
-    ///  that's the strategy for compting the progress of a care task
+    /// - Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>``
+    ///  that's the strategy for compting the progress of a care task.
     ///
     static func medianOutcomeValues(kind: String? = nil) -> CareTaskProgressStrategy<LinearCareTaskProgress> {
         CareTaskProgressStrategy<LinearCareTaskProgress> { event in

@@ -13,6 +13,15 @@
 		4B5FB0C82C3F4AD200855675 /* LinearCareTaskProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5FB0C02C3F4ACB00855675 /* LinearCareTaskProgressTests.swift */; };
 		700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9042C2A609600435E2C /* CareKitEssentialView.swift */; };
 		700DA9072C2A66BF00435E2C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700DA9062C2A66BF00435E2C /* Logger.swift */; };
+		70116AF12DBC634D0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */; };
+		70116AF52DBDC5B10024BB89 /* DateComponentsForProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */; };
+		70116AF92DBDF5E30024BB89 /* CareKitEssentialChartable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AF82DBDF5E20024BB89 /* CareKitEssentialChartable.swift */; };
+		70116AFB2DBE03570024BB89 /* CareKitEssentialChartDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116AFA2DBE034C0024BB89 /* CareKitEssentialChartDetailView.swift */; };
+		70116B162DBF12060024BB89 /* CareEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B152DBF12060024BB89 /* CareEssentialChartView.swift */; };
+		70116B182DBF122D0024BB89 /* PeriodComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B172DBF122D0024BB89 /* PeriodComponent.swift */; };
+		70116B3C2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3B2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift */; };
+		70116B3E2DC0674C0024BB89 /* CKEConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3D2DC0674C0024BB89 /* CKEConfigurationView.swift */; };
+		70116B402DC06DC60024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */; };
 		7026DDEB2D0CD489002EACAA /* OCKScheduleElement+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */; };
 		7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */; };
 		7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */; };
@@ -22,14 +31,14 @@
 		7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */; };
 		7026DDFB2D0D3C86002EACAA /* CareStoreFetchedResult+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */; };
 		7026DDFD2D0D45B9002EACAA /* OCKStore+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */; };
-		702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */; };
+		702FF76B2CFAA93C00B26710 /* CareKitEssentialChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */; };
 		702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */; };
 		702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */; };
 		702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7702CFAA96B00B26710 /* CKEPoint.swift */; };
 		702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7722CFAA97500B26710 /* TemporalProgress.swift */; };
 		702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */; };
-		702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */; };
-		702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */; };
+		702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */; };
+		702FF7792CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */; };
 		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
 		7068BD3D2D62774400212E4A /* OCKHealthKitPassthroughStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */; };
 		7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */; };
@@ -158,6 +167,15 @@
 		700DA8F92C29051900435E2C /* CareKitEssentials.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CareKitEssentials.xctestplan; sourceTree = "<group>"; };
 		700DA9042C2A609600435E2C /* CareKitEssentialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialView.swift; sourceTree = "<group>"; };
 		700DA9062C2A66BF00435E2C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKEDataSeries+AXChartDescriptorRepresentable.swift"; sourceTree = "<group>"; };
+		70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentsForProgress.swift; sourceTree = "<group>"; };
+		70116AF82DBDF5E20024BB89 /* CareKitEssentialChartable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartable.swift; sourceTree = "<group>"; };
+		70116AFA2DBE034C0024BB89 /* CareKitEssentialChartDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartDetailView.swift; sourceTree = "<group>"; };
+		70116B152DBF12060024BB89 /* CareEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartView.swift; sourceTree = "<group>"; };
+		70116B172DBF122D0024BB89 /* PeriodComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodComponent.swift; sourceTree = "<group>"; };
+		70116B3B2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryCareTaskProgress+Math.swift"; sourceTree = "<group>"; };
+		70116B3D2DC0674C0024BB89 /* CKEConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEConfigurationView.swift; sourceTree = "<group>"; };
+		70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareKitEssentialChartBodyView+ChartContent.swift"; sourceTree = "<group>"; };
 		7026DDEA2D0CD47F002EACAA /* OCKScheduleElement+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKScheduleElement+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEC2D0CD5FD002EACAA /* OCKSemanticVersion+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSemanticVersion+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDEE2D0CD74E002EACAA /* OCKNote+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKNote+Hashable.swift"; sourceTree = "<group>"; };
@@ -167,15 +185,16 @@
 		7026DDF62D0D2B2C002EACAA /* OCKAnyEvent+Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Equatable.swift"; sourceTree = "<group>"; };
 		7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResult+Hashable.swift"; sourceTree = "<group>"; };
 		7026DDFC2D0D45B4002EACAA /* OCKStore+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKStore+Hashable.swift"; sourceTree = "<group>"; };
-		702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartView.swift; sourceTree = "<group>"; };
+		702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartView.swift; sourceTree = "<group>"; };
 		702FF76C2CFAA96100B26710 /* CKEDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeries.swift; sourceTree = "<group>"; };
 		702FF76E2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEDataSeriesConfiguration.swift; sourceTree = "<group>"; };
 		702FF7702CFAA96B00B26710 /* CKEPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEPoint.swift; sourceTree = "<group>"; };
 		702FF7722CFAA97500B26710 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
 		702FF7742CFAA97800B26710 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
-		702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartHeaderView.swift; sourceTree = "<group>"; };
-		702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareEssentialChartBodyView.swift; sourceTree = "<group>"; };
+		702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartHeaderView.swift; sourceTree = "<group>"; };
+		702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartBodyView.swift; sourceTree = "<group>"; };
 		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
+		704D03532DBA132C00AFE855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKHealthKitPassthroughStore.swift; sourceTree = "<group>"; };
 		7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitTask+Hashable.swift"; sourceTree = "<group>"; };
 		7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitLinkage+Hashable.swift"; sourceTree = "<group>"; };
@@ -296,14 +315,26 @@
 			path = Mocking;
 			sourceTree = "<group>";
 		};
+		70116AF62DBDF5A00024BB89 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				70116AF82DBDF5E20024BB89 /* CareKitEssentialChartable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		702FF7672CFAA8B300B26710 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				702FF76A2CFAA93C00B26710 /* CareEssentialChartView.swift */,
-				702FF7782CFCFEBD00B26710 /* CareEssentialChartBodyView.swift */,
-				702FF7762CFAAF0300B26710 /* CareEssentialChartHeaderView.swift */,
+				70116B152DBF12060024BB89 /* CareEssentialChartView.swift */,
+				702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */,
+				70116AFA2DBE034C0024BB89 /* CareKitEssentialChartDetailView.swift */,
+				702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */,
+				702FF76A2CFAA93C00B26710 /* CareKitEssentialChartView.swift */,
+				70116B3D2DC0674C0024BB89 /* CKEConfigurationView.swift */,
 				702FF7682CFAA92000B26710 /* Data */,
 				702FF7692CFAA92A00B26710 /* Progress */,
+				70116AF62DBDF5A00024BB89 /* Protocols */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -327,6 +358,22 @@
 			path = Progress;
 			sourceTree = "<group>";
 		};
+		704D02E32DB9F34500AFE855 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				704D034F2DBA10A100AFE855 /* en.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		704D034F2DBA10A100AFE855 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				704D03522DBA132C00AFE855 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
 		709530AC2DAC396900E18A59 /* ResearchSurveyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +386,8 @@
 		70B49A8E2D0A8FB80023E5B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */,
+				70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
 				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
 				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
@@ -457,6 +506,7 @@
 		OBJ_25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70116B3B2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift */,
 				OBJ_26 /* Calendar+Dates.swift */,
 				70B49A8A2D0A86B30023E5B3 /* CareStoreFetchedResult.swift */,
 				7026DDFA2D0D3C80002EACAA /* CareStoreFetchedResult+Hashable.swift */,
@@ -509,7 +559,9 @@
 			children = (
 				911BDB2B2A12F0D3004F8442 /* CareKitEssentialsError.swift */,
 				709530B72DAC3DF400E18A59 /* CareKitEssentialsUserInfoKey.swift */,
+				70116AF42DBDC5AF0024BB89 /* DateComponentsForProgress.swift */,
 				OBJ_41 /* OSValue.swift */,
+				70116B172DBF122D0024BB89 /* PeriodComponent.swift */,
 				OBJ_42 /* ScheduleUtility.swift */,
 				709530B12DAC3AFB00E18A59 /* SurveyQuestion.swift */,
 				709530B22DAC3AFB00E18A59 /* SurveyStep.swift */,
@@ -579,6 +631,7 @@
 				70BBCB452A12B8B000759A9C /* Environment */,
 				OBJ_25 /* Extensions */,
 				OBJ_40 /* Models */,
+				704D02E32DB9F34500AFE855 /* Resources */,
 			);
 			name = CareKitEssentials;
 			path = Sources/CareKitEssentials;
@@ -768,19 +821,21 @@
 				OBJ_742 /* DetailsView.swift in Sources */,
 				70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */,
 				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
+				70116AF92DBDF5E30024BB89 /* CareKitEssentialChartable.swift in Sources */,
 				70B49A7D2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift in Sources */,
 				OBJ_743 /* DigitalCrownView.swift in Sources */,
 				OBJ_744 /* DigitalCrownViewFooter.swift in Sources */,
 				7026DDF12D0CD7E2002EACAA /* OCKSchedule+Hashable.swift in Sources */,
 				7068BD3D2D62774400212E4A /* OCKHealthKitPassthroughStore.swift in Sources */,
 				702FF76F2CFAA96800B26710 /* CKEDataSeriesConfiguration.swift in Sources */,
+				70116B402DC06DC60024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift in Sources */,
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
-				702FF7772CFAAF0300B26710 /* CareEssentialChartHeaderView.swift in Sources */,
+				702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,
-				702FF76B2CFAA93C00B26710 /* CareEssentialChartView.swift in Sources */,
+				702FF76B2CFAA93C00B26710 /* CareKitEssentialChartView.swift in Sources */,
 				70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */,
 				702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */,
 				7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */,
@@ -795,20 +850,25 @@
 				709530B62DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift in Sources */,
 				70B49A892D0A83E10023E5B3 /* Double.swift in Sources */,
 				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
+				70116B3E2DC0674C0024BB89 /* CKEConfigurationView.swift in Sources */,
 				OBJ_754 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
+				70116AFB2DBE03570024BB89 /* CareKitEssentialChartDetailView.swift in Sources */,
 				70B49A8D2D0A88B30023E5B3 /* OCKAnyEventStore.swift in Sources */,
 				OBJ_755 /* OCKAnyEvent.swift in Sources */,
 				700DA9072C2A66BF00435E2C /* Logger.swift in Sources */,
 				OBJ_756 /* OCKAnyOutcome.swift in Sources */,
-				702FF7792CFCFEBD00B26710 /* CareEssentialChartBodyView.swift in Sources */,
+				70116B182DBF122D0024BB89 /* PeriodComponent.swift in Sources */,
+				702FF7792CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift in Sources */,
 				91A9E7E42A197A9300F3414D /* SimpleTaskView.swift in Sources */,
 				70BBCB472A12B8F500759A9C /* CardEnabledEnvironmentKey.swift in Sources */,
 				709530AF2DAC398300E18A59 /* ResearchCareForm.swift in Sources */,
 				709530B02DAC398300E18A59 /* ResearchSurveyView.swift in Sources */,
 				70BBCB4E2A12BB0500759A9C /* SliderLogTaskView.swift in Sources */,
 				91A9E7DE2A19758300F3414D /* NumericProgressTaskView.swift in Sources */,
+				70116B162DBF12060024BB89 /* CareEssentialChartView.swift in Sources */,
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
+				70116B3C2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift in Sources */,
 				70EBE3132D19FF0200517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */,
@@ -822,6 +882,7 @@
 				OBJ_765 /* UIImage.swift in Sources */,
 				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
+				70116AF52DBDC5B10024BB89 /* DateComponentsForProgress.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				709530B32DAC3AFB00E18A59 /* SurveyQuestion.swift in Sources */,
 				709530B42DAC3AFB00E18A59 /* SurveyStep.swift in Sources */,
@@ -834,6 +895,7 @@
 				OBJ_766 /* OSValue.swift in Sources */,
 				OBJ_767 /* ScheduleUtility.swift in Sources */,
 				709530B82DAC3DFF00E18A59 /* CareKitEssentialsUserInfoKey.swift in Sources */,
+				70116AF12DBC634D0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +930,17 @@
 			targetProxy = 91F46E0E2A11BF70002EBDDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		704D03522DBA132C00AFE855 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704D03532DBA132C00AFE855 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		70C422DC2C3B6C7600E6DC51 /* Debug */ = {
@@ -916,7 +989,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -929,7 +1002,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -976,7 +1049,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -988,7 +1061,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -1046,6 +1119,7 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -1104,6 +1178,7 @@
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -1130,7 +1205,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1147,7 +1222,7 @@
 				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -1170,7 +1245,7 @@
 					"$(inherited)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1187,7 +1262,7 @@
 				TARGETED_DEVICE_FAMILY = "1,4,7";
 				TARGET_NAME = CareKitEssentials;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -1210,7 +1285,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1223,7 +1298,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -1246,7 +1321,7 @@
 					"@loader_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1259,7 +1334,7 @@
 				TARGET_NAME = CareKitEssentialsTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestHost";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
-				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -1310,7 +1385,7 @@
 			repositoryURL = "https://github.com/cbaker6/CareKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "3.0.0-beta.42";
+				minimumVersion = "3.0.0-beta.44";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

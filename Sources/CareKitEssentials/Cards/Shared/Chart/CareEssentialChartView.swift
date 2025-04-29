@@ -6,320 +6,162 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
-import CareKit
-import CareKitStore
-import CareKitUI
-import Charts
 import Foundation
 import os.log
 import SwiftUI
 
-public struct CareEssentialChartView: CareKitEssentialView {
-    @Environment(\.careStore) public var store
-    @Environment(\.isCardEnabled) private var isCardEnabled
-    @CareStoreFetchRequest(query: query()) private var events
+// swiftlint:disable:next line_length
+@available(*, deprecated, message: "Renamed to \"CareKitEssentialChartView\" and \"dateInterval\", \"period\", and \"configurations\" are now @Binding")
+public struct CareEssentialChartView: View {
+	let title: String
+	let subtitle: String
+	var dateInterval: DateInterval
+	var period: Calendar.Component
+	var configurations: [CKEDataSeriesConfiguration]
 
-    let title: String
-    let subtitle: String
-    let dateInterval: DateInterval
-    let period: Calendar.Component
-    let configurations: [CKEDataSeriesConfiguration]
-    let paddingSize = 15.0
+	@Binding var bindedDateInterval: DateInterval
+	@Binding var periodComponent: PeriodComponent
 
-    public var body: some View {
+	public var body: some View {
+		CareKitEssentialChartView(
+			title: title,
+			subtitle: subtitle,
+			dateInterval: $bindedDateInterval,
+			period: $periodComponent,
+			configurations: configurations
+		)
+		.onChange(of: dateInterval) { newDateInterval in
+			bindedDateInterval = newDateInterval
+		}
+		.onChange(of: period) { newPeriod in
+			do {
+				let newPeriodComponent = try PeriodComponent(
+					component: newPeriod
+				)
+				periodComponent = newPeriodComponent
+			} catch {
+				Logger.essentialChartView.error(
+					"Unable to initialize PeriodComponent. Defaulting to weekly period"
+				)
+				periodComponent = .week
+			}
+		}
+	}
 
-        let dataSeries = graphDataForEvents(events)
-
-        CardView {
-            VStack(alignment: .leading) {
-                CareEssentialChartHeaderView(
-                    title: title,
-                    subtitle: subtitle
-                )
-                .padding(.bottom)
-
-                CareEssentialChartBodyView(
-                    dataSeries: dataSeries
-                )
-            }
-            .padding(isCardEnabled ? [.all] : [])
-        }.onAppear {
-            updateQuery()
-        }
-    }
-
-    static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
-        eventQuery(
-            with: taskIDs ?? [],
-            on: .init()
-        )
-    }
-
-    public init(
-        title: String,
-        subtitle: String,
-        dateInterval: DateInterval,
-        period: Calendar.Component,
-        configurations: [CKEDataSeriesConfiguration]
-    ) {
-        self.title = title
-        self.subtitle = subtitle
-        self.dateInterval = dateInterval
-        self.period = period
-        self.configurations = configurations
-    }
-
-    private func updateQuery() {
-        var query = OCKEventQuery(dateInterval: dateInterval)
-        query.taskIDs = configurations.map(\.taskID)
-        events.query = query
-    }
-
-    private func computeProgress(
-        for event: OCKAnyEvent,
-        configuration: CKEDataSeriesConfiguration
-    ) -> LinearCareTaskProgress {
-        configuration
-            .computeProgress(event)
-    }
-
-    private func computeDataSeries(
-        forProgress allProgress: [TemporalProgress<LinearCareTaskProgress>],
-        progressLabels: [String],
-        configuration: CKEDataSeriesConfiguration
-    ) throws -> CKEDataSeries {
-
-        let summedProgressValues = allProgress.map { progress -> Double in
-
-            let summedProgressValue = progress.values
-                .map { $0.value }
-                .reduce(0, +)
-
-            return summedProgressValue
-        }
-
-        let summedProgressPoints = zip(
-            progressLabels,
-            summedProgressValues
-        ).map {
-            CKEPoint(
-                x: $0,
-                y: $1,
-                accessibilityValue: "\(configuration.legendTitle), \($0), \($1)"
-            )
-        }
-
-        let series = CKEDataSeries(
-            mark: configuration.mark,
-            dataPoints: summedProgressPoints,
-            title: configuration.legendTitle,
-            color: configuration.color,
-            gradientStartColor: configuration.gradientStartColor,
-            width: configuration.width,
-            height: configuration.height,
-            stackingMethod: configuration.stackingMethod
-        )
-
-        return series
-    }
-
-    // BAKER: Build symbols for rest of calendar periods.
-    private func calendarSymbols() -> [String] {
-        switch period {
-        case .day:
-            return Calendar.current.orderedWeekdaySymbols()
-        default:
-            return Calendar.current.orderedWeekdaySymbols()
-        }
-    }
-
-    private func graphDataForEvents(
-        _ events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>
-    ) -> [CKEDataSeries] {
-
-        let progressLabels = calendarSymbols()
-        let eventsGroupedByTaskID = groupEventsByTaskID(events)
-
-        // swiftlint:disable:next line_length
-        let progressForAllConfigurations = configurations.map { configuration -> TemporalTaskProgress<LinearCareTaskProgress> in
-
-            guard let events = eventsGroupedByTaskID[configuration.taskID] else {
-                let progress = TemporalTaskProgress<LinearCareTaskProgress>(
-                    id: configuration.id,
-                    progressPerDates: []
-                )
-                return progress
-            }
-
-            let progress = periodicProgressForConfiguration(
-                id: configuration.id,
-                events: events,
-                per: period,
-                dateInterval: dateInterval,
-                computeProgress: { event in
-                    computeProgress(
-                        for: event,
-                        configuration: configuration
-                    )
-                }
-            )
-
-            return progress
-        }
-
-        do {
-            let dataSeries = try configurations.map { configuration -> CKEDataSeries in
-
-                // Iterating first through the configurations ensures the final data series order
-                // matches the order of the configurations
-                let periodicProgress = progressForAllConfigurations
-                    .first { $0.id == configuration.id }?
-                    .progressPerDates ?? []
-
-                let dataSeries = try computeDataSeries(
-                    forProgress: periodicProgress,
-                    progressLabels: progressLabels,
-                    configuration: configuration
-                )
-
-                return dataSeries
-            }
-
-            return dataSeries
-
-        } catch {
-            Logger.essentialChartView.error(
-                "Cannot generate data series: \(error)"
-            )
-            return []
-        }
-    }
-}
-
-// MARK: Periodic Progress
-extension CareEssentialChartView {
-
-    func groupEventsByTaskID(
-        _ events: CareStoreFetchedResults<OCKAnyEvent, OCKEventQuery>
-    ) -> [String: [OCKAnyEvent]] {
-        events.reduce(into: [String: [OCKAnyEvent]]()) {
-            let events = $0[$1.result.task.id] ?? [OCKAnyEvent]()
-            $0[$1.result.task.id] = events + [$1.result]
-        }
-    }
-
-    /// Computes ordered daily progress for each day in the provided interval.
-    /// The progress for each day will be split by task.
-    /// Days with no events will have a nil progress value.
-    /// - Parameters:
-    ///   - events: Used to fetch the event data.
-    ///   - dateInterval: Progress will be computed for each day in the interval.
-    ///   - computeProgress: Used to compute progress for an event.
-    func periodicProgressForConfiguration<Progress>(
-        id: String,
-        events: [OCKAnyEvent],
-        per component: Calendar.Component,
-        dateInterval: DateInterval,
-        computeProgress: @escaping (OCKAnyEvent) -> Progress
-    ) -> TemporalTaskProgress<Progress> {
-
-        let progressPerDays = periodicProgress(
-            for: events,
-            per: component,
-            dateInterval: dateInterval,
-            computeProgress: computeProgress
-        )
-
-        let temporalProgress = TemporalTaskProgress(
-            id: id,
-            progressPerDates: progressPerDays
-        )
-
-        return temporalProgress
-    }
-
-    private func periodicProgress<Progress>(
-        for events: [OCKAnyEvent],
-        per component: Calendar.Component,
-        dateInterval: DateInterval,
-        computeProgress: @escaping (OCKAnyEvent) -> Progress
-    ) -> [TemporalProgress<Progress>] {
-
-        let calendar = Calendar.current
-
-        // Create a dictionary that has a key for each day in the provided interval.
-
-        var daysInInterval: [DateComponents] = []
-        var currentDate = dateInterval.start
-
-        while currentDate < dateInterval.end {
-            let day = uniqueDayComponents(for: currentDate)
-            daysInInterval.append(day)
-            currentDate = calendar.date(
-                byAdding: component,
-                value: 1,
-                to: currentDate
-            )!
-        }
-
-        // Group the events by the day they started
-
-        let eventsGroupedByDay = Dictionary(
-            grouping: events,
-            by: { uniqueDayComponents(for: $0.scheduleEvent.start) }
-        )
-
-        // Iterate through the events on each day and update the stored progress values
-        let progressPerDay = daysInInterval.map { day -> TemporalProgress<Progress> in
-
-            let events = eventsGroupedByDay[day] ?? []
-
-            let progressForEvents = events.map { event in
-                computeProgress(event)
-            }
-
-            let dateOfDay = calendar.date(from: day)!
-
-            let temporalProgress = TemporalProgress(
-                values: progressForEvents,
-                date: dateOfDay
-            )
-
-            return temporalProgress
-        }
-
-        return progressPerDay
-    }
-
-    private func uniqueDayComponents(for date: Date) -> DateComponents {
-        Calendar.current.dateComponents(
-            [.year, .month, .day],
-            from: date
-        )
-    }
+	/// Create an instance of chart for displaying CareKit data.
+	/// - title: The title for the chart.
+	/// - subtitle: The subtitle for the chart.
+	/// - dateInterval: The date interval of data to display
+	/// - period: The frequency at which data should be combined.
+	/// - configurations: A configuration object that specifies
+	/// which data should be queried and how it should be
+	/// displayed by the graph.
+	public init(
+		title: String,
+		subtitle: String,
+		dateInterval: DateInterval,
+		period: Calendar.Component,
+		configurations: [CKEDataSeriesConfiguration]
+	) {
+		self.title = title
+		self.subtitle = subtitle
+		self.dateInterval = dateInterval
+		self.period = period
+		self.configurations = configurations
+		@State var stateDateInterval = dateInterval
+		_bindedDateInterval = $stateDateInterval
+		do {
+			let newPeriodComponent = try PeriodComponent(
+				component: period
+			)
+			@State var statePeriodComponent: PeriodComponent = newPeriodComponent
+			_periodComponent = $statePeriodComponent
+		} catch {
+			Logger.essentialChartView.error(
+				"Unable to initialize PeriodComponent. Defaulting to weekly period"
+			)
+			@State var statePeriodComponent: PeriodComponent = .week
+			_periodComponent = $statePeriodComponent
+		}
+	}
 }
 
 struct CareEssentialChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        let task = Utility.createNauseaTask()
-        let configurationBar = CKEDataSeriesConfiguration(
-            taskID: task.id,
-            mark: .bar,
-            legendTitle: "Bar",
-            color: .red,
-            gradientStartColor: .gray
-        )
-        let previewStore = Utility.createPreviewStore()
+	static var previews: some View {
+		let task = Utility.createNauseaTask()
+		let configurationBar = CKEDataSeriesConfiguration(
+			taskID: task.id,
+			mark: .bar,
+			legendTitle: "Bar",
+			showMarkWhenHighlighted: true,
+			showMeanMark: true,
+			color: .red,
+			gradientStartColor: .gray
+		)
+		let previewStore = Utility.createPreviewStore()
+		var dayDateInterval: DateInterval {
+			let now = Date()
+			let startOfDay = Calendar.current.startOfDay(
+				for: now
+			)
+			let dateInterval = DateInterval(
+				start: startOfDay,
+				end: now
+			)
+			return dateInterval
+		}
+		var weekDateInterval: DateInterval {
+			let interval = Calendar.current.dateIntervalOfWeek(
+				for: Date()
+			)
+			return interval
+		}
+		var monthDateInterval: DateInterval {
+			let interval = Calendar.current.dateIntervalOfMonth(
+				for: Date()
+			)
+			return interval
+		}
+		var yearDateInterval: DateInterval {
+			let interval = Calendar.current.dateIntervalOfYear(
+				for: Date()
+			)
+			return interval
+		}
 
-        VStack {
-            CareEssentialChartView(
-                title: task.title ?? "",
-                subtitle: "Week",
-                dateInterval: Calendar.current.dateIntervalOfWeek(for: Date()),
-                period: .day,
-                configurations: [configurationBar]
-            )
-        }
-        .environment(\.careStore, previewStore)
-    }
+		ScrollView {
+			VStack {
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Day",
+					dateInterval: dayDateInterval,
+					period: .day,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Week",
+					dateInterval: weekDateInterval,
+					period: .weekday,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Month",
+					dateInterval: monthDateInterval,
+					period: .month,
+					configurations: [configurationBar]
+				)
+				CareEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Year",
+					dateInterval: yearDateInterval,
+					period: .year,
+					configurations: [configurationBar]
+				)
+			}
+			.padding()
+		}
+		.environment(\.careStore, previewStore)
+	}
 }

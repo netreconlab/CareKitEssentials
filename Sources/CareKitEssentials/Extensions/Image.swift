@@ -35,6 +35,6 @@ public extension Image {
             return Image(name)
         }
         #endif
-        return Image(systemName: name)
+		return Image(systemName: name)
     }
 }

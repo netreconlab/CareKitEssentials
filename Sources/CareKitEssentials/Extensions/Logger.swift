@@ -19,6 +19,10 @@ extension Logger {
 		subsystem: subsystem,
 		category: "CareKitEssentialChartView"
 	)
+	static let essentialChartable = Logger(
+		subsystem: subsystem,
+		category: "CareKitEssentialChartable"
+	)
     static let careKitAnyEventStore = Logger(
 		subsystem: subsystem,
 		category: "CareKitAnyEventStore"

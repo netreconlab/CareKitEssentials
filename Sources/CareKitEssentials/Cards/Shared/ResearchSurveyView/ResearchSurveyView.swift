@@ -17,6 +17,10 @@ public struct ResearchSurveyView<Content: View>: View {
     @Environment(\.careKitStyle) var style
     @Environment(\.isCardEnabled) private var isCardEnabled
     @State private var isPresented = false
+	@OSValue<Font>(
+		values: [.watchOS: .system(size: 15)],
+		defaultValue: .headline
+	) private var font
 
     let event: OCKAnyEvent
     @ViewBuilder let form: () -> Content
@@ -32,24 +36,24 @@ public struct ResearchSurveyView<Content: View>: View {
                 event.instructionsText
 
                 VStack(alignment: .center) {
-                    HStack(alignment: .center) {
-                        Button( action: {
-                            isPresented.toggle()
-                        }) {
-                            RectangularCompletionView(isComplete: isComplete) {
-                                Spacer()
-                                Text(buttonText)
-                                    .foregroundColor(foregroundColor)
-                                    .frame(maxWidth: .infinity)
-                                    .padding()
-                                Spacer()
-                            }
-                        }
-                        .buttonStyle(NoHighlightStyle())
-                    }
-					.frame(
-						maxHeight: 40
-					)
+
+					Button( action: {
+						isPresented.toggle()
+					}) {
+						RectangularCompletionView(isComplete: isComplete) {
+							HStack {
+								Spacer()
+								Text(buttonText)
+									.font(font)
+									.foregroundColor(foregroundColor)
+									.frame(maxWidth: .infinity)
+								Spacer()
+							}
+							.padding()
+						}
+					}
+					.buttonStyle(NoHighlightStyle())
+
                 }
                 .padding(.vertical)
             }

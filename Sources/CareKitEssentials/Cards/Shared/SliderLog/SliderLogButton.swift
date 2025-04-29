@@ -19,14 +19,22 @@ struct SliderLogButton: CareKitEssentialView {
     @Environment(\.careKitStyle) private var style
     @ObservedObject var viewModel: SliderLogTaskViewModel
 
-    var shape: RoundedRectangle {
+    var symbol: RoundedRectangle {
         RoundedRectangle(cornerRadius: style.appearance.cornerRadius2, style: .continuous)
     }
 
     var background: some View {
-        shape
+        symbol
             .fill(Color.accentColor)
     }
+
+	var grayColor: Color {
+		#if os(iOS) || os(visionOS)
+		Color(style.color.customGray)
+		#else
+		Color.gray
+		#endif
+	}
 
     var valueAsString: String {
         // swiftlint:disable:next line_length
@@ -52,13 +60,13 @@ struct SliderLogButton: CareKitEssentialView {
                     Spacer()
                 }
                 .padding([.top, .bottom])
-                .clipShape(shape)
+                .clipShape(symbol)
                 .background(background)
                 .font(Font.subheadline.weight(.medium))
                 .foregroundColor(.accentColor)
             }
             .disabled(viewModel.isButtonDisabled)
-            .foregroundColor(!viewModel.isButtonDisabled ? .accentColor : Color.gray)
+            .foregroundColor(!viewModel.isButtonDisabled ? .accentColor : grayColor)
             .padding(.bottom)
 
             Button(action: {}) {

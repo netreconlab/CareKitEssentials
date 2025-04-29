@@ -13,7 +13,7 @@ import SwiftUI
 /// The style of a CareKit Slider.
 public enum SliderStyle {
 
-    /// An OCKSlider style with a bar shaped body. The dimensions of the slider
+    /// An OCKSlider style with a bar symbold body. The dimensions of the slider
     /// are determined by an instance of OCKSliderDimensions.
     ///
     /// ```

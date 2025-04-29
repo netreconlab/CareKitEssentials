@@ -33,33 +33,27 @@ public extension Calendar {
         return interval
     }
 
-    /// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
-    /// This differs with the Foundation `Calendar.veryShortWeekdaySymbols` in that the ordering is changed such
-    /// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
-    ///
-    /// This method is required for handling certain regions in which the first day of the week is Monday.
-    func orderedWeekdaySymbolsVeryShort() -> [String] {
-        var symbols = veryShortWeekdaySymbols
-        Array(1..<firstWeekday).forEach { _ in
-            let symbol = symbols.removeFirst()
-            symbols.append(symbol)
-        }
-        return symbols
-    }
+	/// Returns a date interval that spans the entire month of the given date. The difference between this method and the
+	/// Foundation `Calendar.dateInterval(of:for:)` method is that this method produces non-overlapping
+	/// intervals.
+	func dateIntervalOfMonth(for date: Date) -> DateInterval {
+		var interval = Calendar.current.dateInterval(of: .month, for: date)!
+		// The default interval contains 1 second of the next day after the interval.
+		// Subtract that off.
+		interval.duration -= 1
+		return interval
+	}
 
-    /// Returns string representations of the weekdays, in the order the weekdays occur on the local calendar.
-    /// This differs with the Foundation `Calendar.weekdaySymbols` in that the ordering is changed such
-    /// that the first element of the array corresponds to the first weekday in the current locale, instead of Sunday.
-    ///
-    /// This method is required for handling certain regions in which the first day of the week is Monday.
-    func orderedWeekdaySymbols() -> [String] {
-        var symbols = weekdaySymbols
-        Array(1..<firstWeekday).forEach { _ in
-            let symbol = symbols.removeFirst()
-            symbols.append(symbol)
-        }
-        return symbols
-    }
+	/// Returns a date interval that spans the entire year of the given date. The difference between this method and the
+	/// Foundation `Calendar.dateInterval(of:for:)` method is that this method produces non-overlapping
+	/// intervals.
+	func dateIntervalOfYear(for date: Date) -> DateInterval {
+		var interval = Calendar.current.dateInterval(of: .year, for: date)!
+		// The default interval contains 1 second of the next day after the interval.
+		// Subtract that off.
+		interval.duration -= 1
+		return interval
+	}
 }
 
 public extension Date {

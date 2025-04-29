@@ -39,7 +39,7 @@ public struct ResearchCareForm<Content: View>: CareKitEssentialView {
 				case .discarded:
 					cancel()
 				default:
-					Logger.researchCareForm.error("Reached an unsupported case: \"\(completion)\"")
+					Logger.researchCareForm.error("Reached an unsupported case")
 					cancel()
 				}
             }
