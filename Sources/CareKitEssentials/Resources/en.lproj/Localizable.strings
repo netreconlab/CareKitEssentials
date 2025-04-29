@@ -2,8 +2,10 @@
 "VALUE" = "Value";
 "DATA_SERIES" = "Data Series";
 "VALUE_DISPLAY" = "Value: %F";
+"MEAN" = "Mean";
 "AVERAGE" = "Average";
 "MEDIAN" = "Median";
+"SUM" = "SUM";
 "AVERAGE_VALUE" = "Average: %F";
 "MEDIAN_VALUE" = "Median: %F";
 "DAY" = "Day";
@@ -11,3 +13,20 @@
 "MONTH" = "Month";
 "YEAR" = "Year";
 "SELECTED_DATE" = "Selected Date:";
+"PERIOD" = "Period";
+"DATE_RANGE" = "Date Range";
+"START_DATE" = "Start date";
+"END_DATE" = "End date";
+"CHOOSE_PERIOD" = "Choose period";
+
+"CHOOSE_CHART_TYPE" = "Choose chart type";
+"CHART_TYPE" = "Chart type";
+"AREA" = "Area";
+"BAR" = "Bar";
+"LINE" = "Line";
+"POINT" = "Point";
+"DATA_STRATEGY" = "Data strategy";
+"META_DATA" = "Meta data";
+"SHOW_HIGHLIGHTED" = "Show highlighted annotation";
+"SHOW_MEAN" = "Show mean annotation";
+"SHOW_MEDIAN" = "Show median annotation";
