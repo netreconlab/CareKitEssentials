@@ -86,6 +86,58 @@ public extension LinearCareTaskProgress {
 		return progress
 	}
 
+	static func computeProgressByFindingMaxOutcomeValue(
+		for event: OCKAnyEvent,
+		kind: String?
+	) -> LinearCareTaskProgress {
+
+		let outcomeValues = event.outcome?.values ?? []
+		let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+
+		let maxOutcomesValue = filteredOutcomeValues
+			.map(accumulableDoubleValue)
+			.max() ?? 0
+
+		let targetValues = event.scheduleEvent.element.targetValues
+
+		let maxTargetValue = targetValues.isEmpty ? nil : targetValues
+			.map(accumulableDoubleValue)
+			.max()
+
+		let progress = LinearCareTaskProgress(
+			value: maxOutcomesValue,
+			goal: maxTargetValue
+		)
+
+		return progress
+	}
+
+	static func computeProgressByFindingMinOutcomeValue(
+		for event: OCKAnyEvent,
+		kind: String?
+	) -> LinearCareTaskProgress {
+
+		let outcomeValues = event.outcome?.values ?? []
+		let filteredOutcomeValues = outcomeValues.filter { $0.kind == kind }
+
+		let minOutcomesValue = filteredOutcomeValues
+			.map(accumulableDoubleValue)
+			.min() ?? 0
+
+		let targetValues = event.scheduleEvent.element.targetValues
+
+		let minTargetValue = targetValues.isEmpty ? nil : targetValues
+			.map(accumulableDoubleValue)
+			.min()
+
+		let progress = LinearCareTaskProgress(
+			value: minOutcomesValue,
+			goal: minTargetValue
+		)
+
+		return progress
+	}
+
     static func computeProgressByAveragingOutcomeValues(
         for event: OCKAnyEvent,
         kind: String? = nil
@@ -98,23 +150,23 @@ public extension LinearCareTaskProgress {
             .map(accumulableDoubleValue)
             .reduce(0, +)
         let targetValues = event.scheduleEvent.element.targetValues
-        let summedTargetValue = targetValues
+        let mappedTargetValue = targetValues
             .map(accumulableDoubleValue)
-            .reduce(nil) { partialResult, nextTarget -> Double? in
-                sum(partialResult, nextTarget)
-            }
+
+		let meanTargetValue = targetValues.isEmpty ? nil : Self.computeProgressByAveraging(for: mappedTargetValue)
+			.value
 
         guard completedOutcomesValues >= 1.0 else {
 			return LinearCareTaskProgress(
 				value: 0.0,
-				goal: summedTargetValue
+				goal: meanTargetValue
 			)
         }
 
 		let value = summedOutcomesValue / completedOutcomesValues
         let progress = LinearCareTaskProgress(
             value: value,
-            goal: summedTargetValue
+            goal: meanTargetValue
         )
 
         return progress
@@ -133,16 +185,16 @@ public extension LinearCareTaskProgress {
             .sorted()
 
         let targetValues = event.scheduleEvent.element.targetValues
-        let summedTargetValue = targetValues
-            .map(accumulableDoubleValue)
-            .reduce(nil) { partialResult, nextTarget -> Double? in
-                sum(partialResult, nextTarget)
-            }
+		let mappedTargetValue = targetValues
+			.map(accumulableDoubleValue)
+
+		let medianTargetValue = targetValues.isEmpty ? nil : Self.computeProgressByMedian(for: mappedTargetValue)
+			.value
 
         guard !allOutcomesValue.isEmpty else {
 			return LinearCareTaskProgress(
 				value: 0.0,
-				goal: summedTargetValue
+				goal: medianTargetValue
 			)
         }
 
@@ -152,14 +204,14 @@ public extension LinearCareTaskProgress {
 			let value = (allOutcomesValue[index] + allOutcomesValue[index - 1]) / 2.0
 			let progress = LinearCareTaskProgress(
 				value: value,
-				goal: summedTargetValue
+				goal: medianTargetValue
 			)
 			return progress
 		} else {
 			let value = allOutcomesValue[valueCount / 2]
 			let progress = LinearCareTaskProgress(
 				value: value,
-				goal: summedTargetValue
+				goal: medianTargetValue
 			)
 			return progress
 		}

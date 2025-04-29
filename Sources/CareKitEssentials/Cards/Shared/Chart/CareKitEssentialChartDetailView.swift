@@ -25,47 +25,59 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var period: PeriodComponent
 	@State var configurations: [String: CKEDataSeriesConfiguration]
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
+	@State var isShowingLargeChart: Bool = false
 
 	var body: some View {
-		NavigationView {
-			VStack {
+		VStack {
 
-				let dataSeries = graphDataForEvents(events)
-				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries,
-					useFullAspectRating: true,
-					showGridLines: true
-				)
-				.onAppear {
-					updateQuery()
-				}
-				.onChange(of: dateInterval) { _ in
-					updateQuery()
-				}
-				.onChange(of: configurations) { _ in
-					updateQuery()
-				}
-				.onReceive(events.publisher) { _ in
-					updateQuery()
-				}
-				.frame(maxWidth: .infinity)
+			let dataSeries = graphDataForEvents(events)
+			CareKitEssentialChartBodyView(
+				dataSeries: dataSeries,
+				showGridLines: true
+			)
+			#if !os(watchOS) && !os(visionOS)
+			.aspectRatio(
+				CGSize(width: 4, height: 3),
+				contentMode: .fit
+			)
+			#endif
+			.onAppear {
+				updateQuery()
+			}
+			.onChange(of: dateInterval) { _ in
+				updateQuery()
+			}
+			.onChange(of: configurations) { _ in
+				updateQuery()
+			}
+			.onReceive(events.publisher) { _ in
+				updateQuery()
+			}
+			.onTapGesture {
+				isShowingLargeChart.toggle()
+			}
 
-				Divider()
+			Divider()
+				.padding()
 
+			ScrollView {
 				VStack(alignment: .leading) {
-					List {
-						Section(
-							header: Text("PERIOD")
-						) {
-							periodPickerView
-						}
-						Section(
-							header: Text("DATE_RANGE")
-						) {
-							startDatePickerView
-							endDatePickerView
-						}
-					}.listStyle(.automatic)
+					Section(
+						header: Text("PERIOD")
+					) {
+						periodPickerView
+					}
+					Section(
+						header: Text("DATE_RANGE")
+					) {
+						startDatePickerView
+						endDatePickerView
+					}
+
+				}
+
+				VStack(alignment: .center) {
+					Divider()
 
 					ForEach(orderedConfigurations) { configuration in
 						let configurationId = configuration.id
@@ -84,28 +96,32 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 								isShowingMedianMark: currentConfiguration.showMedianMark
 							)
 						}
+						Divider()
+							.padding()
 					}
 				}
 			}
 		}
-		#if !os(watchOS) && !os(macOS)
-		.toolbar {
-			ToolbarItem(placement: .topBarLeading) {
-				Text(title)
-					.font(.title3)
-					.bold()
-			}
-			ToolbarItem(placement: .topBarTrailing) {
-				Button(action: {
-					dismiss()
-				}) {
-					Image(systemName: "x.circle.fill")
-						.foregroundStyle(.gray)
-						.opacity(0.5)
+		.sheet(isPresented: $isShowingLargeChart) {
+			DismissableView(
+				title: title
+			) {
+				VStack {
+					let dataSeries = graphDataForEvents(events)
+					CareKitEssentialChartBodyView(
+						dataSeries: dataSeries,
+						showGridLines: true
+					)
+					#if !os(watchOS)
+					.aspectRatio(
+						CGSize(width: 16, height: 9),
+						contentMode: .fit
+					)
+					#endif
+					.padding()
 				}
 			}
 		}
-		#endif
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {

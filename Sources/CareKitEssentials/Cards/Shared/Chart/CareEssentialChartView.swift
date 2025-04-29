@@ -10,8 +10,21 @@ import Foundation
 import os.log
 import SwiftUI
 
-// swiftlint:disable:next line_length
-@available(*, deprecated, message: "Renamed to \"CareKitEssentialChartView\" and \"dateInterval\", \"period\", and \"configurations\" are now @Binding")
+/// Displays a SwiftUI Chart above an axis. The initializer takes an an array of
+/// `CKEDataSeriesConfiguration`'s which each support
+/// `CKEDataSeries.MarkType` that allows you to overlay from several
+/// graph types that conform to `ChartContent`.
+///
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     | [title]                                               |
+///     | [detail]                                              |
+///     |                                                       |
+///     | [graph]                                               |
+///     |                                                       |
+///     +-------------------------------------------------------+
+///
+@available(*, deprecated, message: "Renamed to `CareKitEssentialChartView` and `dateInterval`, `period`, and `configurations` are now @Binding") // swiftlint:disable:this line_length
 public struct CareEssentialChartView: View {
 	let title: String
 	let subtitle: String

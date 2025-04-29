@@ -14,7 +14,6 @@ struct CareKitEssentialChartBodyView: View {
 
 	@Environment(\.careKitStyle) private var style
 	let dataSeries: [CKEDataSeries]
-	var useFullAspectRating: Bool = false
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
 	@State var legendColors = [String: LinearGradient]()
@@ -82,9 +81,6 @@ struct CareKitEssentialChartBodyView: View {
 		}
 		.chartForegroundStyleScale { (name: String) in
 			markColor(name: name)
-		}
-		.if(useFullAspectRating) { chart in
-			chart.aspectRatio(1, contentMode: .fit)
 		}
 		.if(dataSeries.isEmpty == false) { chart in
 			chart.accessibilityChartDescriptor(dataSeries.last!)
