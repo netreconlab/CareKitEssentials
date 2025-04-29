@@ -67,6 +67,12 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries
 				)
+				#if !os(watchOS) && !os(visionOS)
+				.aspectRatio(
+					CGSize(width: 4, height: 3),
+					contentMode: .fit
+				)
+				#endif
 				.onAppear {
 					updateQuery()
 				}
@@ -80,7 +86,9 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 			.padding(isCardEnabled ? [.all] : [])
 		}
 		.sheet(isPresented: $isShowingDetail) {
-			NavigationStack {
+			DismissableView(
+				title: title
+			) {
 				CareKitEssentialChartDetailView(
 					title: title,
 					subtitle: subtitle,

@@ -40,6 +40,7 @@
 		702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7762CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift */; };
 		702FF7792CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */; };
 		702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */; };
+		7055720D2DC17F7F008E5B0A /* DismissableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7055720C2DC17F7F008E5B0A /* DismissableView.swift */; };
 		7068BD3D2D62774400212E4A /* OCKHealthKitPassthroughStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */; };
 		7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */; };
 		7068BD412D62788E00212E4A /* OCKHealthKitLinkage+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */; };
@@ -195,6 +196,7 @@
 		702FF7782CFCFEBD00B26710 /* CareKitEssentialChartBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialChartBodyView.swift; sourceTree = "<group>"; };
 		702FF7802CFE5B0400B26710 /* ChartContent+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartContent+Default.swift"; sourceTree = "<group>"; };
 		704D03532DBA132C00AFE855 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		7055720C2DC17F7F008E5B0A /* DismissableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableView.swift; sourceTree = "<group>"; };
 		7068BD3C2D62774200212E4A /* OCKHealthKitPassthroughStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKHealthKitPassthroughStore.swift; sourceTree = "<group>"; };
 		7068BD3E2D6277C000212E4A /* OCKHealthKitTask+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitTask+Hashable.swift"; sourceTree = "<group>"; };
 		7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitLinkage+Hashable.swift"; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				OBJ_23 /* CardViewModel.swift */,
 				OBJ_11 /* CustomLabelView.swift */,
 				OBJ_13 /* DetailsView.swift */,
+				7055720C2DC17F7F008E5B0A /* DismissableView.swift */,
 				OBJ_22 /* InformationHeaderView.swift */,
 				70B49A5F2D06A2520023E5B3 /* SimpleLabelView.swift */,
 				702FF7672CFAA8B300B26710 /* Chart */,
@@ -832,6 +835,7 @@
 				OBJ_745 /* DigitalCrownViewHeader.swift in Sources */,
 				OBJ_746 /* DigitalCrownViewModel.swift in Sources */,
 				702FF7772CFAAF0300B26710 /* CareKitEssentialChartHeaderView.swift in Sources */,
+				7055720D2DC17F7F008E5B0A /* DismissableView.swift in Sources */,
 				OBJ_749 /* InformationHeaderView.swift in Sources */,
 				70BBCB552A12BDBD00759A9C /* SliderLogButton.swift in Sources */,
 				OBJ_750 /* CardViewModel.swift in Sources */,

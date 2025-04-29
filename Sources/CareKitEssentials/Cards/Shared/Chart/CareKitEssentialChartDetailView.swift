@@ -25,6 +25,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var period: PeriodComponent
 	@State var configurations: [String: CKEDataSeriesConfiguration]
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
+	@State var isShowingLargeChart: Bool = false
 
 	var body: some View {
 		NavigationView {
@@ -33,9 +34,14 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
 					dataSeries: dataSeries,
-					useFullAspectRating: true,
 					showGridLines: true
 				)
+				#if !os(watchOS) && !os(visionOS)
+				.aspectRatio(
+					CGSize(width: 4, height: 3),
+					contentMode: .fit
+				)
+				#endif
 				.onAppear {
 					updateQuery()
 				}
@@ -48,12 +54,15 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				.onReceive(events.publisher) { _ in
 					updateQuery()
 				}
-				.frame(maxWidth: .infinity)
+				.onTapGesture {
+					isShowingLargeChart.toggle()
+				}
 
 				Divider()
+					.padding()
 
-				VStack(alignment: .leading) {
-					List {
+				ScrollView {
+					VStack(alignment: .leading) {
 						Section(
 							header: Text("PERIOD")
 						) {
@@ -65,47 +74,56 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 							startDatePickerView
 							endDatePickerView
 						}
-					}.listStyle(.automatic)
 
-					ForEach(orderedConfigurations) { configuration in
-						let configurationId = configuration.id
-						let currentConfiguration = configurations[configurationId] ?? configuration
+					}
 
-						Section(
-							header: Text(currentConfiguration.legendTitle)
-						) {
-							CKEConfigurationView(
-								configurationId: configurationId,
-								configurations: $configurations,
-								markSelected: currentConfiguration.mark,
-								dataStrategySelected: currentConfiguration.dataStrategy,
-								isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-								isShowingMeanMark: currentConfiguration.showMeanMark,
-								isShowingMedianMark: currentConfiguration.showMedianMark
-							)
+					VStack(alignment: .center) {
+						Divider()
+
+						ForEach(orderedConfigurations) { configuration in
+							let configurationId = configuration.id
+							let currentConfiguration = configurations[configurationId] ?? configuration
+
+							Section(
+								header: Text(currentConfiguration.legendTitle)
+							) {
+								CKEConfigurationView(
+									configurationId: configurationId,
+									configurations: $configurations,
+									markSelected: currentConfiguration.mark,
+									dataStrategySelected: currentConfiguration.dataStrategy,
+									isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+									isShowingMeanMark: currentConfiguration.showMeanMark,
+									isShowingMedianMark: currentConfiguration.showMedianMark
+								)
+							}
+							Divider()
+								.padding()
 						}
 					}
 				}
 			}
 		}
-		#if !os(watchOS) && !os(macOS)
-		.toolbar {
-			ToolbarItem(placement: .topBarLeading) {
-				Text(title)
-					.font(.title3)
-					.bold()
-			}
-			ToolbarItem(placement: .topBarTrailing) {
-				Button(action: {
-					dismiss()
-				}) {
-					Image(systemName: "x.circle.fill")
-						.foregroundStyle(.gray)
-						.opacity(0.5)
+		.sheet(isPresented: $isShowingLargeChart) {
+			DismissableView(
+				title: title
+			) {
+				VStack {
+					let dataSeries = graphDataForEvents(events)
+					CareKitEssentialChartBodyView(
+						dataSeries: dataSeries,
+						showGridLines: true
+					)
+					#if !os(watchOS)
+					.aspectRatio(
+						CGSize(width: 16, height: 9),
+						contentMode: .fit
+					)
+					#endif
+					.padding()
 				}
 			}
 		}
-		#endif
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
