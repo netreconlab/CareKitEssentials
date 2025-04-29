@@ -28,78 +28,76 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var isShowingLargeChart: Bool = false
 
 	var body: some View {
-		NavigationView {
-			VStack {
+		VStack {
 
-				let dataSeries = graphDataForEvents(events)
-				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries,
-					showGridLines: true
-				)
-				#if !os(watchOS) && !os(visionOS)
-				.aspectRatio(
-					CGSize(width: 4, height: 3),
-					contentMode: .fit
-				)
-				#endif
-				.onAppear {
-					updateQuery()
-				}
-				.onChange(of: dateInterval) { _ in
-					updateQuery()
-				}
-				.onChange(of: configurations) { _ in
-					updateQuery()
-				}
-				.onReceive(events.publisher) { _ in
-					updateQuery()
-				}
-				.onTapGesture {
-					isShowingLargeChart.toggle()
-				}
+			let dataSeries = graphDataForEvents(events)
+			CareKitEssentialChartBodyView(
+				dataSeries: dataSeries,
+				showGridLines: true
+			)
+			#if !os(watchOS) && !os(visionOS)
+			.aspectRatio(
+				CGSize(width: 4, height: 3),
+				contentMode: .fit
+			)
+			#endif
+			.onAppear {
+				updateQuery()
+			}
+			.onChange(of: dateInterval) { _ in
+				updateQuery()
+			}
+			.onChange(of: configurations) { _ in
+				updateQuery()
+			}
+			.onReceive(events.publisher) { _ in
+				updateQuery()
+			}
+			.onTapGesture {
+				isShowingLargeChart.toggle()
+			}
 
-				Divider()
-					.padding()
+			Divider()
+				.padding()
 
-				ScrollView {
-					VStack(alignment: .leading) {
-						Section(
-							header: Text("PERIOD")
-						) {
-							periodPickerView
-						}
-						Section(
-							header: Text("DATE_RANGE")
-						) {
-							startDatePickerView
-							endDatePickerView
-						}
-
+			ScrollView {
+				VStack(alignment: .leading) {
+					Section(
+						header: Text("PERIOD")
+					) {
+						periodPickerView
+					}
+					Section(
+						header: Text("DATE_RANGE")
+					) {
+						startDatePickerView
+						endDatePickerView
 					}
 
-					VStack(alignment: .center) {
-						Divider()
+				}
 
-						ForEach(orderedConfigurations) { configuration in
-							let configurationId = configuration.id
-							let currentConfiguration = configurations[configurationId] ?? configuration
+				VStack(alignment: .center) {
+					Divider()
 
-							Section(
-								header: Text(currentConfiguration.legendTitle)
-							) {
-								CKEConfigurationView(
-									configurationId: configurationId,
-									configurations: $configurations,
-									markSelected: currentConfiguration.mark,
-									dataStrategySelected: currentConfiguration.dataStrategy,
-									isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-									isShowingMeanMark: currentConfiguration.showMeanMark,
-									isShowingMedianMark: currentConfiguration.showMedianMark
-								)
-							}
-							Divider()
-								.padding()
+					ForEach(orderedConfigurations) { configuration in
+						let configurationId = configuration.id
+						let currentConfiguration = configurations[configurationId] ?? configuration
+
+						Section(
+							header: Text(currentConfiguration.legendTitle)
+						) {
+							CKEConfigurationView(
+								configurationId: configurationId,
+								configurations: $configurations,
+								markSelected: currentConfiguration.mark,
+								dataStrategySelected: currentConfiguration.dataStrategy,
+								isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+								isShowingMeanMark: currentConfiguration.showMeanMark,
+								isShowingMedianMark: currentConfiguration.showMedianMark
+							)
 						}
+						Divider()
+							.padding()
 					}
 				}
 			}
