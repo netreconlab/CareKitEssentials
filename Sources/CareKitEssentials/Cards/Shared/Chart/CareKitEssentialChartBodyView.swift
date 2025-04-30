@@ -29,6 +29,7 @@ struct CareKitEssentialChartBodyView: View {
 					xValueUnit: point.xUnit,
 					yLabel: data.yLabel,
 					yValue: point.y,
+					point: point,
 					width: data.width,
 					height: data.height,
 					stacking: data.stackingMethod
