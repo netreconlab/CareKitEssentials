@@ -282,7 +282,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
 		symbol: BasicChartSymbolShape? = nil,
-		interpolation: InterpolationMethod? = nil,
+		interpolation: InterpolationMethod? = nil
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -326,7 +326,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
 		symbol: BasicChartSymbolShape? = nil,
-		interpolation: InterpolationMethod? = nil,
+		interpolation: InterpolationMethod? = nil
     ) {
         self.mark = mark
         self.dataPoints = dataPoints
@@ -397,7 +397,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
 		symbol: BasicChartSymbolShape? = nil,
-		interpolation: InterpolationMethod? = nil,
+		interpolation: InterpolationMethod? = nil
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
@@ -469,7 +469,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         height: MarkDimension = .automatic,
         stackingMethod: MarkStackingMethod = .standard,
 		symbol: BasicChartSymbolShape? = nil,
-		interpolation: InterpolationMethod? = nil,
+		interpolation: InterpolationMethod? = nil
     ) throws {
         if let accessibilityValues = accessibilityValues {
             guard accessibilityValues.count == values.count else {
