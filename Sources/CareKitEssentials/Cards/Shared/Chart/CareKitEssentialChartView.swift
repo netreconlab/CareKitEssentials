@@ -179,6 +179,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 				taskID: task.id,
 				mark: .bar,
 				legendTitle: "Bar",
+				yAxisLabel: "Total",
 				showMarkWhenHighlighted: true,
 				showMeanMark: true,
 				color: .red,

@@ -6,8 +6,8 @@
 "AVERAGE" = "Average";
 "MEDIAN" = "Median";
 "SUM" = "SUM";
-"AVERAGE_VALUE" = "Average: %F";
-"MEDIAN_VALUE" = "Median: %F";
+"AVERAGE_VALUE" = "Average: %.2F";
+"MEDIAN_VALUE" = "Median: %.2F";
 "DAY" = "Day";
 "WEEK" = "Week";
 "MONTH" = "Month";

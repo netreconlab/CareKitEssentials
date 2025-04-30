@@ -150,6 +150,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	public var showMarkWhenHighlighted: Bool = false
 	public var showMeanMark: Bool = false
 	public var showMedianMark: Bool = false
+	public var xAxisLabel: String?
+	public var yAxisLabel: String?
 	public var xLabel: String = String(localized: "DATE")
 	public var yLabel: String = String(localized: "VALUE")
 	public var yEndLabel: String?
@@ -238,7 +240,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 	}
 
-	func selectedDataValue(for date: Date) -> Double? {
+	func selectedDataPoint(for date: Date) -> CKEPoint? {
 		guard let component = dataPoints.first?.xUnit else {
 			return nil
 		}
@@ -254,9 +256,14 @@ public struct CKEDataSeries: Identifiable, Hashable {
 
 		let foundDataPoint = dataPoints.first(where: { range.contains($0.x) })
 
-		guard let valueAtPoint = foundDataPoint?.y else {
+		return foundDataPoint
+	}
+
+	func selectedDataValue(for date: Date) -> Double? {
+		guard let foundDataPoint = selectedDataPoint(for: date) else {
 			return nil
 		}
+		let valueAtPoint = foundDataPoint.y
 		let realValue = valueAtPoint > 0 ? valueAtPoint : nil
 		return realValue
 	}
@@ -324,6 +331,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		showMarkWhenHighlighted: Bool = false,
 		showMeanMark: Bool = false,
 		showMedianMark: Bool = false,
+		xAxisLabel: String? = nil,
+		yAxisLabel: String? = nil,
         color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
@@ -339,6 +348,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		self.showMarkWhenHighlighted = showMarkWhenHighlighted
 		self.showMeanMark = showMeanMark
 		self.showMedianMark = showMedianMark
+		self.xAxisLabel = xAxisLabel
+		self.yAxisLabel = yAxisLabel
         self.color = color
         self.gradientStartColor = gradientStartColor
         self.stackingMethod = stackingMethod
@@ -359,6 +370,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			showMarkWhenHighlighted: configuration.showMarkWhenHighlighted,
 			showMeanMark: configuration.showMeanMark,
 			showMedianMark: configuration.showMedianMark,
+			xAxisLabel: configuration.xAxisLabel,
+			yAxisLabel: configuration.yAxisLabel,
 			color: configuration.color,
 			gradientStartColor: configuration.gradientStartColor,
 			width: configuration.width,
@@ -396,6 +409,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
         accessibilityValues: [String]? = nil,
         title: String,
 		summary: String? = nil,
+		xAxisLabel: String? = nil,
+		yAxisLabel: String? = nil,
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -433,6 +448,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
         }
         self.title = title
 		self.summary = summary
+		self.xAxisLabel = xAxisLabel
+		self.yAxisLabel = yAxisLabel
         self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
