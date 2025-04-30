@@ -36,6 +36,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 
 	let title: String
 	let subtitle: String
+	let showDetailsViewOnTap: Bool
 	@Binding var dateInterval: DateInterval
 	@Binding var period: PeriodComponent
 	var configurations: [String: CKEDataSeriesConfiguration]
@@ -50,13 +51,15 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 						subtitle: subtitle
 					)
 					Spacer()
-					Image(systemName: "chevron.right")
-						.imageScale(.small)
-					#if os(iOS) || os(visionOS)
-						.foregroundColor(Color(style.color.secondaryLabel))
-					#else
-						.foregroundColor(Color.secondary)
-					#endif
+					if showDetailsViewOnTap {
+						Image(systemName: "chevron.right")
+							.imageScale(.small)
+							#if os(iOS) || os(visionOS)
+							.foregroundColor(Color(style.color.secondaryLabel))
+							#else
+							.foregroundColor(Color.secondary)
+							#endif
+					}
 				}
 				.padding(.bottom)
 				.onTapGesture {
@@ -85,19 +88,21 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 			}
 			.padding(isCardEnabled ? [.all] : [])
 		}
-		.sheet(isPresented: $isShowingDetail) {
-			DismissableView(
-				title: title
-			) {
-				CareKitEssentialChartDetailView(
-					title: title,
-					subtitle: subtitle,
-					dateInterval: dateInterval,
-					period: period,
-					configurations: configurations,
-					orderedConfigurations: orderedConfigurations
-				)
-				.padding()
+		.if(showDetailsViewOnTap) { view in
+			view.sheet(isPresented: $isShowingDetail) {
+				DismissableView(
+					title: title
+				) {
+					CareKitEssentialChartDetailView(
+						title: title,
+						subtitle: subtitle,
+						dateInterval: dateInterval,
+						period: period,
+						configurations: configurations,
+						orderedConfigurations: orderedConfigurations
+					)
+					.padding()
+				}
 			}
 		}
 	}
@@ -112,6 +117,9 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	/// Create an instance of chart for displaying CareKit data.
 	/// - title: The title for the chart.
 	/// - subtitle: The subtitle for the chart.
+	/// - showDetailsViewOnTap: Allow showing the details
+	/// view when the header is tapped. Set to `false` to
+	/// disable the details view. This defaults to `true`.
 	/// - dateInterval: The date interval of data to display
 	/// - period: The frequency at which data should be combined.
 	/// - configurations: A configuration object that specifies
@@ -120,12 +128,14 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	public init(
 		title: String,
 		subtitle: String,
+		showDetailsViewOnTap: Bool = true,
 		dateInterval: Binding<DateInterval>,
 		period: Binding<PeriodComponent>,
 		configurations: [CKEDataSeriesConfiguration]
 	) {
 		self.title = title
 		self.subtitle = subtitle
+		self.showDetailsViewOnTap = showDetailsViewOnTap
 		self.orderedConfigurations = configurations
 		self.configurations = configurations.reduce(
 			into: [String: CKEDataSeriesConfiguration]()
