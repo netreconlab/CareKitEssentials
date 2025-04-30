@@ -13,6 +13,11 @@ import Foundation
 import os.log
 import SwiftUI
 
+enum ChartViewPath {
+	case details
+	case fullscreen
+}
+
 /// Displays a SwiftUI Chart above an axis. The initializer takes an an array of
 /// `CKEDataSeriesConfiguration`'s which each support
 /// `CKEDataSeries.MarkType` that allows you to overlay from several
@@ -33,6 +38,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Environment(\.careKitStyle) private var style
 	@CareStoreFetchRequest(query: query()) private var events
 	@State var isShowingDetail: Bool = false
+	@State private var path = [ChartViewPath]()
 
 	let title: String
 	let subtitle: String
@@ -52,19 +58,38 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 					)
 					Spacer()
 					if showDetailsViewOnTap {
-						Image(systemName: "chevron.right")
-							.imageScale(.small)
-							#if os(iOS) || os(visionOS)
-							.foregroundColor(Color(style.color.secondaryLabel))
-							#else
-							.foregroundColor(Color.secondary)
-							#endif
+						NavigationStack(path: $path.animation(.easeOut)) {
+							NavigationLink(
+								value: ChartViewPath.details,
+							) {
+								Image(systemName: "chevron.right")
+									.imageScale(.small)
+#if os(iOS) || os(visionOS)
+									.foregroundColor(Color(style.color.secondaryLabel))
+#else
+									.foregroundColor(Color.secondary)
+#endif
+									.navigationDestination(for: ChartViewPath.self) { destination in
+										switch destination {
+										case .details:
+											CareKitEssentialChartDetailView(
+												title: title,
+												subtitle: subtitle,
+												dateInterval: dateInterval,
+												period: period,
+												configurations: configurations,
+												orderedConfigurations: orderedConfigurations
+											)
+											.padding()
+										case .fullscreen:
+											Text("Fullscreen not yet implemented")
+										}
+									}
+							}
+						}
 					}
 				}
 				.padding(.bottom)
-				.onTapGesture {
-					isShowingDetail.toggle()
-				}
 
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
@@ -187,7 +212,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 			)
 		]
 
-		ScrollView {
+		NavigationStack {
 			CareKitEssentialChartView(
 				title: task.title ?? "",
 				subtitle: "Chart",
