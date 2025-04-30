@@ -27,6 +27,7 @@ extension CareKitEssentialChartBodyView {
 	@ChartContentBuilder
 	func makeSelectedRuleMark(series: CKEDataSeries) -> some ChartContent {
 		if let selectedDate,
+		   selectedDateValue(series: series) != nil,
 		   let dateUnit = series.dataPoints.first?.xUnit {
 			RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
 				.foregroundStyle(grayColor.opacity(0.2))

@@ -254,7 +254,11 @@ public struct CKEDataSeries: Identifiable, Hashable {
 
 		let foundDataPoint = dataPoints.first(where: { range.contains($0.x) })
 
-		return foundDataPoint?.y
+		guard let valueAtPoint = foundDataPoint?.y else {
+			return nil
+		}
+		let realValue = valueAtPoint > 0 ? valueAtPoint : nil
+		return realValue
 	}
 
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single

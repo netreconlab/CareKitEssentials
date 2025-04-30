@@ -56,7 +56,6 @@ struct CareKitEssentialChartBodyView: View {
 			// to the method below.
 			makeAllAdditionalMarks(series: data)
 		}
-		.chartXScale(domain: dateInterval.start...dateInterval.end, type: .date)
 		.chartXAxis {
 			AxisMarks { _ in
 				if showGridLines {
@@ -92,6 +91,7 @@ struct CareKitEssentialChartBodyView: View {
 				if isAllowingHorizontalScroll {
 					chart
 						.chartScrollableAxes(.horizontal)
+						// .chartXVisibleDomain(length: )
 						.chartXSelection(value: $selectedDate)
 				} else {
 					chart.chartXSelection(value: $selectedDate)
@@ -123,11 +123,6 @@ struct CareKitEssentialChartBodyView: View {
 					Text(markerLocalizedString("VALUE_DISPLAY", value: selected.1))
 				}
 				.font(.caption)
-			} else if let selectedDate {
-				VStack {
-					dateFormatted(date: selectedDate, series: series)
-				}
-				.font(.caption)
 			}
 		}
 	}
@@ -155,6 +150,15 @@ struct CareKitEssentialChartBodyView: View {
 		)
 	}
 
+	func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
+		guard let selectedDate,
+			  let value = series.selectedDataValue(for: selectedDate) else {
+			return nil
+		}
+
+		return (selectedDate, value)
+	}
+
 	// MARK: Private Helpers
 	@ViewBuilder
 	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
@@ -163,15 +167,6 @@ struct CareKitEssentialChartBodyView: View {
 		} else {
 			Text(date.formatted(.dateTime.month().day().hour()))
 		}
-	}
-
-	private func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
-		guard let selectedDate,
-			  let value = series.selectedDataValue(for: selectedDate) else {
-			return nil
-		}
-
-		return (selectedDate, value)
 	}
 
 	private func updateLegendColors() {
