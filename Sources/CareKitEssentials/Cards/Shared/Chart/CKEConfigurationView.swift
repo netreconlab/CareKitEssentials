@@ -19,19 +19,24 @@ struct CKEConfigurationView: View {
 	@State var isShowingMedianMark: Bool = false
 
     var body: some View {
-		List {
+		VStack(alignment: .leading) {
 			Section(
 				header: Text(String(localized: "CHART_TYPE"))
+					.font(.subheadline)
 			) {
 				markSegmentView
 			}
+
 			Section(
 				header: Text(String(localized: "DATA_STRATEGY"))
+					.font(.subheadline)
 			) {
 				dataStrategySegmentView
 			}
+
 			Section(
 				header: Text(String(localized: "META_DATA"))
+					.font(.subheadline)
 			) {
 				Toggle("SHOW_HIGHLIGHTED", isOn: $isShowingMarkHighlighted)
 				Toggle("SHOW_MEAN", isOn: $isShowingMeanMark)

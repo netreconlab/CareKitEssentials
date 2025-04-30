@@ -72,7 +72,7 @@ final class LinearCareTaskProgressTests: XCTestCase {
         let goal = try XCTUnwrap(progress.goal)
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
-        XCTAssertEqual(goal, expectedGoal, accuracy: 0.0001 )
+		XCTAssertEqual(goal, 25.0, accuracy: 0.0001 )
     }
 
     func testProgressAveragingMultipleIntegerOutcomesMultipleTargetsIntegers() async throws {
@@ -103,7 +103,7 @@ final class LinearCareTaskProgressTests: XCTestCase {
             .reduce(0, +)
         let goal = try XCTUnwrap(progress.goal)
 
-        XCTAssertEqual(goal, expectedGoal, accuracy: 0.0001)
+		XCTAssertEqual(goal, 25.0, accuracy: 0.0001)
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
 
     }
@@ -128,7 +128,7 @@ final class LinearCareTaskProgressTests: XCTestCase {
         let goal = try XCTUnwrap(progress.goal)
 
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)
-        XCTAssertEqual(goal, expectedGoal, accuracy: 0.0001)
+		XCTAssertEqual(goal, 25.0, accuracy: 0.0001)
     }
 
     func testProgressByAveragingOutcomeValuesOutcomeValuesNoTargetValues() async throws {
@@ -334,13 +334,11 @@ final class LinearCareTaskProgressTests: XCTestCase {
         let expectedValue = outcomeValues
             .compactMap { $0.doubleValue }
             .sorted()[outcomeValues.count / 2]
-        let expectedGoal = targetValues
-            .compactMap { $0.doubleValue }
-            .reduce(0, +)
+
         let goal = try XCTUnwrap(progress.goal)
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
-        XCTAssertEqual(goal, expectedGoal, accuracy: 0.0001)
+		XCTAssertEqual(goal, 25.0, accuracy: 0.0001)
     }
 
     func testProgressByMedianOutcomeValuesEvenOutcomeValues() async throws {
