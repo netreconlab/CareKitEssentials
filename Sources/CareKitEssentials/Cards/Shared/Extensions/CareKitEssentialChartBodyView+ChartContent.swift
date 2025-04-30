@@ -13,7 +13,6 @@ extension CareKitEssentialChartBodyView {
 
 	@ChartContentBuilder
 	func makeAllAdditionalMarks(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
-		makePointMarksForAllDataPoints(series: series, at: point)
 		makeAdditionalMarksForBarMarks(series: series, at: point)
 	}
 
@@ -77,17 +76,6 @@ extension CareKitEssentialChartBodyView {
 					Text(markerLocalizedString("MEDIAN_VALUE", value: median))
 						.font(.caption)
 				}
-		}
-	}
-
-	@ChartContentBuilder
-	func makePointMarksForAllDataPoints(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
-		ForEach(0..<point.originalValues.count, id: \.self) { index in
-			PointMark(
-				x: .value(series.xLabel, point.x, unit: point.xUnit),
-				y: .value(series.yLabel, point.originalValues[index])
-			)
-			.opacity(0.3)
 		}
 	}
 

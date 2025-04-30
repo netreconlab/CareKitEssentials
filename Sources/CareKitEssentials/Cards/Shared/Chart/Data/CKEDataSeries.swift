@@ -89,6 +89,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         case line
         case point
         case rectangle
+		case scatter
 
         @ChartContentBuilder
         func chartContent<ValueY>( // swiftlint:disable:this function_parameter_count
@@ -97,6 +98,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			xValueUnit: Calendar.Component,
             yLabel: String,
             yValue: ValueY,
+			point: CKEPoint,
             width: MarkDimension,
             height: MarkDimension,
             stacking: MarkStackingMethod
@@ -133,6 +135,14 @@ public struct CKEDataSeries: Identifiable, Hashable {
                     width: width,
                     height: height
                 )
+			case .scatter:
+				ForEach(0..<point.originalValues.count, id: \.self) { index in
+					PointMark(
+						x: .value(xLabel, point.x, unit: point.xUnit),
+						y: .value(yLabel, point.originalValues[index])
+					)
+					.opacity(0.3)
+				}
             }
         }
     }
