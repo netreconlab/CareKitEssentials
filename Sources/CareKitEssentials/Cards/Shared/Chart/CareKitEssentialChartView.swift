@@ -68,7 +68,8 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries
+					dataSeries: dataSeries,
+					dateInterval: dateInterval
 				)
 				#if !os(watchOS) && !os(visionOS)
 				.aspectRatio(

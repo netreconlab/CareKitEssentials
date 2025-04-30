@@ -14,6 +14,7 @@ struct CareKitEssentialChartBodyView: View {
 
 	@Environment(\.careKitStyle) private var style
 	let dataSeries: [CKEDataSeries]
+	let dateInterval: DateInterval
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
 	@State var legendColors = [String: LinearGradient]()
@@ -55,6 +56,7 @@ struct CareKitEssentialChartBodyView: View {
 			// to the method below.
 			makeAllAdditionalMarks(series: data)
 		}
+		.chartXScale(domain: dateInterval.start...dateInterval.end, type: .date)
 		.chartXAxis {
 			AxisMarks { _ in
 				if showGridLines {

@@ -33,6 +33,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			let dataSeries = graphDataForEvents(events)
 			CareKitEssentialChartBodyView(
 				dataSeries: dataSeries,
+				dateInterval: dateInterval,
 				showGridLines: true
 			)
 			#if !os(watchOS) && !os(visionOS)
@@ -110,6 +111,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 					let dataSeries = graphDataForEvents(events)
 					CareKitEssentialChartBodyView(
 						dataSeries: dataSeries,
+						dateInterval: dateInterval,
 						showGridLines: true
 					)
 					#if !os(watchOS)
