@@ -252,13 +252,22 @@ extension CareKitEssentialChartable {
 			}
 		)
 
-		// Iterate through the events on each component and update the stored progress values
-		let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
+		// Iterate through the events on each component and calculate progress values.
+		let progressPerPeriodComponent = periodComponentsInInterval.compactMap { periodComponent -> TemporalProgress<Progress>? in
 
 			let events = eventsGroupedByPeriodComponent[periodComponent.componentsForProgress] ?? []
 
-			let progressForEvents = events.map { event in
-				computeProgress(event)
+			let progressForEvents = events.compactMap { event -> Progress? in
+				// Only compute progress for events that have OCKOutcomeValue's.
+				guard event.outcome?.values.isEmpty == false else {
+					return nil
+				}
+				return computeProgress(event)
+			}
+
+			// Only add progress for events that have OCKOutcomeValue's.
+			guard progressForEvents.isEmpty == false else {
+				return nil
 			}
 
 			let valueUnits = events.reduce(into: [String]()) { units, event in
