@@ -28,7 +28,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 
 	var body: some View {
 		VStack {
-
 			let dataSeries = graphDataForEvents(events)
 			NavigationLink(
 				destination: {
@@ -52,12 +51,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 					dateInterval: dateInterval,
 					showGridLines: true
 				)
-#if !os(watchOS) && !os(visionOS) && !os(macOS)
-				.aspectRatio(
-					CGSize(width: 4, height: 3),
-					contentMode: .fit
-				)
-#endif
 				.onAppear {
 					updateQuery()
 				}
@@ -75,10 +68,8 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			.buttonStyle(PlainButtonStyle())
 			#endif
 
-			Divider()
-				.padding()
+			List {
 
-			ScrollView {
 				VStack(alignment: .leading) {
 					Section(
 						header: Text("PERIOD")
@@ -94,31 +85,27 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 
 				}
 
-				VStack(alignment: .center) {
-					Divider()
+				ForEach(orderedConfigurations) { configuration in
+					let configurationId = configuration.id
+					let currentConfiguration = configurations[configurationId] ?? configuration
 
-					ForEach(orderedConfigurations) { configuration in
-						let configurationId = configuration.id
-						let currentConfiguration = configurations[configurationId] ?? configuration
-
-						Section(
-							header: Text(currentConfiguration.legendTitle)
-						) {
-							CKEConfigurationView(
-								configurationId: configurationId,
-								configurations: $configurations,
-								markSelected: currentConfiguration.mark,
-								dataStrategySelected: currentConfiguration.dataStrategy,
-								isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-								isShowingMeanMark: currentConfiguration.showMeanMark,
-								isShowingMedianMark: currentConfiguration.showMedianMark
-							)
-						}
-						Divider()
-							.padding()
+					Section(
+						header: Text(currentConfiguration.legendTitle)
+					) {
+						CKEConfigurationView(
+							configurationId: configurationId,
+							configurations: $configurations,
+							markSelected: currentConfiguration.mark,
+							dataStrategySelected: currentConfiguration.dataStrategy,
+							isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+							isShowingMeanMark: currentConfiguration.showMeanMark,
+							isShowingMedianMark: currentConfiguration.showMedianMark
+						)
 					}
+
 				}
 			}
+			.listStyle(.automatic)
 		}
 	}
 
@@ -207,22 +194,20 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 		}
 
 		NavigationStack {
-			VStack {
-				CareKitEssentialChartDetailView(
-					title: task.title ?? "",
-					subtitle: "Week",
-					dateInterval: weekDateInterval,
-					period: .week,
-					configurations: [
-						configurationBar.id: configurationBar,
-						configurationLine.id: configurationLine
-					],
-					orderedConfigurations: [
-						configurationBar,
-						configurationLine
-					]
-				)
-			}
+			CareKitEssentialChartDetailView(
+				title: task.title ?? "",
+				subtitle: "Week",
+				dateInterval: weekDateInterval,
+				period: .week,
+				configurations: [
+					configurationBar.id: configurationBar,
+					configurationLine.id: configurationLine
+				],
+				orderedConfigurations: [
+					configurationBar,
+					configurationLine
+				]
+			)
 			.padding()
 		}
 		.environment(\.careStore, previewStore)

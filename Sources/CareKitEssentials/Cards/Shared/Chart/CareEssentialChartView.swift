@@ -145,36 +145,38 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 
 		NavigationStack {
 			ScrollView {
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Day",
-					dateInterval: dayDateInterval,
-					period: .day,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Week",
-					dateInterval: weekDateInterval,
-					period: .weekday,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Month",
-					dateInterval: monthDateInterval,
-					period: .month,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Year",
-					dateInterval: yearDateInterval,
-					period: .year,
-					configurations: [configurationBar]
-				)
+				VStack {
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Day",
+						dateInterval: dayDateInterval,
+						period: .day,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Week",
+						dateInterval: weekDateInterval,
+						period: .weekday,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Month",
+						dateInterval: monthDateInterval,
+						period: .month,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Year",
+						dateInterval: yearDateInterval,
+						period: .year,
+						configurations: [configurationBar]
+					)
+				}
+				.padding()
 			}
-			.padding()
 		}
 		.environment(\.careStore, previewStore)
 		.environment(\.careKitStyle, OCKStyle())

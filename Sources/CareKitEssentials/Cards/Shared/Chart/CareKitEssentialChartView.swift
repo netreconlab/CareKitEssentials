@@ -48,68 +48,59 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
 
 	public var body: some View {
-		// NavigationStack {
-			CardView {
-				VStack(alignment: .leading) {
-					HStack {
-						CareKitEssentialChartHeaderView(
-							title: title,
-							subtitle: subtitle
-						)
-						Spacer()
-						if showDetailsViewOnTap {
-							NavigationLink(
-								destination: {
-									CareKitEssentialChartDetailView(
-										title: title,
-										subtitle: subtitle,
-										dateInterval: dateInterval,
-										period: period,
-										configurations: configurations,
-										orderedConfigurations: orderedConfigurations
-									)
-									.padding()
-								}
-							) {
-								Image(systemName: "chevron.right")
-									.imageScale(.small)
-#if os(iOS) || os(visionOS)
-									.foregroundColor(Color(style.color.secondaryLabel))
-#else
-									.foregroundColor(Color.secondary)
-#endif
+		CardView {
+			VStack(alignment: .leading) {
+				HStack {
+					CareKitEssentialChartHeaderView(
+						title: title,
+						subtitle: subtitle
+					)
+					Spacer()
+					if showDetailsViewOnTap {
+						NavigationLink(
+							destination: {
+								CareKitEssentialChartDetailView(
+									title: title,
+									subtitle: subtitle,
+									dateInterval: dateInterval,
+									period: period,
+									configurations: configurations,
+									orderedConfigurations: orderedConfigurations
+								)
 							}
-							#if os(watchOS)
-							.buttonStyle(.borderless)
-							#endif
-						}
-					}
-					.padding(.bottom)
-
-					let dataSeries = graphDataForEvents(events)
-					CareKitEssentialChartBodyView(
-						dataSeries: dataSeries,
-						dateInterval: dateInterval
-					)
-#if !os(watchOS) && !os(visionOS)
-					.aspectRatio(
-						CGSize(width: 4, height: 3),
-						contentMode: .fit
-					)
+						) {
+							Image(systemName: "chevron.right")
+								.imageScale(.small)
+#if os(iOS) || os(visionOS)
+								.foregroundColor(Color(style.color.secondaryLabel))
+#else
+								.foregroundColor(Color.secondary)
 #endif
-					.onAppear {
-						updateQuery()
-					}
-					.onChange(of: dateInterval) { _ in
-						updateQuery()
-					}
-					.onChange(of: configurations) { _ in
-						updateQuery()
+						}
+						#if os(watchOS)
+						.buttonStyle(.borderless)
+						#endif
 					}
 				}
-				.padding(isCardEnabled ? [.all] : [])
+				.padding(.bottom)
+
+				let dataSeries = graphDataForEvents(events)
+				CareKitEssentialChartBodyView(
+					dataSeries: dataSeries,
+					dateInterval: dateInterval
+				)
+				.onAppear {
+					updateQuery()
+				}
+				.onChange(of: dateInterval) { _ in
+					updateQuery()
+				}
+				.onChange(of: configurations) { _ in
+					updateQuery()
+				}
 			}
-		// }
+			.padding(isCardEnabled ? [.all] : [])
+		}
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
@@ -200,8 +191,8 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 					period: $period,
 					configurations: configurations
 				)
+				.padding()
 			}
-			.padding()
 		}
 		.padding()
 		.environment(\.careStore, previewStore)
