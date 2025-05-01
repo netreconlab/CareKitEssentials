@@ -54,7 +54,7 @@ extension CareKitEssentialChartBodyView {
 			RuleMark(y: .value("AVERAGE", mean))
 				.foregroundStyle(grayColor.opacity(0.2))
 				.annotation(
-					position: .top,
+					position: .automatic,
 					alignment: .topLeading
 				) {
 					Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
@@ -70,7 +70,7 @@ extension CareKitEssentialChartBodyView {
 			RuleMark(y: .value("MEDIAN", median))
 				.foregroundStyle(.gray.opacity(0.2))
 				.annotation(
-					position: .top,
+					position: .automatic,
 					alignment: .topLeading
 				) {
 					Text(markerLocalizedString("MEDIAN_VALUE", value: median))

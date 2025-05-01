@@ -61,6 +61,7 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 									configurations: configurations,
 									orderedConfigurations: orderedConfigurations
 								)
+								.padding()
 							}
 						) {
 							Image(systemName: "chevron.right")

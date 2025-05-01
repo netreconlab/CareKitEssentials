@@ -61,7 +61,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			}
 		) {
 			chartView
-				.padding(.horizontal)
 				.onAppear {
 					updateQuery()
 				}
