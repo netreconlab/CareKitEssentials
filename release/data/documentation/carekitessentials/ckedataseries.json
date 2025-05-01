@@ -114,7 +114,7 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:xAxisLabel:yAxisLabel:color:width:height:stackingMethod:symbol:interpolation:)"
       ],
       "title" : "Initializers"
     },
@@ -141,7 +141,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/tLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/title",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/width",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/xAxisLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/xLabel",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yAxisLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yEndLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yLabel"
       ],
@@ -979,7 +981,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:dates:datecomponent:values:accessibilityvalues:title:color:gradientstartcolor:width:height:stackingmethod:symbol:interpolation:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:xAxisLabel:yAxisLabel:color:width:height:stackingMethod:symbol:interpolation:)": {
   "abstract" : [
     {
       "text" : "Creates a new data series that can be passed to a chart to be plotted.",
@@ -1157,6 +1159,40 @@
     },
     {
       "kind" : "externalParam",
+      "text" : "xAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "yAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
       "text" : "color"
     },
     {
@@ -1262,12 +1298,12 @@
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/init(mark:dates:dateComponent:values:accessibilityValues:title:summary:xAxisLabel:yAxisLabel:color:width:height:stackingMethod:symbol:interpolation:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(mark:dates:dateComponent:values:accessibilityValues:title:summary:color:width:height:stackingMethod:symbol:interpolation:)",
+  "title" : "init(mark:dates:dateComponent:values:accessibilityValues:title:summary:xAxisLabel:yAxisLabel:color:width:height:stackingMethod:symbol:interpolation:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:dates:datecomponent:values:accessibilityvalues:title:summary:color:width:height:stackingmethod:symbol:interpolation:)"
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/init(mark:dates:datecomponent:values:accessibilityvalues:title:summary:xaxislabel:yaxislabel:color:width:height:stackingmethod:symbol:interpolation:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/interpolation": {
   "abstract" : [
@@ -1752,6 +1788,44 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/width"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/xAxisLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "xAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/xAxisLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "xAxisLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/xaxislabel"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/xLabel": {
   "abstract" : [
 
@@ -1785,6 +1859,44 @@
   "title" : "xLabel",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/xlabel"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/yAxisLabel": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "yAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/yAxisLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "yAxisLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/yaxislabel"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/yEndLabel": {
   "abstract" : [

@@ -109,7 +109,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/bar",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/line",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/point",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/rectangle"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/rectangle",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/scatter"
       ],
       "title" : "Enumeration Cases"
     },
@@ -431,6 +432,31 @@
   "title" : "CKEDataSeries.MarkType.rectangle",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/marktype\/rectangle"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/MarkType/scatter": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scatter"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType\/scatter",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CKEDataSeries.MarkType.scatter",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseries\/marktype\/scatter"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s12CaseIterableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12CaseIterableP",

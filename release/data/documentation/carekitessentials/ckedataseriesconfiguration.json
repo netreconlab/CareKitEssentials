@@ -103,7 +103,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/init(taskID:dataStrategy:kind:mark:legendTitle:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/init(taskID:dataStrategy:kind:mark:legendTitle:xAxisLabel:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)"
       ],
       "title" : "Initializers"
     },
@@ -127,6 +127,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/symbol",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/taskID",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/width",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/xAxisLabel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/yAxisLabel"
       ],
       "title" : "Instance Properties"
@@ -481,7 +482,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/id"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/init(taskID:dataStrategy:kind:mark:legendTitle:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/init(taskID:dataStrategy:kind:mark:legendTitle:xAxisLabel:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)": {
   "abstract" : [
     {
       "text" : "Initialize a new ",
@@ -598,6 +599,23 @@
     {
       "kind" : "text",
       "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "xAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
     },
     {
       "kind" : "externalParam",
@@ -813,12 +831,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/init(taskID:dataStrategy:kind:mark:legendTitle:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/init(taskID:dataStrategy:kind:mark:legendTitle:xAxisLabel:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(taskID:dataStrategy:kind:mark:legendTitle:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)",
+  "title" : "init(taskID:dataStrategy:kind:mark:legendTitle:xAxisLabel:yAxisLabel:showMarkWhenHighlighted:showMeanMark:showMedianMark:color:gradientStartColor:width:height:stackingMethod:symbol:interpolation:computeProgress:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/init(taskid:datastrategy:kind:mark:legendtitle:yaxislabel:showmarkwhenhighlighted:showmeanmark:showmedianmark:color:gradientstartcolor:width:height:stackingmethod:symbol:interpolation:computeprogress:)"
+  "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/init(taskid:datastrategy:kind:mark:legendtitle:xaxislabel:yaxislabel:showmarkwhenhighlighted:showmeanmark:showmedianmark:color:gradientstartcolor:width:height:stackingmethod:symbol:interpolation:computeprogress:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/interpolation": {
   "abstract" : [
@@ -1246,6 +1264,47 @@
   "title" : "width",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/width"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/xAxisLabel": {
+  "abstract" : [
+    {
+      "text" : "The label to use for the yAxis.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "xAxisLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/xAxisLabel",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "xAxisLabel",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/xaxislabel"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/yAxisLabel": {
   "abstract" : [
