@@ -13,11 +13,6 @@ import Foundation
 import os.log
 import SwiftUI
 
-enum ChartViewPath {
-	case details
-	case fullscreen
-}
-
 /// Displays a SwiftUI Chart above an axis. The initializer takes an an array of
 /// `CKEDataSeriesConfiguration`'s which each support
 /// `CKEDataSeries.MarkType` that allows you to overlay from several
@@ -37,7 +32,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Environment(\.isCardEnabled) private var isCardEnabled
 	@Environment(\.careKitStyle) private var style
 	@CareStoreFetchRequest(query: query()) private var events
-	@State private var path = [ChartViewPath]()
 
 	let title: String
 	let subtitle: String

@@ -27,69 +27,11 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
 
 	var body: some View {
-		VStack {
-			let dataSeries = graphDataForEvents(events)
-			CareKitEssentialChartBodyView(
-				dataSeries: dataSeries,
-				dateInterval: dateInterval,
-				showGridLines: true
-			)
-			.padding(.horizontal)
-			.onAppear {
-				updateQuery()
-			}
-			.onChange(of: dateInterval) { _ in
-				updateQuery()
-			}
-			.onChange(of: configurations) { _ in
-				updateQuery()
-			}
-			.onReceive(events.publisher) { _ in
-				updateQuery()
-			}
-
-			#if os(watchOS) || os(visionOS)
-			.buttonStyle(PlainButtonStyle())
+		ViewThatFits {
+			#if !os(watchOS)
+			splitView
 			#endif
-
-			List {
-
-				VStack(alignment: .leading) {
-					Section(
-						header: Text("PERIOD")
-					) {
-						periodPickerView
-					}
-					Section(
-						header: Text("DATE_RANGE")
-					) {
-						startDatePickerView
-						endDatePickerView
-					}
-
-				}
-
-				ForEach(orderedConfigurations) { configuration in
-					let configurationId = configuration.id
-					let currentConfiguration = configurations[configurationId] ?? configuration
-
-					Section(
-						header: Text(currentConfiguration.legendTitle)
-					) {
-						CKEConfigurationView(
-							configurationId: configurationId,
-							configurations: $configurations,
-							markSelected: currentConfiguration.mark,
-							dataStrategySelected: currentConfiguration.dataStrategy,
-							isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-							isShowingMeanMark: currentConfiguration.showMeanMark,
-							isShowingMedianMark: currentConfiguration.showMedianMark
-						)
-					}
-
-				}
-			}
-			.listStyle(.automatic)
+			verticalView
 		}
 		.toolbar {
 			#if !os(watchOS)
@@ -102,12 +44,89 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 			}
 			#endif
 		}
+
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
 		eventQuery(
 			with: taskIDs ?? [],
 			on: Date()
+		)
+	}
+
+	var splitView: some View {
+		NavigationSplitView(
+			sidebar: {
+				configurationView
+			}
+		) {
+			chartView
+				.padding(.horizontal)
+				.onAppear {
+					updateQuery()
+				}
+				.onChange(of: dateInterval) { _ in
+					updateQuery()
+				}
+				.onChange(of: configurations) { _ in
+					updateQuery()
+				}
+				.onReceive(events.publisher) { _ in
+					updateQuery()
+				}
+		}
+	}
+
+	var verticalView: some View {
+		VStack {
+			chartView
+			configurationView
+		}
+	}
+
+	var configurationView: some View {
+		List {
+			Section(
+				header: Text("PERIOD")
+			) {
+				periodPickerView
+			}
+			Section(
+				header: Text("DATE_RANGE")
+			) {
+				startDatePickerView
+				endDatePickerView
+			}
+			ForEach(orderedConfigurations) { configuration in
+				let configurationId = configuration.id
+				let currentConfiguration = configurations[configurationId] ?? configuration
+
+				Section(
+					header: Text(currentConfiguration.legendTitle)
+				) {
+					CKEConfigurationView(
+						configurationId: configurationId,
+						configurations: $configurations,
+						markSelected: currentConfiguration.mark,
+						dataStrategySelected: currentConfiguration.dataStrategy,
+						isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+						isShowingMeanMark: currentConfiguration.showMeanMark,
+						isShowingMedianMark: currentConfiguration.showMedianMark
+					)
+				}
+
+			}
+		}
+		.listStyle(.automatic)
+	}
+
+	var chartView: some View {
+		let dataSeries = graphDataForEvents(events)
+
+		return CareKitEssentialChartBodyView(
+			dataSeries: dataSeries,
+			dateInterval: dateInterval,
+			showGridLines: true
 		)
 	}
 
