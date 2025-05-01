@@ -25,38 +25,55 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var period: PeriodComponent
 	@State var configurations: [String: CKEDataSeriesConfiguration]
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
-	@State var isShowingLargeChart: Bool = false
 
 	var body: some View {
 		VStack {
 
 			let dataSeries = graphDataForEvents(events)
-			CareKitEssentialChartBodyView(
-				dataSeries: dataSeries,
-				dateInterval: dateInterval,
-				showGridLines: true
-			)
-			#if !os(watchOS) && !os(visionOS)
-			.aspectRatio(
-				CGSize(width: 4, height: 3),
-				contentMode: .fit
-			)
+			NavigationLink(
+				destination: {
+					let dataSeries = graphDataForEvents(events)
+					CareKitEssentialChartBodyView(
+						dataSeries: dataSeries,
+						dateInterval: dateInterval,
+						showGridLines: true
+					)
+					#if !os(watchOS)
+					.aspectRatio(
+						CGSize(width: 16, height: 9),
+						contentMode: .fit
+					)
+					#endif
+					.padding()
+				}
+			) {
+				CareKitEssentialChartBodyView(
+					dataSeries: dataSeries,
+					dateInterval: dateInterval,
+					showGridLines: true
+				)
+#if !os(watchOS) && !os(visionOS) && !os(macOS)
+				.aspectRatio(
+					CGSize(width: 4, height: 3),
+					contentMode: .fit
+				)
+#endif
+				.onAppear {
+					updateQuery()
+				}
+				.onChange(of: dateInterval) { _ in
+					updateQuery()
+				}
+				.onChange(of: configurations) { _ in
+					updateQuery()
+				}
+				.onReceive(events.publisher) { _ in
+					updateQuery()
+				}
+			}
+			#if os(watchOS) || os(visionOS)
+			.buttonStyle(PlainButtonStyle())
 			#endif
-			.onAppear {
-				updateQuery()
-			}
-			.onChange(of: dateInterval) { _ in
-				updateQuery()
-			}
-			.onChange(of: configurations) { _ in
-				updateQuery()
-			}
-			.onReceive(events.publisher) { _ in
-				updateQuery()
-			}
-			.onTapGesture {
-				isShowingLargeChart.toggle()
-			}
 
 			Divider()
 				.padding()
@@ -100,27 +117,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 						Divider()
 							.padding()
 					}
-				}
-			}
-		}
-		.sheet(isPresented: $isShowingLargeChart) {
-			DismissableView(
-				title: title
-			) {
-				VStack {
-					let dataSeries = graphDataForEvents(events)
-					CareKitEssentialChartBodyView(
-						dataSeries: dataSeries,
-						dateInterval: dateInterval,
-						showGridLines: true
-					)
-					#if !os(watchOS)
-					.aspectRatio(
-						CGSize(width: 16, height: 9),
-						contentMode: .fit
-					)
-					#endif
-					.padding()
 				}
 			}
 		}

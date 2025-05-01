@@ -6,6 +6,7 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+import CareKitUI
 import Foundation
 import os.log
 import SwiftUI
@@ -142,8 +143,8 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			return interval
 		}
 
-		ScrollView {
-			VStack {
+		NavigationStack {
+			ScrollView {
 				CareEssentialChartView(
 					title: task.title ?? "",
 					subtitle: "Day",
@@ -176,5 +177,6 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			.padding()
 		}
 		.environment(\.careStore, previewStore)
+		.environment(\.careKitStyle, OCKStyle())
 	}
 }

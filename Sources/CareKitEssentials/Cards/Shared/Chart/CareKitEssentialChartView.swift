@@ -37,7 +37,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Environment(\.isCardEnabled) private var isCardEnabled
 	@Environment(\.careKitStyle) private var style
 	@CareStoreFetchRequest(query: query()) private var events
-	@State var isShowingDetail: Bool = false
 	@State private var path = [ChartViewPath]()
 
 	let title: String
@@ -49,18 +48,28 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
 
 	public var body: some View {
-		CardView {
-			VStack(alignment: .leading) {
-				HStack {
-					CareKitEssentialChartHeaderView(
-						title: title,
-						subtitle: subtitle
-					)
-					Spacer()
-					if showDetailsViewOnTap {
-						NavigationStack(path: $path.animation(.easeOut)) {
+		// NavigationStack {
+			CardView {
+				VStack(alignment: .leading) {
+					HStack {
+						CareKitEssentialChartHeaderView(
+							title: title,
+							subtitle: subtitle
+						)
+						Spacer()
+						if showDetailsViewOnTap {
 							NavigationLink(
-								value: ChartViewPath.details,
+								destination: {
+									CareKitEssentialChartDetailView(
+										title: title,
+										subtitle: subtitle,
+										dateInterval: dateInterval,
+										period: period,
+										configurations: configurations,
+										orderedConfigurations: orderedConfigurations
+									)
+									.padding()
+								}
 							) {
 								Image(systemName: "chevron.right")
 									.imageScale(.small)
@@ -69,68 +78,38 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 #else
 									.foregroundColor(Color.secondary)
 #endif
-									.navigationDestination(for: ChartViewPath.self) { destination in
-										switch destination {
-										case .details:
-											CareKitEssentialChartDetailView(
-												title: title,
-												subtitle: subtitle,
-												dateInterval: dateInterval,
-												period: period,
-												configurations: configurations,
-												orderedConfigurations: orderedConfigurations
-											)
-											.padding()
-										case .fullscreen:
-											Text("Fullscreen not yet implemented")
-										}
-									}
 							}
+							#if os(watchOS)
+							.buttonStyle(.borderless)
+							#endif
 						}
 					}
-				}
-				.padding(.bottom)
+					.padding(.bottom)
 
-				let dataSeries = graphDataForEvents(events)
-				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries,
-					dateInterval: dateInterval
-				)
-				#if !os(watchOS) && !os(visionOS)
-				.aspectRatio(
-					CGSize(width: 4, height: 3),
-					contentMode: .fit
-				)
-				#endif
-				.onAppear {
-					updateQuery()
-				}
-				.onChange(of: dateInterval) { _ in
-					updateQuery()
-				}
-				.onChange(of: configurations) { _ in
-					updateQuery()
-				}
-			}
-			.padding(isCardEnabled ? [.all] : [])
-		}
-		.if(showDetailsViewOnTap) { view in
-			view.sheet(isPresented: $isShowingDetail) {
-				DismissableView(
-					title: title
-				) {
-					CareKitEssentialChartDetailView(
-						title: title,
-						subtitle: subtitle,
-						dateInterval: dateInterval,
-						period: period,
-						configurations: configurations,
-						orderedConfigurations: orderedConfigurations
+					let dataSeries = graphDataForEvents(events)
+					CareKitEssentialChartBodyView(
+						dataSeries: dataSeries,
+						dateInterval: dateInterval
 					)
-					.padding()
+#if !os(watchOS) && !os(visionOS)
+					.aspectRatio(
+						CGSize(width: 4, height: 3),
+						contentMode: .fit
+					)
+#endif
+					.onAppear {
+						updateQuery()
+					}
+					.onChange(of: dateInterval) { _ in
+						updateQuery()
+					}
+					.onChange(of: configurations) { _ in
+						updateQuery()
+					}
 				}
+				.padding(isCardEnabled ? [.all] : [])
 			}
-		}
+		// }
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
@@ -213,13 +192,16 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 		]
 
 		NavigationStack {
-			CareKitEssentialChartView(
-				title: task.title ?? "",
-				subtitle: "Chart",
-				dateInterval: $dateInterval,
-				period: $period,
-				configurations: configurations
-			)
+			ScrollView {
+				CareKitEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Chart",
+					dateInterval: $dateInterval,
+					period: $period,
+					configurations: configurations
+				)
+			}
+			.padding()
 		}
 		.padding()
 		.environment(\.careStore, previewStore)
