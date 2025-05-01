@@ -89,6 +89,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
         case line
         case point
         case rectangle
+		case scatter
 
         @ChartContentBuilder
         func chartContent<ValueY>( // swiftlint:disable:this function_parameter_count
@@ -97,43 +98,52 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			xValueUnit: Calendar.Component,
             yLabel: String,
             yValue: ValueY,
+			point: CKEPoint,
             width: MarkDimension,
             height: MarkDimension,
             stacking: MarkStackingMethod
         ) -> some ChartContent where ValueY: Plottable {
-            switch self {
-            case .area:
-                AreaMark(
+			switch self {
+			case .area:
+				AreaMark(
 					x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    stacking: stacking
-                )
-            case .bar:
-                BarMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    width: width,
-                    height: height,
-                    stacking: stacking
-                )
-            case .line:
-                LineMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue)
-                )
-            case .point:
-                PointMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue)
+					y: .value(yLabel, yValue),
+					stacking: stacking
 				)
-            case .rectangle:
-                RectangleMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    width: width,
-                    height: height
-                )
-            }
+			case .bar:
+				BarMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue),
+					width: width,
+					height: height,
+					stacking: stacking
+				)
+			case .line:
+				LineMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue)
+				)
+			case .point:
+				PointMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue)
+				)
+			case .rectangle:
+				RectangleMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue),
+					width: width,
+					height: height
+				)
+			case .scatter:
+				ForEach(0..<point.originalValues.count, id: \.self) { index in
+					PointMark(
+						x: .value(xLabel, point.x, unit: point.xUnit),
+						y: .value(yLabel, point.originalValues[index])
+					)
+					.opacity(0.3)
+				}
+			}
         }
     }
 
@@ -150,6 +160,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 	public var showMarkWhenHighlighted: Bool = false
 	public var showMeanMark: Bool = false
 	public var showMedianMark: Bool = false
+	public var xAxisLabel: String?
+	public var yAxisLabel: String?
 	public var xLabel: String = String(localized: "DATE")
 	public var yLabel: String = String(localized: "VALUE")
 	public var yEndLabel: String?
@@ -238,7 +250,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 	}
 
-	func selectedDataValue(for date: Date) -> Double? {
+	func selectedDataPoint(for date: Date) -> CKEPoint? {
 		guard let component = dataPoints.first?.xUnit else {
 			return nil
 		}
@@ -254,7 +266,16 @@ public struct CKEDataSeries: Identifiable, Hashable {
 
 		let foundDataPoint = dataPoints.first(where: { range.contains($0.x) })
 
-		return foundDataPoint?.y
+		return foundDataPoint
+	}
+
+	func selectedDataValue(for date: Date) -> Double? {
+		guard let foundDataPoint = selectedDataPoint(for: date) else {
+			return nil
+		}
+		let valueAtPoint = foundDataPoint.y
+		let realValue = valueAtPoint > 0 ? valueAtPoint : nil
+		return realValue
 	}
 
     /// Creates a new data series that can be passed to a chart to be plotted. The series will be plotted in a single
@@ -320,6 +341,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		showMarkWhenHighlighted: Bool = false,
 		showMeanMark: Bool = false,
 		showMedianMark: Bool = false,
+		xAxisLabel: String? = nil,
+		yAxisLabel: String? = nil,
         color: Color,
         gradientStartColor: Color? = nil,
         width: MarkDimension = .automatic,
@@ -335,6 +358,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		self.showMarkWhenHighlighted = showMarkWhenHighlighted
 		self.showMeanMark = showMeanMark
 		self.showMedianMark = showMedianMark
+		self.xAxisLabel = xAxisLabel
+		self.yAxisLabel = yAxisLabel
         self.color = color
         self.gradientStartColor = gradientStartColor
         self.stackingMethod = stackingMethod
@@ -355,6 +380,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
 			showMarkWhenHighlighted: configuration.showMarkWhenHighlighted,
 			showMeanMark: configuration.showMeanMark,
 			showMedianMark: configuration.showMedianMark,
+			xAxisLabel: configuration.xAxisLabel,
+			yAxisLabel: configuration.yAxisLabel,
 			color: configuration.color,
 			gradientStartColor: configuration.gradientStartColor,
 			width: configuration.width,
@@ -392,6 +419,8 @@ public struct CKEDataSeries: Identifiable, Hashable {
         accessibilityValues: [String]? = nil,
         title: String,
 		summary: String? = nil,
+		xAxisLabel: String? = nil,
+		yAxisLabel: String? = nil,
         color: Color,
         width: MarkDimension = .automatic,
         height: MarkDimension = .automatic,
@@ -416,19 +445,23 @@ public struct CKEDataSeries: Identifiable, Hashable {
 					x: date,
 					y: value,
 					period: period,
-					originalValues: values
+					originalValues: values,
+					originalOutcomeValues: []
 				)
 			} else {
 				return CKEPoint(
 					x: date,
 					y: value,
 					period: .week,
-					originalValues: values
+					originalValues: values,
+					originalOutcomeValues: []
 				)
 			}
         }
         self.title = title
 		self.summary = summary
+		self.xAxisLabel = xAxisLabel
+		self.yAxisLabel = yAxisLabel
         self.color = color
         self.stackingMethod = stackingMethod
         self.width = width
@@ -488,14 +521,16 @@ public struct CKEDataSeries: Identifiable, Hashable {
 					x: date,
 					y: value,
 					period: period,
-					originalValues: values
+					originalValues: values,
+					originalOutcomeValues: []
 				)
 			} else {
 				return CKEPoint(
 					x: date,
 					y: value,
 					period: .week,
-					originalValues: values
+					originalValues: values,
+					originalOutcomeValues: []
 				)
 			}
 		}

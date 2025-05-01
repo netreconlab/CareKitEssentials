@@ -13,7 +13,6 @@ extension CareKitEssentialChartBodyView {
 
 	@ChartContentBuilder
 	func makeAllAdditionalMarks(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
-		makePointMarksForAllDataPoints(series: series, at: point)
 		makeAdditionalMarksForBarMarks(series: series, at: point)
 	}
 
@@ -27,6 +26,7 @@ extension CareKitEssentialChartBodyView {
 	@ChartContentBuilder
 	func makeSelectedRuleMark(series: CKEDataSeries) -> some ChartContent {
 		if let selectedDate,
+		   selectedDateValue(series: series) != nil,
 		   let dateUnit = series.dataPoints.first?.xUnit {
 			RuleMark(x: .value("SELECTED_DATE", selectedDate, unit: dateUnit))
 				.foregroundStyle(grayColor.opacity(0.2))
@@ -54,7 +54,7 @@ extension CareKitEssentialChartBodyView {
 			RuleMark(y: .value("AVERAGE", mean))
 				.foregroundStyle(grayColor.opacity(0.2))
 				.annotation(
-					position: .top,
+					position: .automatic,
 					alignment: .topLeading
 				) {
 					Text(markerLocalizedString("AVERAGE_VALUE", value: mean))
@@ -70,23 +70,12 @@ extension CareKitEssentialChartBodyView {
 			RuleMark(y: .value("MEDIAN", median))
 				.foregroundStyle(.gray.opacity(0.2))
 				.annotation(
-					position: .top,
+					position: .automatic,
 					alignment: .topLeading
 				) {
 					Text(markerLocalizedString("MEDIAN_VALUE", value: median))
 						.font(.caption)
 				}
-		}
-	}
-
-	@ChartContentBuilder
-	func makePointMarksForAllDataPoints(series: CKEDataSeries, at point: CKEPoint) -> some ChartContent {
-		ForEach(0..<point.originalValues.count, id: \.self) { index in
-			PointMark(
-				x: .value(series.xLabel, point.x, unit: point.xUnit),
-				y: .value(series.yLabel, point.originalValues[index])
-			)
-			.opacity(0.3)
 		}
 	}
 

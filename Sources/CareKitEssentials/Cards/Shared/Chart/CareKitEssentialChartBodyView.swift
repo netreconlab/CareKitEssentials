@@ -14,6 +14,7 @@ struct CareKitEssentialChartBodyView: View {
 
 	@Environment(\.careKitStyle) private var style
 	let dataSeries: [CKEDataSeries]
+	let dateInterval: DateInterval
 	@State var showGridLines: Bool = false
 	@State var isAllowingHorizontalScroll: Bool = false
 	@State var legendColors = [String: LinearGradient]()
@@ -28,6 +29,7 @@ struct CareKitEssentialChartBodyView: View {
 					xValueUnit: point.xUnit,
 					yLabel: data.yLabel,
 					yValue: point.y,
+					point: point,
 					width: data.width,
 					height: data.height,
 					stacking: data.stackingMethod
@@ -90,6 +92,7 @@ struct CareKitEssentialChartBodyView: View {
 				if isAllowingHorizontalScroll {
 					chart
 						.chartScrollableAxes(.horizontal)
+						// .chartXVisibleDomain(length: )
 						.chartXSelection(value: $selectedDate)
 				} else {
 					chart.chartXSelection(value: $selectedDate)
@@ -115,17 +118,41 @@ struct CareKitEssentialChartBodyView: View {
 	@ViewBuilder
 	func selectionPopover(series: CKEDataSeries) -> some View {
 		if series.showMarkWhenHighlighted {
-			if let selected = selectedDateValue(series: series) {
+			if let selectedDate,
+				let selected = selectedDateValue(series: series) {
 				VStack {
+					let point = series.selectedDataPoint(for: selectedDate)
+					let yUnit = point?.yUnit ?? ""
+					if let yAxisLabel = series.yAxisLabel {
+						Text(yAxisLabel.uppercased())
+							.font(.caption)
+					}
+					HStack {
+						Text(selected.1.formatted())
+							.font(.largeTitle)
+						Text(yUnit)
+							.font(.caption)
+					}
 					dateFormatted(date: selected.0, series: series)
-					Text(markerLocalizedString("VALUE_DISPLAY", value: selected.1))
+						.font(.caption)
 				}
-				.font(.caption)
 			} else if let selectedDate {
 				VStack {
+					let point = series.selectedDataPoint(for: selectedDate)
+					let yUnit = point?.yUnit ?? ""
+					if let yAxisLabel = series.yAxisLabel {
+						Text(yAxisLabel.uppercased())
+							.font(.caption)
+					}
+					HStack {
+						Text("0")
+							.font(.largeTitle)
+						Text(yUnit)
+							.font(.caption)
+					}
 					dateFormatted(date: selectedDate, series: series)
+						.font(.caption)
 				}
-				.font(.caption)
 			}
 		}
 	}
@@ -153,6 +180,15 @@ struct CareKitEssentialChartBodyView: View {
 		)
 	}
 
+	func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
+		guard let selectedDate,
+			  let value = series.selectedDataValue(for: selectedDate) else {
+			return nil
+		}
+
+		return (selectedDate, value)
+	}
+
 	// MARK: Private Helpers
 	@ViewBuilder
 	private func dateFormatted(date: Date, series: CKEDataSeries) -> some View {
@@ -161,15 +197,6 @@ struct CareKitEssentialChartBodyView: View {
 		} else {
 			Text(date.formatted(.dateTime.month().day().hour()))
 		}
-	}
-
-	private func selectedDateValue(series: CKEDataSeries) -> (Date, Double)? {
-		guard let selectedDate,
-			  let value = series.selectedDataValue(for: selectedDate) else {
-			return nil
-		}
-
-		return (selectedDate, value)
 	}
 
 	private func updateLegendColors() {

@@ -41,6 +41,9 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
     public var legendTitle: String
 
 	/// The label to use for the yAxis.
+	public var xAxisLabel: String?
+
+	/// The label to use for the yAxis.
 	public var yAxisLabel: String?
 
 	public var showMarkWhenHighlighted: Bool = false
@@ -102,6 +105,7 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 		kind: String? = nil,
         mark: CKEDataSeries.MarkType,
         legendTitle: String,
+		xAxisLabel: String? = nil,
 		yAxisLabel: String? = nil,
 		showMarkWhenHighlighted: Bool = false,
 		showMeanMark: Bool = false,
@@ -145,6 +149,7 @@ extension CKEDataSeriesConfiguration {
 		&& lhs.taskID == rhs.taskID
 		&& lhs.kind == rhs.kind
 		&& lhs.legendTitle == rhs.legendTitle
+		&& lhs.xAxisLabel == rhs.xAxisLabel
 		&& lhs.yAxisLabel == rhs.yAxisLabel
 		&& lhs.showMarkWhenHighlighted == rhs.showMarkWhenHighlighted
 		&& lhs.showMedianMark == rhs.showMedianMark
@@ -160,6 +165,7 @@ extension CKEDataSeriesConfiguration {
 		hasher.combine(taskID)
 		hasher.combine(kind)
 		hasher.combine(legendTitle)
+		hasher.combine(xAxisLabel)
 		hasher.combine(yAxisLabel)
 		hasher.combine(showMarkWhenHighlighted)
 		hasher.combine(showMedianMark)

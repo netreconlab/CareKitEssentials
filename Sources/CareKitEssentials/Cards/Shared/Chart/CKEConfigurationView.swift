@@ -19,7 +19,7 @@ struct CKEConfigurationView: View {
 	@State var isShowingMedianMark: Bool = false
 
     var body: some View {
-		VStack(alignment: .leading) {
+		VStack {
 			Section(
 				header: Text(String(localized: "CHART_TYPE"))
 					.font(.subheadline)
@@ -43,7 +43,6 @@ struct CKEConfigurationView: View {
 				Toggle("SHOW_MEDIAN", isOn: $isShowingMedianMark)
 			}
 		}
-		.listStyle(.automatic)
 		.onChange(of: markSelected) { newValue in
 			configurations[configurationId]?.mark = newValue
 		}
@@ -106,9 +105,17 @@ struct CKEConfigurationView_Previews: PreviewProvider {
 
 	static var previews: some View {
 		@State var configurations: [String: CKEDataSeriesConfiguration] = [:]
-		CKEConfigurationView(
-			configurationId: "",
-			configurations: $configurations
-		)
+		List {
+			CKEConfigurationView(
+				configurationId: "",
+				configurations: $configurations
+			)
+			.padding()
+			CKEConfigurationView(
+				configurationId: "",
+				configurations: $configurations
+			)
+		}
+		.listStyle(.automatic)
 	}
 }

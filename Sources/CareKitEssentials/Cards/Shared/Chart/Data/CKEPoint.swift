@@ -19,5 +19,6 @@ struct CKEPoint: Hashable, Identifiable {
 	var yUnit: String?
 	var period: PeriodComponent
 	var originalValues: [Double]
+	var originalOutcomeValues: [OCKOutcomeValue]
     var accessibilityValue: String?
 }

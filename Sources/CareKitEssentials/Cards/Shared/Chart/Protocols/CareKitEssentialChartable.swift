@@ -125,6 +125,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					originalValues: combinedProgressValues,
+					originalOutcomeValues: progress.originalOutcomeValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -136,6 +137,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					originalValues: combinedProgressValues,
+					originalOutcomeValues: progress.originalOutcomeValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -147,6 +149,7 @@ extension CareKitEssentialChartable {
 				let combined = CombinedProgress(
 					value: combinedProgressValue,
 					originalValues: combinedProgressValues,
+					originalOutcomeValues: progress.originalOutcomeValues,
 					unit: combinedProgressUnit,
 					date: progress.date,
 					period: progress.period
@@ -163,6 +166,7 @@ extension CareKitEssentialChartable {
 				yUnit: $0.unit,
 				period: $0.period,
 				originalValues: $0.originalValues,
+				originalOutcomeValues: $0.originalOutcomeValues,
 				accessibilityValue: "\(configuration.legendTitle), \($0.date), \($0.value)"
 			)
 		}
@@ -252,26 +256,25 @@ extension CareKitEssentialChartable {
 			}
 		)
 
-		// Iterate through the events on each component and update the stored progress values
+		// Iterate through the events on each component and calculate progress values.
 		let progressPerPeriodComponent = periodComponentsInInterval.map { periodComponent -> TemporalProgress<Progress> in
 
 			let events = eventsGroupedByPeriodComponent[periodComponent.componentsForProgress] ?? []
 
-			let progressForEvents = events.map { event in
+			let progressForEvents = events.map { event -> Progress in
 				computeProgress(event)
 			}
 
-			let valueUnits = events.reduce(into: [String]()) { units, event in
-				guard let currentUnits = event.outcome?.values.compactMap(\.units) else {
-					return
-				}
-				units.append(contentsOf: currentUnits)
+			let values = events.compactMap { $0.outcome?.values }.flatMap { $0 }
+			let valueUnits = values.compactMap( \.units ).reduce(into: [String]()) { units, unit in
+				units.append(unit)
 			}
 			let dateOfPeriodComponent = calendar.date(from: periodComponent.componentsForProgressWithDay)!
 
 			let temporalProgress = TemporalProgress(
 				values: progressForEvents,
 				units: valueUnits,
+				originalOutcomeValues: values,
 				date: dateOfPeriodComponent,
 				period: period
 			)

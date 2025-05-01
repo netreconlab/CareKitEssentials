@@ -6,6 +6,7 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+import CareKitUI
 import Foundation
 import os.log
 import SwiftUI
@@ -142,39 +143,42 @@ struct CareEssentialChartView_Previews: PreviewProvider {
 			return interval
 		}
 
-		ScrollView {
-			VStack {
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Day",
-					dateInterval: dayDateInterval,
-					period: .day,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Week",
-					dateInterval: weekDateInterval,
-					period: .weekday,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Month",
-					dateInterval: monthDateInterval,
-					period: .month,
-					configurations: [configurationBar]
-				)
-				CareEssentialChartView(
-					title: task.title ?? "",
-					subtitle: "Year",
-					dateInterval: yearDateInterval,
-					period: .year,
-					configurations: [configurationBar]
-				)
+		NavigationStack {
+			ScrollView {
+				VStack {
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Day",
+						dateInterval: dayDateInterval,
+						period: .day,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Week",
+						dateInterval: weekDateInterval,
+						period: .weekday,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Month",
+						dateInterval: monthDateInterval,
+						period: .month,
+						configurations: [configurationBar]
+					)
+					CareEssentialChartView(
+						title: task.title ?? "",
+						subtitle: "Year",
+						dateInterval: yearDateInterval,
+						period: .year,
+						configurations: [configurationBar]
+					)
+				}
+				.padding()
 			}
-			.padding()
 		}
 		.environment(\.careStore, previewStore)
+		.environment(\.careKitStyle, OCKStyle())
 	}
 }

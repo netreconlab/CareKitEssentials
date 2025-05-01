@@ -25,109 +25,107 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	@State var period: PeriodComponent
 	@State var configurations: [String: CKEDataSeriesConfiguration]
 	let orderedConfigurations: [CKEDataSeriesConfiguration]
-	@State var isShowingLargeChart: Bool = false
 
 	var body: some View {
-		VStack {
-
-			let dataSeries = graphDataForEvents(events)
-			CareKitEssentialChartBodyView(
-				dataSeries: dataSeries,
-				showGridLines: true
-			)
-			#if !os(watchOS) && !os(visionOS)
-			.aspectRatio(
-				CGSize(width: 4, height: 3),
-				contentMode: .fit
-			)
+		ViewThatFits {
+			#if !os(watchOS)
+			splitView
 			#endif
-			.onAppear {
-				updateQuery()
-			}
-			.onChange(of: dateInterval) { _ in
-				updateQuery()
-			}
-			.onChange(of: configurations) { _ in
-				updateQuery()
-			}
-			.onReceive(events.publisher) { _ in
-				updateQuery()
-			}
-			.onTapGesture {
-				isShowingLargeChart.toggle()
-			}
-
-			Divider()
-				.padding()
-
-			ScrollView {
-				VStack(alignment: .leading) {
-					Section(
-						header: Text("PERIOD")
-					) {
-						periodPickerView
-					}
-					Section(
-						header: Text("DATE_RANGE")
-					) {
-						startDatePickerView
-						endDatePickerView
-					}
-
-				}
-
-				VStack(alignment: .center) {
-					Divider()
-
-					ForEach(orderedConfigurations) { configuration in
-						let configurationId = configuration.id
-						let currentConfiguration = configurations[configurationId] ?? configuration
-
-						Section(
-							header: Text(currentConfiguration.legendTitle)
-						) {
-							CKEConfigurationView(
-								configurationId: configurationId,
-								configurations: $configurations,
-								markSelected: currentConfiguration.mark,
-								dataStrategySelected: currentConfiguration.dataStrategy,
-								isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
-								isShowingMeanMark: currentConfiguration.showMeanMark,
-								isShowingMedianMark: currentConfiguration.showMedianMark
-							)
-						}
-						Divider()
-							.padding()
-					}
-				}
-			}
+			verticalView
 		}
-		.sheet(isPresented: $isShowingLargeChart) {
-			DismissableView(
-				title: title
-			) {
-				VStack {
-					let dataSeries = graphDataForEvents(events)
-					CareKitEssentialChartBodyView(
-						dataSeries: dataSeries,
-						showGridLines: true
-					)
-					#if !os(watchOS)
-					.aspectRatio(
-						CGSize(width: 16, height: 9),
-						contentMode: .fit
-					)
-					#endif
-					.padding()
-				}
+		.toolbar {
+			#if !os(watchOS)
+			ToolbarItem(placement: .automatic) {
+				fullScreenView
 			}
+			#else
+			ToolbarItem(placement: .topBarTrailing) {
+				fullScreenView
+			}
+			#endif
 		}
+
 	}
 
 	static func query(taskIDs: [String]? = nil) -> OCKEventQuery {
 		eventQuery(
 			with: taskIDs ?? [],
 			on: Date()
+		)
+	}
+
+	var splitView: some View {
+		NavigationSplitView(
+			sidebar: {
+				configurationView
+			}
+		) {
+			chartView
+				.onAppear {
+					updateQuery()
+				}
+				.onChange(of: dateInterval) { _ in
+					updateQuery()
+				}
+				.onChange(of: configurations) { _ in
+					updateQuery()
+				}
+				.onReceive(events.publisher) { _ in
+					updateQuery()
+				}
+		}
+	}
+
+	var verticalView: some View {
+		VStack {
+			chartView
+			configurationView
+		}
+	}
+
+	var configurationView: some View {
+		List {
+			Section(
+				header: Text("PERIOD")
+			) {
+				periodPickerView
+			}
+			Section(
+				header: Text("DATE_RANGE")
+			) {
+				startDatePickerView
+				endDatePickerView
+			}
+			ForEach(orderedConfigurations) { configuration in
+				let configurationId = configuration.id
+				let currentConfiguration = configurations[configurationId] ?? configuration
+
+				Section(
+					header: Text(currentConfiguration.legendTitle)
+				) {
+					CKEConfigurationView(
+						configurationId: configurationId,
+						configurations: $configurations,
+						markSelected: currentConfiguration.mark,
+						dataStrategySelected: currentConfiguration.dataStrategy,
+						isShowingMarkHighlighted: currentConfiguration.showMarkWhenHighlighted,
+						isShowingMeanMark: currentConfiguration.showMeanMark,
+						isShowingMedianMark: currentConfiguration.showMedianMark
+					)
+				}
+
+			}
+		}
+		.listStyle(.automatic)
+	}
+
+	var chartView: some View {
+		let dataSeries = graphDataForEvents(events)
+
+		return CareKitEssentialChartBodyView(
+			dataSeries: dataSeries,
+			dateInterval: dateInterval,
+			showGridLines: true
 		)
 	}
 
@@ -170,6 +168,28 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 		#endif
 	}
 
+	var fullScreenView: some View {
+		NavigationLink(
+			destination: {
+				let dataSeries = graphDataForEvents(events)
+				CareKitEssentialChartBodyView(
+					dataSeries: dataSeries,
+					dateInterval: dateInterval,
+					showGridLines: true
+				)
+				#if !os(watchOS)
+				.aspectRatio(
+					CGSize(width: 16, height: 9),
+					contentMode: .fit
+				)
+				#endif
+				.padding()
+			}
+		) {
+			Image(systemName: "inset.filled.rectangle.and.person.filled")
+		}
+	}
+
 	private func updateQuery() {
 		let currentTaskIDs = Set(events.query.taskIDs)
 		let updatedTaskIDs = Set(configurations.values.map(\.taskID))
@@ -209,22 +229,20 @@ struct CareKitEssentialChartDetailView_Previews: PreviewProvider {
 		}
 
 		NavigationStack {
-			VStack {
-				CareKitEssentialChartDetailView(
-					title: task.title ?? "",
-					subtitle: "Week",
-					dateInterval: weekDateInterval,
-					period: .week,
-					configurations: [
-						configurationBar.id: configurationBar,
-						configurationLine.id: configurationLine
-					],
-					orderedConfigurations: [
-						configurationBar,
-						configurationLine
-					]
-				)
-			}
+			CareKitEssentialChartDetailView(
+				title: task.title ?? "",
+				subtitle: "Week",
+				dateInterval: weekDateInterval,
+				period: .week,
+				configurations: [
+					configurationBar.id: configurationBar,
+					configurationLine.id: configurationLine
+				],
+				orderedConfigurations: [
+					configurationBar,
+					configurationLine
+				]
+			)
 			.padding()
 		}
 		.environment(\.careStore, previewStore)

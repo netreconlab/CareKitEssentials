@@ -32,10 +32,10 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	@Environment(\.isCardEnabled) private var isCardEnabled
 	@Environment(\.careKitStyle) private var style
 	@CareStoreFetchRequest(query: query()) private var events
-	@State var isShowingDetail: Bool = false
 
 	let title: String
 	let subtitle: String
+	let showDetailsViewOnTap: Bool
 	@Binding var dateInterval: DateInterval
 	@Binding var period: PeriodComponent
 	var configurations: [String: CKEDataSeriesConfiguration]
@@ -50,29 +50,40 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 						subtitle: subtitle
 					)
 					Spacer()
-					Image(systemName: "chevron.right")
-						.imageScale(.small)
-					#if os(iOS) || os(visionOS)
-						.foregroundColor(Color(style.color.secondaryLabel))
-					#else
-						.foregroundColor(Color.secondary)
-					#endif
+					if showDetailsViewOnTap {
+						NavigationLink(
+							destination: {
+								CareKitEssentialChartDetailView(
+									title: title,
+									subtitle: subtitle,
+									dateInterval: dateInterval,
+									period: period,
+									configurations: configurations,
+									orderedConfigurations: orderedConfigurations
+								)
+								.padding()
+							}
+						) {
+							Image(systemName: "chevron.right")
+								.imageScale(.small)
+#if os(iOS) || os(visionOS)
+								.foregroundColor(Color(style.color.secondaryLabel))
+#else
+								.foregroundColor(Color.secondary)
+#endif
+						}
+						#if os(watchOS)
+						.buttonStyle(.borderless)
+						#endif
+					}
 				}
 				.padding(.bottom)
-				.onTapGesture {
-					isShowingDetail.toggle()
-				}
 
 				let dataSeries = graphDataForEvents(events)
 				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries
+					dataSeries: dataSeries,
+					dateInterval: dateInterval
 				)
-				#if !os(watchOS) && !os(visionOS)
-				.aspectRatio(
-					CGSize(width: 4, height: 3),
-					contentMode: .fit
-				)
-				#endif
 				.onAppear {
 					updateQuery()
 				}
@@ -84,21 +95,6 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				}
 			}
 			.padding(isCardEnabled ? [.all] : [])
-		}
-		.sheet(isPresented: $isShowingDetail) {
-			DismissableView(
-				title: title
-			) {
-				CareKitEssentialChartDetailView(
-					title: title,
-					subtitle: subtitle,
-					dateInterval: dateInterval,
-					period: period,
-					configurations: configurations,
-					orderedConfigurations: orderedConfigurations
-				)
-				.padding()
-			}
 		}
 	}
 
@@ -112,6 +108,9 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	/// Create an instance of chart for displaying CareKit data.
 	/// - title: The title for the chart.
 	/// - subtitle: The subtitle for the chart.
+	/// - showDetailsViewOnTap: Allow showing the details
+	/// view when the header is tapped. Set to `false` to
+	/// disable the details view. This defaults to `true`.
 	/// - dateInterval: The date interval of data to display
 	/// - period: The frequency at which data should be combined.
 	/// - configurations: A configuration object that specifies
@@ -120,12 +119,14 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 	public init(
 		title: String,
 		subtitle: String,
+		showDetailsViewOnTap: Bool = true,
 		dateInterval: Binding<DateInterval>,
 		period: Binding<PeriodComponent>,
 		configurations: [CKEDataSeriesConfiguration]
 	) {
 		self.title = title
 		self.subtitle = subtitle
+		self.showDetailsViewOnTap = showDetailsViewOnTap
 		self.orderedConfigurations = configurations
 		self.configurations = configurations.reduce(
 			into: [String: CKEDataSeriesConfiguration]()
@@ -168,6 +169,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 				taskID: task.id,
 				mark: .bar,
 				legendTitle: "Bar",
+				yAxisLabel: "Total",
 				showMarkWhenHighlighted: true,
 				showMeanMark: true,
 				color: .red,
@@ -175,14 +177,17 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 			)
 		]
 
-		ScrollView {
-			CareKitEssentialChartView(
-				title: task.title ?? "",
-				subtitle: "Chart",
-				dateInterval: $dateInterval,
-				period: $period,
-				configurations: configurations
-			)
+		NavigationStack {
+			ScrollView {
+				CareKitEssentialChartView(
+					title: task.title ?? "",
+					subtitle: "Chart",
+					dateInterval: $dateInterval,
+					period: $period,
+					configurations: configurations
+				)
+				.padding()
+			}
 		}
 		.padding()
 		.environment(\.careStore, previewStore)
