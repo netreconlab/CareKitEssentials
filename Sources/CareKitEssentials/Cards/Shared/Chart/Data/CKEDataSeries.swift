@@ -103,38 +103,38 @@ public struct CKEDataSeries: Identifiable, Hashable {
             height: MarkDimension,
             stacking: MarkStackingMethod
         ) -> some ChartContent where ValueY: Plottable {
-            switch self {
-            case .area:
-                AreaMark(
+			switch self {
+			case .area:
+				AreaMark(
 					x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    stacking: stacking
-                )
-            case .bar:
-                BarMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    width: width,
-                    height: height,
-                    stacking: stacking
-                )
-            case .line:
-                LineMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue)
-                )
-            case .point:
-                PointMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue)
+					y: .value(yLabel, yValue),
+					stacking: stacking
 				)
-            case .rectangle:
-                RectangleMark(
-                    x: .value(xLabel, xValue, unit: xValueUnit),
-                    y: .value(yLabel, yValue),
-                    width: width,
-                    height: height
-                )
+			case .bar:
+				BarMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue),
+					width: width,
+					height: height,
+					stacking: stacking
+				)
+			case .line:
+				LineMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue)
+				)
+			case .point:
+				PointMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue)
+				)
+			case .rectangle:
+				RectangleMark(
+					x: .value(xLabel, xValue, unit: xValueUnit),
+					y: .value(yLabel, yValue),
+					width: width,
+					height: height
+				)
 			case .scatter:
 				ForEach(0..<point.originalValues.count, id: \.self) { index in
 					PointMark(
@@ -143,7 +143,7 @@ public struct CKEDataSeries: Identifiable, Hashable {
 					)
 					.opacity(0.3)
 				}
-            }
+			}
         }
     }
 
