@@ -29,41 +29,24 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 	var body: some View {
 		VStack {
 			let dataSeries = graphDataForEvents(events)
-			NavigationLink(
-				destination: {
-					let dataSeries = graphDataForEvents(events)
-					CareKitEssentialChartBodyView(
-						dataSeries: dataSeries,
-						dateInterval: dateInterval,
-						showGridLines: true
-					)
-					#if !os(watchOS)
-					.aspectRatio(
-						CGSize(width: 16, height: 9),
-						contentMode: .fit
-					)
-					#endif
-					.padding()
-				}
-			) {
-				CareKitEssentialChartBodyView(
-					dataSeries: dataSeries,
-					dateInterval: dateInterval,
-					showGridLines: true
-				)
-				.onAppear {
-					updateQuery()
-				}
-				.onChange(of: dateInterval) { _ in
-					updateQuery()
-				}
-				.onChange(of: configurations) { _ in
-					updateQuery()
-				}
-				.onReceive(events.publisher) { _ in
-					updateQuery()
-				}
+			CareKitEssentialChartBodyView(
+				dataSeries: dataSeries,
+				dateInterval: dateInterval,
+				showGridLines: true
+			)
+			.onAppear {
+				updateQuery()
 			}
+			.onChange(of: dateInterval) { _ in
+				updateQuery()
+			}
+			.onChange(of: configurations) { _ in
+				updateQuery()
+			}
+			.onReceive(events.publisher) { _ in
+				updateQuery()
+			}
+
 			#if os(watchOS) || os(visionOS)
 			.buttonStyle(PlainButtonStyle())
 			#endif
@@ -106,6 +89,17 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				}
 			}
 			.listStyle(.automatic)
+		}
+		.toolbar {
+			#if !os(watchOS)
+			ToolbarItem(placement: .automatic) {
+				fullScreenView
+			}
+			#else
+			ToolbarItem(placement: .topBarTrailing) {
+				fullScreenView
+			}
+			#endif
 		}
 	}
 
@@ -153,6 +147,28 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 		#else
 		.pickerStyle(.automatic)
 		#endif
+	}
+
+	var fullScreenView: some View {
+		NavigationLink(
+			destination: {
+				let dataSeries = graphDataForEvents(events)
+				CareKitEssentialChartBodyView(
+					dataSeries: dataSeries,
+					dateInterval: dateInterval,
+					showGridLines: true
+				)
+				#if !os(watchOS)
+				.aspectRatio(
+					CGSize(width: 16, height: 9),
+					contentMode: .fit
+				)
+				#endif
+				.padding()
+			}
+		) {
+			Image(systemName: "inset.filled.rectangle.and.person.filled")
+		}
 	}
 
 	private func updateQuery() {
