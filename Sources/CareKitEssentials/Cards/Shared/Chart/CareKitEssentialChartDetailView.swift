@@ -34,6 +34,7 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				dateInterval: dateInterval,
 				showGridLines: true
 			)
+			.padding(.horizontal)
 			.onAppear {
 				updateQuery()
 			}
