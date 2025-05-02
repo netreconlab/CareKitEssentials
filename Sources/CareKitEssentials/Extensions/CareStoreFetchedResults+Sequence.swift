@@ -10,6 +10,29 @@ import CareKit
 import CareKitStore
 import Foundation
 
+public extension CareStoreFetchedResults where Result == CareKitEssentialVersionable {
+
+	/// Returns the earliest results from the fetched elements.
+	/// All elements are guaranteed to be unique by their respective `id`.
+	var earliest: [CareStoreFetchedResult<Result>] {
+		let resultDictionary = Dictionary(grouping: self, by: \.result.id)
+		let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+			results.first
+		}
+		return compactResults
+	}
+
+	/// Returns the latest results from the fetched elements.
+	/// All elements are guaranteed to be unique by their respective `id`.
+	var latest: [CareStoreFetchedResult<Result>] {
+		let resultDictionary = Dictionary(grouping: self, by: \.result.id)
+		let compactResults = resultDictionary.compactMap { _, results -> CareStoreFetchedResult<Result>? in
+			results.last
+		}
+		return compactResults
+	}
+}
+
 public extension CareStoreFetchedResults where Result == OCKAnyPatient {
 
     /// Returns the earliest results from the fetched elements.
