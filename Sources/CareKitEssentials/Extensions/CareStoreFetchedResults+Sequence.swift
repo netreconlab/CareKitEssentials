@@ -10,7 +10,7 @@ import CareKit
 import CareKitStore
 import Foundation
 
-public extension CareStoreFetchedResults where Result == CareKitEssentialVersionable {
+public extension CareStoreFetchedResults where Result == any CareKitEssentialVersionable {
 
 	/// Returns the earliest results from the fetched elements.
 	/// All elements are guaranteed to be unique by their respective `id`.

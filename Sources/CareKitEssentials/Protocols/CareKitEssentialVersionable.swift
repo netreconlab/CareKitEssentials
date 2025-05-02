@@ -16,7 +16,7 @@ extension OCKHealthKitTask: CareKitEssentialVersionable {}
 extension OCKTask: CareKitEssentialVersionable {}
 extension OCKOutcome: CareKitEssentialVersionable {}
 
-public protocol CareKitEssentialVersionable: Hashable, Identifiable, Sendable {
+public protocol CareKitEssentialVersionable: Hashable, Identifiable {
 	var id: String { get set }
 	var uuid: UUID { get }
 	var previousVersionUUIDs: [UUID] { get }
