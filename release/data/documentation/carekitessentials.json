@@ -46,6 +46,7 @@
       "anchor" : "Protocols",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialVersionable",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialView"
       ],
       "title" : "Protocols"
@@ -370,6 +371,37 @@
   "title" : "CareKitEssentialChartView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialchartview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialVersionable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialVersionable"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialVersionable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialVersionable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CareKitEssentialVersionable",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/carekitessentialversionable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView": {
   "abstract" : [

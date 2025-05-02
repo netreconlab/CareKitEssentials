@@ -97,6 +97,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/6Charts9PlottableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
@@ -174,7 +175,8 @@
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Equatable-Implementations",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Hashable-Implementations",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Identifiable-Implementations"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Identifiable-Implementations",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Plottable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -193,6 +195,11 @@
   ]
 , 
 "references": {
+"doc://edu.usc.netreconlab.CareKitEssentials/6Charts9PlottableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/6Charts9PlottableP",
+  "title" : "Charts.Plottable",
+  "type" : "unresolvable"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/SE": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
   "title" : "Swift.Encodable",
@@ -370,6 +377,17 @@
   "title" : "Identifiable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/identifiable-implementations"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/Plottable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKOutcomeValue\/Plottable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Plottable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitstore\/ockoutcomevalue\/plottable-implementations"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKOutcomeValue/booleanValue": {
   "abstract" : [

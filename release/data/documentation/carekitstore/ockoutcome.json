@@ -105,13 +105,15 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialVersionable",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitStore\/OCKAnyOutcome",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -215,6 +217,37 @@
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Se",
   "title" : "Swift.Decodable",
   "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialVersionable": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialVersionable"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialVersionable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialVersionable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CareKitEssentialVersionable",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/carekitessentialversionable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore": {
   "abstract" : [
@@ -1413,6 +1446,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
   "title" : "Swift.Copyable",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }
