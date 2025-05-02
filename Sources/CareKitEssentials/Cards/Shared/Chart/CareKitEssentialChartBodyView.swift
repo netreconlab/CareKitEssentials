@@ -24,12 +24,9 @@ struct CareKitEssentialChartBodyView: View {
 		Chart(dataSeries) { data in
 			ForEach(data.dataPoints) { point in
 				data.mark.chartContent(
-					xLabel: data.xLabel,
-					xValue: point.x,
-					xValueUnit: point.xUnit,
-					yLabel: data.yLabel,
-					yValue: point.y,
 					point: point,
+					xLabel: data.xLabel,
+					yLabel: data.yLabel,
 					width: data.width,
 					height: data.height,
 					stacking: data.stackingMethod

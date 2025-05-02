@@ -92,46 +92,43 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		case scatter
 
         @ChartContentBuilder
-        func chartContent<ValueY>( // swiftlint:disable:this function_parameter_count
-            xLabel: String,
-            xValue: Date,
-			xValueUnit: Calendar.Component,
-            yLabel: String,
-            yValue: ValueY,
+        func chartContent( // swiftlint:disable:this function_parameter_count
 			point: CKEPoint,
+            xLabel: String,
+            yLabel: String,
             width: MarkDimension,
             height: MarkDimension,
             stacking: MarkStackingMethod
-        ) -> some ChartContent where ValueY: Plottable {
+        ) -> some ChartContent {
 			switch self {
 			case .area:
 				AreaMark(
-					x: .value(xLabel, xValue, unit: xValueUnit),
-					y: .value(yLabel, yValue),
+					x: .value(xLabel, point.x, unit: point.xUnit),
+					y: .value(yLabel, point.y),
 					stacking: stacking
 				)
 			case .bar:
 				BarMark(
-					x: .value(xLabel, xValue, unit: xValueUnit),
-					y: .value(yLabel, yValue),
+					x: .value(xLabel, point.x, unit: point.xUnit),
+					y: .value(yLabel, point.y),
 					width: width,
 					height: height,
 					stacking: stacking
 				)
 			case .line:
 				LineMark(
-					x: .value(xLabel, xValue, unit: xValueUnit),
-					y: .value(yLabel, yValue)
+					x: .value(xLabel, point.x, unit: point.xUnit),
+					y: .value(yLabel, point.y)
 				)
 			case .point:
 				PointMark(
-					x: .value(xLabel, xValue, unit: xValueUnit),
-					y: .value(yLabel, yValue)
+					x: .value(xLabel, point.x, unit: point.xUnit),
+					y: .value(yLabel, point.y)
 				)
 			case .rectangle:
 				RectangleMark(
-					x: .value(xLabel, xValue, unit: xValueUnit),
-					y: .value(yLabel, yValue),
+					x: .value(xLabel, point.x, unit: point.xUnit),
+					y: .value(yLabel, point.y),
 					width: width,
 					height: height
 				)
