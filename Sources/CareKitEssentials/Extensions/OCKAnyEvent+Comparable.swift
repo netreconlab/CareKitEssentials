@@ -8,6 +8,16 @@
 
 import CareKitStore
 
+extension OCKEvent: Comparable where Task: CareKitEssentialVersionable, Outcome: CareKitEssentialVersionable {
+
+	public static func < (lhs: OCKEvent, rhs: OCKEvent) -> Bool {
+		lhs.scheduleEvent.start <= rhs.scheduleEvent.start &&
+		lhs.scheduleEvent.end < rhs.scheduleEvent.end
+	}
+
+}
+
+/*
 extension OCKAnyEvent: Comparable {
 
     public static func < (lhs: OCKAnyEvent, rhs: OCKAnyEvent) -> Bool {
@@ -16,3 +26,4 @@ extension OCKAnyEvent: Comparable {
     }
 
 }
+*/

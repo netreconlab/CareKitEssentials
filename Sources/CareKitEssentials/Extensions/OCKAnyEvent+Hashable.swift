@@ -9,6 +9,16 @@
 import CareKitStore
 import Foundation
 
+extension OCKEvent: Hashable where Task: CareKitEssentialVersionable, Outcome: CareKitEssentialVersionable {
+	public func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+		hasher.combine(task)
+		hasher.combine(outcome)
+		hasher.combine(scheduleEvent)
+	}
+}
+
+/*
 extension OCKAnyEvent: Hashable {
     public func hash(into hasher: inout Hasher) {
         hasher.combine(id)
@@ -43,3 +53,4 @@ extension OCKAnyEvent: Hashable {
         }
     }
 }
+*/

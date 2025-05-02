@@ -8,6 +8,7 @@
 
 import CareKitStore
 
+/*
 extension OCKAnyEvent: Equatable {
     public static func == (
         lhs: OCKAnyEvent,
@@ -86,3 +87,4 @@ extension OCKAnyEvent: Equatable {
         return lhsOutcome == rhsOutcome
     }
 }
+*/
