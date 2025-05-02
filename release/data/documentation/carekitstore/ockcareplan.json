@@ -120,8 +120,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SE",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SQ",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s12IdentifiableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -1396,11 +1395,6 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s8CopyableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8CopyableP",
   "title" : "Swift.Copyable",
-  "type" : "unresolvable"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
-  "title" : "Swift.Sendable",
   "type" : "unresolvable"
 }
 }
