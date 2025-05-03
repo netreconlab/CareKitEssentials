@@ -177,12 +177,6 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 					dateInterval: dateInterval,
 					showGridLines: true
 				)
-				#if !os(watchOS)
-				.aspectRatio(
-					CGSize(width: 16, height: 9),
-					contentMode: .fit
-				)
-				#endif
 				.padding()
 			}
 		) {
