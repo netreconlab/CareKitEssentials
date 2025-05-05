@@ -16,19 +16,19 @@ Provides essential cards, views, models, protocols, and extensions to expedite b
 A number of public extensions are available to make using CareKit easier. All of the extensions can be found in the [Extensions](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Extensions) and [Cards/Shared/Extensions](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Cards/Shared/Extensions) folders.
 
 ## Usage
-You can create SwiftUI views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The framework adds a number of additional cards that can be found in the [Cards](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Cards) folder. The following add views/cards are based on `CareKitEssentialView`:
+You can create `SwiftUI` views that conform to [CareKitEssentialView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/CareKitEssentialView.swift) to obtain a number of convenience methods for saving and deleting outcomes. The framework adds a number of additional cards that can be found in the [Cards](https://github.com/netreconlab/CareKitEssentials/tree/main/Sources/CareKitEssentials/Cards) folder. The following add views/cards are based on `CareKitEssentialView`:
 
 ### watchOS
-[DigitalCrownView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/watchOS/DigitalCrown/DigitalCrownView.swift) can be used to quickly create a view that responds to the crown
+[DigitalCrownLogView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/watchOS/DigitalCrown/CareKitEssentialDigitalCrownLogView.swift) can be used to quickly create a view that responds to the crown
 
 <img width="332" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/02023682-75f4-4dff-a575-fa3ffd213cc3">
 
 ### Shared
-[SliderLogTaskView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/iOS/SliderLog/SliderLogTaskView.swift) can be used to quickly create a slider view
+[SliderLogView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/SliderLog/CareKitEssentialSliderLogView.swift) can be used to quickly create a slider view
 
 <img width="342" alt="image" src="https://github.com/netreconlab/CareKitEssentials/assets/8621344/3efb4226-50e2-41e1-beef-91bc84cc7d63">
 
-[CareKitEssentialChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareKitEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts. See https://github.com/netreconlab/CareKitEssentials/pull/48 for more details.
+[ChartView](https://github.com/netreconlab/CareKitEssentials/blob/main/Sources/CareKitEssentials/Cards/Shared/Chart/CareKitEssentialChartView.swift) to create charts from CareKit data based on SwiftUI Charts. See https://github.com/netreconlab/CareKitEssentials/pull/48 for more details.
 
 <img width="342" alt="image" src="https://github.com/user-attachments/assets/5aca133c-21f7-4a7d-b99d-36e7edab4c9c"><img width="342" alt="image" src="https://github.com/user-attachments/assets/4a4f4e52-91dc-4cba-8215-d01433d190c1">
 
