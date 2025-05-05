@@ -15,6 +15,38 @@ import CareKitUI
 import Foundation
 import SwiftUI
 
+/// A card that displays a header view, multi-line label, a digital crown modifier, and a
+/// completion button.
+///
+/// In CareKit, this view is intended to display a particular event for a task.
+/// The state of the button indicates the completion state of the event.
+///
+/// # Style
+/// The card supports styling using `careKitStyle(_:)`.
+///
+/// ```
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     |  <Image> <Title>                       <Info Image>   |
+///     |  <Information>                                        |
+///     |                                                       |
+///     |  --------------------------------------------------   |
+///     |                                                       |
+///     |  <Instructions>                                       |
+///     |                                                       |
+///     |  <Min Image> –––––––––––––O–––––––––––– <Max Image>   |
+///     |             <Min Desc>        <Max Desc>              |
+///     |                                                       |
+///     |  +-------------------------------------------------+  |
+///     |  |                      <Log>                      |  |
+///     |  +-------------------------------------------------+  |
+///     |                                                       |
+///     |                   <Latest Value: >                    |
+///     |                                                       |
+///     +-------------------------------------------------------+
+/// ```
+/// - Note: You should use `DigitalCrownLogView` to take advantage of a working
+/// implementation of this view.
 public struct DigitalCrownView<Header: View, Footer: View>: View {
 
     // MARK: - Properties

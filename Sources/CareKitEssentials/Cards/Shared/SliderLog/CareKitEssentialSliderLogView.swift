@@ -14,22 +14,53 @@ import CareKitUI
 import os.log
 import SwiftUI
 
-struct CareKitEssentialSliderLogView: CareKitEssentialView {
-	@Environment(\.careStore) var store
+public typealias SliderLogView = CareKitEssentialSliderLogView
 
-	let event: OCKAnyEvent
-	var sliderStyle: SliderStyle
-	var range: ClosedRange<Double>
-	var kind: String?
-	var initialValue: Double?
-	var step: Double
-	var minimumImage: Image?
-	var maximumImage: Image?
-	var minimumDescription: String?
-	var maximumDescription: String?
-	var gradientColors: [Color]?
+/// A card that displays a header view, multi-line label, a slider, and a completion button.
+///
+/// In CareKit, this view is intended to display a particular event for a task.
+/// The state of the button indicates the completion state of the event.
+///
+/// # Style
+/// The card supports styling using `careKitStyle(_:)`.
+///
+/// ```
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     |  <Image> <Title>                       <Info Image>   |
+///     |  <Information>                                        |
+///     |                                                       |
+///     |  --------------------------------------------------   |
+///     |                                                       |
+///     |  <Instructions>                                       |
+///     |                                                       |
+///     |  <Min Image> –––––––––––––O–––––––––––– <Max Image>   |
+///     |             <Min Desc>        <Max Desc>              |
+///     |                                                       |
+///     |  +-------------------------------------------------+  |
+///     |  |                      <Log>                      |  |
+///     |  +-------------------------------------------------+  |
+///     |                                                       |
+///     |                   <Latest Value: >                    |
+///     |                                                       |
+///     +-------------------------------------------------------+
+/// ```
+public struct CareKitEssentialSliderLogView: CareKitEssentialView {
+	@Environment(\.careStore) public var store
 
-	var body: some View {
+	private(set) var event: OCKAnyEvent
+	@State public var sliderStyle: SliderStyle
+	@State public var range: ClosedRange<Double>
+	@State public var kind: String?
+	@State public var initialValue: Double?
+	@State public var step: Double
+	@State public var minimumImage: Image?
+	@State public var maximumImage: Image?
+	@State public var minimumDescription: String?
+	@State public var maximumDescription: String?
+	@State public var gradientColors: [Color]?
+
+	public var body: some View {
 		SliderLogTaskView(
 			title: Text(event.title),
 			detail: event.detailText,
@@ -88,7 +119,7 @@ struct CareKitEssentialSliderLogView: CareKitEssentialView {
 	 drawn. Defaults to nil. An example usage would set an array of red and green to
 	 visually indicate a scale from bad to good.
 	 */
-	init(
+	public init(
 		event: OCKAnyEvent,
 		kind: String? = nil,
 		range: ClosedRange<Double> = 0...10,
@@ -124,20 +155,23 @@ struct CareKitEssentialSliderLogView_Previews: PreviewProvider {
 	}
 
 	static var previews: some View {
-		VStack {
-			if let event = try? Utility.createNauseaEvent() {
-				CareKitEssentialSliderLogView(
-					event: event,
-					style: .ticked,
-					gradientColors: [.green, .yellow, .red]
-				)
-				Divider()
-				CareKitEssentialSliderLogView(
-					event: event,
-					style: .system,
-					gradientColors: [.green, .yellow, .red]
-				)
+		ScrollView {
+			VStack {
+				if let event = try? Utility.createNauseaEvent() {
+					CareKitEssentialSliderLogView(
+						event: event,
+						style: .ticked,
+						gradientColors: [.green, .yellow, .red]
+					)
+					Divider()
+					CareKitEssentialSliderLogView(
+						event: event,
+						style: .system,
+						gradientColors: [.green, .yellow, .red]
+					)
+				}
 			}
+			.padding()
 		}
 		.environment(\.careStore, store)
 		.accentColor(.pink)

@@ -14,19 +14,52 @@ import CareKitUI
 import os.log
 import SwiftUI
 
-struct CareKitEssentialDigitalCrownView: CareKitEssentialView {
-	@Environment(\.careStore) var store
+public typealias DigitalCrownLogView = CareKitEssentialDigitalCrownView
 
-	let event: OCKAnyEvent
-	var kind: String?
-	var initialValue: Double?
-	var startValue: Double
-	var endValue: Double?
-	var step: Double
-	var emojis: [String]
-	var colorRatio: Double
 
-	var body: some View {
+/// A card that displays a header view, multi-line label, a digital crown modifier, and a
+/// completion button.
+///
+/// In CareKit, this view is intended to display a particular event for a task.
+/// The state of the button indicates the completion state of the event.
+///
+/// # Style
+/// The card supports styling using `careKitStyle(_:)`.
+///
+/// ```
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     |  <Image> <Title>                       <Info Image>   |
+///     |  <Information>                                        |
+///     |                                                       |
+///     |  --------------------------------------------------   |
+///     |                                                       |
+///     |  <Instructions>                                       |
+///     |                                                       |
+///     |  <Min Image> –––––––––––––O–––––––––––– <Max Image>   |
+///     |             <Min Desc>        <Max Desc>              |
+///     |                                                       |
+///     |  +-------------------------------------------------+  |
+///     |  |                      <Log>                      |  |
+///     |  +-------------------------------------------------+  |
+///     |                                                       |
+///     |                   <Latest Value: >                    |
+///     |                                                       |
+///     +-------------------------------------------------------+
+/// ```
+public struct CareKitEssentialDigitalCrownView: CareKitEssentialView {
+	@Environment(\.careStore) public var store
+
+	private(set) var event: OCKAnyEvent
+	@State public var kind: String?
+	@State public var initialValue: Double?
+	@State public var startValue: Double
+	@State public var endValue: Double?
+	@State public var step: Double
+	@State public var emojis: [String]
+	@State public var colorRatio: Double
+
+	public var body: some View {
 		DigitalCrownView(
 			event: event,
 			kind: kind,
@@ -68,7 +101,7 @@ struct CareKitEssentialDigitalCrownView: CareKitEssentialView {
 	 - parameter emojis: An array of emoji's to show on the screen.
 	 - parameter colorRatio: The ratio effect on the color gradient.
 	 */
-	init(
+	public init(
 		event: OCKAnyEvent,
 		kind: String? = nil,
 		initialValue: Double? = nil,

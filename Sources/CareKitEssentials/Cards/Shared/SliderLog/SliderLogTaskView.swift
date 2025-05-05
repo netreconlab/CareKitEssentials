@@ -43,6 +43,8 @@ import SwiftUI
 ///     |                                                       |
 ///     +-------------------------------------------------------+
 /// ```
+/// - Note: You should use `SliderLogView` to take advantage of a working
+/// implementation of this view.
 public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     // MARK: - Properties
