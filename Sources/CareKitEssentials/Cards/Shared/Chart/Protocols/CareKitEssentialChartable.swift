@@ -131,6 +131,28 @@ extension CareKitEssentialChartable {
 					period: progress.period
 				)
 				return combined
+			case .max:
+				let combinedProgressValue = combinedProgressValues.max() ?? 0
+				let combined = CombinedProgress(
+					value: combinedProgressValue,
+					originalValues: combinedProgressValues,
+					originalOutcomeValues: progress.originalOutcomeValues,
+					unit: combinedProgressUnit,
+					date: progress.date,
+					period: progress.period
+				)
+				return combined
+			case .min:
+				let combinedProgressValue = combinedProgressValues.min() ?? 0
+				let combined = CombinedProgress(
+					value: combinedProgressValue,
+					originalValues: combinedProgressValues,
+					originalOutcomeValues: progress.originalOutcomeValues,
+					unit: combinedProgressUnit,
+					date: progress.date,
+					period: progress.period
+				)
+				return combined
 			case .mean:
 				let combinedProgressValue = LinearCareTaskProgress.computeProgressByAveraging(for: combinedProgressValues).value
 

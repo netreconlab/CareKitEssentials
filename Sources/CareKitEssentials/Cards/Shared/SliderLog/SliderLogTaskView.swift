@@ -71,7 +71,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
                     .if(isCardEnabled) { $0.padding([.horizontal]) }
 
                 VStack { slider }
-                    .if(isCardEnabled && isHeaderPadded) {
+                    .if(isCardEnabled && isSliderPadded) {
                         $0.padding([.horizontal, .bottom])
                     }
             }

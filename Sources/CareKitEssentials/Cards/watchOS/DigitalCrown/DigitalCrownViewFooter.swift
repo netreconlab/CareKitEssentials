@@ -19,11 +19,11 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
     @StateObject var viewModel: DigitalCrownViewModel
 
     @OSValue<Font>(
-        values: [.watchOS: .system(size: 15)],
+        values: [.watchOS: .system(size: 14)],
         defaultValue: .title
     ) private var font
 
-    private var content: some View {
+    private var buttonContent: some View {
         Group {
             if viewModel.isButtonDisabled {
                 HStack {
@@ -64,7 +64,7 @@ public struct DigitalCrownViewFooter: CareKitEssentialView {
                 RectangularCompletionView(isComplete: viewModel.isButtonDisabled) {
                     HStack {
                         Spacer()
-                        content
+						buttonContent
 							.font(font)
                         Spacer()
                     }

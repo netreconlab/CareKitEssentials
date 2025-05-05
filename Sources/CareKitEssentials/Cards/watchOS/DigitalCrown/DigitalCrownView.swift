@@ -220,6 +220,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
     ///   - action: The action to perform when the log button is tapped.
     init(
         event: OCKAnyEvent,
+		kind: String? = nil,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = nil,
@@ -233,6 +234,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
         let event = event
         let viewModel = DigitalCrownViewModel(
             event: event,
+			kind: kind,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
             initialValue: initialValue,
@@ -270,14 +272,17 @@ struct DigitalCrownView_Previews: PreviewProvider {
     static let emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            DigitalCrownView(
-                title: Text(event.task.title ?? ""),
-                detail: Text(event.task.instructions ?? ""),
-                viewModel: .init(
-                    event: event,
-                    emojis: emojis
-                )
-            )
+			VStack {
+				DigitalCrownView(
+					title: Text(event.task.title ?? ""),
+					detail: Text(event.task.instructions ?? ""),
+					viewModel: .init(
+						event: event,
+						emojis: emojis
+					)
+				)
+				.padding()
+			}
             .environment(\.careStore, Utility.createPreviewStore())
             .careKitStyle(OCKStyle())
         }

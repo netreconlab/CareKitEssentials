@@ -13,7 +13,7 @@ public extension CareTaskProgressStrategy {
 	/// A strategy that computes progress for a task by checking for the existence of an outcome.
 	///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
 	///
 	/// The task is considered completed if an ``OCKAnyEvent/outcome`` exists that contains an
@@ -30,7 +30,7 @@ public extension CareTaskProgressStrategy {
 	/// the two results. The task is considered completed if the summed value reaches the summed target.
 	///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
 	///
 	/// - Note:
@@ -49,7 +49,7 @@ public extension CareTaskProgressStrategy {
 	/// the two results. The task is considered completed if the max value reaches the max target.
 	///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
 	///
 	/// - Note:
@@ -68,7 +68,7 @@ public extension CareTaskProgressStrategy {
 	/// the two results. The task is considered completed if the min value reaches the min target.
 	///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
 	///
 	/// - Note:
@@ -89,7 +89,7 @@ public extension CareTaskProgressStrategy {
     ///
     ///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
     ///
     /// - Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>`` 
@@ -109,7 +109,7 @@ public extension CareTaskProgressStrategy {
     /// Event is pased to the ``computeProgressByMedianOutcomeValues`` method as an argument
     ///
 	/// - Parameters:
-	/// - kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
+	/// 	- kind: An optional ``String`` that specifies the kind of the `OCKOutcomeValue` to use
 	/// when computing the progress for the event. Defaults to ``nil``.
     ///
     /// - Returns: A ``CareTaskProgressStrategy<LinearCareTaskProgress>``

@@ -1,0 +1,113 @@
+//
+//  CareKitEssentialDigitalCrownView.swift
+//  CareKitEssentials
+//
+//  Created by Corey Baker on 5/4/25.
+//  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
+//
+
+#if os(watchOS)
+
+import CareKit
+import CareKitStore
+import CareKitUI
+import os.log
+import SwiftUI
+
+struct CareKitEssentialDigitalCrownView: CareKitEssentialView {
+	@Environment(\.careStore) var store
+
+	let event: OCKAnyEvent
+	var kind: String?
+	var initialValue: Double?
+	var startValue: Double
+	var endValue: Double?
+	var step: Double
+	var emojis: [String]
+	var colorRatio: Double
+
+	var body: some View {
+		DigitalCrownView(
+			event: event,
+			kind: kind,
+			detailsTitle: event.title,
+			detailsInformation: event.detail,
+			initialValue: initialValue,
+			startValue: startValue,
+			endValue: endValue,
+			incrementValue: step,
+			emojis: emojis,
+			colorRatio: colorRatio,
+			action: { value -> OCKAnyOutcome in
+				guard let value else {
+					// Delete outcome values
+					let updatedOutcome = try await updateEvent(
+						event,
+						with: nil
+					)
+					return updatedOutcome
+				}
+
+				let updatedOutcome = try await updateEvent(
+					event,
+					with: [value]
+				)
+				return updatedOutcome
+			}
+		)
+	}
+
+	/**
+	 Create an instance with specified content for an event.
+	 - parameter event: A event to associate with the view model.
+	 - parameter kind: The kind of outcome value for the slider. Defaults to nil.
+	 - parameter initialValue: The initial value shown for the digital crown.
+	 - parameter startValue: The minimum possible value.
+	 - parameter endValue: The maximum possible value.
+	 - parameter step: Value to increment by when moving the digital crown. Default value is 1.
+	 - parameter emojis: An array of emoji's to show on the screen.
+	 - parameter colorRatio: The ratio effect on the color gradient.
+	 */
+	init(
+		event: OCKAnyEvent,
+		kind: String? = nil,
+		initialValue: Double? = nil,
+		startValue: Double = 0,
+		endValue: Double? = nil,
+		step: Double = 1,
+		emojis: [String] = [],
+		colorRatio: Double = 0.2,
+		gradientColors: [Color]? = nil
+	) {
+		self.event = event
+		self.kind = kind
+		self.initialValue = initialValue
+		self.startValue = startValue
+		self.endValue = endValue
+		self.step = step
+		self.emojis = emojis
+		self.colorRatio = colorRatio
+	}
+}
+
+struct CareKitEssentialDigitalCrownView_Previews: PreviewProvider {
+	static var store = Utility.createPreviewStore()
+	static let emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
+
+	static var previews: some View {
+		VStack {
+			if let event = try? Utility.createNauseaEvent() {
+				CareKitEssentialDigitalCrownView(
+					event: event,
+					emojis: emojis,
+					gradientColors: [.green, .yellow, .red]
+				)
+			}
+		}
+		.environment(\.careStore, store)
+		.accentColor(.pink)
+		.padding()
+	}
+}
+
+#endif

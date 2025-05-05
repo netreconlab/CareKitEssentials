@@ -16,6 +16,7 @@ struct Slider: View {
     @ObservedObject private var viewModel: SliderLogTaskViewModel
 
     private let range: (Double, Double)
+	private let sliderStyle: SliderStyle
     private let minimumImage: Image?
     private let maximumImage: Image?
     fileprivate let minimumDescription: String?
@@ -44,6 +45,7 @@ struct Slider: View {
         self.minimumDescription = minimumDescription
         self.maximumDescription = maximumDescription
         self.gradientColors = gradientColors
+		self.sliderStyle = style
         switch style {
         case .ticked:
             self.sliderHeight = 40
@@ -91,7 +93,7 @@ struct Slider: View {
                     .font(.system(size: valueFontSize))
                     .foregroundColor(.accentColor)
                     .fontWeight(.semibold)
-                    .padding(.bottom, 10)
+					.padding(.bottom)
                     .disabled(viewModel.isButtonDisabled)
 
                 HStack(spacing: 0) {
@@ -109,7 +111,6 @@ struct Slider: View {
                         .sliderImageModifier(width: imageWidth,
                                              height: usesSystemSlider ? imageWidth : sliderHeight!)
                 }
-                .padding(.bottom, 5)
 
                 HStack {
                     if containsImages {
@@ -119,11 +120,17 @@ struct Slider: View {
 
                     Text(minString)
                         .font(.system(size: boundsFontSize))
+						.if(sliderStyle == .system) { view in
+							view.padding(.top)
+						}
 
                     Spacer()
 
                     Text(maxString)
                         .font(.system(size: boundsFontSize))
+						.if(sliderStyle == .system) { view in
+							view.padding(.top)
+						}
 
                     if containsImages {
                         Spacer()
@@ -136,6 +143,7 @@ struct Slider: View {
 
     private func slider(frameWidth: CGFloat, imageWidth: CGFloat) -> some View {
         let sliderWidth = containsImages ? frameWidth - imageWidth * 2 - imageWidth / 2 : frameWidth
+		let sliderHeight = sliderHeight != nil ? sliderHeight! : 4
         let drag = DragGesture(minimumDistance: 0)
         return
             usesSystemSlider ?
@@ -146,10 +154,11 @@ struct Slider: View {
                             onDragChange(drag, sliderWidth: sliderWidth)
                         })
                     )
-                    .frame(width: sliderWidth, height: imageWidth)) :
+					.padding(.top)
+                    .frame(width: sliderWidth, height: sliderHeight/10)) :
             ViewBuilder.buildEither(
                 second: ZStack {
-                    fillerBarView(width: sliderWidth, height: sliderHeight!)
+                    fillerBarView(width: sliderWidth, height: sliderHeight)
                         .gesture(
                             drag.onChanged({ drag in
                                 onDragChange(drag, sliderWidth: sliderWidth)
