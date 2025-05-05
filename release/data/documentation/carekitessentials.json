@@ -59,6 +59,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareEssentialChartView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialChartView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialDigitalCrownLogView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CustomLabelView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DetailsView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownView",
@@ -70,6 +71,15 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/SimpleLabelView"
       ],
       "title" : "Structures"
+    },
+    {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ChartView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownLogView"
+      ],
+      "title" : "Type Aliases"
     },
     {
       "anchor" : "Enumerations",
@@ -372,6 +382,48 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialchartview"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialDigitalCrownLogView": {
+  "abstract" : [
+    {
+      "text" : "A card that displays a header view, multi-line label, a digital crown modifier, and a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "completion button.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialDigitalCrownLogView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialDigitalCrownLogView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialDigitalCrownLogView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CareKitEssentialDigitalCrownLogView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/carekitessentialdigitalcrownlogview"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialVersionable": {
   "abstract" : [
 
@@ -445,6 +497,37 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialview"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/ChartView": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ChartView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/ChartView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ChartView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ChartView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/chartview"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CustomLabelView": {
   "abstract" : [
     {
@@ -513,9 +596,51 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/detailsview"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownLogView": {
   "abstract" : [
 
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownLogView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownLogView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DigitalCrownLogView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DigitalCrownLogView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/digitalcrownlogview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView": {
+  "abstract" : [
+    {
+      "text" : "A card that displays a header view, multi-line label, a digital crown modifier, and a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "completion button.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

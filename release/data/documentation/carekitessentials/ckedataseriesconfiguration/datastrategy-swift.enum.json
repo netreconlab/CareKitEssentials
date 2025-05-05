@@ -1,4 +1,10 @@
 {
+  "abstract" : [
+    {
+      "text" : "The type of strategy used to produce each data point in the plot.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -97,8 +103,10 @@
       "anchor" : "Enumeration-Cases",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/max",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/mean",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/median",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/min",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/sum"
       ],
       "title" : "Enumeration Cases"
@@ -183,7 +191,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum": {
   "abstract" : [
-
+    {
+      "text" : "The type of strategy used to produce each data point in the plot.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -223,9 +234,56 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/datastrategy-swift.enum\/equatable-implementations"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/max": {
+  "abstract" : [
+    {
+      "text" : "Take the maximum of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "max"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/max",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CKEDataSeriesConfiguration.DataStrategy.max",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/datastrategy-swift.enum\/max"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/mean": {
   "abstract" : [
-
+    {
+      "text" : "Take the mean of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -250,7 +308,18 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/median": {
   "abstract" : [
-
+    {
+      "text" : "Take the median of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -273,9 +342,56 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/datastrategy-swift.enum\/median"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/min": {
+  "abstract" : [
+    {
+      "text" : "Take the minimum of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "min"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeriesConfiguration\/DataStrategy-swift.enum\/min",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "CKEDataSeriesConfiguration.DataStrategy.min",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/ckedataseriesconfiguration\/datastrategy-swift.enum\/min"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/sum": {
   "abstract" : [
-
+    {
+      "text" : "Take the sum of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

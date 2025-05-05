@@ -421,7 +421,18 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/DigitalCrownView": {
   "abstract" : [
-
+    {
+      "text" : "A card that displays a header view, multi-line label, a digital crown modifier, and a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "completion button.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -245,7 +245,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum": {
   "abstract" : [
-
+    {
+      "text" : "The type of strategy used to produce each data point in the plot.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -1,4 +1,18 @@
 {
+  "abstract" : [
+    {
+      "text" : "Take the mean of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -137,7 +151,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum": {
   "abstract" : [
-
+    {
+      "text" : "The type of strategy used to produce each data point in the plot.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -168,7 +185,18 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeriesConfiguration/DataStrategy-swift.enum/mean": {
   "abstract" : [
-
+    {
+      "text" : "Take the mean of all ",
+      "type" : "text"
+    },
+    {
+      "code" : "OCKOutcomeValues",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " to produce each data point.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

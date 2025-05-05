@@ -107,6 +107,7 @@
     {
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialChartView",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialDigitalCrownLogView",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/DigitalCrownViewFooter"
       ],
       "kind" : "relationships",
@@ -256,6 +257,48 @@
   "title" : "CareKitEssentialChartView",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/carekitessentialchartview"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialDigitalCrownLogView": {
+  "abstract" : [
+    {
+      "text" : "A card that displays a header view, multi-line label, a digital crown modifier, and a",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "completion button.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialDigitalCrownLogView"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CareKitEssentialDigitalCrownLogView",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "CareKitEssentialDigitalCrownLogView"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "CareKitEssentialDigitalCrownLogView",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitessentials\/carekitessentialdigitalcrownlogview"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CareKitEssentialView": {
   "abstract" : [

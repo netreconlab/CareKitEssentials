@@ -202,6 +202,57 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "An optional ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "String",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " that specifies the kind of the ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "OCKOutcomeValue",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " to use",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "when computing the progress for the event. Defaults to ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "nil",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : ".",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "kind"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -285,56 +336,6 @@
             }
           ],
           "type" : "paragraph"
-        },
-        {
-          "items" : [
-            {
-              "content" : [
-                {
-                  "inlineContent" : [
-                    {
-                      "text" : "kind: An optional ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "String",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " that specifies the kind of the ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "OCKOutcomeValue",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : " to use",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : " ",
-                      "type" : "text"
-                    },
-                    {
-                      "text" : "when computing the progress for the event. Defaults to ",
-                      "type" : "text"
-                    },
-                    {
-                      "code" : "nil",
-                      "type" : "codeVoice"
-                    },
-                    {
-                      "text" : ".",
-                      "type" : "text"
-                    }
-                  ],
-                  "type" : "paragraph"
-                }
-              ]
-            }
-          ],
-          "type" : "unorderedList"
         }
       ],
       "kind" : "content"
