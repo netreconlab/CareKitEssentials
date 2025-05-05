@@ -6,6 +6,7 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+// swiftlint:disable vertical_parameter_alignment
 #if os(watchOS)
 
 import CareKit

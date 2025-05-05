@@ -85,7 +85,8 @@ struct CareKitEssentialSliderLogView: CareKitEssentialView {
 	 gradient inside the slider. Colors are drawn such that lower indexes correspond to the
 	 minimum side of the scale, while colors at higher indexes in the array correspond to
 	 the maximum side of the scale. Setting this value to nil results in no gradient being
-	 drawn. Defaults to nil. An example usage would set an array of red and green to 	visually indicate a scale from bad to good.
+	 drawn. Defaults to nil. An example usage would set an array of red and green to
+	 visually indicate a scale from bad to good.
 	 */
 	init(
 		event: OCKAnyEvent,
@@ -111,18 +112,6 @@ struct CareKitEssentialSliderLogView: CareKitEssentialView {
 		self.minimumDescription = minimumDescription
 		self.maximumDescription = maximumDescription
 		self.gradientColors = gradientColors
-	}
-}
-
-extension CareKitEssentialSliderLogView: EventViewable {
-
-	public init?(
-		event: OCKAnyEvent,
-		store: any OCKAnyStoreProtocol
-	) {
-		self.init(
-			event: event
-		)
 	}
 }
 
