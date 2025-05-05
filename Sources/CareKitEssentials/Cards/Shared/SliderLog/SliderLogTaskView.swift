@@ -43,6 +43,8 @@ import SwiftUI
 ///     |                                                       |
 ///     +-------------------------------------------------------+
 /// ```
+/// - Note: You should use `SliderLogView` to take advantage of a working
+/// implementation of this view.
 public struct SliderLogTaskView<Header: View, Slider: View>: View {
 
     // MARK: - Properties
@@ -71,7 +73,7 @@ public struct SliderLogTaskView<Header: View, Slider: View>: View {
                     .if(isCardEnabled) { $0.padding([.horizontal]) }
 
                 VStack { slider }
-                    .if(isCardEnabled && isHeaderPadded) {
+                    .if(isCardEnabled && isSliderPadded) {
                         $0.padding([.horizontal, .bottom])
                     }
             }

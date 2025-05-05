@@ -13,7 +13,7 @@ struct DismissableView<Content: View>: View {
 	@ViewBuilder var content: Content
 
 	var body: some View {
-		NavigationStack {
+		NavigationView {
 			content
 				#if !os(watchOS) && !os(macOS)
 				.toolbar {

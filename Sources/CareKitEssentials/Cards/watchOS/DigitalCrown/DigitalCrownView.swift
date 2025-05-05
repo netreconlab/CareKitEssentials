@@ -6,6 +6,7 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+// swiftlint:disable vertical_parameter_alignment
 #if os(watchOS)
 
 import CareKit
@@ -14,6 +15,38 @@ import CareKitUI
 import Foundation
 import SwiftUI
 
+/// A card that displays a header view, multi-line label, a digital crown modifier, and a
+/// completion button.
+///
+/// In CareKit, this view is intended to display a particular event for a task.
+/// The state of the button indicates the completion state of the event.
+///
+/// # Style
+/// The card supports styling using `careKitStyle(_:)`.
+///
+/// ```
+///     +-------------------------------------------------------+
+///     |                                                       |
+///     |  <Image> <Title>                       <Info Image>   |
+///     |  <Information>                                        |
+///     |                                                       |
+///     |  --------------------------------------------------   |
+///     |                                                       |
+///     |  <Instructions>                                       |
+///     |                                                       |
+///     |  <Min Image> –––––––––––––O–––––––––––– <Max Image>   |
+///     |             <Min Desc>        <Max Desc>              |
+///     |                                                       |
+///     |  +-------------------------------------------------+  |
+///     |  |                      <Log>                      |  |
+///     |  +-------------------------------------------------+  |
+///     |                                                       |
+///     |                   <Latest Value: >                    |
+///     |                                                       |
+///     +-------------------------------------------------------+
+/// ```
+/// - Note: You should use `DigitalCrownLogView` to take advantage of a working
+/// implementation of this view.
 public struct DigitalCrownView<Header: View, Footer: View>: View {
 
     // MARK: - Properties
@@ -220,6 +253,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
     ///   - action: The action to perform when the log button is tapped.
     init(
         event: OCKAnyEvent,
+		kind: String? = nil,
         detailsTitle: String? = nil,
         detailsInformation: String? = nil,
         initialValue: Double? = nil,
@@ -233,6 +267,7 @@ public extension DigitalCrownView where Header == DigitalCrownViewHeader, Footer
         let event = event
         let viewModel = DigitalCrownViewModel(
             event: event,
+			kind: kind,
             detailsTitle: detailsTitle,
             detailsInformation: detailsInformation,
             initialValue: initialValue,
@@ -270,14 +305,17 @@ struct DigitalCrownView_Previews: PreviewProvider {
     static let emojis = ["😄", "🙂", "😐", "😕", "😟", "☹️", "😞", "😓", "😥", "😰", "🤯"]
     static var previews: some View {
         if let event = try? Utility.createNauseaEvent() {
-            DigitalCrownView(
-                title: Text(event.task.title ?? ""),
-                detail: Text(event.task.instructions ?? ""),
-                viewModel: .init(
-                    event: event,
-                    emojis: emojis
-                )
-            )
+			VStack {
+				DigitalCrownView(
+					title: Text(event.task.title ?? ""),
+					detail: Text(event.task.instructions ?? ""),
+					viewModel: .init(
+						event: event,
+						emojis: emojis
+					)
+				)
+				.padding()
+			}
             .environment(\.careStore, Utility.createPreviewStore())
             .careKitStyle(OCKStyle())
         }

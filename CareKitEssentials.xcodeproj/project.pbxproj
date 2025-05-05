@@ -45,6 +45,9 @@
 		7068BD412D62788E00212E4A /* OCKHealthKitLinkage+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */; };
 		70721CE42D658EC300270799 /* OCKOutcomeValue+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */; };
 		70721CE62D65990700270799 /* OCKOutcomeValueExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */; };
+		707D28A22DC815F300980253 /* CareKitEssentialSliderLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A12DC815DA00980253 /* CareKitEssentialSliderLogView.swift */; };
+		707D28A72DC9116E00980253 /* CareKitEssentialSliderLogView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A62DC9116200980253 /* CareKitEssentialSliderLogView+EventViewable.swift */; };
+		707D28A92DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */; };
 		7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */; };
 		708D74092DC4995F0049B592 /* OCKOutcomeValue+Plottable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D74082DC4995A0049B592 /* OCKOutcomeValue+Plottable.swift */; };
 		7094DD0F2DC477EE0039CA64 /* CareKitEssentialVersionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7094DD0E2DC477E70039CA64 /* CareKitEssentialVersionable.swift */; };
@@ -86,10 +89,10 @@
 		70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30A2D19FC0F00517D5E /* EventViewable.swift */; };
 		70EBE3102D19FC2A00517D5E /* EventQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */; };
 		70EBE3112D19FC2A00517D5E /* EventQueryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */; };
-		70EBE3132D19FF0200517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */; };
-		70EBE3152D19FF9700517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */; };
-		70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */; };
-		70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */; };
+		70EBE3132D19FF0200517D5E /* SimpleTaskView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3122D19FEE600517D5E /* SimpleTaskView+EventViewable.swift */; };
+		70EBE3152D19FF9700517D5E /* InstructionsTaskView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3142D19FF8D00517D5E /* InstructionsTaskView+EventViewable.swift */; };
+		70EBE3172D19FFE900517D5E /* LabeledValueTaskView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3162D19FFE900517D5E /* LabeledValueTaskView+EventViewable.swift */; };
+		70EBE3192D19FFF700517D5E /* NumericProgressTaskView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EBE3182D19FFF700517D5E /* NumericProgressTaskView+EventViewable.swift */; };
 		70FDC6162C387C9F00A32137 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FDC6152C387C9F00A32137 /* NSImage.swift */; };
 		911BDB262A11C437004F8442 /* View+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB252A11C437004F8442 /* View+Default.swift */; };
 		911BDB282A11C491004F8442 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BDB272A11C491004F8442 /* CGFloat.swift */; };
@@ -206,6 +209,9 @@
 		7068BD402D62788A00212E4A /* OCKHealthKitLinkage+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHealthKitLinkage+Hashable.swift"; sourceTree = "<group>"; };
 		70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Sequence.swift"; sourceTree = "<group>"; };
 		70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcomeValueExtensionsTests.swift; sourceTree = "<group>"; };
+		707D28A12DC815DA00980253 /* CareKitEssentialSliderLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialSliderLogView.swift; sourceTree = "<group>"; };
+		707D28A62DC9116200980253 /* CareKitEssentialSliderLogView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareKitEssentialSliderLogView+EventViewable.swift"; sourceTree = "<group>"; };
+		707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialDigitalCrownLogView.swift; sourceTree = "<group>"; };
 		7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResults+Sequence.swift"; sourceTree = "<group>"; };
 		708D74082DC4995A0049B592 /* OCKOutcomeValue+Plottable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Plottable.swift"; sourceTree = "<group>"; };
 		7094DD0E2DC477E70039CA64 /* CareKitEssentialVersionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialVersionable.swift; sourceTree = "<group>"; };
@@ -247,10 +253,10 @@
 		70EBE30B2D19FC0F00517D5E /* EventWithContentViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWithContentViewable.swift; sourceTree = "<group>"; };
 		70EBE30E2D19FC2A00517D5E /* EventQueryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryContentView.swift; sourceTree = "<group>"; };
 		70EBE30F2D19FC2A00517D5E /* EventQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventQueryView.swift; sourceTree = "<group>"; };
-		70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
-		70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InstructionsTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
-		70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabeledValueTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
-		70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumericProgressTaskView+CareStoreFetchedViewable.swift"; sourceTree = "<group>"; };
+		70EBE3122D19FEE600517D5E /* SimpleTaskView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleTaskView+EventViewable.swift"; sourceTree = "<group>"; };
+		70EBE3142D19FF8D00517D5E /* InstructionsTaskView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InstructionsTaskView+EventViewable.swift"; sourceTree = "<group>"; };
+		70EBE3162D19FFE900517D5E /* LabeledValueTaskView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabeledValueTaskView+EventViewable.swift"; sourceTree = "<group>"; };
+		70EBE3182D19FFF700517D5E /* NumericProgressTaskView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumericProgressTaskView+EventViewable.swift"; sourceTree = "<group>"; };
 		70FDC6152C387C9F00A32137 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
 		911BDB252A11C437004F8442 /* View+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Default.swift"; sourceTree = "<group>"; };
 		911BDB272A11C491004F8442 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -407,15 +413,16 @@
 			isa = PBXGroup;
 			children = (
 				70116B3F2DC06DBC0024BB89 /* CareKitEssentialChartBodyView+ChartContent.swift */,
+				707D28A62DC9116200980253 /* CareKitEssentialSliderLogView+EventViewable.swift */,
 				70116AF02DBC632E0024BB89 /* CKEDataSeries+AXChartDescriptorRepresentable.swift */,
 				91A9E7E12A197A7300F3414D /* InstructionsTaskView.swift */,
-				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift */,
+				70EBE3142D19FF8D00517D5E /* InstructionsTaskView+EventViewable.swift */,
 				91A9E7DF2A19784800F3414D /* LabeledValueTaskView.swift */,
-				70EBE3162D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift */,
+				70EBE3162D19FFE900517D5E /* LabeledValueTaskView+EventViewable.swift */,
 				91A9E7DD2A19758300F3414D /* NumericProgressTaskView.swift */,
-				70EBE3182D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift */,
+				70EBE3182D19FFF700517D5E /* NumericProgressTaskView+EventViewable.swift */,
 				91A9E7E32A197A9300F3414D /* SimpleTaskView.swift */,
-				70EBE3122D19FEE600517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift */,
+				70EBE3122D19FEE600517D5E /* SimpleTaskView+EventViewable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -458,6 +465,7 @@
 		70BBCB4F2A12BD2500759A9C /* SliderLog */ = {
 			isa = PBXGroup;
 			children = (
+				707D28A12DC815DA00980253 /* CareKitEssentialSliderLogView.swift */,
 				70BBCB522A12BDAC00759A9C /* Slider.swift */,
 				70BBCB542A12BDBD00759A9C /* SliderLogButton.swift */,
 				70BBCB4D2A12BB0500759A9C /* SliderLogTaskView.swift */,
@@ -516,6 +524,7 @@
 		OBJ_14 /* DigitalCrown */ = {
 			isa = PBXGroup;
 			children = (
+				707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */,
 				OBJ_15 /* DigitalCrownView.swift */,
 				OBJ_16 /* DigitalCrownViewFooter.swift */,
 				OBJ_17 /* DigitalCrownViewHeader.swift */,
@@ -834,6 +843,7 @@
 				70EBE3102D19FC2A00517D5E /* EventQueryView.swift in Sources */,
 				70EBE3112D19FC2A00517D5E /* EventQueryContentView.swift in Sources */,
 				702FF7712CFAA96B00B26710 /* CKEPoint.swift in Sources */,
+				707D28A72DC9116E00980253 /* CareKitEssentialSliderLogView+EventViewable.swift in Sources */,
 				70721CE42D658EC300270799 /* OCKOutcomeValue+Sequence.swift in Sources */,
 				700DA9052C2A609600435E2C /* CareKitEssentialView.swift in Sources */,
 				70B49A602D06A2520023E5B3 /* SimpleLabelView.swift in Sources */,
@@ -845,7 +855,7 @@
 				708D74092DC4995F0049B592 /* OCKOutcomeValue+Plottable.swift in Sources */,
 				7026DDF72D0D2B33002EACAA /* OCKAnyEvent+Equatable.swift in Sources */,
 				OBJ_742 /* DetailsView.swift in Sources */,
-				70EBE3172D19FFE900517D5E /* LabeledValueTaskView+CareStoreFetchedViewable.swift in Sources */,
+				70EBE3172D19FFE900517D5E /* LabeledValueTaskView+EventViewable.swift in Sources */,
 				91A9E7E02A19784800F3414D /* LabeledValueTaskView.swift in Sources */,
 				70116AF92DBDF5E30024BB89 /* CareKitEssentialChartable.swift in Sources */,
 				70B49A7D2D0A53FA0023E5B3 /* OCKAnyEvent+Hashable.swift in Sources */,
@@ -864,10 +874,10 @@
 				OBJ_750 /* CardViewModel.swift in Sources */,
 				7094DD172DC47DC80039CA64 /* OCKHealthKitOutcome+Hashable.swift in Sources */,
 				702FF76B2CFAA93C00B26710 /* CareKitEssentialChartView.swift in Sources */,
-				70EBE3192D19FFF700517D5E /* NumericProgressTaskView+CareStoreFetchedViewable.swift in Sources */,
+				70EBE3192D19FFF700517D5E /* NumericProgressTaskView+EventViewable.swift in Sources */,
 				702FF7752CFAA97800B26710 /* TemporalTaskProgress.swift in Sources */,
 				7068BD3F2D6277C500212E4A /* OCKHealthKitTask+Hashable.swift in Sources */,
-				70EBE3152D19FF9700517D5E /* InstructionsTaskView+CareStoreFetchedViewable.swift in Sources */,
+				70EBE3152D19FF9700517D5E /* InstructionsTaskView+EventViewable.swift in Sources */,
 				702FF76D2CFAA96100B26710 /* CKEDataSeries.swift in Sources */,
 				91A9E7E22A197A7300F3414D /* InstructionsTaskView.swift in Sources */,
 				OBJ_752 /* Calendar+Dates.swift in Sources */,
@@ -875,6 +885,7 @@
 				OBJ_753 /* Image.swift in Sources */,
 				70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */,
 				70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */,
+				707D28A92DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift in Sources */,
 				709530B62DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift in Sources */,
 				70B49A892D0A83E10023E5B3 /* Double.swift in Sources */,
 				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
@@ -899,7 +910,7 @@
 				70C422CA2C3B681A00E6DC51 /* OCKAnyOutcome+Sequence.swift in Sources */,
 				911BDB342A130AF9004F8442 /* OCKStore.swift in Sources */,
 				70116B3C2DC067240024BB89 /* BinaryCareTaskProgress+Math.swift in Sources */,
-				70EBE3132D19FF0200517D5E /* SimpleTaskView+CareStoreFetchedViewable.swift in Sources */,
+				70EBE3132D19FF0200517D5E /* SimpleTaskView+EventViewable.swift in Sources */,
 				OBJ_757 /* OCKBiologicalSex+Hashable.swift in Sources */,
 				7026DDED2D0CD600002EACAA /* OCKSemanticVersion+Hashable.swift in Sources */,
 				7068BD412D62788E00212E4A /* OCKHealthKitLinkage+Hashable.swift in Sources */,
@@ -914,6 +925,7 @@
 				702FF7812CFE5B0400B26710 /* ChartContent+Default.swift in Sources */,
 				911BDB262A11C437004F8442 /* View+Default.swift in Sources */,
 				70116AF52DBDC5B10024BB89 /* DateComponentsForProgress.swift in Sources */,
+				707D28A22DC815F300980253 /* CareKitEssentialSliderLogView.swift in Sources */,
 				911BDB322A130A2B004F8442 /* Utility.swift in Sources */,
 				709530B32DAC3AFB00E18A59 /* SurveyQuestion.swift in Sources */,
 				709530B42DAC3AFB00E18A59 /* SurveyStep.swift in Sources */,

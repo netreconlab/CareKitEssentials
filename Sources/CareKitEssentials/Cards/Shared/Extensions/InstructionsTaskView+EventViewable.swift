@@ -1,10 +1,12 @@
 //
-//  SimpleTaskView+CareStoreFetchedViewable.swift
+//  InstructionsTaskView+EventViewable.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 12/23/24.
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
+
+#if !os(watchOS)
 
 import CareKit
 import CareKitStore
@@ -13,9 +15,7 @@ import Foundation
 import SwiftUI
 import os.log
 
-#if !os(watchOS)
-
-extension SimpleTaskView: EventViewable where Header == InformationHeaderView {
+extension InstructionsTaskView: EventViewable where Header == InformationHeaderView {
     public init?(
         event: OCKAnyEvent,
         store: OCKAnyStoreProtocol
@@ -24,7 +24,7 @@ extension SimpleTaskView: EventViewable where Header == InformationHeaderView {
             event: event,
             store: store,
             onError: { error in
-                Logger.simpleTaskView.error("\(error)")
+                Logger.instructionsTaskView.error("\(error)")
             }
         )
     }

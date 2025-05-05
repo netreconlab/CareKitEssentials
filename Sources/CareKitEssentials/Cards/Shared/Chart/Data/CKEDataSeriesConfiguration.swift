@@ -15,10 +15,18 @@ import Charts
 /// A configuration object that specifies which data should be queried and how it should be displayed by the graph.
 public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
 
+	/// The type of strategy used to produce each data point in the plot.
 	public enum DataStrategy: Hashable {
+		/// Take the sum of all `OCKOutcomeValues` to produce each data point.
 		case sum
+		/// Take the maximum of all `OCKOutcomeValues` to produce each data point.
+		case max
+		/// Take the mean of all `OCKOutcomeValues` to produce each data point.
 		case mean
+		/// Take the median of all `OCKOutcomeValues` to produce each data point.
 		case median
+		/// Take the minimum of all `OCKOutcomeValues` to produce each data point.
+		case min
 	}
 
     public var id: String {
@@ -28,7 +36,7 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
     /// The type of mark to display for this configuration.
     public var mark: CKEDataSeries.MarkType
 
-	/// The type of strategy used to combine the date the plot.
+	/// The type of strategy used to produce each data point in the plot.
 	public var dataStrategy: DataStrategy
 
     /// A user-provided unique id for a task.
@@ -85,8 +93,8 @@ public struct CKEDataSeriesConfiguration: Identifiable, Hashable {
     /// Initialize a new `CareKitEssentialsDataSeriesConfiguration`.
     ///
     /// - Parameters:
-    ///   - taskID: A user-provided unique id for a task.
-	///   - dataStrategy: The type of strategy used to combine the date the plot. Be sure
+    ///	  - taskID: A user-provided unique id for a task.
+	///   - dataStrategy: The type of strategy used to produce each data point in the plot. Be sure
 	///   the `dataStrategy` matches the same strategy used for `computeProgress`.
 	///   - kind: The kind property of the OCKOutcomeValue to graph.
     ///   - mark: The type of mark to display for this configuration.

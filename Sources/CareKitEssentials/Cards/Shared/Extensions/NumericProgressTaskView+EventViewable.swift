@@ -1,5 +1,5 @@
 //
-//  LabeledValueTaskView+CareStoreFetchedViewable.swift
+//  NumericProgressTaskView+EventViewable.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 12/10/24.
@@ -12,7 +12,7 @@ import CareKit
 import CareKitStore
 import CareKitUI
 
-extension LabeledValueTaskView: EventViewable where Header == InformationHeaderView {
+extension NumericProgressTaskView: EventViewable where Header == InformationHeaderView {
     public init?(
         event: OCKAnyEvent,
         store: OCKAnyStoreProtocol

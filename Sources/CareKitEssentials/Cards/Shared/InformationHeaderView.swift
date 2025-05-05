@@ -115,11 +115,13 @@ public struct InformationHeaderView: View {
 			isShowingDetails.toggle()
 		}
         .sheet(isPresented: $isShowingDetails) {
-            DetailsView(
-				event: event,
-				title: detailsTitle,
-				details: details
-			)
+			DismissableView {
+				DetailsView(
+					event: event,
+					title: detailsTitle,
+					details: details
+				)
+			}
         }
 
     }
