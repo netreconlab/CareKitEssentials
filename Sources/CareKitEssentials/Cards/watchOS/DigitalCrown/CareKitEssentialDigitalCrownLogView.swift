@@ -1,5 +1,5 @@
 //
-//  CareKitEssentialDigitalCrownView.swift
+//  CareKitEssentialDigitalCrownLogView.swift
 //  CareKitEssentials
 //
 //  Created by Corey Baker on 5/4/25.
@@ -14,7 +14,7 @@ import CareKitUI
 import os.log
 import SwiftUI
 
-public typealias DigitalCrownLogView = CareKitEssentialDigitalCrownView
+public typealias DigitalCrownLogView = CareKitEssentialDigitalCrownLogView
 
 
 /// A card that displays a header view, multi-line label, a digital crown modifier, and a
@@ -47,17 +47,17 @@ public typealias DigitalCrownLogView = CareKitEssentialDigitalCrownView
 ///     |                                                       |
 ///     +-------------------------------------------------------+
 /// ```
-public struct CareKitEssentialDigitalCrownView: CareKitEssentialView {
+public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 	@Environment(\.careStore) public var store
 
-	private(set) var event: OCKAnyEvent
-	@State public var kind: String?
-	@State public var initialValue: Double?
-	@State public var startValue: Double
-	@State public var endValue: Double?
-	@State public var step: Double
-	@State public var emojis: [String]
-	@State public var colorRatio: Double
+	var event: OCKAnyEvent
+	var kind: String?
+	var initialValue: Double?
+	var startValue: Double
+	var endValue: Double?
+	var step: Double
+	var emojis: [String]
+	var colorRatio: Double
 
 	public var body: some View {
 		DigitalCrownView(
@@ -130,7 +130,7 @@ struct CareKitEssentialDigitalCrownView_Previews: PreviewProvider {
 	static var previews: some View {
 		VStack {
 			if let event = try? Utility.createNauseaEvent() {
-				CareKitEssentialDigitalCrownView(
+				DigitalCrownLogView(
 					event: event,
 					emojis: emojis,
 					gradientColors: [.green, .yellow, .red]

@@ -13,6 +13,8 @@ import Foundation
 import os.log
 import SwiftUI
 
+public typealias ChartView = CareKitEssentialChartView
+
 /// Displays a SwiftUI Chart above an axis. The initializer takes an an array of
 /// `CKEDataSeriesConfiguration`'s which each support
 /// `CKEDataSeries.MarkType` that allows you to overlay from several
@@ -179,7 +181,7 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 
 		NavigationStack {
 			ScrollView {
-				CareKitEssentialChartView(
+				ChartView(
 					title: task.title ?? "",
 					subtitle: "Chart",
 					dateInterval: $dateInterval,

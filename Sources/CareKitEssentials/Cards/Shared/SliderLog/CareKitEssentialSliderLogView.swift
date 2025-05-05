@@ -48,17 +48,17 @@ public typealias SliderLogView = CareKitEssentialSliderLogView
 public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 	@Environment(\.careStore) public var store
 
-	private(set) var event: OCKAnyEvent
-	@State public var sliderStyle: SliderStyle
-	@State public var range: ClosedRange<Double>
-	@State public var kind: String?
-	@State public var initialValue: Double?
-	@State public var step: Double
-	@State public var minimumImage: Image?
-	@State public var maximumImage: Image?
-	@State public var minimumDescription: String?
-	@State public var maximumDescription: String?
-	@State public var gradientColors: [Color]?
+	var event: OCKAnyEvent
+	var sliderStyle: SliderStyle
+	var range: ClosedRange<Double>
+	var kind: String?
+	var initialValue: Double?
+	var step: Double
+	var minimumImage: Image?
+	var maximumImage: Image?
+	var minimumDescription: String?
+	var maximumDescription: String?
+	var gradientColors: [Color]?
 
 	public var body: some View {
 		SliderLogTaskView(
@@ -158,13 +158,14 @@ struct CareKitEssentialSliderLogView_Previews: PreviewProvider {
 		ScrollView {
 			VStack {
 				if let event = try? Utility.createNauseaEvent() {
-					CareKitEssentialSliderLogView(
+					SliderLogView(
 						event: event,
+						initialValue: 1,
 						style: .ticked,
 						gradientColors: [.green, .yellow, .red]
 					)
 					Divider()
-					CareKitEssentialSliderLogView(
+					SliderLogView(
 						event: event,
 						style: .system,
 						gradientColors: [.green, .yellow, .red]
