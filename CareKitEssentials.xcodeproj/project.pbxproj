@@ -46,8 +46,8 @@
 		70721CE42D658EC300270799 /* OCKOutcomeValue+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */; };
 		70721CE62D65990700270799 /* OCKOutcomeValueExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */; };
 		707D28A22DC815F300980253 /* CareKitEssentialSliderLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A12DC815DA00980253 /* CareKitEssentialSliderLogView.swift */; };
-		707D28A42DC817F700980253 /* CareKitEssentialDigitalCrownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A32DC817EC00980253 /* CareKitEssentialDigitalCrownView.swift */; };
 		707D28A72DC9116E00980253 /* CareKitEssentialSliderLogView+EventViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A62DC9116200980253 /* CareKitEssentialSliderLogView+EventViewable.swift */; };
+		707D28A92DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */; };
 		7081E0212D050136004937F6 /* CareStoreFetchedResults+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */; };
 		708D74092DC4995F0049B592 /* OCKOutcomeValue+Plottable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D74082DC4995A0049B592 /* OCKOutcomeValue+Plottable.swift */; };
 		7094DD0F2DC477EE0039CA64 /* CareKitEssentialVersionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7094DD0E2DC477E70039CA64 /* CareKitEssentialVersionable.swift */; };
@@ -210,8 +210,8 @@
 		70721CE32D658EBC00270799 /* OCKOutcomeValue+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Sequence.swift"; sourceTree = "<group>"; };
 		70721CE52D65990700270799 /* OCKOutcomeValueExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKOutcomeValueExtensionsTests.swift; sourceTree = "<group>"; };
 		707D28A12DC815DA00980253 /* CareKitEssentialSliderLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialSliderLogView.swift; sourceTree = "<group>"; };
-		707D28A32DC817EC00980253 /* CareKitEssentialDigitalCrownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialDigitalCrownView.swift; sourceTree = "<group>"; };
 		707D28A62DC9116200980253 /* CareKitEssentialSliderLogView+EventViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareKitEssentialSliderLogView+EventViewable.swift"; sourceTree = "<group>"; };
+		707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialDigitalCrownLogView.swift; sourceTree = "<group>"; };
 		7081E0202D050136004937F6 /* CareStoreFetchedResults+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResults+Sequence.swift"; sourceTree = "<group>"; };
 		708D74082DC4995A0049B592 /* OCKOutcomeValue+Plottable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Plottable.swift"; sourceTree = "<group>"; };
 		7094DD0E2DC477E70039CA64 /* CareKitEssentialVersionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareKitEssentialVersionable.swift; sourceTree = "<group>"; };
@@ -524,7 +524,7 @@
 		OBJ_14 /* DigitalCrown */ = {
 			isa = PBXGroup;
 			children = (
-				707D28A32DC817EC00980253 /* CareKitEssentialDigitalCrownView.swift */,
+				707D28A82DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift */,
 				OBJ_15 /* DigitalCrownView.swift */,
 				OBJ_16 /* DigitalCrownViewFooter.swift */,
 				OBJ_17 /* DigitalCrownViewHeader.swift */,
@@ -885,6 +885,7 @@
 				OBJ_753 /* Image.swift in Sources */,
 				70EBE30C2D19FC0F00517D5E /* EventWithContentViewable.swift in Sources */,
 				70EBE30D2D19FC0F00517D5E /* EventViewable.swift in Sources */,
+				707D28A92DC93EE100980253 /* CareKitEssentialDigitalCrownLogView.swift in Sources */,
 				709530B62DAC3CA300E18A59 /* OCKTask+ResearchKitSwiftUI.swift in Sources */,
 				70B49A892D0A83E10023E5B3 /* Double.swift in Sources */,
 				702FF7732CFAA97500B26710 /* TemporalProgress.swift in Sources */,
@@ -915,7 +916,6 @@
 				7068BD412D62788E00212E4A /* OCKHealthKitLinkage+Hashable.swift in Sources */,
 				7026DDEF2D0CD750002EACAA /* OCKNote+Hashable.swift in Sources */,
 				OBJ_758 /* LinearCareTaskProgress+Math.swift in Sources */,
-				707D28A42DC817F700980253 /* CareKitEssentialDigitalCrownView.swift in Sources */,
 				70BBCB572A14164E00759A9C /* SliderLogTaskViewModel.swift in Sources */,
 				7094DD152DC47C790039CA64 /* OCKContact+Hashable.swift in Sources */,
 				70CA3AFA2DB8C28E002CDC50 /* OCKStoreCoordinator+Hashable.swift in Sources */,

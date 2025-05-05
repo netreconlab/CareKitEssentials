@@ -16,7 +16,6 @@ import SwiftUI
 
 public typealias DigitalCrownLogView = CareKitEssentialDigitalCrownLogView
 
-
 /// A card that displays a header view, multi-line label, a digital crown modifier, and a
 /// completion button.
 ///
