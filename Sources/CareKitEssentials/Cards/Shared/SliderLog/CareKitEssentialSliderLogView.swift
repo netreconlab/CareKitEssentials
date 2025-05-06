@@ -91,7 +91,7 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 				}
 			),
 			style: sliderStyle,
-			gradientColors: gradientColors,
+			gradientColors: gradientColors
 		)
 	}
 
