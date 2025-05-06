@@ -153,8 +153,7 @@
       "anchor" : "Enumerations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/PlotType"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/MarkType"
       ],
       "title" : "Enumerations"
     },
@@ -317,40 +316,6 @@
   "title" : "CKEDataSeries.MarkType",
   "type" : "topic",
   "url" : "\/documentation\/carekitessentials\/ckedataseries\/marktype"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/PlotType": {
-  "abstract" : [
-    {
-      "text" : "An enumerator specifying the types of plots that can be used to display data series.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "enum"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "PlotType"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitEssentials\/CKEDataSeries\/PlotType",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "PlotType"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "CKEDataSeries.PlotType",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitessentials\/ckedataseries\/plottype"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitEssentials/CKEDataSeries/areaParametricFunction": {
   "abstract" : [
