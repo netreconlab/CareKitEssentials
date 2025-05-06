@@ -129,8 +129,12 @@ public enum PeriodComponent: String, CaseIterable, Hashable, Codable, Identifiab
 extension PeriodComponent {
 	public init(component: Calendar.Component) throws {
 		switch component {
-		case .day, .dayOfYear:
+		case .day:
 			self = .day
+		#if !swift(<6.0)
+		case .dayOfYear:
+			self = .day
+		#endif
 		case .weekday, .weekOfMonth, .weekOfYear:
 			self = .week
 		case .month:
