@@ -57,6 +57,7 @@ public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 	var step: Double
 	var emojis: [String]
 	var colorRatio: Double
+	var action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)?
 
 	public var body: some View {
 		DigitalCrownView(
@@ -70,22 +71,7 @@ public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 			incrementValue: step,
 			emojis: emojis,
 			colorRatio: colorRatio,
-			action: { value -> OCKAnyOutcome in
-				guard let value else {
-					// Delete outcome values
-					let updatedOutcome = try await updateEvent(
-						event,
-						with: nil
-					)
-					return updatedOutcome
-				}
-
-				let updatedOutcome = try await updateEvent(
-					event,
-					with: [value]
-				)
-				return updatedOutcome
-			}
+			action: action ?? defaultAction
 		)
 	}
 
@@ -99,6 +85,7 @@ public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 	 - parameter step: Value to increment by when moving the digital crown. Default value is 1.
 	 - parameter emojis: An array of emoji's to show on the screen.
 	 - parameter colorRatio: The ratio effect on the color gradient.
+	 - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
 	 */
 	public init(
 		event: OCKAnyEvent,
@@ -109,7 +96,8 @@ public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 		step: Double = 1,
 		emojis: [String] = [],
 		colorRatio: Double = 0.2,
-		gradientColors: [Color]? = nil
+		gradientColors: [Color]? = nil,
+		action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
 	) {
 		self.event = event
 		self.kind = kind
@@ -119,6 +107,26 @@ public struct CareKitEssentialDigitalCrownLogView: CareKitEssentialView {
 		self.step = step
 		self.emojis = emojis
 		self.colorRatio = colorRatio
+		self.action = action
+	}
+
+	func defaultAction(
+		_ value: OCKOutcomeValue?
+	) async throws -> OCKAnyOutcome {
+		guard let value else {
+			// Delete outcome values
+			let updatedOutcome = try await updateEvent(
+				event,
+				with: nil
+			)
+			return updatedOutcome
+		}
+
+		let updatedOutcome = try await updateEvent(
+			event,
+			with: [value]
+		)
+		return updatedOutcome
 	}
 }
 

@@ -59,6 +59,7 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 	var minimumDescription: String?
 	var maximumDescription: String?
 	var gradientColors: [Color]?
+	var action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)?
 
 	public var body: some View {
 		SliderLogTaskView(
@@ -73,22 +74,7 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 				initialValue: initialValue,
 				range: range,
 				step: step,
-				action: { value -> OCKAnyOutcome in
-					guard let value else {
-						// Delete outcome values
-						let updatedOutcome = try await updateEvent(
-							event,
-							with: nil
-						)
-						return updatedOutcome
-					}
-
-					let updatedOutcome = try await updateEvent(
-						event,
-						with: [value]
-					)
-					return updatedOutcome
-				}
+				action: action ?? defaultAction
 			),
 			style: sliderStyle,
 			gradientColors: gradientColors
@@ -118,6 +104,7 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 	 the maximum side of the scale. Setting this value to nil results in no gradient being
 	 drawn. Defaults to nil. An example usage would set an array of red and green to
 	 visually indicate a scale from bad to good.
+	 - parameter action: The action to perform when the button is tapped. Defaults to saving the outcome directly.
 	 */
 	public init(
 		event: OCKAnyEvent,
@@ -130,7 +117,8 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 		maximumImage: Image? = nil,
 		minimumDescription: String? = nil,
 		maximumDescription: String? = nil,
-		gradientColors: [Color]? = nil
+		gradientColors: [Color]? = nil,
+		action: ((OCKOutcomeValue?) async throws -> OCKAnyOutcome)? = nil
 	) {
 		self.event = event
 		self.sliderStyle = style
@@ -143,6 +131,26 @@ public struct CareKitEssentialSliderLogView: CareKitEssentialView {
 		self.minimumDescription = minimumDescription
 		self.maximumDescription = maximumDescription
 		self.gradientColors = gradientColors
+		self.action = action
+	}
+
+	func defaultAction(
+		_ value: OCKOutcomeValue?
+	) async throws -> OCKAnyOutcome {
+		guard let value else {
+			// Delete outcome values
+			let updatedOutcome = try await updateEvent(
+				event,
+				with: nil
+			)
+			return updatedOutcome
+		}
+
+		let updatedOutcome = try await updateEvent(
+			event,
+			with: [value]
+		)
+		return updatedOutcome
 	}
 }
 
