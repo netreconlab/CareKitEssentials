@@ -98,7 +98,17 @@ class Utility {
                     to: Date()
                 )
                 _ = try? await store.addPatient(patient)
-                try? await store.populateSampleData()
+				let startDate = Calendar.current.date(
+					byAdding: .day,
+					value: -30,
+					to: Date()
+				)!
+                try? await store.populateDefaultCarePlansTasks(
+					startDate: startDate
+				)
+				try? await store.populateSampleOutcomes(
+					startDate: startDate
+				)
             }
         }
         return store
