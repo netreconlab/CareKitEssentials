@@ -39,7 +39,7 @@ public extension OCKStore {
 
 extension OCKStore {
     func populateDefaultCarePlansTasks(
-		startDate: Date,
+		startDate: Date
 	) async throws {
 
         let thisMorning = Calendar.current.startOfDay(for: startDate)
