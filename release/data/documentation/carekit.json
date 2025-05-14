@@ -177,7 +177,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKDataSeriesConfiguration": {
   "abstract" : [
     {
-      "text" : "A configuration object that specifies which data should be queried and how it should be displayed by the graph.",
+      "text" : "A configuration object that specifies which data to query and how the graph displays it.",
       "type" : "text"
     }
   ],
@@ -210,7 +210,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKLog": {
   "abstract" : [
-
+    {
+      "text" : "A structure that provides logging services to CareKit.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -242,7 +245,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKSynchronizationContext": {
   "abstract" : [
     {
-      "text" : "Provides context for a view model value.",
+      "text" : "A data structure that provides context for a view model value.",
       "type" : "text"
     }
   ],

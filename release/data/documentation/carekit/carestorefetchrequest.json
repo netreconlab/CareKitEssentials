@@ -145,10 +145,10 @@
         },
         {
           "code" : [
-            "@CareStoreFetchRequest(query: OCKTaskQuery())",
-            "private var tasks"
+            "    @CareStoreFetchRequest(query: OCKTaskQuery())",
+            "    private var tasks"
           ],
-          "syntax" : null,
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -162,7 +162,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " and will always stay up to date",
+              "text" : " and stays up to date",
               "type" : "text"
             },
             {
@@ -179,7 +179,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "The property wrapper also offers a binding to the query in the case it needs to be modified.",
+              "text" : "The property wrapper also offers a binding to the query in case you need to modify it.",
               "type" : "text"
             },
             {
@@ -187,7 +187,7 @@
               "type" : "text"
             },
             {
-              "text" : "Modifying the query  triggers a new fetch request.",
+              "text" : "Modifying the query initiates a new fetch request.",
               "type" : "text"
             }
           ],
@@ -195,11 +195,11 @@
         },
         {
           "code" : [
-            "Button(\"Update Query\") {",
-            "    tasks.query = newQuery",
-            "}"
+            "    Button(\"Update Query\") {",
+            "        tasks.query = newQuery",
+            "    }"
           ],
-          "syntax" : null,
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -229,10 +229,10 @@
         },
         {
           "code" : [
-            "ContentView()",
-            "    .environment(\\.careStore, store)"
+            "    ContentView()",
+            "        .environment(\\.careStore, store)"
           ],
-          "syntax" : null,
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -271,7 +271,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "You may need to update the query over time. For example, suppose you’re using",
+              "text" : "You may need to update the query over time. For example, you’re using",
               "type" : "text"
             },
             {
@@ -279,7 +279,15 @@
               "type" : "text"
             },
             {
-              "text" : "the property wrapper to fetch and display tasks for “today.” After midnight passes,",
+              "text" : "the property wrapper to fetch and display tasks for ",
+              "type" : "text"
+            },
+            {
+              "code" : "today",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ". After midnight passes,",
               "type" : "text"
             },
             {
@@ -287,7 +295,11 @@
               "type" : "text"
             },
             {
-              "text" : "the notion of “today” changes and you need to fetch new results. To detect events such",
+              "code" : "today",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " changes, so you need to fetch new results. To detect events such",
               "type" : "text"
             },
             {
@@ -331,9 +343,8 @@
               "type" : "text"
             },
             {
-              "identifier" : "https:\/\/www.google.com\/search?client=safari&rls=en&q=timelineview&ie=UTF-8&oe=UTF-8&safari_group=3",
-              "isActive" : true,
-              "type" : "reference"
+              "text" : "doc:\/\/com.apple.documentation\/documentation\/swiftui\/timelineview",
+              "type" : "text"
             },
             {
               "text" : ".",
@@ -472,7 +483,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchRequest/Configuration": {
   "abstract" : [
     {
-      "text" : "Contains query information used to stream data from a CareKit store.",
+      "text" : "A structure that contains query information you use to stream data from a CareKit store.",
       "type" : "text"
     }
   ],
@@ -1088,15 +1099,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchRequest/projectedValue": {
   "abstract" : [
     {
-      "text" : "A binding to the parameters used to fetch data from the CareKit store. Modifying",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the parameters execute a new fetch request.",
+      "text" : "A binding to the parameters you use to fetch data from a CareKit store.",
       "type" : "text"
     }
   ],
@@ -1238,27 +1241,15 @@
 },
 "https://developer.apple.com/documentation/uikit/uiapplication/1623059-significanttimechangenotificatio": {
   "identifier" : "https:\/\/developer.apple.com\/documentation\/uikit\/uiapplication\/1623059-significanttimechangenotificatio",
-  "title" : "significant time change notifications",
+  "title" : "significantTimeChangeNotification",
   "titleInlineContent" : [
     {
-      "text" : "significant time change notifications",
-      "type" : "text"
-    }
-  ],
-  "type" : "link",
-  "url" : "https:\/\/developer.apple.com\/documentation\/uikit\/uiapplication\/1623059-significanttimechangenotificatio"
-},
-"https://www.google.com/search?client=safari&rls=en&q=timelineview&ie=UTF-8&oe=UTF-8&safari_group=3": {
-  "identifier" : "https:\/\/www.google.com\/search?client=safari&rls=en&q=timelineview&ie=UTF-8&oe=UTF-8&safari_group=3",
-  "title" : "TimelineView",
-  "titleInlineContent" : [
-    {
-      "code" : "TimelineView",
+      "code" : "significantTimeChangeNotification",
       "type" : "codeVoice"
     }
   ],
   "type" : "link",
-  "url" : "https:\/\/www.google.com\/search?client=safari&rls=en&q=timelineview&ie=UTF-8&oe=UTF-8&safari_group=3"
+  "url" : "https:\/\/developer.apple.com\/documentation\/uikit\/uiapplication\/1623059-significanttimechangenotificatio"
 }
 }
 }

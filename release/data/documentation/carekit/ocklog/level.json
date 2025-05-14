@@ -1,55 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Controls the log level for all of CareKit. You may set this value from within your CareKit app.",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "To see messages that are helpful for app developers, use ",
-      "type" : "text"
-    },
-    {
-      "code" : ".fault",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " or ",
-      "type" : "text"
-    },
-    {
-      "code" : ".error",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "To see messages that are helpful for framework developers, use ",
-      "type" : "text"
-    },
-    {
-      "code" : ".debug",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " or ",
-      "type" : "text"
-    },
-    {
-      "code" : ".info",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
+      "text" : "A property that controls the log level for all of CareKit.",
       "type" : "text"
     }
   ],
@@ -153,6 +105,74 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "discussion",
+          "level" : 2,
+          "text" : "Discussion",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You set this value from within your CareKit app.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To see messages that are helpful for app debugging, use ",
+              "type" : "text"
+            },
+            {
+              "code" : ".fault",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : ".error",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "To see messages that are helpful for framework debugging, use ",
+              "type" : "text"
+            },
+            {
+              "code" : ".debug",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " or ",
+              "type" : "text"
+            },
+            {
+              "code" : ".info",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -190,7 +210,10 @@
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKLog": {
   "abstract" : [
-
+    {
+      "text" : "A structure that provides logging services to CareKit.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -222,55 +245,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKLog/level": {
   "abstract" : [
     {
-      "text" : "Controls the log level for all of CareKit. You may set this value from within your CareKit app.",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "To see messages that are helpful for app developers, use ",
-      "type" : "text"
-    },
-    {
-      "code" : ".fault",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " or ",
-      "type" : "text"
-    },
-    {
-      "code" : ".error",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "To see messages that are helpful for framework developers, use ",
-      "type" : "text"
-    },
-    {
-      "code" : ".debug",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " or ",
-      "type" : "text"
-    },
-    {
-      "code" : ".info",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ".",
+      "text" : "A property that controls the log level for all of CareKit.",
       "type" : "text"
     }
   ],

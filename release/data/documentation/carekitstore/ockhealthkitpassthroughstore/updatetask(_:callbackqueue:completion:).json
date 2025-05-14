@@ -216,6 +216,20 @@
             {
               "inlineContent" : [
                 {
+                  "text" : "A task to be updated. The task must already exist in the store.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "task"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
                   "text" : "The queue that the completion closure should be called on. In most cases this should be the main queue.",
                   "type" : "text"
                 }

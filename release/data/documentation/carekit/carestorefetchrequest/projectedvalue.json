@@ -1,15 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "A binding to the parameters used to fetch data from the CareKit store. Modifying",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the parameters execute a new fetch request.",
+      "text" : "A binding to the parameters you use to fetch data from a CareKit store.",
       "type" : "text"
     }
   ],
@@ -157,6 +149,15 @@
         {
           "inlineContent" : [
             {
+              "text" : "Modifying the parameters executes a new fetch request.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
               "text" : "Here’s an example for fetching tasks from a store:",
               "type" : "text"
             }
@@ -165,10 +166,10 @@
         },
         {
           "code" : [
-            "@CareStoreFetchRequest(query: OCKTaskQuery())",
-            "private var tasks"
+            "    @CareStoreFetchRequest(query: OCKTaskQuery())",
+            "    private var tasks"
           ],
-          "syntax" : null,
+          "syntax" : "swift",
           "type" : "codeListing"
         },
         {
@@ -182,11 +183,11 @@
         },
         {
           "code" : [
-            "Button(\"Update Query\") {",
-            "    tasks.query = newQuery",
-            "}"
+            "    Button(\"Update Query\") {",
+            "        tasks.query = newQuery",
+            "    }"
           ],
-          "syntax" : null,
+          "syntax" : "swift",
           "type" : "codeListing"
         }
       ],
@@ -263,7 +264,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchRequest/Configuration": {
   "abstract" : [
     {
-      "text" : "Contains query information used to stream data from a CareKit store.",
+      "text" : "A structure that contains query information you use to stream data from a CareKit store.",
       "type" : "text"
     }
   ],
@@ -297,15 +298,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchRequest/projectedValue": {
   "abstract" : [
     {
-      "text" : "A binding to the parameters used to fetch data from the CareKit store. Modifying",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the parameters execute a new fetch request.",
+      "text" : "A binding to the parameters you use to fetch data from a CareKit store.",
       "type" : "text"
     }
   ],

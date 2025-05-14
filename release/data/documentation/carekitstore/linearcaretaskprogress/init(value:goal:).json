@@ -162,7 +162,15 @@
                   "type" : "codeVoice"
                 },
                 {
-                  "text" : ".  The task is considered completed if the progress value is greater than zero.",
+                  "text" : ". The task is considered completed",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "if the progress value is greater than zero.",
                   "type" : "text"
                 }
               ],

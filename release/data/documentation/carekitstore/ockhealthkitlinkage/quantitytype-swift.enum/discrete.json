@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Quantities that are defined at a single point in time, such as heart rate or blood oxygen level.",
+      "text" : "Quantities that are defined at a single point in time, such as heart rate or blood alcohol content level.",
       "type" : "text"
     }
   ],
@@ -175,7 +175,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitStore/OCKHealthKitLinkage/QuantityType-swift.enum/discrete": {
   "abstract" : [
     {
-      "text" : "Quantities that are defined at a single point in time, such as heart rate or blood oxygen level.",
+      "text" : "Quantities that are defined at a single point in time, such as heart rate or blood alcohol content level.",
       "type" : "text"
     }
   ],

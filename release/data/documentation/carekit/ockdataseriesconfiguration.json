@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "A configuration object that specifies which data should be queried and how it should be displayed by the graph.",
+      "text" : "A configuration object that specifies which data to query and how the graph displays it.",
       "type" : "text"
     }
   ],
@@ -136,7 +136,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKDataSeriesConfiguration": {
   "abstract" : [
     {
-      "text" : "A configuration object that specifies which data should be queried and how it should be displayed by the graph.",
+      "text" : "A configuration object that specifies which data to query and how the graph displays it.",
       "type" : "text"
     }
   ],

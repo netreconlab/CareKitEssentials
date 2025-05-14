@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Contains query information used to stream data from a CareKit store.",
+      "text" : "A structure that contains query information you use to stream data from a CareKit store.",
       "type" : "text"
     }
   ],
@@ -159,7 +159,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/CareStoreFetchRequest/Configuration": {
   "abstract" : [
     {
-      "text" : "Contains query information used to stream data from a CareKit store.",
+      "text" : "A structure that contains query information you use to stream data from a CareKit store.",
       "type" : "text"
     }
   ],

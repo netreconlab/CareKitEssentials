@@ -252,8 +252,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/disableAutocorrection(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/disabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/drawingGroup(opaque:colorMode:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)-53x2q",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)-55y",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/edgesIgnoringSafeArea(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/environment(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/environment(_:_:)",
@@ -483,8 +482,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/scrollTargetLayout(isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/scrollTransition(_:axis:transition:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/scrollTransition(topLeading:bottomTrailing:axis:transition:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)-51uw7",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)-soy2",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchPresentationToolbarBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchSuggestions(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchSuggestions(_:for:)",
@@ -530,8 +528,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/textRenderer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/textScale(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/textSelectionAffinity(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)-8lfyx",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)-8prga",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/toggleStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/toolbar(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/toolbar(content:)-3q42t",
@@ -19440,65 +19437,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/simpletaskview\/drawinggroup(opaque:colormode:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/dynamicTypeSize(_:)-53x2q": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "dynamicTypeSize"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)-53x2q",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "dynamicTypeSize(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/dynamictypesize(_:)-53x2q"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/dynamicTypeSize(_:)-55y": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/dynamicTypeSize(_:)": {
   "abstract" : [
 
   ],
@@ -19542,12 +19481,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)-55y",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/dynamicTypeSize(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "dynamicTypeSize(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/dynamictypesize(_:)-55y"
+  "url" : "\/documentation\/carekitui\/simpletaskview\/dynamictypesize(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/edgesIgnoringSafeArea(_:)": {
   "abstract" : [
@@ -35755,7 +35694,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/simpletaskview\/scrolltransition(topleading:bottomtrailing:axis:transition:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/searchCompletion(_:)-51uw7": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/searchCompletion(_:)": {
   "abstract" : [
 
   ],
@@ -35799,70 +35738,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)-51uw7",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "searchCompletion(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/searchcompletion(_:)-51uw7"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/searchCompletion(_:)-soy2": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "searchCompletion"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/searchCompletion(_:)-soy2",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "searchCompletion(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/searchcompletion(_:)-soy2"
+  "url" : "\/documentation\/carekitui\/simpletaskview\/searchcompletion(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/searchPresentationToolbarBehavior(_:)": {
   "abstract" : [
@@ -39339,7 +39220,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/simpletaskview\/textselectionaffinity(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/tint(_:)-8lfyx": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/tint(_:)": {
   "abstract" : [
 
   ],
@@ -39383,70 +39264,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)-8lfyx",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "tint(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/tint(_:)-8lfyx"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/tint(_:)-8prga": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "tint"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/SimpleTaskView\/tint(_:)-8prga",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "tint(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/simpletaskview\/tint(_:)-8prga"
+  "url" : "\/documentation\/carekitui\/simpletaskview\/tint(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/SimpleTaskView/toggleStyle(_:)": {
   "abstract" : [

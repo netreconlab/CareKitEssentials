@@ -211,7 +211,7 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKit/OCKSynchronizationContext": {
   "abstract" : [
     {
-      "text" : "Provides context for a view model value.",
+      "text" : "A data structure that provides context for a view model value.",
       "type" : "text"
     }
   ],

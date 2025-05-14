@@ -252,8 +252,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/disableAutocorrection(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/disabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/drawingGroup(opaque:colorMode:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)-3dwjk",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)-7m20b",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/edgesIgnoringSafeArea(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/environment(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/environment(_:_:)",
@@ -483,8 +482,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/scrollTargetLayout(isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/scrollTransition(_:axis:transition:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/scrollTransition(topLeading:bottomTrailing:axis:transition:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)-89kgr",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)-i65z",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchPresentationToolbarBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchSuggestions(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchSuggestions(_:for:)",
@@ -530,8 +528,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/textRenderer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/textScale(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/textSelectionAffinity(_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)-1c9ww",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)-9xl29",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/toggleStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/toolbar(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/toolbar(content:)-26d7x",
@@ -19456,7 +19453,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/circularcompletionview\/drawinggroup(opaque:colormode:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/dynamicTypeSize(_:)-3dwjk": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/dynamicTypeSize(_:)": {
   "abstract" : [
 
   ],
@@ -19500,70 +19497,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)-3dwjk",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "dynamicTypeSize(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/dynamictypesize(_:)-3dwjk"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/dynamicTypeSize(_:)-7m20b": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "dynamicTypeSize"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/dynamicTypeSize(_:)-7m20b",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "dynamicTypeSize(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/dynamictypesize(_:)-7m20b"
+  "url" : "\/documentation\/carekitui\/circularcompletionview\/dynamictypesize(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/edgesIgnoringSafeArea(_:)": {
   "abstract" : [
@@ -35771,7 +35710,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/circularcompletionview\/scrolltransition(topleading:bottomtrailing:axis:transition:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/searchCompletion(_:)-89kgr": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/searchCompletion(_:)": {
   "abstract" : [
 
   ],
@@ -35815,70 +35754,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)-89kgr",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "searchCompletion(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/searchcompletion(_:)-89kgr"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/searchCompletion(_:)-i65z": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "searchCompletion"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "T"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/searchCompletion(_:)-i65z",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "searchCompletion(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/searchcompletion(_:)-i65z"
+  "url" : "\/documentation\/carekitui\/circularcompletionview\/searchcompletion(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/searchPresentationToolbarBehavior(_:)": {
   "abstract" : [
@@ -39355,7 +39236,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/circularcompletionview\/textselectionaffinity(_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/tint(_:)-1c9ww": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/tint(_:)": {
   "abstract" : [
 
   ],
@@ -39399,70 +39280,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)-1c9ww",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "tint(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/tint(_:)-1c9ww"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/tint(_:)-9xl29": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "tint"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CircularCompletionView\/tint(_:)-9xl29",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "tint(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/circularcompletionview\/tint(_:)-9xl29"
+  "url" : "\/documentation\/carekitui\/circularcompletionview\/tint(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CircularCompletionView/toggleStyle(_:)": {
   "abstract" : [
