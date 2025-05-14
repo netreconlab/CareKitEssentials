@@ -13,7 +13,7 @@ extension OCKAnyEventStore {
 
     func toggleBooleanOutcome(for event: OCKAnyEvent) async throws -> OCKAnyOutcome {
         try await withCheckedThrowingContinuation { continuation in
-            toggleBooleanOutcome(for: event, completion: continuation.resume)
+			toggleBooleanOutcome(for: event, completion: { continuation.resume(with: $0) })
         }
     }
 
