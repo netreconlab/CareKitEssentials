@@ -3,7 +3,7 @@
     {
       "identity" : "carekit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/carekit-appleCareKit.git",
+      "location" : "https://github.com/carekit-apple/CareKit.git",
       "state" : {
         "revision" : "fd47ce54b5be5389f1cc0e5c1c8ca77e2b7f0f45",
         "version" : "4.0.0"
