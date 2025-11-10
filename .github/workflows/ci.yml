@@ -44,7 +44,7 @@ jobs:
       run: |
         cat .codecov.yml | curl --data-binary @- https://codecov.io/validate
     - name: Prepare codecov
-      uses: sersoft-gmbh/swift-coverage-action@v4
+      uses: sersoft-gmbh/swift-coverage-action@v5
       id: coverage-files
       with:
         format: lcov
