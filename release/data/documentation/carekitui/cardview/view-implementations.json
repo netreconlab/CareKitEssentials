@@ -330,7 +330,10 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/layoutDirectionBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/layoutPriority(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/layoutValue(key:value:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-1bof0",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-1hb2f",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-42s0w",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-9sitr",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:reservesSpace:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineSpacing(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/listItemTint(_:)-2nnb4",
@@ -368,8 +371,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDestination(for:destination:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDestination(isPresented:destination:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDestination(item:destination:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)-4upxl",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)-9z6jz",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:preview:)-10t5j",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:preview:)-2bou2",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:preview:)-39d4",
@@ -407,8 +409,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onScrollTargetVisibilityChange(idType:threshold:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onScrollVisibilityChange(threshold:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onSubmit(of:_:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)-2mwvx",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)-2urq1",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/opacity(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/overlay(_:alignment:)",
@@ -535,8 +536,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbar(content:)-r0mf",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbar(id:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbar(removing:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)-11hq9",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)-4ict1",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackgroundVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarColorScheme(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarForegroundStyle(_:for:)",
@@ -24694,7 +24694,187 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/cardview\/layoutvalue(key:value:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:)-1bof0": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "lineLimit"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s16PartialRangeFromV",
+      "text" : "PartialRangeFrom"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-1bof0",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "lineLimit(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/cardview\/linelimit(_:)-1bof0"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:)-1hb2f": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "lineLimit"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s19PartialRangeThroughV",
+      "text" : "PartialRangeThrough"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-1hb2f",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "lineLimit(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/cardview\/linelimit(_:)-1hb2f"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:)-42s0w": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "lineLimit"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SN",
+      "text" : "ClosedRange"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-42s0w",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "lineLimit(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/cardview\/linelimit(_:)-42s0w"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:)-9sitr": {
   "abstract" : [
 
   ],
@@ -24738,12 +24918,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/lineLimit(_:)-9sitr",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "lineLimit(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/linelimit(_:)"
+  "url" : "\/documentation\/carekitui\/cardview\/linelimit(_:)-9sitr"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/lineLimit(_:reservesSpace:)": {
   "abstract" : [
@@ -27168,65 +27348,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/cardview\/navigationdestination(item:destination:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/navigationDocument(_:)-4upxl": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "navigationDocument"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "D"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "D"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)-4upxl",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "navigationDocument(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/navigationdocument(_:)-4upxl"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/navigationDocument(_:)-9z6jz": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/navigationDocument(_:)": {
   "abstract" : [
 
   ],
@@ -27270,12 +27392,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)-9z6jz",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/navigationDocument(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "navigationDocument(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/navigationdocument(_:)-9z6jz"
+  "url" : "\/documentation\/carekitui\/cardview\/navigationdocument(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/navigationDocument(_:preview:)-10t5j": {
   "abstract" : [
@@ -30323,117 +30445,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/cardview\/onsubmit(of:_:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/onTapGesture(count:coordinateSpace:perform:)-2mwvx": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "onTapGesture"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "count"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Si",
-      "text" : "Int"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "coordinateSpace"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI23CoordinateSpaceProtocolP",
-      "text" : "CoordinateSpaceProtocol"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "perform"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:@S@CGPoint",
-      "text" : "CGPoint"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s4Voida",
-      "text" : "Void"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)-2mwvx",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "onTapGesture(count:coordinateSpace:perform:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/ontapgesture(count:coordinatespace:perform:)-2mwvx"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/onTapGesture(count:coordinateSpace:perform:)-2urq1": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/onTapGesture(count:coordinateSpace:perform:)": {
   "abstract" : [
 
   ],
@@ -30529,12 +30541,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)-2urq1",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/onTapGesture(count:coordinateSpace:perform:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "onTapGesture(count:coordinateSpace:perform:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/ontapgesture(count:coordinatespace:perform:)-2urq1"
+  "url" : "\/documentation\/carekitui\/cardview\/ontapgesture(count:coordinatespace:perform:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/onTapGesture(count:perform:)": {
   "abstract" : [
@@ -39672,7 +39684,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/cardview\/toolbar(removing:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/toolbarBackground(_:for:)-11hq9": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/toolbarBackground(_:for:)": {
   "abstract" : [
 
   ],
@@ -39734,87 +39746,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)-11hq9",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "toolbarBackground(_:for:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/toolbarbackground(_:for:)-11hq9"
-},
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/toolbarBackground(_:for:)-4ict1": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "toolbarBackground"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "S"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "for"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI16ToolbarPlacementV",
-      "text" : "ToolbarPlacement"
-    },
-    {
-      "kind" : "text",
-      "text" : "...) -> "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "some"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7SwiftUI4ViewP",
-      "text" : "View"
-    }
-  ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/CardView\/toolbarBackground(_:for:)-4ict1",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "toolbarBackground(_:for:)",
-  "type" : "topic",
-  "url" : "\/documentation\/carekitui\/cardview\/toolbarbackground(_:for:)-4ict1"
+  "url" : "\/documentation\/carekitui\/cardview\/toolbarbackground(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/CardView/toolbarBackgroundVisibility(_:for:)": {
   "abstract" : [
