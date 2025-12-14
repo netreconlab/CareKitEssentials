@@ -9,7 +9,7 @@ import Foundation
 import os.log
 
 extension Logger {
-    private static var subsystem = Bundle.main.bundleIdentifier!
+	nonisolated(unsafe) private static var subsystem = Bundle.main.bundleIdentifier!
 
     static let essentialView = Logger(
 		subsystem: subsystem,
