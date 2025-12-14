@@ -29,8 +29,8 @@ extension OCKAnyEvent: Equatable {
     }
 
     static func isTasksEqual(
-        lhs: OCKAnyTask,
-        rhs: OCKAnyTask
+        lhs: any OCKAnyTask,
+        rhs: any OCKAnyTask
     ) -> Bool {
 
         guard let lhsTask = lhs as? OCKTask,
@@ -62,8 +62,8 @@ extension OCKAnyEvent: Equatable {
     }
 
     static func isOutcomesEqual(
-        lhs: OCKAnyOutcome?,
-        rhs: OCKAnyOutcome?
+        lhs: (any OCKAnyOutcome)?,
+        rhs: (any OCKAnyOutcome)?
     ) -> Bool {
 
         guard let lhsOutcome = lhs as? OCKOutcome,

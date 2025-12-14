@@ -8,8 +8,8 @@ on:
     branches: [ main ]
 
 env:
-  CI_XCODE_LATEST: '/Applications/Xcode_16.3.app/Contents/Developer'
-  CI_XCODE_OLDEST: '/Applications/Xcode_15.4.app/Contents/Developer'
+  CI_XCODE_LATEST: '/Applications/Xcode_26.1.app/Contents/Developer'
+  CI_XCODE_OLDEST: '/Applications/Xcode_16.4.app/Contents/Developer'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,22 +18,22 @@ concurrency:
 jobs:
   test:
     timeout-minutes: 15
-    runs-on: macos-15
+    runs-on: macos-26
     strategy:
       matrix:
-        destination: ['platform=iOS\ Simulator,name=iPhone\ 16\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 10\ \(46mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
+        destination: ['platform=iOS\ Simulator,name=iPhone\ 17\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 11\ \(46mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
         action: ['test', 'build']
         exclude:
-          - destination: 'platform=iOS\ Simulator,name=iPhone\ 16\ Pro\ Max'
+          - destination: 'platform=iOS\ Simulator,name=iPhone\ 17\ Pro\ Max'
             action: 'build'
           - destination: 'platform=macOS CODE_SIGN_IDENTITY=""'
             action: 'build'
           - destination: 'platform=visionOS\ Simulator,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""'
             action: 'test'
-          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 10\ \(46mm\)'
+          - destination: 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 11\ \(46mm\)'
             action: 'test'
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Install Swiftlint
       run: brew install swiftlint
     - name: Build-Test
@@ -44,7 +44,7 @@ jobs:
       run: |
         cat .codecov.yml | curl --data-binary @- https://codecov.io/validate
     - name: Prepare codecov
-      uses: sersoft-gmbh/swift-coverage-action@v4
+      uses: sersoft-gmbh/swift-coverage-action@v5
       id: coverage-files
       with:
         format: lcov
@@ -65,7 +65,7 @@ jobs:
     timeout-minutes: 25
     runs-on: macos-15
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Build-Test
       run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -scheme CareKitEssentials -derivedDataPath DerivedData -destination platform=macOS CODE_SIGN_IDENTITY="" test 2>&1 | xcbeautify --renderer github-actions
       env:
