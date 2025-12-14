@@ -62,8 +62,8 @@ extension OCKAnyEvent: Equatable {
     }
 
     static func isOutcomesEqual(
-        lhs: OCKAnyOutcome?,
-        rhs: OCKAnyOutcome?
+        lhs: (any OCKAnyOutcome)?,
+        rhs: (any OCKAnyOutcome)?
     ) -> Bool {
 
         guard let lhsOutcome = lhs as? OCKOutcome,
