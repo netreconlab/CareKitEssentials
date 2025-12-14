@@ -8,8 +8,8 @@ on:
     branches: [ main ]
 
 env:
-  CI_XCODE_LATEST: '/Applications/Xcode_16.4.app/Contents/Developer'
-  CI_XCODE_OLDEST: '/Applications/Xcode_15.4.app/Contents/Developer'
+  CI_XCODE_LATEST: '/Applications/Xcode_26.1.app/Contents/Developer'
+  CI_XCODE_OLDEST: '/Applications/Xcode_16.4.app/Contents/Developer'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   test:
     timeout-minutes: 15
-    runs-on: macos-15
+    runs-on: macos-26
     strategy:
       matrix:
         destination: ['platform=iOS\ Simulator,name=iPhone\ 16\ Pro\ Max', 'platform=watchOS\ Simulator,name=Apple\ Watch\ Series\ 10\ \(46mm\)', 'platform=macOS CODE_SIGN_IDENTITY=""', 'platform=visionOS\ Simulator,name=Apple\ Vision\ Pro CODE_SIGN_IDENTITY=""']
