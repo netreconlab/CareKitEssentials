@@ -79,7 +79,7 @@ public extension CareStoreFetchedResults where Result == OCKAnyCarePlan {
     }
 }
 
-public extension CareStoreFetchedResults where Result == OCKAnyTask {
+public extension CareStoreFetchedResults where Result == any OCKAnyTask {
 
     /// Returns the earliest results from the fetched elements.
     /// All elements are guaranteed to be unique by their respective `id`.

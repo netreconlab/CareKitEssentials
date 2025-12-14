@@ -1,11 +1,11 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.1
 
 import PackageDescription
 
 let package = Package(
     name: "CareKitEssentials",
 	defaultLocalization: "en",
-    platforms: [.iOS(.v16), .macOS(.v14), .watchOS(.v10)],
+    platforms: [.iOS("18.0"), .macOS("15.0"), .watchOS("11.0")],
     products: [
         .library(
             name: "CareKitEssentials",
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/cbaker6/CareKit.git",
-            .upToNextMajor(from: "3.1.3")
+            .upToNextMajor(from: "4.0.2")
         )
     ],
     targets: [

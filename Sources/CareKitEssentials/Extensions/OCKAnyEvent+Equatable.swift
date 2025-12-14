@@ -29,8 +29,8 @@ extension OCKAnyEvent: Equatable {
     }
 
     static func isTasksEqual(
-        lhs: OCKAnyTask,
-        rhs: OCKAnyTask
+        lhs: any OCKAnyTask,
+        rhs: any OCKAnyTask
     ) -> Bool {
 
         guard let lhsTask = lhs as? OCKTask,

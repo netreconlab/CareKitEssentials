@@ -10,4 +10,4 @@ import CareKit
 import CareKitStore
 import Foundation
 
-extension CareStoreFetchedResult: Hashable where Result: CareKitEssentialVersionable {}
+extension CareStoreFetchedResult where Result: CareKitEssentialVersionable {}
