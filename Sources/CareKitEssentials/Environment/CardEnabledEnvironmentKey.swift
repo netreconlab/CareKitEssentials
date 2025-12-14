@@ -8,7 +8,7 @@
 import SwiftUI
 
 private struct CardEnabledEnvironmentKey: EnvironmentKey {
-	nonisolated(unsafe) static var defaultValue = true
+	static let defaultValue = true
 }
 
 extension EnvironmentValues {
