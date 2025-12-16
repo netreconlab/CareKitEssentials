@@ -122,8 +122,7 @@ public struct SurveyQuestion: Codable, Hashable, Identifiable {
 	// MARK: ResearchKit (Swift UI)
 
 	/// Builds the respective SwiftUI ResearchKitSwiftUI question view.
-	@ViewBuilder public func view() -> some View {
-
+	@MainActor @ViewBuilder public func view() -> some View {
 		switch type {
 		case .multipleChoice:
 			MultipleChoiceQuestion(
