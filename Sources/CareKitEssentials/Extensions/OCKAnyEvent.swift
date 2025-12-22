@@ -134,7 +134,7 @@ public extension OCKAnyEvent {
     /// Prepends the kind to event outcome.
     func prependKindToValue() -> OCKAnyEvent {
         guard
-            var newOutcome = outcome,
+            var newOutcome = sortedOutcome,
             !newOutcome.values.isEmpty else { return self }
 
         let prependedValues = newOutcome.values.map { originalValue -> OCKOutcomeValue in
