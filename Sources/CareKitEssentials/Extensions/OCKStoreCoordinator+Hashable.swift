@@ -8,11 +8,13 @@
 
 import CareKitStore
 
-extension OCKStoreCoordinator: Hashable {
+extension OCKStoreCoordinator: @retroactive Equatable {
 	public static func == (lhs: CareKitStore.OCKStoreCoordinator, rhs: CareKitStore.OCKStoreCoordinator) -> Bool {
 		lhs === rhs
 	}
+}
 
+extension OCKStoreCoordinator: @retroactive Hashable {
 	public func hash(into hasher: inout Hasher) {
 		hasher.combine(Unmanaged.passUnretained(self).toOpaque())
 	}

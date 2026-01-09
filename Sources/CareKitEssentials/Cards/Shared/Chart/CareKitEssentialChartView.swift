@@ -89,10 +89,10 @@ public struct CareKitEssentialChartView: CareKitEssentialChartable {
 				.onAppear {
 					updateQuery()
 				}
-				.onChange(of: dateInterval) { _ in
+				.onChange(of: dateInterval) {
 					updateQuery()
 				}
-				.onChange(of: configurations) { _ in
+				.onChange(of: configurations) {
 					updateQuery()
 				}
 			}
