@@ -8,7 +8,8 @@
 
 import CareKitStore
 
-extension OCKStoreCoordinator: Hashable {
+extension OCKStoreCoordinator: @retroactive Equatable {}
+extension OCKStoreCoordinator: @retroactive Hashable {
 	public static func == (lhs: CareKitStore.OCKStoreCoordinator, rhs: CareKitStore.OCKStoreCoordinator) -> Bool {
 		lhs === rhs
 	}

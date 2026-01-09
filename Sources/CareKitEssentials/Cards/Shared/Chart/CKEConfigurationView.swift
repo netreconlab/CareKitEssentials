@@ -43,19 +43,19 @@ struct CKEConfigurationView: View {
 				Toggle("SHOW_MEDIAN", isOn: $isShowingMedianMark)
 			}
 		}
-		.onChange(of: markSelected) { newValue in
+		.onChange(of: markSelected) { _, newValue in
 			configurations[configurationId]?.mark = newValue
 		}
-		.onChange(of: dataStrategySelected) { newValue in
+		.onChange(of: dataStrategySelected) { _, newValue in
 			configurations[configurationId]?.dataStrategy = newValue
 		}
-		.onChange(of: isShowingMarkHighlighted) { newValue in
+		.onChange(of: isShowingMarkHighlighted) { _, newValue in
 			configurations[configurationId]?.showMarkWhenHighlighted = newValue
 		}
-		.onChange(of: isShowingMeanMark) { newValue in
+		.onChange(of: isShowingMeanMark) { _, newValue in
 			configurations[configurationId]?.showMeanMark = newValue
 		}
-		.onChange(of: isShowingMedianMark) { newValue in
+		.onChange(of: isShowingMedianMark) { _, newValue in
 			configurations[configurationId]?.showMedianMark = newValue
 		}
     }

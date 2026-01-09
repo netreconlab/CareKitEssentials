@@ -8,7 +8,7 @@
 
 import CareKitStore
 
-extension OCKAnyEvent: Comparable {
+extension OCKAnyEvent: @retroactive Comparable {
 
 	func isOrderedBefore(other: OCKAnyEvent) -> Bool {
 

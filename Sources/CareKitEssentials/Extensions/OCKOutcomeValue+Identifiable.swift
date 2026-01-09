@@ -9,7 +9,7 @@
 import Foundation
 import CareKitStore
 
-extension OCKOutcomeValue: Identifiable {
+extension OCKOutcomeValue: @retroactive Identifiable {
     public var id: String {
         if let kind = kind {
             return "\(kind)_\(value)_\(createdDate)"

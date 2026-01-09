@@ -1,4 +1,4 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 6.0
 
 import PackageDescription
 
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/cbaker6/CareKit.git",
-            .upToNextMajor(from: "4.0.6")
+            .upToNextMajor(from: "4.0.7")
         )
     ],
     targets: [

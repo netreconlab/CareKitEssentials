@@ -64,10 +64,10 @@ struct CareKitEssentialChartDetailView: CareKitEssentialChartable {
 				.onAppear {
 					updateQuery()
 				}
-				.onChange(of: dateInterval) { _ in
+				.onChange(of: dateInterval) {
 					updateQuery()
 				}
-				.onChange(of: configurations) { _ in
+				.onChange(of: configurations) {
 					updateQuery()
 				}
 				.onReceive(events.publisher) { _ in

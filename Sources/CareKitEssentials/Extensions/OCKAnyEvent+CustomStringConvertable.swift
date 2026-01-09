@@ -9,7 +9,7 @@
 import Foundation
 import CareKitStore
 
-extension OCKAnyEvent: CustomStringConvertible {
+extension OCKAnyEvent: @retroactive CustomStringConvertible {
 
     public var description: String {
         guard let task = self.task as? OCKTask,

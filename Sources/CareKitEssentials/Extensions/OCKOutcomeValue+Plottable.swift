@@ -9,7 +9,7 @@
 import CareKitStore
 import Charts
 
-extension OCKOutcomeValue: Plottable {
+extension OCKOutcomeValue: @retroactive Plottable {
 	public var primitivePlottable: Double {
 		LinearCareTaskProgress.accumulableDoubleValue(for: self)
 	}
