@@ -126,7 +126,8 @@
     {
       "identifiers" : [
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/St",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP"
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -477,6 +478,11 @@
   "title" : "next()",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/ordereddictionary\/elements-swift.struct\/subsequence\/iterator\/next()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s8SendableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",

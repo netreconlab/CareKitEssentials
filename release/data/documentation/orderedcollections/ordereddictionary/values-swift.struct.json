@@ -133,6 +133,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SM",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/ST"
       ],
       "kind" : "relationships",
@@ -779,6 +780,11 @@
   "title" : "withUnsafeMutableBufferPointer(_:)",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/ordereddictionary\/values-swift.struct\/withunsafemutablebufferpointer(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s23CustomStringConvertibleP",

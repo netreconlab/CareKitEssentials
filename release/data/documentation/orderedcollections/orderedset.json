@@ -2444,6 +2444,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/Sk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/ST"
       ],
       "kind" : "relationships",
@@ -11155,6 +11156,11 @@
   "title" : "updateOrInsert(_:at:)",
   "type" : "topic",
   "url" : "\/documentation\/orderedcollections\/orderedset\/updateorinsert(_:at:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s17CustomReflectableP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s17CustomReflectableP",

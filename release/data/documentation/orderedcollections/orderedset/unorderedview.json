@@ -143,6 +143,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s25ExpressibleByArrayLiteralP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/SH",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s8SendableP",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s10SetAlgebraP"
       ],
       "kind" : "relationships",
@@ -3002,6 +3003,11 @@
 "doc://edu.usc.netreconlab.CareKitEssentials/s10SetAlgebraP": {
   "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s10SetAlgebraP",
   "title" : "Swift.SetAlgebra",
+  "type" : "unresolvable"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/s17CustomReflectableP": {

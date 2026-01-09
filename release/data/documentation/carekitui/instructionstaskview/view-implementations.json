@@ -51,6 +51,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(action:label:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(named:_:)-4afb0",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(named:_:)-4eq2j",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(named:_:)-4gy9",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(named:_:)-82k0u",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityActions(_:)",
@@ -64,13 +65,18 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityChartDescriptor(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityChildren(children:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-1ynqo",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-2cp6j",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-35e13",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-45tc8",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-46olv",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-4a4nd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-7wcss",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-82t3f",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-8mxym",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-9arvn",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-9lhbh",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-oe05",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityDefaultFocus(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityDirectTouch(_:options:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityElement(children:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityFocused(_:)",
@@ -81,7 +87,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:)-184wn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:)-238kr",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:)-23npy",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:)-6k8xc",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:isEnabled:)-3iw76",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:isEnabled:)-4qum1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:isEnabled:)-9gpp0",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:isEnabled:)-czyc",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityIdentifier(_:)",
@@ -95,7 +103,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityInputLabels(_:isEnabled:)-5w0c5",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:)-17q6b",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:)-1depy",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:)-pedf",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:)-smwt",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:isEnabled:)-74ncx",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:isEnabled:)-7tlik",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:isEnabled:)-8f4v8",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:isEnabled:)-8vbgj",
@@ -112,44 +122,58 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:)-2im63",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:)-5tegn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:)-7ythx",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:)-hq4y",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-21i1u",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-43h3r",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-69ci0",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-94tn1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-9h9u6",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-34pid",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-46wmi",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-6x5zu",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-7w2jn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-9suhy",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-21qeo",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-3a3wu",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-6jvl0",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-911pv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-9mbkz",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotorEntry(id:in:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollAction(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-3iquy",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-3yd1v",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-6xabs",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-9jcyq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityShowsLargeContentViewer()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityShowsLargeContentViewer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilitySortPriority(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityTextContentType(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:)-1ocky",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:)-2712v",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:)-4samc",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:)-7bqrn",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:isEnabled:)-137s9",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:isEnabled:)-1ycyh",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:isEnabled:)-6cayk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:isEnabled:)-97kcd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityZoomAction(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/actionSheet(isPresented:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/actionSheet(item:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:)-4b5dq",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:)-5saja",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:)-eiqi",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:)-lerr",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:message:)-1k0wc",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:message:)-4pwd4",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:message:)-8eseq",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:message:)-vsfg",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:)-50j8g",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:)-5dyib",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:)-5o8f7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:)-pndb",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:message:)-2l4eq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:message:)-34pc9",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:message:)-9mvtm",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:message:)-9tue",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(isPresented:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(isPresented:error:actions:)",
@@ -165,6 +189,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/animation(_:value:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/aspectRatio(_:contentMode:)-4q26",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/aspectRatio(_:contentMode:)-59a72",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/assistiveAccessNavigationIcon(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/assistiveAccessNavigationIcon(systemImage:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-1m4x9",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-70cbv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-9fxi",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/autocorrectionDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/background(_:alignment:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/background(_:ignoresSafeAreaEdges:)",
@@ -174,6 +203,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/background(ignoresSafeAreaEdges:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/background(in:fillStyle:)-3hsyk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/background(in:fillStyle:)-67cdc",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundExtensionEffect()",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundExtensionEffect(isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundPreferenceValue(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundPreferenceValue(_:alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundStyle(_:)",
@@ -185,6 +216,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/brightness(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonBorderShape(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonRepeatBehavior(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonSizing(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonStyle(_:)-2w3gk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonStyle(_:)-4b16n",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/careKitStyle(_:)",
@@ -197,21 +229,27 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:)-2zizp",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:)-3eoa0",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:)-3ho8n",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:)-hay5",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-2usw2",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-3kad5",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-4c85l",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-954gd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-1uh1r",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-4pkqs",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-9m7en",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-9w88r",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-4vroi",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-5tctg",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-7am10",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-7mk1o",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerBackground(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerBackground(for:alignment:content:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerCornerOffset(_:sizeToFit:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerRelativeFrame(_:alignment:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerRelativeFrame(_:alignment:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerRelativeFrame(_:count:span:spacing:alignment:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)-1bmcj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)-3sm8r",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerValue(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/contentMargins(_:_:for:)-5lhg3",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/contentMargins(_:_:for:)-84oan",
@@ -240,6 +278,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(_:isSuppressed:)-2r6fu",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(_:isSuppressed:)-3ocyw",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(_:isSuppressed:)-6s5cq",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(_:isSuppressed:)-7ln7s",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(isSuppressed:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/digitalCrownAccessory(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/digitalCrownAccessory(content:)",
@@ -296,6 +335,10 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/gesture(_:including:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/gesture(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/gesture(_:name:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffect(_:in:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectID(_:in:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectTransition(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectUnion(id:namespace:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/grayscale(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/gridCellAnchor(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/gridCellColumns(_:)",
@@ -306,6 +349,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/help(_:)-5iiw1",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/help(_:)-64kgl",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/help(_:)-7subj",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/help(_:)-884tt",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/hidden()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/highPriorityGesture(_:including:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/highPriorityGesture(_:isEnabled:)",
@@ -323,6 +367,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/kerning(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/keyframeAnimator(initialValue:repeating:content:keyframes:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/keyframeAnimator(initialValue:trigger:content:keyframes:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelIconToTitleSpacing(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelReservedIconWidth(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labeledContentStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelsHidden()",
@@ -330,6 +376,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/layoutDirectionBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/layoutPriority(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/layoutValue(key:value:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/lineHeight(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/lineLimit(_:)-1e1hq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/lineLimit(_:)-2xupx",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/lineLimit(_:)-6j0w2",
@@ -340,7 +387,9 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listItemTint(_:)-7ugpx",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listRowBackground(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listRowInsets(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listRowInsets(_:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listRowPlatterColor(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listSectionIndexVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listSectionSpacing(_:)-7z7oa",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listSectionSpacing(_:)-cpn3",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listStyle(_:)",
@@ -359,6 +408,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/monospacedDigit()",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/moveDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/multilineTextAlignment(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/multilineTextAlignment(strategy:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationBarBackButtonHidden(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationBarHidden(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationBarTitle(_:)-71mim",
@@ -376,9 +426,11 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationDocument(_:preview:)-947xf",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationDocument(_:preview:)-rwzo",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationDocument(_:preview:)-sqfw",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationLinkIndicatorVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationSplitViewColumnWidth(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationSplitViewColumnWidth(min:ideal:max:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationSplitViewStyle(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationTitle(_:)-2ts5d",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationTitle(_:)-6jccd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationTitle(_:)-7qbtk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationTitle(_:)-8wcut",
@@ -396,11 +448,13 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onDisappear(perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onGeometryChange(for:of:action:)-8zzxk",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onGeometryChange(for:of:action:)-9jdi6",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onInteractiveResizeChange(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onLongPressGesture(minimumDuration:maximumDistance:pressing:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onLongPressGesture(minimumDuration:perform:onPressingChanged:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onLongPressGesture(minimumDuration:pressing:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onOpenURL(perform:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onOpenURL(prefersInApp:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onPreferenceChange(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onReceive(_:perform:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onScrollGeometryChange(for:of:action:)",
@@ -455,6 +509,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/renameAction(_:)-f3q4",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/rotation3DEffect(_:axis:anchor:anchorZ:perspective:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/rotationEffect(_:anchor:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaBar(edge:alignment:spacing:content:)-29o8p",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaBar(edge:alignment:spacing:content:)-2h7a0",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaInset(edge:alignment:spacing:content:)-1cqel",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaInset(edge:alignment:spacing:content:)-4k86n",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaPadding(_:)-3ftxt",
@@ -473,6 +529,8 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollContentBackground(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollDismissesKeyboard(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollEdgeEffectHidden(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollEdgeEffectStyle(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollIndicators(_:axes:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollIndicatorsFlash(onAppear:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollIndicatorsFlash(trigger:)",
@@ -487,22 +545,28 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchPresentationToolbarBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchSuggestions(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchSuggestions(_:for:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchToolbarBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:)-1qa2j",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:)-42why",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:)-6fh3e",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:)-9o5v",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:suggestions:)-20mmq",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:suggestions:)-2q327",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:suggestions:)-5cv50",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sectionIndexLabel(_:)-3brud",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sectionIndexLabel(_:)-8betd",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/selectionDisabled(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(_:trigger:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(_:trigger:condition:)",
-        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)-1hqea",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)-5j2df",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/shadow(color:radius:x:y:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sheet(isPresented:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sheet(item:onDismiss:content:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/simultaneousGesture(_:including:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/simultaneousGesture(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/simultaneousGesture(_:name:isEnabled:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sliderThumbVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/speechAdjustedPitch(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/speechAlwaysIncludesPunctuation(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/speechAnnouncementsQueued(_:)",
@@ -512,20 +576,25 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/submitLabel(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/submitScope(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/swipeActions(edge:allowsFullSwipe:content:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolColorRenderingMode(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolEffect(_:options:isActive:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolEffect(_:options:value:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolEffectsRemoved(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolRenderingMode(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolVariableValueMode(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolVariant(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/tabBarMinimizeBehavior(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/tabItem(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/tabViewStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/tag(_:includeOptional:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/task(id:name:executorPreference:priority:file:line:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/task(id:priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/task(priority:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textCase(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textContentType(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textFieldStyle(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textInputAutocapitalization(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textInputFormattingControlVisibility(_:for:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textRenderer(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textScale(_:isEnabled:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textSelectionAffinity(_:)",
@@ -557,6 +626,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typeSelectEquivalent(_:)-4uru7",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typeSelectEquivalent(_:)-54znb",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typeSelectEquivalent(_:)-8m1dv",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typeSelectEquivalent(_:)-9ekjm",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typesettingLanguage(_:isEnabled:)-3ppfg",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typesettingLanguage(_:isEnabled:)-6e84e",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/underline(_:pattern:color:)",
@@ -565,6 +635,7 @@
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/userActivity(_:isActive:_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/visualEffect(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/windowToolbarFullScreenVisibility(_:)",
+        "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/writingDirection(strategy:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/writingToolsAffordanceVisibility(_:)",
         "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/zIndex(_:)"
       ],
@@ -1790,6 +1861,87 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityaction(named:_:)-4afb0"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityAction(named:_:)-4eq2j": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityAction"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "named"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityAction(named:_:)-4eq2j",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityAction(named:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityaction(named:_:)-4eq2j"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityAction(named:_:)-4gy9": {
   "abstract" : [
 
@@ -2735,6 +2887,211 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-1ynqo"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-2cp6j": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)AXCustomContent",
+      "text" : "AXCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@E@AXCustomContentImportance",
+      "text" : "Importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-2cp6j",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityCustomContent(_:_:importance:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-2cp6j"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-35e13": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "V"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)AXCustomContent",
+      "text" : "AXCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@E@AXCustomContentImportance",
+      "text" : "Importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-35e13",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityCustomContent(_:_:importance:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-35e13"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-45tc8": {
   "abstract" : [
 
@@ -3358,6 +3715,204 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-8mxym"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-9arvn": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI29AccessibilityCustomContentKeyV",
+      "text" : "AccessibilityCustomContentKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)AXCustomContent",
+      "text" : "AXCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@E@AXCustomContentImportance",
+      "text" : "Importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-9arvn",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityCustomContent(_:_:importance:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-9arvn"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-9lhbh": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:objc(cs)AXCustomContent",
+      "text" : "AXCustomContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "c:@E@AXCustomContentImportance",
+      "text" : "Importance"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityCustomContent(_:_:importance:)-9lhbh",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityCustomContent(_:_:importance:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-9lhbh"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityCustomContent(_:_:importance:)-oe05": {
   "abstract" : [
 
@@ -3456,6 +4011,90 @@
   "title" : "accessibilityCustomContent(_:_:importance:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitycustomcontent(_:_:importance:)-oe05"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityDefaultFocus(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityDefaultFocus"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23AccessibilityFocusStateV",
+      "text" : "AccessibilityFocusState"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ">."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23AccessibilityFocusStateV7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Value"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityDefaultFocus(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityDefaultFocus(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitydefaultfocus(_:_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityDirectTouch(_:options:)": {
   "abstract" : [
@@ -4166,6 +4805,70 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityhint(_:)-23npy"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityHint(_:)-6k8xc": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:)-6k8xc",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityhint(_:)-6k8xc"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityHint(_:isEnabled:)-3iw76": {
   "abstract" : [
 
@@ -4246,6 +4949,87 @@
   "title" : "accessibilityHint(_:isEnabled:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityhint(_:isenabled:)-3iw76"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityHint(_:isEnabled:)-4qum1": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityHint"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityHint(_:isEnabled:)-4qum1",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityHint(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityhint(_:isenabled:)-4qum1"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityHint(_:isEnabled:)-9gpp0": {
   "abstract" : [
@@ -5196,6 +5980,70 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitylabel(_:)-1depy"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityLabel(_:)-pedf": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:)-pedf",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitylabel(_:)-pedf"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityLabel(_:)-smwt": {
   "abstract" : [
 
@@ -5259,6 +6107,87 @@
   "title" : "accessibilityLabel(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitylabel(_:)-smwt"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityLabel(_:isEnabled:)-74ncx": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityLabel(_:isEnabled:)-74ncx",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityLabel(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitylabel(_:isenabled:)-74ncx"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityLabel(_:isEnabled:)-7tlik": {
   "abstract" : [
@@ -6582,6 +7511,81 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:)-7ythx"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:)-hq4y": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRotor"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entries"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Content"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:)-hq4y",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRotor(_:entries:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:)-hq4y"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:entryID:entryLabel:)-21i1u": {
   "abstract" : [
 
@@ -7032,6 +8036,156 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:entryid:entrylabel:)-69ci0"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:entryID:entryLabel:)-94tn1": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRotor"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entries"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entryID"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entryLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryID:entryLabel:)-94tn1",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRotor(_:entries:entryID:entryLabel:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:entryid:entrylabel:)-94tn1"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:entryID:entryLabel:)-9h9u6": {
   "abstract" : [
 
@@ -7413,6 +8567,115 @@
   "title" : "accessibilityRotor(_:entries:entryLabel:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:entrylabel:)-46wmi"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:entryLabel:)-6x5zu": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRotor"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entries"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "entryLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "EntryModel"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:entries:entryLabel:)-6x5zu",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRotor(_:entries:entryLabel:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:entries:entrylabel:)-6x5zu"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:entries:entryLabel:)-7w2jn": {
   "abstract" : [
@@ -7983,6 +9246,92 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:textranges:)-911pv"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotor(_:textRanges:)-9mbkz": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityRotor"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "textRanges"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sn",
+      "text" : "Range"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS5IndexV",
+      "text" : "Index"
+    },
+    {
+      "kind" : "text",
+      "text" : ">]) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityRotor(_:textRanges:)-9mbkz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityRotor(_:textRanges:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityrotor(_:textranges:)-9mbkz"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityRotorEntry(id:in:)": {
   "abstract" : [
 
@@ -8147,6 +9496,338 @@
   "title" : "accessibilityScrollAction(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityscrollaction(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityScrollStatus(_:isEnabled:)-3iquy": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityScrollStatus"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sy",
+      "text" : "StringProtocol"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-3iquy",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityScrollStatus(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityscrollstatus(_:isenabled:)-3iquy"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityScrollStatus(_:isEnabled:)-3yd1v": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityScrollStatus"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI18LocalizedStringKeyV",
+      "text" : "LocalizedStringKey"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-3yd1v",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityScrollStatus(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityscrollstatus(_:isenabled:)-3yd1v"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityScrollStatus(_:isEnabled:)-6xabs": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityScrollStatus"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-6xabs",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityScrollStatus(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityscrollstatus(_:isenabled:)-6xabs"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityScrollStatus(_:isEnabled:)-9jcyq": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityScrollStatus"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityScrollStatus(_:isEnabled:)-9jcyq",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityScrollStatus(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityscrollstatus(_:isenabled:)-9jcyq"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityShowsLargeContentViewer()": {
   "abstract" : [
@@ -8375,6 +10056,70 @@
   "title" : "accessibilityTextContentType(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilitytextcontenttype(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityValue(_:)-1ocky": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:)-1ocky",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityvalue(_:)-1ocky"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityValue(_:)-2712v": {
   "abstract" : [
@@ -8662,6 +10407,87 @@
   "title" : "accessibilityValue(_:isEnabled:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityvalue(_:isenabled:)-137s9"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityValue(_:isEnabled:)-1ycyh": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessibilityValue"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15ModifiedContentV",
+      "text" : "ModifiedContent"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI31AccessibilityAttachmentModifierV",
+      "text" : "AccessibilityAttachmentModifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/accessibilityValue(_:isEnabled:)-1ycyh",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessibilityValue(_:isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/accessibilityvalue(_:isenabled:)-1ycyh"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/accessibilityValue(_:isEnabled:)-6cayk": {
   "abstract" : [
@@ -9185,6 +11011,107 @@
   "title" : "alert(_:isPresented:actions:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:actions:)-4b5dq"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:actions:)-5saja": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "alert"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:)-5saja",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "alert(_:isPresented:actions:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:actions:)-5saja"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:actions:)-eiqi": {
   "abstract" : [
@@ -9777,6 +11704,131 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:actions:message:)-8eseq"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:actions:message:)-vsfg": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "alert"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "message"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:actions:message:)-vsfg",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "alert(_:isPresented:actions:message:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:actions:message:)-vsfg"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:presenting:actions:)-50j8g": {
   "abstract" : [
 
@@ -9916,6 +11968,139 @@
   "title" : "alert(_:isPresented:presenting:actions:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:presenting:actions:)-50j8g"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:presenting:actions:)-5dyib": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "alert"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "presenting"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:)-5dyib",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "alert(_:isPresented:presenting:actions:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:presenting:actions:)-5dyib"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:presenting:actions:)-5o8f7": {
   "abstract" : [
@@ -10519,6 +12704,171 @@
   "title" : "alert(_:isPresented:presenting:actions:message:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:presenting:actions:message:)-34pc9"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:presenting:actions:message:)-9mvtm": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "alert"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "presenting"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "message"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/alert(_:isPresented:presenting:actions:message:)-9mvtm",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "alert(_:isPresented:presenting:actions:message:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/alert(_:ispresented:presenting:actions:message:)-9mvtm"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/alert(_:isPresented:presenting:actions:message:)-9tue": {
   "abstract" : [
@@ -11905,6 +14255,308 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/aspectratio(_:contentmode:)-59a72"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/assistiveAccessNavigationIcon(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "assistiveAccessNavigationIcon"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI5ImageV",
+      "text" : "Image"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/assistiveAccessNavigationIcon(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "assistiveAccessNavigationIcon(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/assistiveaccessnavigationicon(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/assistiveAccessNavigationIcon(systemImage:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "assistiveAccessNavigationIcon"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "systemImage"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/assistiveAccessNavigationIcon(systemImage:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "assistiveAccessNavigationIcon(systemImage:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/assistiveaccessnavigationicon(systemimage:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/attributedTextFormattingDefinition(_:)-1m4x9": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "attributedTextFormattingDefinition"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s7KeyPathC",
+      "text" : "KeyPath"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation15AttributeScopesO",
+      "text" : "AttributeScopes"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type>) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-1m4x9",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "attributedTextFormattingDefinition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/attributedtextformattingdefinition(_:)-1m4x9"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/attributedTextFormattingDefinition(_:)-70cbv": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "attributedTextFormattingDefinition"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-70cbv",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "attributedTextFormattingDefinition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/attributedtextformattingdefinition(_:)-70cbv"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/attributedTextFormattingDefinition(_:)-9fxi": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "attributedTextFormattingDefinition"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "D"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "D"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/attributedTextFormattingDefinition(_:)-9fxi",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "attributedTextFormattingDefinition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/attributedtextformattingdefinition(_:)-9fxi"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/autocorrectionDisabled(_:)": {
   "abstract" : [
 
@@ -12631,6 +15283,107 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/background(in:fillstyle:)-67cdc"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/backgroundExtensionEffect()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "backgroundExtensionEffect"
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundExtensionEffect()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "backgroundExtensionEffect()",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/backgroundextensioneffect()"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/backgroundExtensionEffect(isEnabled:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "backgroundExtensionEffect"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/backgroundExtensionEffect(isEnabled:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "backgroundExtensionEffect(isEnabled:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/backgroundextensioneffect(isenabled:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/backgroundPreferenceValue(_:_:)": {
   "abstract" : [
 
@@ -13344,6 +16097,57 @@
   "title" : "buttonRepeatBehavior(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/buttonrepeatbehavior(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/buttonSizing(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "buttonSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI12ButtonSizingV",
+      "text" : "ButtonSizing"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/buttonSizing(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "buttonSizing(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/buttonsizing(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/buttonStyle(_:)-2w3gk": {
   "abstract" : [
@@ -14197,6 +17001,266 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:actions:)-3ho8n"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:actions:)-hay5": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "confirmationDialog"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "titleVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:)-hay5",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "confirmationDialog(_:isPresented:titleVisibility:actions:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:actions:)-hay5"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-2usw2": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "confirmationDialog"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "titleVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "message"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-2usw2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "confirmationDialog(_:isPresented:titleVisibility:actions:message:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-2usw2"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:actions:message:)-3kad5": {
   "abstract" : [
 
@@ -14930,6 +17994,156 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-4pkqs"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-9m7en": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "confirmationDialog"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "titleVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "presenting"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-9m7en",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9m7en"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)-9w88r": {
   "abstract" : [
 
@@ -15086,6 +18300,188 @@
   "title" : "confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9w88r"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-4vroi": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "confirmationDialog"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isPresented"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "titleVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "presenting"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "actions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "A"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "message"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "M"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-4vroi",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-4vroi"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)-5tctg": {
   "abstract" : [
@@ -15815,6 +19211,83 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/containerbackground(for:alignment:content:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerCornerOffset(_:sizeToFit:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containerCornerOffset"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO",
+      "text" : "Edge"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO3SetV",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "sizeToFit"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerCornerOffset(_:sizeToFit:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerCornerOffset(_:sizeToFit:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/containercorneroffset(_:sizetofit:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerRelativeFrame(_:alignment:)": {
   "abstract" : [
 
@@ -16124,7 +19597,7 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/containerrelativeframe(_:count:span:spacing:alignment:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerShape(_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerShape(_:)-1bmcj": {
   "abstract" : [
 
   ],
@@ -16175,12 +19648,71 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)-1bmcj",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "containerShape(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/instructionstaskview\/containershape(_:)"
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/containershape(_:)-1bmcj"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerShape(_:)-3sm8r": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "containerShape"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23RoundedRectangularShapeP",
+      "text" : "RoundedRectangularShape"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/containerShape(_:)-3sm8r",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "containerShape(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/containershape(_:)-3sm8r"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/containerValue(_:_:)": {
   "abstract" : [
@@ -18075,6 +21607,83 @@
   "title" : "dialogSuppressionToggle(_:isSuppressed:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/dialogsuppressiontoggle(_:issuppressed:)-6s5cq"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/dialogSuppressionToggle(_:isSuppressed:)-7ln7s": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dialogSuppressionToggle"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "isSuppressed"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ">) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/dialogSuppressionToggle(_:isSuppressed:)-7ln7s",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dialogSuppressionToggle(_:isSuppressed:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/dialogsuppressiontoggle(_:issuppressed:)-7ln7s"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/dialogSuppressionToggle(isSuppressed:)": {
   "abstract" : [
@@ -22506,6 +26115,329 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/gesture(_:name:isenabled:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/glassEffect(_:in:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "glassEffect"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI5GlassV",
+      "text" : "Glass"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI5ShapeP",
+      "text" : "Shape"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffect(_:in:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "glassEffect(_:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/glasseffect(_:in:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/glassEffectID(_:in:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "glassEffectID"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : " & "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : ")?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "in"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectID(_:in:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "glassEffectID(_:in:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/glasseffectid(_:in:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/glassEffectTransition(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "glassEffectTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI21GlassEffectTransitionV",
+      "text" : "GlassEffectTransition"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectTransition(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "glassEffectTransition(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/glasseffecttransition(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/glassEffectUnion(id:namespace:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "glassEffectUnion"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : " & "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s8SendableP",
+      "text" : "Sendable"
+    },
+    {
+      "kind" : "text",
+      "text" : ")?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV",
+      "text" : "Namespace"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI9NamespaceV2IDV",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/glassEffectUnion(id:namespace:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "glassEffectUnion(id:namespace:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/glasseffectunion(id:namespace:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/grayscale(_:)": {
   "abstract" : [
 
@@ -23048,6 +26980,57 @@
   "title" : "help(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/help(_:)-7subj"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/help(_:)-884tt": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "help"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/help(_:)-884tt",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "help(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/help(_:)-884tt"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/hidden()": {
   "abstract" : [
@@ -24292,6 +28275,108 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/keyframeanimator(initialvalue:trigger:content:keyframes:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/labelIconToTitleSpacing(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "labelIconToTitleSpacing"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelIconToTitleSpacing(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "labelIconToTitleSpacing(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/labelicontotitlespacing(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/labelReservedIconWidth(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "labelReservedIconWidth"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/labelReservedIconWidth(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "labelReservedIconWidth(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/labelreservediconwidth(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/labelStyle(_:)": {
   "abstract" : [
 
@@ -24693,6 +28778,66 @@
   "title" : "layoutValue(key:value:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/layoutvalue(key:value:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/lineHeight(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "lineHeight"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation16AttributedStringV",
+      "text" : "AttributedString"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation16AttributedStringV8CoreTextE10LineHeightV",
+      "text" : "LineHeight"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/lineHeight(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "lineHeight(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/lineheight(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/lineLimit(_:)-1e1hq": {
   "abstract" : [
@@ -25255,6 +29400,75 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/listrowinsets(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/listRowInsets(_:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "listRowInsets"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO",
+      "text" : "Edge"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO3SetV",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listRowInsets(_:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "listRowInsets(_:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/listrowinsets(_:_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/listRowPlatterColor(_:)": {
   "abstract" : [
 
@@ -25306,6 +29520,57 @@
   "title" : "listRowPlatterColor(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/listrowplattercolor(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/listSectionIndexVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "listSectionIndexVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/listSectionIndexVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "listSectionIndexVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/listsectionindexvisibility(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/listSectionSpacing(_:)-7z7oa": {
   "abstract" : [
@@ -26474,6 +30739,74 @@
   "title" : "multilineTextAlignment(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/multilinetextalignment(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/multilineTextAlignment(strategy:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "multilineTextAlignment"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "strategy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV17AlignmentStrategyV",
+      "text" : "AlignmentStrategy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/multilineTextAlignment(strategy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "multilineTextAlignment(strategy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/multilinetextalignment(strategy:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/navigationBarBackButtonHidden(_:)": {
   "abstract" : [
@@ -27799,6 +32132,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/navigationdocument(_:preview:)-sqfw"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/navigationLinkIndicatorVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "navigationLinkIndicatorVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationLinkIndicatorVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "navigationLinkIndicatorVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/navigationlinkindicatorvisibility(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/navigationSplitViewColumnWidth(_:)": {
   "abstract" : [
 
@@ -28000,6 +32384,57 @@
   "title" : "navigationSplitViewStyle(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/navigationsplitviewstyle(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/navigationTitle(_:)-2ts5d": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "navigationTitle"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/navigationTitle(_:)-2ts5d",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "navigationTitle(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/navigationtitle(_:)-2ts5d"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/navigationTitle(_:)-6jccd": {
   "abstract" : [
@@ -29242,6 +33677,66 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/ongeometrychange(for:of:action:)-9jdi6"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/onInteractiveResizeChange(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onInteractiveResizeChange"
+    },
+    {
+      "kind" : "text",
+      "text" : "(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onInteractiveResizeChange(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onInteractiveResizeChange(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/oninteractiveresizechange(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/onLongPressGesture(minimumDuration:maximumDistance:perform:onPressingChanged:)": {
   "abstract" : [
 
@@ -29744,6 +34239,65 @@
   "title" : "onOpenURL(perform:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/onopenurl(perform:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/onOpenURL(prefersInApp:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "onOpenURL"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "prefersInApp"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/onOpenURL(prefersInApp:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "onOpenURL(prefersInApp:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/onopenurl(prefersinapp:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/onPreferenceChange(_:perform:)": {
   "abstract" : [
@@ -33713,6 +38267,242 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/rotationeffect(_:anchor:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/safeAreaBar(edge:alignment:spacing:content:)-29o8p": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "safeAreaBar"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "edge"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI12VerticalEdgeO",
+      "text" : "VerticalEdge"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI19HorizontalAlignmentV",
+      "text" : "HorizontalAlignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "spacing"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaBar(edge:alignment:spacing:content:)-29o8p",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "safeAreaBar(edge:alignment:spacing:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/safeareabar(edge:alignment:spacing:content:)-29o8p"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/safeAreaBar(edge:alignment:spacing:content:)-2h7a0": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "safeAreaBar"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "edge"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI14HorizontalEdgeO",
+      "text" : "HorizontalEdge"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "alignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI17VerticalAlignmentV",
+      "text" : "VerticalAlignment"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "spacing"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:14CoreFoundation7CGFloatV",
+      "text" : "CGFloat"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "content"
+    },
+    {
+      "kind" : "text",
+      "text" : ": () -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/safeAreaBar(edge:alignment:spacing:content:)-2h7a0",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "safeAreaBar(edge:alignment:spacing:content:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/safeareabar(edge:alignment:spacing:content:)-2h7a0"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/safeAreaInset(edge:alignment:spacing:content:)-1cqel": {
   "abstract" : [
 
@@ -34900,6 +39690,160 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/scrolldismisseskeyboard(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/scrollEdgeEffectHidden(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollEdgeEffectHidden"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO",
+      "text" : "Edge"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO3SetV",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollEdgeEffectHidden(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollEdgeEffectHidden(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/scrolledgeeffecthidden(_:for:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/scrollEdgeEffectStyle(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "scrollEdgeEffectStyle"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI21ScrollEdgeEffectStyleV",
+      "text" : "ScrollEdgeEffectStyle"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO",
+      "text" : "Edge"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4EdgeO3SetV",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/scrollEdgeEffectStyle(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "scrollEdgeEffectStyle(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/scrolledgeeffectstyle(_:for:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/scrollIndicators(_:axes:)": {
   "abstract" : [
 
@@ -35943,6 +40887,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/searchsuggestions(_:for:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/searchToolbarBehavior(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "searchToolbarBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI21SearchToolbarBehaviorV",
+      "text" : "SearchToolbarBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchToolbarBehavior(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "searchToolbarBehavior(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/searchtoolbarbehavior(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/searchable(text:placement:prompt:)-1qa2j": {
   "abstract" : [
 
@@ -36153,6 +41148,108 @@
   "title" : "searchable(text:placement:prompt:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/searchable(text:placement:prompt:)-42why"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/searchable(text:placement:prompt:)-6fh3e": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "searchable"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "text"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI7BindingV",
+      "text" : "Binding"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "placement"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI20SearchFieldPlacementV",
+      "text" : "SearchFieldPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "prompt"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/searchable(text:placement:prompt:)-6fh3e",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "searchable(text:placement:prompt:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/searchable(text:placement:prompt:)-6fh3e"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/searchable(text:placement:prompt:)-9o5v": {
   "abstract" : [
@@ -36644,6 +41741,115 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/searchable(text:placement:prompt:suggestions:)-5cv50"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sectionIndexLabel(_:)-3brud": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sectionIndexLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sectionIndexLabel(_:)-3brud",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sectionIndexLabel(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/sectionindexlabel(_:)-3brud"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sectionIndexLabel(_:)-8betd": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sectionIndexLabel"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "S"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sectionIndexLabel(_:)-8betd",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sectionIndexLabel(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/sectionindexlabel(_:)-8betd"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/selectionDisabled(_:)": {
   "abstract" : [
 
@@ -36878,7 +42084,82 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/sensoryfeedback(_:trigger:condition:)"
 },
-"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sensoryFeedback(trigger:_:)": {
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sensoryFeedback(trigger:_:)-1hqea": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sensoryFeedback"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "trigger"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", () -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI15SensoryFeedbackV",
+      "text" : "SensoryFeedback"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)-1hqea",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sensoryFeedback(trigger:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/sensoryfeedback(trigger:_:)-1hqea"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sensoryFeedback(trigger:_:)-5j2df": {
   "abstract" : [
 
   ],
@@ -36962,12 +42243,12 @@
       "text" : "View"
     }
   ],
-  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)",
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sensoryFeedback(trigger:_:)-5j2df",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "sensoryFeedback(trigger:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/carekitui\/instructionstaskview\/sensoryfeedback(trigger:_:)"
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/sensoryfeedback(trigger:_:)-5j2df"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/shadow(color:radius:x:y:)": {
   "abstract" : [
@@ -37554,6 +42835,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/simultaneousgesture(_:name:isenabled:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/sliderThumbVisibility(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sliderThumbVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/sliderThumbVisibility(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sliderThumbVisibility(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/sliderthumbvisibility(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/speechAdjustedPitch(_:)": {
   "abstract" : [
 
@@ -38114,6 +43446,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/swipeactions(edge:allowsfullswipe:content:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/symbolColorRenderingMode(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "symbolColorRenderingMode"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI24SymbolColorRenderingModeV",
+      "text" : "SymbolColorRenderingMode"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolColorRenderingMode(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "symbolColorRenderingMode(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/symbolcolorrenderingmode(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/symbolEffect(_:options:isActive:)": {
   "abstract" : [
 
@@ -38407,6 +43790,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/symbolrenderingmode(_:)"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/symbolVariableValueMode(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "symbolVariableValueMode"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI23SymbolVariableValueModeV",
+      "text" : "SymbolVariableValueMode"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/symbolVariableValueMode(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "symbolVariableValueMode(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/symbolvariablevaluemode(_:)"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/symbolVariant(_:)": {
   "abstract" : [
 
@@ -38457,6 +43891,57 @@
   "title" : "symbolVariant(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/symbolvariant(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/tabBarMinimizeBehavior(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "tabBarMinimizeBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI22TabBarMinimizeBehaviorV",
+      "text" : "TabBarMinimizeBehavior"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/tabBarMinimizeBehavior(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "tabBarMinimizeBehavior(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/tabbarminimizebehavior(_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/tabItem(_:)": {
   "abstract" : [
@@ -38649,6 +44134,182 @@
   "title" : "tag(_:includeOptional:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/tag(_:includeoptional:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/task(id:name:executorPreference:priority:file:line:_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "task"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "id"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "name"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "executorPreference"
+    },
+    {
+      "kind" : "text",
+      "text" : ": any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sch",
+      "text" : "TaskExecutor"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "priority"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ScP",
+      "text" : "TaskPriority"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "file"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "line"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Si",
+      "text" : "Int"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "sending"
+    },
+    {
+      "kind" : "text",
+      "text" : " () "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s4Voida",
+      "text" : "Void"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/task(id:name:executorPreference:priority:file:line:_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "task(id:name:executorPreference:priority:file:line:_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/task(id:name:executorpreference:priority:file:line:_:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/task(id:priority:_:)": {
   "abstract" : [
@@ -39045,6 +44706,83 @@
   "title" : "textInputAutocapitalization(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/textinputautocapitalization(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/textInputFormattingControlVisibility(_:for:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "textInputFormattingControlVisibility"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI10VisibilityO",
+      "text" : "Visibility"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI35TextInputFormattingControlPlacementV",
+      "text" : "TextInputFormattingControlPlacement"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI35TextInputFormattingControlPlacementV3SetV",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/textInputFormattingControlVisibility(_:for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "textInputFormattingControlVisibility(_:for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/textinputformattingcontrolvisibility(_:for:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/textRenderer(_:)": {
   "abstract" : [
@@ -41211,6 +46949,57 @@
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/typeselectequivalent(_:)-8m1dv"
 },
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/typeSelectEquivalent(_:)-9ekjm": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "typeSelectEquivalent"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation23LocalizedStringResourceV",
+      "text" : "LocalizedStringResource"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/typeSelectEquivalent(_:)-9ekjm",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "typeSelectEquivalent(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/typeselectequivalent(_:)-9ekjm"
+},
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/typesettingLanguage(_:isEnabled:)-3ppfg": {
   "abstract" : [
 
@@ -41797,6 +47586,74 @@
   "title" : "windowToolbarFullScreenVisibility(_:)",
   "type" : "topic",
   "url" : "\/documentation\/carekitui\/instructionstaskview\/windowtoolbarfullscreenvisibility(_:)"
+},
+"doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/writingDirection(strategy:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writingDirection"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "strategy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV",
+      "text" : "Text"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4TextV24WritingDirectionStrategyV",
+      "text" : "WritingDirectionStrategy"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7SwiftUI4ViewP",
+      "text" : "View"
+    }
+  ],
+  "identifier" : "doc:\/\/edu.usc.netreconlab.CareKitEssentials\/documentation\/CareKitUI\/InstructionsTaskView\/writingDirection(strategy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "writingDirection(strategy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/carekitui\/instructionstaskview\/writingdirection(strategy:)"
 },
 "doc://edu.usc.netreconlab.CareKitEssentials/documentation/CareKitUI/InstructionsTaskView/writingToolsAffordanceVisibility(_:)": {
   "abstract" : [
