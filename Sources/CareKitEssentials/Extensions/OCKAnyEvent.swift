@@ -157,9 +157,11 @@ public extension OCKAnyEvent {
         return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
     }
 
+	#if canImport(SwiftUI)
     func image() -> Image? {
 		Image.asset(self.task.asset)
     }
+	#endif
 }
 
 extension OCKAnyEvent {
