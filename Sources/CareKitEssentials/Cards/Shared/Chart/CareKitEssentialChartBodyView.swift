@@ -8,7 +8,6 @@
 
 #if canImport(SwiftUI)
 import Charts
-import os.log
 import SwiftUI
 
 struct CareKitEssentialChartBodyView: View {

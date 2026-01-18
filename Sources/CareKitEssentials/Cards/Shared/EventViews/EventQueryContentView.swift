@@ -12,7 +12,6 @@ import SwiftUI
 import CareKit
 import CareKitStore
 import CareKitUI
-import os.log
 
 /// A view that wraps any view that is `EventWithContentViewable` and provides
 /// the respective view with an up-to-date latest event matching the

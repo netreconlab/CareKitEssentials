@@ -19,17 +19,17 @@ public extension OCKAnyEvent {
         task.title ?? ""
     }
 
-    /// Denotes the time and date of the event.
-    var detail: String? {
-        ScheduleUtility.scheduleLabel(for: self)
-    }
-
     /// Instructions for the event's task.
     var instructions: String? {
         task.instructions
     }
 
 	#if canImport(SwiftUI)
+	/// Denotes the time and date of the event.
+	var detail: String? {
+		ScheduleUtility.scheduleLabel(for: self)
+	}
+
     var detailText: Text? {
         guard let detail else { return nil }
         return Text(detail)

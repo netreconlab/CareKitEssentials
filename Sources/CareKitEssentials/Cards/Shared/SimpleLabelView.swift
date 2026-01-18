@@ -9,7 +9,6 @@
 #if canImport(SwiftUI)
 
 import CareKitUI
-import os.log
 import SwiftUI
 
 /// A title and detail label. The view can also be configured to show an
