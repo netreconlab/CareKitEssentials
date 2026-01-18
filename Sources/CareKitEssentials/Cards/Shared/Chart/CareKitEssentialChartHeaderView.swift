@@ -6,6 +6,8 @@
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 struct CareKitEssentialChartHeaderView: View {
@@ -44,3 +46,5 @@ struct CareEssentialChartHeaderView_Previews: PreviewProvider {
         )
     }
 }
+
+#endif

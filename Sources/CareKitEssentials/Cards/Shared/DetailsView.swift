@@ -6,6 +6,8 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import SwiftUI
 
@@ -82,3 +84,5 @@ struct DetailsView_Previews: PreviewProvider {
         }
     }
 }
+
+#endif

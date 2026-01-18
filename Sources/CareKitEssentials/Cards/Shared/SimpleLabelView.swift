@@ -6,8 +6,9 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitUI
-import os.log
 import SwiftUI
 
 /// A title and detail label. The view can also be configured to show an
@@ -156,3 +157,5 @@ struct SimpleLabelView_Previews: PreviewProvider {
         .careKitStyle(OCKStyle())
     }
 }
+
+#endif

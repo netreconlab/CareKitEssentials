@@ -6,6 +6,7 @@
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(os.log)
 import CareKitStore
 import os.log
 
@@ -78,3 +79,5 @@ extension OCKAnyEventStore {
         }
     }
 }
+
+#endif

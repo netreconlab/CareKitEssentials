@@ -6,6 +6,8 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import Charts
 import Foundation
@@ -17,7 +19,6 @@ import SwiftUI
 /// series, allowing for for several data series to be plotted on a single axis for easy comparison.
 public struct CKEDataSeries: Identifiable, Hashable {
 
-#if !swift(<6.0)
 	/// An enumerator specifying the types of plots that can be used to display data series.
 	@available(iOS 18.0, macOS 15.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, *)
 	public enum PlotType: String, CaseIterable, Hashable {
@@ -82,7 +83,6 @@ public struct CKEDataSeries: Identifiable, Hashable {
 		}
 
 	}
-#endif
 
     /// An enumerator specifying the types of marks that can be used to display data series.
     public enum MarkType: String, CaseIterable, Hashable {
@@ -581,3 +581,5 @@ extension CKEDataSeries {
 		hasher.combine(gradientStartColor)
 	}
 }
+
+#endif

@@ -7,7 +7,9 @@
 
 import Foundation
 import CareKitStore
+#if canImport(os.log)
 import os.log
+#endif
 
 public extension OCKStore {
 
@@ -37,6 +39,7 @@ public extension OCKStore {
     }
 }
 
+#if canImport(os.log)
 extension OCKStore {
     func populateDefaultCarePlansTasks(
 		startDate: Date
@@ -227,3 +230,4 @@ extension OCKStore {
 		return randomDate
 	}
 }
+#endif

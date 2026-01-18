@@ -6,7 +6,7 @@
 //  Copyright © 2020 NetReconLab. All rights reserved.
 //
 
-#if !os(watchOS)
+#if canImport(SwiftUI) && !os(watchOS)
 
 import SwiftUI
 

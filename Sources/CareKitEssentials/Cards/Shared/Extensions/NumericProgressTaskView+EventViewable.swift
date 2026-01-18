@@ -6,7 +6,7 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
-#if !os(watchOS)
+#if canImport(SwiftUI) && !os(watchOS)
 
 import CareKit
 import CareKitStore

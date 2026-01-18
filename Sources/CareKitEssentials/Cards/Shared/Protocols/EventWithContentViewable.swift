@@ -6,11 +6,10 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI) && !os(watchOS)
 import CareKit
 import CareKitStore
 import SwiftUI
-
-#if !os(watchOS)
 
 /// Conforming to this protocol ensures your view
 /// consists of the proper initializers to view events.

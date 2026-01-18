@@ -6,6 +6,8 @@
 //  Copyright © 2022 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import CareKitUI
 import Foundation
@@ -115,3 +117,5 @@ public struct ScheduleUtility {
         return String.localizedStringWithFormat(format, remaining)
     }
 }
+
+#endif

@@ -6,6 +6,7 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
 
 extension CKEDataSeries: AXChartDescriptorRepresentable {
@@ -41,3 +42,4 @@ extension CKEDataSeries: AXChartDescriptorRepresentable {
 	}
 
 }
+#endif

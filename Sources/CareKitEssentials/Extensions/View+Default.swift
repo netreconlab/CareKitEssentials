@@ -6,6 +6,8 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import Foundation
 import SwiftUI
 
@@ -27,3 +29,5 @@ extension View {
 	// Reference: https://stackoverflow.com/a/77735876
 	func apply<V: View>(@ViewBuilder _ block: (Self) -> V) -> V { block(self) }
 }
+
+#endif

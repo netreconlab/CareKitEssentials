@@ -6,6 +6,8 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(Charts)
+
 import CareKitStore
 import Charts
 
@@ -18,3 +20,5 @@ extension OCKOutcomeValue: @retroactive Plottable {
 		self.init(primitivePlottable)
 	}
 }
+
+#endif

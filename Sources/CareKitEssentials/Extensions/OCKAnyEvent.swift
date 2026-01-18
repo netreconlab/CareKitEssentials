@@ -7,7 +7,10 @@
 //
 
 import CareKitStore
+
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 
 public extension OCKAnyEvent {
 
@@ -16,15 +19,16 @@ public extension OCKAnyEvent {
         task.title ?? ""
     }
 
-    /// Denotes the time and date of the event.
-    var detail: String? {
-        ScheduleUtility.scheduleLabel(for: self)
-    }
-
     /// Instructions for the event's task.
     var instructions: String? {
         task.instructions
     }
+
+	#if canImport(SwiftUI)
+	/// Denotes the time and date of the event.
+	var detail: String? {
+		ScheduleUtility.scheduleLabel(for: self)
+	}
 
     var detailText: Text? {
         guard let detail else { return nil }
@@ -35,6 +39,7 @@ public extension OCKAnyEvent {
         guard let instructions else { return nil }
         return Text(instructions)
     }
+	#endif
 
     #if canImport(UIKit)
     /// The first event task asset.
@@ -152,9 +157,11 @@ public extension OCKAnyEvent {
         return OCKAnyEvent(task: task, outcome: newOutcome, scheduleEvent: scheduleEvent)
     }
 
+	#if canImport(SwiftUI)
     func image() -> Image? {
 		Image.asset(self.task.asset)
     }
+	#endif
 }
 
 extension OCKAnyEvent {

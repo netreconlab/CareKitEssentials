@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 4/28/25.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 struct CKEConfigurationView: View {
@@ -119,3 +121,5 @@ struct CKEConfigurationView_Previews: PreviewProvider {
 		.listStyle(.automatic)
 	}
 }
+
+#endif

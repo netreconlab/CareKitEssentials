@@ -6,6 +6,7 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
 import CareKit
 import CareKitStore
 import CareKitUI
@@ -133,3 +134,5 @@ struct ResearchSurveyView_Previews: PreviewProvider {
 		.careKitStyle(OCKStyle())
 	}
 }
+
+#endif

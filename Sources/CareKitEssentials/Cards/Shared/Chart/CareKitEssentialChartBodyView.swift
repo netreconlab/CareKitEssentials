@@ -6,8 +6,8 @@
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
 import Charts
-import os.log
 import SwiftUI
 
 struct CareKitEssentialChartBodyView: View {
@@ -215,3 +215,5 @@ struct CareKitEssentialChartBodyView: View {
 		)
 	}
 }
+
+#endif

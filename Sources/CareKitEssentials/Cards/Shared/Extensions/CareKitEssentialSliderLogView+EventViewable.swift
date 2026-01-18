@@ -6,7 +6,7 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
-#if !os(watchOS)
+#if canImport(SwiftUI) && !os(watchOS)
 
 import CareKitStore
 

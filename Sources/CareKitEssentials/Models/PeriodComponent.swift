@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 public enum PeriodComponent: String, CaseIterable, Hashable, Codable, Identifiable, CustomStringConvertible {
 
@@ -131,10 +130,8 @@ extension PeriodComponent {
 		switch component {
 		case .day:
 			self = .day
-		#if !swift(<6.0)
 		case .dayOfYear:
 			self = .day
-		#endif
 		case .weekday, .weekOfMonth, .weekOfYear:
 			self = .week
 		case .month:

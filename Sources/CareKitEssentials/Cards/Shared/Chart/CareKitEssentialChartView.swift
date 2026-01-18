@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 4/27/25.
 //
 
+#if canImport(SwiftUI)
+
 import CareKit
 import CareKitStore
 import CareKitUI
@@ -195,3 +197,5 @@ struct CareKitEssentialChartView_Previews: PreviewProvider {
 		.environment(\.careStore, previewStore)
 	}
 }
+
+#endif

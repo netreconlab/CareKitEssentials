@@ -7,7 +7,7 @@
 //
 
 // swiftlint:disable vertical_parameter_alignment
-#if os(watchOS)
+#if canImport(SwiftUI) && os(watchOS)
 
 import CareKit
 import CareKitStore

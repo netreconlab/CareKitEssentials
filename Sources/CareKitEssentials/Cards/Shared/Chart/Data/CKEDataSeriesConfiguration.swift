@@ -6,6 +6,8 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import SwiftUI
 import Charts
@@ -182,3 +184,5 @@ extension CKEDataSeriesConfiguration {
 		hasher.combine(gradientStartColor)
 	}
 }
+
+#endif

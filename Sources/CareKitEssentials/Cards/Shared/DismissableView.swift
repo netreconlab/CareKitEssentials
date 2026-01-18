@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 4/29/25.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 struct DismissableView<Content: View>: View {
@@ -48,3 +50,5 @@ struct DismissableView_Previews: PreviewProvider {
 		}
 	}
 }
+
+#endif
