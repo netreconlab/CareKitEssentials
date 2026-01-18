@@ -6,6 +6,8 @@
 //  Copyright © 2023 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import Foundation
 import SwiftUI
 
@@ -38,3 +40,5 @@ public extension Image {
 		return Image(systemName: name)
     }
 }
+
+#endif

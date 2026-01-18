@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 6/24/24.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import SwiftUI
 
@@ -167,3 +169,5 @@ extension CareKitEssentialView {
     }
 
 }
+
+#endif

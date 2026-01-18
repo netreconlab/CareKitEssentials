@@ -66,9 +66,6 @@ final class LinearCareTaskProgressTests: XCTestCase {
         let expectedValue = outcomeValues
             .map { $0.doubleValue ?? 0.0 }
             .reduce(0, +) / Double(outcomeValues.count)
-        let expectedGoal = targetValues
-            .map { $0.doubleValue ?? 0.0 }
-            .reduce(0, +)
         let goal = try XCTUnwrap(progress.goal)
 
         XCTAssertEqual(progress.value, expectedValue, accuracy: 0.0001)
@@ -98,9 +95,6 @@ final class LinearCareTaskProgressTests: XCTestCase {
         let expectedValue = outcomeValues
             .map { $0.numberValue?.doubleValue ?? 0.0 }
             .reduce(0, +) / Double(outcomeValues.count)
-        let expectedGoal = targetValues
-            .map { $0.numberValue?.doubleValue ?? 0.0 }
-            .reduce(0, +)
         let goal = try XCTUnwrap(progress.goal)
 
 		XCTAssertEqual(goal, 25.0, accuracy: 0.0001)
@@ -122,9 +116,6 @@ final class LinearCareTaskProgressTests: XCTestCase {
         )
         let progress = LinearCareTaskProgress
             .computeProgressByAveragingOutcomeValues(for: event)
-        let expectedGoal = targetValues
-            .map { $0.doubleValue ?? 0.0 }
-            .reduce(0, +)
         let goal = try XCTUnwrap(progress.goal)
 
         XCTAssertEqual(progress.value, 0.0, accuracy: 0.0001)

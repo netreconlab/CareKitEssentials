@@ -6,6 +6,8 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitUI
 import os.log
 import SwiftUI
@@ -156,3 +158,5 @@ struct SimpleLabelView_Previews: PreviewProvider {
         .careKitStyle(OCKStyle())
     }
 }
+
+#endif

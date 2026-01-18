@@ -6,6 +6,8 @@
 //  Copyright © 2022 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKit
 import CareKitStore
 import Foundation
@@ -120,3 +122,5 @@ open class CardViewModel: ObservableObject {
         }.sorted { $0.createdDate > $1.createdDate }
     }
 }
+
+#endif

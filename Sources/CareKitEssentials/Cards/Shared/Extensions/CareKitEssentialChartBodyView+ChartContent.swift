@@ -6,6 +6,8 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import Charts
 import SwiftUI
 
@@ -92,3 +94,5 @@ extension CareKitEssentialChartBodyView {
 		}
 	}
 }
+
+#endif

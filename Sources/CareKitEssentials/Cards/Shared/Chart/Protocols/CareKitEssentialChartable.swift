@@ -6,6 +6,8 @@
 //  Copyright © 2025 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(SwiftUI)
+
 import CareKit
 import CareKitStore
 import Charts
@@ -307,3 +309,5 @@ extension CareKitEssentialChartable {
 		return progressPerPeriodComponent
 	}
 }
+
+#endif

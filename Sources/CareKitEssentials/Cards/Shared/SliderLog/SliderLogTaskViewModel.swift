@@ -5,6 +5,7 @@
 //  Created by Corey Baker on 5/16/23.
 //
 
+#if canImport(SwiftUI)
 import CareKitStore
 import Foundation
 import SwiftUI
@@ -89,3 +90,4 @@ open class SliderLogTaskViewModel: CardViewModel {
         }
     }
 }
+#endif

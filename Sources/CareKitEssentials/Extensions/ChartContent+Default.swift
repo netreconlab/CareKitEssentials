@@ -6,6 +6,8 @@
 //  Copyright © 2024 Network Reconnaissance Lab. All rights reserved.
 //
 
+#if canImport(Charts)
+
 import Charts
 import Foundation
 
@@ -15,3 +17,5 @@ extension ChartContent {
             ChartContentBuilder.buildEither(second: self)
     }
 }
+
+#endif

@@ -6,13 +6,13 @@
 //  Copyright © 2024 NetReconLab. All rights reserved.
 //
 
+#if canImport(SwiftUI) && !os(watchOS)
+
 import SwiftUI
 import CareKit
 import CareKitStore
 import CareKitUI
 import os.log
-
-#if !os(watchOS)
 
 /// A view that wraps any view that is `EventWithContentViewable` and provides
 /// the respective view with an up-to-date latest event matching the

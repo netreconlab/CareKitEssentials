@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 5/20/23.
 //
 
+#if canImport(SwiftUI)
+
 import CareKitStore
 import CareKitUI
 import Foundation
@@ -51,3 +53,5 @@ public extension InstructionsTaskView where Header == InformationHeaderView {
         )
     }
 }
+
+#endif

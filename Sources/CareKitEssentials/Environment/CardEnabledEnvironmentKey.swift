@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 5/15/23.
 //
 
+#if canImport(SwiftUI)
+
 import SwiftUI
 
 private struct CardEnabledEnvironmentKey: EnvironmentKey {
@@ -23,3 +25,5 @@ extension View {
         return self.environment(\.isCardEnabled, enabled)
     }
 }
+
+#endif

@@ -5,7 +5,7 @@
 //  Created by Corey Baker on 5/20/23.
 //
 
-#if !os(watchOS)
+#if canImport(SwiftUI) && !os(watchOS)
 
 import CareKit
 import CareKitStore

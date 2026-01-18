@@ -7,7 +7,10 @@
 //
 
 import CareKitStore
+
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
 
 public extension OCKAnyEvent {
 
@@ -26,6 +29,7 @@ public extension OCKAnyEvent {
         task.instructions
     }
 
+	#if canImport(SwiftUI)
     var detailText: Text? {
         guard let detail else { return nil }
         return Text(detail)
@@ -35,6 +39,7 @@ public extension OCKAnyEvent {
         guard let instructions else { return nil }
         return Text(instructions)
     }
+	#endif
 
     #if canImport(UIKit)
     /// The first event task asset.

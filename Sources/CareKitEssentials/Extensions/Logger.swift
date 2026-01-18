@@ -5,6 +5,8 @@
 //  Created by Corey Baker on 6/24/24.
 //
 
+#if canImport(os.log)
+
 import Foundation
 import os.log
 
@@ -48,3 +50,5 @@ extension Logger {
 		category: "OCKOutcomeValueResearchKitResult"
 	)
 }
+
+#endif
