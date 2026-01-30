@@ -1,13 +1,13 @@
 {
-  "originHash" : "d8440e4a7b567a27770164a3b78b1469c67bfdfd79601be2d15b1863ac21a956",
+  "originHash" : "e3c4fd664b22378e3aa5f2fd61e1c167a39e11232c9805bd66d3dac1fb1355f0",
   "pins" : [
     {
       "identity" : "carekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/cbaker6/CareKit.git",
       "state" : {
-        "revision" : "6acb8c801cf66dc2ed67a9dd6f42f3f04871da60",
-        "version" : "4.0.9"
+        "revision" : "7e7d2afa6fa32053e0c0b3a1beadc8da634c0ce6",
+        "version" : "4.0.10"
       }
     },
     {
