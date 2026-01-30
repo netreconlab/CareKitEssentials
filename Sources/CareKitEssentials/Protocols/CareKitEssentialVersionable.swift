@@ -12,7 +12,9 @@ import Foundation
 extension OCKPatient: CareKitEssentialVersionable {}
 extension OCKCarePlan: CareKitEssentialVersionable {}
 extension OCKContact: CareKitEssentialVersionable {}
+extension OCKHealthKitTask: @retroactive Identifiable {}
 extension OCKHealthKitTask: CareKitEssentialVersionable {}
+extension OCKTask: @retroactive Identifiable {}
 extension OCKTask: CareKitEssentialVersionable {}
 extension OCKOutcome: CareKitEssentialVersionable {}
 
